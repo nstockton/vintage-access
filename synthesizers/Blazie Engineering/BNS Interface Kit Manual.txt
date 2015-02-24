@@ -1,0 +1,5956 @@
+*** *** Introduction
+We at Blazie Engineering gratefully thank Craig Werner,
+Ph.D. and Robert Carter, Ph.D. for their indefatigable help
+in the compilation of this guide.  Never has such assistance
+and support been so warmly welcomed!
+
+A special thanks goes to our contributing writers:
+Steve Booth, Robert Carter, Judith Dixon, Joe Giovanelli,
+Fred Gissoni, David Goldstein, Caryn Navy, Craig Werner, and
+the National Federation of the Blind.
+
+Valuable technical assistance from David Goldfield, also,
+was since
+
+rely appreciated.
+
+                        Deane Blazie
+                        January, 1993
+*** Using The Braille 'n Speak 
+
+Interface Kit
+
+by 
+
+Deane Blazie
+
+
+
+It seems that there is nothing more mystical in the computer business than 
+
+interfacing RS-232 devices.  Even though RS-232, the name, refers to a 
+
+standard developed for the computer industry, it still leaves us with a 
+
+difficult task which has become an art rather than a science.  Part of the 
+
+problem is that the RS-232 standard only partially defines the vast amount 
+
+of information needed to connect two serial devices.  Not only do the 
+
+connectors have to match, so that they plug into each other, but the signals 
+
+on the 25 lines (only a few are ever needed) must also match.  Even if all of 
+
+this gets worked out, then we have to deal with the data formats which of 
+
+course must also match each other.  At the very least, it is difficult and tries 
+
+your patience.  I have been interfacing computers for about 20 years, and 
+
+while I have a systematic procedure to get them to talk to each other, it is 
+
+still often frustrating and time comsuming.  My procedure for getting 
+
+another serial device to talk to Braille 'n Speak involves the following steps:
+
+
+
+        1.  Determine if the device is a DTE or DCE (I'll explain later).
+
+        2.  Get the proper adapters to make the connectors mate.
+
+        3.  Find out how the other device handshakes.
+
+        4.  Set the serial data parameters.
+
+        5.  Run a simple test with the mini-tester.
+
+
+
+I hope that the Braille 'n Speak Interface kit, and this guide will help to 
+
+make the task a little more successful and a little less trying.  The kit 
+
+consists of this guide and 6 adapters.  The adapters are:
+
+
+
+        Male to Male adapter
+
+        Female to Female adapter
+
+        Null Modem
+
+        Mini-Tester
+
+        Tweedle Dump
+
+        9 to 25 pin adapter
+
+
+
+The RS-232 Standard specifies a 25 pin connector referred to as a DB-25p 
+
+and DB-25s.  The DB-25p is the 25 pin plug or Male connector.  The DB-25s is 
+
+the Socket or Female connector.  I don't know who started calling them Male 
+
+and Female connectors, but the term is universally used and descriptive.  A 
+
+particular serial device,  should have either a male or female DB-25 
+
+connector.  Some of the newer devices, however, are now using a DB-9 
+
+connector, similar to the DB-25 except only 9 pins.  If you have one of these, 
+
+you will need to get a 9 pin to 25 pin adapter from your local computer 
+
+dealer or Blazie Engineering.  The interface kit assumes that you have a 25 
+
+pin connector.  
+
+
+
+Exchanging data over a serial connection is a lot like talking over the 
+
+telephone.  You talk into the mouth piece and you listen in the earpiece.  If 
+
+you have ever picked up the phone the wrong way and tried to talk into the 
+
+earpiece and listen with the mouth piece, you know that it won't work that 
+
+way.  The same is true of the RS-232 connection.  Braille 'n Speak sends data 
+
+out on one of the wires and it listens to (receives data) on another of the 
+
+wires.  So Braille 'n Speaks talk line must be connected to the other devices 
+
+listen line in order for Braille 'n Speak to send data to the other device.  RS-
+
+232 uses pins 2 and 3 for the talking and listening.  Pin 2 is called 
+
+Transmitted data and pin 3 is called Received data.  This is true for all RS-
+
+232 devices and herein lies a problem.  You might expect that when you 
+
+hook Braille 'n Speak up to a printer that both devices transmit data on pin 2 
+
+and both receive data on pin 3.  But this would not work because Braille 'n 
+
+Speaks transmit line must be connected to the printers receive line in order 
+
+for the printer to receive the data and print it.  And, in fact, Braille 'n Speak 
+
+really does transmit data on Pin 3 and receives data on Pin 2.  So is this 
+
+contrary to the standard which calls pin 2 Transmitted Data and Pin 3 
+
+Received data.  NO, but it isn't obvious.  You can see from this problem, that 
+
+not all RS-232 devices are wired the same, and they can't be, in order for the 
+
+two to communicate.  One must be wired the opposite of the other in order 
+
+for the talk and listen lines (transmit and receive lines) to match.  
+
+
+
+Now, wouldn't it be nice if every time you found a Male RS-232 connector 
+
+you would know that it transmits on pin 2 and receives on pin 3 and every 
+
+time you found a Female RS-232 connector, you would know that it receives 
+
+data on pin 2 and transmits on pin 3.  Yes it would, but NO, NO, NO!  It 
+
+doesn't work that way.  There is no hard and fast rule for determining what 
+
+pins a device transmits and receives on, based on the connector.  There is 
+
+however some terminology which refers to the two different ways the 
+
+devices are wired.  One device is the Data Communications Equipment DCE, 
+
+and the other is the Data Terminal Equipment DTE.  You can directly connect 
+
+a DCE to a DTE and (assuming the connectors mate) they devices will be 
+
+properly wired.  This means that every serial device or port on a device is 
+
+either a DTE or a DCE.  It helps to know which you are dealing with so that 
+
+you can determine if the two are wired correctly or not.  You can't directly 
+
+connect one DTE to another DTE, and you can't directly connect a DCE to 
+
+another DCE because they are not wired to send and receive on the proper 
+
+pins.  
+
+
+
+Braille 'n Speak comes with a cable which converts the strange 8 pin 
+
+connector on the left side to a standard 25 pin Male connector.  This 25 pin 
+
+connector is a DCE, that means that you can directly connect it to a DTE 
+
+(assuming the connectors match). Braille 'n Speaks transmits its data on pin 
+
+3 and receives its data on pin 2.   Most printers are DTE's and it is also semi-
+
+standard for most printers to have Female connectors on them so that Braille 
+
+'n Speak will plug directly into them.  If you come across a printer that has a 
+
+cable coming out of it with a Male connector on it, it is probably still wired as 
+
+a DTE but the connectors will not mate.  All you have to do is insert a Female 
+
+to Female adapter between the Braille 'n Speak and the Printer and the two 
+
+should work fine.  
+
+
+
+Modems are wired as DCE devices and usually have female connectors on 
+
+them.  Most computer terminals are wired as DTE devices and they generally 
+
+have Male connectors on them.  What about the IBM PC and the Apple II 
+
+computers?  Most PC's have male connectors on the back and they are 
+
+usually wired as DTE's.  The Apple Super Serial Card is capable of being 
+
+either a DTE (terminal) or a DCE (modem) depending on the jumper block on 
+
+the super serial card.  
+
+
+
+If you want to hook a DCE to a DCE or a DTE to a DTE, you must have a null 
+
+modem in between the two.  All a null modem does is to switch a DTE to a 
+
+DCE or from a DCE to a DTE.  It reverses the transmit and receive pins (2 & 3) 
+
+and in addition switches a few others which we'll talk about a little later in 
+
+this guide.  So, if you want to hook Braille 'n Speak to a DCE, like a modem, 
+
+you must insert the null modem adapter (included in the interface kit) in 
+
+between Braille 'n Speak and the modem.   
+
+
+
+How do you know if the device you want to hook to is a DCE or a 
+
+DTE?  That's where the mini-tester comes in.  The mini-tester is the little 
+
+adapter with the 7 lights (LED's) on the surface.  When you connect this 
+
+mini-tester to an RS-232 device, the lights will show you which pins are high 
+
+and which are low, and also which are not connected at all.  You may have to 
+
+get a sighted friend to read the lights.  Each light is either red, green or not 
+
+lit at all.  If the light is green, this indicates a negative voltage on that pin.  If 
+
+the light is Red, this indicates a high voltage on that pin.  If the light is 
+
+neither, then that pin is either not connected or is an input pin only 
+
+connected on one end.  If you hold the mini-tester such that the lights are 
+
+facing up, and with the male connector to your left, you will feel four bumps 
+
+(lights) on the left and three lights on the right.  These lights represent the 
+
+RS-232 pins 2, 3, 4, 5, 6, 20 and 8, from top to bottom.  They are labeled on 
+
+the face of the mini-tester as follows:
+
+
+
+        TD     Transmitted Data        Pin 2
+
+        RD     Received Data           Pin 3
+
+        RTS    Request to Send         Pin 4
+
+        CTS    Clear to Send           Pin 5
+
+        DSR    Data Set Ready          Pin 6
+
+        DTR    Data Terminal Ready     Pin 20
+
+        CD     Data Carrier Detect     Pin 8
+
+
+
+When you connect the mini-tester to the Braille 'n Speak, with the other end
+
+of the mini-tester not connected, and then you activate the serial port, you 
+
+will see that the RD light (this is pin 3) is green.  From that piece of 
+
+information alone, you can tell that Braille 'n Speak is a DCE.  If it were a DTE, 
+
+like a printer, you would see the TD light (pin 2) would be green, and you 
+
+could assume that it is a DTE.  This is a little known fact and it can be 
+
+immensely helpful when you are connecting two devices together.  This is 
+
+the first thing you must know when hooking Braille 'n Speak up to another 
+
+device.  You can't hook Braille 'n Speak up directly to another DCE, so if you 
+
+check your device and find that it is a DCE (green light on pin 3), you know 
+
+that you must use a null modem between Braille 'n Speak and your device.  
+
+When checking a device with the mini-tester to see if it is a DCE or a DTE, 
+
+you should have the mini-tester hooked up to only the device you are 
+
+testing, not the device and the Braille 'n Speak at the same time.  Later you 
+
+may want to hook them both up, but first find out what you are dealing 
+
+with, a DTE or a DCE.  
+
+
+
+If you plug the mini-tester into the back of your PC on the serial port, you 
+
+will find that the TD light is green, the RD light is not lit, and the RTS and DTR 
+
+lights are lit red.  If this is the case, then you definitely have a DTE device.  
+
+All IBM compatible PC's that I have seen are DTE's.  Another tell-tale sign of 
+
+a DTE is the red light on DTR (data terminal ready).  This is a signal that tells 
+
+the other devices hooked to this port that the terminal device is alive.  
+
+
+
+Once you decide whether you need the null modem, then you must decide if 
+
+you need a Female to Female adapter in between, to make the connectors 
+
+mate.  You can't go wrong here, because it will only work one way.  If both 
+
+the Braille 'n Speak and the device you are hooking up to have male 
+
+connectors, then you will need the Female to Female adapter to make them 
+
+mate up.  
+
+
+
+We have now done steps 1 and 2 of the recommended procedure.
+
+
+
+HANDSHAKING
+
+
+
+This can be very easy or very difficult.  It seems that over the years, every 
+
+manufacturer has picked a different way to handshake.  Lately, there has 
+
+been some standardization and things are getting easier.  First of all, what is 
+
+handshaking?  When you send data to a printer, the computer is usually 
+
+capable of sending the data much faster than the printer can print it.  Some 
+
+printers have buffers (memory) to store a lot of data until the printer gets 
+
+around to printing it.  But, even the largest buffers fill up and the printer 
+
+must tell the computer to stop sending until it has room for more data.  Then 
+
+the printer will say "ok, I can accept more data now".  This back and forth 
+
+talking about accepting data is called handshaking.  It is a cooperation 
+
+between the two serial devices in exchanging data.  
+
+
+
+When Braille 'n Speak is accepting data, it can very quickly get each 
+
+character sent to it and put it into memory.  It doesn't need to handshake 
+
+because it can put data into memory at the fastest speed you can send to it.  
+
+But, what happens when the file becomes full.  Braille 'n Speak tells the 
+
+sending device to stop transmitting in one of a number of ways.  By using 
+
+the command P-chord H you can select either Hardware handshaking, 
+
+Software handshaking, or no handshaking.  If you select no handshaking, 
+
+Braille 'n Speak will not try to stop a transmission.  When a file becomes full 
+
+and it gets more data from the serial device, it will throw it away and say 
+
+FILE IS FULL.  With software handshaking selected, Braille 'n Speak will send 
+
+a special ASCII character called X-OFF out the serial port.  This is supposed to 
+
+tell the attached device to stop sending, and if the device supports software 
+
+handshaking, it will stop and wait for an X-ON character to be send to it.  
+
+Braille 'n Speak will send the X-ON character when it has room to put the 
+
+new data.  This is the easiest type of handshaking to implement if both 
+
+devices support it.  It does not depend on a specially wired cable or adapter.  
+
+And, it works in both directions.  If you hook Braille 'n Speak up to a printer 
+
+and select software handshake, the printer will tell Braille 'n Speak to stop 
+
+sending when the printer buffer is full and it will tell Braille 'n Speak to 
+
+resume sending when it has emptied the printer buffer and is ready for 
+
+more data.  You don't need special connectors or adapters to make this type 
+
+of handshaking work.  
+
+
+
+Hardware handshaking can be a little more (or a lot more) difficult.  Use it 
+
+only if software handshaking is not supported.  While the world has 
+
+somewhat standardized on software handshaking, hardware handshaking is 
+
+done in a number of ways and always relies on some of the other pins in the 
+
+RS-232 connector.  Braille 'n Speak uses two pins to implement hardware 
+
+handshaking, one for data coming in and one for data going out.  When 
+
+Braille 'n Speak is sending data out the serial port, it always looks at the 
+
+voltage on pin 20 or its RS-232 connector to see if it can send the data.  If 
+
+pin 20 is high (red light lit on DTR of the mini-tester), then it will send the 
+
+character out.  If pin 20 is low (green light on DTR) then it will not send the 
+
+data.  It will wait until pin 20 becomes high and if this doesn't happen 
+
+within about 15 seconds, it will speak "WAITING ON SERIAL DEVICE".  Note 
+
+that Braille 'n Speak monitors pin 20 no matter what type of handshaking 
+
+you have selected.  This is unfortunately the nature of the microprocessor 
+
+used in the Braille 'n Speak and not by choice.  However, it is not often a 
+
+problem but it is something to watch out for.  If you get the waiting on serial 
+
+device message, take a look at pin 20 on the Braille 'n Speak connector and 
+
+see if it is high or low.  If it is low, then any number of things could be 
+
+wrong.  The device it is connected to could be off line or out of paper.  Or, it 
+
+the other device may handshake on another pin.  If this is the case, you may 
+
+have to re-wire the devices cable or make an adapter to put in-between.  If 
+
+you are not handy with a soldering iron, this can be a problem.  Give us a call 
+
+and maybe we can make one for you.  I have seen devices handshake on 
+
+pins 4, 5, 6, 8, 11, 12 and 20.  Almost all DTE devices handshake on pin 20 
+
+and that's why they work with Braille 'n Speak.  If you have a DCE (usually 
+
+handshake on pin 5, 6, or 8)  you are hooking up to Braille 'n Speak, the null 
+
+modem will transform it into a DTE and the handshaking may or may not be 
+
+transformed to pin 20 for the Braille 'n Speak.  However, many problems and 
+
+variations within null modems can create problems for the handshaking on 
+
+pin 20.  Use the mini-tester connected directly on the Braille 'n Speak cable, 
+
+see if pin 20 is high and see if it goes low when the other devices tries to 
+
+handshake.  You may see another line go low and this tells you that you may 
+
+need to re-wire the connection or tell the other device to handshake on 
+
+another pin (some are configurable).  
+
+
+
+If you want to hook Braille 'n Speak up to a modem, you will need the null 
+
+modem in between the modem and Braille 'n Speak.  Now, this may present 
+
+a problem.  The null modem connects the modems pins 5 and 6 (CTS and 
+
+DSR) to bin 20 (DTR) on Braille 'n Speak.  DSR on the modem is data set ready 
+
+and this pin is usually low until the modem has established a connection and 
+
+so you can't send data to the modem from Braille 'n Speak until you have 
+
+established a connection because pin 20 will be low.  That means that you 
+
+can't tell the modem to dial with the AT series of commands present in most 
+
+of todays smart modems.  What to do?  There are a couple of things you can 
+
+do to remedy this problem.  The best way is to tell your modem to keep DSR 
+
+high all the time.  You can usually do this with a dip switch on the modem if 
+
+your modem supports this feature.  If it doesn't, you can open the null 
+
+modem case and remove the wire connecting pin 20 on the Female connector 
+
+to pins 5 and 6 on the Male connector.  This is not as easy but it is the only 
+
+way short of making another adapter.  If you feel that you can't do this 
+
+yourself, you can return the null modem adapter to us with a note about the 
+
+problem and we will do it for you at no cost.  If you know in advance that 
+
+you will be hooking up to a modem, let us know and we will remove the 
+
+wire for you or you can buy two null modems, one with and one without 
+
+hardware handshaking.  By removing the wire to pin 20, you have disabled 
+
+hardware handshaking whenever you use the null modem.  
+
+
+
+All of this discussion on hardware handshaking and the Braille 'n Speak has 
+
+been concerned with data going from Braille 'n Speak to the external device.  
+
+What about data coming into Braille 'n Speak from the external device.  In 
+
+this case, Braille 'n Speak uses pin 5 one its RS-232 connector to tell the 
+
+external device to stop sending.  The only place I can see that you would use 
+
+this is to stop the external device from sending when the file becomes full, or 
+
+in SPEECH BOX MODE.  Again, use software handshaking if you can, it is a lot 
+
+easier.  But if you cant, then pin 5 is the pin that will go low when Braille 'n 
+
+Speak cannot accept more data.  This pin must be connected to the devices 
+
+handshake line for it to work.  A lot of devices use this line to handshake 
+
+and in most cases it should be wired correctly.  If it isn't, you may need to 
+
+get a special adapter.  
+
+
+
+DON'T LOOSE FAITH
+
+
+
+This is a difficult part of computer use.  If you don't understand some or 
+
+most of this guide, don't loose faith.  You don't need to understand most of it 
+
+and you will find as you get more into interfacing computers things will 
+
+become more clear and the above will begin to make more sense.  
+
+Fortunately interfacing Braille 'n Speak to most devices is as simple as 
+
+plugging in the cable.  This holds true for most printers (ink and braille) and 
+
+most PC's.  This interface kit will make it simple in most cases.  In those 
+
+cases where you have a problem, give us a call and maybe we can help.
+
+
+
+
+
+*** BRAILLE 'N SPEAK 
+
+GUIDELINES FOR THE INPUT OF GRADE 2 BRAILLE
+
+BY JUDITH DIXON
+
+
+
+Each time you create a new Braille 'n Speak file, you will be asked "Use 
+
+grade 2  translator?  Enter y or n."  Answering "y" will turn on Braille 'n 
+
+Speak's powerful translator capable of converting grade 2 braille into fully 
+
+spelled-out text. 
+
+
+
+As you enter Grade 2 braille words in this mode, Braille 'n Speak will, in 
+
+almost  all cases, speak the words correctly and translate them accurately 
+
+as they are sent to  an ink prin
+
+
+
+ter.  However, reverse braille translators, by 
+
+their very nature, cannot make  all the necessary decisions.  To some degree, 
+
+exception words can be added to the  braille translation tables but there 
+
+will always be character strings which will have to be entered in computer 
+
+braille to be spoken or printed properly. 
+
+
+
+Within Braille 'n Speak's reverse translator, there are two ways to tell it 
+
+that  you do not want it to translate what you have entered.  The first is a 
+
+"do not translate" symbol for singl
+
+
+
+e characters.  This symbol is dot 4.  If you 
+
+enter a dot 4 before a character that you do not want translated then the 
+
+reverse translator knows to ignore that next character. 
+
+
+
+The most common use for the single-character "do not translate" symbol is 
+
+for a slash in the middle of a word.  It is not possible for the reverse 
+
+translator to know whether you want a slash or an st-sign.  For example, 
+
+how would it know the difference between and/or and sandstorm.  The same 
+
+string of characters is present in both words.
+
+
+
+So, to type and/or, you would type the and-sign, dot 4, dots 3-4, and or.  If 
+
+you need to put a dot 4 in your text, then simply enter two dot 4's in a row 
+
+and the second one will remain as an untranslated character. 
+
+
+
+Another use of the single-character "do not translate" symbol is for (s) at 
+
+the end of a word.  If the letter s in parentheses is desired at the end of a 
+
+word, the characters should be entered as follows: dot 4, computer braille 
+
+left parenthesis (dots 2-3-4-5-6), s, and a regular braille parenthesis to
+
+close (dots 2-3-5-6).  Otherwise,  the first braille parenthesis would have 
+
+been translated as gg. 
+
+
+
+There will also be occasions when you will need multiple-character "do not 
+
+translate" symbols.  The "do not translate" symbols to surround a string of 
+
+two or more characters are two-cell symbols.  The beginning symbol is dot 
+
+4, hyphen (entering computer braille) and the closing symbol is dot 4, l 
+
+(entering literary braille).  These symbols must surround the character 
+
+string that is not to be translated.  The opening symbol must be preceded by
+
+a space and the closing symbol must be followed by a space. 
+
+
+
+These will be used when entering letter-number combinations such as RS-
+
+232 or  H.R.3635 and number-letter combinations such as 21-day or 55'000-
+
+word. 
+
+
+
+Reverse translators will also become rather confused by a capital n or a 
+
+capital y  in the middle of a word such as in the proper name McNevin or the 
+
+word VersaNews.  If  these words are not placed within "do not translate"
+
+symbols, the capital n will be translated as the letters ation.  Remember, 
+
+when typing characters that you do not want translated, you must enter each 
+
+character as you want it printed, including shifting the Braille 'n Speak into 
+
+uppercase when necessary. 
+
+
+
+Sometimes, it is necessary to prevent a string of characters from being 
+
+treated like a contraction such as in proper names or abbreviations which 
+
+include strings of characters that are similar to the short-form words in 
+
+Grade 2 braille.  For example, the two-letter state abbreviations for the
+
+states of Alabama and Tennessee would be uncontracted as the words "also" 
+
+and "tonight" and the abbreviation for boulevard, Blvd., would be 
+
+uncontracted as Blindvd.  In these examples, simply placing a letter-sign 
+
+(dots 5-6) before the capital sign will take care of the situation. 
+
+
+
+You may occasionally encounter a short-form word, particularly one that is 
+
+surrounded by other characters, such as "unfriendly" that will not reverse 
+
+translate properly.  In this case, "do not translate" symbols will usually not
+
+be necessary.  Simply writing the word in grade 1 braille will produce 
+
+accurate text. 
+
+
+
+Another situation arising from the use of a reverse translator is the 
+
+handling of the braille italics.  In braille, the italics sign (dots 4-6) is used 
+
+to indicate underlined, italicized, or emphasized text.  The reverse 
+
+translator will simply drop any and all of these signs from the beginning of 
+
+a word.  If underlining or some other print style is desired, the appropriate
+
+escape code should be sent to the printer. 
+
+
+
+These modifications to your grade 2 braille file need only be made when the 
+
+text is to be printed by an ink printer or uploaded to a computer where it 
+
+will be read in print.  When transmitting text to an ink printer, leave the 
+
+grade 2 translator turned on.  If the text is to be sent to a braille printer or 
+
+to another device capable of handling grade 2 braille, "do not translate" 
+
+symbols should not be used and the text should be transmitted with the
+
+translator turned off so the braille will not be uncontracted as it is sent out 
+
+the serial port. 
+
+
+
+If, while using Braille 'n Speak, you discover any errors in the reverse 
+
+translation of braille, please let Blazie Engineering know immediately.  The 
+
+translation portion of the software will be updated as needed and your 
+
+feedback is essential to making this translator as perfect as it can be.   
+
+
+
+
+
+
+
+
+
+*** TRANSFERRING MATERIAL FROM BRAILLE 'n SPEAK 
+
+TO VERSABRAILLE P2 SERIES 
+
+BY JUDITH DIXON
+
+
+
+
+
+1.  Load the terminal overlay from the master overlay tape.
+
+
+
+2.  Issue an r-chord e and modify the parameters of the overlay as follows:
+
+	b 9600
+
+	d 8
+
+	p n
+
+	hs dtr
+
+
+
+3.  issue an r-chord s to store the modified overlay.
+
+
+
+4.  save the modified overlay on a working tape.
+
+
+
+5.  To connect the Braille 'n Speak to the VersaBraille P2C and P2D you will 
+
+need a female to female gender mender (included in the Braille 'n Speak
+
+Interface Kit if you purchased one).  P2B users will not need the gender 
+
+mender.
+
+
+
+6.  You should turn the Braille 'n Speak on and set its serial port to active 
+
+before connecting the two devices.
+
+
+
+7.  To transfer material, load the modified overlay and open a new 
+
+VersaBraille chapter.  It must be a new chapter.  Issue an r-chord r.  If you 
+
+know that the material to be sent is longer than one VersaBraille page, issue
+
+an r-chord t and the VersaBraille will change pages automatically.
+
+
+
+8.  Be sure you are at the beginning of the material you wish to send from 
+
+the Braille 'n Speak and issue a t-chord from the Braille 'n Speak's keyboard 
+
+followed by the appropriate parameter, usually z to send everything to the 
+
+end of the file.
+
+
+
+
+
+ *** TRANSFERRING MATERIAL FROM BRAILLE 'n SPEAK
+
+TO VERSABRAILLE II and II PLUS  
+
+BY JUDITH DIXON
+
+
+
+
+
+1.  From default settings, change the VersaBraille's CCP in the serial
+
+parameters as follows:  Set dtr to hs.
+
+
+
+2.  This setting can be saved to disk for later use with the SLCCP program.
+
+
+
+3.  Connect the VersaBraille's serial cable to the DTE connector.  For the 
+
+VersaBraille II, this is the one nearest the disk drive port and for the II 
+
+Plus, it is the one nearest the AC power connector.  Connect the Braille 'n 
+
+Speaks cable to the end of the VersaBraille cable.  For VersaBraille II Plus, a 
+
+female-to-female gender changer will be required (in included in the Braille
+
+'n Speak Interface kit available from Blazie Engineering).  For the 
+
+VersaBraille II, no adapter is needed.
+
+
+
+4.  To transfer material, select f for files; p for print; then i for serial in.   
+
+The VersaBraille will ask for a filename and file destination.  At the "send 
+
+command?" prompt, press any braille key except execute to answer "no".  the 
+
+display will be blank.
+
+
+
+5.  Turn on the Braille 'n Speak's serial port.  Be sure you are at the beginning 
+
+of the material you wish to send and issue a t-chord followed by the
+
+appropriate parameter (usually z to send all to the end of the file).
+
+
+
+6.  The VersaBraille will beep every 500 characters while the transfer is in 
+
+progress and the Braille 'n Speak will say "OKAY" when the transfer has been 
+
+completed.  At this point, issue a z-chord on the VersaBraille to save the 
+
+transferred data to the file.
+
+
+
+
+
+
+
+*** Braille 'n Speak BEX and the Apple 2 
+
+By Robert Carter
+
+
+
+
+
+The Braille 'n Speak has an RS232 serial port which enables it to send data
+
+to and receive data from other devices that are capable of serial 
+
+communication.
+
+For two serial devices to communicate, the communications parameters 
+
+must be
+
+matched and the proper cabling configuration must be established. This 
+
+article
+
+describes in some detail how to connect the Braille 'n Speak to both the 
+
+Apple
+
+2e and Apple 2c computers.
+
+
+
+When a Braille 'n Speak file is sent to a computer, the file is said to
+
+have been "uploaded." When files are sent from a computer to the Braille 'n
+
+Speak, the term "downloaded" is commonly used. The ability to upload and
+
+download files makes the Braille 'n Speak a very powerful tool indeed. To 
+
+take advantage of this power, one must connect the two devices using the Braille
+
+'n Speak's interface cable.
+
+
+
+The Apple 2e does not have a serial port built-in. One must install a
+
+serial interface card in one of the seven expansion slots inside the 
+
+computer.
+
+The most widely used of these interface cards is the Apple Super Serial Card
+
+(SSC). This article will de
+
+
+
+al exclusively with the SSC. Complete instructions 
+
+on
+
+installing the SSC are available in the SSC user's manual.
+
+
+
+In addition to needing a serial port, the Apple must be running software
+
+that can import and export data through this serial port. Many of the popular
+
+software packages written for blind users have this capability. This article
+
+explains how to set up the interface between the Braille 'n Speak, the Apple 
+
+2e,
+
+and the Apple 2c running the BEX word processing software from Raised Dot
+
+Computing of 
+
+
+
+Madison, Wisconsin. Raised Dot Computing has developed a set 
+
+of
+
+standard switch settings for the SSC that enables BEX to work with many 
+
+devices
+
+including the Braille 'n Speak.
+
+
+
+
+
+Preparing the Super Serial Card
+
+
+
+1. Make certain that the SSC jumper block, the one with a white triangle on 
+
+it,
+
+points to the word "terminal" and not to the word "modem". If the triangle
+
+points toward "modem" remove the jumper block and turn it around.
+
+2. There are two banks of DIP switches on the SSC. Set them as follows.
+
+Bank 
+
+
+
+one: OFF OFF OFF ON OFF ON OFF.
+
+Bank two: OFF OFF ON ON ON OFF OFF.
+
+
+
+The SSC is now set for 9600 baud, 8 data bits, 2 stop bits, and no parity.
+
+Even if these technical terms mean nothing to you, it is essential that the
+
+communications parameters on the Braille 'n Speak have these same values. 
+
+In its
+
+default state, the Braille 'n Speak is set at 9600 baud, 8 data bits, 1 stop
+
+bit, and no parity. There is therefore only one Braille 'n Speak parameter that
+
+does not match these SSC settings. The Braille 'n Spe
+
+
+
+ak default is 1 stop bit,
+
+and the SSC is set for 2 stop bits. If the number of stop bits is not the same
+
+for both the Braille 'n Speak and the SSC, you will get garbage instead of 
+
+data.
+
+Change the number of stop bits to two on the Braille 'n Speak. This is done 
+
+with
+
+a chord p followed by an s followed by a 2. Remember that the Braille 'n 
+
+Speak
+
+will keep this new setting until you change it again.
+
+
+
+Cabling
+
+
+
+Now that the communications parameters on the SSC and the Braille 'n Speak
+
+are set, it is necessary
+
+
+
+ to cable the two systems together. Plug the small 
+
+end
+
+of the Braille 'n Speak's interface cable into the serial port on the Braille 'n
+
+Speak; closest to the battery charger jack. Although you can physically plug 
+
+the
+
+other end of the cable into the SSC connector, do not do it. It is necessary to
+
+use a universal null modem adapter between your Braille 'n Speak cable and 
+
+the
+
+SSC connector. This universal null modem adapter is available from Radio 
+
+Shack.
+
+Plug the female side of the adapter into the Braille
+
+
+
+ 'n Speak's interface 
+
+cable,
+
+and plug the male side of the adapter into the SSC connector. Without this
+
+adapter, both the Braille 'n Speak and the Apple try to send and receive data 
+
+on
+
+the same data lines. This prevents any communication from taking place. If 
+
+the
+
+Braille 'n Speak's interface cable is too short to conveniently be plugged into
+
+the SSC connector, it is possible to use a straight through 25 pin serial 
+
+cable
+
+as an extension. You will still need to use the universal null modem adapter. 
+
+If
+
+th
+
+
+
+e extension cable has male connectors on both ends, as many printer 
+
+cables do,
+
+you will need an RS232 sex change adapter from Radio Shack. Use both the
+
+universal null modem and sex change adapters.
+
+
+
+Braille 'n Speak and BEX
+
+
+
+Now that the communications parameters have been matched and the cabling
+
+has been worked out, it is possible to both upload Braille 'n Speak files into
+
+BEX chapters and to download BEX chapters to the Braille 'n Speak. To send
+
+Braille 'n Speak files to BEX, use the input through slot p
+
+
+
+rogram on BEX's
+
+second menu. To send BEX chapters to the Braille 'n Speak, use BEX's print
+
+option from the main menu. The BEX documentation gives complete details on 
+
+how
+
+to use these features. Remember to turn the Braille 'n Speak's serial port on
+
+before attempting to communicate with the Apple.
+
+
+
+Once the interface is working properly, it is a simple matter to send data
+
+back and forth between the Braille 'n Speak and BEX. If you have problems,
+
+review section six of the Raised Dot Computing BEX Interface Gu
+
+
+
+ide. 
+
+Although it
+
+does not discuss the Braille 'n Speak specifically, it contains some general
+
+information on setting up a new serial interface.
+
+
+
+*** Braille 'n Speak BEX and the Apple 2c
+
+
+
+Although the Apple 2c does not have expansion slots to plug a Super Serial
+
+Card into, BEX sets the two built-in serial ports to the Raised Dot Computing
+
+standard settings of 9600 baud, 8 data bits, 2 stop bits, and no parity. These
+
+settings are identical to the Braille 'n Speak's default parameters with the
+
+exception of the n
+
+
+
+umber of stop bits. Change the Braille 'n Speak to 2 stop
+
+bits. This is done from the Braille 'n Speak's keyboard. Enter a chord p
+
+followed by an s followed by a 2. When BEX is running on the Apple 2c, 
+
+setting
+
+up the interface between the Braille 'n Speak and the Apple 2c is identical to
+
+setting up the interface between the Apple 2e and the Braille 'n Speak with 
+
+one
+
+exception. The Apple 2c serial ports require a round nine pin din connector.
+
+This means that the Braille 'n Speak's interface cable cannot be
+
+
+
+ plugged into
+
+the serial port. An Apple 2c printer cable must be used. One end of this cable
+
+has the necessary 9 pin connector which plugs into the serial port on the 
+
+Apple
+
+2c. The other end has the standard 25 pin male RS232 connector. This 
+
+connector
+
+should be plugged into an RS232 sex change adapter. The other side of the 
+
+sex
+
+change adapter is plugged into the universal null modem adapter. The female 
+
+side
+
+of the null modem adapter is plugged into the Braille 'n Speak's interface
+
+cable. Make sure that 
+
+
+
+the Braille 'n Speak is set for 9600 baud, 8 data bits, 2
+
+stop bits, and no parity. Further, remember to turn on the Braille 'n Speak's
+
+serial port before attempting to communicate with the Apple.
+
+
+
+
+
+*** Braille 'n Speak ProTERM and the Apple 2
+
+by Robert Carter
+
+
+
+
+
+The Braille 'n Speak has an RS232 serial port which enables it to send data
+
+to and receive data from other devices that are capable of serial 
+
+communication.
+
+For two serial devices to communicate, the communications parameters 
+
+must be
+
+matched and the p
+
+
+
+roper cabling configuration must be established. This 
+
+article
+
+describes in some detail how to connect the Braille 'n Speak to both the 
+
+Apple
+
+2e and Apple 2c computers.
+
+
+
+When a Braille 'n Speak file is sent to a computer, this is typically
+
+called "uploading" the file. When files are sent from a computer to the 
+
+Braille
+
+'n Speak files are said to be "downloaded." The ability to upload and download
+
+files makes the Braille 'n Speak a very powerful tool indeed. To take 
+
+advantage
+
+of this power, one must connec
+
+
+
+t the two devices using the Braille 'n Speak's
+
+interface cable.
+
+
+
+The Apple 2e does not have a serial port built-in. One must install a
+
+serial interface card in one of the seven expansion slots inside the 
+
+computer.
+
+The most widely used of these interface cards is the Apple Super Serial Card
+
+(SSC). This article will deal exclusively with the SSC. Complete instructions 
+
+on
+
+installing the SSC are available in the SSC user's manual.
+
+In addition to needing a serial port, the Apple must be running software
+
+that c
+
+
+
+an import and export data through this serial port. Many of the popular
+
+software packages written for blind users have this capability. This article
+
+explains how to set up the interface between the Braille 'n Speak, the Apple 
+
+2e,
+
+and the Apple 2c running the ProTERM telecommunications and smart 
+
+terminal
+
+software from Microtalk of Louisville, Kentucky.
+
+
+
+Preparing the Super Serial Card
+
+
+
+1. Make certain that the SSC jumper block, the one with a white triangle on 
+
+it,
+
+points to the word "modem" and not to the
+
+
+
+ word "terminal." If the triangle
+
+points toward "terminal" remove the jumper block and turn it around.
+
+2. There are two banks of DIP switches on the SSC. Set them as follows.
+
+Bank one: ON OFF OFF ON ON ON ON.
+
+Bank two: OFF OFF OFF ON OFF ON OFF.
+
+
+
+The SSC is now set up to operate properly with ProTERM. Actually, this is
+
+the set up that Microtalk recommends when ProTERM is to be used with a 
+
+telephone
+
+modem. It so happens that this set up works fine with the Braille 'n Speak as
+
+well.
+
+
+
+ProTERM allows one to ea
+
+
+
+sily change the communications parameters from 
+
+the
+
+keyboard of the Apple. See the ProTERM documentation for instructions on 
+
+how to
+
+set the values for baud rate, data bits, stop bits, and parity. In its default
+
+state, the Braille 'n Speak is set at 9600 baud, 8 data bits, 1 stop bit, and no
+
+parity. ProTERM expects software handshaking which is the Braille 'n Speak's
+
+default setting as well. It is easy to match these parameters in ProTERM 
+
+from
+
+the Apple's keyboard. Make certain that the parameters match ex
+
+
+
+actly.
+
+
+
+Cabling
+
+
+
+Now that the communications parameters on the SSC and the Braille 'n Speak
+
+are set, it is necessary to cable the two systems together. Plug the small 
+
+end
+
+of the Braille 'n Speak's interface cable into the serial port on the Braille 'n
+
+Speak; closest to the battery charger jack. The 25 pin connector on the other
+
+end of the Braille 'n Speak's interface cable can be plugged into the SSC
+
+connector. If the Braille 'n Speak's interface cable is too short to
+
+conveniently be plugged into the SSC c
+
+
+
+onnector, it is possible to use a 
+
+straight
+
+through 25 pin serial cable as an extension. If the extension cable has male
+
+connectors on both ends, as many printer cables do, you will need an RS232 
+
+sex
+
+change adapter from Radio Shack.
+
+
+
+Braille 'n Speak and ProTERM
+
+
+
+Now that the communications parameters have been matched and the cabling
+
+has been worked out, it is possible to both upload Braille 'n Speak files into
+
+the Apple and to download PRODOS Apple textfiles to the Braille 'n Speak. To
+
+send Braille 'n Sp
+
+
+
+eak files to ProTERM, activate the Braille 'n Speak's serial
+
+port and turn ProTERM's capture buffer on. Use the transmit text commands 
+
+on the
+
+Braille 'n Speak to send the text to the Apple. To send Apple textfiles to the
+
+Braille 'n Speak, turn on the Braille 'n Speak's serial port and use ProTERM's
+
+transmit command.
+
+
+
+*** Braille 'n Speak ProTERM and the Apple 2c
+
+
+
+When ProTERM is loaded on the Apple 2c, it takes control of the built-in
+
+serial ports. This allows one to set the communications parameters from the
+
+
+
+
+
+Apple's keyboard. Set ProTERM to match the Braille 'n Speak's 
+
+communications
+
+parameters. The default parameters on the Braille 'n Speak are: 9600 baud, 8
+
+data bits, 1 stop bit, and no parity. ProTERM expects software handshaking 
+
+which
+
+is the Braille 'n Speak's default setting as well. The Apple 2c serial ports
+
+require a round nine pin din connector. This means that the Braille 'n Speak's
+
+interface cable cannot be plugged into the serial port. An Apple 2c printer
+
+cable must be used. One end of this cable h
+
+
+
+as the necessary 9 pin connector
+
+which plugs into serial port one on the Apple 2c. The other end has the 
+
+standard
+
+25 pin male RS232 connector. This connector should be plugged into an 
+
+RS232 sex
+
+change adapter. The other side of the sex change adapter is plugged into the
+
+male side of the universal null modem adapter. The female side of the null 
+
+modem
+
+adapter is plugged into the Braille 'n Speak's interface cable. Both the
+
+universal null modem and RS232 sex change adapters are available from 
+
+Radio
+
+Shack. 
+
+
+
+Remember to turn on the Braille 'n Speak's serial port before 
+
+attempting
+
+communications with the Apple.
+
+
+
+VersaBraille is a trademark of Telesensory Systems Inc.
+
+BEX is a trademark of Raised Dot Computing, Inc.
+
+ProTERM is a product of Microtalk of Louisville, Ky.
+
+
+
+
+
+ÿ                       *** Using the Braille 'n Speak with BEX
+
+              by Phyllis Herrington, David Holladay, and Caryn Navy
+
+
+
+     By cabling the Braille 'n Speak to an Apple II computer, you can transfer
+
+data between the two devices. The Braille 'n Speak is able to transmit data to
+
+the Apple via the Input Through Slot option of BEX. Likewise, the Print option
+
+of BEX enables you to send a file to the Braille 'n Speak. The only software
+
+needed is BEX.
+
+
+
+     \\h3 Equipment Requirements
+
+
+
+     An Apple IIe or Apple IIgs requires a Super Serial Card for Input through
+
+Slot. If you have an Apple IIc or and Apple IIc Plus, you use the printer port.
+
+You also need the proper cables for interfacing the Braille 'n Speak to the
+
+Apple.
+
+
+
+     \\h3 Cabling and Interface Cards
+
+
+
+     To cable the Braille 'n Speak's IO cable to the Super Serial Card, you need
+
+a universal null modem adapter (RDC 3F cable) between the IO cable and the SSC
+
+connector. To connect to an Apple IIc, you need a 2F cable and a 3F cable. To
+
+connect to an Apple IIc plus, you need a 11F and a 3F cable.
+
+x
+
+     Set the Super Serial Card to RDC's standard parameters (see the separate
+
+section on Serial Interfaces).
+
+
+
+     \\h3 Braille 'n Speak to Apple
+
+
+
+     Configure BEX at the User or Master Level. Answer yes to the question Do
+
+you have a remote device to input through slot? Give the slot number for the
+
+Super Serial Card (or the Apple IIc or IIc+ port) that you will be connecting to
+
+the Braille 'n Speak. Press N to answer no to the automatic set-up sequence
+
+question. Answer no to the question Is this a Kurzweil Reading Machine?
+
+
+
+     Include in your configuration a printer for output to the Braille 'n Speak.
+
+Define a printer using the same slot as your remote serial device. How you
+
+configure this printer determines the format of the Braille 'n Speak file once
+
+it's downloaded. If you want every BEX character, including
+
+commands, in your Braille 'n Speak file, configure this printer as a class P -
+
+Paperless brailler. It works well to define this transfer printer as a Thiel
+
+brailler; then BEX underlining commands do not interfere with your Braille 'n
+
+Speak data. If you avoid BEX underlining in the material that you send out, a
+
+Generic printer is fine. Use the carriage width and form length of your choice.
+
+If you want to keep form feed characters out of your data, use form length zero.
+
+
+
+     Use Input through Slot on BEX's Second Menu to get BEX to listen to the
+
+Braille 'n Speak. See User Level Section 12 in the BEX manual for more
+
+information about Input through Slot. Once you supply a target chapter name and
+
+press <CR>, BEX prompts you to start the transfer.
+
+
+
+     Make sure the Braille 'n Speak is set for 8 data bits, 2 stop bits, no
+
+parity, 9600 baud, and hardware handshaking. To set the Braille 'n Speak to 2
+
+stop bits, enter chord-P S 2. If hardware handshaking does not work, change to
+
+software handshaking.
+
+
+
+                    *** Fun with the Blazie Engineering External Disk Drive: Part 1
+
+                                  by Caryn Navy
+
+ 
+
+     Phyllis Herrington introduced the Blazie Engineering External Disk Drive in
+
+this Newsletter in the May/June 1991 issue. The external disk drive makes it
+
+easy to pass material back and forth between the Braille 'n Speak and 3.5 inch
+
+disks completely compatible with MS-DOS systems. I lusted after this device for
+
+quite some time but regarded it as a luxury. Eventually, the desire to read
+
+material from disk while taking care of our infant son convinced me to go ahead
+
+and order the Blazie External Disk Drive. Several days after I sent my check to
+
+Blazie Engineering, a fire swept through their production facility. So it was a
+
+few more weeks before the UPS driver brought the long-awaited package from the
+
+resilent folks at Blazie Engineering.
+
+ 
+
+     It turns out that using the Braille 'n Speak and the external disk drive
+
+while doing child care for my one-year-old is not as easy as I thought. He
+
+thinks the Braille 'n Speak is a great toy!
+
+ 
+
+     To use the Blazie External Disk Drive with serial devices other than the
+
+Braille 'n Speak, you can buy an additional cable, the serial cable for the
+
+external disk drive. I purchased this cable to try out some other uses for the
+
+external disk drive.
+
+ 
+
+                 Printing Directly from the External Disk Drive
+
+ 
+
+     When I got the external disk drive, I was anxious to try to print material
+
+directly from the drive to a serial printer, without making the material pass
+
+through the Braille 'n Speak. That would make the external disk drive a very
+
+portable device for printing MS-DOS files on a variety of printers located
+
+anywhere around Raised Dot Computing, without tying up any computer. Since I had
+
+forgotten to order the optional serial cable for the disk drive, I had to wait a
+
+few more days before experimenting. Here is what I learned about printing
+
+directly from the disk drive to a serial printer.
+
+ 
+
+     When you connect the external disk drive to a serial device with the serial
+
+cable, you can load files from disk into the serial device. The command for this
+
+is {<control-E> L [filename] <CR>}. (Control-E is the command character for
+
+serial operation of the disk drive, L is for load, and <CR> terminates serial
+
+commands.) I hoped that loading a file into a serial printer would cause it to
+
+be printed. The problem is that most serial printers, not designed to send
+
+characters out, can't send the Load command to the disk drive. The trick is to
+
+send the Load command from the Braille 'n Speak to the disk drive, make the disk
+
+drive pause, recable the disk drive to the printer, and then give the disk drive
+
+the signal that it's okay to start loading.
+
+ 
+
+     The external disk drive uses software handshaking. This is a simple system
+
+where the character control-S, sent as data, means "stop," and control-Q means
+
+"okay to send." (I don't know of a good mnemonic for the letter Q here.)
+
+ 
+
+     To print the file {BANANA.BFM} from the disk drive to the VersaPoint, I
+
+began by writing on the Braille 'n Speak. I opened a new file in the Braille 'n
+
+Speak and wrote {<control-E> L BANANA.BFM <CR> <control-S>}. Then I set the
+
+Braille 'n Speak for 9600 baud, 8 data bits, 1 stop bit, and software
+
+handshaking, and I turned on the serial port. I cabled the Braille 'n Speak
+
+serial port to the disk drive, using the Braille 'n Speak I/O cable, a null
+
+modem, and the serial cable for the disk drive. I turned on the disk drive and
+
+transfered my short file with chord-T Z. I set the VersaPoint for 9600 baud, 8
+
+data bits, and XON/XOFF handshaking (another name for software handshaking) and
+
+switched to serial output. I turned on the VersaPoint and switched it off line.
+
+Then I cabled the disk drive to the VersaPoint serial port, using the serial
+
+cable for the disk drive and a male-to-male gender adapter. When I switched the
+
+VersaPoint on line again, the VersaPoint began printing the file {BANANA.BFM}.
+
+The braille came out with good format since the file was already formatted for
+
+braille output by Hot Dots.
+
+ 
+
+     Here is how this works. When you send the character control-S (the
+
+handshake for stop) to the disk drive after the Load command, the disk drive
+
+waits for a control-Q before loading the file to the device at the other end of
+
+the serial cable. When the VersaPoint is set for software handshaking and you
+
+switch it from off line to on line, it sends out the character control-Q to say,
+
+"Okay, I'm ready to receive now." When the disk drive receives this control-Q
+
+signal, it begins to load the file to the device at the other end of the serial
+
+cable, which is now the VersaPoint.
+
+ 
+
+     This method should work with any serial embosser or inkprint printer that
+
+can operate at 9600 baud with software handshaking and can be switched between
+
+off line and on line.
+
+ 
+
+     We will cable up again in Part 2 to discuss transfering data between the
+
+Blazie External Disk Drive and BEX.          
+***
+***  Fun with the Blazie Engineering External Disk Drive: Part 2
+
+                                 by Caryn Navy
+
+ 
+
+     When I got the Blazie disk drive, I worked out a method for transfering
+
+files between it and BEX. This enables you to transfer material between BEX and
+
+MS-DOS formats without having an MS-DOS machine, or without having one near your
+
+Apple. It provides a method for backing up BEX chapters on large capacity disks.
+
+By transferring BEX chapters to the Blazie disk drive, you can read them on the
+
+Braille 'n Speak when you're away from your Apple. Here is how you can
+
+accomplish transfers in both directions.
+
+ 
+
+||h2
+
+                            Cabling and Configuring
+
+ 
+
+     On the Apple 2e or 2gs, use the Super Serial Card with RDC standard
+
+settings (BEX Interface Guide, Section 6). To cable the Super Serial Card to the
+
+Blazie disk drive, make a chain with a male to male gender adapter, a null
+
+modem, and the serial cable for the Blazie disk drive. On an Apple 2c, use an
+
+RDC 2M cable together with a null modem and the serial cable for the Blazie disk
+
+drive.
+
+ 
+
+     Set up a special BEX configuration at the master level for communicating
+
+with the Blazie disk drive. I recommend setting up two special printers in this
+
+configuration for working with the Blazie disk drive. Make one class G (generic
+
+inkprint) with carriage width 80 and form length 0 and the following automatic
+
+set-up sequence: {<control-I> 1 D <CR> <control-I> 7 P <CR> <control-I> X
+
+<space> E <CR>} (13 characters). This automatic set-up sequence enables the
+
+Super Serial Card to talk to the Blazie disk drive. If you are using an Apple 2c
+
+instead of a Super Serial Card, use control-A in place of control-I in the above
+
+sequence. Set up an additional printer which is class P (paperless brailler) and
+
+has the same automatic set-up sequence. From here on, let's assume that the
+
+generic inkprint printer is Printer 1 and the paperless brailler is Printer 2.
+
+ 
+
+||h2
+
+               Sending Material from BEX to the Blazie Disk Drive
+
+ 
+
+     To save material from BEX on the Blazie disk drive in a file called
+
+[filename], create a BEX chapter called {SEND} which contains the Save command
+
+for the Blazie disk drive. This is {<control-E> S [filename] <CR>}. To create
+
+control-E in the BEX Editor, press control-C followed by E. Don't type any
+
+spaces or brackets in this sequence. Also create a BEX chapter called {Z} which
+
+contains the single character control-Z. To print the material to the Blazie
+
+disk drive, turn it on and print the chapters {SEND}, whatever chapters you want
+
+to transfer, and {Z} from BEX. When BEX asks you "which printer?", respond with
+
+1, the number for the special generic inkprint printer you set up for
+
+communicating with the Blazie disk drive. The Blazie disk drive will whir. When
+
+it has finished saving your material, it makes a short beep, and you can turn it
+
+off. The text will be formatted with carriage width 80 and two carriage
+
+return-linefeeds between paragraphs, and no form feeds. If you want instead to
+
+save the text with all the BEX formatting commands and paragraph indicators
+
+intact, use Printer 2, the special paperless brailler that you set up.
+
+ 
+
+||h2
+
+               Sending Material from the Blazie Disk Drive to BEX
+
+ 
+
+     To send the file called [filename] from the Blazie disk drive to BEX, use
+
+BEX's Input through slot option in the Second Menu. On the Apple, after typing
+
+the BEX chapter name in which to store the material and <CR>, type {T
+
+<control-B> P1 <control-E> L [filename] <CR>}. Don't type any spaces or brackets
+
+in this sequence. This sends the appropriate Load command to the Blazie disk
+
+drive; the Blazie disk drive should whir and BEX should hum happily. The letter
+
+T brings up a special text mode which allows you to enter text from the keyboard
+
+while using Input through slot. The control-B P 1 makes screen output go to
+
+printer 1 as well, the special printer you set up for commands to the Blazie
+
+drive. This control-B command works only at the master level. {<control-E> L
+
+[filename] <CR>} loads material from file [filename] on the Blazie disk drive.
+
+<CR> also terminates the special text mode in Input through slot.
+
+ 
+
+     When the Blazie disk drive beeps and BEX stops humming, the transfer is
+
+complete and you can turn off the disk drive. If you are using an Echo
+
+synthesizer, the previous load command coincidentally told your Echo to speak in
+
+letters; type {<control-E> W} to make the Echo speak in words again. Press Q on
+
+the Apple to save the BEX chapter. Then type <control-B> P D} to stop sending
+
+screen output to Printer 1.
+
+ 
+
+     When you look at the BEX chapter you received, there will be a few extra
+
+characters at the beginning, including the Load command you typed.
+
+ 
+
+     I leave it to you to decide if this is a game for technology junkies or a
+
+useful technique.
+
+         *** Interfacing the Braille 'n Speak and VersaPoint
+
+                     Robert Carter, Ph.D.
+
+                                                 March 3, 1991
+
+
+
+                         Introduction
+
+
+
+     It is possible to connect the Braille 'n Speak directly to
+
+the VersaPoint Braille embosser.  When the interface is properly
+
+configured, the Braille 'n Speak user can easily and efficiently
+
+use the VersaPoint to generate hardcopy braille from Braille 'n
+
+Speak files.  This document will explain how to connect the two
+
+devices.  Follow these step by step instructions to decrease the
+
+likelihood of encountering problems.
+
+
+
+                      What YOu Will Need
+
+
+
+     Aside from the VersaPoint and Braille 'n Speak, you will
+
+need the Braille 'n Speak interface cable and paper for the
+
+VersaPoint.  No other equipment is needed.
+
+
+
+             Step-By-Step Interfacing Instructions
+
+
+
+1. Plug the 25 pin male Braille 'n Speak interface cable into
+
+the female serial port on the VersaPoint.  This port is located
+
+on the right side of the VersaPoint and is the second port
+
+closest to the back of the printer.  Plug the other end of the
+
+cable into the Braille 'n Speak's serial port.  This is the
+
+second port on the left side of the Braille 'n Speak.
+
+
+
+2. Set the communication parameters on the VersaPoint.  The
+
+VersaPoint allows one to set and save the parameters by entering
+
+commands using the VersaPoint's control panel.  There is
+
+detailed information on how to use the control panel in the
+
+VersaPoint owner's manual. REad this section before attempting
+
+to make the following modifications.  The VersaPoint has the
+
+ability to store five different configurations in its memory. 
+
+These can be called upon when you use the VersaPoint with
+
+different pieces of equipment.  I will use configuration 4 as
+
+the one to be customized for this interface.  YOu can modify any
+
+configuration that you like.  I chose 4 because only a few
+
+parameters are likely to need modification.
+
+
+
+3. To modify and save the parameters that make up configuration
+
+number 4, do the following.  Make sure  that paper is loaded
+
+into the VersaPoint.  You will need to turn the power on to load
+
+the paper.  See the VersaPoint owner's manual if you need help
+
+in loading the paper.  After the paper has been loaded, turn the
+
+power off.  With the power still off, press down on the left
+
+side of the rocker switch labeled "on" to put the VersaPoint in
+
+online mode.  Next locate the "lf" button on the control panel. 
+
+While holding down the "lf" button, reach around to the back of
+
+the VersaPoint and turn on the power.  The VersaPoint will begin
+
+printing out instructions.  It will tell you to use the "lf"
+
+button to cycle through parameter options and to use the "ff"
+
+button to record an option and move to the next menu item.  As
+
+you work your way through this menu, the VersaPoint will display
+
+settings and give you the opportunity to either change the
+
+particular setting or to move on to the next item on the menu. 
+
+If you wish to change a setting, press the "lf" button until the
+
+VersaPoint prints out the desired value of that setting.  If you
+
+want to leave a setting the way it is, simply press the "ff"
+
+button.  Cycle through the possible options until your parameter
+
+settings match those on the list presented below.  If you have
+
+an older VersaPoint, all of these parameters will not be
+
+available.  Do not worry about any parameters that do not appear
+
+on your VersaPoint menu.  Simply match the ones that do appear
+
+with this list.
+
+
+
+language: u.s.a.
+
+dots/cell: 6
+
+reduced buffer off
+
+dsp ext ascii
+
+sideways printing: off
+
+multiple copy: off
+
+page length (inches): 11
+
+left margin 0
+
+right margin 40
+
+line length: 40
+
+line/page: 26
+
+auto wraparound: off
+
+auto line-feed: off
+
+strobe low
+
+busy high
+
+interface: serial
+
+baud rate: 9600
+
+bits/char: 8
+
+xon/xoff: on
+
+dtr: low
+
+dsr: off
+
+
+
+When you press the "ff" button after this last parameter, you
+
+will be back at the language parameter.  Press "tf" and the
+
+VersaPoint will ask if you want to store setup 4.  Press "FF"
+
+and press "tf."  This will cause the VersaPoint to print out the
+
+message "end of setup."  At that point, the VersaPoint will be
+
+using  the settings that you have just chosen.  In fact, it will
+
+use these settings every time the power is turned on.  If you do
+
+not want these settings to be the power on default, you can go
+
+back into the menu and select another configuration to be the
+
+default.  The VersaPoint manual explains exactly how this is
+
+done.
+
+
+
+4. It is now time to turn your attention to the Braille 'n
+
+Speak.  Turn on the Braille 'n Speak and enter the status menu
+
+with Chord-st; that is, the space bar and dots 3 and 4 pressed
+
+simultaneously.  Use the dot 1 and dot 4 Chords to move around
+
+in this menu.  Set the Braille 'n Speak for 9600 baud, 8 data
+
+bits, 1 stop bit, no parity, software handshaking, append
+
+linefeed when transmitting on, line length 40, page length 25,
+
+and no left or top margins.  Exit the status menu and open the
+
+file that you want to send to the VersaPoint.  If this is a
+
+grade II braille file, type Chord-t followed by a "b" to print
+
+the file.  The Braille 'n Speak manual discusses other print
+
+possibilities.  Now that the interface is working, you need only
+
+select that particular configuration, if it is not the default,
+
+whenever you want to print directly from the Braille 'n Speak.             
+***
+***  
+*** Interfacing Braille 'n Speak and Romeo
+
+                     Robert Carter, Ph.D.
+
+
+
+                                                 March 2, 1991
+
+
+
+                         Introduction
+
+
+
+     In addition to producing high-quality braille, the Romeo
+
+braille embosser was designed to successfully interface with a
+
+variety of microprocessor-based products.  The purpose of this
+
+document is to explain how to interface the Romeo embosser with
+
+the Braille 'n Speak.  Once this interface is working properly,
+
+one can produce well formatted braille by plugging the Braille
+
+'n Speak into the Romeo.  No other computer is needed.  A step
+
+by step description of how to successfully accomplish this
+
+interface will be presented.  Some familiarity with the Romeo
+
+and the Braille 'n Speak will be assumed.  The owner's manuals
+
+for both pieces of equipment should be read before attempting
+
+this interface.
+
+
+
+                      What YOu Will Need
+
+
+
+     In addition to the Romeo and Braille 'n Speak, you will
+
+need braille paper for the Romeo and a 25 pin female to female
+
+sex change adapter for the Braille 'n Speak.  Such a gender
+
+changer can be purchased in most computer stores.  Both the
+
+Braille 'n Speak and the Romeo have 25 pin male connectors. 
+
+They cannot be connected together without this adapter.
+
+
+
+             Step-By-Step Interfacing Instructions
+
+
+
+1. Attach the female to female gender changer to the Braille 'n
+
+Speak interface cable.  Plug this cable into the serial port
+
+located on the top right side of the Romeo.  There are two
+
+ports.  Use the one closest to the Romeo's keypad.  Plug the
+
+small end of the cable into the Braille 'n Speak's serial port. 
+
+This is the second port on the left side (the port farthest from
+
+you) of the Braille 'n Speak.
+
+
+
+2.  Load paper into the Romeo.  If you do not know how to do
+
+this, see section B of the Romeo owner's Manual.  
+
+
+
+3. Turn on the Romeo.  You should hear the first few notes of
+
+the theme from Romeo and Juliet.  This music lets you know that
+
+the Romeo has performed its self test and is ready to accept
+
+data.
+
+
+
+4. Press the top right key on the Romeo keypad.  You will hear
+
+two tones, a high one followed by a low one.  These tones
+
+confirm the Romeo has been placed in command mode.  Once you are
+
+in command mode, you can prepare the Romeo to accept data from
+
+the Braille 'n Speak.
+
+
+
+5. The Romeo is similar to the Braille 'n Speak in that you can
+
+set the Romeo's communications parameters from its keyboard. 
+
+It is possible to store as many as sixteen different sets of
+
+parameters and to quickly change to a different set when using
+
+the Romeo with different equipment.  Even though all sixteen
+
+configurations can be changed, the first eight come set up for
+
+the most popular computers.  The manual does not show one
+
+designed especially for the Braille 'n Speak.  This is not a
+
+problem.  Menu number 2 will work just fine with only one
+
+modification.
+
+
+
+6. To enter menu number 2, press the following key sequence on
+
+the Romeo keypad: 0.2e; That is, the number zero, followed by
+
+the decimal point, followed by the number 2, and finally the e
+
+or enter key.  If you do not know where these keys are located,
+
+read section c in the Romeo owner's manual.  After you enter
+
+this key sequence, you should hear a couple of pleasant tones. 
+
+If you hear a harsh buzz, you will know that the command was not
+
+acceptable.  YOu probably made an error.  Simply try again.
+
+
+
+7. The one parameter that must be changed in this menu is the
+
+handshaking parameter, number 8.  This parameter needs to be set
+
+to zero which represents software (or XON XOFF) handshaking.  To
+
+set software handshaking, type the following keystrokes: 8.0e;
+
+that is, the number eight, followed by the period or decimal
+
+point, followed by zero, and ending with the e or enter key.  At
+
+the end of this key sequence, you should hear the two pleasant
+
+tones.  If you hear the harsh tone, try again.  To save this
+
+change, clear the Romeo's buffer, exit edit mode, and return the
+
+printer to its online state, enter the following keystrokes:
+
+1.1e; that is, the number one, followed by point, followed by
+
+the number one, followed by e for enter.  YOu should hear the
+
+Romeo and Juliet theme.
+
+
+
+8. If the other parameters in menu number 2 are set the way they
+
+were set at the factory, you are ready to print from the Braille
+
+'n Speak.  Since whenever parameters are changed the changes are
+
+automatically saved, assuming that the other parameters are
+
+still at their default settings may not be safe.  For this
+
+reason, it is a good idea to print out the parameters that are
+
+being used in menu number 2.  To do this, enter the following
+
+keystrokes.  Press the top right key to put the Romeo back in
+
+command mode.  You should hear a high tone followed by a low
+
+tone.  Next type 0.2e; that is, zero, followed by point,
+
+followed by the number two, and finally the e or enter key. 
+
+After hearing the two pleasant tones, enter these keys: 2.ve;
+
+that is, the number two, followed by the point, followed by the
+
+v or view key, and ending with the e or enter key.  As soon as
+
+this sequence is completed, the Romeo should print out the 31
+
+parameters in this menu.  Compare your list of parameters to the
+
+following list.  They should match exactly.  When the Romeo has
+
+completed the printing of the parameters, press the e or enter
+
+key two or three times or until you hear the two pleasant tones. 
+
+Then press the form feed key to advance the paper so that the
+
+printout of the parameters can be removed from the printer.
+
+The following list is for menu 2.
+
+The serial port is currently active.
+
+The current baud rate is 9600.
+
+8 data bits per character.
+
+1 stop bit per character.
+
+No parity selected.
+
+The communications code is ASCII.
+
+Printer busy is XON XOFF.
+
+Automatic line feed after emboss is off.
+
+Word wrap is off.
+
+The perf skip is active.
+
+Paper out detection is on.
+
+NO line feed sent with a carriage return.
+
+The right margin is column 42.
+
+The left margin is column 1.
+
+Do not emboss control characters.
+
+Lines per page is 27.
+
+The page length is 11.0 inches.
+
+Do not emboss on plastic.
+
+The control character table is empty.
+
+The hot zone is off.
+
+Do not respond to escape sequences.
+
+The console bell point is 0.
+
+The external keyboard is off.
+
+The local echo is off.
+
+6 dot computer braille is selected.
+
+The 80-160 column mode is off.
+
+The USA character set is selected.
+
+No extended character set selected.
+
+The 6 dot graphics set is selected.
+
+The auto print setting is 0.
+
+
+
+If these parameters do not match your printout, see section D in
+
+the Romeo user's manual to learn how to change the ones that do
+
+not match.
+
+
+
+9. After changing any parameters that did not match, enter the
+
+following key strokes to select menu 2 and to prepare the Romeo
+
+to accept data from the Braille 'n Speak: 0.2e; that is, zero,
+
+point, two, and e or enter.  Follow that sequence with 1.1e one,
+
+point, one, and e for enter.  After this sequence of keys, you
+
+should hear the Romeo and Juliet theme.  This means that the
+
+printer is now using menu 2 and is ready for data to be sent
+
+from the Braille 'n Speak.  Menu 2 will remain in effect until
+
+you change to another menu or turn the power off.  If you wish
+
+to make menu 2 the menu that gets selected each time the Romeo
+
+is turned on, enter the following keystrokes: 0.2e; that is, the
+
+number zero, followed by point, followed by the number two, and
+
+then e or enter.  Follow that sequence with the following
+
+commands: 1.0e; that is, the number one, followed by point,
+
+followed by the number zero, and e for enter.  Remember that the
+
+printer must be in command mode or offline before you can enter
+
+these commands.  If you do not wish to set this menu up to be
+
+the default menu, you will need to select menu 2 whenever you
+
+wish to print directly from the Braille 'n Speak.  To select
+
+menu 2, put the printer in command mode by pressing the top
+
+right key until you hear a high tone followed by a low tone. 
+
+Next type 0.2e; that is, zero, point, two, e for enter.  After
+
+hearing the two pleasant tones, type 1.1e; that is, one, point,
+
+one , e for enter.  This will tell the Romeo to use menu 2 for
+
+this session.  Note that you do not have to reset the handshake
+
+parameter each time.  This setting is saved in permanent memory. 
+
+In other words, turning off the power does not cause the Romeo
+
+to forget that menu 2 is now set up for software handshaking.
+
+
+
+10. Now turn your attention to the Braille 'n Speak.  Power it
+
+on and enter the status menu by typing Chord-st; that is, the
+
+spacebar along with dots 3 and 4.  Once you are in the status
+
+menu, make sure that the following parameters match your Braille
+
+'n Speak settings.  All of the Braille 'n Speak parameters are
+
+not listed here.  You will therefore need to use Chord-a and
+
+Chord-dot 4 to move around this list and change any that do not
+
+match.  You need 9600 baud, 8 data bits, 1 stop bit, no parity,
+
+software handshaking, append line feeds when transmitting on,
+
+line length 42, page length 26,top, left, and bottom margins
+
+zero.  Note that the page length is set to 26.  This is one line
+
+less than the Romeo setting of 27.  This is necessary for all
+
+text to be printed.
+
+
+
+11. After setting the correct parameters, exit the status menu
+
+with Chord-e.  Open the file that you wish to have the Romeo
+
+print.  If this is a braille file and you want grade two
+
+braille, simply enter Chord-t followed by a b to have the entire
+
+file printed.  See the Braille 'n Speak owner's manual for
+
+information on other ways to transmit data out the serial port.
+*** Interfacing Braille 'n Speak
+
+                  with IBM-Compatible Computers
+
+
+
+                       Craig Werner, Ph.D.
+
+
+
+                        November 23, 1991
+
+
+
+
+
+
+
+                          Introduction
+
+
+
+     In order to communicate in a truly interactive mode with
+
+IBM-compatible (also called MS-DOS) computers--that is, in order
+
+to send commands to these machines and read the responses to
+
+these commands--you must use a speech software package with your
+
+Braille 'n Speak.  Several such packages are available from
+
+Blazie Engineering.  However, it is possible to transfer ASCII
+
+textfiles between the Braille 'n Speak and these computers.  
+
+
+
+
+
+
+
+                       What You Will Need
+
+
+
+     In order to transfer files to and from your Braille 'n
+
+Speak, you will need the serial interface cable supplied by
+
+Blazie Engineering.  Since the end of the cable you will plug
+
+into your computer ends in a male connector, and since the
+
+connector on your computer is probably also male, you will need a
+
+splicer, sometimes called a sex adapter, consisting of two female
+
+connectors wired together.  Plug one end of the splicer into your
+
+interface cable and the other into one of the serial ports of
+
+your computer.  If the connector on your computer is as long as
+
+the plug at the end of the interface cable, you'll need a 25-pin
+
+to 25-pin adapter; if it is shorter, you'll probably need a 9-pin
+
+to 25-pin adapter.
+
+
+
+     If you only wish to send files from your PC to the Braille
+
+'n Speak, you will not need any other software except DOS,
+
+although you may wish to use a telecommunications program to
+
+perform the transfer.  Reputable programs are Telix, ProComm,
+
+{COMMO{, and Qmodem.  If you wish to send files from the Braille
+
+'n Speak to your PC, you will either need a telecommunications
+
+package or SAVER, a shareware offering from Blazie Engineering
+
+available free to its customers and for $10 to non-customers. 
+
+The documentation for using SAVER is not included here as it
+
+comes with the software.  Sending files from the Braille 'n Speak
+
+to a PC via the DOS "COPY" command produces highly unpredictable
+
+results, so this procedure is not recommended.
+
+
+
+
+
+
+
+                    Step-by-Step Instructions
+
+
+
+     Steps 1 and 2 should be followed regardless of the direction
+
+in which you are transferring files.
+
+
+
+     1.  Connect your Braille 'n Speak to your PC using the
+
+interface cable and the splicer.
+
+
+
+     2.  Set Braille 'n Speak parameters to the following values: 
+
+baud 9600; data bits 8; parity n; stop bits 1; handshake s;
+
+interactive n.
+
+
+
+
+
+
+
+                     From PC to BNS via Dos
+
+
+
+     3.  Create a filename on your Braille 'n Speak under which
+
+to store the data from your PC.  To make sure you have enough
+
+room for all the data, you may wish to make the file size
+
+somewhat larger than you think is adequate.  You can always free
+
+the unused pages later using the "S" command in the Braille 'n
+
+Speak's File Command Menu.  Make sure you create this file with
+
+your Braille translator set to "off."  If you want strings of
+
+repeated characters, such as asterisks, to be received without
+
+the Braille 'n Speak's truncating them to a string of three, make
+
+sure the "reject ornamentation characters" option in the Status
+
+Menu is set to "off."
+
+
+
+     4.  Turn on the Braille 'n Speak's serial port.
+
+
+
+     5.  With your PC at the DOS prompt, type the word "COPY"
+
+followed by a space, the name of the file you wish to copy,
+
+another space, and the name of the communications port to which
+
+you have your Braille 'n Speak connected.  End the command with a
+
+colon and a press of the <ENTER> key.
+
+
+
+     Suppose you wish to copy the file "HELLO.TXT" to your
+
+Braille 'n Speak, which is connected to Com 1.  You would type
+
+
+
+COPY HELLO.TXT COM1: <ENTER>.
+
+
+
+     6.  With the Braille 'n Speak's Interactive Mode off, you
+
+may hear a faint buzzing or static as the file is sent.  To check
+
+to see if data is indeed being received, turn on Interactive
+
+Mode.  Note, however, that it is a good idea to keep this mode
+
+off as much as possible in order to speed up the transfer
+
+process.  Your computer will give no indication that the transfer
+
+has been completed, so you will have to check periodically to see
+
+if data is still coming into your Braille 'n Speak.
+
+
+
+     7.  If the file you have sent is garbled when you read it
+
+with your Braille 'n Speak, your PC's serial port is probably not
+
+set to the values the Braille 'n Speak is expecting.  If this is
+
+the case, you will have to set them with the DOS "MODE.COM"
+
+program before you send files.  To invoke this program, make sure
+
+you are logged into your DOS directory or that you have a path
+
+set to allow you to access DOS commands from any directory in
+
+your system.  Then type the word "MODE" followed by a space and
+
+the name of the communications port to which you have your
+
+Braille 'n Speak connected.  Type a colon, and end your command
+
+with the data bits, parity, and stop bits values that the
+
+Braille 'n Speak is set to, all separated by commas; finally,
+
+press your <ENTER> key.
+
+
+
+     Suppose your Braille 'n Speak is connected to Com 1.  You
+
+would type
+
+
+
+MODE COM1:9600,8,N,1 <enter>.
+
+
+
+
+
+
+
+         From PC to BNS via Telecommunications Software
+
+
+
+     8.  Make sure your telecommunications software is sending to
+
+the same communications port to which your Braille 'n Speak is
+
+connected.  The software's baud rate, parity, data bits, and stop
+
+bits values should be set as in Step 2.  Note that "software
+
+handshake" will probably be called "XON/XOFF handshake" or
+
+"XON/XOFF flow control" in your telecommunications software's
+
+setup routine.
+
+
+
+     9.  Invoke your telecommunications program, and place it in
+
+Terminal Mode.
+
+
+
+     10.  Turn on your Braille 'n Speak.  Note that turning on
+
+your Braille 'n Speak before invoking your telecommunications
+
+program may cause the software's modem installation string to be
+
+sent to a file.
+
+
+
+     11.  Create a filename on your Braille 'n Speak under which
+
+to store the data from your PC.  To make sure you have enough
+
+room for all the data, you may wish to make the file size
+
+somewhat larger than you think is adequate.  You can always free
+
+the unused pages later using the "S" command in the Braille 'n
+
+Speak's File Command Menu.  Make sure you create this file with
+
+your Braille translator set to "off."  If you want strings of
+
+repeated characters, such as asterisks, to be received without
+
+the Braille 'n Speak's truncating them to a string of three, make
+
+sure the "reject ornamentation characters" option in the Status
+
+Menu is set to "off."
+
+
+
+     12.  Turn on your Braille 'n Speak's serial port.
+
+
+
+     13.  Send the file from your PC to the Braille 'n Speak. 
+
+You will first have to give the telecommunications software's
+
+"send file" or "upload file" command and then specify you are
+
+sending via the ASCII protocol.  Consult the manual of your
+
+telecommunications program for these commands.  With the Braille
+
+'n Speak's Interactive Mode turned on, you will hear the text of
+
+the file coming into your Braille 'n Speak.  If you wish to speed
+
+up the transfer, turn Interactive Mode off.  If you have the
+
+alarm enabled in your telecommunications software, your PC should
+
+beep when the file has been sent.  If the alarm is off, you will
+
+have to check the status of the file periodically by turning the
+
+Braille 'n Speak's Interactive Mode on.
+
+
+
+
+
+
+
+         From BNS to PC via Telecommunications Software
+
+
+
+     14.  Make sure your telecommunications software is sending
+
+to the same communications port to which your Braille 'n Speak is
+
+connected.  The software's baud rate, parity, data bits, and stop
+
+bits values should be set as in Step 2.  Note that "software
+
+handshake" will probably be called "XON/XOFF handshake" or
+
+"XON/XOFF flow control" in your telecommunications software's
+
+setup routine.
+
+
+
+     15.  Invoke your telecommunications program, and place it in
+
+Terminal Mode.
+
+
+
+     16.  Turn on your Braille 'n Speak, and open the file you
+
+wish to send.  Note that turning on your Braille 'n Speak before
+
+invoking your telecommunications program may cause the software's
+
+modem installation string to be sent to a file.
+
+
+
+     17.  You should set the "append linefeed when transmitting"
+
+parameter in the Status menu to "on."  If you wish the lines of
+
+your file to be a certain length, and if your word processor or
+
+file viewer will not format your text to the line length you
+
+desire, change the "line length" parameter in the Braille 'n
+
+Speak's Status Menu to the value you wish.  Note also that if you
+
+do not want page numbers to appear in the file, you must turn
+
+page numbering off from the Status Menu.  
+
+
+
+     18.  Tell your telecommunications program you wish to
+
+receive a file.  You will first have to give the "receive file"
+
+or "download file" command and then specify you are receiving via
+
+the ASCII protocol.  Consult the manual of your
+
+telecommunications program for these commands. 
+
+
+
+     19.  Make sure your Braille 'n Speak's cursor is at the
+
+start of the file.  Then, send the file with the command "T-Chord
+
+Z."  Note that long files will take some time to send as the
+
+telecommunications software will probably have to handshake
+
+periodically with the Braille 'n Speak.  If your Braille
+
+translator is set to "on," all contractions will be expanded (the
+
+"ING-sign" will become the letters "I, N, G); however, this
+
+process will be time-consuming and may even result in undesirable
+
+formatting of the file in some cases.
+
+
+
+     When the file has been sent, the Braille 'n Speak will say
+
+"OK.  However, you may have to press your <ESCAPE> key to tell
+
+your telecommunications package that the file transfer is
+
+complete.
+
+*** Interfacing Braille 'n Speak and Modems
+
+
+
+                       Craig Werner, Ph.D.
+
+
+
+                         March 17, 1991
+
+
+
+                          Introduction
+
+
+
+
+
+
+
+     A modem is a device which allows the sending and receiving
+
+of data to and from a remote computer using a standard telephone
+
+line.  The Braille 'n Speak can be used interactively with a
+
+modem; that is, commands can be sent to a host computer, and the
+
+data resulting from these commands can be spoken by the Braille'
+
+n Speak and stored in its memory.  The Braille 'n Speak can
+
+transmit and receive standard ASCII text only.  No binary file
+
+transfers are possible.  The interface instructions which follow
+
+apply only to the most common type of modem, the serial
+
+asynchronous external modem.  Note that you should omit the
+
+quotation marks in this text when typing the commands in these
+
+instructions.
+
+
+
+                       What You Will Need
+
+
+
+
+
+
+
+     In addition to the Braille 'n Speak and the modem, you will
+
+need the Braille 'n Speak's serial interface cable and a 25-pin
+
+female to male null modem adaptor.  A null modem adaptor
+
+consists of two RS-232 connectors with their transmit and receive
+
+pins crossed.  It is available from computer stores or as part of
+
+ an interface kit sold by Blazie Engineering.
+
+
+
+                    Step-by-Step Instructions
+
+
+
+
+
+
+
+     1.  Plug the interface cable into the Braille 'n Speak's
+
+serial port.  This is the second port on the left side (the 
+
+port farthest from you) of the Braille 'n Speak.  Connect the
+
+female end of the null modem adaptor to this interface cable and
+
+the male end to the modem.
+
+
+
+     2.  Connect the modem to the telephone line.  Consult your
+
+modem user's manual for instructions on how to do this.
+
+
+
+     3.  Turn on the Braille 'n Speak and the modem.
+
+
+
+     4.  Create or open a Braille 'n Speak file in which the
+
+data you receive from the remote computer will be stored.  Make
+
+sure the file is large enough to allow for all data to be saved. 
+
+You may wish to create a larger file than the one you think you
+
+will need, just to be safe.  You can always shrink the size of
+
+the file later by using the "S" command in the file command menu.
+
+
+
+     5.  Make sure the Braille 'n Speak's parameters match those
+
+of the modem and the host computer.  Note, however, that
+
+settings of eight data bits and no parity are suggested even if
+
+the host computer desires seven bits and even parity.  The other
+
+critical parameters are baud rate, duplex, linefeeds, and
+
+handshaking. Handshaking should almost invariably be set to
+
+"software" or"XON-XOFF."  The "append linefeeds when
+
+transmitting" parameter should most likely be set to "off."
+
+
+
+     6.  Turn on the Braille 'n Speak's serial port.
+
+
+
+     7.  Turn on the Braille 'n Speak's interactive mode by
+
+pressing "Chord-g" until you hear the words "interactive OK."
+
+
+
+     8.  Type any command that will generate a response from the
+
+modem.  If the modem is at least partially compatible with the
+
+Hayes command set (and most are nowadays), type the command "AT"
+
+and press <RETURN>.  Only recent modems accept this command when
+
+it is typed in lower-case letters, so you may have to issue it
+
+using capital letters.  If the modem responds with "OK," the
+
+interface is successful.
+
+
+
+     9.  If the modem does not respond, first review Steps 5
+
+through 8 to make sure you have carried them out correctly.
+
+
+
+     10.  If the modem still does not respond, its Data Control
+
+Detect (or DCD) line will have to be set to high.  To do this,
+
+you will have to issue the command "AT&C1" and press <RETURN>.
+
+However, since the Braille 'n Speak cannot presently communicate
+
+with the modem, you will have to use other equipment, such as a
+
+computer and telecommunications software, to send this command.
+
+If your modem has non-volatile memory, you can save this command
+
+so that it is remembered whenever the modem is switched on.  To
+
+save the command to the modem's memory, type the command "AT&W"
+
+and press <RETURN>.
+
+*** Interfacing the Braille 'n Speak Disk Drive
+
+               with the VersaBraille II or II Plus
+
+
+
+                       Craig Werner, Ph.D.
+
+
+
+                           May 5, 1991
+
+
+
+
+
+
+
+                          Introduction
+
+
+
+     This article is somewhat different from the others in this
+
+guide.  It does not treat interfacing the Braille 'n Speak with
+
+another device; rather, it treats interfacing the Braille 'n
+
+Speak's optional disk drive with other devices:  the VersaBraille
+
+II and VersaBraille Classic by Telesensory Systems, Inc.  In
+
+fact, the Braille 'n Speak disk drive can be interfaced with a
+
+wide range of devices having a standard serial port.  The drive
+
+uses standard 3 1/2-inch disks of either double density (720K) or
+
+high density (1.4M) format.
+
+
+
+     True, some models of the VersaBraille are furnished with a
+
+disk drive; unfortunately, the drive works according to a TSI-
+
+proprietary format, which means that disks formatted under MS-
+
+DOS, the standard system used by IBM and IBM-compatible
+
+computers, cannot be read at all with the VersaBraille.  The
+
+Braille 'n Speak disk drive affords a way for the VersaBraille
+
+user to read MS-DOS-generated text files using the VersaBraille,
+
+and it also affords a way of sending VersaBraille-generated text
+
+to a disk that can be read on an IBM-compatible computer.  In
+
+short, a VersaBraille user can now access IBM-compatible disks
+
+with a VersaBraille without using an IBM-compatible computer. 
+
+However, it is very important to remember that these disks must
+
+contain only straight ASCII text information.  The user cannot
+
+use the Braille 'n Speak disk drive and the VersaBraille to run
+
+IBM-compatible programs, such as a word processor or a database.
+
+
+
+
+
+
+
+                       What You Will Need
+
+
+
+     In addition to the Braille 'n Speak disk drive and either a
+
+VersaBraille II or Classic, you will need the disk drive's and
+
+VersaBraille's interface cables supplied with the units.  Do not
+
+use the short cable employed to connect the drive to the Braille
+
+'n Speak's auxiliary port; rather, use the longer cable supplied
+
+with the drive to connect to the VersaBraille.
+
+
+
+
+
+
+
+                    Step-by-Step Instructions
+
+
+
+                           Connections
+
+
+
+     1.  Connect the 15-pin male end of the disk drive interface
+
+cable to the drive's port.
+
+
+
+     2.  If your VersaBraille's interface cable has a 25-pin
+
+male connector, plug this end directly into the 25-pin female end
+
+of the drive's interface cable.
+
+
+
+     3.  If your VersaBraille cable has a 25-pin female
+
+connector, connect a male-to-male adaptor between the drive's
+
+interface cable and the VersaBraille's interface cable.  Such an
+
+adaptor is supplied as part of Blazie Engineering's optional
+
+interface kit.  It is also readily available from many computer
+
+stores.
+
+
+
+     4.  Plug the other end of the VersaBraille's interface cable
+
+into the VersaBraille's serial port.  On the VersaBraille II,
+
+this port is the connector closest to the disk port.  On the
+
+VersaBraille II Plus, it is the port closest to the on/off
+
+switch.  On the VersaBraille Classic, it is the long port closest
+
+to the power supply connector.
+
+
+
+                            Settings
+
+
+
+     5.  Regardless of which VersaBraille you use, set its serial
+
+parameters to 9600 baud, eight data bits, one stop bit, and
+
+software (XON-XOFF) handshaking.  you may wish to set the duplex
+
+parameter to "half" to monitor your typing.  How you set the
+
+ASCII and carriage return parameters will determine whether you
+
+see control characters and carriage returns in your output.
+
+
+
+     6.  If you are using a VersaBraille II or II Plus and wish
+
+to enable full two-way communication between the VersaBraille
+
+II/II Plus and the Braille 'n Speak disk drive, you should turn
+
+on VB emulation from the "c:com" mode menu.  This emulation will
+
+allow you to send messages to the drive and to read messages from
+
+the drive on the VersaBraille display.
+
+
+
+     7.  If you are using a VersaBraille Classic, make sure the
+
+terminal overlay has been loaded with the following suggested
+
+CCP settings:
+
+
+
+b 9600
+
+d 8
+
+p n
+
+s 1
+
+t c
+
+c y or space
+
+et fs
+
+dx h
+
+hs dc3
+
+ai n
+
+co cr
+
+ak n
+
+dci y
+
+cts n
+
+cd n
+
+
+
+     8.  If you are using a VersaBraille Classic, you should also
+
+turn on remote mode with a "CHORD-R R."
+
+
+
+                   Commands and Error Messages
+
+
+
+     9.  Commands sent to the disk drive require a "Control-E"
+
+before them.  Although all commands are a single letter, some
+
+need additional information after them.  Most require that a
+
+carriage return (Control-M) be sent before they are executed. 
+
+Since TSI has used different methods at different times to send a
+
+control character, you should check your VersaBraille manual to
+
+determine how a control character should be sent.  To format a
+
+disk, for example, send the control character prefix (check your
+
+VersaBraille manual to see which dots you must type) followed by
+
+an "E" and an "F."  Since the "format" command does not need a
+
+carriage return, the formatting process will begin immediately. 
+
+To have a directory of the disk's files displayed to your
+
+VersaBraille, type a Control-E followed by a "D" and a carriage
+
+return.  The directory ends with the date of the drive's
+
+firmware.  For a complete list of Braille 'n Speak disk drive
+
+commands, consult the disk drive's manual.
+
+
+
+     10.  The disk drive sends error codes in the form of single
+
+characters.  For a complete list of Braille 'n Speak disk drive
+
+error messages, consult the disk drive's manual.
+
+
+
+         From BNS Disk Drive to VersaBraille II/II Plus
+
+
+
+     11.  With the VersaBraille's terminal mode enabled and the
+
+Braille 'n Speak's disk drive off, enter the serial.in mode by
+
+typing the letters "f p i" followed by the "execute" command.
+
+
+
+     12.  Turn on the VersaBraille and Braille 'n Speak disk
+
+drives.
+
+
+
+     13.  Load the file you wish to transfer by typing a
+
+"Control-E" followed by an "L" and the name of the file you wish
+
+to load.  Do not use spaces in this command.  If you type a
+
+carriage return, the file will be stored in the VersaBraille's
+
+RAM as "VERSABRL.SAV."  Only short files may be stored this way,
+
+and the results of this command are not always favorable. 
+
+Therefore, do not type the carriage return after the file name.
+
+
+
+     14.  Instead, type a "CHORD-R" to exit terminal mode. 
+
+Return to the main menu, and turn off VB emulation.
+
+
+
+     15.  Return to the serial mode by typing the letters "f p i"
+
+and the "execute" command.
+
+
+
+     16.  With VB emulation still turned off, the VersaBraille
+
+will display the prompt "enter filename."  Enter the name you
+
+would like the VersaBraille to store as the name of the file you
+
+will transfer from the disk drive.  Follow it with the number of
+
+the VersaBraille drive on which you wish the file to be stored.
+
+
+
+     17.  Type the "execute" command in response to the "send
+
+command?" prompt.  Follow it with a carriage return and another
+
+"execute" command to begin the transfer.
+
+
+
+     18.  If the transfer is working properly, you should hear
+
+the VersaBraille beep each time a 512-character block is
+
+received.  If it beeps only once, and you know the file is
+
+greater than 512 characters, you have probably typed an incorrect
+
+command.  Abort the attempt by typing a "CHORD-Z," and begin the
+
+transfer process again.
+
+
+
+         From VersaBraille II/II Plus to BNS Disk Drive
+
+
+
+     19.  Make sure the disk in the Braille 'n Speak disk drive
+
+contains enough free space for the file you wish to transfer.
+
+
+
+     20.  Type a "Control-E" followed by an "S" and the name of
+
+the file you wish to save.  Do not use spaces in this command.
+
+
+
+     21.  Type a "CHORD-R" to exit serial.in mode, and select "s
+
+prints."
+
+
+
+     22.  You will now be asked if you wish to format the file. 
+
+If your work will be viewed by people expecting a standardized
+
+ASCII text format, you will want to include carriage returns at
+
+the end of lines so that lines do not overprint each other.  You
+
+will also want to eliminate any special signs, such as dollar
+
+signs, sometimes used in VersaBraille files.  If the file you are
+
+sending is already formatted for a normal look, then answer "no"
+
+to the format question.  It is not necessary to pause between
+
+pages, so answer "no" to the question asking if a pause is
+
+necessary.  When the file has finished printing (in this case it
+
+is actually being saved to disk), the message "done" will appear
+
+on the VersaBraille display.
+
+
+
+     23.  Unless the file ends with the standard ASCII end-of-
+
+file character, you must return to terminal mode, and type a
+
+"Control-Z."  This command ends and saves the file.
+
+
+
+           From BNS Disk Drive to VersaBraille Classic
+
+
+
+     24.  Load the VersaBraille Classic's terminal overlay, open
+
+a chapter, and enter the remote mode with a "CHORD-R R."
+
+
+
+     25.  Send the Braille 'n Speak disk file by typing a
+
+"Control-E" followed by an "L" and the name of the file you wish
+
+to send.  Do not use spaces in this command.  When the
+
+VersaBraille's buffer fills, you will hear a double beep.  Type
+
+the "next page" command so the next segment of the
+
+VersaBraiille's cassette may be accessed.  When you hear no more
+
+beeps, you will know the file has been sent.  If you wish to
+
+save the file automatically without giving "next page" commands,
+
+use the "CHORD-R T" command.
+
+
+
+           From VersaBraille Classic to BNS Disk Drive
+
+
+
+     26.  Make sure the disk in the Braille 'n Speak disk drive
+
+contains enough free space for the file you wish to transfer.
+
+
+
+     27.  With the VersaBraille's terminal overlay loaded and
+
+with the serial port turned on using the "Chord-R R" command,
+
+type "Control-E" followed by an "S" and the name of the file you
+
+wish to save.  Do not use spaces in this command.
+
+
+
+     28.  Load the VersaBraille's hardcopy overlay, and make sure
+
+all formatting parameters are set properly before you send the
+
+file.  The file should not contain any special VersaBraille
+
+signs if it is to be viewed by a person not familiar with them.
+
+
+
+     29.  Send the file using the VersaBraille's "CHORD-R I"
+
+command.  When the file is finished transmitting, the message
+
+"done" will appear on the VersaBraille's display.
+
+
+
+     30.  Unless the file ends with the standard ASCII end-of-
+
+file character, you must load the terminal overlay, enter remote
+
+mode, and type a "Control-Z" to save the file to the Braille 'n
+
+Speak disk drive.
+
+
+
+                            Lock-ups
+
+
+
+     31.  From time to time, the VersaBraille may lock up while
+
+sending or receiving data.  If the display freezes, or if a
+
+transfer operation has ceased, try the following steps:  (1) type
+
+a "Control-Q"; (2) turn the Braille 'n Speak's disk drive off and
+
+on again; (3) disconnect and reconnect the interface cable; (4)
+
+exit terminal mode and begin the transfer process again.
+
+             *** ACCESS PC DISKS FROM YOUR VBII or CLASSIC
+
+
+
+                         By David Goldstein
+
+
+
+     VersaBraille users now have a way to exchange files with IBM 
+
+PC users, thanks to a new all-purpose disk drive from Blazie 
+
+Engineering.  Designed principally for the Braille 'n Speak, this 
+
+little box, measuring 5-1/2 by 8-1/2 by 2 inches and costing $495,
+
+can connect to a VersaBraille or any device that has a standard 
+
+serial port, and will serve as a disk storage and retrieval system
+
+for that device.  The disks used are the VersaBraille-sized 
+
+3-1/2-inch floppies, but in the standard format used on IBM PC's 
+
+equipped with this sized drive.  Disks made on the 
+
+battery-operated drive may be read on a PC, and PC disks may be 
+
+read on the drive and transferred to the VersaBraille.  The disks 
+
+can be either low density, 720K, or the high density 1.2 Meg.  The
+
+drive cannot read Apple PRODOS disks.
+
+
+
+     For the VersaBraille user who does not have a computer, the 
+
+Blazie disk drive eliminates the need to transfer files by cabling
+
+the VersaBraille to a computer or by using Cornucopia Software's 
+
+IBM-VBII program.
+
+
+
+     It is important to understand the disk drive's limitations.  
+
+It does not replace the disk drive in the VersaBraille II.  The 
+
+drive is connected to the serial port, so that information must be
+
+sent or received from it as with a serial printer or modem.  Even 
+
+at 9600 BAUD, transfers are slow.  If you use it to read a long PC
+
+file, you will be subject to the same constraints as with long 
+
+VersaBraille files.  The drive cannot read information from 
+
+compressed files.  You will be able to read the straight ASCII 
+
+files generated by Computerized Books for the Blind and download 
+
+them to your VersaBraille, but you will not be able to read the 
+
+compressed files in which the dictionary and catalogs are normally
+
+packaged for PC users.  CBFB has always shown a willingness to 
+
+accommodate users' needs, and I have no doubt that arrangements 
+
+could be worked out to receive most, if not all, of the files in 
+
+uncompressed form.  It should also be made clear that you cannot 
+
+use this drive to run programs written for the PC.  If you were 
+
+hoping to use it to run WordPerfect on your VersaBraille, you will
+
+be disappointed.  In fact, you cannot read files generated by 
+
+WordPerfect unless they have been saved in an ASCII "nondocument" 
+
+mode.
+
+
+
+     This article provides instructions on how to use the drive 
+
+with the VersaBraille II and VersaBraille Classic.  It can also be
+
+read as a product review.  I wish to thank Blazie Engineering for 
+
+the loan of the device to VersaNews for the purpose of writing 
+
+this article.
+
+
+
+Hooking Up
+
+
+
+     The back of the disk drive contains the power switch and 
+
+connectors for the power supply/battery charger and the interface 
+
+cable which connects to the VersaBraille.
+
+
+
+     With regard to the power supply (which is identical to that 
+
+used by Braille 'n Speak), it is recommended that you use the disk
+
+drive plugged in as much as possible.  The batteries are supposed 
+
+to last 5 to 10 hours, but you don't want to be caught in a 
+
+situation where there is not enough power to save your files to 
+
+disk.  With the December update, the drive will start beeping 
+
+continuously when the batteries are becoming dangerously low.  The
+
+drive will also beep if left turned on for 5 minutes without being
+
+used.  As with many battery-operated devices, the drive gets its 
+
+power through the battery even when it is charging.  If the 
+
+batteries are low or you have not used the drive in a long time, 
+
+it is best to let it charge for a while before using it plugged 
+
+in.  A full charge takes 8 hours.
+
+
+
+     Cabling.  Be sure, when unpacking the unit, that you have the
+
+right cable.  There is a short cable specifically for the Braille 
+
+'n Speak's auxiliary port, but there should also be another much 
+
+longer one for connecting to other devices.  This has a 15-pin 
+
+male connector to plug into the drive, and a 25-pin female 
+
+connector on the other end.
+
+
+
+     Note that the disk drive will not turn on unless the cable is
+
+plugged into it.  This is a safety feature to prevent the power 
+
+from being turned on in transit.  Be sure to plug in the cable 
+
+securely.  You may wish to tighten the screws on the connector to 
+
+make sure that a slight pull on the cable dosn't turn the disk 
+
+drive off in mid operation.
+
+
+
+     The 25-pin end of the cable will plug directly into the male 
+
+connector at the end of the VersaBraille II cable.  The disk drive
+
+is a "DCE" device, meaning that it connects up to things as a 
+
+modem would.  If you have a VersaBraille II Plus, you should plug 
+
+the VersaBraille cable into the port closest to the on/off switch.
+
+On the VersaBraille II, use the connector next to the disk port.  
+
+The Classic requires no null modem adapter.  If your Classic has a
+
+cable ending in a male, you can connect the disk drive cable 
+
+directly.  If your Classic cable ends with a female connector, you
+
+will need a straight-through, male-to-male adapter to go between 
+
+the two cables.
+
+
+
+Parameters
+
+
+
+     The disk drive requires 9600 BAUD, 8 data bits, no parity and
+
+one stop bit.  Deane Blazie recommends software handshaking.
+
+
+
+     VersaBraille II.  We begin, as other writers do, with the 
+
+assumption that the machine has been set to its original defaults.
+
+This is achieved by a full reset--holding down dots 1-2-3 while 
+
+turning on the power.  From that point, only a few parameters need
+
+to be changed.  In the s: serial menu, set:
+
+p: parity none (The default parity setting of "ignor" on the model
+
+L1D seems to work just as well.)
+
+i: dc in y
+
+o: dc out y.
+
+You may also wish to set d: duplex to Half so that you can see 
+
+what you are typing.
+
+In the c: com mode menu you should set the C carriage return, and 
+
+A, ASCII parameters for whether you want to be able to see 
+
+carriage returns or control characters in the output.
+
+
+
+     VB Classic.  With the VersaBraille Classic, it is suggested 
+
+you load the terminal overlay and set the CCP's as follows.  Only 
+
+the parameters pertaining to the disk drive are given here:
+
+b 9600; d 8; p n; s 1; t c; ci y or space; et fs; dx h; hs dc3; ai
+
+n; co cr; ak n; dci y; cts n; cd n.
+
+Put the machine in remote mode with an r-chord r and use this mode
+
+to send the disk drive commands discussed below.  You can read 
+
+short files in this mode and use x-chord s when the buffer fills. 
+
+For longer files, use the automatic transfer functions r-chord t 
+
+to save a disk file to tape, and r-chord i to transfer a tape 
+
+chapter to disk.
+
+
+
+Operating the Drive from a VBII
+
+
+
+     There is one more parameter you need to set if you wish to 
+
+hold two-way communication with the disk drive.  You must go to 
+
+the c: com mode parameter and set v: vb emulate to On.  This sets 
+
+up the VersaBraille for an interactive or terminal mode, permits 
+
+you to send commands to an external device and see messages from 
+
+that device on your display.  To get into this mode itself, you 
+
+must go to the main menu, and type f for files, p for print, i for
+
+serial.in, and press Execute.  If you have done it correctly, you 
+
+will see the cursor on the first cell of the display.  If the 
+
+message "destroys ram fls" appears, push Execute again.
+
+
+
+     Now you can talk to your disk drive.  You won't find it much 
+
+of conversationalist.  Unlike a computer, it does not give you 
+
+prompts to tell you that it's ready for the next command.  It will
+
+give a doorbell sound and send an "at" sign @ when you turn the 
+
+power on.  It will also beep upon completing a command.  You will 
+
+see a control-z after each operation if you have turned on the 
+
+ASCII parameter.  Braille 'n Speak is programmed to speak error 
+
+messages in regular English.  When using other devices, errors are
+
+noted with a terse single character.  If the command you send does
+
+not exist, it returns ?.  If it cannot find a file, it says #.  If
+
+you try to "kill" all files at once, which it considers 
+
+illegal--not to mention immoral, it sends an emphatic ".  A 
+
+complete chart of error messages will be found at the end of this 
+
+article.
+
+
+
+     Commands are entered by preceding them with a control-e. 
+
+(This is the equivalent of an s chord from the Braille 'n Speak's 
+
+disk menu.) On the VersaBraille, you would enter a command by 
+
+typing a dots 4-5-chord and the letter e, and then the letter of 
+
+the command.  Do not space between the control-e and the command. 
+
+For example, control-e followed by the letter f will format the 
+
+disk.  Most commands require more information after them, and the 
+
+sequence must end with a carriage return (control-m) before 
+
+something happens.  Format does not require a return and starts 
+
+immediately and irrevocably.  Beware! By the way, the drive 
+
+determines whether a disk should be formatted for high or low 
+
+density by looking for the extra hole found on high density disks.
+
+
+
+     An example of a command that requires a carriage return is 
+
+the Directory command, d, which gives you a listing of files on 
+
+the disk.  If you type control-e d, carriage return, you will see 
+
+all the files.  If you type ctrl-ed*.brl <return>, you will get a 
+
+list of just the files with the .brl extension.  The directory 
+
+always concludes by displaying the date of the drive's firmware.
+
+
+
+     It is a good idea to test things out before getting to work 
+
+with the disk drive.  The easiest way to do this is by asking it 
+
+for a directory of the disk.  If you receive the directory on your
+
+display, you know that communication is working.
+
+
+
+     I have found that the disk drive and VersaBraille often lock 
+
+up when they are connected together.  If you type on the VB and 
+
+get no response, try one or all of the following: (1) type a 
+
+control-q; (2) unplug the interface cable from the VersaBraille; 
+
+(3) turn the drive's power switch off and on; (4) exit and and 
+
+return to terminal mode with an r chord and Execute.  I suspect 
+
+this lockup problem is caused by the drive's sending control 
+
+characters to the VersaBraille.  Experiments with hardware 
+
+handshaking did not improve matters.
+
+
+
+     Command List.  The disk drive recognizes the following 
+
+commands.  All of these must be preceded by a control-e.
+
+l load a file
+
+s save a file
+
+d directory
+
+k "kill" or delete a file; k*.* is illegal.
+
+f format
+
+m make a new subdirectory
+
+x delete a subdirectory (the directory must be empty of all files 
+
+before it can be deleted.)
+
+
+
+Transferring Files from the PC Disk to the VersaBraille
+
+
+
+     Let's say you have a PC disk with text files.  You want to 
+
+know what files it contains and then will put one of those files 
+
+on a VersaBraille disk so you can read it later.
+
+
+
+     1.  Get into terminal mode by turning the VB-Emulate 
+
+parameter on and typing f, p, i and Execute from the main menu.
+
+
+
+     2.  Turn on the disk drive.
+
+
+
+     3.  Do a directory, control-e d followed by a carriage 
+
+return.
+
+
+
+     4.  You now want to "load" a file from the disk.  Type 
+
+control-e l and the name of the file without spaces between the 
+
+control-e or the filename.  Do not type carriage return yet.  If 
+
+you type a return, the file will be sent to your VersaBraille 
+
+display and stored in RAM as versabrl.sav.  Those of you who have 
+
+used the VersaBraille as a terminal know that files of only about 
+
+10 K can be stored this way, and the result is not always 
+
+reliable.  You can certainly read short files this way if you want
+
+to see what is on them, but you are much better off storing the 
+
+files to disk.
+
+
+
+     5.  After you have entered the complete command sequence with
+
+the exception of the carriage return, do an r-chord to get out of 
+
+terminal mode.  Return to the VersaBraille's main menu, and go 
+
+from there to the Parameters menu.  Shut VB-Emulate off.
+
+
+
+     6.  Return to the serial.in state by typing f, p, i and 
+
+Execute.  With VB-Emulate off, the VersaBraille will display, 
+
+"enter filename." Enter the name that you would like this file to 
+
+be stored as, and select the drive number.
+
+
+
+     7.  The VersaBraille will then prompt, "send command?" Type 
+
+Execute for yes.  You have entered most of the command, but you 
+
+still have to add the finishing carriage return.  Type a return, 
+
+and another Execute to get things started.
+
+
+
+     8.  If things are working correctly, you will hear the disk 
+
+drive start up and the VersaBraille begin beeping after every 512 
+
+characters have been sent.  Because the disk drive sends a 
+
+control-z at the completion of each command, the completed file 
+
+will be saved to your VersaBraille disk automatically without your
+
+needing to send a z chord.  If the VersaBraille just beeps once 
+
+and nothing happens afterwards, you probably made a mistake and 
+
+will need to get out by typing a z-chord and starting the 
+
+procedure over.
+
+
+
+Transferring a VersaBraille File to the PC Disk
+
+
+
+     1.  Get into terminal mode and do a directory to make sure 
+
+things are working and that there is room on the disk for a new 
+
+file.
+
+
+
+     2.  You are going to "save" a file to disk, so type control-e
+
+s and the name of the file without any spaces between the 
+
+control-e, the command and the filename.  Type carriage return.  
+
+This will put the drive in a waiting mode, and it will receive all
+
+characters sent to it until the file is closed.
+
+
+
+     3.  Do an r chord to leave serial.in mode and select s 
+
+prints.
+
+
+
+     4.  Now go through the usual procedure for printing.  You 
+
+will have to decide whether you want the file to be formatted.  
+
+Remember that the reason you are transferring the file to PC disk 
+
+is so that it can be read by people who have standard equipment.  
+
+You will therefore need carriage returns in the file, and you 
+
+won't want any dollar-sign commands known only to VersaBraille and
+
+Navigator.  So if your file has these symbols and is without 
+
+carriage returns, say Yes to the formatting question.  If it is 
+
+already set up for computer transfer and has carriage returns, 
+
+then the answer would be No. (One case where you might not want to
+
+format a file containing VersaBraille symbols is if you plan to 
+
+use the disk on Navigator in its VBPC mode.)
+
+
+
+     5.  As you continue through the printing procedure, you will 
+
+eventually be asked whether you want to pause between pages.  You 
+
+do not, so press any key except Execute.  When the file finishes 
+
+printing, the message "done" will appear.
+
+
+
+     6.  You still need to tell the disk drive to close the file. 
+
+Return to terminal mode and type control z.
+
+
+
+Subdirectories.
+
+
+
+     Disks produced on PC's often have files in subdirectories, 
+
+and you can only see these files if you access the proper 
+
+subdirectory.  The disk drive accepts the PC's backslash command. 
+
+(On the VersaBraille this is entered by writing dots 1-2-5-6 
+
+preceded by a k chord for uppercase.)  You can load, save, or get 
+
+a directory of the files in a subdirectory by following a command 
+
+with the subdirectory name.  For example, if you were using this 
+
+disk drive to read the PC edition of VersaNews and wanted to read 
+
+the braille version of this article in the \brl subdirectory, you 
+
+would  write a control-e foll[$ by \brl\diskdriv.  Unfortunately, 
+
+if you don't know ahead of time the names of the subdirectories on
+
+the disk, there is no way to find out.  Displaying the root 
+
+directory does not list subdirectory names, and there is no 
+
+equivalent of the MS-DOS TREE command to get a path listing.
+
+
+
+Error Messages
+
+
+
+     Here are all the error codes you might see the disk drive 
+
+send.
+
+# file not found
+
+! write protected disk
+
+& format, CRC, or sector failure
+
+% insufficient disk space
+
+" illegal, sent when you try to kill *.*
+
+$ no disk in drive
+
++ subdirectory already exists
+
+- subdirectory does not exist
+
+/ subdirectory not empty.
+
+
+
+Conclusions.
+
+
+
+     This disk drive could be a godsend to those who do not have a
+
+PC and need to exchange text files with coworkers.  At $495 it is 
+
+rather expensive, but it is less costly and requires far less 
+
+learning than a computer.  With the firmware I have, dated 
+
+December 1990, there still seem to be problems with absolutely 
+
+perfect compatibility.  I was not able to read certain disks 
+
+generated by a computer, and other people have reported their 
+
+computers not being able to read all disks generated on the drive.
+
+My unit was often inconsistent.  A disk it could not read one time
+
+would be read flawlessly on another occasion.  In terms of 
+
+compatibility with the VersaBraille, the two devices worked well 
+
+together, except for the lockup problem I mentioned.  I 
+
+experienced an occasional loss of a few characters during 
+
+handshaking with the VersaBraille II; handshaking worked perfectly
+
+with the Classic.  The inability to find out what subdirectories 
+
+are on a disk could be a major inconvenience if the user does not 
+
+have access to a computer.
+
+
+
+     As always, Deane Blazie welcomes and acts upon user feedback.
+
+The disk drive as it stands now is an excellent product.  I am 
+
+confident it will get even better with each update.
+
+
+
+                        *** Using the Braille 'n Speak with BEX
+
+              by Phyllis Herrington, David Holladay, and Caryn Navy
+
+
+
+     By cabling the Braille 'n Speak to an Apple II computer, you can transfer
+
+data between the two devices. The Braille 'n Speak is able to transmit data to
+
+the Apple via the Input Through Slot option of BEX. Likewise, the Print option
+
+of BEX enables you to send a file to the Braille 'n Speak. The only software
+
+needed is BEX.
+
+
+
+     \\h3 Equipment Requirements
+
+
+
+     An Apple IIe or Apple IIgs requires a Super Serial Card for Input through
+
+Slot. If you have an Apple IIc or and Apple IIc Plus, you use the printer port.
+
+You also need the proper cables for interfacing the Braille 'n Speak to the
+
+Apple.
+
+
+
+     \\h3 Cabling and Interface Cards
+
+
+
+     To cable the Braille 'n Speak's IO cable to the Super Serial Card, you need
+
+a universal null modem adapter (RDC 3F cable) between the IO cable and the SSC
+
+connector. To connect to an Apple IIc, you need a 2F cable and a 3F cable. To
+
+connect to an Apple IIc plus, you need a 11F and a 3F cable.
+
+x
+
+     Set the Super Serial Card to RDC's standard parameters (see the separate
+
+section on Serial Interfaces).
+
+
+
+     \\h3 Braille 'n Speak to Apple
+
+
+
+     Configure BEX at the User or Master Level. Answer yes to the question Do
+
+you have a remote device to input through slot? Give the slot number for the
+
+Super Serial Card (or the Apple IIc or IIc+ port) that you will be connecting to
+
+the Braille 'n Speak. Press N to answer no to the automatic set-up sequence
+
+question. Answer no to the question Is this a Kurzweil Reading Machine?
+
+
+
+     Include in your configuration a printer for output to the Braille 'n Speak.
+
+Define a printer using the same slot as your remote serial device. How you
+
+configure this printer determines the format of the Braille 'n Speak file once
+
+it's downloaded. If you want every BEX character, including
+
+commands, in your Braille 'n Speak file, configure this printer as a class P -
+
+Paperless brailler. It works well to define this transfer printer as a Thiel
+
+brailler; then BEX underlining commands do not interfere with your Braille 'n
+
+Speak data. If you avoid BEX underlining in the material that you send out, a
+
+Generic printer is fine. Use the carriage width and form length of your choice.
+
+If you want to keep form feed characters out of your data, use form length zero.
+
+
+
+     Use Input through Slot on BEX's Second Menu to get BEX to listen to the
+
+Braille 'n Speak. See User Level Section 12 in the BEX manual for more
+
+information about Input through Slot. Once you supply a target chapter name and
+
+press <CR>, BEX prompts you to start the transfer.
+
+
+
+     Make sure the Braille 'n Speak is set for 8 data bits, 2 stop bits, no
+
+parity, 9600 baud, and hardware handshaking. To set the Braille 'n Speak to 2
+
+stop bits, enter chord-P S 2. If hardware handshaking does not work, change to
+
+software handshaking.
+
+
+
+
+*** BRAILLE 'n SPEAK AND INK PRINTERS
+
+One of the most attractive features of Braille 'n Speak is the fact that with it, one can print either in ink or braille depending on whether one is using an ink printer or braille embosser.  If one writes in grade two braille, both braille and ink printing can be done without writing the text a second time.  The following paragraphs will treat ink printing and suggest ways in which, by learning all you can about your printer, you can "squeeze all you can" from your B
+
+raille 'n Speak and printer combination.
+
+Before doing anything else about printing, it is vital that there be reliable communication between Braille 'n Speak and printer.  Blazie Engineering has cables which connect Braille 'n Speak to many of the printers in common use.  The cable which comes with your unit often can be used alone or in combination with the adapters provided in the interface kit.  Assuming you have the proper connection, consider the following points.  Do the "communication parameters" (o
+
+perating conditions) in both devices match?  Are your printer and Braille 'n Speak set for the same baud rate, data length, stop bit values, parity, and is handshaking compatible?  If yours is a serial printer these considerations must be addressed, if not by you, then by someone you call upon for help.  How can you gain this needed information?  In the Braille 'n Speak manual you can learn how to set the various parameters just mentioned when to set them is necessary.  Your printer also has a manual.  Your
+
+ printer manual contains similar information about your printer as well as other information you will need in order to push the capability of your printer to its limits.  Unfortunately, most printer manuals are not available in a readily accessible form.  Nevertheless, the effort expended in studying your printer manual will pay rich dividends if to produce good quality paper documents is your objective.
+
+If the printer you want to use is a "parallel" printer, the cable and interface kit alone will not be e
+
+nough.  In the case of a parallel printer, you will need the serial-to parallel cable available from Blazie engineering.
+
+From within Braille 'n Speak you can set line and page length, left and top margin values.  You even can number pages.  If your printer is set for "pica" type, you will be able to print ten characters to the horizontal inch. Suppose you are using 8 - 1/2 by 11 inch paper.  If you want one inch left, right, top and bottom margins, you will want to set your Braille 'n Speak format paramete
+
+rs like this:
+LINE LENGTH 75
+LEFT MARGIN TEN
+PAGE LENGTH 60
+Top MARGIN 6
+
+With one inch left and right margins, we subtract two from 8 - 1/2 and obtain 6 - 1/2 inches of writing space per line.  Since we can fit ten characters to the inch, on a 6 - 1/2 inch segment of line we will be able to print 65 characters.  By setting a left margin of ten, we will have one inch for a left margin before printing begins. A line length of 75 means that no printing will take place beyond 75 spaces (7 - 1/2 inches) from th
+
+e left edge of our page.  This assures us of a right margin of one inch even though there is no specific right margin command.  All this means that the printing which we do with the settings just given will take place between spaces ten and 75 on our line.
+
+Top and bottom margins work in a similar way.  Since our sheet of paper is 11 inches in the vertical direction, and since it is possible to have 6 lines of print to the vertical inch, an eleven inch sheet of paper can contain as many as 66 lines of print
+
+ top to bottom.  To have a one inch top margin, we should set a top margin value of 6.  This means that on each page we print, no printing will be allowed until 6 line feed characters have been sent to the printer.  In other words, the printer will be forced to move one inch down from its top of form position.  With a page length of 60, no printing will be allowed beyond line 60.  Line 60 is ten inches down from the top of the page, or one inch up from its bottom edge.  Our top margin, six, and our page len
+
+gth, sixty, total 66, the maximum number of lines available per page.  When the Braille 'n Speak line counter reaches the value we have set in our format parameters, a form feed character is sent to the printer telling it to eject the current page and prepare to receive another sheet.
+
+If your printer is set for "elite" type, you can print twelve characters to the horizontal inch instead of ten. In such a case, you might want a line length of 90 with a left margin of twelve.  Stop margin and page length wou
+
+ld be 6 and 60 as before.
+
+All this is fine if you are printing on full sheets of paper, but what if you want your Braille 'n Speak to print out some names and addresses on mailing labels; can you do this?  Yes, you can.  One of the most popular tractor feed mailing labels measures 3 - 1/2 inches long and 15/16 inches, just under and inch, high.  Think of such a label as a small page.  Using the information given for pica and elite type, you should be able to work out your own settings.  For pica, you might
+
+ want a line length of 33 with a left margin of 2.  For three line addresses, a top margin of two and a page length of four should do.  If you need to allow for the occasional four line address, top margin one and page length five might be best.  For elite type, try a line length of 40 with a left margin of 3.
+
+Another ctrl code available to computer driven printers is one which allows you to change the amount of movement in response to a line feed character.  Whereas normally six line feed characters will 
+
+cause your paper to advance one inch in the vertical direction, by decreasing the amount of movement per line feed, it would be possible to have six line feeds move your paper only 3/4, 7/8, 8/9 etc. of an inch.  In the case of mailing labels, you might want to decrease ever so slightly  your printer's vertical movement per line in order to have better top and bottom margins.
+
+Another application for such a command might be in the filling out of such forms as bank checks.  If the print doesn't fall precisel
+
+y where it should, slight adjustment of printer movement may correct this condition.  To be able to do this requires study of your printer manual and careful use of your calculator.
+
+Some printers can be fine tuned by incremental values measured in seventy-seconds of an inch and others by amounts as little as 1/144 of and inch.  If a printer responds to line feeds in seventy-seconds of an inch,  six lines to the vertical inch means that each time the printer receives a line feed character, it moves the pape
+
+r up 12/72 of an inch.  From this you can see that to adjust printer movement is possible, but not without some careful arithmetic.  Always experiment when you try something of this sort.
+
+You should know your printer and the control codes it recognizes in order to be able to do things which are not possible with the Braille 'n Speak alone.  For example, the Braille 'n Speak has no specific command which will let you underline text in print.  Yet, through the use of the appropriate control sequence, your Br
+
+aille 'n Speak and printer combination can produce underlined text.  With the appropriate control codes and adjustment of line length to accomodate larger letters, using the Braille 'n Speak with an ImageWriter II, I have been able to generate large print characters which most people with impaired vision can read comfortably.
+
+How do these control codes work and how do we use them?  Think of control codes as switches.  They really are commands which the printer recognizes as if they were established by thro
+
+wing switches to put the printer into a given mode - type size change, margin setting, spacing between lines, print quality, underlining almost anything you might want in the way of printer control.  Once set, these "switches" remain set either for as long as the power is turned on in your printer or until you unset them with another command.  For a practical example, consider underlining using the ImageWriter I.  There are two control code commands associated with underlining.  One begins the underlining p
+
+rocess and the other ends it.  There is an old quotation that goes, "Today is the first day of the rest of your life."  Suppose we want to write this quotation with the words "first", "rest" and "life" underlined.  The BEGIN UNDERLINE command is escape X.  That is an uppercase X.  Underlining is terminated with an escape Y.  Again, it is an uppercase Y.  The "escape" character is a ctrl left brace.   The left brace character is dots 2-4-6.  To make it a ctrl character we first must enter x-chord.  So, escap
+
+e (esc) is x-chord dots 2-4-6.  When writing ctrl codes, we do not space between the elements of the sequence.  There is no space between the esc character and the X or Y of our command.  To write our quotation, we would write, "Today is the x-chord dots 2-4-6 X first x-chord 2-4-6 Y day of the x-chord 2-4-6 X rest x-chord 2-4-6 Y of your x-chord 2-4-6 X life. x-chord 2-4-6 Y"  All this means that the three underlined words are bracketed by esc X and esc Y characters.  The spaces before and after them were 
+
+not underlined, but could have been depending on the placement of the esc sequences.
+
+If you write in grade two braille, in order to write your uppercase X, you must first write your x-chord and then enter a dot 4 followed by a u-chord and the letter x.  Dot 4 tells the Braille 'n Speak translator not to translate your "x" as the word "it" and u-chord places the x in uppercase.
+
+Some ctrl codes do not begin with the escape (esc) character.  They may beggin with a ctrl letter followed by either a number or a
+
+ punctuation.  If a ctrl character is a letter, it makes no difference whether you write the letter in upper or lower case.  When an esc character is followed by a letter it is vital that you know whether that letter is in upper or lower case and that you write it appropriately when issuing the command.  These ctrl sequences are not printed in your document.  They are obeyed by the printer, but not printed.
+
+Earlier, we said that ctrl codes stay in effect until they are changed by you, the operator of the p
+
+rinter, or you turn off the power to the printer.  There will be times when you switch from one activity to another or from one document to another.  If you place in document one those codes needed to produce large print characters, you should place disabling commands at the end of your document.  If you do not do this, you might turn off the power to your printer.  Otherwise, if you switch from document one to document two, you may be surprised to find document two printed in large characters.
+
+When settin
+
+g up printing conditions, if things are not as you want them, it always is a good practice to turn your printer off and wait a few seconds before making your changes and printing again.  An unwanted character may remain in your printer's buffer, (stuck in its throat as it were).  Turning the printer off will clear this condition.
+
+CENTERING TEXT
+
+At present, there is no Braille 'n Speak command which automatically will center text.  However, if you are willing to put forth the effort, you can center lines o
+
+f text.  This is how to do it.
+
+If text is to be printed either in ink or braille, its centering is format dependent.  That is, where you place your text depends on the length of your printed line.  Suppose we want to center the following line which is written entirely in uppercase:
+
+YOU CAN DO MORE WITH the RIGHT KIND OF KNOWLEDGE
+If we want to print this line in ink, we count the characters to be printed.  In ink print, capitalization adds no characters to the text.  Our sample line contains 48 characters
+
+.  If we have a line length of 75 and a left margin of ten, we plan for 65 printed characters per line.  Our sample line contains 48 characters so we subtract this 48 from 65.  This leaves us with 17.  Add one to 17 to make it an even number.  Now divide the resulting 18 by 2.  The result is 9.  To have this line printed as a centered line in the body of your text, enter a carriage return, space 9 times, write the line and enter another carriage return.
+
+Although there are 48 characters in the print version
+
+ of this line, if we wrote it in grade two braille, we only entered 39 characters.  However, when Braille 'n Speak's braille to print translator finished with it, it produced the needed 48 characters.
+
+On the Other hand, if we want this text centered and produced in braille, we will have to count the double capitals placed at the beginning of each word.  A 39 space is difficult to recognize as being a centered line.  However, if we break it we can have two centered lines.  Line one might read:  YOU CAN DO M
+
+ORE
+and line two would contain: WITH the RIGHT KIND OF KNOWLEDGE
+Line one contains 15 braille characters.  Line two holds 23 characters.  Wait, if the original line contained 39 braille characters, where is the missing character?  15 plus 23 totals 38.  In our original line, there was a space between MORE and WITH.  When we broke the line at this point, we dropped the space when we went to the second line.  If our Braille 'n Speak format was set to provide a braille line length of 42, to center line one we 
+
+subtract its 15 characters from 42 and obtain 27, plus one, or 28.  Divide this by 2 and the result is 14.  You need to space 14 times after your carriage return before writing line one.
+
+To center line 2, subtract 23 from 42 and divide the result by 2 as before.  In this case, the result (after adding the needed one) is 20.  So, space ten times before writing line two.
+
+This is one instance where although you do not have to rewrite the text, the process is not automatic.
+
+POSSIBLE PROBLEMS AND SUGGESTED SO
+
+LUTIONS
+
+When the TRANSMIT command is sent to the printer nothing happens!  First check ALL CABLES!  If the printer is powered by house current, is it plugged into a source of power?  Are all cables which connect Braille 'n Speak and printer firmly attached?  Is the printer turned on?  No, we don't think you are stupid, we've done these things ourselves - and not all that long ago either!  If yours is a serial printer, does handshaking match?
+
+The printer prints, but the paper does not move up for a new lin
+
+e.  All printing takes place on the top line.  Though appearing disasterous, this is fixed easily.  What is happening here probably is that your printer expects to receive not only a carriage return character but a line feed character as well.  The carriage return tells the printing element to go to the start of the next line, the left side of the page.  The line feed character tells the printer to move the paper up to allow for a new line.  Some printers can be set to furnish their own line feed characters
+
+ if none come from the device which drives them.  Usually, this is done by means of "DIP" switches inside the printer case.  If this is not possible, you can tell Braille 'n Speak to "APPEND LINE FEED" by entering the letters a and y from within the status menu or by entering P-chord a y from within your file.
+
+Printing takes place, but the printing runs the full width of the page, words are broken, and it looks like a mess!
+
+Most likely you have not set format parameters.  Check to be sure that you have se
+
+t a left margin and a line length within the capability of the printer and its type setting - pica or elite.
+
+The printer prints "garbage"!  Usually what is meant by such a comment is that a jumble of letters, numbers and punctuations is printed which looks more like a spy code than the file you intended to print.
+
+Most likely, one or more of the communications parameters is mismatched.  In the case of "pure garbage" baud rate data length or parity may be the culprit.  If bits of text are printed but with g
+
+aps, you might check to be sure that the stop bit values are the same in both devices.
+
+Not all the document is printed.  Parts are missing and margins go out of adjustment after a time.
+
+Again, it would seem we have a handshaking problem.  To gain a working idea of handshaking, think of one person trying to feed another.  Person a places food in the mouth of person b.  If b is allowed time to chew and swallow before a presents another bite, all goes well.  If a keeps poking food at b faster than b can hand
+
+le it, either b chokes or wears much of the food on the front of his or her clothing.  In the case of printing, the Braille 'n Speak "feeds" data to the printer.  Braille 'n Speak can feed faster than the printer can swallow, that is to say print what it is given.  Handshaking is the process by which the two devices communicate so that the printer can tell Braille 'n Speak to suspend sending temporarily until more data can be handled.
+
+The printer keeps printing without regard to the perforation between she
+
+ets.
+
+In the case of tractor feed printers, usually there is a "skip perf" option which must be enabled.  Again, this can be done by means of a DIP switch in some cases.  In others, there is a ctrl code which can enable or disable this feature.  This is why study of your printer manual is important.
+
+Though not an exhaustive list of all possibilities, the conditions just cited cover most of the problems people encounter when using computer devices in conjunction with printers.
+
+THE ACT OF PRINTING
+
+Having s
+
+et all parameters, established our desired format and done all the things we need to do to prepare for printing, how do we begin the act of printing?  Braille 'n Speak has no specific "PRINT" command.  However, it does have a "TRANSMIT" command.  To print in ink, T-chord followed by the letter A will take us to the top of our file, turn on the serial port (in case we forgot to do that) and recognize the status of our braille to print translator and format values.  If we want to produce braille, T-chord foll
+
+owed by the letter B will take us to the top of our file, turn off the braille to print translator, turn on the serial port and respect the format values we have set.
+
+* * * * * * * * * *
+
+The number of elementary and high school students who use Braille 'n Speak is growing.  Since the Apple II family of computers is used extensively in these settings, it follows that the Apple ImageWriter II also enjoys considerable popularity.  Here is a table of ctrl codes recognized by this printer.  Blazie Engineering 
+
+offers a cable which will connect the Braille 'n Speak and the ImageWriter II.  The communication cable which comes with your Braille 'n Speak can be used to connect the Braille 'n Speak and the original ImageWriter I.
+
+* * * * * * * * * *
+
+Table of ImageWriter II Codes
+
+Quality of Printing
+
+draft ESC a 0
+correspondence ESC a 1
+near letter quality ESC a 2
+
+Colors
+
+black ESC K 0
+yellow ESC K 1
+red ESC K 2
+blue ESC K 3
+orange ESC K 4
+green ESC K 5
+purple ESC K 6
+
+superscript ESC x
+end superscript ESC z
+begin 
+
+subscript ESC y
+end subscript ESC z
+half height ESC w
+end half height ESC W
+slashed zeros ESC D CTRL-@ CTRL-A
+end slashed zeros ESC Z CTRL-@ CTRL-A
+begin underline ESC X
+end underline ESC Y
+begin boldface ESC !
+end boldface ESC "
+headline CTRL-N
+end headline CTRL-O
+pitch 9 cpi (extended) ESC n
+10 cpi (pica) ESC N
+12 cpi (elite) ESC E
+pica proportional ESC p
+elete proportional ESC P
+semi-condensed (13 cpi) ESC e
+15 cpi ESC q
+17 cpi ultra condensed ESC Q
+proportional spacing between chars ESC n (1-6) 
+set spa
+
+cing to n dots ESC s n where n is 0 to 9
+
+Character Sets
+standard ESC $
+mouse text ESC &
+
+international languages
+American ESC Z CTRL-G CTRL-@
+British ESC Z CTRL-D CTRL-@ ESC D CTRL-C CTRL-@
+German ESC Z CTRL-C CTRL-@ ESC D CTRL-D CTRL-@
+France ESC Z CTRL-A CTRL-@ ESC D CTRL-F CTRL-@
+
+set top of form ESC v
+left margin ESC L nnn (where n = 0 - 255)
+disable per skip ESC D CTRL-@ CTRL-D
+enable perf skip ESC Z CTRL-@ CTRL-D
+lines per inch 6 ESC A
+8 ESC B
+specify distance ESC P nn
+formlength ESC H nnnn (incremen
+
+ts nnnn/144)
+end of line cr only ESC Z @ CTRL-@
+cr/lf ESC D @ CTRL-@
+
+linefeeds
+no cr before lf ESC l 1
+add cr before lf ESC l 0
+add auto linefeed after cr 27,68,128,0
+no linefeed after cr 27,90,128,0
+forward linefeed ESC f
+reverse ESC r
+feed n lines CTRL-_ n (1-9)
+
+select downloaded chars ESC ' (normal ascii downloaded chars)
+high ESC *
+select rom chars ESC $
+16 max column width chars ESC +
+8 col width chars ESC -
+begin download ESC I
+end download CTRL-D
+paper detect off ESC O
+on ESC o
+software reset ESC c
+
+
+check printer config ESC ?
+ignore 8 bit ESC D CTRL-@ _ (space is _)
+recognize ESC Z CTRL-@ space
+
+
+buffer control
+cancel unprinted text CTRL-X
+no linefeed at buffer ESC Z space CTRL-@
+linefeed added at buffer ESC D space CTRL-@
+
+print head left to right only ESC >
+bi-directional ESC <
+backspace and print CTRL-H c
+move head to next tab CTRL-I
+
+* * * * * * * * * *
+
+*** THE TWIDDLEDUMP
+
+One of the most useful devices you will find among the various devices in your interface kit is something like a gender chan
+
+ger except that it has a male plug on one end and a female jack on the other.  What's more, there is a tiny hole in one of its faces.  The hole is just a bit larger than that which a braille stylus would make.  This device bears the improbable name "twiddledump".  What can you do with a twiddledump anyway?
+
+The twiddledump is a monitor.  As its plug and jack suggest, it is intended to be connected to something else.  It can be inserted in a communication line  through which serial data flows.  Then, when an
+
+d if theline becomes active, it "twiddles" as data are being "dumped".
+
+When you are using a modem and are in communication with a bulletin board, your modem may not have a loudspeaker.  In such a case, you will not be able to monitor the flow of data.  When data flows even at 300 baud, speech which can be understood cannot keep up with it.  This means that the BBS with which you are in contact may have sent you a prompt some time ago.  Your Braille 'n Speak or talking computer may slowly be speaking its wa
+
+y to the end of the data stream.  With a twiddledump, you will be able to tell the instant the device with which you are in contact has stopped sending.  If you know the routine of that BBS, you can respond to the anticipated prompt.  If you are operating in "unfamiliar teritory", you are able to jump to the end of the file and read the last line, usually a prompt.
+
+If both of the communicating devices are physically present, two Braille 'n Speaks, a computer and a Braille 'n Speak, etc. both in the same ro
+
+om, the twiddledump can be most useful in spotting handshaking problems.  For example, if you are sending files from one Braille 'n Speak to another and you hear no twiddling sound when you issue your transmit command, you know that no transmission is taking place.  In other words, "no twiddle, no dump"!  On the other hand, if the receiving braille 'n Speak is in "interactive" mode and the twiddledump sounds but no speech comes from the receiver, you know that no reception is taking place even though the se
+
+nder is sending.
+
+The twiddledump does nothing but monitor what is going on.  It does not "roll" data lines.  That is, it does not perform the send/receive crossover function of a null modem.  It simply reports by the sound it emits whether or not there is activity on a serial communication link.  Once you develop the habit of using a twiddledump, chances are you'll wonder how you ever managed without one.
+
+Fred Gissoni                       *** Using the Braille 'n Speak with BEX
+
+              by Phyllis Herrington, David Holladay, and Caryn Navy
+
+
+
+     By cabling the Braille 'n Speak to an Apple II computer, you can transfer
+
+data between the two devices. The Braille 'n Speak is able to transmit data to
+
+the Apple via the Input Through Slot option of BEX. Likewise, the Print option
+
+of BEX enables you to send a file to the Braille 'n Speak. The only software
+
+needed is BEX.
+
+
+
+     \\h3 Equipment Requirements
+
+
+
+     An Apple IIe or Apple IIgs requires a Super Serial Card for Input through
+
+Slot. If you have an Apple IIc or and Apple IIc Plus, you use the printer port.
+
+You also need the proper cables for interfacing the Braille 'n Speak to the
+
+Apple.
+
+
+
+     \\h3 Cabling and Interface Cards
+
+
+
+     To cable the Braille 'n Speak's IO cable to the Super Serial Card, you need
+
+a universal null modem adapter (RDC 3F cable) between the IO cable and the SSC
+
+connector. To connect to an Apple IIc, you need a 2F cable and a 3F cable. To
+
+connect to an Apple IIc plus, you need a 11F and a 3F cable.
+
+x
+
+     Set the Super Serial Card to RDC's standard parameters (see the separate
+
+section on Serial Interfaces).
+
+
+
+     \\h3 Braille 'n Speak to Apple
+
+
+
+     Configure BEX at the User or Master Level. Answer yes to the question Do
+
+you have a remote device to input through slot? Give the slot number for the
+
+Super Serial Card (or the Apple IIc or IIc+ port) that you will be connecting to
+
+the Braille 'n Speak. Press N to answer no to the automatic set-up sequence
+
+question. Answer no to the question Is this a Kurzweil Reading Machine?
+
+
+
+     Include in your configuration a printer for output to the Braille 'n Speak.
+
+Define a printer using the same slot as your remote serial device. How you
+
+configure this printer determines the format of the Braille 'n Speak file once
+
+it's downloaded. If you want every BEX character, including
+
+commands, in your Braille 'n Speak file, configure this printer as a class P -
+
+Paperless brailler. It works well to define this transfer printer as a Thiel
+
+brailler; then BEX underlining commands do not interfere with your Braille 'n
+
+Speak data. If you avoid BEX underlining in the material that you send out, a
+
+Generic printer is fine. Use the carriage width and form length of your choice.
+
+If you want to keep form feed characters out of your data, use form length zero.
+
+
+
+     Use Input through Slot on BEX's Second Menu to get BEX to listen to the
+
+Braille 'n Speak. See User Level Section 12 in the BEX manual for more
+
+information about Input through Slot. Once you supply a target chapter name and
+
+press <CR>, BEX prompts you to start the transfer.
+
+
+
+     Make sure the Braille 'n Speak is set for 8 data bits, 2 stop bits, no
+
+parity, 9600 baud, and hardware handshaking. To set the Braille 'n Speak to 2
+
+stop bits, enter chord-P S 2. If hardware handshaking does not work, change to
+
+software handshaking.
+
+
+
+               *** Braille 'n Speak and Kurzweil Personal Reader
+
+               Robert Carter, Ph.d.
+
+
+
+                          Introduction
+
+
+
+     By complying with the following instructions, you can transmit
+
+all or part of the text that is read by the Kurzweil Personal
+
+Reader directly to a Braille 'n Speak file.  This is particularly
+
+useful to anyone who is using the KPR in a library or other public
+
+setting because you can take a Braille 'n Speak copy of whatever
+
+the KPR was reading upon leaving the library.  This text can, of
+
+course, be edited or manipulated on the Braille 'n Speak in the
+
+same ways that any Braille 'n Speak file can be worked with.  These
+
+instructions are relevant only to the stand-alone Kurzweil Personal
+
+Reader.  They do not apply to the PC-based KPR.
+
+
+
+                       What You Will Need
+
+
+
+     In addition to the BNS and KPR hardware, you will need the
+
+Braille 'n Speak's interface cable and a universal null modem
+
+adapter.  This adapter can either be purchased from Blazie
+
+Engineering as part of their interface kit or as a single item.  It
+
+can be found at many computer stores as well.  The serial ports on
+
+the BNS and KPR are configured as Data Communications Equipment
+
+(DCE) and without a universal null modem adapter they cannot
+
+communicate with each other.
+
+
+
+                     Step By Step Procedure
+
+
+
+1. With the power turned off on all equipment, plug the small end
+
+     of the BNS interface cable into the Braille 'n Speak's serial
+
+     port.  This port is located on the left side of the BNS just
+
+     in front of the round battery charger connector.  Plug the
+
+     other end of the cable into the female side of the universal
+
+     null modem adapter.  Plug the adapter and cable into the
+
+     serial port on the back of the Kurzweil Personal Reader's
+
+     Electronics Unit.  Note that this is a vertical female serial
+
+     port located on the left side of the back of the Electronics
+
+     Unit.  Do not get confused and try to plug the cable into the
+
+     Automatic Scanner.
+
+
+
+2. Power on the KPR's Electronics Unit.  When the system says "hand
+
+     scanner input," locate the "keypad selection" key on the KPR's
+
+     keyboard.  This will be the left most key on the second row
+
+     from the bottom.  Press this key three times or until the KPR
+
+     says "communications setup keypad."
+
+
+
+3. Locate the "message" key. It is the second key from the left on
+
+     the bottom row.  Hold this key down and listen to the KPR
+
+     speak its current communications settings.  If it is set to
+
+     the factory default settings, you will hear: "communications
+
+     setup keypad; block serial output mode; speed is set at 9600
+
+     baud; data word length is 8 bits; 1 stop bit; no parity;
+
+     xon/xoff handshaking; end of line reported as carriage return
+
+     line feed; end of paragraph not reported; end of column not
+
+     reported; end of page reported as form feed."  Remember that
+
+     it is necessary to press and hold down the message key to get
+
+     all of this information.  For this interface to work, it is
+
+     critical that baud rate, data bits, stop bits, parity, and
+
+     handshaking are set to these default settings.  It is possible
+
+     to use the keypad to change any of these settings
+
+     individually.  An easier alternative is to reset the KPR back
+
+     to its factory default settings.  To do this, locate the "save
+
+     and restore settings" key.  It is the left most key on the
+
+     third row from the bottom.  You can either press this key
+
+     several times until the kpr says "restore factory
+
+     communications settings.  Press the top left key on the keypad
+
+     to confirm."  Or, you can hold down the large "backward shift"
+
+     key (the bottom right key on the keyboard) and press the "save
+
+     and restore settings" key once.  In either event, follow the
+
+     KPR's instructions to confirm the restoration of factory
+
+     settings by pressing the top left key on the keyboard. 
+
+     Assuming that the Braille 'n Speak is set to the factory
+
+     default settings, the interface will now work properly.  There
+
+     are two changes that you may optionally wish to make to this
+
+     setup.  By default, the KPR sends a carriage return linefeed
+
+     pair at the end of each line.  You may wish to have it send
+
+     only a carriage return since the BNS does not require a
+
+     linefeed.  This can be changed by using the "line end markup"
+
+     key, which is the top left key on the keypad.  Press this key
+
+     until the kpr says "end of lines reported as carriage
+
+     returns."  Finally, by default, the KPR is set to send user
+
+     defined blocks of text out the serial port.  If you simply
+
+     want everything to be sent as it is being read, change this
+
+     default by using the "transmission mode" key.  This is the
+
+     right most key on the third row from the bottom of the KPR's
+
+     keyboard.  Press this key until the KPR says "continuous
+
+     serial output mode."  Again, change this last setting only if
+
+     you do not want to use the block transmission mode.
+
+
+
+     Now you are ready to return to the KPR's reading keypad. 
+
+     Locate the "keypad selection" key.  It is the left most key on
+
+     the second row from the bottom.  Press it until the KPR says
+
+     "reading keypad."
+
+
+
+4. Power on the Braille 'n Speak and make certain that it is set to
+
+     the factory default communications settings.  Do this by
+
+     entering the status menu with chord-st; that is, dots 3 and 4
+
+     along with the spacebar.  Use chord-a and chord-dot 4 to make
+
+     sure that baud rate is set to 9600, data bits is set to 8,
+
+     stop bits is set to 1, parity is set to no, and handshake is
+
+     set to software.  Remember that in the status menu, numbers
+
+     are entered in the lower part of the cell without a number
+
+     sign.  Before exiting the status menu, locate the "serial port
+
+     active" option and turn on the serial port with a letter "y." 
+
+     Next enter a chord-e to exit the status menu.  Finally, open
+
+     a new BNS file that will contain the text that is sent from
+
+     the KPR.  Remember to make this file big enough to accommodate
+
+     your text.  You can, of course, make the file bigger if
+
+     necessary.  Answer no to the question about the grade two
+
+     translator.  You will be working in computer braille with this
+
+     interface.
+
+
+
+5. The next step is to begin reading with the KPR.  If you are
+
+     using the hand scanner, simply proceed.  If you are using the
+
+     automatic scanner, you will need to select it.  Locate the
+
+     "input device selection" key.  It is the second key from the
+
+     left on the second row from the bottom.  Press this key until
+
+     the KPR says "automatic scanner input." Keep pressing the key
+
+     until you have the appropriate scanning mode for your document
+
+     selected.  That is, either select "left side up," "right side
+
+     up," or "autoflip" depending on your document.  Place your
+
+     document on the scanner and press the scanner's "start" button
+
+     to begin reading.
+
+
+
+6. If you selected "continuous serial output mode" with the
+
+     "transmission mode" key, as the KPR reads, data will be
+
+     automatically transmitted to the BNS.  Note that only text and
+
+     not messages from the KPR will be sent out the serial port.
+
+
+
+     If you left the "transmission mode" key set to "block serial
+
+     output mode", nothing will be transmitted as reading takes
+
+     place.  In this mode, it is necessary to use the KPR's
+
+     "reading keypad" to block whatever portion of the text you
+
+     wish to transfer to the BNS.  A detailed discussion of how to
+
+     use the keypad is beyond the scope of this document.  See the
+
+     KPR manual for complete details.  In brief, however, you will
+
+     need to use the keypad to locate the beginning of the text to
+
+     be transmitted.  Once this is done, press the "text marking"
+
+     key. It is the second key from the left on the third row from
+
+     the bottom.  Press this key until the KPR says "set mark." 
+
+     The KPR is now waiting for you to tell it which mark to set. 
+
+     You can use any of the eight keys on the top two rows of the
+
+     keyboard.  The top left key is considered mark 1 and the right
+
+     most key on the second row is considered mark 8.  Remember
+
+     which mark you set at this time.  Next, move the KPR speech
+
+     cursor to the end of the block of text that you wish to
+
+     transmit.  Go back to the "text marking" key and press it
+
+     until you hear "transmit from mark."  The KPR is now waiting
+
+     for you to press whichever key you used when setting the mark. 
+
+     The KPR will transmit the text and will tell you when it is
+
+     finished.  You can now mark other sections of text and
+
+     transmit them to the BNS in the same way.  When all desired
+
+     text has been stored on the BNS, remember to deactivate the
+
+     Braille 'n Speak's serial port.
+
+
+
+     As mentioned earlier, even though this file was not created
+
+     using the bns keyboard, it is now identical to any other bns
+
+     file.  This means that it can be edited, printed, and saved on
+
+     disk just like all other Braille 'n Speak files.      
+*** NATIONAL FEDERATION OF THE BLIND
+
+      Research & Development Committee
+
+      4424 Brookhaven Avenue
+
+      Louisville, KY  40220
+
+
+
+                          May 18, 1992
+
+
+
+Deane Blazie
+
+Blazie Engineering
+
+Forest Hill, MD
+
+FAX: 1-410-8365040
+
+
+
+Subject:  SENDING FAX FROM A BNS
+
+
+
+Dear Deane:
+
+
+
+I thought it might be a useful exercise to create a text file using
+
+my word processor which could be saved on a disk for later
+
+transmission as a FAX.  Now that Compuserve offers "free"
+
+electronic mail as a part of their basic services, we can expect
+
+rapid growth in the use of this service.  Compuserve now boasts
+
+approximately one million subscribers plus uncounted millions of
+
+other E-mail users who may be reached through gate way connections
+
+to other services.  All this is quite interesting to BNS users most
+
+of whom already know about E-mail, even if they haven't chosen to
+
+use it.
+
+
+
+This note is to pass along some details describing how the
+
+CompuServe mail can be helpful in communicating with many companies
+
+and individuals who may or may not have a CompuServe membership.
+
+
+
+Begin by composing your message on the BNS or download the text
+
+into the BNS from your computer or a disk.  It's a good idea to
+
+create a separate BNS file to contain the message.
+
+
+
+Review all of the settings in the BNS Status menu to make sure that
+
+your communications parameters are correct.  Also, set your left
+
+margin for 10, number of lines per page should be 55 and the line
+
+length should be 65.  Top and bottom margins should be set to 0 and
+
+page numbering should be turned off.  (CompuServe automatically
+
+numbers the pages when it sends your FAX.)
+
+
+
+Check to be sure that the Braille translator is turned on or off
+
+whichever is appropriate.You should also set the BNS to append
+
+linefeeds if they were not included when the message was prepared.
+
+
+
+Open a file, like the Clip Board, for use whiling dialing and
+
+interacting with CompuServe.  Dial up CompuServe and log on with
+
+your ID and password.  Type "GO MAIL" and select menu item 3, which
+
+is  to upload a file.  From the next menu, select item 4 which
+
+tells CompuServe that you want to send the file without using an
+
+error-checking protocol.  When you get the message to start your
+
+upload, open the BNS file containing your FAX message and transmit
+
+the file.
+
+
+
+When the BNS says "OK" you may want to return to the Clipboard file
+
+to finish the operation.  In any case, you will need to send /ex
+
+from the BNS keyboard to signal the end of the upload.
+
+
+
+Select item 1 from the next menu which  indicates  that you want
+
+the uploaded message to be sent.  You will be asked for the name or
+
+ID of the person to receive the message.  Here is where you get to
+
+indicate that the message is to be sent as a FAX instead of regular
+
+E-mail.  Answer the prompt by keying in the name of the addressee
+
+followed by a space, the greater than symbol followed by FAX: a
+
+space and the complete phone number of the FAX machine to receive
+
+the message.  Here is an example :
+
+
+
+(Name or ID)
+
+Deane Blazie >FAX: 1 410 836-5040
+
+
+
+The phone number of the FAX machine must include the initial 1 and
+
+may include country code and city code for foreign phone numbers.
+
+
+
+The rest of the process is straight forward and self explanatory. 
+
+You'll be asked for your name and the subject of your message which
+
+will be used to create and automatically send a cover sheet for
+
+your FAX.  
+
+
+
+The cost of a FAX in North America is 75 cents for the first 1000
+
+characters and 25 cents for each additional 1000 characters.  For
+
+information on charges for sending FAXES to other countries,
+
+request help after you GO MAIL.
+
+
+
+
+
+NOTE:
+
+CompuServe echoes back to your BNS each line as it is sent.  If
+
+this  is not wanted, turn     the "echo" off before starting your 
+
+           session by using these commands:
+
+
+
+!PRO <return>
+
+!FULLD <return>
+
+
+
+Restore "echo" with
+
+!PRO <return>
+
+!HALFD <return>
+
+
+
+                 *** PACKET RADIO AND BRAILLE 'N SPEAK
+
+by Joe Giovanelli
+
+
+
+     The Braille 'n Speak works well in conjunction with
+
+telephone modems, either for chatting or for use with BBS's.  Tis
+
+is covered elsewhere in this book.
+
+
+
+     Amateur radio operators use radio links rather than
+
+telephone lines.  One aspect of amateur radio is what is known as
+
+"packet radio."  There are great similarities between this and
+
+telephone modem communications.  Using packet radio, one can chat
+
+between parties or store and/or retrieve messages on what we call
+
+PBBS's (packet bulletin board systems).
+
+
+
+     Unlike telephone modem communications, packet communications
+
+always makes use of error-checking protocols.  This means that
+
+the transmitting equipment and the receiving equipment are
+
+interrogating each other to make sure that all data is flowing
+
+smoothly and without errors.  Most of this communication is done
+
+at 1200 baud.  The error-checking proceedures slow the actual
+
+communication speed down.
+
+
+
+     When Braille 'n speak is used to communicate via telephone,
+
+the unit is not directly connected to the phone line.  A device
+
+known as a "modem" is connected between the Braille 'n Speak and
+
+the line.  Similarly, when communicating via packet radio (or
+
+packet as we usually call it)
+
+the radio transmitting/receiving device.  Rather, what is called
+
+a "terminal node controller" is connected between the Braille 'n
+
+Speak and the radio aparatus--which is usually a combined
+
+transmitter and receiver (transceiver).
+
+Just as is true of modems, we also must place a "nul
+
+modem" adapter between the Braille 'n Speak and the terminal node
+
+controller (TNC).
+
+
+
+     Many readers may need little more instruction than what I'v
+
+just given.  Even so, it's best to go over some basics.
+
+
+
+     Perhaps the most popular TNC is the PK-232, produced by
+
+Advanced Electronic Applications.  While it is likely that TNC's
+
+made by other firms will behave in more or less the same way as
+
+the PK-232, my experience is limited to this unit.
+
+
+
+     Before you can attempt doing anything with your TNC and
+
+Braille 'n Speak (BNS), you must know something about the TNC you
+
+have.  In any case, you must know that for your equipment to work
+
+properly, you must tell it your amateur radio call letters.  You
+
+must tell it whether or not you want key strokes echoed back to
+
+you.  (You probably won't want this.  You must also tell the TNC
+
+what baud rate to expect to receive from the BNS.  In the case of
+
+the PK-232 at any rate, it is simplest to set your BNS to 1200
+
+baud, 8 data bits, 1 stop bit, no parity, software handshake.
+
+Isn't it nice that just about all these settings are BNS
+
+defaults?
+
+
+
+     You should read the appropriate instructions for your TNC.
+
+Once you have studied out any specifics for your unit, you're
+
+ready for some final setups.
+
+
+
+     You know that data coming from the outside world into BNS
+
+will have to be stored somewhere.  You must, therefore, create a
+
+file of suitable size.  I find that a file of four pages is
+
+sufficient for anything I do.  If you want to download lots of
+
+text, maybe you'll need more, but I really do not think you
+
+should make your file size smaller than this.
+
+
+
+     Program files can be very long indeed.  The BNS, however,
+
+does not provide for the protocols necessary to download such
+
+files; this is why you can usually have just a few pages for text
+
+storage.
+
+
+
+I call my "capture file" simply PACKET but any name you can
+
+remember is fine.
+
+     You must turn off the translator because you will
+
+be typing in Grade 1, using dropped-cell numbers and no number
+
+sign.
+
+
+
+     Make sure all connections are correct between the TNC and
+
+your transceiver.  Make sure to use the nul modem adapter between
+
+the BNS and the RS-232 input on your TNC.  Turn "interactive" on
+
+with the G Chord.  Activate the serial port with P chord, dots
+
+2-6; then answer "Y" to the prompt.
+
+
+
+     Turn on the TNC.  If all is well, you'll hear the greeting
+
+screen for your device.  Press "enter" (dots 4-6 chord) a couple
+
+of times.  Be sure that the TNC prompts you for a command "CMD".
+
+when you hear that prompt, you're ready to go on packet.  You
+
+will want to type "OPMODE" and press enter.  This command asks
+
+your TNC to tell you what operating mode the unit is in.  If it
+
+is already in packet, the TNC  will tell you so.  If it is in
+
+some other mode, such as Morse, it will let you know.  Instruct
+
+the TNC to operate in packet by typing "PA" and press "ENTER."
+
+You should get a reply such as "OPMODE was in MORSE.  Now is
+
+PACKET.
+
+
+
+     Much of the rest of what you do is pretty much a matter of
+
+your needs.  You'll most likely want to get onto your local PBBS,
+
+or, as we say, connect to it.  You'll do this by typing "C",
+
+space, and the call letters or alias of your BBS:
+
+C WA4TFZ (press "enter".
+
+C CHO (press "enter").
+
+     The first instance is the way in which you would connect to
+
+your BBS by typing in the call letters.  Naturally your PBBS call
+
+letters won't be WA4TFZ--the call sign for my PBBS.
+
+     The second line I showed is a way to connect to a PBBS by
+
+using an "alias", or nickname.  "CHO" is the alias for my board.
+
+Yours will be different, or there might not even be one.
+
+
+
+     Most everything else we can talk about involves the
+
+specifics of the particular PPBS you're using.  I won't,
+
+therefore, tell you how to sign off, how to list your mail, read
+
+your mail, list the last 20 messages entered into the system,
+
+etc.  I need to touch on one final point, and I'll illustrate it
+
+by showing how you would address a message to me:
+
+
+
+
+
+SP W2PVY @ WA4TFZ.VA.US.NOAM (press ENTER)
+
+
+
+     My only point here is that the "at" is the "at sign" rather
+
+than typing the word "at".  To type that sign on the BNS, type "u
+
+chord dot 4.  In other words the "at sign" is an upper case dot
+
+4.
+
+
+
+     You'll be writing lots of Grade 1 text, so be careful not to
+
+lapse into Grade 2.  Don't write colon as dots 2-5.  The colon is
+
+the "wh sign".
+
+
+
+     The main signs you'll need are the period (dots 4-6), the
+
+comma (dot 6), the question mark (dots 1-4-5-6, quote (dot 5),
+
+the apostrophe (dot 3), exclamation (dots 2-3-4-6).  The BNS
+
+instruction manual lists the various Braille equivalents for
+
+common ASCII (print) characters.  I urge you to become familiar
+
+with most of these.  Even so, what I have given you will get you
+
+by quite well.
+
+
+
+     Most TNC's are capable of operating on modes other than
+
+packet.  Morse will be fine; I think, but don't know, that AMTOR
+
+will work as it is supposed to.  Neither RTTY nor BAUDOT will
+
+work when using BNS as the computer.  The reason for this is a
+
+bit complicated.  Packet, and AMTOR are under the control
+
+of the TNC in terms of the way the system switches between
+
+receiving and transmitting.  In most instances in the Morse mode,
+
+the TNC sends the elements which make up the morse characters.
+
+In the absence of a character, the transceiver automatically
+
+switches from transmit to receive.  Where your transceiver does
+
+not do this (because it does not feature QSK), you still may use
+
+the Morse mode because you can manually switch between transmit
+
+and receive.
+
+
+
+     Both RTTY and BAUDOT rely on the computer to switch between
+
+the transmit and the receive modes.  In this case the computer is
+
+the BNS.  Because of the nature of the RS-232 voltages on the
+
+BNs (specifically, the request-to-send, RTS, line),
+
+the push-to-talk line will be held in transmit all the time.
+
+ Thus, you can transmit, but, short of disconnecting the
+
+push-to-talk line manually, there's no way to go to receive when
+
+necessary.  You could wire up a special BNS RS-232 cable with a
+
+switch in the push-to-talk line.  I have not tried this, but it
+
+is a reasonable possibility as I see it.  It also looks as though
+
+you could toggle between Vox and Manual push-to-talk, thereby
+
+providing a means of opening that line when you wish to receive.
+
+Preliminary experiments here at W2PVY tend to show that this is a
+
+real possibility, however.
+
+
+
+     That does it for me.  I sincerely hope that this paper
+
+will help you discover yet another dimension to the many others
+
+you've doubtless found for your Braille 'n Speak.
+         *** TRANSFERRING FILES BETWEEN THE READING EDGE
+                    AND BRAILLE 'N SPEAK
+                              
+                       BY STEVE BOOTH
+                              
+
+Use the following steps to connect The Reading Edge and BNS:
+
+1.  Use the cable that came with BNS.  You will need a null
+modem adapter attached to the 25-pin male end of the cable.
+The Reading Edge and the BNS are DCE devices.
+
+2.  Connect the cable to the seria
+
+l port on the back of the
+The Reading Edge.  Then, connect the other end to the BNS
+serial port.
+
+3.  Match the communications parameters.  The default
+parameters on both devices will work.  If you have changed
+any communications parameters, check the status menu on BNS
+and the communications keypad on the The Reading Edge.
+Ensure that the baud rate, parity, stop bits, and handshake
+protocols are the same on both devices.  Handshake is
+xon/xoff on The Reading Edge and software handshake on the
+BNS.
+
+Use the
+
+ following steps to send a block of text from The
+Reading Edge to BNS:
+
+1.  On the BNS, open the file to receive text.  Ensure that
+you have enough room in the file to store the block of text
+you plan to receive.  Turn on the serial port.
+
+2.  On The Reading Edge, move to the beginning of the text
+block you want to send.  Then, press the Mark Text key twice
+until The Reading Edge says "set mark."
+
+3.  Select one of the top eight keys on The Reading Edge as
+your mark.  For example, press the top left key.  T
+
+he
+Reading Edge says "mark one has been set."
+
+4.  Use The Reading Edge's movement keys or the Read key to
+move to the end of the block of text you want to send.
+
+5.  Press the Mark text key five times until The Reading
+Edge says "send the text between the mark and the cursor."
+
+6.  Confirm that you want to send the text by selecting the
+mark that you set earlier.  For example, if you used the top
+left key to set the mark, use that key to transmit the text
+block.
+
+Use the following steps to send text as you
+
+ scan on The
+Reading Edge:
+
+1.  Turn on the Braille 'n Speak serial port.
+
+2.  On The Reading Edge communications keypad, press the
+Serial Output key until The Reading Edge says "send text."
+
+3.  Press the Scan key to start scanning text. The Reading
+Edge sends text through the serial port as it recognizes the
+text.  The Braille 'N Speak will receive text as long as
+there is enough room in the file and the serial port is
+active.
+
+Use the following steps to send files from Braille 'N Speak
+to The Reading Edg
+
+e:
+
+1.  On The Reading Edge reading keypad, press the Select
+Input key until The Reading Edge says "receive text."
+Ensure that there is enough free space in The Reading Edge's
+memory to receive the file from the BNS.  Use the status key
+to find out how much space is available.  Approximately 120
+kilobytes are available when the text memory is empty.
+
+2.  Turn on the BNS serial port.
+
+3.  On BNS, open the file to send to The Reading Edge.
+
+4.  Next, use the BNS's Chord T transit function followed by
+the para
+
+meter for the text you want to send.  The BNS says
+"ok": when the process is complete.
+
+Please note that because The Reading Edge reads ASCII text
+files, the BNS's braille translator should be "on" when you
+send files to The Reading Edge.
+
+Because The Reading Edge sends ASCII text files, turn the
+BNS's braille translator "off" when receiving files from The
+Reading Edge.
+
+
+
+You can experiment with other parameters on each machine to
+obtain the best results for your particular situation.
+
+
+
+Using the Braille 'n Speak 
+with the Braille Blazer
+
+
+by David Goldfield
+
+  
+
+
+
+If you have a Braille Blazer embosser from Blazie Engineering, you can easily interface this printer with your Braille 'n Speak and print out your documents with no problems.
+  The Blazer has two ports, a serial and a parallel port. Since Braille 'n Speak is a serial device, you can connect it to the serial port on the Blazer. 
+  The serial port can be found on the back of the printer. I am assuming that the printer is positioned with the three buttons on your right. If this is so, feel along the back of th
+
+e printer, starting at the right hand side. You will first encounter the on/off rocker switch. The next port is the paralel port. To the left of the paralel port you will find the serial port. This is a 25 pin female port. 
+  If you have the cable which came with your Braille 'n Speak, you have all you need to connect your Braille 'n Speak to the Braille Blazer. No other cableing or adapters are required. This cable has an 8-pin connector on one end, which plugs into your Braille 'n Speak's serial port. The
+
+ other end of the cable has a 25 pin male adapter which plugs into the Blazer's serial port.
+  Assuming that your Blazer is at the factory default settings, you may need to do very little changes in the configuration menu. To perform a factory reset, hold down all 3 keys as you turn on the Blazer. You will hear the message "ok to reset." Hold down all 3 keys again and you will hear the Blazer say "ok." In a few seconds you should then hear the "Braille Blazer ready" prompt.   Now we need to set up the Blaze
+
+r to work with the Braille 'n Speak. Enter the menu by holding down all three keys. You should hear the Blazer say "configuration, speech config." Press the key closest to you, which is the yes or enter key. You will hear "port serial active." This means that whenever information comes into the Blazer's serial port, the data will be spoken. If you are going to print from the Blazer's serial port, this is probably not what you would want, so we must turn off this feature. Keep pressing the yes key until the 
+
+Blazer says "off."
+ Now we need to enter the printer config menu. This can be done by holding down the middle and top buttons at the same time. The printer should say "printer config." Now hit the yes or enter key. The Blazer should say "port parallel active." This means that the Blazer is set to print out the parallel port. For a Braille 'n Speak, the printer must be configured to print out the serial port. To do this, press the bottom button until you hear the printer say "serial."
+  The middle button is 
+
+the no or skip key, which will take you to the various options in this menu.  The yes or enter key will cycle you through the choices available to you in each option. For example, if you press the middle button, you will hear "left margin 0 active." If you want to change this setting, then press the yes or enter key. You will be cycled through the different choices for left margin. The top key is the backup key and will take you back to the previous option. 
+  Here's an important note concerning formatting.
+
+ If you are going to format your document in the Braille 'n Speak, then the Blazer's format parameters should be set to zero, and word wrap should be turned off. The exception to this is right margin, which cannot be set to zero. You may keep right margin at 34 if you are using 8.5 by 11 inch paper.
+  If you are going to format with the Blazer's menu, then set the format parameters in the Braille 'n Speak to zero. In other words, one device should format and the other should not. 
+    The "page length" sett
+
+ing should be at 11 for 8.5 by 11 inch paper. 
+   Keep pressing the skip or no key and you will cycle through  the different settings available to you. When you hear the message "serial config" press the yes key. These settings must match the Braille 'n Speak in order  for successful printing to take place. Assuming you have done a warm reset on the Braille 'n Speak and the Blazer, these parameters will already be matched. If they do not, you will need to match them up in both devices. The status menu in th
+
+e Braille 'n Speak can be used to alter Braille 'n Speak's communications parameters. Here are some settings which should work.  
+9600 baud, 
+no parity, 
+8 data bits, 
+1 stop bit, 
+software handshaking.
+
+
+
+

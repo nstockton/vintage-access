@@ -1,0 +1,763 @@
+** UPAC VERSION 1.10
+Welcome to UPAC V1.10! Many things have been changed or updated from the V1.02 
+release of this product. An attempt has been made to keep the interface and 
+functions as straightforward as possible. This program will run reliably on 
+either the BRAILLE'N SPEAK 640 or the TYPE'N SPEAK units from BLAZIE 
+ENGINEERING. It will run, granted in limited mode, on units with hardware 
+dated before July 2, 1993. It will run in full unrestricted mode on any unit 
+dated after that date. 
+
+
+**What is UPAC?
+UPAC, the bns utility pack, is a program for the BRAILLE'N SPEAK 640 that 
+combines several useful utilities in to a small, easy to use package. This 
+version of Upac has ten major functions. They are:
+
+1. global search and replace
+2. text searching
+3. word line and character counting
+4. file copying
+5. file appending
+6. file encryption
+7. record sorting
+8. grade 2 to ascii translation
+9. program setup and control switches
+10. saving program output 
+
+The program has two modes of operation: an interactive mode and a single 
+command mode. 
+
+
+**Registering your copy of UPAC
+We sincerely hope that you find Upac a useful and simple tool to use. As the 
+program is now, it is a "unregistered" version. You can become a registered 
+user of this program by sending $20 to: 
+
+GREENE SOFTWARE SYSTEMS 
+P.O. 30289 
+Chicago, Il 60630 
+
+As a registered user, you will receive a registered copy of the program along 
+with some additions specifically for registered customers. You will also 
+receive information about other programs available from GREENE SOFTWARE 
+SYSTEMS.  Also, just for registering this first entry in our line of BRAILLE'N 
+SPEAK 640 programs, you will receive a 15% discount on your next software 
+purchase from us. Thank you very much for trying our product and we hope you 
+enjoy it. 
+
+
+**Program restrictions
+This version of UPAC is unrestricted in operation provided that you are using 
+a BNS/TNS update dated after July 2, 1993. If you are using an earlier version 
+of the BNS/TNS internal hardware, the following restrictions are in place.
+
+Any UPAC function that writes information to a file, requires that the file 
+being written to be at the end of the file list. Search and replace, file 
+copying, file appending and file encryption are the functions mostly affected 
+by this restriction. Also, the save program output function is disabled for 
+safety on units with the earlier BNS/TNS hardware.
+
+The open current file option, available when you are entering most filenames, 
+is not available on the earlier versions. See the discussion of UPAC functions 
+for a description of this feature. 
+
+Contact BLAZIE ENGINEERING about updating your unit.
+
+
+**Running the program
+After loading upac.bns in to your BRAILLE'N SPEAK 640, it is ready to run. If 
+you start upac with no command line arguments, you will enter the interactive 
+mode. type O Chord x and at the prompt type upac then press E Chord or dots 4 
+6 Chord. Upac will speak a brief sign-on message. After the message is 
+finished, press any key for the upac main menu. In interactive mode, you will 
+return to the main menu after selecting any Upac function. To exit Upac, press 
+Z Chord from the main menu. 
+
+In single command mode, Upac performs one function, file copy for example, and 
+then exits. This mode is ideal for use in BRAILLE'N SPEAK macros. To run Upac 
+in single command mode, you need to specify which upac function you wish to 
+perform when you start the program. This is done by entering the quick key for 
+that function as the first command line argument. See the next section for an 
+explanation of quick keys. See the section on quick keys and the single 
+command mode, near the end of this manual, for a more detailed discussion of 
+the single command mode.
+
+
+**Moving around the menu
+In interactive mode, all Upac functions are available through a menu 
+interface. The Upac menu is similar in operation to the BRAILLE'N SPEAKs' 
+status menu. You can move backward and forward through the menu using A Chord 
+  and dot 4 Chord respectively (up arrow and down arrow on the TNS). C Chord 
+  will speak the current menu selection. Additionally, pressing the space key 
+    will move forward through the menu just like dot 4 Chord. Once you are 
+ pointing at the function you want, press either E Chord or dots 4 6 Chord to 
+ activate that function. Alternately, just like in the BRAILLE'N SPEAK status 
+ menu, there are quick keys that jump directly to a function and activate it. 
+ Pressing dots 3 6 Chord will speak the quick key associated with the current 
+ menu selection. TO EXIT THE MENU AND RETURN TO THE BRAILLE'N SPEAK OPERATING 
+                            SYSTEM, PRESS Z Chord. 
+
+
+                               ***UPAC FUNCTIONS
+
+
+**Search and replace
+Search and replace is now available for the BRAILLE'N SPEAK! No more manual 
+inserts, no more testing and retesting macros. Upac provides a facility to 
+automatically search for all occurrences of a string in a file and replace 
+each occurrence of the string with another string. 
+
+When you start Upac for the very first time in interactive mode, the first 
+item on the menu is search and replace. After the sign-on message, press any 
+key and the program will say: "Upac main menu  search and replace".  Press C 
+Chord and the program will repeat the words  "search and replace". Press dots 
+3 6 Chord and the program will say the letter S. The letter S is the quick key 
+for the search and replace function.  Pressing the letter S from any place on 
+the main menu, or supplying it as the first command line argument when running  
+Upac, will automatically activate the search and replace function. 
+
+After you have activated the search and replace function, either by pointing 
+to it and pressing E Chord or dots 4 6 Chord, or by pressing the letter s, 
+Upac will say "file to search". Enter the name of the file you wish to search 
+and press enter. You can enter wildcard characters in the filename, E.G. *.doc 
+to search and replace in all files with a .doc extension. If you are not 
+familiar with this concept, please consult your units' manual. If the file you 
+entered cannot be found, or some other error occurred, Upac will speak a 
+warning message and return to the main menu. For users of UPAC with the 
+newer BNS/TNS hardware, another option is available when you are prompted for 
+a filename. If you simply enter the period character "." and press enter, the 
+currently opened file in your unit will be used for the search and replace. 
+This makes it possible to create a macro that will work in any file without 
+you having to enter the filename each time. (see single command mode section 
+for an example) 
+
+After you have entered  a valid file, Upac will say "search string". Now enter 
+the string you want the program to search for. The string may be up to 80 
+characters in length. Once again, end your entry with either E Chord or dots 4 
+6 Chord. From this point on, we will simply refer to this as pressing enter.  
+All uppercase and lowercase keys can be entered directly into the search 
+string, with one exception that will be mentioned shortly. 
+
+After you have entered the search string and pressed enter, the program will 
+say "replacement string". Now enter the string you want to replace the search 
+string with. Once again, the string may be up to 80 characters in length and 
+all letters are directly entered into the string with one exception. There is 
+one difference between entering a search string and entering a replacement 
+string. When entering a replacement string, you may press enter without 
+entering a string. This enters a "0 length" string as the replacement string 
+and when the search is done, all occurrences of the search string are simply 
+deleted from the file being searched. You can also enter a 0-length string 
+from the command line giving you this same feature in single command mode. On 
+the command line, enter the two characters \0 for the replacement string. Make 
+sure that there is no space between the two characters or an error will be 
+noted. (see single command mode section for an example). 
+
+Whenever you are entering strings into the UPAC program, either filenames or 
+other strings, the following editing keys are available:
+
+BNS key         TNS KEY         description
+L CHORD         HOME            go to start of line
+4 5 6 CHORD     END             go to end of line
+B CHORD         BACKSPACE       delete character to left
+dot 3 CHORD     SHIFT LEFT      move one character left
+dot 6 CHORD     SHIFT RIGHT     move one character right
+1 5 6 CHORD     (same)          current column on line
+R CHORD         (same)          room left on line
+I CHORD         INSERT          toggle between insert and overstrike mode
+3 6 CHORD       SHIFT END       speak current character
+D CHORD         DEL             delete current character
+
+We have referred several times to the one key that is not directly placed into 
+a search or replace string. This key is the backslash '\' character. It is 
+entered from the keyboard with U Chord followed immediately by dots 1 2 5 6 on 
+the BNS; it is a regular key on the TNS.  The backslash character is used by 
+Upac to provide a method for entering non-printable characters from the 
+keyboard. Follow the backslash character with any number from 0 to 255, and 
+the ASCII character with that value will be inserted in the string.  To enter 
+a backslash into the string, follow the backslash character with a second 
+backslash character.  Several common ascii values have letter shortcuts. 
+They are as follows:
+
+\r enters a carriage return into the string (ascii 13)
+\n enters a line feed (ascii 10)
+\t enters a tab (ascii 9)
+\f enters a formfeed (ascii 12)
+\s enters a space (ascii 32)
+
+In interactive mode it is not necessary to use the '\s' space shortcut since 
+spaces can be entered directly in the string.  The space shortcut is useful in 
+single command mode when entering strings that have embedded spaces in them. 
+See the section on quick key access for more details. 
+
+As a final note on the backslash-number sequences, some care needs to be taken 
+when your string contains a backslash-number sequence followed immediately by 
+a normal number. In this case, it is necessary to represent the ascii value 
+following the backslash as a three digit number. For example, to enter (ascii 
+27) followed by the number 26 into a string the correct sequence is "\02726". 
+Otherwise, the backslash sequence will not be correctly interpreted. 
+
+After the replacement string has been entered, you will normally be presented 
+with a selection form for picking the case sensitivity of the search to be 
+performed. The program will say "search type:" and then 
+the type of search currently selected. Simply press the space bar to cycle 
+between a case sensitive search and a case insensitive search. Pressing C CHORD 
+in this form will speak the current setting and pressing p CHORD will speak 
+the parameter and the current setting together. To exit this form, and 
+immediately start the search and replace process, press Z CHORD.  The current 
+setting of "search type" will be kept as the default value until you either 
+change it again in this function or from the program setup function. It is 
+possible to skip this case sensitivity selection step, see the program setup 
+section for details. 
+
+After you have entered the search and replacement strings, and you have 
+selected the type of search, the program will begin the search and replace 
+process. You will hear a click from the BRAILLE'N SPEAK  after the program has 
+finished working on each page (4096 bytes) of the file.  For a large file, 6 
+or more pages, the first few clicks may be widely spaced so don't panic if 
+your machine doesn't click for a couple of seconds. When the search and 
+replace process is finished, Upac will inform you of how many occurrences of 
+the search string were located and then the program will return to the main 
+menu. 
+
+If at any time during the process an error occurs, the program will issue an 
+error message and return to the main menu. 
+
+
+** Text searching
+Text searching is the second item on the UPAC main menu. It is to the "right" 
+dot 4 CHORD of the search and replace function. The text searching function is 
+a way to search across multiple files for a given text string. Pressing dots 3 
+6 CHORD when pointing at this function will reveal that its' quick key is t.
+
+After selecting this function, UPAC will prompt you for the files to search. 
+Enter a filename and press enter. Wildcards and the period (open current file 
+symbol) are valid here.
+
+After entering a filename, the program asks  you for the string you wish to 
+search for. Enter a string of up to 80 characters and press enter. Unlike in 
+search and replace, you cannot enter non-printable characters in this string. 
+Only normal, ascii printable characters may be in this string. This ensures 
+that the string being searched for is contained on a single line and not 
+broken up on separate lines.
+
+After entering the string and pressing enter, you will be presented with a 
+small form for selecting different aspects of the text search. The parameters 
+that can be set are:
+
+case sensitivity of the search (on or off)
+show line numbers (on or off)
+pause after each match (on or off)
+
+Move to the item you wish to change using dot 1 CHORD and dot 4 CHORD and 
+press the space bar to toggle the available settings. Pressing C CHORD will 
+speak the current setting and pressing P CHORD will speak the current 
+parameter and its' current setting.
+
+Case sensitivity determines whether the search must match the string exactly. 
+If on, it must match exactly, if off it will match in spelling, regardless of 
+capitalization.
+
+Show line numbers determines whether the line number containing the matched 
+string is spoken. If on, the line number is spoken before the line is spoken, 
+if off, no line number is spoken.
+
+Pause after each match determines  whether the program pauses after it finds a 
+match. If off, the program will simply run through all the files specified and 
+speak each matching line found. If on, the program will pause after each match 
+and prompt you to take some action. The available actions are:
+
+press enter to continue searching
+press n to skip to next file
+press q or Z CHORD to stop searching immediately and return to the main menu
+
+After you have set the parameters to your satisfaction, press Z CHORD to start 
+the searching process.  As with the search and replace function, any changes 
+made in this selection form will be kept as the defaults until they are 
+changed again, either from this function or from the program setup function.
+
+After the search is completed, a count of the  files searched and the lines 
+matched is given and you are returned to the main menu. It is possible to skip 
+the parameter selection step, see the program setup section for details. 
+
+
+**Word line and character counting
+The third function available on the Upac main menu is "word line and character 
+counting". This function provides a way to count the number of words, the 
+number of lines and the number of characters for any file in your BRAILLE'N 
+SPEAK. This function is located to the "right" (dot 4 Chord) of the text 
+search  function on the main menu. When you are pointing at this function, 
+press dots 3 6 Chord and you'll find that this functions quick key is the 
+letter w. 
+
+After selecting this function, you will be presented with a submenu with four 
+options: characters, lines, words, and all. THis submenu works just like the 
+main menu and allows you to count only characters, only lines, only words, or 
+all three things at once. Select the item you desire just as on the main menu, 
+either by the quick key, or by pointing to the item and pressing enter.
+
+After selecting from the submenu, Upac will say "files to count". Enter the 
+name of the file you want to count and press enter. If the file cannot be 
+found, Upac will inform you of that fact and return to the menu. Once again, 
+you may use wildcard characters in the filename if desired. Also, if you are 
+using a newer BNS/TNS, entering . in response to the files to count prompt 
+will use the currently open file in your unit. 
+
+As the program is reading the file, it will generate a click for each page 
+read, just as in search and replace. You will find that this process is very 
+fast. When the counting process is completed, Upac will tell you the number of 
+files searched, and the number of items counted.
+
+
+**Copying a file
+The next function to the "right" (dot 4 Chord) of the word counting function 
+is "copy file". This function allows you to copy a file to a new file. When 
+you are pointing at this function, press dots 3 6 CHord and you will find that 
+this functions' quick key is the letter c. 
+
+After selecting this function, Upac says "file to copy". Enter the name of the 
+file you want to copy and press enter. Again, wildcards are acceptable and
+the . (open current file symbol) is allowed for newer units.
+
+The program then says "file to copy to". Enter the name of the file you want 
+to copy the first file to and press enter.  Here, wildcards are not allowed!! 
+
+If the file to receive the copy already exists, you will be prompted to verify 
+that you want to overwrite it. Press y to overwrite it, n or Z CHORD to exit 
+back to the main menu. See the section on program setup to find out how to 
+turn this overwrite prompting off.
+
+If an error occurs during copying, an error message is spoken and the program 
+returns to the main menu. Otherwise the program will report the number of 
+files copied and then return to the main menu.
+
+
+**Appending to a file
+The next function on the Upac menu is "append file". This function is similar 
+to the copy file function except that if the second file name you supply 
+already exists, it is not deleted. The first file is added to the end of the 
+second file. When pointing to this function, press dots 3 6 CHord and you will 
+discover that this functions' quick key is the letter a. 
+
+After selecting this function, Upac will say "file to append". Enter the file 
+you wish to append and press enter. Wildcards and the . (open current file 
+symbol) are valid at this prompt.
+
+The program will then say "file to append to". Enter the name of the file you 
+wish to append the first file to.  As with copying, wildcards are not allowed 
+at this second file prompt.
+
+As noted in the section on program restrictions, if you are using an older 
+BNS/TNS hardware version, this file must be the last file in the file list.  
+
+If an error occurs during the append operation, then the program speaks an 
+error message and returns to the menu. Otherwise, Upac gives a count of the 
+files appended and returns to the menu. 
+
+
+**Encrypting a file
+The next function available is "encrypt file". This function is provided for 
+those who want that added measure of security. The BRAILLE'N SPEAK 640 allows 
+you to password protect your files. Unfortunately, this protection only covers 
+opening the file from the file menu.  Any external program can read from this 
+protected file without any difficulty. The encrypt function will scramble your 
+file so that it is virtually impossible to make any sense out of it. When 
+pointing at this function, press dots 3 6 Chord and you'll find that the quick 
+key for this function is the letter e. 
+
+After selecting the encrypt file function, upac says "file to 
+encrypt/decrypt". Enter the name of the file you wish to encrypt (scramble) or 
+decrypt (unscramble). Wildcards and the period (open current file symbol) are 
+valid at this prompt.
+
+After entering the file, the program says "keyword". If encrypting a file, 
+enter the keyword you want the program to use while scrambling the file. If 
+you are decrypting a file, enter the same keyword you entered when you 
+encrypted the file. The keyword may be up to 80 characters in length and may 
+contain embedded non-printable characters. See the section on search and 
+replace for information on entering non-printable characters. 
+
+After entering the keyword, the program prompts you to re-enter the keyword 
+for security and verification. Re-enter the keyword exactly! If you do not 
+re-enter the keyword exactly, an error message is spoken and you are returned 
+to the main menu.
+
+After re-entering the keyword correctly, The program starts the encryption 
+process. Upac will click after it has processed each page of the file. After 
+the encryption process is completed, the program will say "encryption 
+completed" and return to the menu. 
+
+A note about keywords: You may encrypt a file with more than one keyword. 
+Simply encrypt the file another time giving the program a different keyword 
+each time. To decrypt the file, run the program with each keyword used in its' 
+encryption. You may decrypt the file in any order. 
+
+WARNING: encryption scrambles files and if you forget the keyword you used to 
+encrypt them, they stay scrambled!! Be careful!
+
+
+**Sort file
+Upac now has a sorting facility! The next item on the main menu "sort file" 
+allows you to sort records in a file into a second file with some complex 
+control over the sorting process.
+
+After pointing to this function, you can see that the quick key for this 
+function is o. Think of it as o for ordering.
+
+After selecting this function, you will be prompted for the name of the file 
+to sort. Wildcards are not recognized for this filename but the period (open 
+current file symbol) is supported. 
+
+After entering the input filename, UPAC prompts you for the name of the file 
+to receive the sorted information. Wildcards and the period symbol are not 
+supported for this filename. Enter the filename and press enter. 
+
+Next, you will be presented with a small selection form for setting sort 
+parameters. Move through the form with dot 1 CHORD and dot 4 CHORD and change 
+individual parameter settings by pressing the space bar.
+
+There are four sort parameters available:
+
+1. sort order
+2. overlap upper and lower case
+3. start at column
+4. field width
+
+Sort order, determines the direction of the sort and can be set to normal or 
+reverse. Normal sort order is sorting in ascending order and reverse is 
+sorting in descending order.
+
+Overlap upper and lower case, is, in effect, case sensitive sorting. It can be 
+set to on or off. If on, the sort will be performed as a case insensitive 
+sort. If off, the sort will be a case sensitive sort.
+
+Start at column, determines at which column on each line to begin the sorting 
+process. This parameter expects you to enter a number from 0 to 131 where 0 
+means start at the first position on the line. Enter a number and press enter. 
+As an example, to start the sort process at the fifth column on each line, you 
+would enter 4 in this field--in effect skip first 4 characters on each line 
+and then start sorting. 
+
+Field width, is the width of the field to use when sorting lines. Normally, it 
+is the whole line length, 132, but may be made any size from 1 to 132. Enter a 
+number here and press enter. This parameter restricts the sort to a subset of 
+each line.
+
+Note, files that are to be sorted cannot have lines longer than 132 
+characters or an error message will be spoken and you will be returned to the 
+main menu. If the start at column and field width parameters indicate an 
+invalid sort, E.G. start at column 300 or field width 200, then both values 
+will be automatically adjusted so that a valid sort can be performed.
+
+When you have finished setting the sort parameters, press Z CHORD to begin the 
+sorting process. It is possible to skip this parameter selection step, see the 
+section on program setup.
+
+If the file to receive the sort exists, then you will be prompted to overwrite 
+the file. Press y to overwrite the existing file, or press n or Z CHORD not to 
+overwrite the file and return to the main menu.  It is possible to skip this 
+overwrite prompt; see the section on program setup. 
+
+There are three steps in the sorting process. First UPAC will say "reading 
+file" as it reads in the file to sort. Then it will say "sorting" and it will 
+click occasionally to let you know that all is still well.  The final step is 
+writing out the sorted file. If an error occurs at any point in this process, 
+an error message is spoken and you will be returned to the main menu.
+
+
+**Grade2 to ascii
+UPAC's final major function is a grade2 to ascii translator. It will translate 
+braille files into straight ascii using the BNS/TNS internal conversion 
+routines.  Pointing to this function, you will notice that the quick key is g. 
+
+When you select this function, UPAC will ask you for the name of the file to 
+translate. You may use wildcards or the period (open current file symbol) 
+here. After you enter the filename, press enter.
+
+UPAC generates an output file name for the translated file by adding the 
+extension ".txt" to the input filename. If the output file exists, you will be 
+prompted to overwrite it. Press y to overwrite it, n or Z CHORD to abort the 
+translation function.
+
+After the translation is completed, you are returned to the main menu.
+
+
+**Program setup
+The next option available on the main menu is the program setup section. This 
+is intended to give you greater control over the functioning of UPAC. The 
+quick key for this function is the slash '/' character.
+
+After selecting this function, you will be in a selection form that will look 
+similar to the ones in the search and replace, text search and sorting 
+functions. You select a parameter by moving to it and change its' value by 
+pressing the space bar.
+
+When pointing to a parameter, you will notice that the parameter name is made 
+up of two parts; a word or phrase describing the scope of the parameter, 
+followed by the parameter name. There are four general types of parameters on 
+this form:
+
+1. general: These apply to all of UPAC.
+2. search and replace: These apply to the search and replace function only.
+3. sort: These apply to the sorting function only.
+4. text search: These apply to the text search function only.
+
+Parameter types 2, 3 and 4 handle exactly the same parameters as the selection 
+forms in the coresponding functions and will not be discussed here. Suffice it 
+to say, that you can change function defaults here, without having to enter 
+the coresponding functions.
+
+Parameter type 1, the general parameters set program wide defaults and can 
+only be changed in this form. There are 4 general parameters. They are:
+
+1. say full numbers
+2. punctuation
+3. prompt on duplicate filename
+4. auto defaults
+
+Say full numbers, is analogous to the BNS/TNS numbers mode setting and can 
+either be on or off. If on, numbers will be spoken as full numbers, if off, 
+they will be spoken as digits.
+
+Punctuation, handles the speaking of punctuation and may be set to most, some, 
+all or none.
+
+Prompt on duplicate filename, determines whether you get prompted by UPAC 
+before overwriting an existing file. It can either be on or off. If on, UPAC 
+will prompt you before overwriting a file that already exists. When prompted, 
+enter y to overwrite the file, n or Z CHORD not to overwrite. If this 
+parameter is off, no prompt will be given and the existing file will simply be  
+overwritten.  Copying, sorting and grade2 translations are the functions 
+affected by this parameter.
+
+Auto defaults, determines whether or not to display the individual selection 
+forms in the search and replace, text search and sorting functions.  It can 
+either be on or off. If on, the defaults will automatically be used and no 
+selection forms will be displayed. If off, the selection forms will be 
+displayed in the individual functions.
+
+
+Once a parameter has been changed, it is the default until it is changed again 
+either through this form or through the individual selection forms in the 
+search and replace, text search and sorting functions. Note that if the auto 
+defaults parameter is set to on, then the only way to change parameters for 
+the search and replace, text search and sorting functions is through this 
+form.  Setting auto defaults to off will once again allow for the displaying 
+of the individual selection forms in the above mentioned functions.
+
+
+**Saving program output
+The final item on the UPAC main menu is the "save output" selection. Normally, 
+when you are working in UPAC, the program speaks prompts and information, and 
+then it is gone forever. Now, with this selection, you can save any output 
+from the program for future use. Here's how it works.
+
+When you point to this item for the first time, you'll notice that the menu 
+item is "save output off". The quick key for this item is the > sign. 
+Selecting this item, you'll notice that the menu prompt changes to "save 
+output on". Now, everything that you do in UPAC, until you exit the program, 
+is being written to the clipboard. After you exit UPAC, simply paste the 
+clipboard into any file you wish and there will be all the information you 
+gathered in your last UPAC session. If during a session you wish to 
+discontinue output saving, simply point to this item again from the main menu 
+and select it, or press the > sign when on the main menu. The menu item will 
+change back to "save output off".
+
+ NOTE: Save output only works in the interactive mode of UPAC, it cannot be 
+used in the single command mode.  Also it is only available on units with the 
+new internal hardware revisions; dated July 2, 1993 or later. If you are using 
+an earlier version, this option will not even appear on the main menu.
+
+
+                            ***Single command mode
+
+
+**Quick key access and single command mode
+Throughout this document, we have referred numerous times to quick keys and 
+the single command mode. Now that you've had a chance to check out the 
+interactive mode, we should say a few words about the single command mode. 
+First of all, as was mentioned earlier, the quick key associated with any 
+function will automatically jump to and activate that function regardless of 
+where you are on the Upac menu. These quick keys have another powerful use. 
+
+When you run Upac, it is possible to supply the program with command line 
+arguments. These are entered after you've typed the name of the program and 
+before you've typed enter to start the program. Command line arguments are 
+separated by spaces. 
+
+When arguments are supplied on the command line, Upac runs in single command 
+mode -- that is, it performs one of its' functions and exits back to the 
+operating system. 
+
+Upac can accept up to 5 command line arguments. The first one must be either 
+a string of command switches or a valid quick key combination. If the first 
+argument string is a string of command switches, then the second argument MUST 
+be a valid quick key combination. See the next section for a discussion of 
+command switches. The next arguments are based on the quick key combination 
+entered. These arguments are simply the input data entered to the various 
+prompts associated with that function. 
+
+The general syntax looks like this:
+
+O CHORD X upac [command_switches] quick_keys [arg1] [arg2] [arg3]
+
+The brackets indicate optional arguments. Only the quick key combination is 
+required for UPAC to run in single command mode.
+
+As we will mention in the section on command switches, the string of command 
+switches MUST start with the slash character '/' and all the switches must be 
+grouped together. No spaces must appear between command switches. 
+
+
+**Command switches
+Command switches are used to change certain aspects of UPAC operation while in 
+single command mode. Unlike changing parameters in the program setup form or 
+the individual selection forms, these changes are only in effect for the 
+single command being carried out. The default values are reestablished after 
+the single command is finished.
+
+Command switches must preceed the quick key designation on the command line 
+and must start with the slash '/' character. Multiple switches can be entered 
+directly following each other. No space must exist between command switches.
+
+The command switches for single command mode are:
+
+a+ turn on auto defaults (no selection forms)
+a- turn off auto defaults (show selection forms)
+q+ turn on prompt on duplicate filename
+q- turn off prompt on duplicate filename
+c+ turn on case sensitivity globally
+c- turn off case sensitivity globally
+s+ sort in ascending order
+s- sort in descending order
+o(number) use (number) as sort field offset
+w(number) use (number) as sort field width
+l+ turn on line numbers in text search
+l- turn off line numbers in text search
+p+ turn on pause in text search
+p- turn off pause in text search
+
+The c+ and c- switches affect the search and replace, text search and sorting 
+functions.
+
+
+**EXAMPLES
+A few examples of the single command syntax should be instructive at this 
+point.
+
+1. to run Upac in single command mode and perform a search and replace 
+function you would enter: 
+
+O Chord x upac s [filename] [search string] [replacement string] 
+
+2. To search the file notes for the string hello and replace it with good-bye 
+you'd type: 
+
+O Chord x upac s notes hello good-bye 
+
+3. To search the file temp for all line feed characters and replace them with 
+nothing you would type: 
+
+O CHORD X upac s \n \0
+
+Notice the use of \0 for a 0-length string.
+
+4. To count the number of lines in the currently opened file, you'd type: 
+
+O CHORD X upac wl .
+
+Notice in this example that the quick key combination is wl, w for the main 
+menu word/line/character counting function and l for the line counting submenu 
+choice. These quick key choices must be placed together with no space between 
+them. Notice also the use of the period (open current file symbol). 
+
+5. To do a guaranteed case insensitive search and replace on a file, you would 
+type:
+
+O Chord x upac /c- s [filename] [search string] [replacement string] 
+
+Notice the use of the c (case sensitive switch) to turn off case sensitivity 
+for this search.
+
+6. To sort a file in ascending order, starting at field offset 5 and with 
+field width 20, you would type:
+
+O CHORD X upac /s+o5w20 o [file to sort] [file to receive sort]
+
+Notice how the three switches s, o and w are grouped together with no spaces. 
+Always remember that the '/' indicates a group of command switches and that 
+the command switches must preceed the quick key designation.
+
+
+**Summary of UPAC single command mode functions
+The following list shows each Upac function along with the parameters expected 
+on the command line. If any of the arguments following the quick key are 
+missing, Upac will prompt for them. If the quick key supplied as arg1 is 
+invalid, Upac will speak a warning and exit. 
+
+search and replace:
+s [files to search] [search string] [replacement string]
+
+text searching
+t [files to search] [string to search for]
+
+word line and character counting:
+count characters
+wc [files to count]
+count lines
+wl [files to count]
+count words
+ww [files to count]
+count all
+wa [files to count]
+
+copy file:
+c [files to copy] [file to copy to]
+
+append file:
+a [files to append] [file to append to]
+
+encrypt file:
+e [files to encrypt/decrypt] [keyword] [keyword verification]
+
+sort file
+o [file to sort] [file to receive sorted records]
+
+grade2 to ascii
+g [files to translate] 
+
+Note: When entering a search string, a replacement string or a keyword on the 
+command line, the embedded form of the space character MUST be used since a 
+normal space is interpreted as the end of a command line argument.  Use 
+either \32 or \s when a string being entered on the command line requires a 
+space.
+
+As an example, the string "hello dolly" would be written as "hello\sdolly" on 
+the command line.
+
+
+**summary of string editing keys
+Whenever you are entering strings into the UPAC program, either filenames or 
+other strings, the following editing keys are available:
+
+BNS key         TNS KEY         description
+L CHORD         HOME            go to start of line
+4 5 6 CHORD     END             go to end of line
+B CHORD         BACKSPACE       delete character to left
+dot 3 CHORD     SHIFT LEFT      move one character left
+dot 6 CHORD     SHIFT RIGHT     move one character right
+1 5 6 CHORD     (same)          current column on line
+R CHORD         (same)          room left on line
+I CHORD         INSERT          toggle between insert and overstrike mode
+3 6 CHORD       SHIFT END       speak current character
+D CHORD         DEL             delete current character
+
+hes
+Command switches are used to change certain aspects of UPAC operation while in 
+single command mode. Unlike changing parameters in the program setup form or 
+the individual selection forms, these changes are only in effect for the 
+single command being carried out. The default values are reestablished after 
+the single command is finished.
+
+Command switches must preceed the quick key designation on the command line 
+and must start with the slash '/' character. Multiple switches can be entered 
+directly following each other. No space must exis

@@ -1,0 +1,364 @@
+	Graph-it Version 1.05
+	User's Manual
+
+	Copyright 1997 Blazie Engineering, Inc.
+	All Rights Reserved
+
+
+INTRODUCTION
+
+	Welcome to Graph-it, a new and exciting program from Blazie Engineering.  This program allows you to use your Braille printer, in conjunction with your PC, Braille 'N Speak, Type 'N Speak, or Braille Lite, as a graphing calculator.  You can enter up to ten equations or inequalities, and then the Graph-it program will output the graph of the equations or inequalities that you have entered to your Braille printer.  You have total control over the final output.  You can select to print the graph on a full grid, just an x and y axis, or with no axes or grid.  Graph-it also gives you full control over the scale of the graph, allowing you to set the range of x and y, the grid size, and the number of units per grid square.
+
+
+	This manual is divided into six chapters.  The first chapter discusses how to get Graph-it up and running on either your PC, or your Braille 'N Speak, Type 'N Speak, or Braille lite.  Chapter two introduces the main screen, and discusses how to navigate and use it.  Chapter three will introduce you to setting up the program to your liking, and so that it will work with your system.  Chapter four discusses printing and scaling graphs.  Chapter five explains Graph-it's audiograph feature.  Chapter six discusses the graph stats command.
+
+
+
+	CHAPTER ONE
+	GETTING STARTED
+
+	Before you begin using the Graph-it program, it is a good idea to make a backup copy of the Graph-it disk.  Then, use the copy and put the original disk in a safe place.
+
+	Before using Graph-it, you will need to install the program in your system.
+
+	If you are using the PC version, insert the disk containing Graph-it into the drive.  Then at the DOS prompt, log on to that drive.  For example, if the Graph-it disk is in drive a, type:
+
+a:
+
+
+Now, you have two options.  If you want the Graph-it program to be put onto your hard drive in its own subdirectory, type install <enter>.  The installation program will introduce itself, and will ask you to enter the drive letter to install Graph-it to.  Enter the letter of your hard drive.  The program will then ask you to enter the name of a directory which will contain the graph-it program.  The default is graph-it.  To accept this default, just press <enter>, or you can enter another directory name.  The directory will be created, and then the graph-it.exe program will be copied into that directory.
+	To run the program, first change to the subdirectory containing it with a command like:
+
+cd c:\graph-it
+
+Next type graph-it <enter>.
+
+You'll then be placed in Graph-it's main screen.
+
+	If you don't want to put the Graph-it program on your hard drive, you can simply run the Graph-it program from the floppy disk by typing graph-it <enter>.
+
+
+	If you are using the version of Graph-it for the Braille 'N Speak, Type 'N Speak, and Braille Lite, you should first download the graph-it.bns program into your unit.  You can either use the Blazie Engineering disk drive accessory, or you can use a telecommunications program.  If you are not familiar with how to do this, please consult your unit's manual.  the program will require approximately ten pages in your unit.
+	Once you have downloaded the program into your unit, press o-chord x (F9 x on the Type 'N Speak.)  Your unit will ask you to "Enter program to execute."  Type graph-it, and then press e-chord (enter on the Type 'N Speak.)
+
+
+
+	CHAPTER TWO
+	the MAIN SCREEN
+
+	When you first start Graph-it, the main screen will appear.  The program's title and a copyright notice are displayed at the top of the screen.  The next item on the screen is the entry window.  This window contains spaces for ten entries, each of which can be either an equation or an inequality.  You will notice that entry 1 is highlighted, and that all entries in the window display "(Nothing entered)."  This indicates that there are no equations or inequalities on the current graph.  At the bottom of the screen is the list of available commands.
+	If you are running Graph-it on a Braille 'N Speak, Type 'N Speak, or Braille Lite, the program will begin with a sign on message, followed by saying:
+
+"Entry 1: (Nothing entered)"
+
+This corresponds to the entry which is highlighted on the screen in the PC version.
+	To enter an equation or inequality, highlight the entry where you want to place it, and press <enter>.  For example, nothing is currently entered, so you can highlight entry 1, and press <enter>.
+	The previous equation or inequality, or in this case, the "(Nothing entered)", is replaced by a cursor for you to type the equation or inequality.
+	Equations are entered in y = format.  Here are some examples:
+
+y = 2x+5
+y = sqrt(x)
+y = x^2-3x+5
+
+Instead of an equation, you can also enter an inequality.  Here's a list of the comparison operators and what they represent:
+
+operator			represents
+
+=				is equal to
+<				is less than
+<=				is less than or equal to
+>				is greater than
+>=				is greater than or equal to
+
+Here are some examples of some inequalities, and how they would be read:
+
+y < 3
+   y is less than 3
+
+y <= 2x
+   y is less than or equal to 2x
+
+y > 2x+3
+   y is greater than 2x+3
+
+y >= 2x^2
+   y is greater than or equal to 2x^2
+
+	If you are using Graph-it on a Braille 'N Speak, Type 'N Speak, or Braille Lite, simply use dot 1 and dot 4 chord to point to the entry you want to edit, and press e-chord to enter the equation or inequality.  On the Type 'N speak, use the up and down arrows to select the entry you want to edit, and the enter key to enter the new equation or inequality.  Your unit will say the entry number.  type the equation or inequality, and press e-chord (enter on the Type 'N Speak).  Your unit will say "ok".
+
+	When entering equations or inequalities on the Braille 'N Speak or Braille Lite, you must enter the equations or inequalities in Computer Braille.  In Computer Braille, all the numbers are dropped, (as in Nemeth Code).  No number sign is necessary however.  The equals sign is rendered by a full-cell (dots 1, 2, 3, 4, 5, 6).  the less than symbol is rendered with a Grade Two g h sign (dots 1, 2, 6).  the greater than symbol is rendered with a Grade Two a r sign (Dots 3, 4, 5).  The left parentheses is obtained with the Grade Two o f sign (dots 1, 2, 3, 5, 6).  The right parentheses symbol is obtained with a Grade Two with sign (dots 2, 3, 4, 5, 6).
+
+	Graph-it supports several trigonometric functions.  Each of these function names is followed by an argument in parentheses.  Here is a list of the currently supported trigonometric functions:
+
+function				name
+
+sin()				sine
+asin()				arc sine
+cos()				cosine
+tan()				tangent
+atan()				arc tangent
+
+	Graph-it also supports several other useful functions.  each of these functions, like the trigonometric functions, expects an argument in parentheses.
+
+function				name
+
+sqrt()				square root
+log()				natural log
+log10()				log base 10
+exp()				exponential (E^n)
+
+Here are some examples of how these functions are used:
+
+example					read as
+
+sqrt(x)					the square root of x
+log(x)+5					the natural log of x plus 5
+2sin(x)					2 times the sine of x
+
+	As you may notice from some of these examples, algebraic notation is legal when entering expressions in Graph-it.  Thus, you can enter 3x instead of 3*x.  Any number of sets of parentheses may be used to force computation in any order.  Graph-it makes its computations based on the standard order of operations.  Graph-it performs all multiplication, division, and exponential calculations before performing addition or subtraction.  Operators of the same precedence are computed in the order in which they are found in the expression.
+
+	To move to the top of the list of entries, press l-chord (HOME on the Type 'N Speak and PC.)  You can also move to the bottom of the list of entries by pressing dots 4-5-6 chord (END on the Type 'N Speak and PC.)
+	On The Braille 'N Speak, Type 'N Speak, and Braille Lite, you can also press c-chord (Shift up-arrow on the Type 'N Speak) to repeat the current entry.
+
+	Once you have entered an equation or inequality, you will notice that the list of commands at the bottom of the screen gets larger.  Because you have filled an entry, you now have more commands available to you.  For example, without any entries filled, you can not print a graph, scale a graph, or see the statistics of a graph.  You will notice that the number of entries displayed on the current graph is also now shown just above the list of available commands.
+	When using Graph-it for the Braille 'N Speak, Type 'N Speak, and Braille Lite, the list of available commands is not spoken automatically.  However, for a list of available commands, press question-mark-chord (the help key on the Type 'N speak.)
+	
+If you want to clear all the entries currently containing equations or inequalities, press D-chord (the delete key on the PC or Type 'N Speak.)  You will be asked if you are sure that you want to delete all the entries.  If you want to delete them, press y.  If not, press n.
+
+	Once you have entered a set of entries, you can write them to a file.  To write the current entries to a file, press w-chord (Alt-w on the Type 'N Speak and PC).  You will be prompted for a file name.  Type one, and press e-chord (enter on the Type 'N Speak and PC).  An extension of .equ will be assumed if none is specified.  The entries will be written to the file you specified.  The scaling information is also saved.
+	To read entries from a file, press r-chord (Alt-r on the Type 'N Speak and PC.)  You will be prompted for a file name.  As with the "read entries" command, an extension of .equ will be assumed if none is specified.  The entries will be read from the file, and will be placed on the screen.  Warning!!!  If you read in entries from a file, they will over-write any entries already in memory.
+
+	Pressing esc. on the PC version or on the Type 'N Speak will exit the program.  If you are using the program on a Braille 'N Speak or Braille Lite, press z-chord to exit.
+
+	The main screen is the place which allows you to access all other parts of Graph-it.  Now, we will explore various other aspects of the program.
+
+
+
+	CHAPTER THREE
+	THE SETUP MENU
+
+	This chapter will explore how to set up Graph-it to work with your system, and to your liking.  The place where you make any necessary adjustments to Graph-it is called the setup menu.  You access the setup menu by pressing alt-s from the main screen.  If you are using a Braille 'N Speak or Braille Lite, press s-chord to enter the setup menu.
+	Moving around in the setup menu is like any other menu.  Press down-arrow to move to the next item, press up-arrow to move to the previous item.  You can press HOME to move to the top of the setup menu, and END to move to the bottom.  In the case of the Braille 'N Speak and Braille Lite, use dot 4 chord to move to the next item, and dot 1 chord to move to the previous one.  Use L-chord to move to the top of the setup menu, and dots 4-5-6 chord to move to the bottom.
+	As is true on the main screen, a list of available commands is placed at the bottom of the screen.  If you are using Graph-it on a Braille 'N Speak, Type 'N Speak, or Braille Lite, press question-mark chord (the help key on the Type 'N Speak) to hear the list of available commands.
+
+	Notice that on the PC version, one letter in each item is contained in brackets.  This is the setting's hot key.  Pressing this letter will take you directly to that setting.  If you are using Graph-it on a Braille 'N Speak, Type 'N Speak, or Braille Lite, you can press dots 3-6 chord (Shift END on the Type 'N Speak) to hear the hot key for the current item.
+	Here is a list of the hot keys:
+
+
+Hot Key					setting it accesses
+
+t						printer type
+p						printer port
+o						graph orientation
+g						grid type
+a						place arrows on graph
+l						print x and y axis labels
+r						print range of x and y on graph
+e						print entries
+i						print entries in
+c						trig function computation
+
+
+	You will notice that the first item on the menu, (printer type), is highlighted.  In the case of the Braille 'N Speak, Type 'N Speak, and Braille Lite version of Graph-it, your unit will say "setup menu," followed by "printer type:" and then the current setting.
+	Graph-it supports several Braille printers.  The default is the Braille Blazer from Blazie Engineering.  However, the following printers are supported:
+
+Romeo
+Juliet
+Braille Book Maker
+VersaPoint
+Cranmer Modified Perkins Brailler
+Index
+
+	You can toggle through the available choices by pressing the space bar.  Notice that only four of the choices are represented.  If you are using a Juliet or Braille Book Maker, select the "Juliet" setting.  If you are using a Romeo, Cranmer Modified Perkins Brailler, or a VersaPoint, select the "Romeo" setting.  Finally, if you are using any of the Index family of Braille embossers, select the "Index" setting.
+
+	The second item on the menu is the printer port setting.  If you are using a PC, the default printer port is lpt1.  You can toggle through the available choices by pressing the space bar.  The available printer port settings are:
+
+
+lpt1
+lpt2
+com1
+com2
+output file
+
+	If you set up Graph-it to print to either com1 or com2, you must set up your Braille printer for the following serial settings:
+
+9600 BAUD
+eight data bits
+1 stop bit
+no parity
+
+	These are the Braille Blazer's default settings.
+
+	If you are using a Type 'N Speak or Braille Lite, the default printer port is the parallel port.  If you are using a Braille 'N Speak, the default printer port is the serial port.  Press the space bar to toggle through the choices.  If you are using a Braille Lite or a Type 'N Speak, the following choices are available:
+
+parallel port
+serial port
+output file
+
+On the Braille 'N Speak, the following choices are available:
+
+serial port
+output file
+
+	When using the serial port on any of these units, the serial port parameters of your unit must match those set in your Braille printer.
+
+		The next item on the menu is the graph orientation setting.  The default is portrait orientation, which means that the graph is printed from left to right, and top to bottom.  The other choice is landscape, which prints the graph sideways.  This holds special advantages for printers such as the Braille Blazer which use standard 8.5x11 inch paper.  When printing in portrait orientation, the x axis runs along the 8.5 inch dimension of the paper, and the y axis runs along the 11 inch dimension of the paper.  Landscape orientation allows you to reverse this.
+
+	The fourth item on the menu is the grid type setting.  This defaults to an x and y axis with hatch marks.  You can toggle through the available choices with the space bar.  The available choices are:
+
+x and y axes with hatch marks
+full grid
+no grid or axes
+
+
+	Note that the "no" axes setting does not currently work correctly on the Braille Blazer.  An update to the Blazer software which will correct the problem is forthcoming.
+
+	The next setting is the "Print arrows on axes" setting.  This will place arrows at the ends of the x and y axis to signify that they are in fact the axes.  This setting defaults to "no".
+
+	The next four settings determine what, if any, text is printed on the graph, and how it is printed.  The default is for only the labels for the x and y axes to be printed.  The "print ranges of x and y" setting defaults to "no".  The "print equations" setting defaults to "no".  By pressing the space bar, you can toggle this setting between the following options:
+
+no
+on graph
+on separate page
+
+	If you set the equations to be printed on a separate page, then the graph will be printed on the first page, and then the equations will be printed on the second page.  Note that even if the graph is in landscape orientation, the equations will be printed in portrait orientation.  If you select to print the equations on the graph, they will be placed at the top left hand corner of the graph.
+	The setting following the "print equations" setting is the "print equations in" setting.  You can use the space bar to toggle between Computer Braille and Nemeth Code.  Note that if you select to print the equations in Nemeth Code, the Nemeth Code translator is very simple, and will only render number signs, and the correct symbols for =, <, and >.
+	If you elect to print the ranges of x and y, but have not chosen to have the equations printed on the graph, then the range of y will be printed just to the left of the y axis at the top of the page.  If you have elected to have the equations printed on the graph, then the range of y will be printed to the left of the y axis at the bottom of the page in order to minimize conflict with the equations.  
+
+	The last setting in the settings menu determines whether trigonometric functions are computed in radians or degrees.  The default is radians, but you can switch this setting to degrees by pressing the space bar.
+
+
+	When you are done making any necessary adjustments, press esc. (z-chord on the Braille 'N Speak or Braille Lite.)  On the PC version, any modifications you make will be saved in a configuration file called graph-it.cnf.  If you are using Graph-it on a Braille 'N Speak, Type 'N Speak, or Braille Lite, the settings are saved in the graph-it.bns program file.
+
+
+
+	CHAPTER FOUR
+	PRINTING AND SCALING GRAPHS
+
+	This chapter will discuss printing and scaling graphs using Graph-it.
+
+	Before printing any graphs, take some time to ensure that your Braille printer is set up properly.
+	If you are using a Braille Blazer, ensure that it is in graphics mode.  Putting the Blazer in graphics mode is accomplished by flipping the emboss bar so that the lever points towards you.  You must also insure that the lines per page, left margin, and top margin settings in the Braille Blazer are set to zero.  Also, be sure that the line length is set to 34 (the maximum value).  The character set must also be set to US ASCII in order for graphs to print properly.  If you need further information about how to change any of these settings, please consult your Braille Blazer's manual.
+	If you are using a Romeo, you will also have to make a mechanical adjustment to the printer.  Consult your Romeo's manual for details on how this is accomplished.
+	If you are using a Juliet, VersaPoint, Index,  or a Braille Book Maker, no adjustment is needed.  Graph-it will send the appropriate escape sequence to your printer to place it into graphics mode.
+
+	Printing a graph of an equation or inequality, or several of them is very simple.  After you have entered the equations or inequalities you want to graph on the main screen, press alt-p.  If you are using a Braille 'N Speak or Braille Lite, press p-chord.  The graph will then be sent to the specified printer port.
+	If you try this, and nothing happens, see chapter three for setting the printer port.
+	If an error occurs while printing, the program will notify you of this, and will prompt you to "Press any key to continue, esc. to cancel."  If you want to continue printing, or you have fixed the problem, press any key other than esc.  To cancel the printing, press esc., or on the Braille 'N Speak or Braille Lite, press z-chord.
+
+	Graphs are normally printed in portrait orientation, which means that the y axis runs along the length of the page, and the x axis runs along the width.  However, there is a setting in the setup menu which allows you to change this default, so that Graph-it will print graphs in landscape orientation.  This means that the x axis runs along the length of the page, and the y axis runs along the width.  When you take a graph that has been printed in landscape orientation out of the printer, turn it a quarter-turn counterclockwise to view it.
+
+	Now, here are step-by-step instructions for printing the graphs of single equations, and printing graphs of multiple equations.  These could just as well be inequalities, but we have used equations here for our examples.
+
+	For the single equation example, we will graph the equation
+y = x^2.  This will be a graph of a parabola.
+
+1. If you haven't already, start the Graph-it program.
+
+2. Select entry one on the main screen.
+
+3. Press <enter>.  (e-chord on the Braille 'N Speak or Braille Lite)
+
+4. enter: y = x^2
+   Then press enter (e-chord on the Braille 'N Speak or Braille Lite)
+
+
+5. Now press alt-p to print the graph (p-chord on the Braille 'N Speak or Braille Lite)
+
+
+	For our multiple equation example, we will graph a circle with the following equations:
+
+y = sqrt(9-x^2)
+y = -sqrt(9-x^2)
+
+This will yield a graph of a circle with a radius of 3.
+
+1. If you haven't already, start the Graph-it program.
+
+2. Select entry one on the main screen.
+
+3. Press enter.  (e-chord on the Braille 'N Speak or Braille Lite)
+
+4. enter: y = sqrt(9-x^2)
+   Then press enter (e-chord on the Braille 'N Speak or Braille          Lite)
+
+5. Press the down-arrow to select equation 2. (dot 4 chord on the
+   Braille 'N Speak or Braille Lite)
+
+6. Press enter.  (e-chord on the Braille 'N Speak or Braille Lite)
+
+7. enter: y = -sqrt(9-X^2)
+   Then press enter, (e chord on the Braille 'N Speak or Braille
+      Lite.)
+
+8. Press alt-p to print the graph.  (p-chord on the Braille 'N
+   Speak or Braille Lite)
+
+
+	If graphs seem to be chopped off at the right edge of the page, ensure that the left margin setting in the Braille Blazer is set to zero.  If you get a blank page at the end of some graphs, ensure that the lines per page setting in the Braille Blazer is also set to zero.
+
+	When you print a graph, Graph-it tries to determine what the best scaling for the graph will be.  You will find, especially for some non-linear function graphs, that particular points of interest may not appear on the graph.  Graph-it provides you with a way to re-scale the graph.  this allows you to take a more detailed, or a more generalized look at a particular area of the graph.
+	To enter the scaling menu from the main screen, press F2.  On the Braille 'N Speak or Braille Lite, press dots 1-6 chord.
+	The scaling menu has several options on it.  It is like any other menu.  Use the up and down arrows to select the item you want to change, and press <enter> to enter a new value.  On the Braille 'N Speak or Braille Lite, use dot 1 and dot 4 chord to select the item you want to change, and press e-chord to enter a new value.  HOME takes you to the top of the scaling menu, and END takes you to the bottom.  On the Braille 'N Speak, or Braille Lite, press l-chord to move to the top of the menu, and dots 4-5-6 chord to move to the bottom.  Press c-chord on the Braille 'N Speak and Braille Lite to repeat the current item (shift up-arrow on the Type 'N Speak).
+
+	As does the setup menu, the scaling menu has hot keys.  Press the bracketed letters to move to their respective items.  Press dots 3-6 chord on the Braille 'N Speak or Braille Lite (shift end on the Type 'N Speak) to hear the hot key for the current item.  The hot keys are:
+
+hot key					accesses
+
+x						minimum x value
+y						minimum y value
+g						grid square size
+u						units per grid square
+
+	
+	As always, a list of available commands is displayed at the bottom of the screen.  If you are using a Braille 'N Speak, Type 'N Speak, or Braille Lite, you can press question-mark-chord (the help key on the Type 'N Speak) to hear a list of available commands.
+
+	Note that when entering minimum and maximum values for x and y, the values must be multiples of the number of units represented by each grid square.  For example, if each grid square represents one unit, then you can not, for example, have a minimum x value of -2.5, since this would require half of a grid square.  Graph-it will round values to the nearest grid square increment.
+	When you change the number of units represented by each grid square, notice that the minimum and maximum x and y values change to reflect the change in the number of units represented by each grid square.
+	When you are done, press esc.  If you are using a Braille 'N Speak or Braille Lite, press z-chord.
+	You can then reprint the graph with the new scale.
+
+
+
+	CHAPTER FIVE
+	AUDIOGRAPHS
+
+	Graph-it has the unique ability to let you "hear" the graph of an equation.  Note that this feature will not let you "hear" the graph of an inequality.  The frequency of the sound heard represents the y value, and the amount of time passed since the beginning of the sound represents the x value.  Think of it this way;  If you read the graph from left to right, the pitch represents the position on the y axis.  Therefore, a straight line with a slope of 2 will be a rising tone.  If you graph a parabola such as y = x^2, then the sound will be first a descending tone, and then a rising tone.  This is because, at the far left of the graph, the y value is very high.  It slowly descends to zero, which happens in about the middle of the graph, and then slowly ascends back up.  The sound you hear follows the same pattern.
+	The easiest way to understand this is to play with it.  While it is not an extremely precise way to view a graph, you can get an idea of what the graph looks like by its "sound."  For example, you will notice that a line with a greater slope will produce a tone which rises faster than a line which has a lesser slope.
+ Graph-it will only let you hear one equation at a time.
+	To hear the audiograph of an equation, you must first enter the equation.  then select it on the main screen, and press alt-h.  Press h-chord on the Braille 'N speak or Braille Lite.
+	Audiographs are created based on the minimum and maximum x values.  If you want to hear a longer representation of the graph, you can enter the scaling menu and change the minimum and maximum x values.
+
+
+
+	CHAPTER SIX
+	THE GRAPH STATISTICS SCREEN
+
+	Graph-it provides you with a means to quickly view the scale of a graph, and any intersection points on the graph.  To view the graph statistics screen, press F1 from the main screen.  If you are using a Braille 'N Speak or Braille Lite, press dots 3-4 chord.
+	The following information is displayed on the graph stats screen, (or spoken on the Braille 'N Speak, Type 'N Speak or Braille Lite):
+
+range of x
+range of y
+grid square size
+units per grid square
+intersection points
+
+	Press any key to exit the graph stats screen, and return to the main screen.
+
+
+
+
+	If you have any questions, comments, or suggestions regarding Graph-it, you can e-mail them to me at:
+
+marc@blazie.com
+
+	We are always looking for ways to make our software better.
+??
+
+
+
+ 
+
+ 
+
+

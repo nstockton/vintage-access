@@ -1,0 +1,205 @@
+                          May 17, 1993
+
+                The Braille 'N Speak Macro Editor
+
+                      Version 1.00F (beta)
+
+                         by Kris Whitney
+
+The macro editor is a downloadable application for the BNS640
+which can read, list, create, and edit macros in the BNS
+macros.sys file.
+
+
+When started the program will look for a file called macros.sys
+unless a file name was given to the program as an arguement in
+which case that file will be searched for.  If it finds that file
+the macro definitions are read from it.  If the file is not found
+it is created and initialized to an empty file.  If the program
+can not find or create the file an error message is spoken and
+the program terminates.  NOTE: a message indicating that the
+macro file is being created will be spoken if the file could not
+be found originally.
+
+When the program starts it gives a brief sigh-on message followed
+by the number of defined macros found.  After that you are
+prompted for a command.  The commands accepted by the program are
+one letter commands.  There is no need for a terminating e-chord
+after a command given from this prompt.
+
+                         Command Summary
+
+A    The a command will tell you a little about the current
+version of the software.
+
+B    This option will give you a brief list of all of the macros
+defined.  You will not get any definitions; you will just get a
+list of the keys which have macros assigned to them.
+
+C    The c command will cause the program to clear all
+     definitions of all macros and reset the entire macro buffer
+     to 0.  You will be prompted to confirm this action.
+
+D    The d option will allow you to duplicate a macro definition. 
+For example; if macro 'a' had some function which you wished
+macro 'f' to also have with minor differences you may duplicate
+macro 'a' to 'f' then edit the definition of 'f'.  When you
+select the D option and the help level is novice you are asked if
+you really want to do this.  If you say yes then the definition
+will be copied.  If you are going to copy a macro over another
+macro you will be prompted to see if that is what you really
+want.
+
+E    This command will erase an individual macro definition.  You
+will be prompted for the key whos definition you wish deleted;
+and if the help level is set to novice you will be prompted to
+confirm before the definition is erased.
+
+F    This command tells you the name of the current working macro
+file.
+
+g    This command allows you to get a new macro file from the BNS
+or TNS.  If your changes have not been saved you will be prompted
+to confirm as this file will overlay your existing file rather
+than being merged with it.
+
+H    This command sets the help level for the program.  If the
+help level is set to novice then all prompts will be spoken.  If
+the level is set to expert then very few prompts will be spoken. 
+When you select this option you will be prompted to enter e for
+expert mode or n for novice mode.  This setting will be
+remembered between times the program is run; however, if you
+reload the program from disk the help level will not be
+remembered.  Inorder to have the setting you prefer saved so that
+it will be in effect each time you load the program from disk or
+your PC simply go in to the program, set the option to be the way
+that you would like, and then save the program back to your disk
+or PC.  Do not overwrite an existing copy of the program.  To
+avoid problems rename the original file and just save the
+modified one so that if there is ever a problem you can get it
+back.
+
+I    This command will allow you to import the definitions
+contained in another macro file.  For example; let's say that you
+have a friend with a BNS who has some really nice macros that you
+want.  You take a copy of his macro file.  You must rename it to
+something else so that it does not overwrite your current file. 
+After you load it into your unit you run the macro editor.  At
+the main command prompt you enter the letter i.  You will be
+prompted to enter the name of a file to read from.  Enter the
+name of the file that you just got from your friend.  You will
+then be asked if you want any macros you have with the same key
+to be overwrittten.  If you say yes then your friends macros will
+overlay any of your which have the same key assigned to them.  If
+you say  no then the program will ask you individually about each
+one.
+
+L    The l option will make an ascii list of all your macros. 
+     After selecting l you will be prompted to enter the name of
+     a file in which to save the definitions.  You may enter any
+     legal BNS file name.  If the file does not exist it will
+     created, and if it does exist you will find all of the
+     original data that was in the file deleted and the file
+     moved to the end of the file list.  The list of macros will
+     then be appended.  The program will speak an error message
+     if there is a problem otherwise you will here "ok" and you
+     will be returned to the command prompt.
+
+M    This option prompts you for a file name, and it makes a copy
+of the macros.sys file in your bns and places it into the file
+with the name you just gave.
+
+P    The P option will print a list of the defined macros to the
+serial port on the BNS.  You will be told to turn on device and
+press a key to begin.  If you wish to stop the process at this
+point you can abort with a z-chord.  The format of the output
+will be the same as the L command's output to a text file.
+
+Q    This option quits the program.  Any changes you have made to
+     the macros will be saved to the macros.sys file.
+
+S    This option is a cloan of the SH (dots 1 4 6) option; it
+shows you the contents of a macro.
+
+U    This command updates the current working version of the
+macro file with your working definitions.
+
+V    This is the view & edit selection; the heart of the program. 
+     When you select this option you will be asked for the macro
+     key to read. You may press any letter or symbol.  Pressing
+     any chord will abort this function.  When you press the
+     symbol it's current definition will be read or a message
+     will be spoken indicating that the macro is undefined.  You
+     will then be prompted to see if you wish to edit the current
+     definition.  If you select yes you will be placed in to the
+     macro editor function which will be discussed below.
+
+W    This option allows you to change the name of the current
+macro file.  When you do this the new file is written to with the
+current definitions.
+
+X    This option will exit the macro editor without saving.  If
+you have modified the macros you will be prompted before you exit
+the program.
+
+NOTE: A z chord will act the same as the x command.
+
+#    This option will announce the number of defined macros.
+
+%    This option (dots 1 4 6) will show you a macro definition. 
+You can select this option and you will be prompted to enter a
+macro key.  The program will then either read the macro
+definition or tell you that the macro is undefined whereupon you
+will be returned to the command prompt.
+
+On startup the program will set punctuation to most to allow all
+characters to be read.  The program will reset the punctuation to
+whatever state it was in when it exits; however, if you powerdown
+the system while the program is still running you will find that
+the punctuation state does not get set back.
+
+                        Editting a Macro
+
+When you have said yes to the "edit this macro" prompt you will
+be placed in the macro editing function.  You should use the dots
+3 & dots 6 chord to move backwards and forwards respectively
+threw the macro.  Typeing and i chord will cause the system to
+say "insert" and the next character typed will be placed just
+before the character or chord the cursor is resting on.  If a
+character or chord command is entered without an i chord first it
+will be appended to the end of the macro definition.
+
+Pressing a d chord will delete the character under the cursor. 
+If this is done at the last character in the buffer the character
+will move to be placed on the new last character.
+
+ Pressing a } chord or a K chord will prompt you to remove the
+entire definition for the current macro.  If you respond
+positively to the prompt the macro buffer will be empty and you
+may then continue editing.  A k chord will also perform this
+function.
+
+Pressing M chord will set a mark.  Pressing a dots 1 2 6 chord
+will cut the text between the cursor and the mark to a cut
+buffer.  Pressing a p chord will paste the cut buffer in to the
+current macro.
+
+Any normal letter or symbol will be added to the end of the
+current definition.  Pressing a dots 1-6 chord will cause the
+next character to be interpreted as a chord command.  You may
+type it as a chord if you wish, but (dots 1-6 chord) t is
+equivalent to (dots 1-6 chord) (t-chord); both will cause a t-
+chord to be placed in to the text.  For the convenience of Type
+'N Speak users you may use an H chord in place of the dots 1 6
+chord.
+
+When you are finished edittting, press an e-chord to terminate
+the edit function.  Pressing z-chord will terminate without
+saving any changes to the macro.
+
+Pressing r chord will tell you how many more characters will fit
+in the macro.
+
+Pressing wh chord (dots 1 5 6) will tell where the cursor is in
+the macro definition.
+

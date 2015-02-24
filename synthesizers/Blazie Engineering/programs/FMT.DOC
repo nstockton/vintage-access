@@ -1,0 +1,178 @@
+
+
+                                        FMT.DOC:
+
+by Kris Whitney
+March 31, 1993
+version 1.00E
+
+The FMT.BNS program is a format utility for the Braille 'N Speak 640.
+Below I have listed the basic commands of the program.
+
+This program accepts standard ascii files from the BNS and will send
+them formatted to the serial port using the current communications
+settings.
+
+You may include commands in the file to have the formatter set certain
+options on or off or change some formatting parameters.  Each of these
+commands must be preceeded and followed by a space character and each
+must begin with the '$' character; EG
+|| $c this line is centered||
+|| this is on one page $f this is on a new page||
+
+do not include the vertical lines.
+
+NOTE: if you have two directives in a row; such as | $c  $dt  $l | you
+must include a space both before and after each directive.  If you do
+not the directives will be process as text.
+
+                      KNOWN UNFIXABLE BUGS
+
+                      Because of current limitations in the BNS api
+                      functions the braille translator state is returned
+                      for the file which is currently open in the BNS
+                      thus causing files to be inappropriately reverse
+                      translated or not depending on the state of the
+                      translator setting.  To avoid this problem simply
+                      insure that you are in the file which you are
+                      going to print before you activate the formatter;
+                      this will insure that the translator setting
+                      matches the text you are going to print.
+
+                        COMMAND SUMMARY
+
+note: Whenever you see the symbol <nn> you should replace that symbol
+with a number.  Their should be no spaces inside commands.
+
+$ml<nn>         set left margin to <nn> spaces (default=10)
+$mr<nn>         set right margin to <nn> spaces (default=10)
+$mt<nn>         set top margin (default=6)
+$mb<nn>         bottom margin (default=6)
+$ml+<nn>        increase left margin by <nn>
+$ml-<nn>        decrease left margin by <nn> spaces
+$mr+<nn>
+$mr-<nn>
+$mt+<nn>
+$mt-<nn>
+$mb+<nn>
+$mb-<nn>
+$w              wait for a keypress after each page of output
+$l              new line
+$c              center the current line
+$p              new paragraph
+$f              new page
+$jn             no justification
+$jf             full justification
+$jr             right justification
+$pnar           page numbers arabic format
+$pnrn           page numbers roman numerals
+$t              move to next tab position
+$ts<nn>         set tab size
+$ls<nn>         set line spacing to <nn> (default=1)
+$pnnp           no page numbering
+$pntl           page numbers top left
+$pntc           top center
+$pntr           top right
+$pnbl           bottom left
+$pnbc           bottom center (default)
+$pnbr           bottom right
+$ub             underline begin
+$uf             underline finished
+$ib            italic begin
+$if
+$bb             bold face begin
+$bf
+$dbsb           double strike begin
+$dbsf
+$pn<nn>         set page number to <nn>
+$ef             end formatting; this terminates the program.
+$tm             insert current time in to text
+$dt             insert current date in to text
+$hb             header begin
+$fb             footer begin
+$h-             disable header
+$h+             reenable header
+$f-             disable footer
+$f+             reenable footer
+$-              end of header or footer text
+$brl+           respect braille translator setting for file.
+$brl-           assume file is computer braille; perform no translation
+$to<nn>         move to column <nn> relative to the left margin
+$st             display a status message to show formatting progress
+$sob            strike out begin
+$sof
+$(              start of ignore text area
+$)              end of ignore text area
+$pl<nn>         page length = <nn>
+$pw<nn>         page width = <nn>
+$out            outdents the left margin 1 tab stop for the current line
+$ser            sends output to the serial port on a tns
+
+The $pw & $pl directives will force a new page if they are executed in
+the middle of a page.
+
+Any directive which changes the nature of a line such as justification
+settings, centering, outdenting, or margin shifts will force a new line
+if any text has been output on the current line.
+
+Note that roman numerals can only be printed up to 99.
+
+The $( & $) directives will cause the formatter to ignore any and all
+text and directives found between them.  Once the $( directive has been
+encountered the formatter will skip all text until a $) directive is
+found or the end of the file is encountered.  Note these directives can
+not be nested.  The formatter will begin processing text at the first $)
+regardless of how many $( directives have been executed as only the
+first one is actually seen by the formatter.  If a $) is found in the
+text with no matching $( directive, it is ignored.
+
+     HEADERS AND FOOTERS
+
+Currently a header or footer can only be one line and no other
+directives are recognized in them.  If the formatter reaches the maximum
+length without having found a $- directive; one is assumed and the rest
+of the text until the $- will be placed in to your text; the $-
+directive will be ignored.
+
+The formatter currently assumes a page width of 80 and a page length of
+66.
+
+If you wish a header to apear on the first page it should be the first
+thing in your source file.  The only thing which should appear before a
+header is any margin settings you need to have active.
+
+The time is always in 24 hour format and it is written as 13:45.  The
+date is always in the form Mar 31, 1993.
+
+Using the $brl- and $brl+ directives gives the same functionalityas the
+dot 4 - and dot 4 l commands would give in the normal bns output; these
+settings should be still respected by the formatter.
+
+The program will click the BNS speaker every 1000 input characters which
+have been processed.  While the program is executing you may press a
+Z-chord to abort.  Pressing the space bar will cause the BNS to report
+the page number currently being printed.
+
+The formatter is capable of outputting part of a document.  Inorder to
+print part of a document you should not specify any arguments.  Execute
+the program with an x-chord rather than the 'x' command.  The program
+will prompt you "print entire document?" and you should say 'n' to print
+part of the file.  If you say 'n' you will be prompted to enter the
+starting and ending page numbers.  If you specify pages near the end of
+a long file you will notice that the formatter will take considerable
+time as it must format the entire document up to the first page inorder
+to calculate exactly where the start of the requested page begins.  The
+formatter will terminate immediately upon completion of the last page
+desired.
+
+NOTE: THIS PROGRAM DOES NOT WORK CORRECTLY UNDER THE DECEMBER 1, 1992
+REVISION OF THE BNS ROMS.
+
+Create a file called fmt.prn.  Place lines in it which are formatted as
+follows:
+boldon=27 120 49
+
+The identifier of the code must be followed by an = sign with no spaces.
+Decimal numbers are accepted; spaces are ignored; any invalid character
+causes the line to be ended at that point.
+lu
