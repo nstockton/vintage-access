@@ -1,0 +1,350 @@
+APPENDIX A
+Command Reference
+
+The commands of Speak-Out fall into two groups.  The first group
+consists of those that can only be used the first time
+SPEAKOUT.COM is loaded each session.  This group includes the
+speech output port assignment such as COM1 or LPT3 and the serial
+parameters including baud rate, parity, stop bits, and data bits. 
+The second, larger group contains parameters which can be issued
+anytime on the SPEAKOUT.COM command line.
+
+We'll refer to the first group of commands as "one-time start-up
+parameters."  These parameters always begin with an exclamation
+point (!).
+
+SPEAKOUT.COM Start-up Parameters:
+
+One of the following two parameters (/!Cn or /!Ln) must be
+present on the command line when the SPEAKOUT.COM driver is first
+loaded.
+
+/!Cn n = 1 - 4 COM Port Assignment
+     This specifies which COM port Speak-Out is connected to.
+
+/!Ln n = 1 - 4 LPT Port Assignment
+     This specifies which LPT port Speak-Out is connected to.
+
+/!Bn (baud rate assignment)
+     Default is 9600 BAUD
+     /!B3 = 300 baud
+     /!B1 = 1200 baud
+     /!B2 = 2400 baud
+     /!B4 = 4800 baud
+     /!B9 = 9600 baud
+
+/!Dn (n=7-8) Sets data bits to value specified default is 8 data
+bits
+
+/!Pn (n=N, E, O) N=none, E=even, O=odd
+     Sets parity to value specified
+     default is no parity
+
+/!Sn (n=1-2) Sets stop bits to value specified
+     default is 1 stop bit
+
+/!In (IRQ setting)
+     If your serial port uses a non-standard IRQ setting you can
+     specify the actual IRQ with this command.
+
+/!SBxn enables Sounding Board emulation.
+     X can be either C or L.  If X is C Speak-Out will emulate
+     the Sounding Board on the serial port specified by n which
+     can be 1, 2, 3, or 4.  If X is L then Speak-Out will emulate
+     the Sounding Board on the parallel port specified by n which
+     can be 1, 2, 3, or 4.  The default is /!SBL3.  This means
+     the SPEAKOUT.COM driver will emulate the Sounding Board on
+     LPT3 by default.  If you wish to completely disable the
+     Sounding Board emulation you can specify the command /!SB0.
+
+/!X0 disable indexing
+     This can be used if you wish to tell the SPEAKOUT.COM driver
+     not to use the indexing feature of Speak-Out.  If you have
+     connected Speak-Out to a parallel port, the indexing feature
+     will already be disabled.
+
+/!Wn MicroSoft serial port compatibility
+     (n ranges from 0 to 2)
+
+     /!W0 --> This will disable the auto clearing feature.
+
+     /!W1 --> (default) This will disable the
+          current port and the corresponding port when Windows is
+          entered.  It will restore the port when Windows has
+          exited.
+
+     /!W2 --> This will only auto clear and
+          restore the current serial port.  The corresponding
+          port will be left alone.  This would be used if the
+          corresponding serial port is using a different IRQ than
+          the current port.
+
+SPEAKOUT.COM Anytime Parameters:
+
+The next group of commands represent the complete software
+features of Speak-Out.  This group, unlike the start-up
+parameters given earlier, can be used anytime during a session
+with Speak-Out.  Also, unlike the first group, most of the
+software features can be invoked by use of SPEAKOUT.COM command
+line, and additionally through the use of CTRL-E software
+sequences.  Finally, note that the software features do not allow
+the exclamation point (!) within the command line parameter since
+these are not one time start-up parameters.  They can be used
+over and over.
+
+Software Features:
+
+/An  CTRL-E-An n = 0-1, or +, - (0 off/1 on)
+     Acronyms - Default is 0
+     If a word is in all capital letters, it will be spelled out.
+          IBM -> I B M
+
+/AxC CTRL-EAxC clears alarm x (x=A-Z)
+
+/A*C CTRL-EA*C clears All alarms
+
+/A? CTRL-EA? speaks status of all alarms
+
+/AxHHMM CTRL-EAXHHMM sets alarm x to time specified
+
+/AxHHMM"message"
+CTRL-EAXHHMM"message"
+     sets alarm x to time specified and will speak message
+
+/AxHHMMMMDD CTRL-EAXHHMMMMDD
+     sets alarm x to time and day specified
+
+/AxHHMMMMDD"message"
+CTRL-EAXHHMMMMDD"message"
+     sets alarm x to the time and day specified and will speak
+     message
+
+/AxHHMMMMDDYY CTRL-EAXHHMMMMDDYY
+     sets alarm x to time and day specified
+
+/AxHHMMMMDDYY"message"
+CTRL-EAXHHMMMMDDYY"message"
+     sets alarm x to time and day specified and will speak
+     message
+
+Note that the length for the user specified message is seventy-
+nine characters.  If you exceed this Speak-Out will say "alarm
+message too large" and abort the command.
+
+/Bn  CTRL-EBn n = 0-2 Bell
+     0 = low
+     1 = medium
+     2 = high
+     No default
+
+/Cn  CTRL-ECn n = 0 - 3, or +, -
+     Capitalization Alert
+     Default is 0
+     0 Capitalization alert is off.
+     1 Speak-Out emits low tone before words with first letter
+capitalized, medium tone before words in all caps, and high tone
+before words of mixed capitalization.
+     2 Speak-Out says "CAP" before words with the first letter
+capitalized, "CAP CAP" before words in all upper case, and "CAP
+CAP CAP" before words of mixed capitalization.
+     3 Speak-Out speaks word in normal pitch if no letters are
+capitalized, higher pitch if first letter is capitalized, higher
+pitch yet if word is all caps, and highest pitch if word is mixed
+upper and lower case letters.
+
+/Dn  CTRL-EDn n = 0-2 Date/Time
+     0 = date
+     1 = time
+     2 = both date and time
+     No default
+
+/DT -> sets Speak-Out date and time to the
+     current PC date and time.
+
+/En  n = file specification Exception Dictionary
+     *Note that when SPEAKOUT.COM is first loaded it will look
+     for a dictionary named "VE.DIC" in the current directory.  n
+     can be any legal path.  For example:
+
+          /EC:\WORK\FILES\WP.DIC
+
+would load the dictionary "WP.DIC" which is in the FILES
+directory which is in the WORK directory which is on the C:
+drive.
+
+/EC  This will clear the current exception dictionary loaded in
+     Speak-Out.
+
+/Fn  CTRL-EFn n = 0 - 1, or +,- (0 off/1 on) Format Alert
+     Default is 0
+     If active, a buzz will be produced for each of the following
+     conditions:
+     - The line begins with at least one space
+     - There are three or more spaces within a line
+     Note: The above two cases cause two different sounds
+
+/Hn  CTRL-EHn n = 0-1, + or - (0 off/1 on)
+     Hyperscan - Default is 0
+     Skips words with three or fewer letters.
+
+/In  CTRL-EIn n=0-9, + or - Sentence delay
+     Default is 1
+     This contains the amount of delay between each sentence.
+
+/Kn  n = 0 - 3, or D-E Keyboard Hot keys
+     0 =  no hot keys
+     1 =  hot keys on numeric keypad
+     2 =  hot keys on function keys
+     3 =  return hot keys to last setting (after
+          disabling with k0)
+     D completely disable all hot keys
+     E completely re-enable all hot keys
+     Default is 2 (function keys / disabled)
+
+/Kn[x] is Keyboard Hot key Definition
+     n=which hot key to define, x=keystroke for the hot key. 
+     Notice there is no CTRL-E equivalent.  See Appendix B: "Hot
+     Key Reference" for a complete list of hot key names and
+     possible keystrokes.
+
+/Mn  CTRL-EMn n = n, s, m, a, + or -
+     Marks of punctuation
+     n = none
+     s = some
+     m = most
+     a = all
+     Default is s
+
+/Nn  CTRL-ENn n = 0-1, or +, - (0 off/1 on)
+     Numbers
+     Default is 1
+     The maximum number which can be pronounce by Speak-Out is
+     999,999,999,999,999.  Numbers are read as time if they are
+     in the format nn:nn. Numbers are read as money if they      take
+     the form $nn or $nn.nn.
+
+/Pn  CTRL-EPn n = 0 - 9, or +, - Pitch
+     Default is 3
+
+/Rn  CTRL-ERn n = 0-9, or +, - Rate
+     Default is 5
+
+/Sn  CTRL-ESn n = 0-1, or +, - (0 off/1 on)
+     Spell
+     Default is 0
+     If Spell Mode is on, a higher pitch is used to distinguish
+     between upper and lower case letters.
+
+/Tn  CTRL-ETn n = a-z, or +, - Tone
+     Default is i
+
+/Txx CTRL-ETXX sets timer to specified value
+     xx (xx=00-99).  00 will clear timer. All other values will
+     set to the specified minutes.
+
+/U uninstalls the driver
+
+/Vn  CTRL-EVn n = 0-9, or +, - Volume
+     Default is 9
+
+/Wn  CTRL-EWn n=0-9, + or - Word delay
+     Default is 1
+     This contains the amount of delay between each spoken word.
+
+/Xn  CTRL-EXn n = 0-1, + or - Voice (0 off/1 on)
+     Default is 1
+
+/Zn  CTRL-EZn n=0 - 1, + or -
+     Alpha/Numeric spell (0 off/1 on)
+     Default is 1
+     If on, words which contain both letters and numbers will be
+     spelled completely.  Otherwise with this feature off, the   
+     word will be pronounced.
+
+/C? displays possible serial port conflicts.
+     If your computer has more than two serial ports and you have
+     problems running Speak-Out on a serial port try this
+     parameter.
+
+/? - displays all speak-out command-line
+     parameters
+
+Other Features:
+
+CTRL-X    Momentary Silence
+     *Note that this command would usually be sent to the Speak-
+     Out by a screen reader, or some other speech program.  When
+     received by Speak-Out speech will immediately be stopped,
+     and the output buffer will be cleared.
+
+; Suppress Messages
+     *Note that this parameter can only be used on the
+     SPEAKOUT.COM command line.  Place this character at the very
+     end of the line.  It will suppress the display of Speak-Out
+     parameters messages.
+
+CTRL-EE0 disable user aux. dictionary
+
+CTRL-EE1 enable user aux. dictionary
+
+CTRL-EE2 load user aux. dictionary.
+     Load format is as follows:
+      - mispronounced word (a-z and ') only followed by enter
+      - misspelled word (anything valid) followed by enter
+          .
+          .
+     enter
+     either ; (semi-colon) or CTRL-Z
+
+If the CTRL-Z is used Speak-Out will say "dictionary loaded" and
+if the semi-colon is used it will not.
+
+CTRL-EE8 use standard welcome message
+
+CTRL-EE9 load new welcome message.  After the command, all
+characters up to the cr will be used as the new welcome message. 
+This message can be up to ninety-nine characters long.  If you
+enter a message longer than this Speak-Out will say "Welcome
+message too large" and keep the current welcome message.  Speak-
+Out commands can also be part of the startup message.  For
+example, the default message is:
+
+     Speak-Out ready. CTRL-EC?
+
+CTRL-ED9 set time & date.  use the following format after the
+command:
+          MMDDYYDHHMM
+           - MM-month 01-12
+           - DD-day 01-31
+           - YY-year 00-99 (1991-2090)
+           - D-day of week (0-sun -> 7-sat)
+           - HH-hour 00-23
+           - MM-minutes 01-59
+
+CTRL-EC? speaks battery charging status:
+               -) not charging
+               -) trickle charging
+               -) rapid charging
+
+RELOAD.COM Parameters:
+
+There is only one command line parameter for RELOAD.COM.
+
+/!Cx      (specifies the COM port Speak-Out is connected to)
+
+Before you can execute the RELOAD utility you must switch the
+reload switch to the reload position.  Once the switch has been
+set you can issue the command:
+
+     RELOAD /!C1
+
+Assuming Speak-Out is connected to COM1.  This will take the file
+RELOAD.HEX and send it to Speak-Out.  During the upload you will
+hear the computer give a tone.  Assuming the upload was
+successful Speak-Out will speak a message and tell you to switch
+the reload switch to the normal position.  You are now ready to
+use the latest software with your Speak-Out.
+                             
+
+
+Note: one thing omitted was that the indexing sequence is CTRL-E, followed by left bracket, followed by a binary number 0-255.

@@ -1,0 +1,315 @@
+<html>
+
+<head>
+<title>On-line SAM manual</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+
+
+
+<link rel="stylesheet" type="text/css" href="../assets/style_sheets/submenus.css">
+<meta name="Microsoft Border" content="none, default">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<b><font FACE="Arial" SIZE="6">
+
+<blockquote>
+  </font><font FACE="Arial" SIZE="7"><p ALIGN="CENTER">SAM</p>
+  </font><font FACE="Arial" SIZE="6"><p ALIGN="CENTER">Synthesizer Access Manager</p>
+  </font><font FACE="Arial"><p ALIGN="CENTER"></font></b><font face="Arial" size="2">for the
+  Windows® 95 and Windows NT® Workstation 4.0 Operating Systems</font><font FACE="Arial"></p>
+  </font><p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p align="right">Copyright ©1998:</p>
+  <p align="right">Dolphin Computer Access, LLC</p>
+  <p align="right">All Rights Reserved Worldwide.</p>
+  <p>&nbsp;</p>
+  <font FACE="Arial"><p><b>Software License</p>
+  </font><p></b>The <i>software</i> includes computer software, associated media, Braille,
+  cassette or print materials and any electronic documentation. The <i>software</i> is
+  licensed and not sold. The <i>software</i> is protected by copyright laws, international
+  copyright treaties and intellectual property laws. The <i>software</i> is licensed for a
+  single user only unless a site license has been purchased where the number of concurrent
+  users is restricted to that purchased.</p>
+  <p ALIGN="CENTER"><strong><font FACE="Symbol">ã</font> 1997 Dolphin Oceanic Limited. All
+  rights reserved.</strong></p>
+  <b><font FACE="Arial"><p>Notice</p>
+  </font></b><p>Hal, Lexis and SAM are trademarks of Dolphin Oceanic Ltd. Windows and
+  Windows NT are registered trademarks of Microsoft Corporation. All other products are
+  trademarks or registered trademarks of their respective owners.</p>
+  <font FACE="Arial"><b><p>Warranty &amp; Disclaimer</p>
+  </b></font><p>Dolphin warrants that the media on which the <i><b>software</b></i> is
+  distributed are free from defects and will replace defective media at no charge. Dolphin
+  gives no warranties with respect to any bugs or errors in the <i><b>software</b></i> or to
+  its fitness for a particular purpose. Any liability, consequential or otherwise, will be
+  limited to the amount paid for the <i><b>software</b></i>. Please inform us of any bugs or
+  features you may find and we will endeavor to rectify them.</p>
+  <p><b>N.B.</b> </p>
+  <blockquote>
+    <ul>
+      <li>You should save your work and make regular backups, particularly before installing new
+        software or hardware. </li>
+      <li>Due to the many possible hardware configurations and inherently complex nature of
+        software, errors do occur.</li>
+    </ul>
+  </blockquote>
+  <font FACE="Arial"><b><p>Care of your compact disc</p>
+  </b></font><blockquote>
+    <ul>
+      <li>Do not put your disc in direct sunlight.</li>
+      <li>Avoid high heat and humidity.</li>
+      <li>Handle your disc carefully to avoid scratching it.</li>
+      <li>Never stick labels on your disc.</li>
+      <li>Never write on your disc.</li>
+      <li>Keep your disc in the supplied case when not in use.</li>
+    </ul>
+    <p>&nbsp;</p>
+  </blockquote>
+</blockquote>
+<font FACE="Arial" SIZE="4"><b>
+
+<p style="background-color: rgb(0,0,0); color: rgb(255,255,255)">Table Of Contents</b></font></p>
+
+<table border="1" width="100%" bordercolor="#FFFFFF">
+  <tr>
+    <td><b>1</b></td>
+    <td><b>Introduction</b></td>
+    <td><a HREF="on-line5.htm#_Toc395590755">*</a> </td>
+  </tr>
+  <tr>
+    <td><b>2</b></td>
+    <td><b>Installing SAM</b></td>
+    <td><a HREF="on-line5.htm#_Toc395590756">*</a></td>
+  </tr>
+  <tr>
+    <td>2.1</td>
+    <td>Installing SAM</td>
+    <td><a HREF="on-line5.htm#_Toc395590757">*</a></td>
+  </tr>
+  <tr>
+    <td>2.2</td>
+    <td>De-installing SAM</td>
+    <td><a HREF="on-line5.htm#_Toc395590758">*</a></td>
+  </tr>
+  <tr>
+    <td><b>3</b></td>
+    <td><b>Configuring SAM</b></td>
+    <td><a HREF="on-line5.htm#_Toc395590759">*</a></td>
+  </tr>
+  <tr>
+    <td>3.1</td>
+    <td>Configuring an existing driver</td>
+    <td><a HREF="on-line5.htm#_Toc395590760">*</a></td>
+  </tr>
+  <tr>
+    <td>3.2</td>
+    <td>Auto-detecting your speech synthesizer</td>
+    <td><a HREF="on-line5.htm#_Toc395590761">*</a></td>
+  </tr>
+  <tr>
+    <td>3.3</td>
+    <td>Selecting a driver manually</td>
+    <td><a HREF="on-line5.htm#_Toc395590762">*</a></td>
+  </tr>
+  <tr>
+    <td>3.4</td>
+    <td>Quitting SAM</td>
+    <td><a HREF="on-line5.htm#_Toc395590763">*</a></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<blockquote>
+  <font FACE="Arial" SIZE="4"><b><p style="background-color: rgb(0,0,0); color: rgb(255,255,255)">1 <a NAME="_Toc395590755">Introduction</a></p>
+  </b></font><p>SAM (Synthesizer Access Manager) is a Windows 95/NT module that facilitates
+  the sharing of your speech synthesizer with other SAM-compatible access products, such as
+  Hal screen reader and Lexis text reader system.</p>
+  <p>SAM has been developed because with the increasing number of talking access products on
+  the market, users can now encounter problems when they want to use their screen reader in
+  conjunction with other &quot;talking&quot; products, such as Lexis.</p>
+  <p>SAM resolves these problems by automatically and intelligently deciding which access
+  product has the right to pass information to the synthesizer. This allows users to run all
+  their SAM-compatible speech applications seamlessly. </p>
+  <p>SAM incorporates an SSIL interface that allows SAM-compatible applications to use
+  existing 16-bit SSIL drivers (until 32-bit SAM drivers become available). However, not all
+  SSIL drivers will work under Windows NT. (Please refer to section 3 for further details.)</p>
+  <p>This guide tells you everything you need to know in order to install and configure SAM.</p>
+  <p>&nbsp;</p>
+</blockquote>
+
+<blockquote>
+  <font FACE="Arial" SIZE="4"><b><p style="background-color: rgb(0,0,0); color: rgb(255,255,255)">2 <a NAME="_Toc395590756">Installing
+  SAM</a></p>
+  </b></font><p>This section tells you how to install SAM. If you purchased an Orion
+  computer with Lexis or Hal, there is no need for you to read this section, SAM will have
+  been set up for you. If you have purchased Lexis or Hal on CD-ROM, there is also no need
+  for you to read this section.</p>
+  <blockquote>
+    <font FACE="Arial"><b><p>2.1 <a NAME="_Toc395590757">Installing SAM</a></p>
+    </b></font>
+  </blockquote>
+  <p>To run SAM you need:</p>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <ul>
+          <li>An IBM PC compatible computer with a 486DX processor (running at 33 MHz or faster). (A
+            Pentium processor is recommended).</li>
+          <li>8 MB of RAM. (16 MB of RAM recommended for the Windows NT version).</li>
+          <li>A SAM or SSIL compatible speech synthesizer.</li>
+          <li>Windows 95 or Windows NT Workstation 4.0.</li>
+        </ul>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+  <p>These recommendations will ensure that Windows runs optimally. </p>
+  <p>Before installing SAM you must install your speech synthesizer according to the
+  instructions supplied by the manufacturer. You must also load any appropriate device
+  drivers associated with your speech synthesizer. Failure to configure your speech
+  synthesizer properly may result in your machine running excessively slowly, or locking up
+  altogether with no speech output when SAM-compatible applications are run. (Please consult
+  your speech synthesizer's manual for further details.)</p>
+  <p>To install SAM, first of all turn on your computer and start Windows in the usual way.</p>
+  <p>When Windows has loaded, insert your SAM Master disk in drive A, then do the following:</p>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <ul>
+          <li>Press CONTROL+ESCAPE to bring up the Windows Start menu.</li>
+          <li>Press R to select the option &quot;Run&#133;&quot;.</li>
+          <li>Finally, type A:\SETUP and press ENTER to start the SAM installation program.</li>
+        </ul>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+  <p>After the installation program has copied the necessary files you will be prompted to
+  reboot your computer.</p>
+  <blockquote>
+    <font FACE="Arial"><b><p>2.2 <a NAME="_Toc395590758">De-installing SAM</a></p>
+    </b></font>
+  </blockquote>
+  <p>To de-install SAM choose the &quot;Uninstall SAM&quot; option from the &quot;Dolphin
+  SAM&quot; group in the Start menu. </p>
+  <b><p>Warning: You should not normally want to de-install SAM. If you do, your
+  SAM-compatible applications, such as Hal and Lexis, will stop working.</p>
+  </b><p>&nbsp;</p>
+</blockquote>
+
+<blockquote>
+  <font FACE="Arial" SIZE="4"><b><p style="background-color: rgb(0,0,0); color: rgb(255,255,255)">3 <a NAME="_Toc395590759">Configuring
+  SAM</a></p>
+  </b></font><p>This section tells you how to configure SAM if for instance you want to use
+  a different synthesizer with your SAM-compatible applications, or you want to attach your
+  synthesizer to a different serial port. </p>
+  <b><font SIZE="4"><p><font FACE="Wingdings">Ø</font> </font>To configure SAM:</p>
+  </b><blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <ul>
+            <li>From Lexis or Hal select the &quot;SAM Setup&quot; button. (This is the preferred method
+              of setting up SAM.)</li>
+          </ul>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+  <p>If you do not have Lexis or Hal:</p>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <ul>
+            <li>From the Windows Start menu choose &quot;Programs&quot; then &quot;Dolphin SAM&quot;.</li>
+            <li>Highlight the &quot;Configure SAM&quot; icon and then press ENTER.</li>
+          </ul>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+  <p>The &quot;SAM Configuration&quot; dialog box will then be displayed. If SAM is not
+  already running SAM will be started without loading any synthesizer drivers. This will
+  give you a chance to disable any synthesizer drivers which may be causing problems on your
+  machine. (Especially SSIL drivers.)</p>
+  <b><p>Any SSIL driver that requires a DOS-based driver to be loaded, or that access the
+  PC&#146;s hardware directly, will not work under Windows NT. Contact your synthesizer&#146;s
+  manufacturer for more information on compatibility with Windows NT.</p>
+  </b><p>The SAM configuration dialog box lists all the available SAM drivers. Each driver
+  displays a &quot;units&quot; number, which is the number of currently available speech
+  synthesizers of that particular type.</p>
+  <blockquote>
+    <font FACE="Arial"><b><p>3.1 <a NAME="_Toc395590760">Configuring an existing driver</a></p>
+    </b></font>
+  </blockquote>
+  <p>To configure an existing driver, simply highlight it and press ENTER. This will launch
+  the configuration dialog box for the selected driver.</p>
+  <p>Next, change your driver settings, e.g. selecting a different serial port.</p>
+  <p>When you have done that, select the &quot;OK, change now&quot; button and SAM will then
+  display a dialog box. Press ENTER and SAM will then unload all drivers. </p>
+  <p>Now you can physically change any synthesizer hardware you may have or attach your
+  existing synthesizer to a different serial port. </p>
+  <p>Press ENTER again and SAM will reload the drivers (with possibly different
+  configurations).</p>
+  <b><p>Warning: Some SSIL drivers don't work if you load then, unload them and then reload
+  them again in the same Windows session. Also, changing your speech synthesizer whilst
+  Windows is running may in some cases cause damage to your PC/speech synthesizer. It is
+  recommended that you select the option &quot;OK, Change when SAM is restarted&quot; and
+  then power down your PC before changing synthesizer hardware.</p>
+  </b><blockquote>
+    <font FACE="Arial"><b><p>3.2 <a NAME="_Toc395590761">Auto-detecting your speech </a>synthesizer</p>
+    </b></font>
+  </blockquote>
+  <p>If there are no speech synthesizer &quot;units&quot; configured in the &quot;SAM
+  Configuration&quot; dialog box then the quickest way to configure SAM is to select the
+  &quot;Detect All Synthesizers Now&quot; button. If you select this button, SAM asks each
+  driver to perform automatic synthesizer detection. (SAM will also do this automatically if
+  after starting up there are no synthesizers currently configured.)</p>
+  <p>Under Windows 95 SAM will automatically detect the following speech synthesizers:</p>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <ul>
+          <li>A Dolphin Apollo 2, Juno or Gemini</li>
+          <li>A Dolphin PC2 ISA card</li>
+          <li>A DECtalk Express</li>
+          <li>A Keynote Gold</li>
+        </ul>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+  <p>Under Windows NT SAM will automatically detect the following speech synthesizers:</p>
+  <blockquote>
+    <ul>
+      <li>A Dolphin Apollo 2, Juno or Gemini</li>
+    </ul>
+  </blockquote>
+  <p>If your speech synthesizer is not automatically detected by SAM, you can select the
+  driver SAM uses manually by following the instructions below.</p>
+  <blockquote>
+    <font FACE="Arial"><b><p>3.3 <a NAME="_Toc395590762">Selecting a driver manually</a></p>
+    </b></font>
+  </blockquote>
+  <p>To select a driver manually, simply select the &quot;SAM to SSIL interface&quot; option
+  in the &quot;SAM Configuration&quot; dialog box and press ENTER. </p>
+  <p>Choose the SSIL driver you wish to use and press ENTER.</p>
+  <blockquote>
+    <font FACE="Arial"><b><p>3.4 <a NAME="_Toc395590763">Quitting SAM</a></p>
+    </b></font>
+  </blockquote>
+  <b><font SIZE="4"><p><font FACE="Wingdings">Ø</font> </font>To quit SAM:</p>
+  </b><blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <ul>
+            <li>From the Windows Start menu choose &quot;Programs&quot; then &quot;Dolphin SAM&quot;.</li>
+            <li>Highlight the &quot;Quit SAM&quot; icon and then press ENTER.</li>
+          </ul>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+</body></html>

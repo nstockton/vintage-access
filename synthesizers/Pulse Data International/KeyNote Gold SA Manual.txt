@@ -1,0 +1,362 @@
+﻿                           KEYNOTE GOLD
+
+                       SA SPEECH SYNTHESIZER
+
+
+
+
+
+
+
+
+
+                 THE KEYNOTE GOLD S A SYNTHESIZER.
+
+
+
+                             CONTENTS
+
+
+           1.             Introduction
+
+           2.             Description
+
+           3.             Power Supply
+
+           4.             Computer Connection
+
+           5.             The Touch Tablet
+
+           6.             Aicom Emulation
+
+           7.             Specifications
+
+
+
+
+
+
+
+                         COPYRIGHT NOTICE
+
+All rights reserved.  No part of this publication may be
+reproduced in any form whatsoever without the express written
+permission of Pulse Data International Limited.
+
+Every effort has been made to ensure that the information
+contained in this manual is correct at the time of issue.
+Neither Pulse Data International Limited nor its agents assume
+responsibility for errors or omissions in this information.  No
+liability is assumed for damages resulting from the use of this
+information.
+
+Copyright (c) 1994 by Pulse Data International Limited,
+Christchurch, New Zealand.
+Text-to-Speech Copyright (c) 1990,1991,1992,1993,1994 by Berkeley
+Speech Technologies, Berkeley, California, USA.
+
+
+
+
+                 THE KEYNOTE GOLD S A SYNTHESIZER.
+
+
+1.   INTRODUCTION.
+
+This chapter describes the Keynote GOLD S A Speech Synthesizer
+and its connection to your computer.
+
+The Keynote GOLD S A is a small, portable, stand alone speech
+synthesizer.  It provides high quality speech from an integral
+speaker, and includes a headphone jack for personal listening.
+
+The Keynote GOLD S A can be used with Pulse Data International
+software, such as MasterTouch, a screen access program; KeySoft,
+a talking personal information program; and SoundProof, a reading
+reinforcement package.  It may also be used with the IBM Screen
+Reader.
+
+
+2.   DESCRIPTION.
+
+To familiarize yourself with the S A, place it on a flat surface.
+The shorter side with three connectors should be away from you.
+This is the back.  The top face has one set of loudspeaker slots
+towards its rear, while the bottom has two sets of slots.  You
+should take note of the following 6 features.
+
+The On Off Switch is the only control on the right hand side,
+about half way along.  This is a rocker switch.  Press the side
+towards you to turn on, and the S A will say "Keynote Gold".
+Press the side away from you to turn off.
+
+The Volume control is on the front, towards the left.  Use your
+thumb to move the control to the right for increased volume, or
+to the left for less.
+
+The Headphone Socket is also on the front, towards the right.
+Your headphones should be equipped with a 3.5 millimeter stereo
+jack plug.  If you plug into this socket, the loudspeaker will be
+cut out, allowing you to listen to the headphones without
+disturbing other people.
+
+The Power Connector is on the rear face, to your right.  The A.C
+adapter should be plugged in here.  Since the S A contains its
+own battery, the A.C adapter need not always be used.  Battery
+charging is covered in Section 1.3.
+
+The Computer Connector is on the rear face, at the center.  This
+is a nine pin, female, miniature D socket.  The interface cable
+should be connected between this connector and the serial port on
+the computer.
+
+The Tablet Connector is on the rear face, to your left.  If you
+are using a Master Touch tablet, it would be plugged in here.
+
+
+3.   POWER SUPPLY.
+
+The S A can be operated from A.C power, or from its own internal
+rechargeable battery.
+
+If the unit is not often moved, it may be used on A.C power
+continuously.  Locate the small round connector on the A.C
+adapter, and insert it into the power connector at the right rear
+of the S A.  Plug the adapter into a wall socket and switch on.
+The S A should say, "A.C adapter On", at this point or when it is
+turned on, to indicate that the A.C adapter is connected and
+powered.  If the A.C adapter is not correctly connected, or the
+A.C is switched off, you will hear, "A.C adapter Off", when you
+turn on the synthesizer.
+
+The S A may also be used with the A.C adapter switched off or
+disconnected.  If the battery is fully charged, then an operating
+time between 6 and 12 hours may be expected.  As the S A saves
+power automatically when it is silent, battery life will depend
+on how much time is spent speaking.
+
+The battery may be charged by the A.C adapter while the S A is
+switched on or off.  You should allow 14 hours for a full charge,
+although charging for longer will cause no harm.  If you are
+relying on the battery for portable operation, you should cycle
+the battery occasionally to maintain its capacity.  About once a
+month, turn the A.C adapter off and leave the S A switched on
+until it announces, "Charge battery".  At this stage the battery
+will be fully discharged.  Now connect the A.C adapter and charge
+for at least 14 hours.
+If the S A has not been used for some time, the battery may be
+completely flat.  This can temporarily prevent operation, even
+with the A.C adapter connected.  If the unit does not say,
+"Keynote Gold", when it is turned on, then switch it off and
+allow the battery to charge from the A.C adapter for a few
+minutes, and then try again.
+
+
+4.   COMPUTER CONNECTION.
+
+An interface cable is provided with your Keynote Gold S A.
+Select the connector which has pins, and plug it into the
+connector at the center rear of the S A.  This connector is not
+symmetrical, so if it does not engage, try it the other way up.
+Fasten the connector securely with the two locking screws.  The
+other end of the cable goes to your computer's serial port, which
+may have a 9 or a 25 pin connector.  In either case you will be
+supplied with the appropriate cable.  If your computer has two
+serial ports, you may connect the synthesizer to either one.
+
+Switch on the S A, and you are ready to install and run your
+speech software.
+
+
+5.   THE TOUCH TABLET.
+
+If you want to use the touch tablet, switch off the S A before
+plugging in.  Locate the telephone-style connector on the end of
+the tablet cable.  This has a small catch on its lower side,
+which clicks into the connector at the left rear of the S A.  To
+disconnect the tablet you must first lift the catch.
+
+
+6.   AICOM EMULATION.
+
+You may use your Keynote Gold synthesizer with a speech program
+which does not support it.  This is done by installing a special
+driver on your computer.  The speech program can then be set up
+for an Aicom synthesizer, but you will have the benefit of
+Keynote Gold speech.
+
+The driver is provided on a floppy disk, together with an
+installation program.  This program copies the driver onto your
+hard disk.  It will also add a line to the config.sys file, so
+that the driver is loaded whenever the computer is started or
+re-booted.
+
+
+6.1.   INSTALLATION.
+
+To install the driver, locate the floppy disk which is provided
+with your Keynote Gold synthesizer, and insert it into the "A" or
+"B" drive of your computer.  At the DOS prompt, type:
+
+      a:install
+or
+      b:install
+
+and press ENTER.  This will copy the driver into the \keynote
+directory of your hard disk.  It will also add the line:
+
+      device=c:\keynote\golddev.sys
+
+to the config.sys file.  If the install program detects DOS
+version 6 or later, it will add a preceding line:
+
+      [common]
+
+To load the driver you should now reboot your computer.  First
+remove the floppy disk, then press CONTROL, ALT and DELETE.  That
+means: press and hold CONTROL, then press and hold ALT, and
+finally press DELETE.  Release all keys.  Allow about 10 seconds
+for the computer to reboot.
+
+If the driver has been loaded, you will hear:
+
+      "Goldcard driver successfully installed."
+
+You may now install and run speech software, which should be set
+up for an Aicom Accent PC synthesizer.
+
+The installation program provides certain options. These can be
+selected by
+the addition of a parameter after the "install" command.
+Multiple parameters should be separated by a Space, and may be
+placed in any order.
+
+
+6.2.   CHOICE OF DRIVE AND DIRECTORY.
+
+You may install the driver into a directory other than
+c:\keynote.  To do this, add the required path name.  For
+example, to install into a directory called "new", on the D
+drive, type:
+
+      a:install /path=d:\new ENTER.
+
+Do not put spaces in the path parameter.  The installation
+program will create the directory if it doesn't exist, and will
+install the driver there.
+
+
+6.3.   BAUD RATE OPTIONS.
+
+If your computer has two serial ports, you may connect an S A
+synthesizer to either.  The installation program will
+automatically choose the correct COM port for the synthesizer.
+This check could affect a printer or modem attached to the other
+port during installation.  If this is a problem, specify the
+speech port directly by typing:
+
+      a:install /com=1 ENTER, or
+      a:install /com=2 ENTER,
+
+for port 1 or 2 respectively.  The automatic test will then not
+run.  This parameter may also be used if your computer has more
+than one synthesizer, and you wish to select a Stand Alone.
+
+The device driver automatically senses the baud rate used by a
+Keynote Gold Stand Alone synthesizer.  Certain screen readers
+continually reset the baud rate to 9600, which can be a problem
+with earlier Stand Alones operating at 38400 baud.  To overcome
+this, use the format:
+
+      a:install /fbaud ENTER
+
+Do not use this parameter with the Arkenstone Open Book.
+
+
+6.4.   ERROR MESSAGES.
+
+If an error occurs during installation of the device driver, the
+install program will use the synthesizer to speak an error
+message if possible.  If this is not possible, a screen message
+will state:
+
+      "Please check the installation of your speech synthesizer
+and retry the installation program."
+
+This may happen, for example, if the synthesizer is not plugged
+into the computer.
+
+When the install program can access the synthesizer, an error
+message will be spoken if the driver installation cannot be
+completed.  If a message indicates a problem with the /path
+parameter, the command should be checked and re-entered.
+
+If you hear a spoken error message concerning a lack of  free
+memory, or a problem with config.sys, you should contact your
+Keynote Gold distributor for assistance.
+
+
+7.   S A SPECIFICATIONS.
+
+The case measures:  8 inches long, by 4 inches wide, by 1.2
+inches thick; or 200 by 110 by 30 millimeters.
+
+Weight:             1.5 pounds, or 700 grams.
+
+Controls:           On-off switch and volume control.
+
+Connectors:         A.C adapter, computer interface, headphones,tablet.
+
+Interface:               Serial, RS232C, 9 pin female miniature
+D connector.  At the S A, pin 2 = transmit data, pin 3 = receive
+data, pin 5 = common.  Use a "straight through" cable to a
+standard 9 pin computer serial port.
+
+Audio power:        500 milliwatt.
+
+Charger:            9 volt dc, regulated, 300 milliamp or more.
+
+Charger connector:  Circular, 5.5 millimeter outer,
+2.5 millimeter hollow inner.  Center positive.
+
+
+
+
+                   IN CASE OF RADIO INTERFERENCE
+
+This equipment generates and uses radio frequency energy and if
+not installed and used properly, in strict accordance with the
+manufacturer's instructions, may cause interference to radio and
+television reception.  Any unauthorized modification to this
+equipment could result in the revocation of your authority to
+operate the equipment.
+
+It has been type tested and found to comply with the limits for a
+class B computing device in accordance with the specifications in
+Subpart J of Part 15 of FCC Rules, which are designed to provide
+reasonable protection against such interference in a residential
+installation.  However, there is no guarantee that interference
+will not occur in a particular installation.  If this equipment
+does cause interference to radio and television reception, which
+can be determined by turning the equipment off and on, the user
+is encouraged to try to correct the interference by one or more
+of the following measures:
+
+  -Reorient the receiving antenna
+  -Relocate the computer with respect to the receiver
+  -Move the computer away from the receiver
+  -Plug the computer into a different outlet so that the computer
+and receiver are on different branch circuits.
+
+If necessary, the user should consult the dealer or an
+experienced radio/television technician for additional
+suggestions.  The user may find the following booklet prepared by
+the Federal Communications Commission helpful:
+
+  "How to Identify and Resolve Radio-TV Interference Problems"
+
+  This booklet is available from the U.S. Government Printing
+Office, Washington,20402, Stock No. 004-000-00345-4.
+
+  If this equipment is supplied with a shielded cable it must be
+used in order to meet FCC Class B emission limits.

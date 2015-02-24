@@ -1,0 +1,355 @@
+                   
+                   Triple-Talk PCI Users Manual
+
+
+
+Access Solutions
+4536 Edison Ave.
+Sacramento, Ca. 95821
+Web: www.axsol.com
+Customer Support: (916) 481-3559
+
+
+
+
+                        Table of Contents
+
+     Section 1.0 - Introduction
+     Section 1.1 - System Requirements
+     Section 1.2 - Installation
+     Section 1.3 - Installation Problems 
+     Section 1.4 - Screen Access Driver Support
+     Section 1.5 - Special Notes
+     Section 1.6 - Trouble Shooting
+     Section 1.7 - Advanced Features
+     Section 1.8 - Specifications
+  
+
+Section 1.0
+
+                           INTRODUCTION
+
+     The Triple-Talk PCI is a text to speech synthesizer that
+runs on a standard 33MHz PCI bus.  Utilizing todays modern
+technology, the Triple-Talk PCI is extremely responsive and
+delivers a quality of speech that is better than ever.  Unlike
+most synthesizers, the Triple-Talk PCI takes full advantage of
+the high speed transfer rates of the PCI bus.  In simple terms,
+start and stop speech commands to the synthesizer appear to be
+instantaneous.
+
+     The Triple-Talk PCI has 8 predefined voices, 10 volume
+levels, 10 different speeds, 100 unique pitches, and is fully
+configurable to meet your listening needs.  In addition,
+parameters such as tone, punctuation filtering, and intonation
+are also adjustable.  It is important to note that these settings
+may be limited by certain software packages such as screen access
+programs.
+
+     With support for Windows 3.x/95/98/ME/2k/XP and DOS, the Triple-Talk
+PCI is easy to install and ready to start speaking.  All the
+software necessary for installation and supporting many of
+todays' most popular screen readers is included.  The following
+screen reader programs are currently supported:
+
+     1. Window-Eyes 3.x and later.
+     2. Jaws for Windows 3.x and later.
+     3. ASAW
+      4. Vocal-Eyes 3.0 
+     5. ASAP 2.03
+     6. OpenBook 3.5
+     7. Ruby 4.x and later.
+
+
+
+Section 1.1
+
+                       System Requirements
+          
+     The Triple-Talk PCI is designed to operate in an IBM or
+compatible computer with a 33MHz PCI bus.  Most pentium based
+systems as well as some of the later 486 based systems are
+equipped with a 33MHz PCI bus.  If you are not sure if your
+computer is equipped with a 33MHz PCI bus, we recommend
+contacting your computer vendor or refer to your computers' user
+manual.       
+     
+     Currently the Triple-Talk PCI functions with Windows 3.x,
+Windows 9x/ME (including Dos Boxes and straight Dos mode), and  
+Windows 2000/XP.
+
+       
+Section 1.2
+
+                           Installation
+
+     To install the Triple-Talk PCI, follow the two procedures
+listed below:
+
+
+  Hardware Procedure:
+
+     It is strongly recommended that a qualified technician
+performs the hardware and software installation needed to get
+your new Triple-Talk PCI up and running.  Access Solutions does
+not warrant products that are damaged due to improper handling or
+improper installation. 
+
+
+     1. Turn your computer off and unplug the power cord to the     computer.  
+        You may wish to remove other cords to make       accessing the 
+        internals of the computer easier.  If you     do this, make sure you pay 
+        close attention to where cords are connected.    
+
+     2. Remove the outer shell of your computer case to expose      the 
+        inner circuitry.  This usually requires the removal     of a few 
+        screws from the back of the computer.
+   
+     3. Locate a free PCI slot where you wish to install the        
+        Triple-Talk PCI card.  You will notice several other cards      placed 
+        perpendicular to a main circuit board.  This main
+circuit board called a "mother board" contains slots that cards, like the 
+        Triple-Talk PCI,      may be plugged into.  PCI slots are shorter in 
+        length       than ISA slots and should not be confused.              
+
+     4. Place the Triple-Talk PCI card in the free slot you found
+        in step 3.  The metal bracket that is attached to one       side of 
+        the card should go towards the back of the computer.  This metal 
+        bracket on the Triple-Talk PCI card should     also be flush against 
+        the back of the case.  If you find a       metal cover in the area 
+        where the bracket on the Triple-Talk PCI card should go, go ahead 
+        and remove it.  This         usually requires the removal of a screw.  
+        Make sure the Triple-Talk PCI card is seated well in the slot in the      
+        mother board.  Finally, attach a mounting screw to         the top 
+        side of the Triple-Talk PCI mounting bracket.
+
+     5. Place the outer shell of your computer case on to the      computer  
+        and attach all necessary screws.
+
+     6. Attach the included speaker by placing the eighth inch      male plug 
+        into the new eighth inch female hole found on     the back of the 
+        computer.
+
+     7. Attach all cords removed in step 1.
+
+     8. Follow the steps for installing the device drivers for      the 
+        Triple-Talk PCI as described in the next section.
+
+            
+  Software Procedure:
+
+     If you plan to use the Triple-Talk PCI with windows 95, view
+     the readme.txt file in the "win95" folder located on the
+     Triple-Talk PCI installation disk.
+     
+     If you plan to use the Triple-Talk PCI with Windows 3.x,
+skip to section 1.4.  To install support drivers for Windows 98/Me/2k/XP,
+follow the steps listed below.
+
+     1. Turn your computer on.
+
+     2. When the Add New Hardware Wizard comes up informing you 
+        that a PCI MultiMedia or Communication device has been detected,     
+        insert the Triple-Talk PCI installation disk into your floppy drive and 
+        press Enter.
+
+     3. When prompted for whether or not windows should search for
+        the best driver for this device, select the radio button that
+        allows windows to search for the best driver for this device and press 
+        Enter.
+          
+     4. Next, check the check box labeled "Specify a Location". 
+
+     5. In the edit box, type "a:\" and press Enter. 
+    
+     6. The add new hardware wizard will inform you that the      
+       Access Solutions Triple-Talk PCI has been found. Just press Enter.
+
+     7. Once you have reached this point, the add new hardware
+        wizard should inform you that it has successfully installed all the 
+        necessary files needed for supporting your new Triple-Talk PCI. 
+        Just press Enter and you are all done.
+          
+     8. Remove the Triple-Talk PCI installation disk from your floppy drive. 
+
+
+     If you plan to run a Dos screen reader, such as Vocal-Eyes, while  
+in a Dos Box under windows 98/ME, do the following:     
+
+     1. Insert the Triple-Talk PCI installation disk into your 
+        floppy drive
+
+     2. Click on the "Start" button to bring up the start menu.
+
+     3. Type 'R' to bring up a windows run line.
+
+     4. Type "a:\msdos\pci-dos.exe" and press Enter. 
+     
+5. Follow the on screen prompts to install Dos support for your  
+   new Triple-Talk PCI.
+
+
+
+Section 1.3    
+
+                             Installation Problems
+
+        The Triple-Talk PCI is a fully compliant PCI Plug and Play
+card that supports IRQ sharing.  If you have trouble getting  
+the Triple-Talk PCI to install under Windows 9x or find that the  
+synthesizer conflicts with other add in cards, try the following:
+        
+        1. Check to see if the Triple-Talk PCI appears under the 
+           "System" tab in "Device Manager".  If it does, the
+           Triple-Talk PCI may be conflicting with another card.
+
+        2. Try moving the Triple-Talk PCI card to another PCI slot.
+
+        3. If the Triple-Talk PCI conflicts with another add in card,  
+           try removing the add in card and see if the problem goes away.   
+           If the conflict is resolved, re-install the add in card.
+
+        4. Review the technical notes file "technts.txt" located on
+           the Triple-Talk PCI installation disk.
+
+
+
+Section 1.4
+ 
+                   Screen Access Driver Support
+   
+    Windows 9x/ME/2k/XP Users -
+
+    If you have already installed all the necessary files needed for
+    supporting your Triple-Talk PCI device under windows, you are ready  
+    to configure your favorite windows screen reader to operate with your new 
+    Triple-Talk PCI.
+
+    If you are using Window-Eyes or Jaws versions 4.x or later, just
+    choose the Triple-Talk PCI from the synthesizer selection menu within
+    your screen access program and you are ready to start reading.
+
+    For Window-Eyes 3.1 driver support, read the "readme.txt" file
+    located in the "Wineyes" folder on your Triple-Talk PCI installation
+    disk.
+    
+    For earlier versions of Jaws, read the "readme.txt" file
+    located in the "Jaws3x" folder on your Triple-Talk PCI installation
+    disk.
+
+    If you are using an OCR package such as OpenBook Unbound or
+    Ruby, you may select the Triple-Talk PCI driver from the applications' 
+    synthesizer selection menu. If your OCR applications' synthesizer 
+    selection menu does not have an entry for the Triple-Talk PCI, see
+    the "readme.txt" file located in the "ssil" folder on your 
+    Triple-Talk PCI installation disk. 
+    
+    If your windows screen reader is not mentioned above or you are 
+    a windows 3.x user, contact
+    Access Solutions technical support team for further assistance.
+    Information for contacting Access Solutions is located at the beginning 
+    of this users manual.
+
+
+    Dos Boxes and Streight Dos -
+
+    In order to run dos screen readers or software applications that   
+    require a 16 bit driver, such as Vocal-Eyes, you must first
+    load the ttalkdos.com file located in your windows directory. 
+    This can be done via a batch file that loads ttalkdos.com and 
+    then your application software. A sample batch file
+    demonstrating how to load the ttalkdos.com file and Vocal-Eyes
+    is located in the "Vocal" folder on your Triple-Talk PCI
+    installation disk. The name of this batch file is "talk.bat" and
+    is a good example of how your batch file should look.
+
+    If you plan to run Vocal-Eyes 3.0, read the "readme.txt" file
+    located in the "vocal" folder on the Triple-Talk PCI installation disk.
+
+
+
+Section 1.5
+
+                                 Special Notes
+
+        The Triple-Talk PCI has a three pin jumper block located
+in the lower left hand corner of the circuit board and near the mounting 
+bracket.  From the factory, a small jumper is placed over the
+two pins closest to the mounting bracket.  In this position, the  
+audio amplifier of the synthesizer is forced on and will remain in this
+state until the computer is turned off.  If the jumper is placed
+over the two pins furthest from the mounting bracket, the audio 
+amplifier is turned on only when words or characters are spoken.
+
+        If you are experiencing an annoying whine or chatter coming 
+from the speaker when words or characters are not being spoken, it is 
+recommended that you place the jumper over the two pins furthest from the
+mounting bracket.  Otherwize, leave the jumper placed over the two  
+pins closest to the mounting bracket.
+
+
+
+Section 1.6
+
+                         Trouble Shooting
+
+     If you are having trouble getting your Triple-Talk PCI to
+install or work properly, here are a few suggestions that may
+help.
+
+     1. First review sections 1.1 through 1.3 of this user manual. 
+
+     2. Make sure the speaker is plugged into the Triple-Talk PCI
+        eighth inch female jack and not into an 
+        eighth inch         female hole on another card such as a sound card.
+
+     3. Make sure the volume knob on the speaker is turned about         
+        half way up.
+
+     4. If you are using a screen access software package, make sure
+        volume levels are not set to low.
+
+     5. Make sure the Triple-Talk PCI is seated firmly in a PCI     slot 
+        on your mother board.
+
+     6. Make sure the Triple-Talk PCI is plugged into a PCI       slot 
+        and not into an ISA slot.
+
+     7. Review the "technts.txt" file on the installation disk.
+
+     If you are still having trouble and have followed the steps
+shown above, it is recommended that you contact Access Solutions
+technical support team for further assistance.  Refer to the
+beginning of this user manual for contact information.            
+
+
+           
+Section 1.7
+
+                        Advanced Features
+
+     If you are a software developer or a computer nerd, you are
+in luck!  Access Solutions offers a free developer kit that
+contains all the tools needed for writing software to talk to the
+Triple-Talk PCI.  We do not include this information in this user
+manual because it is far to boring and beyond the imagination of
+the average user.  If you are interested in obtaining the
+developer kit, feel free to contact Access Solutions' technical
+support team for more information.
+
+
+
+Section 1.8
+
+                          Specifications
+
+General Specs:
+Max Audio Out .5W @ 8ohms
+Fch ~ 3kc
+Fcl ~ 8kc
+Max Pwr consumption ~ 0.625W
+         
+Speech Engine:
+Clk ~ 7.3728Mhz
+2k Byte Input Buffer
+Rxd, Txd @ 19.2kbps

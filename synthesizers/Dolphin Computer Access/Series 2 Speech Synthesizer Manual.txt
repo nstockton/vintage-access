@@ -1,0 +1,915 @@
+
+                                   Dolphin Computer Access Limited
+   
+   
+     Dolphin Speech Synthesiser
+     
+                                 User Guide
+     
+                            Series 2 Synthesisers
+     
+     
+     
+     Copyright ©1998:
+     
+     Dolphin Computer Access
+     
+     PO Box 83
+     
+     Worcester
+     
+     WR3 8TU
+     
+     England
+     
+     Tel: 01905 754577
+     
+     Fax: 01905 754559
+     
+     All Rights Reserved Worldwide.
+     
+     
+     Notice
+     
+     Apollo and Juno are trademarks of Dolphin Oceanic Ltd. Windows and
+     Windows NT are registered trademarks of Microsoft Corporation.  All
+     other products are trademarks or registered trademarks of their
+     respective owners.
+     
+     
+   Introduction
+   
+   The Dolphin Series 2 Synthesisers have been developed in parallel with
+   the Hal screen reader and other Dolphin special access products. They
+   provide an affordable and powerful means of multilingual speech
+   output, and can be used with a large variety of popular computer
+   packages.
+   All of Dolphin's Series 2 Synthesisers have the following features:
+     * Advanced PC communications including indexing.
+     * Easy control over the pitch, speed, intonation, and other aspects
+       of the speech.
+     * Over forty different languages available, with up to seven
+       languages in one synthesiser.
+       
+   Varieties
+   There are currently three Dolphin speech synthesisers:
+     * Apollo 2
+     * PC 2 card
+     * Juno
+       
+   All the synthesisers have the same features and command set, except
+   that the Juno only has a software volume control.
+   Apollo 2
+   This is a mains-only desktop synthesiser with an integral loudspeaker.
+   It is connected to your PC's serial port.
+   It is ideal for use in situations where an integral loudspeaker is
+   required.
+   PC 2 card
+   This is essentially an Apollo 2, but mounted on a PC card. It has all
+   the features of the Apollo 2, and is ideal for use in a sole
+   stationary computer, where you want the speech synthesiser to be
+   tucked away. Because it fits inside the PC you have no need for an
+   external power supply, and will have no trailing wires.
+   Juno
+   The Juno is a battery-powered, serial-only portable synthesiser, with
+   all the functions of the Apollo 2. Complete with a built-in
+   loudspeaker, it is small enough to be attached to any laptop computer,
+   has about 10 hours battery life, and can fit into your pocket when not
+   in use.
+   
+   Section One - The Apollo 2
+   
+   This section contains a description of the Apollo 2 speech
+   synthesiser.
+   Introduction
+   The Apollo 2 is a mains-powered text-to speech synthesiser which can
+   be used with a wide range of computers. It can be used in conjunction
+   with portable computers, as well as with desktop models. The Apollo 2
+   is one of the very few synthesisers which has a British English voice,
+   and many non-English languages are also available. It is possible to
+   have up to 4 languages resident in the Apollo 2 at any time. Language
+   ROMs can also be updated or
+   changed as required.
+   The following is a description of the connectors and controls on the
+   Apollo 2. (The description assumes that you have the Apollo 2 speaker
+   facing you.) There are three connectors as follows.
+   Connectors
+   1. The 9 way D-Type connector at the back is a serial port. It is used
+   to connect to the computer.
+   
+   The connector is wired in a non-standard way so unless you have made
+   you own cable as per the pin-out in Appendix 1, you should only use
+   Dolphin serial cables.
+   
+   If you plug a 'standard' serial cable into the socket you may blow up
+   the communications port of the synthesiser. For connection to an IBM
+   PC/AT or compatible you will receive a cable with 9 way female
+   connectors at each end. The cable can be plugged in either way round.
+   2. The connector on the front is for a headphone set or extension
+   speaker. It is a stereo 3.5mm socket (such as found on Walkman-type
+   headphones), and will not work correctly if a mono jack is used.
+   
+   3. The last connector is to the rear, and is for the mains adapter.
+   
+   N.B. Please use only a Dolphin mains adapter as supplied.If using your
+   own mains adapter ensure that the voltage, current capacity and
+   polarity are correct. These details can be found in Appendix 1.
+   Controls
+   The only controls provided on the Apollo 2 are the on/off switch and
+   the volume knob. The on/off switch is located to the rear, left hand
+   side. Left is on, right is off. The volume control is located on top
+   of the unit, to the left, just below the speaker grill.
+   On switching on the synthesiser, the synthesiser will self-test and
+   issue a sound effect dependent on the result.
+   If the test is OK the synthesiser issues a short single buzz, but if
+   it fails three longer hoots are sounded.
+   
+   Section Two - The PC 2 Card
+   
+   This section contains information on the PC 2 card, including
+   guidelines on installation.
+   Introduction
+   The PC 2 Card is an IBM PC/AT compatible card that will fit inside
+   both desktop PCs and portable PCs which have a standard card slot.
+   The card is capable of holding up to seven languages by way of the
+   four on-board ROM sockets. The first ROM socket is a 256Kb ROM and can
+   hold four languages. The other three ROM sockets are 64Kb and can hold
+   one language. The first socket can also hold a normal 64Kb ROM. The
+   physical size of the card is 20.3cm back to front by 9.9cm high, not
+   including the edge connector.
+   Fitting the Card
+   When fitting the card to your PC try not to touch the edge connector
+   as you may damage the card. Select a spare slot and plug the card in
+   firmly. You may have to bend the face plate slightly to enable
+   securing of the locking screw. This will depend on the card cage of
+   your PC. The card is almost ready for use as you need only plug in
+   either your headphones or external speaker. If you wish to use the
+   internal speaker of your PC the section 'Using the PC's Internal
+   Speaker' has information on how to do this.
+   Controls and Connections
+       The Edge Connector
+   The edge connector on the Card is the hardware communication path with
+   the computer. It is a standard 8-bit, IBM PC slot connector but will
+   work perfectly well in a 16-bit AT slot. The card will not work in a
+   MCA type slot as found on certain IBM PS/2 machines.
+       Sockets and Volume Control
+   The card has a volume control, 'spindle' type, to the rear of the
+   machine and two 3.5mm stereo jacks on the face plate. This will appear
+   on the back or side of your PC, dependent on the orientation of your
+   card cage, once the card is fitted.
+   PC 2 Card Back plate
+   There are two stereo sockets on the card. The 'top' one (closest to
+   the pot) is the normal output to connect headphones/speakers. The
+   lower socket is a 'line' output that will be useful for active
+   speakers, connecting to an external amplifier etc. If this socket is
+   used, the
+   headphone socket is disabled. The card does not have a speaker
+   on-board, however, you can connect the computer's internal speaker,
+   see below. There are jumpers for selecting port addresses. These are
+   discussed in detail in Appendix 4
+   Using the Card with Software
+   If you are using HAL5 you can drive the PC 2 card at the default
+   address by using the following address:
+       HAL5 card
+   If you have changed the card address to the secondary value (as per
+   Appendix 4) then you can drive the card with the following command:
+       HAL5 card792
+   If you are using a special address then include the address in the
+   following command:
+       HAL5 card*** (special address)
+   The On-Board ROMs
+   The PC 2 Card has four on-board ROM sockets, one can hold 4 languages.
+   The other three ROMs can hold only 1 language. The default ROM socket,
+   i.e. the language ROM the card will use when you first turn on the
+   computer, is the one furthest from the volume control. The second ROM
+   (ROM2) would normally be selected automatically, if you are using
+   HAL5, when you changed language prompt files. To change ROMs outside
+   of HAL5 (it actually does the same thing internally) you can use the
+   '@=' command. '@=1' will start the default ROM and '@=2' will start
+   ROM2 etc.
+   Using the PC's Internal Speaker
+   It is possible to use the internal speaker of your computer for both
+   speech and computer audio output. This will not work successfully with
+   small piezo speakers sometimes found on portables and some desktops,
+   it should really be a standard moving cone type.
+   This facility has two advantages in that you do not need an external
+   speaker with its associated cable, and when using headphones you can
+   hear both speech and computer beeps without disturbing colleagues. (A
+   talking beeping PC can be quite a distraction in a busy office
+   environment!).
+   The method of connecting the PC beeps/speaker is different now, you
+   can connect the 4 pin socket from the PC speaker directly to the 4 pin
+   plug on the card (J6), and then a single wire connects between J3 on
+   the card and the output on the PC motherboard.
+   
+   Section Three - The Juno
+   
+   This section contains a description of the Juno portable speech
+   synthesiser.
+   Introduction
+   The Juno has been designed by Dolphin as a battery powered synthesiser
+   that can be used in portable applications where the desktop Apollo 2
+   or the PC 2 card may not be suitable. The Juno has built in
+   rechargeable batteries, has all the features of the Apollo 2, and is
+   totally software controlled. (This means you must use a program such
+   as the HAL5 screen reader to alter the volume.) -This version of the
+   Juno, has a built-in loudspeaker.
+   N.B The Juno automatically powers on when the PC or laptop's serial
+   port has been initialised and a speaker or headphones have been
+   plugged in. It will power off when the PC is powered off, or the
+   serial connector is unplugged.
+   The On-Board ROMs
+   The Juno has a single ROM slot, and can accommodate up to four
+   languages on a single ROM. Language switching and audio volume changes
+   are made under software control from the PC.
+   
+   Section Four - Trouble Shooting
+   
+   This section contains information on common problems people find with
+   their Dolphin speech synthesisers. Read this section if you are having
+   difficulty.
+   Introduction
+   If your synthesiser does not function please check the following
+   points.
+   1. With an Apollo check that your mains adapter is plugged all the way
+   into the synthesiser and that it is plugged into the mains and turned
+   on.
+   2. The synthesiser should issue a `healthy' sound effect when powered
+   up.
+   3. With an Apollo 2 or Juno you should check that the data cable is
+   plugged in correctly and into the right communication port on your
+   computer.
+   4. With cards, you must ensure that the card is fitted into its slot
+   correctly and that a speaker or headphone set is attached.
+   5. If using the HAL5 screen reader, have you used the correct command
+   line parameter for your synthesiser? Check with the following list:
+   HAL5 com1 ENTER speech output to COM1:
+   HAL5 com2 ENTER speech output to COM2:
+   HAL5 card ENTER speech output to a PC 2 Card
+   HAL5 card760 ENTER speech output to a PC 2 Card secondary address
+   6. If when using cards, you still have no speech output after checking
+   point 3, then you may already have a card installed that is using the
+   same address as the PC3 card. (See Appendix 3, "Address Selection",
+   for further details.)
+   If all else fails, phone the Dolphin distributor in your country, or
+   in the U.S. phone Dolphin Computer Access on 650 348 7402.
+   
+   Section Five - Complete Command Set
+   
+   This section contains a complete command set for the Apollo/PC 2 Card
+   and Juno speech synthesisers. These commands tell you how to control
+   your synthesiser.
+   Introduction
+   This guide covers ROM types from version 2A onwards. Most of the ROM
+   commands start with an '@' (at sign) and are followed by an ASCII
+   character or Hex, Decimal, Octal or Binary number as indicated by c,
+   h, d, o or b. When a Binary number is indicated you will generally
+   find this is a toggle switch where '0' turns the command off and '1'
+   turns the command on.
+   N.B. The default settings shown below are for UK English. ENTER stands
+   for carriage return.
+   General Commands
+   @Wd
+   Controls the speed of the speech. Default = 3, and the range of values
+   is 1 to 9, giving speeds of approximately 80 to 580 words per minute.
+   @Fh
+   Sets the center point of the voice pitch. Default = 8
+   @Fc
+   'c' must be either '+' or '-'. This causes the pitch to be raised or
+   lowered slightly.
+   @Ro
+   Sets the level of prosody or excitability of the voice. Default = 3
+   @Sb
+   Toggles spell mode on or off. Default = 0
+   @Pb
+   Toggles punctuation on or off. Default = 0
+   @Qd
+   Sets the length of pause between words. Default = 0
+   @Bd
+   This is used to set the degree of voicing. 1 is a whisper (very
+   breathy) and 8 is full voicing. Default = 8
+   @Dh
+   Sets the pause for end of phrase, breath group or sentence. Default =
+   b
+   @Vd
+   One of the six preset voices may be selected with this command. The
+   first three voices (1 to 3) are based on a male voice and the last
+   three voices (4 to 6) are based on a non-male voice. Many more voices
+   can be obtained by using the commands below. N.B. '@V0' will turn the
+   voice off.
+   @Kb
+   Selects the male or non-male speaker table.0 for male, 1 for non-male.
+   Control X
+   This is the mute command. The speech buffer is flushed and speech
+   stops immediately.
+   @Ah
+   The command @Ah where h is a hexadecimal digit '0' to 'F', will set
+   the volume control to the selected level. That level, h, is a
+   proportion of the level set by the physical volume control.
+   The action of the @A command is synchronised with the speech so that
+   the loudness of the parts of an utterance can be controlled. For
+   example:
+       Quietest @ A 0
+       Normal @ A A
+       Loudest @ A F
+   @?
+   Speaks the ROM version number.
+   @J
+   'Soft' Reset - This command resets the current language speech
+   parameters to their power on defaults. This is primarily intended for
+   HAL5 and programmers use.
+   @=d,
+   This command will switch from one internal language ROM to another.
+   @=1, Selects ROM 1 (default ROM)
+   @=2, Selects ROM 2
+   @=3, Selects ROM 3
+   @=4, Selects ROM 4
+   
+   As standard the Apollo 2 has only one ROM of 64k. Additional languages
+   can be ordered.
+   The comma is not really part of the command, but should be included,
+   otherwise any text between the @=d and the end of the current phrase
+   will be lost.
+   When switching between ROMs of the same version number the Apollo 2
+   will do this without having to reset any communications circuitry.
+   However, if the ROM versions are different, the switch will still
+   occur, but by the synthesiser resetting itself.
+   @Gb
+   This command has no effect for Apollo 2 ROMs from version 2 on. In
+   earlier versions it turned the greeting on or off when switching
+   languages.
+   @Th This command can be inserted in your text to produce sound
+   effects. The sound effects available are:
+   hex followed by duration followed by type of effect
+   0 very short whoosh
+   1 short whoosh
+   2 medium whoosh
+   3 long whoosh
+   4 very short buzzer
+   5 short buzzer
+   6 medium buzzer
+   7 long buzzer
+   8 very short warble 1
+   9 short warble 1
+   A medium warble 1
+   B long warble 1
+   C very short warble 2
+   D short warble 2
+   E medium warble 2
+   F long warble 2
+   Advanced Commands
+   Please note that you will probably not need to use the following
+   commands during day-to-day use of your synthesiser.
+   @Hb
+   Toggles Hypermode on or off. With Hypermode on only content words are
+   spoken, as in a telegram. Default = 0
+   @+c
+   This command has no effect for Apollo 2 ROMs from version 2 on. In
+   earlier versions it sets 'c' to be the new command start character
+   (i.e. 'c' is used as the new start character for a command string
+   instead of @).
+   @Ec
+   Echoes back a character, where c is an alphanumeric character. See
+   Appendix 4 for details of the communications protocols required.
+   @L
+   Asks for a list of its languages. The reply message sent to the PC is:
+   L, n, s, data <ENTER>
+   where:
+   'L' is a reply identifier, n gives the number of records in the
+   message in hexadecimal, and s gives the size of each record. The n
+   records then follow in slot number order. Both n and s are transmitted
+   low nibble first. The format of each record is:
+   language code, extn, eng_ver, lang_ver
+   where: lang_code is the country code for the language, e.g. 00044 for
+   UK. The first character is used where more than one language is used
+   in that country, so Welsh will
+   be 10044.ext will be used in the future to indicate a language
+   extension slot. Some languages will require more than one slot. ext is
+   '0' for all languages now.eng_ver and lang_ver are four bytes each
+   giving the engine and language version number for the slot. The
+   message is terminated with a carriage return,
+   ENTER.
+   @Mhh
+   This sets the mark-space ratio which can be described as having an
+   effect on the depth of the voice. The valid range is 0 to 3F, the
+   default is 16.
+   @Tx
+   A `silent' sound effect giving a short pause of about 100ms.
+   @Xb
+   Toggles the phonetic mode on or off. Default = 0
+   @Y m r p b
+   Changes the synthesiser serial communications settings, where:
+   
+   m selects the communication mode and is:
+   H for half-duplex
+   F for full-duplex
+   r selects the baud rate:
+   1 300
+   2 1200
+   3 9600 (Power up default)
+   4 19200
+   5 28800
+   6 57600
+   p selects the parity:
+   E for Even
+   O for Odd
+   N for None (Power up default)
+   b selects the number of data bits:
+   7 7 data bits
+   8 8 data bits(power up default)
+   For example, in order to set the synthesiser communications to 19.2
+   Kbits/sec, odd parity, 7 data bits, and to use full-duplex
+   communications, the command would be: @Y f 4 0 7
+   The next five characters are synchronization bytes and are not spoken.
+   Any communication error during synchronization causes the synthesiser
+   to revert to the default settings.
+   @c ?
+   Where c is one of A, B, C, D, F, H, K, M, P, Q, R, S, V, W, X, Z, =,
+   or $
+   These are the characters used above in the `at' commands to adjust the
+   synthesisers' settings.
+   Sending the @c? command to the synthesiser will produce a reply
+   consisting of three characters. The first of these is the setting
+   identifier, such as B for breathiness, followed by two characters
+   (bytes) representing the hexadecimal value of that setting, which are
+   sent in the order low-nibble then high-nibble.
+   For example, to ask the synthesiser for its current volume setting,
+   send @A?. The synthesiser will reply with the message A60, where 6 is
+   the current volume level.
+   @A?
+   Return the current volume setting.
+   
+   @B?
+   Returns the current breathiness level.
+   @C?
+   Checks the battery level and charging state in a Juno. The reply is
+   Cab where a is 1 if the
+   battery is low or b is 1 if a charger is connected. If b is 0 then the
+   charge state is unknown and if b is 2 no charger is connected
+   @D?
+   Returns the current end of phrase pause setting.
+   @F?
+   Returns the current pitch center point setting.
+   @H?
+   Returns the current Hypermode setting.
+   @K?
+   Returns the current speaker table setting.
+   @M?
+   Returns the current mark-space ratio setting.
+   @P?
+   Returns the current punctuation setting.
+   @Q?
+   Returns the current inter-word pause setting.
+   @R?
+   Returns the current prosody setting.
+   @S?
+   Returns the current spell mode setting.
+   @V?
+   Returns the current voice setting.
+   @W?
+   Returns the current speed setting.
+   @X?
+   Returns the current phonetic mode setting.
+   @=?
+   Returns the slot number of the selected ROM.
+   @$?
+   Returns the current voice source and filter setting.
+   @I?
+   This feature is available on serial Apollo 2, Juno, and PC 2 card
+   synthesisers. On receipt of @I?, the synthesiser will respond with a 4
+   byte message:
+   I a b T/M
+   Where I indicates the message is an index message, and a and b are two
+   ASCII characters representing the one byte hexadecimal text unit
+   counter.
+   The final character T/M represents whether the synthesiser is Talking
+   or Mute, e.g. the synthesiser may have 10 text units in its text
+   buffer but is not talking as it has not yet received a comma, full
+   stop etc.
+   On receipt of a mute command, the normal muting operations take place,
+   and the current values of the indexing flag and unit count are
+   preserved.
+   If the screen reader needs to know the index status, it must send @I?
+   before issuing another @I+ which will clear the index flag and
+   counter.
+   @I+
+   To enable indexing, words or text units must be counted up as they are
+   received.
+   The synthesiser detects that indexing is on by the presence of the
+   first @I+ command after a mute when it zeros a text-unit count. The
+   text-unit counter is a single byte representing the number of units
+   remaining to be spoken by the synthesiser. When indexing is on, the
+   synthesiser will increment the unit count whenever it receives an @I+.
+   Whenever one of these marks is due to be spoken it is not sent to the
+   synthesiser chip but causes the unit counter to be decremented. So,
+   the Apollo 2 will keep track of how far the communications with the
+   PC, and hence the application, are ahead of the speech synthesiser.
+   Special Voice Commands
+   These commands have been provided for you to experiment with the
+   sounds of the synthesiser. Most users will never need them.
+   Commands to modify Formants
+   @ u d h h+ Here 'd' is used to select one of the ten
+   @ u d h h - parameters in the table below. h - or h+ can be
+   used to add or subtract the hex value (h) from the
+   selected parameter (d). The fourth formant is fixed.
+   Parameter followed by Value of d
+   0. Fn frequency of nasal formant.
+   1. F1 frequency of first formant.
+   2. F2 frequency of second formant.
+   3. F3 frequency of third formant.
+   4. A L F low frequency amplitude.
+   5. A1 amplitude of first formant.
+   6. A2 amplitude of second formant.
+   7. A3 amplitude of third formant.
+   8. A4 amplitude of fourth formant.
+   9. IV degree of voicing. Same command as @B
+   Voice Source & Filter
+   @$o This command selects the voice source and filter as per the table
+   below. Default = 0
+   Value of o followed by Voice Filter followed by Voicing Source
+   0.male.default
+   1.female.default
+   2.male.spike
+   3.female.spike
+   4.male.cut-down default
+   5.female.cut-down default
+   6.male.reduced high frequency filter
+   7.female.reduced high frequency filter
+   
+   Section Six - Using an Apollo 2 with a BBC or BBC Master System
+   
+   Introduction
+   The Apollo 2 speech synthesiser can be connected to a BBC computer
+   serial port and used only at a baud rate of 9600.
+   The serial port is located at the back of the computer and is labeled
+   'RS423'. The actual position of this port varies slightly depending on
+   which model of BBC computer you have. The plug which fits this socket
+   is a domino plug. This means that it is symmetrical and can therefore
+   be fitted either way round. However, the synthesiser will not work
+   unless it is fitted correctly. The correct way is when the head of the
+   screw in the plug casing faces to the right, as viewed from the back
+   of the computer.
+   It is possible to add speech to BBC basic programs by incorporating
+   one of the following procedures.
+   Serial Port Procedure
+       20000 DEFPROCSAY (Q$)
+       20010 *FX3,7
+       20020 PRINT Q$ ''
+       20030 *FX3,0
+       20040 ENDPROC
+   After adding the above procedure it is necessary to call this up at
+   the appropriate part of the program. For example, if a program prints
+   the message "Very Good" on the screen, locate the point in the program
+   where this is generated, and add an additional line. In the example
+   below line 3000 is in the original program, line 3005 will make the
+   synthesiser say the same.
+       3000 PRINT TAB (5,20) "Very Good"
+       3005 PROCSAY ("Very Good")
+   The same procedure could be used to make a program which checks the
+   ROM version.
+       10 PROCSAY ("@?")
+       20 DEFPROCSAY (Q$)
+       30 *FX3,7
+       40 PRINT Q$ ''
+       50 *FX3,0
+       60 ENDPROC
+   Software is available for the BBC and the BBC Master System. For more
+   Information contact the Dolphin Technical Support Department.
+   BBC Master Settings
+   The BBC Master series can cause confusion as it has a default protocol
+   that is battery backed (as with time and date) and does not match the
+   synthesiser. This default can be changed in the following way noting
+   that all entries are in upper case.
+   *CO. BAUD 7 <ENTER> followed by hard break
+   *CO. DATA 4 <ENTER> followed by hard break
+   'Hard break' means hold the control key down and tap the break key.
+   The two commands above should set the protocol to 9600 baud, 8 data
+   bits and one stop bit.
+   
+   Appendix One - Apollo 2 Physical Characteristics
+   
+   Weight 325 grams
+   size 11.5cm (l) x 13cm (b) x 7cm (h)
+   Power Source
+   
+   The DC supply should be 13 volts, 300 milliamps, 2.1mm barrel. The
+   polarity is negative tip, positive barrel.
+   Connector
+   
+   Serial with default of 9600 baud, 8 data bits and 1 stop bit.
+   
+   Pin-outs
+   Serial port
+   pin number followed by designation
+   2. TX
+   3. RX
+   4. DSR
+   5. GND
+   6. DTR
+   7. CTS
+   8. RTS
+   Baud Rate
+   The Baud rate is now software selectable.
+   Headphone 3.5mm stereo jack, left and right lines shorted.
+   Controls On/Off switch, Volume control.
+   
+   Appendix Two - Juno with Nickel Metal Hydride Batteries Physical
+   Characteristics
+   
+   Weight 450 grams
+   size 15.0cm (l), 7.5cm (b), 5.0cm (h)
+   Power Source
+   Battery Type
+   The Juno contains a Nickel Metal Hydride battery pack with a maximum
+   voltage of 7.2 volts and a capacity of 900mAhr.
+   Current Consumption
+   The current drawn by the Juno is dependent on volume and also whether
+   it is speaking. The circuit draws about 60mA when silent and about
+   110mA when talking at maximum volume.
+   Battery Life
+   A battery life of 10 hours, continuous speaking, is achievable. The
+   batteries can be recharged in three and a half hours and 800
+   charge/recharge cycles are possible at 100% depth of discharge. For
+   optimum battery life, it is recommended that the battery pack should
+   be fully discharged before the next recharge cycle.
+   Mains Adapter
+   For optimum life, the Juno should not be used with the mains adapter
+   connected. It should be fully charged, then used on batteries until
+   they run flat, when it can be recharged again. There is circuitry to
+   protect the Juno from reverse mains adapter connection and also to
+   prevent the batteries from being over-charged and over-discharged.
+   The mains adapter requirements are as follows -
+   Voltage - 13V DC
+   Maximum current - 300mA
+   Connection - 2.1mm (Negative tip)
+   Supplying Power from your Own Equipment
+   To charge the batteries and drive the circuit properly, you need to
+   supply a voltage of at least 13V.
+   If the batteries are not fitted then the 8.4V regulator can be removed
+   and the circuit can be supplied with a voltage of between 5.5V and 9V.
+   If the 5V regulator is removed then the circuit will just about run
+   off 5V. (The audio will clip at maximum volume.)
+   Connections
+   Data
+   The data connection between the Juno and the PC is made with a flying
+   500mm lead terminated in a 9-way D-type socket. This socket connects
+   to the serial port (RS232) of the host device.
+   Power
+   The power connection is made through a 2.1mm connector to a mains
+   adapter.
+   Audio Output
+   The audio output is made via a 3.5mm stereo socket. Both channels are
+   connected together. Stereo Walkman-style headphones or loudspeakers
+   can be used.
+   BEWARE: Damage will be caused to the Juno if a mono plug is used.
+   
+   Appendix Three - Juno with Lithium Ion Batteries Physical
+   Characteristics
+   
+   Weight 420 grams
+   
+   size 15.0cm (l), 7.5cm (b), 5.0cm (h)
+   Power Source
+   Battery Type
+   The Juno contains two rechargeable Lithium-Ion Batteries with a
+   maximum voltage of 8.4volts and a capacity of 1Ahr.
+   Current Consumption
+   The current drawn by the Juno is dependent on volume and also whether
+   it is speaking. The circuit draws about 60mA when silent and about
+   110mA when talking at maximum volume.
+   Battery Life
+   A battery life of 10 hours, continuous speaking, is achievable. The
+   batteries can be recharged to 95% capacity in 2.5 hours and over 1000
+   charge/recharge cycles are possible at 100% depth of discharge.
+   Mains Adapter
+   The Juno can be used with a mains adapter connected. There is
+   circuitry to protect the Juno from reverse mains adapter connection
+   and also to prevent the batteries from being over-charged and
+   over-discharged.
+   The mains adapter requirements are as follows -
+   Voltage - 13V DC
+   Maximum current - 300mA
+   Connection - 2.1mm (Negative tip)
+   Supplying Power from your Own Equipment
+   To charge the batteries and drive the circuit properly, you need to
+   supply a voltage of between 13V. (There is an 8.4V regulator.)
+   If the batteries are not fitted then the 8.4V regulator can be removed
+   and the circuit can be supplied with a voltage of between 5.5V and 9V.
+   If the 5V regulator is removed then the circuit will just about run
+   off 5V. (The audio will clip at maximum volume.)
+   Connections
+   Data
+   The data connection between the Juno and the PC is made with a flying
+   500mm lead terminated in a 9-way D-type socket. This socket connects
+   to the serial port (RS232) of the host device.
+   Power
+   The power connection is made through a 2.1mm connector to a mains
+   adapter.
+   Audio Output
+   The audio output is made via a 3.5mm stereo socket. Both channels are
+   connected together. Stereo Walkman-style headphones or loudspeakers
+   can be used.
+   BEWARE: Damage will be caused to the Juno if a mono plug is used.
+   
+   Appendix Four - PC2 Card Physical Characteristics
+   
+   This section is for PC 2 card users who find that their card does not
+   work at the default address. The majority of users will probably never
+   need to read this section.
+   The PC2 Card is an IBM PC/AT compatible card that will fit inside both
+   desktop PCs and portable PCs which have a standard card slot.
+   The card is capable of holding up to seven languages by way of the
+   four on-board ROM sockets. The first ROM socket is a 256Kb ROM and can
+   hold four languages. The other three ROM sockets are 64Kb and can hold
+   one language. The first socket can also hold a normal 64Kb ROM.
+   The physical size of the card is 20.3cm back to front by 9.9cm high,
+   not including the edge connector.
+   Address Selection
+   The valid address of the PC card is selected by arranging links on
+   seven of the address lines, these lines are A1 to A6 inclusive and A8,
+   each link can be set to either 0 or 1.
+   The default address of the card will still be decimal 776 (308 hex),
+   this will correspond to the links as follows.
+   Address line followed by values
+   A11. hex 3, binary 0.
+   A10. binary 0.
+   A9. binary 1.
+   A8. binary 1, link number L K 4, Link position 1.
+   A7. hex 0, binary 0.
+   A6. binary 0, link number L K 5, link position 0.
+   A5. binary 0, link number L K 6, link position 0.
+   A4. binary 0, link number L K 7, link position 0.
+   A3. hex 8, binary 1, link number L K 8, link position 1.
+   A2. binary 0, link number L K 9, link position 0.
+   A1. binary 0.
+   A0. binary 0.
+   To change this from decimal 776 to decimal 792 (318 hex), LK7 would
+   have to be moved from 0 to 1. As with the old PC 2 card, the two
+   default addresses would work in 99% of applications so not many people
+   will need to change more than one link.
+   The method of connecting the PC beeps/speaker is different now, you
+   can now connect the 4 pin socket from the PC speaker directly to the 4
+   pin plug on the card (J6), and then a single wire connects between J3
+   on the card and the output on the PC motherboard.
+   Most functions of the PC 2 Card can be controlled by HAL5 but if you
+   are using your own software or wish to drive the card directly please
+   see Appendix 6 for a description of communication to the card.
+   
+   Appendix Five - Description of UK English Phonemes
+   
+   This section describes the Apollo 2s phonemes. Read this if you want
+   to change the way that words are pronounced.
+   Introduction
+   The following phonemes can be embedded in ASCII text to correct the
+   pronunciation of the Apollo 2. This can be done using your own
+   software, by sending phonemes only using the @X command or in the
+   exceptions dictionary in the Dolphin screen reader (currently HAL5)
+   when misspelling proves difficult. To tell the synthesiser that the
+   letters are to be interpreted as a phoneme when mixing text and
+   phonemes you must prefix them with an underline (_).
+   Examples
+       cat = _K_AE_T
+       again = _A_GP_E_N
+       zoo = _Z_OO
+   Dolphin Representation followed by Example of Use.
+   _AA s<A>t
+   _AI m<A>ke
+   _AR f<A>ther
+   _AW w<A>ter
+   _A <A>bout
+   _B <B>at
+   _CH <CH>oose
+   _D <D>og
+   _DH <TH>is
+   _EE h<EE>d
+   _EI th<EI>r
+   _ER b<IR>d
+   _E b<E>d
+   _F <F>ar
+   _G <G>ap
+   _H <H>ood
+   _IA f<EA>r
+   _IE t<IE>
+   _I kn<I>t
+   _J <J>ug
+   _KK s<CH>ool
+   _K <C>at
+   _L <L>ong
+   _M <M>ap
+   _NG lo<NG>
+   _N <N>ap
+   _OA b<OA>t
+   _OO g<OO>d
+   _OR p<OR>e
+   _OW p<OU>nd
+   _OY j<OY>
+   _O sh<O>t
+   _PP s<P>eech
+   _P <P>at
+   _QQ <a slight pause>
+   _Q <QU>ick
+   _R <R>ip
+   _SH <SH>ut
+   _S <S>it
+   _TH <TH>in
+   _TT s<T>eel
+   _T <T>ap
+   _UU t<OO>
+   _U b<U>t
+   _V <V>an
+   _W <W>et
+   _X e<x>pel
+   _Y <Y>oung
+   _ZH plea<S>ure
+   _Z <Z>ip
+   You could experiment with the phoneme set for your own languages.
+   
+   Appendix Six - Communications 
+   
+   This section contains information on how the Apollo/PC 2 card speech
+   synthesisers communicate with a PC or Toshiba computer. You should
+   read this only if you are going to write your own software to drive
+   the Apollo/PC 2 card synthesisers.
+   Introduction
+   The new features for the Apollo 2 require two way (half duplex)
+   communications, in order for the speech and commands to be sent to the
+   Apollo/PC 2 card and for the indexing, language, settings data, and
+   echo back information to be returned.
+   Serial Communications
+   The communication uses RS232 with RTS/CTS hardware handshaking in both
+   directions. The PC is 'master' over the link and initiates all
+   transactions. (Appendix 1 specifies the baud rate selection and
+   cabling).
+   To talk to the Apollo 2, the PC raises its RTS line and waits for the
+   Apollo to respond with 'ready to receive data', which it does by
+   raising the PC's CTS line. A data byte is then transmitted to the
+   Apollo 2's UART with framing:
+   1 start bit
+   8 data bits
+   no parity bit
+   1 stop bit
+   The Apollo 2 drops the PC's CTS for a short time while accepting each
+   character. Another data byte may be sent when CTS is raised again.
+   To read data from the Apollo 2 the PC drops its RTS line and waits or
+   idles (under higher level control) until the character(s) are
+   received. The Apollo 2 raises the PC's CTS line in order to indicate
+   that it is about to send data to the PC. The Apollo 2 drops the PC's
+   CTS line when the transmission has finished.
+   If the PC tries to read data when none is available, the Apollo 2 will
+   return with a NAK character (ASCII 21).
+   PC 2 card and Communications
+   The protocol is intended to make the operation of the PC to card
+   communications independent of the bus and processor speed.
+   The Apollo/PC 2 card series synthesisers require robust 2-way
+   communications for use by functions such as continuous document read.
+   This system relies on a software handshaking   method.
+   To send a character, c:
+   tries = 0
+   do
+       1. Read until NULL returned
+       2. Send char, c, to card
+       3. Read until ACK(c) or NULL is returned
+       4. increment tries
+   until ACK(c) or too many tries
+   A NULL (0) read from the card indicates that it is in the quiescent
+   state, i.e. awaiting input (it must have missed the char c being
+   sent). An SOH (1) means that the card has received a character at some
+   point and is still processing it. ACK(c) is a status byte; it is the
+   character, c, with
+   bit 0 flipped if the character was received OK
+   bit 1 flipped if bit 0 flipped and the card has data to send
+   To read the data from the card:
+   tries = 0
+   do
+       1. Read until NULL returned
+       2. Send ENQ (5) to card
+       3. Read until byte > 7, or a NULL is returned
+       4. increment tries
+   until too many tries or a byte > 7 is returned
+   A request for data can be made at any time by sending ENQ to the card
+   using the above protocol. If no data is available, NAK (ASCII 21) is
+   returned.
+   The maximum number of retries is typically a large number, say 1000.
+   If you get this many then the card is probably dead. The PC or Toshiba
+   will be much faster than the card processor, so each of the read and
+   write operations above must include a little delay, (say, executing a
+   100 iteration loop in 'C' code).
+   A synthesiser driver library for DOS and Windows 3.1, including 'C'
+   source code, is available on request from Dolphin Systems for
+   programmers who wish to integrate Dolphin synthesiser access into
+   their own programs.
+   
+   
+   [Home]    [News]     [Products]    [Demos]    [Freeware]     [Support]
+   
+   [Dolphin U.S.A.]    [Dolphin Pacific]     [Dolphin Germany]    [For
+   Developers]
+   
+Send mail to info@dolphinuk.co.uk with questions or comments about this web
+site.
+Copyright © 1998, 1999 Dolphin Computer Access Limited
+Last modified: September 08, 1999
+
+                              Bobby Approved 
+   
+               The British Educational Suppliers Association 

@@ -1,0 +1,3179 @@
+Accent User's Manual, Version 4.0, February 15, 1991.
+
+Note:  This is the diskette version of the Accent User's Manual which
+is generated from the print version.  There is no variation in content.
+
+
+
+WARRANTY REGISTRATION
+
+To validate your product warranty, please complete and return this
+Warranty Registration within 30 days of purchase.
+
+Name                                       Title
+Company                                    Department
+Address
+City                 State/Country         Zip
+Daytime phone (        )                   Date purchased
+Product purchased
+Serial number
+Store Name/Phone                           (        )
+Store Address
+Store City           State/Country         Zip
+
+Help Us Help You! Your answers to this brief questionnaire will help 
+us meet your needs.
+
+1.  What type of computer is your Accent connected to?
+     a.      IBM PC/XT/AT, or compatible   Model #
+     b.      IBM PS/2, or compatible   Model #
+     c.      Toshiba Laptop Model #
+     d.      Other (specify)
+2.  What is your application for Accent?
+3.  What software packages will be used with Accent?
+4.  How did you first learn about Accent?
+     a.      Magazine ad/article   d.      Dealer/Computer Store
+     b.      Mail literature       e.      Company approved list
+     c.      Associate/co-worker   f.      Other (Specify)
+
+Thank you for your cooperation!
+
+
+
+First printing, December 1986
+Second printing, April 1987
+Third printing, November 1988
+Fourth printing, April 1989
+Fifth printing, February 1991
+
+Copyright 1986,1987,1988,1989,1991 by Aicom Corporation.
+All rights reserved.
+
+Aicom Corporation believes the information in this publication is
+accurate as of its publication date; such information is subject to
+change without notice.  Aicom Corporation is not responsible for any
+inadvertent errors.
+
+Aicom is a registered trademark of Aicom Corporation.
+Accent is a registered trademark of Aicom Corporation.
+
+IBM is a registered trademark of International Business Machine
+Corporation.
+IBM PC is a trademark of International Business Machine
+Corporation.
+PS/2 computer is a trademark of International Business Machine
+Corporation.
+Microchannel computer is a trademark of International Business
+Machine Corporation.
+Toshiba is a registered trademark of Toshiba International Corporation.
+
+
+
+ACCENT USER'S MANUAL
+(VERSION 4.0)
+
+Accent-PC     -      IBM PC/XT/AT & Compatibles
+Accent-MC     -      IBM Microchannel PS/2s
+Accent-SA     -      Stand-Alone for all computers
+Accent-mini   -      IBM PC/XT/AT & Compatibles
+Accent-1600   -      Toshiba T1600, T1200 & Compatibles
+Accent-XE     -      Toshiba T1000SE
+
+Aicom Corporation
+1590 Oakland Road,  Suite B112
+San Jose, CA  95131
+Tel:  (408)  453-8251    Fax:  (408)  453-8255
+
+
+
+FEDERAL COMMUNICATION COMMISSION RADIO FREQUENCY INTERFERENCE
+STATEMENT
+
+(Applies to Accent-PC and Accent-SA)
+
+WARNING : This equipment complies with the limits for a Class
+B computing device in accordance with the specifications in
+Subpart J of Part 15 of the FCC rules.  These specifications are
+designed to minimize radio frequency interference in a residential
+installation.  However, there is no guarantee that radio or
+television interference will not occur in any particular installation. 
+If this equipment does cause interference to radio or television
+reception, which can be determined by turning the equipment off
+and on when the radio or television is on, the user is encouraged
+to try to correct the interference by one or more of the following
+measures:
+
+(1)    Reorient the radio or television receiving antenna.
+(2)    Relocate the equipment with respect to the receiver.
+(3)    Move the equipment away from the receiver.
+(4)    Plug the equipment into a different outlet so that the
+       equipment and the receiver are on different circuits.
+
+If necessary, the user should consult the dealer or an experienced
+radio/television technician for additional suggestions.  The user
+may find the following booklet prepared by the Federal
+Communications Commission helpful:
+
+"How to Identify and Resolve Radio/TV Interference Problems"
+
+This booklet is available from the U.S. Government Printing Office,
+Washington, DC 20402 by ordering stock number 004-000-00345-4.
+
+
+
+TABLE OF CONTENTS
+
+SECTION       TITLE                                  PAGE
+
+1             ABOUT THE MANUAL
+1.1           INTRODUCTION TO ACCENT                 1 -   2
+              PRODUCTS
+1.2           STANDARD FEATURES FOR ALL              1 -   3
+              ACCENT MODELS
+1.3           DESCRIPTIONS OF MODELS                 1 -   4
+1.3.1         ACCENT-PC                              1 -   4
+1.3.2         ACCENT-MC                              1 -   5
+1.3.3         ACCENT-SA                              1 -   6
+1.3.4         ACCENT-mini                            1 -   7
+1.3.5         ACCENT-1600                            1 -   8
+1.3.6         ACCENT-XE                              1 -   9
+
+2             INSTALLATION
+2.1           INSTALLING ACCENT-PC                   2 -   1
+2.1.1         SWITCH SETTINGS                        2 -   1
+2.1.2         JUMPER SETTINGS                        2 -   2
+2.1.3         INSTALLING ACCENT'S SOFTWARE           2 -   4
+              DEVICE DRIVER
+2.1.4         INSTALLING ACCENT-PC                   2 -   5
+              HARDWARE
+2.1.5         SPEAKER CONNECTION                     2 -   5
+2.1.6         RUNNING THE DEMO PROGRAM               2 -   5
+2.1.7         EXTERNAL POWER SUPPLY FOR              2 -   6
+              STAND-ALONE OPERATION
+2.2           INSTALLING ACCENT-MC                   2 -   6
+2.2.1         JUMPER SETTINGS                        2 -   7
+2.2.2         INSTALLING ACCENT-MC                   2 -   7
+              SOFTWARE DEVICE DRIVER
+2.2.3         INSTALLING ACCENT-MC                   2 -   7
+              HARDWARE
+2.3           INSTALLING ACCENT-SA                   2 -   7
+2.3.1         RS232C CONNECTION                      2 -   9
+2.3.2         SPEAKER CONNECTION                     2 -   9
+2.3.3         POWERING UP ACCENT-SA                  2 -   9
+2.3.4         RUNNING THE DEMO PROGRAM               2 -  10
+2.4           INSTALLING ACCENT-mini                 2 -  10
+2.4.1         JUMPER SETTINGS                        2 -  12
+2.4.2         INSTALLING ACCENT-mini                 2 -  12
+              SOFTWARE DEVICE DRIVER
+2.4.3         INSTALLING ACCENT-mini                 2 -  12
+              HARDWARE
+2.5           INSTALLING ACCENT-1600                 2 -  12
+2.5.1         INSTALLING ACCENT-1600                 2 -  12
+              SOFTWARE DEVICE DRIVER
+2.5.2         INSTALLING ACCENT-1600                 2 -  13
+              HARDWARE
+2.6           INSTALLING ACCENT-XE                   2 -  13
+2.6.1         INSTALLING ACCENT-XE                   2 -  13
+              SOFTWARE DEVICE DRIVER
+2.6.2         INSTALLING ACCENT-XE                   2 -  13
+              HARDWARE
+
+3             OPERATION
+3.1           INTERFACE TO ACCENT                    3 -   1
+3.1.1         DEVICE DRIVER INTERFACE                3 -   1
+3.1.2         RS-232C INTERFACE                      3 -   3
+3.2           SOFTWARE COMMANDS                      3 -   5
+3.2.1         SYSTEM OPTION COMMANDS                 3 -   6
+3.2.1.1       Reset                                  3 -   6
+3.2.1.2       Initialize                             3 -   6
+3.2.1.3       Flush                                  3 -   7
+3.2.1.4       RS-232C Echo On                        3 -   7
+3.2.1.5       RS-232C Echo Off                       3 -   7
+3.2.1.6       Enable Appending <CR> for Status Reply 3 -   7
+3.2.1.7       Disable Appending <CR> for Status Reply3 -   8
+3.2.1.8       Enable Speech Synthesizer              3 -   8
+3.2.1.9       Disable Speech Synthesizer             3 -   8
+3.2.1.10      Speech Pause                           3 -   8
+3.2.1.11      Speech Continue                        3 -   9
+3.2.1.12      Host Input Time-out                    3 -   9
+3.2.1.13      Enable <CR> as Alternative             3 -   9
+              Start-Speaking Character
+3.2.1.14      Disable <CR> as Alternative             3 - 10
+              Start-Speaking Character
+3.2.1.15      Enable CTL-Q/S as Xon/Xoff Characters   3 - 10
+3.2.1.16      Disable CTL-Q/S as Xon/Xoff             3 - 10
+              Characters
+3.2.1.17      Enable Fast Processing for Speech       3 - 11
+3.2.1.18      Disable Fast Processing for Speech      3 - 11
+3.2.1.19      Enable DCD Verbal Message               3 - 11
+3.2.1.20      Disable DCD Verbal Message              3 - 11
+3.2.1.21      Enable Delayed Process for Speech       3 - 12
+              Option Commands
+3.2.1.22      Disable Delayed Process for Speech      3 - 12
+              Option Commands
+3.2.1.23      Enable Verbal Stress on                 3 - 12
+              Single-Character Alphabets
+3.2.1.24      Disable Verbal Stress on                3 - 12
+              Single-Character Alphabets
+3.2.1.25      Set Audio Output Volume                 3 - 13
+3.2.1.26      Increase Overall Volume by One Step     3 - 13
+3.2.1.27      Decrease Overall Volume by One Step     3 - 13
+3.2.1.28      Increase Average Pitch by One Step      3 - 13
+3.2.1.29      Decrease Average Pitch by One Step      3 - 14
+3.2.1.30      Increase Speech Rate by One Step        3 - 14
+3.2.1.31      Decrease Speech Rate by One Step        3 - 14
+3.2.1.32      Increase Voice Characteristic by One Step3 - 14
+3.2.1.33      Decrease Voice Characteristic by One Step3 - 14
+3.2.1.34      Increase Space Pause Time by One Step   3 - 15
+3.2.1.35      Decrease Space Pause Time by One Step   3 - 15
+3.2.1.36      Increase Sentence Intonation by One     3 - 15
+              Step
+3.2.1.37      Decrease Sentence Intonation by One     3 - 15
+              Step
+3.2.1.38      Enable PC to RS-232C Transmission       3 - 15
+3.2.1.39      Disable PC to RS-232C Transmission      3 - 16
+3.2.1.40      Command String Sent to Auxiliary Port   3 - 16
+3.2.1.41      Command String Not Sent to Auxiliary    3 - 16
+              Port
+3.2.1.42      Status Reply to Host Only               3 - 16
+3.2.1.43      Status Reply to Auxiliary Port Only     3 - 17
+3.2.1.44      Status Reply to Host and Auxiliary Port 3 - 17
+3.2.1.45      Enable LPT Auxiliary Device Chained     3 - 17
+              Operation
+3.2.1.46      Disable LPT Auxiliary Device Chained    3 - 17
+              Operation
+3.2.1.47      Set PC Host                             3 - 18
+3.2.1.48      Set RS-232C Host                        3 - 18
+3.2.1.49      Enable CTL-X as the Instant Flush       3 - 18
+              Command
+3.2.1.50      Disable CTL-X as the Instant Flush      3 - 19
+              Command
+3.2.1.51      Enable Xon-Always-Sent after Flush      3 - 19
+3.2.1.52      Disable Xon-Always-Sent after Flush     3 - 19
+3.2.1.53      Enable Index Marker Auto-Prompt         3 - 19
+3.2.1.54      Disable Index Marker Auto-Prompt        3 - 20
+3.2.1.55      Enable Foot Switch Status Reply         3 - 20
+3.2.1.56      Disable Foot Switch Status Reply        3 - 20
+3.2.2         SPEECH OPTION COMMANDS                  3 - 20
+3.2.2.1       Text Mode                               3 - 21
+3.2.2.2       Spell Mode                              3 - 21
+3.2.2.3       Punctuation Not Spoken                  3 - 21
+3.2.2.4       Punctuation Spoken                      3 - 21
+3.2.2.5       <-> Not Spoken                          3 - 22
+3.2.2.6       <-> Spoken as DASH                      3 - 22
+3.2.2.7       <-> Spoken as MINUS                     3 - 22
+3.2.2.8       Enable Abbreviation Dictionary          3 - 22
+3.2.2.9       Disable Abbreviation Dictionary         3 - 22
+3.2.2.10      Full Set Punctuation Spoken             3 - 23
+3.2.2.11      Subset Punctuation Spoken               3 - 23
+3.2.2.12      <A> and <a> Always Spoken as /EI/       3 - 23
+3.2.2.13      <A> and <a> are Context Dependent       3 - 23
+3.2.2.14      Set Average Pitch                       3 - 23
+3.2.2.15      Set Voice Characteristic                3 - 24
+3.2.2.16      Set Speech Rate                         3 - 24
+3.2.2.17      Set Sentence Level Intonation           3 - 24
+3.2.2.18      Set Space Pause Time                    3 - 25
+3.2.2.19      Set Number Processor                    3 - 25
+3.2.2.20      Direct Parameter Input to Synthesizer   3 - 26
+              Chip
+3.2.2.21      Fixed Abbreviation Pronunciation        3 - 27
+3.2.2.22      Automatic Abbreviation Pronunciation    3 - 27
+3.2.3         STATUS REQUEST COMMANDS                 3 - 27
+3.2.3.1       Reply End of Speech                     3 - 28
+3.2.3.2       Reply Synthesizer Status                3 - 28
+3.2.3.3       Verbal Reply Version Number             3 - 28
+
+3.2.4         INDEX MARKER COMMANDS                   3 - 29
+3.2.4.1       Enable CTL-F as the Index Marker        3 - 30
+3.2.4.2       Disable CTL-F as the Index Marker       3 - 30
+3.2.4.3       Reply <ESC>Y plus Index-Marker          3 - 30
+              Character for Auto-Prompt
+3.2.4.4       Reply Index-Marker Character only for   3 - 30
+              Auto Prompt
+3.2.4.5       Enable Index-Marker-Count Replying      3 - 31
+              for Status Reply
+3.2.4.6       Disable Index-Marker-Count Replying     3 - 31
+              for Status Reply
+3.2.4.7       User Defined Index-Marker               3 - 31
+3.2.5         TABLE - 1 (Command Summary)             3 - 32
+
+4             STANDARD ACCENT
+              TEXT PROCESSOR
+4.1           PRONUNCIATION RULES                    4 -   1
+4.1.1         ABBREVIATIONS                          4 -   3
+4.1.2         ALTERNATIVE PRONUNCIATIONS             4 -   4
+4.1.3         MONETARY $ AMOUNTS                     4 -   4
+4.1.4         NUMERALS                               4 -   5
+4.1.5         TIME OF DAY                            4 -   6
+4.1.6         WORDS WITH NO VOWEL                    4 -   6
+4.2           PHONEME INPUT                          4 -   7
+4.2.1         TABLE-2 (Accent Phoneme List)          4 -   7
+
+5             STANDARD ACCENT 
+              DCD UTILITY
+5.1           DCD SOFTWARE OPERATION                 5 -   1
+5.2           RULES FOR BUILDING THE                 5 -   2
+              CUSTOM DICTIONARY
+5.2.1         THE ROOT WORD                          5 -   3
+5.2.2         THE PART-OF-SPEECH                     5 -   4
+5.2.3         WORDS WITH TWO                         5 -   4
+              PRONUNCIATIONS
+5.2.4         A SAMPLE DCD SOURCE FILE               5 -   5
+5.2.5         ERROR MESSAGES                         5 -   5
+
+6             PROGRAMMING
+              ACCENT
+
+7             SPECIFICATIONS
+7.1           ACCENT-PC SPECIFICATIONS               7 -   1
+7.2           ACCENT-MC SPECIFICATIONS               7 -   2
+7.3           ACCENT-SA SPECIFICATIONS               7 -   3
+7.4           ACCENT-mini SPECIFICATIONS             7 -   3
+7.5           ACCENT-1600 SPECIFICATIONS             7 -   4
+7.6           ACCENT-XE SPECIFICATIONS               7 -   5
+
+              LIST OF TABLES
+
+TABLE-1       Command Summary                         3 - 32
+TABLE-2       Accent Phoneme List                    4 -   7
+
+              LIST OF FIGURES
+
+FIGURE-1      Accent-PC Hardware                     2 -   3
+FIGURE-2      Accent-SA Back Panel                   2 -   8
+FIGURE-3      Accent-mini Hardware                    2 - 11
+
+
+
+
+1. ABOUT THE MANUAL
+
+It is extremely important for the user to read this manual
+before trying to operate Accent, since the manual provides
+accurate, complete information for ALL ACCENT MODELS
+regarding installation, system options, and operation.  The manual
+also provides a guide to applications.
+
+This manual has seven Sections.
+
+Section 1 serves as the general introduction to Accent products
+(models).
+
+Section 2 tells how to connect each specific Accent model for
+operation.
+
+Section 3 details Accent's hardware and software operation, and is
+particularly important for engineers or advanced users
+wishing to write application programs.
+
+Section 4 describes the standard Accent text processor; the specific
+pronunciation rules are covered as well as the phoneme input
+definitions.
+
+Section 5 describes the operation for the Downloadable Custom
+Dictionary (DCD) utility for advanced users.
+
+Section 6 provides hints and techniques for programming Accent
+products in general applications.
+
+Section 7 gives the specifications of each model.
+
+It is suggested the user read through Section 1 for all Accent
+models, then jump to model dependent sections from Section 2 on.
+
+The <> are used throughout this manual to bracket an ASCII
+character when confusion might occur, for example:
+
+<ESC>         Represents the Escape character
+<CR>          Represents the Carriage Return character
+<LF>          Represents the Line Feed character
+<SP>          Represents the Space character
+<HT>          Represents the Horizontal Tabulation character
+<->           Represents the Hyphen character
+<ESC>WC       Represents the Escape, W, and C character
+
+A table of contents, list of tables and list of figures have been
+provided at the beginning of this manual.  Numbered paragraphs
+and subparagraphs allow for easy reference.
+
+1.1           INTRODUCTION TO
+              ACCENT PRODUCTS
+
+Accent speech synthesizer is a high quality text-to-speech
+convertor.  It converts ordinary ASCII text into intelligible speech. 
+Accent's unlimited vocabulary capability, plus its many feature
+options, comprise a useful voice-output device for various
+applications.
+
+To cover a wide range of the system configurations, cost
+requirements, and environmental requirements, six different
+Accent models are available to the user.  These six models are:
+Accent-PC for PC plug-in; Accent-MC for IBM microchannel PS/2
+plug in; Accent-SA for stand-alone operation; Accent-mini for PC
+plug-in; Accent-1600 for Toshiba laptop models T1100-plus, T1200,
+T1600, T3100SX, and Toshiba portable models T3100-20, T3100E,
+T5100, and T5200; and Accent-XE for Toshiba laptop model
+T1000SE.
+
+For the PC/PS2 and Toshiba plug-in models, the text and
+commands (three-character escape sequences) are sent to Accent
+through a re-entrant device driver provided, while the stand-alone
+model through an RS232C serial port with either hardware or
+Xon/Xoff protocol.
+
+All Accent models employ the standard Accent text-processor which
+can speak in two modes:  the text mode and the spell mode.
+
+In the text mode, Accent will convert text into ordinary speech,
+employing grammatical rules for parsing phrases and sentences,
+for words having two pronunciations, for abbreviations, $ amounts,
+numbers, and special signs (#,%,& and so on).  In the text mode,
+Accent also employs punctuation marks for sentential intonations. 
+Through software commands, speech parameters such as average
+pitch, Accent's voice characteristic, and speech rate, among others,
+can be programmed.  In the spell mode, all text including
+punctuation will be spoken letter by letter.
+
+Accent's standard vocabulary is larger than the 20,000 most
+commonly used words with precise pronunciation.  For special,
+customized vocabulary, a standard DCD (Downloadable Custom
+Dictionary) utility is provided, in addition to the phoneme input
+capability.  The DCD hardware is built in for all Accent models.
+
+1.2           STANDARD FEATURES
+              FOR ALL ACCENT
+              MODELS
+
+       Standard Accent text-processor; vocabulary over the 20,000
+       most commonly used words with precise pronunciation.
+
+       Four groups of software commands; system option
+       commands, speech option commands, status request
+       commands, and index marker commands.  
+
+       Speech rate can be adjusted from about 60 to 800 words
+       per minute.
+
+       Control-X character as instant speech-flush command.
+
+       Average response time less than 20 milliseconds in Fast-
+       processing mode.
+
+       Demo/Utility diskette including DCD development
+       software. 
+
+       DCD hardware built in.
+
+       On-board audio power amplifier with volume control; 0.5  
+       Watt.
+
+       3.5mm miniature phone jack for 8-Ohm speaker, 4-Ohm
+       speaker, or headphones.
+
+1.3           DESCRIPTIONS OF
+              MODELS
+
+The following sections describe the model dependent features for
+all six different Accent models.  Throughout this manual, the
+general term "Accent" represents all Accent models.
+
+1.3.1         ACCENT-PC
+
+Accent-PC is a self-sufficient, single-board microcomputer with a
+640-byte, wrap-around text buffer.  It can be plugged directly into
+any IBM PC, PC/XT, PC/AT or compatibles.  
+
+A standard RS-232C serial port is also provided for interface with
+a computer, terminal, or printer. 
+
+The user can select either the PC or the RS-232C as Accent-PC's
+host.  Text and software commands are sent from the host to
+Accent-PC for processing by an on-board processor. 
+
+FEATURES
+
+       On-board microprocessor, 640-byte wrap-around text buffer.
+
+       IBM PC bus compatible; I/O addresses switch selectable.
+
+       Standard RS-232C serial port as a DCE device; baud rate,
+       parity and data bits switch selectable.
+
+       Power connector provided for stand-alone operation or     
+       system integrations. 
+
+       3k-byte re-entrant device driver provides PC interface
+       either through DOS (device name) or BIOS (LPT port)
+       requiring no CPU time overhead or any hardware interrupt
+       from the PC for the real-time speech processing. 
+
+       SETACNT.EXE utility program for changing Accent-PC's
+       device name, I/O addresses, auxiliary device (LPT) number,
+       and chained-LPT operations. 
+
+1.3.2         ACCENT-MC
+
+Accent-MC is a self-sufficient, single board microcomputer, text-to-
+speech convertor that can be plugged directly into IBM's
+microchannel PS/2 computers.  All functions are performed through
+the microchannel, therefore no DIP switch settings are necessary. 
+The speech output comes directly from the PS/2's system speaker
+if an external speaker or headphones is not connected.  It uses the
+same Device Driver as Accent-PC.
+
+FEATURES
+
+       Functionally compatible with Accent-PC and 60% faster 
+       response than Accent-PC.
+
+       On-board microprocessor, 2k-byte text buffer.
+
+       Two 3.5mm audio phone jacks on board; one mono, for an
+       external speaker and one stereo, for external headphones.
+
+       Adaptor Descriptive File provided for system configuration.
+
+       A foot pedal switch is offered as an option.
+
+1.3.3         ACCENT-SA 
+
+Accent-SA is the stand-alone version of the Accent family.  It is a
+self-sufficient, microcomputer subsystem that is fully battery
+operatable with a 2k-byte wrap-around text buffer housed in a
+compact metal case.  For battery conservation, this board is built
+with low-power CMOS devices.
+
+A standard RS-232C serial port is provided for interface with a
+computer or terminal as the host.  A wall-mount AC adaptor is
+provided for external power.
+
+FEATURES
+
+       Self sufficient, stand-alone text-to-speech convertor.
+
+       Battery operatable; fully charged battery tested over 15 
+       hours of continuous use without recharge.
+
+       2k-byte wrap-around text buffer.
+
+       Standard RS-232C serial port as a DCE device; baud rate,
+       parity, and data bits switch selectable; hardware protocol 
+       as default, Xon/Xoff protocol may be selected via software
+       command.
+
+       Wall-mount AC adaptor included.
+
+       Internal speaker for added portability.
+
+       Two 3.5mm audio phone jacks on board; one mono, for an
+       external speaker and one stereo, for external headphones.
+
+       One thumb-wheel as power on/off switch and volume 
+       control.
+
+1.3.4         ACCENT-mini 
+
+Accent-mini consists of a half-length plug-in card and a re-entrant
+software device driver for the desktop IBM PC and compatibles. 
+For battery conservation, when used with various portable
+computers, this board is built with low-power CMOS devices.
+
+This model fully supports EMS 3.2 or higher.  The memory
+requirement for the device driver is 128k bytes of expanded
+memory and only 14k bytes of conventional memory.  If the
+amount of expanded memory available is only 64k bytes, Accent-
+mini's device driver will utilize 64k bytes of expanded memory and 
+64k bytes of conventional memory.  If the EMS is not installed
+prior to Accent-mini's device driver, 121k bytes of conventional
+memory will automatically be used.
+
+Accent-mini's utility program SETMINI.EXE is a powerful tool for
+users to set Accent-mini's system parameters and configurations,
+such as changing the Device Name, selecting the I/O addresses and
+Hardware Interrupt, assigning Accent-mini to any LPT number as
+an auxiliary device, setting the chained operation for multiple
+devices using the same Interrupt, etc.
+
+FEATURES
+
+       Realtime text-to-speech synthesis; hardware interrupt 
+       driven. 
+
+       2k-byte wrap-around internal phoneme buffer.
+
+       SETMINI.EXE utility program for changing Accent-mini's
+       device name, I/O addresses, hardware interrupts, auxiliary
+       device (LPT) number, chained operations, etc.
+
+       IBM PC bus compatible; I/O addresses and Interrupt 
+       jumpers selectable in conjunction with SETMINI.EXE  
+       utility.
+
+       All commands and interface format compatible with 
+       Accent-PC device driver.
+
+       Two 3.5mm audio phone jacks on board; one mono, for an
+       external speaker and one stereo, for external headphones.
+
+       Thumb-wheel type volume control.
+
+1.3.5         ACCENT-1600
+
+Accent-1600 is a plug-in Accent card for the Toshiba laptop models,
+T1100-plus, T1200, T1600 and T3100SX and Toshiba portable
+models, T3100-20, T3100E, T5100, and T5200.  The board plugs
+directly into the Internal Modem slot of these computers, making
+this unit as portable as the laptop or portable computer.  For
+battery conservation, this board is built with low-power CMOS
+devices.  This model fully supports all the features for the above
+computers and uses the same device driver as Accent-mini.
+
+FEATURES
+
+       Functionally compatible with Accent-mini.
+
+       Internal speaker for added portability.
+
+       Two 3.5mm audio phone jacks on board; one mono, for an
+       external speaker and one stereo, for external headphones.
+
+       Thumb-wheel type volume control.
+
+1.3.6         ACCENT-XE
+
+Accent-XE is a plug-in Accent card for the Toshiba laptop model
+T1000SE.  The board plugs directly into the Built-in Modem slot
+of the T1000SE.  For battery conservation, this board is built with
+low-power CMOS devices.  It fully supports all T1000SE features
+and uses the same Device Driver as Accent-mini.
+
+FEATURES
+
+       Functionally compatible with Accent-mini.
+
+       Internal speaker for added portability.
+
+       Two 3.5mm audio phone jacks on the board; one mono, for
+       an external speaker and one stereo, for external 
+       headphones.
+
+       Thumb-wheel type volume control.
+
+
+2. INSTALLATION
+
+The installation for each specific model may be carried out by the
+user and is described in the following sections.
+
+2.1           INSTALLING ACCENT-PC
+
+This Section describes step-by-step how to install the Accent-PC in
+the PC for standard operation, and how to connect to an external
+power supply for stand-alone operation (custom system integrations 
+only).  When setting up the hardware, please refer to Figure-1 which 
+shows the locations of the switches, jumpers, and connectors on 
+Accent-PC's printed circuit board.
+
+2.1.1         SWITCH SETTINGS
+
+SW1 SETTINGS
+
+SW1 is used to set up the RS-232C baud rate, the parity bit and
+the length of the data bits.  Factory default is set to select 9600
+baud rate, parity disabled, and 7 data bits.  To change the baud
+rate, parity option or data bit length, please refer to Section 3.1.2. 
+The default settings for SW1 have positions 4 and 8 ON and
+positions 1, 2, 3, 5, 6, and 7 OFF.
+    
+SW2 SETTINGS
+
+SW2 is used to assign the PC's I/O addresses to Accent-PC. 
+Factory default addresses are set to 2A8-2AB Hex, which will not
+conflict with any PC, PC/XT, or PC/AT standard or reserved I/O
+device.  The default settings for SW2 have positions 1, 3, 5, 7 ON
+and 2, 4, 6, 8 OFF. Should these default addresses conflict with
+any custom built I/O device or if there is to be more than one
+Accent-PC installed in a single PC, please refer to the following
+paragraphs for appropriate address settings, and to Section 3.1.1
+for changing the same addresses in Accent-PC's device driver.
+
+Four consecutive I/O addresses of the PC bus are possessed by each
+Accent-PC.  The address always starts with an even number as a
+multiple of four.  The starting address may be selected by setting
+SW2 (location shown in Figure 1).  SW2 is an 8 position switch,
+each position (starting from 1) corresponding to an address bit
+(starting from 0) of the PC bus is listed as follows:
+
+SW2 POSITION:                1     2     3     4     5     6     7     8
+
+ADDRESS BIT:     A0    A1    A2    A3    A4    A5    A6    A7    A8    A9
+
+When a SW2 position is set to "ON", its corresponding PC address
+bit is set to "0", and vice versa.  "A0" and "A1" are ignored when
+setting up SW2; they are "0" for calculating the starting address.
+
+2.1.2         JUMPER SETTINGS
+
+J2 SETTINGS
+     
+J2 is used to select Accent-PC's host.  Factory default setting
+selects the PC as host.  To select the PC as host, pin 1 and pin 2
+of J2 should be jumpered together, using the jumper header
+provided.  To select the RS-232C as host, pin 2 and pin 3 of J2
+should be jumpered together.
+
+J4 SETTINGS
+
+J4 is used to connect the Reset signal from the PC bus to
+Accent-PC.  Factory default provides jumpered J4.  If J4 is
+jumpered, whenever the Reset signal from the PC bus is active
+(asserted), Accent-PC will be reset.  If J4 is not jumpered,
+Accent-PC will automatically reset itself only during power-up.  To
+use external power supply for stand-alone operation, J4 must not
+be jumpered.
+
+FIGURE-1 Accent-PC Hardware
+
+(Not Shown)
+
+2.1.3         INSTALLING ACCENT'S
+              SOFTWARE DEVICE DRIVER
+
+>From the Demo/Utility diskette provided, copy the following files
+to a system diskette or the hard disk which is to be used with
+Accent:  
+
+SPKACNT.SYS (COPY to the filename CONFIG.SYS)
+SPKACNT.DVC
+DEMO.BAS
+DEMO.TXT
+
+NOTE: For Accent-mini/1600/XE, COPY SPKEMS.SYS instead of
+SPKACNT.SYS to the CONFIG.SYS file and COPY SPKEMS.DVC 
+instead of SPKACNT.DVC for the device driver.
+
+If there are other device drivers already installed in the system
+diskette, the file CONFIG.SYS should reside in the system
+diskette.  If this is the case, then instead of copying the file
+SPKACNT.SYS or SPKEMS.SYS from the Demo/Utility diskette,
+simply add (edit) the following statement(s) in the resident file
+CONFIG.SYS :
+
+DEVICE=SPKACNT.DVC          for Accent PC/MC
+or
+DEVICE=EMM.SYS
+DEVICE=SPKEMS.DVC           for Accent-mini/1600/XE 
+
+Re-boot the PC with the system diskette, and if the message
+"Accent-PC/MC Device Driver (Version 4.0) Installed", or "Accent
+EMS Device Driver (Version 4.0) Installed" for Accent-mini/1600/
+XE appears on the screen then Accent's device driver has been
+successfully installed.  If not, carefully go through the device driver
+installation procedures again.
+
+Note: If you did not have the EMM.SYS loaded prior to the
+SPKEMS.DVC, or if you did not reserve at least 64k bytes of the
+expanded memory for Accent-mini/1600/XE, the statement
+"SPKEMS: EMS Manager Not Present or No Available Expanded
+Memory" will appear on the screen.  In this case the
+SPKEMS.DVC will automatically use 121k bytes of the
+conventional memory.
+
+Accent's default device name and auxiliary device name are "SPK"
+and "LPT3" respectively.  After the hardware installation,
+COPYing any text or text file to either "SPK" or "LPT3" will cause
+Accent to speak the COPYed text or text file.  Also after the
+hardware installation, every time the Accent device driver is
+loaded, Accent will verbally prompt "ACCENT READY.".
+
+Accent's demonstration program DEMO.BAS is written in IBM
+PC's BASIC Language, so that the system diskette to be used with 
+Accent must contain the BASIC Interpreter "BASIC.COM" or
+"BASICA.COM". 
+
+2.1.4         INSTALLING ACCENT-PC
+              HARDWARE
+
+After turning off all power to the PC, Accent-PC may be plugged
+in the PC.  First, the bottom of the metal bracket on the Accent-PC
+board should be slid into the bracket slot located at the edge of
+the PC mother board.  Then Accent-PC should be held upright and
+pushed symmetrically down into the PC edge connector.  Finally,
+install the screw tightly to secure Accent-PC's metal bracket
+against the PC frame. 
+
+2.1.5         SPEAKER CONNECTION
+
+An external speaker may be connected using a 3.5mm male
+miniature phone plug (mono).  An 8-Ohm or 4-Ohm speaker is 
+recommended.  There is no external speaker needed for Accent-
+MC/1600/XE installations.
+
+2.1.6         RUNNING THE DEMO PROGRAM
+
+Only when Accent-PC is properly installed, a speaker has been
+connected, and the volume has been turned up to approximately
+1/3 (clock-wise), may the PC be powered up.
+
+When the PC prompts, type in "BASIC DEMO" or "BASICA
+DEMO" (DEMO232 for Accent-SA) to execute the demonstration
+program.  If Accent says "AICOM..." at this point, Accent has been
+successfully installed.  If not, turn off the power and go through
+the installation procedures again, making sure, among other
+things, that the switch settings are correct for your particular
+application.
+
+In the DEMO diskette provided, there is a document file named
+"READ.ME" which explains the applications of each file provided.
+
+2.1.7         EXTERNAL POWER SUPPLY FOR
+              STAND ALONE OPERATION
+
+If Accent-PC is to be integrated into a custom system for
+stand-alone operation, power to Accent-PC must be provided
+through PS1.  PS1 is a 5-pin male power connector (Molex
+09-64-1051 compatible).  Any suitable female connector may be
+used to plug into PS1.  Power requirements are listed in Section 7. 
+Please note that stand-alone operation is for advanced
+users only.  The Warranty is void for, and does not cover,
+stand-alone operation. 
+
+Power connections for PS1 are the following:
+
+Pin-1  GND
+Pin-2  Key (not used)
+Pin-3  -12 volt
+Pin-4  +5  volt
+Pin-5  +12 volt
+Pin-6  Not Used
+
+2.2           INSTALLING ACCENT-MC
+
+This Section describes step-by-step how to install Accent-MC in a
+microchannel PS/2.
+
+2.2.1         JUMPER SETTINGS
+
+J1 SETTINGS
+
+J1 is used to connect the Reset signal from the microchannel bus
+to Accent-MC.  Factory default provides jumpered J1.  If J1 is
+jumpered, whenever the Reset signal from the microchannel bus is
+active (asserted), Accent-MC will be reset.  If J1 is not jumpered,
+Accent-MC will automatically reset itself only during power-up. 
+
+All other jumpers should not be installed for proper operation.
+
+2.2.2         INSTALLING ACCENT-MC
+              SOFTWARE DEVICE DRIVER
+
+All software installation procedures are identical to those of
+Accent-PC except the following:  The first step in the software
+installation is to reconfigure your PS/2 with Accent-MC's Adapter
+Descriptive File, named @6152.ADF, from the Accent Demo/Utility
+diskette.  Refer to Section 2.1.3 to install the software device
+driver. 
+
+2.2.3         INSTALLING ACCENT-MC
+              HARDWARE
+
+After turning off all power to the PS/2, Accent-MC may be plugged
+into the PS/2.  Slide Accent-MC into any slot of your PS/2 machine
+and install the screws tightly to secure the board.  
+
+After hardware installation is complete, refer to Section 2.1.6 to
+run the Demo Program.
+
+2.3           INSTALLING ACCENT-SA
+
+This Section describes how to connect Accent-SA to the AC
+adaptor, speaker, and RS-232C for operation.  When setting up the
+hardware, please refer to Figure-2 which shows Accent-SA's back
+panel.
+
+FIGURE-2 Accent-SA Back Panel
+
+(Not Shown)
+
+2.3.1         RS-232C CONNECTION
+
+Accent-SA's RS-232C interface is configured as a DCE device.
+Please refer to Section 3.1.2 if software Xon/Xoff handshaking is
+used.
+
+SW1 is used to set up the RS-232C baud rate, the parity bit and
+the length of the data bits.  Factory default is set to select 9600
+baud rate, parity disabled, and 7 data bits.  To change the baud
+rate, parity option and data bit length, please refer to Section
+3.1.2.  The default settings for SW1 have positions 4 and 8 ON,
+and positions 1, 2, 3, 5, 6, and 7 OFF.
+
+2.3.2         SPEAKER CONNECTION
+
+An external speaker may be connected using a 3.5mm male
+miniature phone plug (mono) or  external headphones using a
+3.5mm male miniature phone plug (stereo).  An 8-Ohm or 4-Ohm
+speaker is recommended.
+
+2.3.3         POWERING UP ACCENT-SA
+
+Turn on the Accent-SA power switch only after the following have
+been done:
+
+       The Accent-SA is properly set up and connected to a host.
+
+       An external speaker or external headsets are attached, if
+       desired.
+
+       The AC adaptor is connected to Accent-SA and plugged into
+       the wall.
+
+       The volume has been turned up to approximately 1/3 
+       (clock-wise).
+
+Accent's power-on message, "ACCENT READY.", should be heard. 
+If the message is not heard, turn off the power and carefully go
+through the installation procedures again.
+
+2.3.4         RUNNING THE DEMO PROGRAM
+
+Accent-SA may be demonstrated with an IBM PC.  First, connect
+a straight-through, 25-pin RS-232C cable from the PC's COM1 to
+Accent-SA's RS-232C port.  Second, from the Accent Demo/Utility
+diskette provided, copy the DEMO232.BAS and DEMO.TXT files
+to a system diskette containing IBM PC's BASIC Interpreter
+"BASIC.COM" or "BASICA.COM".  Then go to Section 2.1.6 to run
+the Demo program.
+
+2.4           INSTALLING ACCENT-mini
+
+This Section describes step-by-step how to install Accent-mini in
+the PC.  If your PC does not have any non-standard card, the
+default settings of Accent-mini's hardware and software device
+driver should function properly without any change.
+
+If your PC has any non-standard card, which uses I/O addresses
+3EE-3EF Hex or hardware interrupt IRQ2/IRQ9 (IRQ2 is named
+for the PC/XT, and IRQ9 is named for the PC/AT), please refer to
+Figure-3 to resolve any conflict, and to Section 3.1.1 to change the
+same parameters in Accent-mini's device driver before the
+installation.  
+
+When setting up the hardware, please refer to Figure 3 which
+shows the locations of the jumpers and connectors on Accent-mini's
+printed circuit board.  
+
+FIGURE-3 Accent-mini Hardware
+
+(Not Shown)
+
+2.4.1         JUMPER SETTINGS
+
+J1 SETTINGS
+
+J1 is used to select the PC's hardware interrupt for Accent-mini. 
+Factory default setting selects IRQ2/IRQ9 (IRQ2 for the PC/XT, or
+IRQ9 for the PC/AT).
+    
+J2 SETTINGS
+
+J2 is used to assign PC I/O addresses to Accent-mini.  Two
+consecutive I/O addresses are used by each Accent-mini.  Factory
+default addresses are set to 3EE-3EF Hex.
+
+2.4.2         INSTALLING ACCENT-mini
+              SOFTWARE DEVICE DRIVER
+
+The DOS version 2.11 or higher is required to run Accent-mini. 
+With a system diskette containing DOS-2.11 or higher, go to
+Section 2.1.3 to install the software device driver.
+
+2.4.3         INSTALLING ACCENT-mini
+              HARDWARE
+
+Refer to Section 2.1.4 to install Accent-mini's hardware.  After the
+hardware installation is complete, refer to Sections 2.1.5 and 2.1.6
+to run the Demo Program.
+
+2.5           INSTALLING ACCENT-1600
+
+This Section describes step-by-step how to install Accent-1600 into
+your Toshiba laptop or portable computer.
+
+2.5.1         INSTALLING ACCENT-1600
+              SOFTWARE DEVICE DRIVER
+
+Utilize the Toshiba computer's utility program to reserve 128k
+bytes of the expanded memory for Accent-1600.  Refer to Section
+2.1.3 to install the software device driver. 
+
+2.5.2         INSTALLING ACCENT-1600
+              HARDWARE
+
+After turning off all power to the Toshiba computer, Accent-1600
+may be installed into the computer's Internal Modem slot. 
+Carefully plug the Accent-1600 board into the Internal Modem slot,
+and tightly install any necessary screws to secure Accent-1600. 
+Turn Accent-1600's volume up to 1/3, clock-wise.
+
+After the hardware installtion is complete, refer to Section 2.1.6 to
+run the Demo Program.
+
+2.6           INSTALLING ACCENT-XE
+
+This Section describes step-by-step how to install Accent-XE into
+your Toshiba T1000SE laptop.  Accent-XE comes with a custom
+drilled Built-in-Modem cover for the laptop.
+
+2.6.1         INSTALLING ACCENT-XE
+              SOFTWARE DEVICE DRIVER
+
+First, utilize the T1000SE's utility program to reserve 128k bytes
+of the expanded memory for Accent-XE.  Refer to Section 2.1.3 to
+install the software device driver. 
+
+2.6.2         INSTALLING ACCENT-XE
+              HARDWARE
+
+After turning off all power to the T1000SE, Accent-XE may be
+installed into the laptop's Built-in Modem slot.  Carefully plug
+Accent-XE into the Built-in Modem slot and slowly move it up and
+down so that Accent-XE's female connector fits into the T1000SE's
+male connector.  Tightly install the two screws to secure the
+Accent-XE board.  Turn Accent-XE's volume up to 1/3.
+
+After the hadware installation is complete, refer to Section 2.1.6 to
+run the Demo Program.
+
+
+3. OPERATION
+
+This Section describes Accent's user-interface and software
+command options.  The hardware setup during the installation will
+define Accent's interface options, and the software commands will
+allow users to change the system options, and to request status
+from Accent.
+
+The host computer communicates with Accent as a peripheral
+device either via the software device driver or via the RS-232C
+port.  If Accent is used with a software device driver on a PC, the
+PC BUS protocol is automatically handled in the device driver. 
+The user-interface to the software device driver is explained in
+Section 3.1.1.
+
+If the RS-232C interface is used, the handshaking for the RS-232C
+can either be hardware (Default) or Xon/Xoff type.  The RS-232C
+interface is described in Section 3.1.2.
+
+3.1           INTERFACE TO ACCENT
+
+The following two sections (Section 3.1.1 through 3.1.2) are model
+dependent, the user may refer to the appropriate sections for any
+specific model.
+
+3.1.1         DEVICE DRIVER INTERFACE
+
+This section is not for Accent-SA.  A device driver is used so that
+an application program (usually written in a High Level Language)
+may communicate with a specific device such as a disk drive, a
+printer, or a COM port.  If the system diskette used to boot the PC
+has a device driver in it, the PC will automatically load the device
+driver during boot time.  Each device driver has its specified name. 
+Accent's default device name is SPK.  
+
+After the device driver has been loaded into the PC, any
+application program can OPEN or CLOSE the device as a disk file,
+READ and WRITE may be performed to that device.  The device
+names are reserved (can't be used elsewhere) by the system once
+they are installed.
+
+Since Accent is a special device (not a standard device, such as a
+standard PC printer), a custom-built device driver is needed to
+allow the user to access Accent, that is, to OPEN, CLOSE, READ
+and WRITE Accent like a standard device with a specific name. 
+In this case, the name of Accent's character device driver is SPK.
+
+Please refer to IBM PC DOS Technical Reference manual for
+detailed descriptions of Installable Device Drivers.  Accent's device
+driver is a character device driver, and it provides the functions
+of INIT, INPUT, and OUTPUT as described in the DOS Technical
+Reference.
+
+Although Accent's device drivers are re-entrant, the Calls to DOS
+will not be re-entrant.  Therefore an alternative entry is provided
+-- the LPT port.  Since Calls to LPT port (by using INT 17H) is
+through the BIOS, which is re-entrant, only Calls from LPT to
+Accent will be re-entrant.  The default LPT port for Accent is set
+to LPT3.  The following shows the LPT interface definitions:
+
+FUNCTION:     Print Character  
+ENTRY:        Same as IBM BIOS              
+RETURN:       Same as IBM BIOS
+NOTE:         None 
+
+FUNCTION:     Initialize           
+ENTRY:        Same as IBM BIOS              
+RETURN:       Same as IBM BIOS
+NOTE:         Accent will be Flushed.  This includes all previous
+              inputs, text and commands. FOR A QUICK 
+              FLUSH, USE THIS FUNCTION.
+
+FUNCTION:     Status Read
+ENTRY:        Same as IBM BIOS
+RETURN:       Same as IBM BIOS for AH bit-0, and bit-3 to bit-7. 
+              AH bit-2,1 = 00 for not end-of-speech.            
+              AH bit-2,1 = 01 for complete end-of-speech.
+              AH bit-2,1 = 10 for near end-of-speech (about 0.3
+              to 2 second to end.) 
+              DH = Index-marker-count (only if <ESC>YZ
+              command has been previously issued).
+NOTE:         With the index marker feature enabled, if a 
+              constant status-check loop is performed to the 
+              device driver LPT BIOS call, Status Read, the loop
+              time-period is recommended to be at least 20 
+              milliseconds.
+
+FUNCTION:     Accent's Foot Switch Status Read (For Accent-MC
+              Version 4.0 or higher only).
+ENTRY:        AH = 12 Hex
+RETURN:       AL = Foot Switch Status;
+                      Bit 0 = Not used
+                      Bit 1 = 1 for Fast-forward (Left) switch being
+                             pressed
+                      Bit 2 = 1 for Play (Center) switch being
+                             pressed
+                      Bit 3 = 1 for Rewind (Right) switch being
+                             pressed
+NOTE:         If a constant status-check loop is performed on the
+              Foot Switch, the loop time period is recommended
+              to be at least 20 milliseconds.
+
+If Factory default setups for the system parameters and
+configurations are not desired, the utility program SETACNT.EXE
+for Accent-PC/MC, or SETMINI.EXE for Accent-mini/1600/XE, may
+be used to change them.  Please refer to the menu when running
+the SETACNT.EXE or SETMINI.EXE.
+
+3.1.2         RS-232C INTERFACE
+
+This section is only for Accent-PC/SA.  Accent's RS-232C is a
+standard serial interface port for Data Communication Equipment
+(DCE).  If hardware hand-shaking is adopted, the RTS, DTR, CTS
+and DSR signals must be used/checked for proper operation.  If
+software Xon/Xoff handshaking is adopted, the software command
+<ESC>=V must be sent to Accent first after power-up for proper
+operation.  After Accent has received the <ESC>=V command, the
+CTS and DSR signals will be asserted by Accent at all times, and
+the RTS and DTR signals from the host will not be checked by
+Accent.
+
+To ensure hardware engineers of a clear understanding of the
+RS-232C signals, each signal on the 25-pin RS-232C D-connector
+is listed below for reference.
+
+25-PIN               I/O           RS-232C        RS-232C
+CONNECTOR            TO/FROM       SIGNAL         SIGNAL
+PIN NUMBER           ACCENT        NAME           SOURCE 
+
+       1             BOTH          PGND           BOTH
+       2             INPUT         TXD            DTE
+       3             OUTPUT        RXD            DCE
+       4             INPUT         RTS            DTE
+       5             OUTPUT        CTS            DCE
+       6             OUTPUT        DSR            DCE
+       7             BOTH          SGND           BOTH
+      20             INPUT         DTR            DTE
+      22             OUTPUT        RING           DCE
+
+The RS-232C options include baud rate, parity, and data bit
+selections. SW1 (refer to FIGURE-1 for Accent-PC, and FIGURE-2
+for Accent-SA) is used to set these options, as follows:
+
+BAUD RATE
+
+SW1 POSITION         1      2      3      4       5
+
+75                   ON     OFF    OFF    OFF     ON
+150                  OFF    ON     OFF    OFF     ON
+300                  ON     OFF    OFF    OFF     OFF
+600                  OFF    ON     OFF    OFF     OFF
+1200                 OFF    OFF    ON     OFF     ON
+2400                 OFF    OFF    OFF    ON      ON
+4800                 OFF    OFF    ON     OFF     OFF
+9600                 OFF    OFF    OFF    ON      OFF
+
+PARITY
+
+SW1 POSITION         6      7
+
+NONE                 OFF    OFF
+ODD                  ON     OFF
+EVEN                 ON     ON
+
+The data bit length is set up by SW1 position 8: ON for 7 data bits,
+OFF for 8 data bits.  The stop bit is fixed at 1 bit.  Factory default
+settings for these options are: 9600 baud, no parity, and 7 data
+bits.
+
+3.2           SOFTWARE COMMANDS
+
+Once Accent hardware has been set up, operation is completely
+under control of the host.  Accent can accept two kinds of data
+from its host: text (including phoneme input), and commands.  Text
+may be translated into speech and commands will control Accent's
+operation. 
+
+In the text mode, input text from the host is stored in Accent's text
+buffer and will not be spoken until a sentence punctuation mark
+is received, the time-out described in Section 3.2.1.12 is
+encountered, or a <CR> is received if the option in Section 3.2.1.13
+is enabled.  Section 4 describes Accent's text processing rules in
+detail.  In the spell mode, the text input will be spelled out
+character by character immediately after it is received.  
+Commands are sent from the host to Accent as escape sequences.
+An escape sequence is a string of ASCII characters preceded by an
+<ESC> character (1B Hex and 27 decimal).  There are four groups
+of commands: System option commands, speech option commands,
+status request commands, and index marker commands.
+
+An Accent command consists of the <ESC> character immediately
+followed by two more characters.  Unless otherwise noted, the
+speech option commands and the status request command
+<ESC>?S will not be executed until all text, previously sent from
+the host, has been processed, that is, until Accent's internal text
+buffer has been emptied.  Other commands will be executed
+immediately upon receipt of the command.  Illegal Escape
+Sequences SHOULD NOT be sent to Accent.
+
+Each command is described in detail in the following sections.  A
+Commands Summary table (Table-1), which also gives Accent's
+software default settings, is located in Section 3.2.5.  In these
+commands, the upper and lower cases are distinguished.  The
+model dependent commands are noted in the descriptions.
+
+3.2.1         SYSTEM OPTION COMMANDS
+
+Various system option commands are available for different
+application configurations.
+
+3.2.1.1       Reset
+
+              <ESC>=R
+
+Reset Accent, equivalent to power up reset.  If the RS-232C is used
+for host interface, allow at least two seconds for Accent to complete
+its self-diagnostics.  No data should be sent to Accent during this
+two-second period or the data will be lost.  "ACCENT READY."
+verbal message will be issued by Accent.  All options will be reset
+to Accent's default state.
+
+3.2.1.2       Initialize
+
+              <ESC>=X
+
+Reset Accent, equivalent to power up reset but with no power-on
+verbal message replied.  If the RS-232C is used for host interface,
+allow at least 100 milli-seconds for Accent to complete its self-
+diagnostics.  No data should be sent to Accent during this 100
+milli-seconds period or the data will be lost.
+
+3.2.1.3       Flush
+
+              <ESC>=x
+
+All Accent's internal text/speech buffers will be flushed and speech
+will be stopped immediately, all options and status remain
+unchanged.  This command is most frequently used to flush the
+speech.  Important notice:  Also refer to Section 3.2.1.49 through
+3.2.1.51 for Control-X character as instant Flush command and for
+Xon-always-sent after Flush.
+
+3.2.1.4       RS-232C Echo On
+
+              <ESC>=E
+
+This command is only for Accent-PC/SA.  Characters received from
+Accent's RS-232C will be echoed back to the host device
+immediately.
+
+3.2.1.5       RS-232C Echo Off
+
+              <ESC>=e
+
+This command is only for Accent-PC/SA.  Characters received from
+Accent's RS-232C will not be echoed back to the host device.  This
+is the power-up default state. 
+
+3.2.1.6       Enable Appending <CR> for Status
+              Reply
+
+              <ESC>=C
+
+The reply to the Status Request Commands in Section 3.2.3 will
+have a <CR>, Carriage Return, appended at the end.  This
+command is useful for application software written with
+High-Level Languages.  This is the power-up default state.
+
+3.2.1.7       Disable Appending <CR> for Status
+              Reply
+
+              <ESC>=c
+
+The reply to the Status Request Commands in Section 3.2.3 will
+not have a <CR> appended at the end.
+
+3.2.1.8       Enable Speech Synthesizer
+
+              <ESC>=A
+
+Text received from the host will be converted to speech.
+
+3.2.1.9       Disable Speech Synthesizer
+
+              <ESC>=a
+
+Text received from the host will not be converted to speech and
+will not be stored in the text buffer either.  All other options are
+unaffected.
+
+3.2.1.10      Speech Pause
+
+              <ESC>=Q
+
+Speech will be stopped (paused) immediately, or after the current
+syllable is spoken if Accent is speaking.  Further text input from
+the host will be stored in the text buffer and not spoken until a
+Speech Continue Command described in Section 3.2.1.11 is
+received.  If Accent is in the Speech Pause state, only the Speech
+Continue, Reset, Initialize, Flush, Set Average Pitch, Set Speech
+Rate, and Set Voice Characteristic commands will be accepted.
+
+3.2.1.11      Speech Continue
+
+              <ESC>=q
+
+Accent will continue to speak, beginning where speech was stopped
+(paused) by the Speech Pause Command described in Section
+3.2.1.10.
+
+3.2.1.12      Host Input Time-out
+
+              <ESC>Tn
+
+This command is only for Accent-PC/MC/SA.  The n in this escape
+sequence represents any digit 0 through 9, which determines the
+time-out period while Accent awaits text input from the host.  The
+time-out period ranges approximately from 0.04 seconds to 20
+seconds for digits 0 through 9.  Any higher digit doubles the
+time-out period of the preceding lower digit. 
+
+With any occurrence of time-out, if there is text in the text buffer
+with no end-of-sentence punctuation or a terminating <CR> (if the
+option in Section 3.2.1.13 is enabled), Accent will begin to speak
+out the text.  Default time-out is set to 7, which gives a time-out
+period of about 5 seconds.
+
+3.2.1.13      Enable <CR> as Alternative
+              Start-Speaking Character
+
+              <ESC>=F
+
+Accent will start speaking when a <CR> is received.  This
+command is useful for Screen-Review applications for the visually
+impaired.  However, it may slightly affect sentence intonation.
+
+3.2.1.14      Disable <CR> as Alternative
+              Start-Speaking Character
+
+              <ESC>=f
+
+Accent will start speaking only when a sentence punctuation mark
+is received, or the host input time-out is encountered.  This is the
+power-up default state.
+
+3.2.1.15      Enable CTL-Q/S as Xon/Xoff
+              Characters
+
+              <ESC>=V
+
+This command is only for Accent-PC/SA.  Xon/Xoff software hand-
+shaking will be turned on for the RS-232C.  The Xon character is
+Control-Q (11 Hex) and the Xoff character is Control-S (13 Hex). 
+
+IMPORTANT NOTE: If Xon/Xoff is to be used, this command
+should be sent to Accent immediately after power-up.  After Accent
+has sent an Xoff to the host, there are still 128 bytes free space for
+input.  If further inputs exceed the 128-byte limit, buffer overrun
+will occur.  For Accent-PC, Accent's host must be set to RS-232C
+before this command can be issued.
+
+3.2.1.16      Disable CTL-Q/S as Xon/Xoff
+              Characters
+
+              <ESC>=v
+
+This command is only for Accent-PC/SA.  Accent's Xon/Xoff
+software handshaking will be turned off.  The RS-232C protocol is
+controlled by the RTS, DTR, CTS, and DSR hardware signals. 
+This is the power-up default state.
+
+3.2.1.17      Enable Fast Processing for Speech
+
+              <ESC>=B
+
+If Accent's speech buffer is empty, Accent will process the input
+text immediately after a phrase or a word is received.  This
+command is mainly used in applications requiring fast response
+time such as in the Screen-Review applications.  Note that if this
+option is enabled with high speech rate, the sentence intonation
+will be affected.
+
+3.2.1.18      Disable Fast Processing for Speech
+
+              <ESC>=b
+
+Accent will process the text when a complete sentence is received.
+This is the normal and power-up default state.
+
+3.2.1.19      Enable DCD Verbal Message
+
+              <ESC>=J
+
+Upon completion of a DCD download, Accent will deliver a verbal
+message of "Custom Dictionary Download Completed."  This is the
+power-up default state.
+
+3.2.1.20      Disable DCD Verbal Message
+
+              <ESC>=j
+
+Upon completion of a DCD download, Accent will not deliver any
+verbal message.  This command may be used if more than one set
+of DCD is to be used while Accent is active.
+
+3.2.1.21      Enable Delayed Process for Speech
+              Option Commands
+
+              <ESC>=K
+
+Speech option commands will only be processed after all text,
+previously sent from the host, has been processed.  This is the
+normal and power-up default state.
+
+3.2.1.22      Disable Delayed Process for Speech
+              Option Commands
+
+              <ESC>=k
+
+Speech option commands will be processed immediately after they
+are received.  This command is used only when an instant speech
+parameter change (such as pitch, speech rate, etc.) is required.
+
+3.2.1.23      Enable Verbal Stress on
+              Single-Character Alphabets
+
+              <ESC>=U
+
+Every single-character alphabet will be verbally stressed when
+spoken by Accent.  This command is useful when Accent is reading
+a string of alphabets and/or mixed with digits such as a serial
+number.
+
+3.2.1.24      Disable Verbal Stress on
+              Single-Character Alphabets
+
+              <ESC>=u
+
+Normal text-processing rule will be employed to pronounce
+single-character alphabets.  Verbal stress/non-stress is context
+dependent.  This is the power-up default state.
+
+3.2.1.25      Set Audio Output Volume
+
+              <ESC>An
+
+The n in this escape sequence represents any digit 0 through 9,
+which determines the overall volume of the audio output.  The
+digit 9 has the highest volume which is the default state.  Unless
+definitely needed for special effect, this parameter should be left as
+9 for the best resolution.  The volume is recommended to be
+controlled by the volume control knob/thumbwheel.
+
+3.2.1.26      Increase Overall Volume by One
+              Step
+
+              <ESC>+A
+
+The overall volume will be increased by one step instantaneously. 
+NOTE: All <ESC>+ and <ESC>- related commands will be
+processed instantly, and if the parameter has reached its upper or
+lower limit, it will stay at its limit.  These zoom features are useful
+for locating the most comfortable voice for the user. 
+
+3.2.1.27      Decrease Overall Volume by One Step
+
+              <ESC>-A
+
+The overall volume is decreased by one step.
+
+3.2.1.28      Increase Average Pitch by One Step
+
+              <ESC>+P
+
+The average pitch is increased by one step.
+
+3.2.1.29      Decrease Average Pitch by One Step
+
+              <ESC>-P
+
+The average pitch is decreased by one step.
+
+3.2.1.30      Increase Speech Rate by One Step
+
+              <ESC>+R
+
+The speech rate is increased by one step.
+
+3.2.1.31      Decrease Speech Rate by One Step
+
+              <ESC>-R
+
+The speech rate is decreased by one step.
+
+3.2.1.32      Increase Voice Characteristic by One
+              Step
+
+              <ESC>+V
+
+The voice characteristic is increased by one step.
+
+3.2.1.33      Decrease Voice Characteristic by One
+              Step
+
+              <ESC>-V
+
+The voice characteristic is decreased by one step.
+
+3.2.1.34      Increase Space Pause Time by One
+              Step
+
+              <ESC>+S
+
+The space pause time is increased by one step.
+
+3.2.1.35      Decrease Space Pause Time by One
+              Step
+
+              <ESC>-S
+
+The space pause time is decreased by one step.
+
+3.2.1.36      Increase Sentence Intonation by One
+              Step
+
+              <ESC>+M
+
+The sentence level intonation is increased by one step.
+
+3.2.1.37      Decrease Sentence Intonation by One
+              Step
+
+              <ESC>-M
+
+The sentence level intonation is decreased by one step.
+
+3.2.1.38      Enable PC to RS-232C Transmission
+
+              <ESC>=P
+
+This command is for Accent-PC only.  Characters received from PC
+will immediately be sent to Accent-PC's RS-232C port.  Refer to
+Section 3.2.1.40 and 3.2.1.41 for command character string.
+
+3.2.1.39      Disable PC to RS-232C Transmission
+
+              <ESC>=p
+
+This command is for Accent-PC only.  Characters received from PC
+will not be sent to the RS-232C port.
+
+3.2.1.40      Command String Sent to Auxiliary
+              Port
+
+              <ESC>=L
+
+This command is for Accent-PC only.  Command character string
+(the three-character escape sequence) will be sent to the auxiliary
+port if the transmission path is enabled through Section 3.2.1.38.
+Note: If PC is set to be Accent-PC's host, then the RS-232C port is
+considered to be Accent's auxiliary port, and vise versa.  This
+command has no effect if Accent-PC is set to RS-232C host.
+
+3.2.1.41      Command String Not Sent to Auxiliary
+              Port
+
+              <ESC>=l
+
+This command is for Accent-PC only.  Command character string
+will not be sent to the auxiliary port whether or not the
+transmission path is enabled through Section 3.2.1.38. This is the
+power-up default state.
+
+3.2.1.42      Status Reply to Host Only
+
+              <ESC>=G
+
+This command is for Accent-PC only.  The reply to the Status
+Request Commands in Section 3.2.3 will be sent to the host only. 
+This is the power-up default state.
+
+3.2.1.43      Status Reply to Auxiliary Port Only
+
+              <ESC>=g
+
+This command is for Accent-PC only.  The reply to the Status
+Request Commands in Section 3.2.3 will be sent to the auxiliary
+port only.
+
+3.2.1.44      Status Reply to Host and Auxiliary
+              Port
+
+              <ESC>=H
+
+This command is for Accent-PC only.  The reply to the Status
+Request Commands in Section 3.2.3 will be sent to the host and to
+the auxiliary port.
+
+3.2.1.45      Enable LPT Auxiliary Device
+              Chained Operation
+
+              <ESC>=Z
+
+The description of this escape sequence is not for Accent-SA.
+Characters received from LPT auxiliary device will be processed by
+Accent, and the same characters will also be sent to the original
+software interrupt vector (by a FAR JUMP) previously saved by
+the device drivers during system-boot.  For example, if the LPT
+number is set to 1 (by SETACNT.EXE or SETMINI.EXE) and the
+LPT chain flag is set, all text sent to Accent via LPT1 or PRN will
+be spoken by Accent, and will also be sent to the standard system
+printer to be printed.
+
+3.2.1.46      Disable LPT Auxiliary Device
+              Chained Operation
+
+              <ESC>=z
+
+This command is not for Accent-SA.  Characters received from LPT
+auxiliary device will be processed by Accent only and will not be
+sent to the standard system printer.
+
+3.2.1.47      Set PC Host
+
+              <ESC>HP
+
+This command is for Accent-PC only.  Set the PC as Accent-PC's
+host.  When Accent-PC is first powered up, the host is selected by
+Hardware J2 as described in Section 2.1.2.  This command allows
+users to change the host and utilize the auxiliary port for
+communication with a second host or with a peripheral, as desired. 
+Note: when Accent-PC's host is changed by a set-host command, all
+options and status in Accent-PC remain valid, except that they will
+then be referred to the newly designated host.
+
+3.2.1.48      Set RS-232C Host
+
+              <ESC>HS
+
+This command is for Accent-PC only.  It sets the RS-232C as
+Accent-PC's host.
+
+3.2.1.49      Enable CTL-X as the Instant Flush
+              Command
+
+              <ESC>=M
+
+This command will enable the Control-X character (18 Hex) as the
+instant Flush command.  After this command has been issued to
+Accent, both the <ESC>=x and the Control-X will cause Accent to
+flush.  The Control-X will flush instantly since it is a single-
+character command.
+
+3.2.1.50      Disable CTL-X as the Instant Flush
+              Command
+
+              <ESC>=m
+
+Only the <ESC>=x command will cause Accent to flush.  This is
+the power-up default state.
+
+3.2.1.51      Enable Xon-Always-Sent after Flush
+
+              <ESC>=I
+
+This command is only for Accent-PC/SA.  If Accent is in Xon/Xoff
+protocol mode, this command will cause Accent to always send an
+Xon to the host after Accent has been Flushed by the host.  This
+Xon is mainly used to signal the host that all index marker
+Auto-Prompts (as described in Section 3.2.1.53) have been sent to
+the host.
+
+3.2.1.52      Disable Xon-Always-Sent after Flush
+
+              <ESC>=i
+
+This command is only for Accent-PC/SA.  If Accent is in Xon/Xoff
+protocol mode, Accent will send an Xon to the host after a Flush
+only if an Xoff has been previously sent to the host.  This is the
+power-up default state.
+
+3.2.1.53      Enable Index Marker Auto-Prompt
+
+              <ESC>=Y
+
+This command is only for Accent-PC/SA.  This command will
+enable Accent to automatically prompt each index marker to the
+host via the RS-232C, when Accent has spoken to the position of
+each index marker.
+
+
+3.2.1.54      Disable Index Marker Auto-Prompt
+
+              <ESC>=y
+
+This command is only for Accent-PC/SA.  No index marker will be
+prompted automatically.  This is the power-up default state.
+
+3.2.1.55      Enable Foot Switch Status Reply
+
+              <ESC>=W
+
+This command is for Accent-MC/SA Version 4.0 or higher.  This
+command enables the foot switch status to be replied whenever a
+Status Request command is sent; refer to Section 3.2.3 for the
+replied information of the foot switch.  This option allows for the
+control of such functions as fast forward, rewind, and resume.
+
+If a constant loop is used for the status request, a delay is
+recommended for each loop.  The recommended delay time is the
+same as the Status Request (refer to Section 3.2.3).
+
+3.2.1.56      Disable Foot Switch Status Reply
+
+              <ESC>=w
+
+This command is only for Accent-MC/SA Version 4.0 or higher. 
+The foot switch status will not be replied when a Status Reply
+command is sent, refer to Section 3.2.3.  This is the power-up
+default state.
+
+3.2.2         SPEECH OPTION COMMANDS
+
+This command group applies to all Accent models, it allows the
+user to tailor Accent to speak text and punctuation marks in a
+number of desired formats according to the requirements of a
+specific application.  Furthermore, the speech rate, the average
+(baseline) pitch, the voice characteristic, the Space pause time,
+sentence level intonation, as well as the internal abbreviation
+dictionary and schwa sound manipulations can be programmed
+through these commands.
+
+3.2.2.1       Text Mode
+
+              <ESC>OT
+
+Text from the host will go through Accent's text processor for
+speech output.  This is the normal text-to-speech operation.
+
+3.2.2.2       Spell Mode
+
+              <ESC>Ot
+
+Text from the host will be spoken character by character (i.e.,
+spelled out) by Accent.  This includes all special signs and
+punctuation marks.  For listing, please refer to Section 4.1.
+
+3.2.2.3       Punctuation Not Spoken
+
+              <ESC>Op
+
+No punctuation mark will be spoken in the Text Mode.  This is the
+normal text-to-speech operation.
+
+3.2.2.4       Punctuation Spoken
+
+              <ESC>OP
+
+Punctuation marks will be spoken as described in Section 3.2.2.10
+and Section 3.2.2.11.  This command may be used, for example, in
+applications where the punctuation marks must be spoken out
+precisely, such as in reading a program written in a High-Level
+Language.
+
+3.2.2.5       <-> Not Spoken
+
+              <ESC>Om
+
+The <-> sign will not be spoken by Accent.  This is the normal
+text-to-speech operation and the power-up default state.
+
+3.2.2.6       <-> Spoken as DASH
+
+              <ESC>OM
+
+The <-> sign will be spoken as DASH by Accent.
+
+3.2.2.7       <-> Spoken as MINUS
+
+              <ESC>ON
+
+The <-> sign will be spoken as MINUS by Accent.
+
+3.2.2.8       Enable Abbreviation Dictionary
+
+              <ESC>OI
+
+Accent's internal abbreviation dictionary will be searched during
+text-to-speech rule processing.  This is the power-up default state.
+
+3.2.2.9       Disable Abbreviation Dictionary
+
+              <ESC>Oi
+
+Accent's internal abbreviation dictionary will not be searched
+during text-to-speech rule processing.
+
+3.2.2.10      Full Set Punctuation Spoken
+
+              <ESC>OR
+
+If Punctuation Spoken command is enabled as in Section 3.2.2.4,
+all punctuation marks will be spoken as described in Section 4.1. 
+This is the power-up default state.
+
+3.2.2.11      Subset Punctuation Spoken
+
+              <ESC>Or
+
+If Punctuation Spoken command is enabled as in Section 3.2.2.4,
+only ,.:;!? punctuation marks will be spoken as described in Section
+4.1.
+
+3.2.2.12      <A> and <a> Always Spoken as /EI/
+
+              <ESC>OA
+
+The character <A> and <a> will always be pronounced as /EI/
+phoneme rather than context dependent.
+
+3.2.2.13      <A> and <a> Pronunciation are
+              Context Dependent
+
+              <ESC>Oa
+
+The character <A> will always be pronounced as /EI/ phoneme,
+while the character <a> is context dependent.  In most cases, the
+<a> will be pronounced as the schwa phoneme /UU/.
+
+3.2.2.14      Set Average Pitch
+
+              <ESC>Pn
+
+The n in this escape sequence represents any digit, 0 through 9,
+which determines the average pitch level of Accent.  The range of
+the average pitch is from about 70Hz to 140Hz for digits 0 through
+9.  The nominal and default pitch level for Accent is 5, which gives
+an average pitch of about 115Hz.
+
+3.2.2.15      Set Voice Characteristic
+
+              <ESC>Vn
+
+The n in this escape sequence represents any digit, 0 through 9,
+which determines the characteristic of Accent's voice.  The lower
+numbers will give lower and deeper sounding voices.  The higher
+numbers will give higher and sharper sounding voices.  Usually,
+when the average pitch is set at a lower number, the voice
+characteristic will also be set at a lower number to match, and vice
+versa. 
+
+However, for special applications such as Games, this parameter
+may be set to any number and, in conjunction with other Speech 
+Option Commands, will provide two thousand voices representing 
+different personalities.  The default number for this parameter is
+set to 5 which will give a male voice of average tone.
+
+3.2.2.16      Set Speech Rate
+
+              <ESC>Rn
+
+The n in this escape sequence represents any digit, 0 through F (in
+Hex), G, and H, which determines the speed of Accent's speech
+(speech rate).  With the Space Pause Time set to 0, the speech rate
+runs from about 120 words per minute to about 800 words per
+minute for those 18 digits from 0 to H.
+
+3.2.2.17      Set Sentence Level Intonation
+
+              <ESC>Mn
+
+The n in this escape sequence represents digits 0 through 4.  If n
+is 0, the regular (full) intonation will be employed, and if n is 1, a
+robotic monotone pitch (using the average pitch level set by the
+command described in Section 3.2.2.14), ranging from 60 Hz to 150
+Hz, will be employed.
+
+If n is 2, 3, or 4, the regular intonation is employed yet the
+sentence level intonation is reduced with respect to n=0, while n=4
+has the least sentence level intonation reduction, and n=2 the most
+sentence level intonation reduction.
+
+For high speech rate output, for example, in Screen-Review
+applications, the reduced intonation (or the monotone) will provide
+a more comfortable listening.  For proof-reading type of
+applications, the reduced intonation is also useful.  This command
+applies to both the text mode and the spell mode.
+
+3.2.2.18      Set Space Pause Time
+
+              <ESC>Sn
+
+The n in this escape sequence represents any digit, 0 through 9,
+which determines the pause time for the Space character between
+two words. Lower numbers represent shorter pauses, and higher
+numbers represent longer pauses.  The default is set to 0, which
+gives the most natural sounding speech. 
+
+3.2.2.19      Set Number Processor
+
+              <ESC> Nn
+
+The n in this escape sequence represents any digit, 0, 1, and 2,
+which determines Accent's number processing level.  Accent's
+number processor is described in Section 4.1.3 and 4.1.4.
+
+For n=0, Accent's number processor is turned on.  If a word has
+number(s) mixed in it, the word portion will be spelled out
+automatically.  This is the power- up default state.
+
+For n=1, Accent's number processor is turned on.  If a word has
+number(s) mixed in it, the word portion will be spoken as a word. 
+This mode is most commonly used in the Screen-Review
+applications for faster speech delivery.
+
+For n=2, Accent's number processor is turned off.  All numbers will
+be spoken digit by digit.  If a word has number(s) mixed in it, the
+word portion will be spoken as a word.
+
+3.2.2.20      Direct Parameter Input to Synthesizer
+              Chip
+
+              <ESC> |~..~
+
+This command is for advanced users only.  It allows the host to
+send parameters directly to the synthesizer chip on the Accent
+board.  The synthesizer chip on the Accent board is the AI901.
+
+The .. in this escape sequence represents the parameters (in ASCII
+Hex numbers) to be sent to the synthesizer chip.  The direct
+Parameter Input may be terminated at any time with a ~ (tilde)
+character.  The Interrupt will be handled internally.  To use this
+feature, the parameters must meet the following conditions.  Refer
+to the chip's specification for parameter definitions.
+
+       Use upper case Hex numbers only: 0-9, A-F.
+
+       Only the Phoneme Response and the Transitioned Pitch 
+       modes are allowed.
+
+       The 5-byte parameters should be sent in reverse order:  the
+       Filter-Frequency byte first, the Phoneme and Duration byte
+       last.
+
+       The lower nibble of any given byte is sent first.
+
+       Upon receiving the first 5-bytes of the parameters (10 
+       characters), Accent will start speaking.
+
+       The parameters sequence may be infinitely long.
+
+3.2.2.21      Fixed Abbreviation Pronunciation
+
+              <ESC>OL
+
+This command is only for the abbreviated words designated by note
+2 in the abbreviation table in Section 4.1.1.  If this command is set,
+an abbreviated word designated by note 2 will always be
+pronounced in the non-note 2 form.
+
+3.2.2.22      Automatic Abbreviation Pronunciation
+
+              <ESC>Ol
+
+This command is only for the abbreviated words designated by note
+2 in the abbreviation table in Section 4.1.1.  If this command is set,
+any abbreviated word will automatically be pronounced according
+to the abbreviation pronunciation rules contained in Section 4.1.1. 
+This is the power-up default state.
+
+3.2.3         STATUS REQUEST COMMANDS
+
+There are four commands for the host to request specific status
+from Accent. If a constant status-check loop is performed to Accent
+via the RS-232C port, the loop time-period is recommended to be
+at least 50 milli-seconds.  
+
+The Foot Switch option is supported only for Accent-SA and
+Accent-MC; Version 4.0 or higher.  If the Foot Switch Reply is
+enabled through the <ESC>=W command, refer to Section 3.2.3.2
+for Accent-SA's reply definition, and refer to Section 3.1.1 for
+Accent-MC's reply definition (through the device driver).
+
+The Reply Synthesizer Status command is most frequently used for
+checking Accent's speech buffer status.
+
+3.2.3.1       Reply End of Speech
+
+              <ESC>?S
+
+When speech has ended, Accent will reply with a capitalized
+character <S>.
+
+3.2.3.2       Reply Synthesizer Status
+
+              <ESC>?s
+
+This request will be immediately replied with a status-character
+by Accent.  If the synthesizer is idle (not speaking, speech ended),
+Accent will reply with a capitalized character <S>.  If the
+synthesizer is speaking, and is not near to the end, Accent will
+reply with a lower-case character <s>.  If the synthesizer is
+speaking but near to the end (about 0.3 second to 2 seconds of
+speech left, dependent on the speech rate), Accent will reply
+with an <M> for more text to have uninterrupted speech.  For
+host-interface using the RS-232C, the index-marker-count will be
+appended right after the status-character if (and only if) the
+index-marker-count replying is enabled as described in Section
+3.2.4.5.
+
+If the Foot Switch is enabled, an extra byte will be appended to the
+above replied data.  The reply definition is as follows:
+
+Bit 0 = Not Used
+Bit 1 = 1 for Fast-Forward (Left) switch being pressed
+Bit 2 = 1 for Play (Center) switch being pressed
+Bit 3 = 1 for Rewind (Right) switch being pressed
+
+3.2.3.3       Verbal Reply Version Number
+
+              <ESC>|1
+
+Accent will speak out its text-processor Version number for
+identification.
+
+3.2.4         INDEX MARKER COMMANDS
+
+The index marker feature is mainly used in the Screen-Review
+applications.  It allows the application programs to track exactly
+which word in a given text Accent has spoken to, so that the
+screen cursor (or pointer) movement can be synchronized with the
+speech.
+
+Accent can accept two kinds of index markers, the Control-F
+character or a user defined escape-sequence.  The Control-F is
+recommended since it takes less memory space and less time to
+process.  The marker will be treated as a Space character by the
+Accent text-processor, and it is recommended to be placed right
+after the word to be marked.
+
+If the host-interface is through Accent's RS-232C port, the host has
+two methods to obtain Accent's marker status: through the
+Auto-Prompt feature or through Accent's Status-Reply command
+<ESC>?s.  With the Auto-Prompt feature (Section 3.2.1.53)
+enabled, Accent will automatically prompt the index marker
+character to the host each time a marked word has been spoken
+(also refer to Section 3.2.1.51 and 3.2.1.52).  With the Status-Reply
+command enabled for replying the index-marker-count, Accent will
+append the index-marker-count (in one-byte binary form) to the
+status-character (S, M, or s), and then clear Accent's
+index-marker-counter for a new count. Either of the above two
+methods may be used, but NOT BOTH at the same time.
+
+If the host-interface is through Accent's device driver, the index
+marker is supported only through the LPT BIOS call, Status Read. 
+With the Status-Reply command enabled for replying the
+index-marker-count, on return of the LPT BIOS call, Status Read,
+the DH register contains the index-marker-count (in one-byte
+binary form), and Accent's index-marker-counter is cleared for a
+new count.  Refer also to Section 3.1.1.
+
+3.2.4.1       Enable CTL-F as the Index Marker
+
+              <ESC>YX
+
+Accent will treat the Control-F character (06 Hex) as the index
+marker.
+
+3.2.4.2       Disable CTL-F as the Index Marker
+
+              <ESC>Yx
+
+Accent will not treat the Control-F character (06 Hex) as the index 
+marker.  This is the power-up default state.
+
+3.2.4.3       Reply <ESC>Y plus Index-Marker
+              Character for Auto-Prompt
+
+              <ESC>YY
+
+This command is only for Accent-PC/SA.  The <ESC>Y plus the
+index- marker character (one character) will be sent to the host via
+the RS-232C port when Accent is prompting the index marker in
+the Auto-Prompt mode.  This three-character prompt is used only
+if the host needs an escape-sequence for index marker prompt.
+
+3.2.4.4       Reply Index-Marker Character only
+              for Auto-Prompt
+
+              <ESC>Yy
+
+This command is only for Accent-PC/SA. Only the index-marker
+character (one character) will be sent to the host via the RS-232C
+port when Accent is prompting the index marker in the
+Auto-Prompt mode.  This is the power-up default state.
+
+3.2.4.5       Enable Index-Marker-Count Replying
+              for Status Reply
+
+              <ESC>YZ
+
+For host interface using the RS232C, the index-marker-count will
+be appended to the replied status for the <ESC>?s command.  For
+host interface using the device driver, the index-marker-count will
+be returned in the DH register for LPT BIOS call, Status Read. 
+Note: The index-marker-count should be checked frequently enough
+so that it does not overflow.  It is recommended that the time
+between two checks should not be over five seconds if every word
+in the text has a marker.
+
+3.2.4.6       Disable Index-Marker-Count Replying
+              for Status Reply
+
+              <ESC>Yz
+
+No index-marker-count will be replied.  This is the power-up
+default state.
+
+3.2.4.7       User Defined Index-Marker
+
+              <ESC>Y_
+
+This three-character escape-sequence is the user defined index-
+marker. The <_> character represents the user defined index-
+marker character which may be any character A-W, a-w, or 0-9. 
+Once a <_> is used, it should not be altered.  This user defined
+index-marker is used only if the host must use an escape-sequence
+as the index-marker.
+
+3.2.5         TABLE-1 (Command Summary)
+
+The following Table summarizes the software commands for all
+Accent models.  The model dependent commands are denoted as
+follows:
+
+*             For Accent-PC only.
+**            For Accent-PC, Accent-SA only.
+***           For Accent-PC, Accent-MC, Accent-mini, 
+              Accent-1600, Accent-XE drivers only.
+****          For Accent-MC, Accent-SA only.
+SEL           Selected for power-up default.
+
+The columns are in the following order: Command, Note, Default,
+Description.
+
+System Option Commands
+
+<ESC>=R                     Reset Accent
+<ESC>=X                     Initialize Accent per H/W set-up
+<ESC>=x                     Flush all internal buffers
+<ESC>=E       **            RS-232C echo on
+<ESC>=e       **     SEL    RS-232C echo off
+<ESC>=C              SEL    Append <CR> for Status Reply
+<ESC>=c                     Append no <CR>for Status Reply
+<ESC>=A              SEL    Enable speech synthesizer
+<ESC>=a                     Disable speech synthesizer
+<ESC>=Q                     Speech pause
+<ESC>=q              SEL    Speech continue
+<ESC>Tn       **     7      Host input time-out; n = 0 to 9
+<ESC>=F                     Enable <CR> as alternative 
+                            start-speaking character 
+<ESC>=f              SEL    Disable <CR> as alternative
+                            start-speaking character 
+<ESC>=V       **            Enable CTL-Q/S as Xon/Xoff char.
+<ESC>=v       **     SEL    Disable CTL-Q/S as Xon/Xoff char.
+<ESC>=B                     Enable fast processing mode
+<ESC>=b              SEL    Disable fast processing mode
+<ESC>=J              SEL    Enable DCD verbal message
+<ESC>=j                     Disable DCD verbal message
+<ESC>=K              SEL    Process Speech Option Commands 
+                            only when speech buffer is empty
+<ESC>=k                     Process Speech Option Commands
+                            immediately 
+<ESC>=U                     Verbal stress on single character
+<ESC>=u              SEL    No stress on single character
+<ESC>An              9      Set Audio Volume; n = 0 to 9
+<ESC>+A                     Increase Audio Volume by 1 level
+<ESC>-A                     Decrease Audio Volume by 1 level
+<ESC>+P                     Increase Average Pitch by 1 level
+<ESC>-P                     Decrease Average Pitch by 1 level
+<ESC>+R                     Increase Speech Rate by 1 level
+<ESC>-R                     Decrease Speech Rate by 1 level
+<ESC>+V                     Increase Voice Characteristic by 1 
+                            level 
+<ESC>-V                     Decrease Voice Characteristic by 1 
+                            level 
+<ESC>+S                     Increase Space Pause Time by 1
+                            level
+<ESC>-S                     Decrease Space Pause Time by 1 
+                            level
+<ESC>+M                     Increase Sentence Intonation by 1
+                            level 
+<ESC>-M                     Decrease Sentence Intonation by 1
+                            level 
+<ESC>=P       *             Enable PC to RS-232C transmission
+<ESC>=p       *      SEL    Disable PC to RS-232C transmission
+<ESC>=L       *             Command string sent to Aux port
+<ESC>=l       *      SEL    Command string not sent to Aux 
+                            port
+<ESC>=G       *      SEL    Status Reply to Host only
+<ESC>=g       *             Status Reply to Aux port only
+<ESC>=H       *             Status Reply to Host and to Aux 
+                            port
+<ESC>=Z       ***           Enable chained LPT operation for 
+                            PC via device driver
+<ESC>=z       ***    SEL    Disable chained LPT operation for
+                            PC via device driver
+<ESC>HP       *      SEL    Set PC Host
+<ESC>HS       *             Set RS-232C Host
+<ESC>=M                     Enable CTL-X as the instant Flush 
+                            command 
+<ESC>=m              SEL    Disable CTL-X as the instant Flush
+                            command 
+<ESC>=I       **            Enable Xon-always-sent after Flush
+<ESC>=i       **     SEL    Disable Xon-always-sent after Flush
+<ESC>=Y       **            Enable index marker Auto-Prompt
+<ESC>=y       **     SEL    Disable index marker Auto-Prompt
+<ESC>=W       ****          Enable foot switch status reply
+<ESC>=w       ****   SEL    Disable foot switch status reply
+
+Speech Option Commands
+
+<ESC>OT              SEL    Text mode
+<ESC>Ot                     Spell mode
+<ESC>Op              SEL    Punctuation will not be spoken
+<ESC>OP                     Punctuation will be spoken
+<ESC>Om              SEL    <-> will not be spoken
+<ESC>OM                     <-> will be spoken as DASH 
+<ESC>ON                     <-> will be spoken as MINUS
+<ESC>OI              SEL    Enable Accent's standard 
+                            abbreviation table
+<ESC>Oi                     Disable Accent's standard
+                            abbreviation table
+<ESC>OR              SEL    Full-set punctuation spoken
+<ESC>Or                     Subset punctuation (,.;:!?) spoken 
+<ESC>OA                     <A> or <a> always spoken as /EI/
+<ESC>Oa              SEL    <A> always spoken as /EI/, <a> is 
+                            spoken as /EI/ or UU/ dependent
+                            on context 
+<ESC>Pn              5      Average pitch level; n = 0 to 9
+<ESC>Vn              5      Voice characteristic; n = 0 to 9 
+<ESC>Rn              5      Speech rate; n = 0 to F, G, and H
+<ESC>Mn              0      Sentence level intonation; n = 0 (full
+                            intonation), 1 (monotone), 2, 3, or 4 
+<ESC>Sn              0      Space pause time; n = 0 to 9
+<ESC>Nn              0      Set number processor n = 0,1,2
+<ESC>|~..~                  Direct parameter input to
+                            synthesizer chip
+<ESC>OL                     Fixed Abbreviation Pronunciation
+<ESC>Ol              SEL    Automatic Abbreviation
+                            Pronunciation
+
+Status Request Commands
+
+<ESC>?S                     Reply <S> when speech has ended
+<ESC>?s                     Reply synthesizer status
+                            immediately;  
+                            <S> for speech--end,
+                            <s> for speech-not-end,
+                            and <M> speech-near-end
+<ESC>|1                     Reply Accent's version verbally 
+
+Index Marker Commands
+
+<ESC>YX                     Enable CTL-F as the index marker
+<ESC>Yx              SEL    Disable CTL-F as the index marker
+<ESC>YY       **            Reply <ESC>Y plus index-marker 
+                            character for Auto-Prompt
+<ESC>Yy       **     SEL    Reply index-marker character only 
+                            for Auto-Prompt 
+<ESC>YZ                     Enable index-marker-count replying
+                            for Status Reply 
+<ESC>Yz              SEL    Disable index-marker-count replying
+                            for Status Reply
+<ESC>Y_                     User defined index-marker
+
+
+4. STANDARD ACCENT TEXT PROCESSOR
+
+Accent's text processor is standard for all Accent models.  A set of
+legal ASCII characters is defined for Accent's text processor. 
+Illegal characters will be ignored and not pronounced.  The legal
+characters are here listed :
+
+!"#$%&'()*+,-./0123456789:;<=>?@
+ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`
+abcdefghijklmnopqrstuvwxyz{|}~ 
+
+plus <SP>, <CR>, <LF>, and <HT>.
+
+The Accent text processor employs a highly sophisticated
+text-to-speech algorithm.  Text may be input with or without
+capital letters (unless otherwise specified, as for the abbreviations).
+The key to, and the only requirement for, attaining natural,
+intelligible speech with Accent is that the input text must be
+properly punctuated as in normal writing.  Hyphens should not be
+omitted in hyphenated words.  Pauses are automatically inserted
+into speech by punctuation marks and rules.  If longer pause is
+required, consecutive sentence ending punctuation marks (.:;!?)
+may be used.  The following Sections describe each pronunciation
+rule in detail.
+
+4.1           PRONUNCIATION RULES
+
+Punctuation marks will not be spoken by Accent in normal text
+mode unless the option is enabled by the command described in
+Section 3.2.2.4.  To insure natural speech from Accent, any word
+(or special sign) with a punctuation mark following it may have
+only one or no Space character, <SP>, between the word and the
+punctuation mark.  Each ASCII character which Accent considers
+to be a mark of punctuation is here listed :
+
+SIGN          TYPE                 SPOKEN
+
+<SP>          Word end             Space
+,             Phrase end           Comma
+(             Phrase begin         Left Paren
+[             Phrase begin         Left Bracket
+{             Phrase begin         Left Brace
+)             Phrase end           Right Paren
+]             Phrase end           Right Bracket
+}             Phrase end           Right Brace
+"             Phrase begin/end     Quote
+.             Sentence end         Period
+;             Sentence end         Semicolon
+:             Sentence end         Colon
+?             Sentence end         Question
+!             Sentence end         Exclamation
+
+The <`> (grave accent) character is used to mark a stress for its
+following syllable in a word.  It may be placed anywhere within a
+word which is not an Arabic number, an abbreviation, or a special
+sign.  ASCII characters which Accent considers to be special signs
+are listed with their pronunciations as follows:
+
+SIGN          SPOKEN               SIGN           SPOKEN
+
+&             And                  *              Star
+@             At                   |              Bar
+=             Equals               _              Underline
+>             Greater              <              Less
+#             Number               %              Percent
+/             Slash                \              Back Slash
++             Plus
+
+$             Dollar (also see Section 4.1.3) 
+-             (See Section 3.2.2.5 through 3.2.2.7)
+^             Caret (spell mode only)
+~             Tilde (spell mode only)
+'             Apostrophe (spell mode only)
+`             Grave (spell mode only)
+<CR>          Return (spell mode only) 
+<LF>          Line feed (spell mode only)
+<HT>          Tab (spell mode only)
+<SP>          Space (spell mode only) 
+
+4.1.1         ABBREVIATIONS
+
+An abbreviation may be input without a period following it unless
+it is at a sentence end or otherwise noted.  A capitalized initial
+letter (the first letter) may not be required unless otherwise noted. 
+Accent's abbreviations list includes the following :
+
+APR.       APRIL (1)          MG.       MILLIGRAMS
+APT.       APARTMENT (2)      MGS.      MILLIGRAMS
+AUG.       AUGUST             MI.       MICHIGAN  
+AV.        AVENUE             ML.       MILLILITERS
+AVE.       AVENUE             MM.       MILLIMETERS
+BLVD.      BOULEVARD          MR.       MISTER
+BLDG.      BUILDING           MRS.      MISSES
+CA.        CALIFORNIA         MS.       MIZ (2)
+CM.        CENTIMETERS        MON.     MONDAY
+CMS.       CENTIMETERS        MT.       MOUNT
+CO.        COMPANY (2)        NOV.      NOVEMBER
+CT.        COURT              NY.       NEW YORK
+CU.        CUBIC              OCT.      OCTOBER
+DEC.       DECEMBER           OZ.       OUNCES 
+DEPT.      DEPARTMENT         OZS.      OUNCES
+DR         DRIVE              PL.       PLACE 
+DR.        DOCTOR (2)         PG.       PAGE 
+EA.        EACH               PPD.      POST PAID
+ETC.       ET CETERA          PRES.     PRESIDENT
+EXT.       EXTENSION          RD.       ROAD
+FEB.       FEBRUARY           REP.      REPRESENTATIVE
+FIG.       FIGURE (1)         REV.      REVEREND
+FRI.       FRIDAY             SAT.      SATURDAY (2)
+FT         FEET               SEC.      SECONDS
+FT.        FORT (2)           SECS.     SECONDS
+GEN.       GENERAL            SEN.      SENATOR
+GM.        GRAMS (1)          SEP.      SEPTEMBER
+GOV.       GOVERNOR           SEPT.     SEPTEMBER
+HQ.        HEADQUARTERS       SQ.       SQUARE
+HR.        HOURS              SR.       SENIOR
+HRS.       HOURS              ST        STREET
+HZ.        HERTZ              ST.       SAINT (2)
+INC.       INCORPORATED       SUN.      SUNDAY (2)
+IL.        ILLINOIS           TX.       TEXAS
+JAN.       JANUARY (2)        TUE.      TUESDAY
+JUL.       JULY               TUES.    TUESDAY
+JUN.       JUNE               THU.      THURSDAY
+JR.        JUNIOR             THUR.    THURSDAY
+KG.        KILOGRAM           THURS.  THURSDAY
+KGS.       KILOGRAMS          UNIV.     UNIVERSITY
+KM.        KILOMETERS         VOL.      VOLUME
+LB.        POUND              VS.       VERSUS
+LBS.       POUNDS             WED.     WEDNESDAY (2)
+LTD.       LIMITED            YD.       YARD
+MAR.       MARCH (2)          YDS.      YARDS
+
+Note (1):     Must have an ending period.
+Note (2):     Must have a capitalized initial letter and an ending
+              period.
+
+Besides the preceding abbreviations, Accent includes hundreds of
+other commonly used abbreviations which are normally "spelled
+out" (such as EIA, CCITT, CIA, USA, USSR, SOS, etc.) when
+pronounced.  Such abbreviations are not listed here.  Note: if there
+is no vowel letter in an abbreviated word , it will automatically be
+spelled out by Accent.
+
+4.1.2         ALTERNATIVE PRONUNCIATIONS
+
+A special feature of Accent's text processor is that grammatical
+rules are applied to words with two pronunciations, and
+adjustments are automatic.  If this feature is not desired (such
+as in a single-word pronunciation), a <^> immediately following an
+ambiguous word will elicit that word's alternative pronunciation.
+
+4.1.3         MONETARY $ AMOUNTS
+
+The following examples show different ways of specifying monetary
+amounts, which may be spoken as high as trillion(s) :
+
+Input :       $1
+Speech:       One dollar
+
+Input :       $235  
+Speech:       Two hundred thirty-five dollars
+
+Input :       $.10  
+Speech:       Ten cents
+
+Input :       $0.10  
+Speech:       Zero dollar and ten cents
+
+Input :       $1.234  
+Speech:       One point two three four dollars
+
+Input :       $1.26
+Speech:       One dollar and twenty-six cents
+
+Input :       $6723
+Speech:       Six seven two three dollars
+
+Input :       $30,456.17
+Speech:       Thirty thousand four hundred fifty-six dollars and
+              seventeen cents
+
+4.1.4         NUMERALS
+
+Any number having five or more digits without a comma inserted
+is pronounced digit by digit.  Four-digit numbers without leading
+zero(s) will be pronounced as two pairs of two-digit numbers.  If a
+number has a comma inserted at every third digit, the following
+counting units are available :  Hundred, Thousand, Million, Billion,
+and Trillion.  For any number with a decimal point, a leading digit
+must be present, otherwise it will be treated as a period. 
+Following are examples of how Accent pronounces numerals:
+
+Input :       16
+Speech:       Sixteen                       
+
+Input :       1986
+Speech:       Nineteen eighty-six
+
+Input :       168
+Speech:       One six eight
+
+Input :       0304
+Speech:       Zero three zero four
+
+Input :       1,663
+Speech:       One thousand six hundred sixty-three
+
+Input :       166-1688-K8
+Speech:       One six six, one six eight eight, K eight
+
+Input :       0.123
+Speech:       Zero point one two three
+
+Input :       (408)453-8251
+Speech:       Four zero eight, four five three, eight two five one
+
+Input :       #123-45-6789
+Speech:       Number one two three, four five, six seven eight 
+              nine
+
+4.1.5         TIME OF DAY
+
+Input :       12:45
+Speech:       Twelve : forty-five 
+
+Input :       7:07
+Speech:       Seven : zero seven 
+
+4.1.6         WORDS WITH NO VOWEL
+
+If a word has no vowel letter it can not be pronounced, and Accent
+will automatically spell it out.  The vowel letters are A E I O U
+and Y.  Examples of such words are PM, BC, KWPP, etc.  If a word
+containing vowel letters goes through Accent's text processor but
+the resulting phoneme sequence has no vowel in it, that word will
+also be spelled out.  Examples of such words are NE, YE, etc.
+
+4.2           PHONEME INPUT
+
+The beginning and ending of a phoneme input string to Accent
+must be marked by a <~> character.  Immediately following the
+beginning mark is a </> character.  In a phoneme input string
+sequence, each phoneme is separated by the </> character, and the
+sequence must be ended by a </> character. 
+
+The Space, Comma, and Period punctuation marks can also be
+embedded in a phoneme sequence.  No word should exceed 32
+phonemes in length.  The standard phoneme symbols used for
+Accent products are listed in TABLE-2.  The following shows an
+example of the phoneme input:
+
+Text:         This is a test.
+
+Phoneme:      ~/DH/X/I/S/ /I/Z/ /UU/ /T/'/E/S/T/./~
+
+or            This ~/I/Z/~ a ~/T/'/E/S/T/./~
+
+4.2.1         TABLE-2 (Accent Phoneme List)
+
+PHONEMES                     EXAMPLES
+
+Vowels: 
+IY                          mEEt
+II                          sillY, marY, beautY
+I                           sIx, bEfore
+IE                          bEfore
+E                           bElt
+EA                          dAd
+AE                          After
+UH                          lOve
+UU                          About (Schwa sound)
+A                           gOt
+AA                          whAt
+O                           stOre
+OW                          Office
+U                           lOOk, cOUld
+OO                          cartOOn
+
+Diphthongs: 
+ER                          bIRd
+EI                          dAY
+OU                          bOAt
+AI                          bUY
+AU                          hOUse
+OI                          bOY
+IU                          mUsic, nEW
+
+Consonants: 
+M                           More 
+N                           NiNe
+NG                          siNGiNG
+Y                           Year
+W                           Water
+R                           Rug, fiRing
+RU                          Roof
+                            (Used before phonemes OO and U)
+L                           Look
+K                           Kit
+G                           taG
+P                           Put
+B                           Buy
+T                           siT
+D                           DaD
+CH                          CHurCH
+J                           Just
+F                           aFter
+V                           loVe
+S                           Sit
+Z                           Zero
+SH                          diSH
+ZH                          pleaSure
+TH                          wiTH
+DH                          THere          
+H                           Hat
+TX                          buTTer
+DX                          laDDer
+'                           ~/T/'/E/S/T/~
+                            (Word primary stress mark (TEST))
+X                           ~/X/A/R/~
+                            (Word secondary stress mark (ARE))
+Q                           ~/F/'/AI/R/Q/A/R/M/~
+                            (Morpheme boundary mark 
+                            (FIREARM)) 
+
+
+5. STANDARD ACCENT DCD UTILITY
+
+The DCD utility is a development software which runs on an IBM
+PC for generating the user's own customized dictionary as DCD
+files.  If needed, the DCD file can be uploaded from the PC to any
+host and then downloaded to Accent by the COPY Command
+appropriate to that host's Operating System.  All Accent models
+have a built-in, 4k-byte memory block which can hold
+approximately 250 10-character words.  Once the DCD is
+downloaded, Accent will always search through the DCD first for
+any given word during the text-to-speech processing.
+
+5.1           DCD SOFTWARE OPERATION
+
+To generate a custom dictionary for Accent, the DCD development
+software (the program named DCD.EXE on the diskette provided)
+and a DCD source file are needed.  The DCD source file may be
+created (with any Editor for straight ASCII characters) under any
+file name with any file extension.
+
+A sample DCD source file is shown in Section 5.2.4.  The followings
+are general rules for creating the DCD source file.
+
+(1) Only upper case characters are allowed.
+
+(2) Legal characters for spelling are:
+
+     ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+(3) The spelling, phonemes, and part-of-speech are entered in that
+order, and are separated only by two commas.  Phonemes should
+conform to the standard Accent phoneme input format as shown in
+Section 4.2.1.
+
+(4) The words containing the same first-letter should not exceed
+255 in number.  That is, each Alphabetic group should not have
+more than 255 words.
+
+(5) No Space character is allowed in the DCD source file.
+
+(6) No empty line is allowed in the DCD source file.
+
+After the DCD source file has been created, the DCD.EXE program
+must then be executed (by typing in "DCD xxxxxx.xxx <CR>") to
+generate a Hex file and an absolute Object file.  The Hex file will
+be used for download.  Both the Hex file and the Object file have
+the same name as that of the DCD source file, and the file
+extensions are listed as follows:
+
+Hex file:     xxxxxx.DLX
+Object file:  xxxxxx.OBJ 
+
+During the generation of the DCD, the <.> will be prompted to
+indicate the word count.  Each <.> prompt indicates that ten words
+have been processed.
+
+After the DCD Hex file and Object file have been generated, the
+memory size (in bytes) of the DCD and the error message (if any)
+will be shown on the screen.  The user should check to assure that
+the memory size does not exceed 4k bytes.
+
+To download the DCD to Accent, use the host computer's COPY
+Command to copy the Hex file to Accent through the
+communication link, the device driver or the RS-232C port.  Since
+each time a DCD file is downloaded to Accent, it overwrites the old
+DCD that was in Accent, multiple DCD applications may be
+implemented easily.  To totally disable Accent's DCD search after
+a DCD file has been downloaded, simply download the
+DUMMY.DLX file to Accent.  The DUMMY.DLX file is in the
+Demo/Utility diskette provided.
+
+5.2           RULES FOR BUILDING THE
+              CUSTOM DICTIONARY
+
+Any word in the DCD source file must contain only the capitalized
+Alphabetic letters.  Because the Accent Text Processor already
+processes numerous prefixes and suffixes, the DCD user will save
+memory by entering only the root words, and thereafter testing for
+any of their derivatives which he wishes Accent to speak. 
+
+The correct part-of-speech for each entry word is required for the
+text processor to correctly parse the phrase/sentence and generate
+more-natural sounding speech.
+
+5.2.1         THE ROOT WORD
+
+Any specific word which is entered into the DCD will always be
+pronounced as phonemically entered.  In addition, that word may
+combine with various of its prefixes and/or suffixes to form yet
+other words which will also be pronounced correctly. 
+
+Nevertheless, due to the complexity of the text processing rules,
+internal rule conflicts may result in skewed pronunciation of words
+derivative of the root word entered.  Therefore it is suggested that
+when any root word is entered into the DCD, all related words for
+which the user requires accurate, correct pronunciation be tested
+as soon as the DCD has been downloaded. Should a related word
+or words be mispronounced (which might happen when, for
+example, the word has both a prefix and multiple suffixes), the
+user should simply enter the mispronounced word or words into
+the DCD.  The Accent text processor supports the following
+prefixes and suffixes:
+
+PREFIXES:
+
+ab-           down-         mal-          poly-             sur-
+anti-         en-           micro-        post-             sus- 
+auto-         ex-           mis-          pre-              tele-
+be-           grand-        mono-         pro-              trans-
+bi-           half-         multi-        re-               tri-
+co-           im-           non-          right-            ultra-
+com-          in-           out-          semi-             un-
+con-          inter-        over-         short-             under-
+counter-      ir-           para-         sub-              up-
+de-           left-         per-          super-            vice-
+dis-
+
+SUFFIXES:
+
+-ic           -ible         -ial          -ern              -est
+-d            -wise         -ual          -ship             -ist  
+-ed           -ate          -ful          -er               -ency
+-hood         -uate         -ism          -or               -ly
+-ance         -ure          -n            -s                -ally
+-ence         -ive          -man          -es               -ery
+-side         -ize          -en           -less             -ory
+-age          -ing          -ion          -ness             -ty
+-like         -ish          -ation        -ous              -ity
+-able         -al           -son          -ment
+
+5.2.2         THE PART-OF-SPEECH
+
+Those parts-of-speech which are to be assigned by the DCD user as
+he enters vocabulary items, and which are supported by the Accent
+text processor, are listed as follows:
+
+PART-OF-SPEECH              REPRESENTATION
+
+1                           Noun
+2                           Verb
+3                           Adjective
+4                           Adverb
+7                           Present Participle
+8                           Past Participle
+13                          Interjection
+19                          Verb or Noun (with same
+                            pronunciations)
+62                          Verb or Noun/Adjective having -ate
+                            as suffix (with different
+                            pronunciations)
+63                          Verb or Noun (with different
+                            pronunciations)
+
+5.2.3         WORDS WITH TWO
+              PRONUNCIATIONS
+
+If a word has two pronunciations with 63 as its part-of-speech,
+both words should be entered into the DCD adjacently.  The first
+word should always have the verb pronunciation, with the
+part-of-speech as 63.  If a word has two pronunciations with 62 as
+its part-of-speech, only the verb needs to be entered into the DCD. 
+The Accent text processor will search for the correct pronunciation
+when parsing the sentence.
+
+5.2.4         A SAMPLE DCD SOURCE FILE
+
+SUPERMAN,S/'/OO/P/ER/M/EA/N/,1
+COMBO,K/'/A/M/B/OU/,1
+ESTEEM,UU/S/T/'/IY/M/,19
+GRADUATE,G/R/'/EA/J/U/EI/T/,62
+EAT,'/IY/T/,2
+EATING,'/IY/T/I/NG/,7
+EATEN,'/IY/T/UU/N/,8
+NICELY,N/'/AI/S/L/II/,4
+RECORD,R/I/K/'/O/R/D/,63
+RECORD,R/'/E/K/ER/D/,1
+FINE,F/'/AI/N/,3
+
+5.2.5         ERROR MESSAGES
+
+0      Phoneme name too long, or  missing the phoneme
+       separator </>
+
+1      Phoneme name not valid
+
+4      Primary or secondary stress not followed by the </>
+
+5      Part of speech not valid
+
+6      Primary or secondary stress disallowed on non-vowel phoneme
+
+7      DCD memory size exceeds 32k-bytes
+
+
+6. PROGRAMMING ACCENT
+
+The following are some general rules and hints for programming
+Accent in various applications:
+
+(1) Once a specific voice (average pitch, speech rate, voice
+characteristic, sentence intonation, etc.) has been chosen for
+output, the escape sequences along with system option parameters
+and DCD (if any) may be sent to Accent as part of power-up
+initialization.  The initialization for the Screen-Review applications
+is recommended to be <ESC>=F <ESC>=B <ESC>OA <ESC>M4
+<ESC>=M <ESC>N1 <ESC>OL.  Other parameters may be user
+tailored or selected.
+
+(2) It is important that all text be punctuated normally, and that
+compound words be properly hyphenated.  Any word not 
+pronounced satisfactorily by Accent may be corrected by using the
+DCD, phoneme input, or intentional misspelling.
+
+(3) Speech is often better perceived when the pitch is set at a lower
+level.  At low pitch, the speech rate may thus be set at a level
+higher than usual without losing intelligibility.  From experiments
+and listening tests, <ESC>P3 <ESC>V4 settings give an
+average-low male voice with very intelligible, natural sounding
+speech for regular text at the default speech rate.
+
+(4) Text and escape-sequence commands for any application may
+be entered and tested first using the DEMO.BAS (or
+DEMO232.BAS) program provided or any suitable Editor.  After
+which the text and/or the escape sequences may be saved as a file
+for further use or editing.
+
+(5) The <ESC>=F and <ESC>=B commands will affect sentence
+intonation.  They are not recommended for general applications or
+for Screen-Review applications when slow speech-rate is used for
+proof-reading.
+
+(6) If, for the first-time synthetic speech listener, the word
+boundaries in a sentence are not perceived distinctly enough, the 
+Set Space Pause Time command may be used to increase the pause
+between words.  Medium short, descriptive type of sentences
+always give good comprehension to the listeners, especially when
+the listeners are expecting certain prompts.
+
+(7) For applications requiring different voices (by using speech
+option commands) as well as using the Flush command frequently,
+always try to Flush Accent first then send the speech option
+commands.  Enable and use the Control-X character as the Flush
+command.
+
+(8) For applications requiring frequent, constant Flush of speech,
+unless the application program can assure that Accent's input text
+buffer is never full by using the Status Request command in
+Section 3.2.3.2, the following recommendations should be taken
+into consideration: If Accent's device driver is used for host
+interface, the LPT port interface should be adopted because it is
+re-entrant, speech may be flushed anytime with a Flush command
+(LPT's Initialize command).  If the RS-232C is used for host
+interface, the Xon/Xoff protocol should be used because even when
+Accent has sent Xoff to the host, it still has 128-byte free space for
+further text input or Flush command.
+
+(9) This is for Accent-PC only.  In applications requiring a
+multi-host configuration, if the text is both to be spoken and to be
+sent to the auxiliary port, it is the user's responsibility to
+guarantee that the auxiliary port (either the PC or the RS-232C
+port) has an uninterrupted receiving capability so that Accent does
+not get hung up waiting for the auxiliary port ready.  
+
+
+7. SPECIFICATIONS
+
+The following sections describe the specifications of each Accent
+model.
+
+7.1           ACCENT-PC
+              SPECIFICATIONS
+
+Parallel Bus:
+       IBM Personal Computer
+
+Slot:     
+       One full-length slot in IBM PC, PC/XT, PC/AT or 
+       Compatibles
+
+Address:
+       Switch-selectable
+       (4 I/O Addresses, Default 2A8-2AB Hex)
+
+Serial I/O:         
+       RS-232C as DCE device
+
+Power:    
+       500 mA Typical @ +5V
+       600 mA Maximum @ +5V
+       40 mA Typical @ +12V
+       80 mA Maximum @ +12V
+       10 mA Typical @ -12V
+       20 mA Maximum @ -12V
+
+Load:     
+       1 TTL load/bus line Maximum
+
+Audio Output Power:
+       0.5W Maximum, 8-Ohm or 4-Ohm Speaker
+
+Physical Dimensions:
+       5.2" x 10.5" x 0.5" (Maximum component height)
+
+Weight:
+       0.75 lbs.
+
+Software Device Driver:
+       DOS-2.11 or higher
+       Size:  3k bytes
+
+FCC Authorization:
+       Class-B, Part-15J
+
+7.2           ACCENT-MC
+              SPECIFICATIONS
+
+Parallel Bus:
+       IBM PS/2, Microchannel; 8/16 bit I/O card slot
+
+Slot:
+       One full-length slot in IBM PS/2 Microchannel computer
+
+Address:
+       Card ID: 6152 Hex
+
+Power:
+       450 mA Typical @ +5V
+       550 mA Maximum @ +5V
+       30 mA Typical @ +12V
+       80 mA Maximum @ +12V
+
+Load:
+       1 TTL load/bus line Maximum
+
+Audio Output Power:
+       0.5W Maximum, 8-Ohm or 4-Ohm Speaker
+
+Physical Dimensions:
+       3.5" x 11.5" x 0.5" (Maximum component height)
+
+Weight:
+       0.75 lbs.
+
+Software Device Driver:
+       DOS-4.01 or higher
+       Size:  3k bytes
+
+7.3           ACCENT-SA
+              SPECIFICATIONS
+
+Serial I/O:
+       RS-232C as DCE device
+
+Power:
+       9V/300mA AC Adaptor or Internal battery
+
+AC Adaptor Input:
+       110V/60HzAudio Output Power:
+       0.5W Maximum, 8-Ohm or 4-Ohm Speaker
+
+Audio Output Power:
+       0.5W Maximum, 8-Ohm or 4-Ohm Speaker
+
+Physical Dimensions:
+       5.7" x 8.5" x 1.6"
+
+Weight:             
+       2.5 lbs. (AC adaptor and battery included)
+
+FCC Authorization:
+       Class-B, Part-15J
+
+7.4           ACCENT-mini
+              SPECIFICATIONS
+
+Parallel Bus:                 
+       IBM Personal Computer
+
+Slot:
+       One half-length slot in IBM PC, PC/XT, PC/AT, or
+       Compatibles
+
+Address:            
+       3EE-3EF or 2EE-2EF Hex, jumper-selectable (2 I/O
+       Addresses; Default 3EE-3EF Hex)
+
+Interrupt:
+       IRQ2(PC/XT)/IRQ9(PC/AT), IRQ3, IRQ4, or IRQ7; 
+       Jumper-selectable (Default IRQ2/IRQ9)
+
+Power:
+       All CMOS circuits, minimum power usage
+
+Load:
+       2 CMOS load/bus line Maximum
+
+Audio Output Power :
+       0.5W Maximum, 8-Ohm or 4-Ohm Speaker
+
+Physical Dimensions:
+       4.3" x 4.6" x 0.5" (Max. component height) 
+
+Weight:
+       0.6 lbs.
+
+Software Device Driver:
+       DOS-2.11 or higher
+       Size:  128k bytes of expanded memory and 14k bytes of 
+              conventional memory
+
+7.5           ACCENT-1600
+              SPECIFICATIONS
+
+Parallel Bus:
+       Toshiba Proprietary Bus
+
+Slot:
+       Internal Modem slot
+
+Address:
+       3EE-3EF Hex
+
+Interrupt:
+       IRQ2 for PC/XT and IRQ9 for PC/AT
+
+Power:
+       All CMOS circuits, minimum power usage
+
+Load:
+       2 CMOS load/bus line maximum
+
+Audio Output Power:
+       0.5W Maximum, 8-Ohm or 4-Ohm Speaker
+
+Physical Dimensions:
+       5.0" x 4.5" x 0.5" (Maximum component height)
+
+Weight:
+       0.5 lbs.
+
+Software Device Driver:
+       DOS-2.11 or higher
+       Size:  128k bytes of expanded memory and 14k bytes of
+              conventional memory
+
+7.6           ACCENT-XE
+              SPECIFICATIONS
+
+Parallel Bus:
+       Toshiba Proprietary Bus
+
+Slot:
+       Built-in Modem slot
+
+Address:
+       2F8-2FF Hex
+
+Interrupt:
+       IRQ3
+
+Power:
+       All CMOS circuits, minimum power usage
+
+Load:
+       2 CMOS load/bus line maximum
+
+Audio Output Power:
+       0.5W Maximum, 8-Ohm or 4-Ohm Speaker
+
+Physical Dimensions:
+       2.1" x 5.4" x 0.4" (Maximum component height)
+
+Weight:
+       0.3 lbs.
+
+Software Device Driver:
+       DOS-2.11 or higher
+       Size:  128k bytes of expanded memory and 14k bytes of
+              conventional memory
+
+
+LIMITED WARRANTY
+
+We warrant, for a period of one year from the date of shipment to the
+original purchaser, that all Accent models are free from defects in
+workmanship and materials under normal use  and service, provided the
+equipment is used in accordance with the User's Manual.  This Warranty
+shall be void if the equipment is modified, the equipment's case (if any) is
+opened, or as mentioned elsewhere in the user's manual.  If any failure to
+conform to this Warranty appears during the one year period, we will
+correct the defect by either suitable repair or replacement, at our option
+and at our expense, if you return the product, transportation prepaid, to
+Aicom Corporation, 1590 Oakland Road, Suite B112, San Jose, Ca. 95131. 
+We will pay the cost of returning the repaired or replaced equipment to
+you.  The equipment must be returned with proof of purchase in its
+original (or other adequate) packaging to the point of purchase or, by prior
+arrangement with Aicom Corporation, to Aicom Corporation.
+
+Aicom Corporation reserves the ultimate authority to determine what
+constitutes warranty repair.  If it is determined that the product is not
+under Warranty, it will be repaired using our standard rates for parts and
+labor.  Aicom Corporation advises you to make arrangements with Aicom
+Corporation directly or with your Aicom authorized vendor prior to your
+returning any equipment for repair.
+
+The above warranty is the only warranty authorized by Aicom
+Corporation.  
+
+THE ABOVE WARRANTY STATES THE PURCHASER'S EXCLUSIVE
+REMEDY FOR ANY BREACH OF AICOM CORPORATION'S
+WARRANTY AND FOR ANY CLAIM, WHETHER SOUNDING IN
+CONTRACT, TORT OR NEGLIGENCE, FOR LOSS OR INJURY CAUSED
+BY THE SALE OF THIS PRODUCT.  WITHOUT LIMITING THE
+GENERALITY OF THE FOREGOING, AICOM CORPORATION SHALL
+IN NO EVENT BE RESPONSIBLE FOR ANY LOSS OF BUSINESS OR
+PROFIT, DOWNTIME OR DELAY, LABOR, REPAIR, OR MATERIAL
+COSTS, INJURY TO PERSON OR PROPERTY OR ANY SIMILAR OR
+DISSIMILAR CONSEQUENTIAL LOSS OR DAMAGE INCURRED BY
+PURCHASER, EVEN IF AICOM CORPORATION HAS BEEN ADVISED
+OF THE POSSIBILITY OF SUCH LOSSES OR DAMAGES. 
+
+Some States do not allow the exclusion or limitation of incidental or
+consequential damages or limitations on how long an implied warranty
+lasts, so the above limitation or exclusion may not apply to you.
+
+This Warranty shall not be applicable to the extent that any provision of
+this Warranty is prohibited by any Federal, State or Municipal Law which
+cannot be preempted.  This Warranty gives you specific legal rights, and
+you may also have other rights which vary from State to State.

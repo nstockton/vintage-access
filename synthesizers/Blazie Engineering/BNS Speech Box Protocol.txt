@@ -1,0 +1,216 @@
+Using Braille 'n Speak and Braille Lite as an external Synthesizer/Display
+November 1, 1995
+Revised November 9, 1995 to add Silence Code
+Revised October 15, 1995 to add Braille Lite 40 features
+
+This document outlines the serial port protocol for using the Braille 'n
+Speak (BNS) and Braille Lite (BLITE) as external synthesizers and Braille 
+displays.  The same commands also apply to the Type 'n Speak (TNS).  
+
+Note: When using a Type 'n Speak, press f7 instead of dots 3-4-5 chord
+to enter the speech parameters menu.
+
+
+At the present time there are several different modes that we call
+"Speech Box Mode" in these products.  In SIMPLE speech box mode ( chord 2 
+3 4 5 followed by dots 1 2 3 4 5 6)
+when it receives a word followed by a space or carriage return. In this 
+SIMPLE mode the product uses the 4k (normally) clipboard as a buffer and 
+handshakes when it if full.  
+In another mode the products respond only after a return is received (Line 
+Speech Box Mode chord 3 4 5 followed by chord 1 2 3 4 5 6 followed by L 
+for Line handshaking).  If you press the letter b after writing dots 345
+chord or f7 on a Tns,  you will put the unit in block handshaking mode.
+
+In this mode the product only
+speaks when it receives a return character.  Furthermore it handshakes  
+(stops transmission) on either a line or block basis.  If Line is 
+selected then it immediately handshakes (Xoff if software or CTS low if 
+hardware) when a return character is received.  It will handshake on 
+again when the speech is completed (every phoneme spoken).  If Block is 
+selected than handshaking is done when the block (256 characters) is 
+filled.  It will however still begin speaking when a return is received.
+
+There is a parameter called "Interactive Timeout" in the status menu of 
+each product.  This parameter allows the product to speak or display data 
+in its buffer after a certain delay (timeout) has occured and a 
+terminator (return of space) has not been received.  This allows the 
+product to speak prompts like "password?" when no space or return is sent 
+after them.  This timeout can be set to the number of tenths of seconds 
+that will give a good delay without speaking individual letters.  We find 
+a value of 3 is good.  However screen reader drivers will always send a 
+terminator at the proper time so this parameter does not have to be set 
+at all in most cases.
+
+There is a SPECIAL speech box mode (chord 3 4 5 or f7 followed by chord 1 2 3
+4 or alt-p on a Tns ) which automatically sets many parameters for our products
+ PCMaster and
+Windows Master without the user having to set a lot of parameters 
+manually.  Specifically it sets:
+line handshake mode
+Speak on return character instead of space
+Interactive timeout of 3
+hardware handshaking
+
+KEYBOARD OUTPUT:
+We hope that you will not just use these products as output devices, but 
+instead allow the user to use the keyboard to input and control your 
+product.  
+
+When in any of the speech box modes the keyboard is active and any key 
+presses will be sent out the serial port.  The keys are mapped like the 
+Braille dots dots 1 thru 6 are bits 0 thru 5 in the serial character and 
+the space bar is bit 6 in the character.
+Refer to "Documentation for Braille Lite 40 extended key codes in speech box
+mode" for dots 7 & 8 on the Braille Lite  40.
+Note that only one combination of the keys is not available and that is
+chord 3 4 5.  This chord gets the user back into the speech parameters menu
+so speech box mode can be turned off.  It will not generate a serial character
+out.
+
+We strongly encourage you to review the normal Braille 'n Speak commands 
+before you develop keyboard commands to control your product.  The 
+Braille 'n Speak has a rich set of cursor movement and editing commands 
+which are well known and have proven easy to use.  If the commands you 
+implement match the normal Braille 'n Speak commands your product will be 
+easier to learn and to use.  You can get the complete set of commands 
+from your ftp site "blazie.com".  You will find commands for most 
+functions that you would want a user to use.
+
+The Braille Lite 18 has an advance bar which returns a character code of 81H for
+forward advance and 83H for back advance.  
+Refer to "Documentation for Braille Lite 40 extended key codes in speech box
+mode" for advance bars on the Braille Lite  40.
+
+INDEXING:
+All of these products do indexing.  If the serial data stream contains a 
+control f (6 hex) character, it will not be processed by the 
+speech/braille processor but it will be output to the serial port when 
+the proceeding speech is completely spoken.  Typically the developer will 
+want to know when each word is finished being spoken.  To do this, a 
+control F is put after each word in the serial data stream.  Then the BNS 
+will output a control F after each word is spoken.  This is the same 
+scheme used by Aicom.
+
+CONTROL CODES: 
+Most of the speech parameters can be controlled via the serial port while 
+in any of the speech box modes.  Almost all control commands begins with a 
+Control E (written ^e) character and followed by 0 or 1 for on/off.  The '0' 
+and '1' 
+are ascii printable characters, not binary.  Some control sequences have 
+a 2 digit value, for example speech rate 1 thru 16.
+
+Silence Current Speech and Flush the Buffer:  Control X 
+
+All products:
+^exE  Speech rate. x = '1' thru '16'
+^eC   Speech rate set to 10  (for compatibility to Echo)
+^eA   Set to Total Punctuation (everything, even spaces.  Mostly unusable).
+^eS   Set to Some Punctuation 
+^eM   Set to Most Punctuation (best mode for Synthesizers).
+^eZ   Set to No Punctuation
+^exP  Set Pitch to x, x = '0' to '16'
+^exV  Set Volume to x, x = '0' to '16'
+^exT  Set Frequency (Tonal Quality) to x, x = '0' to '16'
+
+In the Braille Lite products, if the Braille display is not off then 
+anything that gets spoken will be displaye
+
+if you are in line handshaking mode only.  Putting the Braille Lite into
+block or word mode will not allow the display to show you what the
+speech says.
+
+ So, the Braille Lite will
+work "sort of" in place of most synthesizers.  However if you want to 
+control the cursor or use your own Braille Code you will have to use 
+the Binary mode described below.  We suggest using this mode for all 
+Braille display work since you will certainly want to generate your own 
+cursor.
+
+Blite and Blite 40 Only: 
+^exG  grade one messages.  
+x = '1' for on and '0' for off. ^exW  word wrap.  x = '1' for on and '0' for off.
+^exH  display all.  x = '1' for on and '0' for off.
+^e0B: braille display off
+^e1B: braille display on
+^e0O: speech off
+^e1O: speech on
+^e0F: 8-dot mode off
+^e1F: 8-dot mode on
+Note: 0 and 1 are '0' and '1', not interger values.
+^eD: binary mode
+In Binary mode you send 18 (or 40 for Blite40) characters and they go 
+directly to the display.  Each Character will be one Braille Cell, with 
+dots 1 thru 8 being bits 0 thru 7 of the serial character.  Furthermore 
+in order to avoid timing problems with the speech and Braille we have 
+implemented a form of handshake which the Binary mode requires.  If 
+you send ^eD to set binary mode, you should wait until Braille Lite
+returns ^e.  Then you send just 18 (or 40 for BLITE40) characters to Braille
+Lite to display and then you should wait again until Braille Lite returns ^e.
+After Braille Lite displays 18 chars (or 40 chars for BLITE40), it will return
+to a normal mode (e.g. nonbinary mode).  This handshaking is necessary because
+of serial buffering and the internal multitasking going on within the Braille
+Lite. The following is an example: 
+send ^eD
+while (get != ^e) continue;   /* wait for Blite to return a control E */
+send 18 chars
+while (get != ^e) continue;   /* wait again for control E */
+
+Documentation for Braille Lite 40 extended key codes in speech box
+mode
+
+     When in speech box mode, Braille Lite 40 cursor routing keys,
+advance bars, and eight dot keys are sent out the serial port as
+three byte key codes.
+
+     The initial byte of each extended key code is always 0.  A 0
+indicates that the character which follows will be either a cursor
+routing key, an advance bar, or an eight dot key.
+
+The second byte indicates whether the key is an eight dot key, or
+a cursor routing key or advance bar.  If it is a 0, then the third
+byte will indicate a cursor routing key or an advance bar key.  If
+it is non-zero, then it contains dots 1-8 in bits 0-7 of the key
+code.
+
+The third and final byte varies depending on the value of the
+previous byte.  If byte 2 was a 0, then the third byte will contain
+the value of the cursor routing key (1-40), or the status of the
+two advance bars.  If bit 7 of the third byte is set, then this
+indicates that the lower four bits indicate the status of the two
+advance bars.  the bits are as follows:
+3-- left side of left advance bar
+2-- right side of left advance bar
+1-- left side of right advance bar
+0-- right side of right advance bar
+If bit 7 of the third byte is not set, then the lower 6 bits
+contain the number of the cursor key which was pressed (1-40).
+
+If byte two was non-zero, then the third byte contains the
+"compatible" key code (dots 1-6 in bits 0-5 and the space bar in
+bit 6).
+
+examples:
+
+user presses cursor routing key 2
+
+bytes sent: 0X00, 0X00, 0X02
+
+user presses left side of left advance bar
+
+bytes sent: 0X00, 0X00, 0X81
+
+user presses dot 7 chord
+
+bytes sent: 0X00, 0X40, 0X40
+
+user presses dot 7
+
+bytes sent: 0X00, 0X40, 0X00
+
+
+GENERAL NOTES:
+
+If you need more information or help in getting some of this to make 
+sense or to work, please contact either:
+Deane Blazie email deane@blazie.com

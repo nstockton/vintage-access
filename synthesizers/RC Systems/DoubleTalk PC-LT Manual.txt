@@ -1,0 +1,2718 @@
+﻿------------------- DOUBLETALK PC/LT USER'S MANUAL -------------------
+Copyright (C) 1991-1997 RC Systems, Inc. All rights reser
+*Page 1*
+
+------------------- DOUBLETALK PC/LT *USER'S* *MANUAL* -------------------
+Copyright (C) 1991-1997 RC Systems, Inc.
+All rights reserved.
+Tech Support
+Phone: (425) 355-3800
+E-mail: support@rcsys.com
+NOTICE
+This *manual* is available in braille from
+HotKey Systems
+63-25B Bourton St. #1B
+Rego Park, NY 11374
+Ph: (718) 335-1788
+Fax: (718) 335-1786
+RC Systems, Inc.
+1609 England Ave.
+Everett, WA 98203
+Ph: (425) 355-3800
+Fax: (425) 355-1098
+http://www.rcsys.com
+i
+------------------------------------------------------------------------
+*Page 2*
+
+LIMITED WARRANTY
+Short Version
+If anything should go wrong with your DoubleTalk, and it's not your
+fault, we'll fix it for free, up to two years after you purchased it.
+Long Version
+(Our lawyers made us put this here. It makes them feel important.)
+RC SYSTEMS, INC. ("RC Systems") warrants this product against defects
+in material and workmanship for a period of TWO (2) YEARS from the
+date of original retail purchase by the original consumer purchaser.
+If you discover a defect in this product, RC Systems will, at its
+option, repair, replace or refund the purchase price of this product
+at no charge to you, provided you return it during the warranty
+period, transportation charges prepaid, to the dealer from whom you
+purchased it or to RC Systems. A copy of your purchase receipt or
+other proof of date of original consumer purchase must be provided
+with each product returned for warranty service. Please also attach
+your name, address, telephone number, and a complete description of
+the problem when returning any RC Systems product for warranty
+service.
+You may request additional information about this warranty by
+contacting the RC Systems dealer from whom the product was purchased,
+or by contacting RC Systems directly. This warranty applies only to
+products manufactured by RC Systems; RC Systems does not warrant any
+products that are not RC Systems products. This warranty does not
+apply if the product has been damaged by accident, abuse, misuse or
+misapplication, has been modified without the written permission of RC
+Systems, or if any RC Systems serial number has been removed or
+defaced.
+ALL IMPLIED WARRANTIES, INCLUDING IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ARE LIMITED IN
+DURATION TO TWO YEARS FROM THE DATE OF ORIGINAL RETAIL PURCHASE OF
+THIS PRODUCT.
+THE WARRANTY AND REMEDIES SET FORTH ABOVE ARE EXCLUSIVE AND IN LIEU OF
+ALL OTHERS, ORAL OR WRITTEN, EXPRESS OR IMPLIED. No RC Systems dealer,
+agent or employee is authorized to make any modification, extension or
+addition to this warranty.
+RC SYSTEMS IS NOT RESPONSIBLE FOR SPECIAL, INCIDENTAL OR CONSEQUENTIAL
+DAMAGES RESULTING FROM ANY BREACH OF WARRANTY, OR UNDER ANY OTHER
+LEGAL THEORY, INCLUDING LOST PROFITS, GOODWILL, DOWNTIME, DAMAGE TO OR
+REPLACEMENT OF EQUIPMENT AND PROPERTY, AND ANY COSTS OF RECOVERING,
+REPROGRAMMING OR REPRODUCING ANY PROGRAM OR DATA STORED IN OR USED
+WITH RC SYSTEMS PRODUCTS.
+Some states do not allow the exclusion or limitation of incidental or
+consequential damages or limitations on how long an implied warranty
+ii
+------------------------------------------------------------------------
+*Page 3*
+
+lasts, so the above limitation or exclusion may not apply to you. This
+warranty gives you specific legal rights, and you may also have other
+rights which vary from state to state.
+iii
+------------------------------------------------------------------------
+*Page 4*
+
+TABLE OF CONTENTS
+INTRODUCTION ........................................................1
+ABOUT THIS *MANUAL* ...................................................2
+SYSTEM REQUIREMENTS .................................................3
+DoubleTalk PC ...................................................3
+DoubleTalk LT ...................................................3
+INSTALLATION ........................................................4
+DoubleTalk PC ...................................................4
+DoubleTalk LT ...................................................5
+Utilities Installation ..........................................7
+Windows 95/98 System Registration ...............................7
+What's Next? ....................................................8
+UTILITIES ...........................................................9
+Disk Contents ...................................................9
+SmartTalk .......................................................9
+TTS ........................................................10
+LPC ........................................................10
+PCM ........................................................10
+TGN ........................................................11
+DoubleTalk Drivers .............................................11
+Talking printer ............................................11
+Installing DTPRN .......................................11
+Disabling DoubleTalk's buffer ..........................12
+Removing DTPRN from memory .............................12
+Sending text and commands ..............................12
+Stopping speech production .............................13
+Word 5.0 talking printer ...................................13
+IBM Speech Adapter emulator ................................14
+IBM Screen Reader ..........................................15
+SSIL driver ................................................16
+Davidson drivers ...........................................17
+Windows sound driver .......................................18
+Windows 3.1 ............................................18
+Windows 95 .............................................18
+Configuring the sound driver ...........................19
+Speaking Spanish ...............................................19
+Configuring SSIL-based screen readers for Spanish ......19
+OPERATIONAL DESCRIPTION ............................................21
+TTS Operating Modes ............................................21
+Text mode ..................................................21
+Character mode .............................................21
+Phoneme mode ...............................................21
+Translation Accuracy ...........................................22
+Commands .......................................................22
+Command formats ............................................23
+The command character ......................................23
+Changing the command character .........................23
+Command parameters .........................................23
+Command Descriptions ...........................................24
+iv
+------------------------------------------------------------------------
+*Page 5*
+
+Voice (nO) .................................................24
+Articulation (nA) ..........................................25
+Expression (E/nE) ..........................................25
+Monotone (M) ...............................................25
+Formant Frequency (nF) .....................................25
+Speed (nS) .................................................25
+Pitch (nP) .................................................26
+Volume (nV) ................................................26
+Tone (nX) ..................................................26
+Reverb (nR) ................................................26
+Punctuation Filter (nB) ....................................26
+Timeout Delay (nY) .........................................27
+Load Exceptions (L) ........................................28
+Enable Exceptions (U) ......................................28
+Reinitialize (@) ...........................................28
+Zap Commands (Z) ...........................................28
+DTMF Generator (n*) ........................................28
+Tone Generators (J/nJ) .....................................29
+Text Mode/Delay (T/nT) .....................................29
+Character Mode/Delay (C/nC) ................................29
+Phoneme Mode (D) ...........................................30
+Phoneme attribute tokens ...............................30
+Applications of Phoneme mode ...........................31
+Sleep Timer (nQ) ...........................................31
+PCM Mode (#/n#) ............................................33
+Protocol Options (nG) ......................................33
+Index Marker (nI) ..........................................33
+Interrogate (?) ............................................33
+Clear (Control-X) ..........................................33
+Command Summary ................................................34
+APPENDIX A .........................................................35
+LPC Word Lists .................................................35
+APPENDIX B .........................................................38
+DoubleTalk LT Cable Connections ................................38
+APPENDIX C .........................................................39
+Specifications .................................................39
+DoubleTalk PC ..............................................39
+DoubleTalk LT ..............................................40
+v
+------------------------------------------------------------------------
+*Page 6*
+
+INTRODUCTION ---------------------------------------------------------
+DoubleTalk is a voice synthesis/sound system which supports
+virtually all of the voice technologies in use today, including
+text-to-speech (TTS), LPC, PCM, ADPCM and CVSD. With it, your
+IBM-compatible computer will be able to speak to you from your own
+programs, as well as many programs specifically written for voice or
+sound, including Windows-based (multimedia) programs. Most programs
+written for the older Echo speech synthesizers will also work with
+the DoubleTalk LT.
+Among DoubleTalk's features are a built in, 16-bit microprocessor,
+520 Kbytes of on-board memory, integrated text-to-speech converter
+and LPC decoding processor - all of which leave your computer's
+resources completely free for running your application programs.
+There's even an advanced power management system built in - less
+demanding tasks use less power than more computationally-intensive
+ones do. As a matter of fact, when DoubleTalk is doing the "least
+demanding" task of sitting idle, it consumes about 500 times less
+power than a typical 60 watt household light bulb!
+There are many ways you can use your DoubleTalk synthesizer. If you
+write your own programs, you can easily add voice output to them.
+Commercial programs specifically written to work with DoubleTalk, as
+well as many that work with IBM's Speech Adapter, can be used with
+DoubleTalk. Windows-based applications supporting digital sound can
+also be used. There's even a program on the included Utilities disk
+that allows you to install DoubleTalk as a "talking" printer or
+communications device, enabling you to read files from many
+text-based programs with voice output!
+DoubleTalk is also supported by virtually all of the major "screen
+reader" programs that give blind users access to their computers.
+RC SYSTEMS
+- 1 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 7*
+
+ABOUT THIS *MANUAL* ----------------------------------------------------
+This *manual* covers both the DoubleTalk PC and DoubleTalk LT voice
+synthesizers. DoubleTalk PC is a card that plugs into a standard
+PC/AT eight or 16-bit slot in your computer. DoubleTalk LT is an
+external, stand-alone version of DoubleTalk PC that plugs into a
+serial port of your computer, instead of an internal slot. This can
+be beneficial when you need to share DoubleTalk with more than one
+computer, or where an internal slot is not available (as in many
+laptops and notebooks). DoubleTalk LT can also be used with non DOS-
+based computers, such as the Apple II family and Macintosh.
+We have attempted to write this *manual* as concisely and clearly as
+possible. The subjects of interest to everyone, such as installing
+DoubleTalk, are contained in the first part of the *manual*. The more
+complex (and usually boring to non-programmer types) subjects are
+left to the latter parts of the *manual*, which you may skip entirely
+if you wish. In particular, the *manual* enters the Twilight Zone in
+the section entitled "Operational Description," and it never really
+does return to reality after that. However, should you have
+difficulty falling asleep some night...
+For the serious user, software developer, or otherwise deranged
+person, a DoubleTalk Developer's Tools disk is available from RC
+Systems. It is not a product for the novice user or faint-hearted,
+as it is quite technical in nature (it uses words like "bits" and
+"I/O ports"). Topics covered include:
+Using the exception dictionary & compiler
+Using DoubleTalk's LPC and PCM modes
+Wave/PCM file conversion utility
+Programming DoubleTalk's tone generators
+Hardware interface with example driver source code
+QuickBASIC (QB), Basic PDS 7 (QBX) and C libraries
+Programming with the DTPRN and INT4DAPI drivers
+Programming tips
+RC SYSTEMS
+- 2 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 8*
+
+SYSTEM REQUIREMENTS --------------------------------------------------
+DoubleTalk PC
+DoubleTalk PC will work with an IBM PC, XT, AT, 386, 486, Pentium,
+PS2-25, PS2-30 or any of the many "compatibles" on the market.
+DoubleTalk PC will not work in computers equipped with
+"Microchannel" style slots, such as the PS2-80. In other words,
+virtually any computer with a standard eight or 16 bit slot (also
+known as a "PC/AT" or "ISA" slot) will work with DoubleTalk PC. No
+interrupts (IRQ's), DMA, or system memory is used by DoubleTalk PC.
+(Try to find another add-in card nowadays that can claim that!)
+DoubleTalk LT
+DoubleTalk LT requires only a serial port operating at 9600 baud, 8
+data bits, 1 stop bit, and no parity (9600, N, 8, 1). The connecting
+cable is designed to be plugged into a standard 9-pin serial
+connector, found on most PCs.
+RC SYSTEMS
+- 3 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 9*
+
+INSTALLATION ---------------------------------------------------------
+DoubleTalk PC
+Installing DoubleTalk PC in your computer is easy. Before you begin,
+be sure you have the following:
+An open 8-bit or 16-bit system expansion slot on
+your computer's motherboard
+MS-DOS or PC-DOS Version 2.0 (or later) present in
+your computer
+A medium screwdriver or 3/16" nut driver or wrench
+Then follow these steps:
+1. Turn off the power to the computer and unplug the power cord.
+Attempting to install a board in the computer while the
+computer's power is on can cause permanent damage to both the
+board and the computer.
+2. Remove the cover from your computer. Refer to your computer's
+owner's guide if you are not sure how to remove its cover.
+3. Choose any empty expansion slot and remove the small metal cover
+by removing the retaining screw with a screwdriver or nut driver.
+Be sure to keep the screw; you'll use it in a later step to
+secure the DoubleTalk board in place.
+4. Hold the DoubleTalk board firmly at the top edges, and firmly
+press the gold connector into the expansion slot. Make sure the
+board is firmly seated in the slot with the gold connector fully
+inserted. The board will fit only one way in the slot.
+5. Using the screw removed in step 3, secure DoubleTalk in the
+computer by reinstalling the screw in the retaining bracket.
+6. Replace the computer's cover and plug in the power cord.
+7. Plug the supplied speaker into the jack in DoubleTalk's retaining
+bracket. Locate the volume control shaft (just above the speaker
+jack) and adjust it to about the mid point of its movement.
+Later, you may want to further fine tune the volume, but setting
+it at the midpoint now insures you don't accidentally attempt to
+use DoubleTalk with the volume turned all the way off.
+8. Turn on the computer and run the test program supplied on the
+DoubleTalk Utilities disk. Do this by inserting the disk in drive
+A: and typing the following DOS commands:
+A: <Enter>
+TEST <Enter>
+RC SYSTEMS
+- 4 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 10*
+
+NOTE
+If you are running a screen reader program at
+the time the test program is run, the test may
+report that DoubleTalk couldn't be found. This
+is because the screen reader and test programs
+are "fighting" each other for control of
+DoubleTalk. Be sure to disable your screen
+reader software before running the above test,
+to avoid this situation.
+In the rare event that your DoubleTalk board does not pass the above
+test, re-check your work, making sure DoubleTalk is installed per
+the above instructions. Usually a mute DoubleTalk can be pinpointed
+to a silly mistake, such as the speaker not being plugged in, or the
+volume control on the card or speaker being turned all the way down.
+If you still cannot get any sound out of DoubleTalk after trying the
+above suggestions, try changing its port address by moving the small
+black plastic connector, located at the lower left edge of the
+DoubleTalk board, to a different pair of pins on the jumper block.
+When moving the connector, make sure it remains oriented from left
+to right, not up and down. DoubleTalk requires two adjacent I/O
+addresses in your computer; the hexadecimal numbers printed on the
+left side of the jumper block indicate the first ("base") address
+used when the black connector is placed in that position. (The I/O
+address is the only configurable aspect of DoubleTalk, since it
+doesn't use DMA or IRQ's. The factory-set address is 29Eh,
+configuring DoubleTalk to use addresses 29Eh and 29Fh.)
+As a last resort, try using another speaker, if one is available.
+HINT
+If headphones are plugged into the speaker's
+headphone jack, the speaker will be muted to
+allow private listening through the headphones.
+The speaker's volume control can be used to
+adjust the listening level.
+If you are experiencing excessive noise coming
+through the headphones (all PCs generate some
+noise; some are worse than others), try the
+following: increase the volume by adjusting the
+volume control on the DoubleTalk card, and
+compensating by reducing the volume level with
+the speaker's volume control.
+DoubleTalk LT
+To set up DoubleTalk LT, follow these steps:
+1. Plug the cord that is attached to the back of DoubleTalk into a
+serial (COM) port in your computer.
+RC SYSTEMS
+- 5 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 11*
+
+2. Plug the AC adapter that came with DoubleTalk into any convenient
+wall outlet. Firmly plug the cord from the AC adapter into the
+power jack at the back of DoubleTalk. Don't be afraid to press
+the plug in hard - it's designed to be a tight fit!
+NOTE
+DoubleTalk LT can also run from a 9 volt
+alkaline battery for periods of up to 10 hours
+or more, depending on usage habits, volume
+level, etc. If you remove the battery, be sure
+to replace the foam that was originally in the
+battery compartment, or undesirable resonances
+(vibrations) may occur during speech production.
+You may use DoubleTalk with the AC adapter even
+though a battery is installed; no battery energy
+will be expended as long as the adapter is
+plugged into the DoubleTalk unit.
+3. If you will be using headphones, plug them into the headphone
+jack in the front of DoubleTalk. (Note: The headphone jack is of
+the monaural type. A stereo/mono adapter must be used if you are
+using stereo headphones, or the sound will be heard from only one
+ear.)
+4. Turn the small black wheel in the front of DoubleTalk until you
+hear a small click. This is DoubleTalk's power switch and volume
+control. Shortly after turning the unit on, you should hear the
+words "DoubleTalk ready" come from the internal speaker or
+headphones. If you do not, check to make sure that the AC adapter
+is properly connected. If you are using headphones, try
+unplugging them and turn DoubleTalk's power off and back on. If
+you hear the power-on message from DoubleTalk's speaker now, you
+may have defective headphones (plugging headphones into the
+headphone jack mutes the internal speaker, to allow private
+listening).
+5. Turn on the computer and run the test program supplied on the
+DoubleTalk Utilities disk. Do this by inserting the disk in drive
+A: and typing the following DOS commands:
+A: <Enter>
+TEST <Enter>
+NOTE
+If you are running a screen reader program at
+the time the test program is run, the test may
+report that DoubleTalk couldn't be found. This
+is because the screen reader and test programs
+are fighting each other for control of
+DoubleTalk. Be sure to disable your screen
+reader software before running the above test,
+to avoid this situation.
+RC SYSTEMS
+- 6 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 12*
+
+Utilities Installation
+The Utilities disk includes an installation program for copying
+DoubleTalk's utility programs to your hard disk. If you would like
+to copy the utilities to your hard disk, type "A:INSTALL" and follow
+the instructions on the screen.
+NOTE
+The INSTALL program simply copies the utilities
+files to the directory you specify on your hard
+disk. None of your programs or setup information
+will be modified on your computer. Also,
+DoubleTalk's operation does NOT depend on the
+utility programs being copied to your hard disk.
+Windows 95/98 System Registration
+DoubleTalk does such a good job of being unobtrusive to your
+computer, that other hardware may not notice it, and render
+DoubleTalk inoperable. This is particularly true of Plug and Play
+devices.
+An information (INF) file is included in the DoubleTalk Utilities
+\DRIVERS\WIN95 directory, which will make Windows 95/98 "DoubleTalk
+aware." It is recommended that you install this file as soon as you
+install DoubleTalk in your system (it can even be installed
+beforehand, if you prefer). Here's how to do it:
+1. Open the "Add New Hardware" icon in the Windows Control Panel.
+This will bring up the Add New Hardware Wizard. Click "Next."
+2. The wizard should now be asking you if you want Windows to search
+for your new hardware. Click the "No" button, then "Next."
+3. In the Hardware types list box, click on "Sound, video and game
+controllers," then "Next."
+4. You are now shown lists of manufacturers and models. Click on the
+"Have Disk..." button.
+5. In the File name text box, type "A:\DRIVERS\WIN95" and click the
+"OK" button.
+6. Choose the type of DoubleTalk you have from the Models list box,
+then click "OK."
+7. Click the "Finish" button to install the file.
+If you have DoubleTalk PC and changed the port address jumper
+setting during installation, you will need to change the setting in
+System Properties:Device Manager:DoubleTalk PC:Resources
+accordingly.
+RC SYSTEMS
+- 7 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 13*
+
+What's Next?
+Now that you have your DoubleTalk installed and have verified that
+it is working, you're probably wondering what software and/or
+drivers need to be installed. In most cases, the answer is none. Use
+the following checklist to help you determine what, if any, software
+needs to be installed from the Utilities disk.
+1. I will be using DoubleTalk with a screen reader program other
+than IBM Screen Reader.
+Install and configure your screen reader for DoubleTalk. With the
+exception of IBM Screen Reader, all screen reader programs
+install their own DoubleTalk driver. These include ASAP, ASAW,
+JAWS, JAWS for Windows, Vocal Eyes, Window Eyes, Tiny Talk, and
+OpenBook. You do not need to install anything from the DoubleTalk
+Utilities.
+2. I will be using DoubleTalk with IBM Screen Reader.
+IBM Screen Reader does not directly support DoubleTalk - you must
+install the necessary drivers from the DoubleTalk Utilities disk.
+See "DoubleTalk Drivers/IBM Screen Reader," below, for
+installation instructions.
+3. I want to use DoubleTalk as a Windows sound card.
+In order for DoubleTalk to play sounds from Windows applications,
+the Windows sound driver must be installed. See "DoubleTalk
+Drivers/Windows sound driver," below.
+4. I want to be able to use DoubleTalk as a "talking printer" in DOS
+and Windows 3.1 applications.
+See "DoubleTalk Drivers/Talking printer," below.
+5. I want to use DoubleTalk with software written for the IBM Speech
+Adapter.
+See "DoubleTalk Drivers/IBM Speech Adapter emulator," below.
+6. I want to use DoubleTalk with programs published by Davidson.
+See "DoubleTalk Drivers/Davidson drivers," below.
+7. I want DoubleTalk to be able to speak in Spanish.
+See "Speaking Spanish," below.
+RC SYSTEMS
+- 8 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 14*
+
+UTILITIES ------------------------------------------------------------
+The Utilities disk that came with your DoubleTalk contains a number
+of useful and fun programs. They can be run directly from the floppy
+disk they came on, or from your hard disk (if you ran the INSTALL
+program during DoubleTalk's installation).
+Disk Contents
+The Utilities disk contains the following programs and files:
+*MANUAL*.TXT
+- This file
+INSTALL.COM
+- Copies the utilities to your hard disk
+TEST.COM
+- DoubleTalk test program
+DTINFO.COM
+- Talking DoubleTalk statistics
+SMARTALK.EXE
+- DoubleTalk demo program
+SMARTALK.HLP
+- Help system file for SMARTALK.EXE
+WORDS1.LPC
+- LPC data file for SmartTalk (male)
+WORDS2.LPC
+- LPC data file for SmartTalk (female)
+*.PCM
+- PCM/ADPCM data files for SmartTalk
+*.TGN
+- Tone generator data files for SmartTalk
+SPANISH.EXA
+- TTS Spanish dictionary for DTPRN.COM
+SPANISH.EXS
+- TTS Spanish dictionary for SmartTalk
+SPANISH.BAT
+- Batch program for changing to Spanish
+\DRIVERS
+- Drivers for Windows, MS-Word, SSIL, etc.
+SmartTalk
+The SmartTalk program enables you to explore most of your new
+DoubleTalk's functions and features. To run SmartTalk, type
+SMARTALK <Enter>
+at the DOS prompt.
+You should be able to navigate around SmartTalk by following the
+help line at the bottom of the screen, and using the
+context-sensitive help available with the F1 key. SmartTalk works
+with a mouse or keyboard.
+The SmartTalk screen is made up of four distinct areas, or windows,
+which control the four major functions of DoubleTalk. Any one of
+these windows can be activated at a given time; the remaining three
+inactive windows are dimmed. A different window can be activated by
+clicking on it with the mouse, or using the PgUp and PgDn keys.
+The LPC window controls DoubleTalk's LPC synthesizer, the PCM window
+controls the PCM synthesizer, and so on. Inside each of these
+windows are various parameter fields, or "hotspots," so named
+because they are activated whenever they are clicked on with the
+mouse. Each of these fields performs a specific function, such as
+setting the text-to-speech synthesizer's speed or pitch, or loading
+a data file. If you don't have a mouse, you can select each field in
+turn by repeatedly pressing the Tab key. The Shift-Tab key
+RC SYSTEMS
+- 9 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 15*
+
+combination works similarly, except it moves through the fields in
+the opposite direction.
+Each field also has a corresponding "hotkey," designated by the
+highlighted letter in the field's name. To select a field in this
+manner, press and hold the Alt key and the corresponding letter key;
+e.g., Alt+S selects the TTS synthesizer's Speed field; Alt+L loads a
+data file, and so on.
+After a field has been selected, its value can be changed in any of
+several different ways. If you have a mouse, pressing the right
+button will decrease the field's value; pressing the left button
+will increase its value. If you prefer to use the keyboard, the
+right and left arrow keys can be used to increase and decrease the
+field's value in one-step increments; the up and down arrow keys do
+so in larger steps. To return to the text-entry box, press Enter or
+click anywhere inside the box.
+The F9 key will cause an Info box to be displayed, indicating how
+many LPC and PCM words and sounds are currently loaded in memory, as
+well as PCM encoding type, etc. The F7 key temporarily suspends
+SmartTalk and returns you to DOS, without quitting SmartTalk. You
+may use any DOS commands while in this mode. The F10 (or Esc) key
+exits SmartTalk.
+The four SmartTalk function windows, TTS, LPC, PCM and TGN, are
+described next.
+TTS
+This window gives you access to DoubleTalk's text-to-speech
+synthesizer. You can enter any word or phrase you wish and change
+any of the voice parameters by modifying the corresponding parameter
+field directly, or by typing the equivalent commands in the
+text-entry box. A special "View" mode can be activated with the Mode
+field, enabling you to actually see the phonemes DoubleTalk used to
+speak the text in the text-entry box. This can be a valuable tool in
+choosing the correct phonemes during the creation of an exception
+dictionary (described in the Developer's Tools).
+LPC
+The LPC window activates DoubleTalk's LPC synthesizer. Two sample
+LPC data files, WORDS1 and WORDS2, are supplied. A list of the words
+contained in these files can be found in Appendix A. DoubleTalk
+supports 5220 and D6 LPC-10 data formats and two speeds of playback.
+The largest data file that can be loaded is 32K.
+PCM
+This window allows you to play back digitized sounds which have
+either PCM or ADPCM encoding. A number of sample data files are
+included on the disk. You can manipulate the playback sampling rate
+with the Rate field (note that by default, the sampling rate is
+automatically set to the rate at which the sounds were originally
+recorded). The volume is controlled by the TTS synthesizer's volume
+parameter (in the TTS window). The largest data file that can be
+loaded is 256K.
+RC SYSTEMS
+- 10 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 16*
+
+TGN
+This window activates DoubleTalk's musical tone generators. Simply
+load one of the sample tone generator data files from the disk and
+press the Play button. Press the Cancel button to cancel the
+playback at anytime. The largest data file that can be loaded is
+16K. DoubleTalk's sinusoidal generators are not accessible through
+this window.
+DoubleTalk Drivers
+The \DRIVERS directory of the Utilities disk contains files which
+enable DoubleTalk to operate with a number of programs. These
+include a "talking printer" driver, which enables DoubleTalk to read
+text from your favorite word processor or text editor; a Windows
+"Wave" driver, which brings your Windows-based programs alive with
+sound; and others more specific to certain application programs that
+you may have.
+Talking printer
+DTPRN.COM is a resident (TSR) program that enables your programs to
+access DoubleTalk's TTS synthesizer as a printer (LPT1 - LPT3) or
+communications port (COM1 - COM4). This enables most DOS and
+Windows-based programs (such as word processors) and programming
+languages to communicate with DoubleTalk by simply "printing" the
+text to be spoken to the port. DTPRN requires only 700 bytes of
+memory, and can be loaded into upper memory on machines supporting
+this feature using the DOS LOADHIGH command.
+NOTE
+DTPRN will not work with native Windows 95/98
+applications. It only works in a Windows 95/98
+DOS shell, Windows 3.1, and standard DOS
+environments. A version of DTPRN which works
+with native Windows 95/98 applications is
+available for use with the DoubleTalk PC;
+contact RC Systems for details.
+Installing DTPRN
+DTPRN is invoked from the DOS command line by typing the command
+DRIVERS\DTPRN <port> [/N] [/Cx] [/R]
+where <port> is one of the seven system ports LPT1 thru LPT3 or COM1
+thru COM4. For example, DTPRN can be installed as LPT2 by typing
+DRIVERS\DTPRN LPT2 (or LPT2:)
+If no port specification is given, DTPRN will install as LPT3.
+During installation, DTPRN will initialize DoubleTalk; if DoubleTalk
+cannot be located in the computer, DTPRN will abort the installation
+procedure and notify you as such.
+RC SYSTEMS
+- 11 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 17*
+
+If an error occurs during the installation of DTPRN, such as the use
+of an invalid port name, DoubleTalk wasn't found, or DTPRN is
+already resident, an error code is returned to the program that
+invoked DTPRN. This code can be processed in a batch program using
+the IF ERRORLEVEL command, so appropriate action can be taken. The
+following is a summary of the return codes returned by DTPRN:
+0
+DTPRN was successfully installed (no errors).
+1
+DTPRN is already resident.
+2
+An invalid port name was specified.
+3
+Too many or invalid parameter(s) (DTPRN still loads).
+4
+Incompatible version of DOS (must be 2.0 or later).
+5
+DoubleTalk could not be located.
+During operation, DTPRN intercepts the appropriate BIOS software
+interrupt vector (14h for COM ports or 17h for LPT ports).
+Therefore, programs that bypass the BIOS interrupts by accessing the
+port's hardware directly (as some terminal programs do) will not
+speak, since DoubleTalk will never receive the output characters.
+Disabling DoubleTalk's buffer
+The optional command line switch /N is used to disable DoubleTalk's
+text buffer. This can be beneficial in applications where it is
+important that the voice stay synchronized with the text being read
+from the screen.
+Removing DTPRN from memory
+DTPRN can be removed from memory by typing
+DRIVERS\DTPRN /R
+Removing DTPRN from memory frees the 1000 or so bytes of RAM that it
+uses, as well as allow the printer or communications port assigned
+to DTPRN to function normally again.
+Sending text and commands
+Any combination of text and commands can be sent to DoubleTalk via
+DTPRN. Note, however, that DoubleTalk will not begin speaking until
+it receives at least one Carriage Return (0Dh) or Null (00h), except
+when in Character mode. Additional text may be sent while DoubleTalk
+is speaking.
+A special feature of DTPRN is the way in which it handles DoubleTalk
+commands. DoubleTalk itself accepts only a control character for its
+command character (^A by default - see "Commands," below), which can
+be somewhat difficult, if not impossible, to enter in some
+applications, such as a word processor. For this reason, DTPRN has
+been designed to also accept an asterisk (*) as the command
+character, besides the standard ^A character. A so-called "asterisk
+command" must be followed by an alphanumeric character, '+', '-', or
+'@' to be considered a valid command by DTPRN. Examples of valid
+asterisk commands are:
+*8s
+*3F
+*+10P
+RC SYSTEMS
+- 12 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 18*
+
+If the text being read contains asterisk characters, you may find
+DoubleTalk's voice changing unexpectedly, if the characters
+following an asterisk evaluate to a valid command. For this reason,
+DTPRN allows you to change its command character to any other
+printing character, with the optional /Cx command line switch. For
+example, /C& changes the command character from '*' to '&'. To
+disable DTPRN's command recognition altogether, use /C by itself.
+For example,
+DRIVERS\DTPRN LPT1 /N /C
+installs DTPRN as LPT1, with the buffer and command recognition both
+disabled. Note that even when DTPRN's command character has been
+changed (or disabled), commands can still be issued to DoubleTalk
+using DoubleTalk's command character (^A).
+Stopping speech production
+You can momentarily silence DoubleTalk by pressing the left and
+right Shift keys simultaneously. Keep in mind, however, that this
+action will not terminate the file being printed to DoubleTalk - you
+must stop the "printing" of the file from the application program
+(usually by pressing the Escape key or Control-C). Pressing the
+Shift keys only purges the text currently in DoubleTalk's input
+buffer.
+Word 5.0 talking printer
+The SPEECH.PRD file is a printer definition file for turning
+DoubleTalk into a versatile "talking printer" with Microsoft Word
+5.0. Simply copy the SPEECH.PRD file to your Word directory, and a
+new printer named "SPEECH" will appear in Word's Print Options
+printer list.
+NOTE
+The printer emulator DTPRN (described in an
+earlier section) must be installed in order for
+Word (or any other word processor, for that
+matter) to read its files through DoubleTalk. We
+recommend that you install DTPRN as port LPT3,
+so as not to interfere with your "real" printer.
+When selecting the SPEECH printer in Word, make sure you choose the
+same port that DTPRN is using (LPT3, if you followed the suggestion
+given above) in Word's Printer Options setup.
+When you print a document to the SPEECH printer, DoubleTalk always
+begins speaking with the voice parameters set to the following
+values:
+Fmt Freq =
+5
+Pitch =
+50
+Speed =
+5
+Dictionary =
+Disabled
+RC SYSTEMS
+- 13 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 19*
+
+The SPEECH printer also recognizes seven font attributes and acts
+upon them as shown in the following table:
+Font Attribute
+Voice Change
+----------------------------------
+Underline
+Low volume
+Dbl underline
+High volume
+Strike thru
+Low pitch
+Italics
+High pitch
+Subscript
+Slow speed
+Superscript
+Fast speed
+Bold
+Use dictionary
+The reason a command was included to use or not use DoubleTalk's
+exception dictionary ("Bold" attribute) is to enable you to use
+foreign languages, as well as English, in your documents. This has
+proven to be of great potential in classroom environments, where the
+teacher is able to set up talking foreign language lessons
+containing both English and foreign words and phrases. To set up
+such a system for Spanish and English, for example, follow these
+steps:
+1. Run DTPRN.COM.
+2. Load the Spanish dictionary SPANISH.EXA into DoubleTalk.
+3. Run Word.
+This procedure can be automated by creating a batch file similar to
+the following:
+@echo off
+drivers\dtprn
+if errorlevel 2 goto Exit
+type spanish.exa > lpt3
+word
+:Exit
+DoubleTalk/DTPRN "asterisk" commands, described in the section
+above, can also be used with the SPEECH printer.
+IBM Speech Adapter emulator
+INT4DAPI.COM is a small TSR program which enables you to use
+DoubleTalk with a number of talking educational software programs,
+designed to work with IBM's Speech Adapter. To install it, simply
+type INT4DAPI at the DOS prompt. Note that INT4DAPI must be
+installed prior to running the talking software.
+INT4DAPI can be removed from memory by typing
+INT4DAPI /R
+Software that has been tested and known to work with INT4DAPI is
+IBM's Bouncy Bee Learns Letters, Bouncy Bee Learns Words, Writing to
+Read, and Hartley Courseware's Project Star and Brick by Brick
+RC SYSTEMS
+- 14 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 20*
+
+series. Not tested, but "probables," are IBM's Measurement, Time &
+Money and Hartley's Money Series.
+IBM Screen Reader
+The files in the IBMSRD subdirectory enable DoubleTalk to work with
+the DOS IBM Screen Reader program. After installing the Screen
+Reader (choose any synthesizer when prompted), copy the appropriate
+files to the Screen Reader directory, as follows:
+DoubleTalk PC:
+SRDPROG.EXE (Screen Reader version 1.1 ONLY!!)
+DTPCASYN.EXE (rename as SRDASYNC.EXE after copying)
+DTPC.TTS (rename as SRD.TTS after copying)
+DoubleTalk LT:
+SRDPROG.EXE (Screen Reader version 1.1 ONLY!!)
+DTLTASYN.EXE (rename as SRDASYNC.EXE after copying)
+DTLT.TTS (rename as SRD.TTS after copying)
+An installation program, SRDINST.BAT, is included in the IBMSRD
+subdirectory which will copy the necessary files for you, automating
+the above process. To use the installation program, type
+A: <Enter>
+CD \DRIVERS\IBMSRD <Enter>
+INSTALL [type] [path] <Enter>
+where [type] is the synthesizer type (pc or lt), and [path] is the
+drive/directory of where your Screen Reader software is installed.
+For example,
+INSTALL LT C:\SRD12 <Enter>
+will install the DoubleTalk LT driver in directory \SRD12 on drive
+C:.
+Screen Reader version 1.1 has a bug in the program file SRDPROG.EXE,
+which degrades Screen Reader's performance with DoubleTalk. This
+file should be replaced with the SRDPROG.EXE file, included in the
+IBMSRD directory, but ONLY if you have Screen Reader version 1.1.
+The bug was fixed in Screen Reader version 1.2. Do NOT replace the
+SRDPROG.EXE file shipped with version 1.2, or the program will
+become non-functional! The INSTALL program will update this file for
+you automatically, if appropriate.
+If you are setting up Screen Reader for use with the DoubleTalk LT,
+note that it will initially be set up for port COM1. If your
+DoubleTalk LT is connected to a port other than COM1, you must
+change Screen Reader's port setting with the SRDUTIL utility
+program.
+The following Special codes have been included in the DTPC.TTS and
+DTLT.TTS files:
+RC SYSTEMS
+- 15 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 21*
+
+AA1 - Disable exception dictionary
+AA2 - Enable exception dictionary
+AA3 - Bass
+AA4 - Treble
+AA5 - Formant frequency "3"
+AA6 - Formant frequency "5" (normal)
+AA7 - Formant frequency "7"
+AA8 - Monotone (no intonation)
+AA9 - Inflected (automatic intonation)
+Note that Special codes 1 and 2 may be used to switch between
+English (code 1) and a foreign language (code 2), such as Spanish.
+Of course, you may re-assign any DoubleTalk commands you wish to the
+Special codes using the SRDUTIL program that came with your Screen
+Reader.
+When Screen Reader initially loads, it looks in the current
+directory for a user exception dictionary named SRD.EXA. If the file
+exists, it is automatically loaded into DoubleTalk. (This is the
+easiest way to make Screen Reader speak in a foreign language; to
+speak in Spanish, for example, simply copy the SPANISH.EXA file to
+your Screen Reader directory, and rename it SRD.EXA.) It is not
+necessary that the dictionary be present for Screen Reader to
+function.
+SSIL driver
+A number of Windows-based screen readers and scanning programs use
+what is known as the "Speech Synthesizer Interface Library," or
+SSIL, standard. When you install one of these programs on your
+computer, the appropriate DoubleTalk SSIL driver is installed with
+the program. An Open Book Unbound, ASAW and JAWS for Windows are
+examples of such programs.
+The files in the SSIL subdirectory are meant to replace the older
+SSIL DoubleTalk drivers, which probably came with your program. They
+correct some bugs in the older drivers, and add new functionality.
+To update your drivers, perform the following steps:
+1. Copy the two files from the Utilities disk SSIL subdirectory,
+SSIL.INI and DUBLTALK.DLL, to your Windows directory (usually,
+C:\WINDOWS). If you have DoubleTalk PC, you're done. If you have
+DoubleTalk LT, proceed to step 2.
+2. Using any text editor (or word processor that can save files as
+standard text, or ASCII, files), load the SSIL.INI file from your
+Windows directory.
+3. Note the following three lines in the beginning of the file:
+[SSIL]
+Device=DoubleTalk
+Port=Internal
+The "Port" entry tells the SSIL driver how your DoubleTalk is
+connected to the computer. If this entry is not set correctly, it
+RC SYSTEMS
+- 16 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 22*
+
+will very likely cause your computer to "hang" when the driver is
+used. The default setting is for the DoubleTalk PC
+(Port=Internal). If you have a DoubleTalk LT, change the Port
+entry to the port DoubleTalk is connected to: COM1, COM2, COM3,
+or COM4. For example,
+[SSIL]
+Device=DoubleTalk
+Port=com1
+will properly configure the driver for DoubleTalk LT connected to
+COM port 1. Case is not significant; COM1 is the same as com1, as
+far as the driver is concerned. Be sure to save the modified
+file, if you made any changes!
+Davidson drivers
+The two drivers in the DAVIDSON subdirectory enable DoubleTalk PC to
+work with DOS-based programs from Davidson. For Windows-based
+Davidson programs, use the Windows driver in the WINDOWS
+subdirectory.
+When installing the Davidson software for use with DoubleTalk PC,
+choose any one of the supported sound devices in the installation
+program. (If you want to follow the examples in the following steps,
+choose the Covox driver.) Then, follow these steps:
+1. Locate the batch file used for starting the program, in the
+directory of your hard disk that the program was installed. The
+file name will be the same name you type to start the program,
+with a .BAT extension. For example, the correct batch file for
+Zoo Keeper is ZOOKEEP.BAT.
+2. Using any text editor (such as EDIT that comes with DOS), load
+the batch file located in step 1, and locate the line that loads
+the sound driver. This is usually the second or third line, and
+contains the word SOUND??? (??? = three letters dependent on
+driver chosen during installation). If you chose the Covox driver
+when you installed the program, you will find a line that says
+either "\DRIVERS\SOUNDCVX" or simply "SOUNDCVX."
+3. Okay, you've made it this far. Now here's the tricky part (!!!).
+In March 1993, Davidson changed the way their programs work with
+sound drivers, due to a conflict with Sony CD-ROM drives. This
+made it necessary for us to supply two versions of essentially
+the same driver, SOUNDDBL.EXE (for post-March '93 program
+releases), and SOUNDDBT.EXE (pre-March '93).
+What you've got to do now is take your best guess as to which of
+the two drivers will make your Davidson program happy, and change
+the name of the driver located in step 2 to SOUNDDBL or SOUNDDBT,
+as well as copy the corresponding driver from the DoubleTalk
+Utilities disk to the directory of drivers in the Davidson
+program. If you choose the wrong one, you simply won't get any
+sound through DoubleTalk. In this case, install the other driver
+and try again. (Another clue that you gambled wrong is, if you
+RC SYSTEMS
+- 17 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 23*
+
+see the message "No sound driver loaded" when quitting the
+program.)
+Of the five DOS-based Davidson programs we found in our archives, we
+found Reading Adventures in Oz and Zoo Keeper to work with
+SOUNDDBT.EXE. Likewise, SOUNDDBL.EXE worked with Word Attack 3,
+Spell It 3 and Kid Keys.
+Windows sound driver
+The Windows sound driver located in the WAVE subdirectory enables
+DoubleTalk to play Wave (.WAV) files from Windows-based
+applications. When the driver has been installed, your DoubleTalk PC
+or LT will be compliant with Windows programs supporting sound.
+Follow these steps to install the sound driver:
+Windows 3.1
+1. Open the "Drivers" icon in the Windows Control Panel.
+2. Inside the Drivers window, click the "Add" button and choose
+"Unlisted or Updated Driver."
+3. In the text box, type "A:\DRIVERS\WAVE" and click the "OK"
+button. If your Utilities disk is in a drive other than A:,
+substitute the appropriate drive letter.
+4. Click the "OK" button to install the driver.
+5. Configure the driver for your DoubleTalk, per the instructions
+below.
+Windows 95
+1. Open the "Add New Hardware" icon in the Windows Control Panel.
+This will bring up the Add New Hardware Wizard. Click "Next."
+2. The wizard should now be asking you if you want Windows to search
+for your new hardware. Click the "No" button, then "Next."
+3. In the Hardware types list box, click on "Sound, video and game
+controllers," then "Next."
+4. You are now shown lists of manufacturers and models. Click on the
+"Have Disk..." button.
+5. In the File name text box, type "A:\DRIVERS\WAVE" and click the
+"OK" button. If your Utilities disk is in a drive other than A:,
+substitute the appropriate drive letter.
+6. Confirm that "RC Systems DoubleTalk Wave" is displaying in the
+Models list box, then click "OK."
+7. Click the "Finish" button to install the driver.
+RC SYSTEMS
+- 18 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 24*
+
+Configuring the sound driver
+Immediately after installing the sound driver, a setup dialog box
+will appear. The left half of the box lists the six possible I/O
+addresses for the DoubleTalk PC; the right half lists the possible
+COM ports for DoubleTalk LT. Check the appropriate box for your
+DoubleTalk (29E is the factory default for DoubleTalk PC). This
+setting can be changed later, if necessary, using the "Drivers" icon
+in the Windows 3.1 Control Panel, or the "Multimedia" icon in
+Windows 95.
+Note that performance is somewhat limited with the DoubleTalk LT,
+since all of the digital sound data must be pumped out your
+computer's serial port (not a very efficient arrangement, but it
+works!).
+Speaking Spanish
+Teaching DoubleTalk how to speak in Spanish is quite simple. A
+special exception dictionary, defining the letter-to-sound rules for
+the Spanish language, is included on the Utilities disk.
+The Spanish dictionary is provided in the file named SPANISH.EXA,
+which need only be loaded into DoubleTalk. How it actually gets
+loaded varies, depending on the program that will be using it. The
+batch file SPANISH.BAT is designed to automate the procedure by
+running the DTPRN program, transferring SPANISH.EXA to DoubleTalk,
+and finally removing DTPRN from memory. To run SPANISH.BAT, type
+SPANISH <Enter>
+NOTE
+If a screen reader program is used with the
+Spanish dictionary, be sure to start the screen
+reader first, before running SPANISH.BAT.
+Otherwise, the screen reader will purge the
+dictionary when it initializes DoubleTalk.
+Keep in mind that when the Spanish dictionary is loaded into
+DoubleTalk and enabled, DoubleTalk will apply Spanish rules of
+pronunciation to all text it receives, regardless of whether the
+text is actually Spanish or not. Use the Text mode command (*T) to
+switch to the normal English pronunciation rules built into
+DoubleTalk, and the Enable Exceptions (*U) command to switch back to
+Spanish.
+Configuring SSIL-based screen readers for Spanish
+Windows screen reader programs utilizing the SSIL standard can be
+easily adapted to Spanish:
+1. Locate the screen reader's SSIL.INI file (usually
+C:\WINDOWS\SSIL.INI).
+RC SYSTEMS
+- 19 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 25*
+
+2. Using any text editor (or word processor that can save files as
+standard text, or ASCII, files), load the SSIL.INI file.
+3. Note the following line near the beginning of the file:
+Dictionary=none
+The "Dictionary" entry tells the SSIL driver which DoubleTalk
+dictionary to load during startup. Enter the complete pathname of
+where the SPANISH.EXA file is located. For example, if you installed
+the DoubleTalk Utilities in the default location on drive C:, the
+entry should look like:
+Dictionary=c:\dt\spanish.exa
+4. Save the SSIL.INI file back to disk.
+RC SYSTEMS
+- 20 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 26*
+
+OPERATIONAL DESCRIPTION ----------------------------------------------
+This section describes the operational characteristics of
+DoubleTalk. Since this is somewhat technical in nature and is not
+necessary to successfully use DoubleTalk, you may wish to stop
+reading here.
+TTS Operating Modes
+DoubleTalk's TTS synthesizer has three operating modes which
+determine how text is processed by the internal algorithms. These
+modes are the Text, Character and Phoneme modes, treated separately
+in the following paragraphs. The operating mode can be changed
+anytime, even within the same string of text.
+NOTE
+The operation of DoubleTalk's LPC, PCM and CVSD
+synthesizers are not discussed here, as they are
+technical in nature and require some programming
+skills to be used effectively. Obtain the
+Developer's Tools disk if you require more
+information about these DoubleTalk functions.
+In the text-to-speech operating modes, DoubleTalk does not make any
+distinction between uppercase and lowercase characters. Text and
+commands may be sent as all uppercase, all lowercase, or any
+combination thereof.
+Text mode
+In this mode, all text sent to DoubleTalk are spoken as complete
+sentences. Punctuation is also taken into consideration by the
+intonation generation algorithms. DoubleTalk will not begin speaking
+until it receives a CR (0Dh) or Null (00h) character-this ensures
+that sentence boundaries receive the proper inflection. This is the
+default operating mode.
+Character mode
+This mode causes DoubleTalk to translate input text on a
+character-by-character basis; i.e., text will be spelled instead of
+spoken as words. DoubleTalk does not wait for a CR/Null in this
+mode.
+Phoneme mode
+This mode disables DoubleTalk's text-to-phonetics translator,
+allowing DoubleTalk's phonemes to be directly accessed. Phonemes in
+the input buffer will not be spoken until a CR or Null is received.
+RC SYSTEMS
+- 21 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 27*
+
+Translation Accuracy
+Because DoubleTalk must handle the highly irregular spelling system
+of English, as well as proper names, acronyms, technical terms, and
+borrowed foreign words, there inevitably will be words that it will
+mispronounce. If a word is mispronounced in your application, there
+are three techniques available to you for correcting it:
+1. Respell the word for the desired pronunciation.
+2. Redefine the way the word should be pronounced by creating an
+exception for it in DoubleTalk's exception dictionary. This
+method allows words to be corrected without having to modify the
+original text, and it automatically corrects all instances of the
+word.
+3. Use DoubleTalk's Phoneme mode.
+The first technique is the easiest way to fine tune word
+pronunciations - by tricking DoubleTalk into the desired
+pronunciation. Among the more commonly mispronounced words are
+compound words (baseball), proper names (Sean), and foreign loan
+words (chauffeur). Compound words can usually be corrected by
+separating the two words with a space, so that "baseball" becomes
+"base ball." Proper names and foreign words may require a bit more
+creativity, so that "Sean" becomes "Shon," and "chauffeur" becomes
+"show fur." Heteronyms (words with identical spelling but different
+meanings and pronunciations) can also be modified using this
+technique. For example, if the word "read" is to be pronounced as
+"reed" instead of "red," respell it "reed."
+Commands
+The commands described in the following pages provide a simple means
+of controlling DoubleTalk under software control. They can be used
+to vary voice attributes, such as the speed or pitch, to suit the
+requirements of a particular application or your listening
+preferences. Commands are also used to change operating modes.
+Commands can be freely intermixed with the text that is to be
+spoken, allowing the voice to be dynamically controlled. Commands
+affect only the text that follows them in the text stream.
+NOTE
+DoubleTalk commands can generally be used only
+with application programs that you write
+yourself. This is because most programs prevent
+the commands from reaching DoubleTalk, virtually
+becoming a brick wall between you and
+DoubleTalk. Many talking programs, however,
+usually provide an indirect means of changing
+DoubleTalk's attributes via some sort of voice
+menu or command system.
+This restriction does not apply, however, if you
+are printing files from a program to DoubleTalk
+RC SYSTEMS
+- 22 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 28*
+
+via DTPRN. Although DTPRN is essentially a
+program capable of blocking commands, it was
+specifically written to pass commands on to
+DoubleTalk. Furthermore, DTPRN enables you to
+use an asterisk (*) or other user-defined
+character as the command character, besides
+Control-A (see discussion below).
+Command formats
+All DoubleTalk commands are composed of the command character, a one
+or two-digit ASCII parameter n, and an ASCII character which
+uniquely identifies the command. Some commands simply enable or
+disable a feature of DoubleTalk; these commands do not require a
+parameter. The command formats is:
+<command character><n><letter>
+The command character
+The default DoubleTalk command character is Control-A (01h). The
+command character itself can be spoken by DoubleTalk by sending it
+twice in a row: Control-A Control-A. This special command allows the
+command character to be spoken without affecting the operation of
+DoubleTalk, and without having to change to another command
+character and then back again.
+Changing the command character
+The command character can be changed to another control character
+(01h-1Ah) by sending the current command character, followed by the
+new character. To change the command character to Control-D, for
+example, issue the command Control-A Control-D. To change it back,
+issue the command Control-D Control-A. It's generally a good idea to
+change the command character if the forthcoming text contains
+characters which may otherwise be interpreted as command characters
+(and hence commands).
+The command character can be unconditionally reset to Control-A by
+sending Control-^ (1Eh) to DoubleTalk while operating in the Text,
+Character, or Phoneme modes.
+Command parameters
+Command parameters are composed of one or two-digit ASCII numbers.
+DoubleTalk supports two types of parameters: absolute and relative.
+Absolute parameters explicitly specify the parameter's new value,
+such as 9S or 3B. Relative parameters specify a displacement from a
+parameter's current value, not the actual new value itself.
+Relative parameters can specify either a positive or negative
+displacement from a parameter's current value. For example, the
+Volume command +2V increases the current volume by two (V + 2 -> V).
+RC SYSTEMS
+- 23 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 29*
+
+If the current volume is 4, it will increase to 6 after the command
+has executed. The command -2V will have a similar effect, except the
+volume will be decreased by two.
+If the value of a parameter falls outside the command's range, the
+value will wrap around, instead of being truncated. For example, if
+the current volume is 7 and the command +4V is issued, the resultant
+volume will be (7 + 4) - 10, or 1, since the volume range is 0-9.
+When writing application programs for DoubleTalk, it is recommended
+that relative parameters be used for temporarily changing voice
+attributes (such as raising the pitch of a word), using
+absolute-parameter commands only once in the program's
+initialization routine. This way, if the base value of an attribute
+must be changed, it only needs to be changed in the initialization
+routine.
+Command Descriptions
+This section describes the software commands supported by
+DoubleTalk. With the exception of the Volume command, these commands
+only affect the text-to-speech synthesizer.
+Voice (nO)
+DoubleTalk's TTS synthesizer has eight standard voices to choose
+from, as well as a number of individual voice controls that can be
+used to independently vary the voice characteristics. The Voice
+command enables DoubleTalk's voice to be changed anytime, such as
+for identifying text attributes (italics, bold, underline, etc.).
+Voices are selected with the commands 0O through 7O, as shown in
+Table 1. Note that because this command alters numerous internal
+voice parameters (pitch, tone, etc.), it should precede any
+individual voice parameter commands.
+n
+Voice Name
+---------------------------
+0
+Perfect Paul (default)
+1
+Vader
+2
+Big Bob
+3
+Precise Pete
+4
+Ricochet Randy
+5
+Biff
+6
+Skip
+7
+Robo Robert
+Table 1.
+Voice Selections
+Some programs, such as screen readers for the blind, often send
+voice control commands (such as pitch) to DoubleTalk. This can
+change the way a voice sounds, or even completely negate any voice
+change you might make. If this happens with your screen reader, try
+adjusting its pitch command to restore the desired voice (some
+RC SYSTEMS
+- 24 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 30*
+
+screen readers allow you to do this permanently by editing one of
+its parameter files - check your screen reader documentation for
+details).
+Articulation (nA)
+This command adjusts the articulation level, from 0A through 9A.
+Excessively low articulation values tend to make the voice sound
+slurred; very high values, on the other hand, can make the voice
+sound choppy. In general, the articulation should be increased as
+the speed (nS) is increased. The default articulation is 5A.
+Expression (E/nE)
+Expression, or intonation, is the variation of pitch within a
+sentence or phrase. When expression is enabled (n > 0), DoubleTalk
+attempts to mimic the pitch patterns of human speech. For example,
+when a sentence ends with a period, the pitch drops at the end of
+the sentence; a question mark will cause the pitch to rise.
+The optional parameter n determines the degree of intonation. 0E
+provides no intonation (monotone), whereas 9E is very animated
+sounding. 5E is the default setting. If the parameter is omitted,
+the current (last set) value will be used. This is useful for re-
+enabling intonation after a Monotone command.
+Monotone (M)
+This command disables all intonation (expression), causing
+DoubleTalk to speak in a monotonic voice. Intonation should be
+disabled whenever manual intonation is applied using the Pitch
+command or phoneme attribute tokens. Note that this command is
+equivalent to the 0E command.
+Formant Frequency (nF)
+This command adjusts the synthesizer's overall frequency response
+(vocal tract formant frequencies), over the range 0F through 9F. By
+varying the frequency, voice quality can be fine-tuned or voice type
+changed. The default frequency is 5F.
+Speed (nS)
+The synthesizer's overall rate (speed) of speech can be adjusted
+with this command, from 0S (slowest) through 9S (fastest). The
+default speed is 5S.
+RC SYSTEMS
+- 25 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 31*
+
+Pitch (nP)
+This command varies the synthesizer's pitch over a wide range, which
+can be used to change the average pitch during speech production,
+produce manual intonation, or create sound effects (including
+singing). Pitch values can range from 0P through 99P; the default is
+50P.
+Volume (nV)
+This command controls the synthesizer's volume level, from 0V
+through 9V. 0V yields the lowest possible volume; maximum volume is
+attained at 9V. The default volume is 5V. The Volume command can be
+used to set a new listening level or create emphasis in speech. PCM
+mode and the sinusoidal/DTMF generators are also affected by this
+command.
+Tone (nX)
+The synthesizer supports three tone settings, bass (0X), normal
+(1X), and treble (2X), which work much like the bass and treble
+controls on a stereo. The best setting to use depends on the speaker
+being used and personal preference. Normal (1X) is the default
+setting.
+Reverb (nR)
+This command is used to add reverberation to the voice. 0R (the
+default) introduces no reverb; increasing values of n
+correspondingly increase the reverb delay and effect. 9R is the
+maximum setting.
+Punctuation Filter (nB)
+Depending on the application, it may be desirable to limit the
+reading of certain punctuation. For example, if DoubleTalk is used
+to proofread documents, the application may call for only unusual
+punctuation to be read. On the other hand, an application which
+orally echoes keyboard entries on a computer for a blind user may
+require that all punctuation be spoken.
+DoubleTalk supports four primary levels of punctuation filtering, as
+shown in Table 2. Besides determining which punctuation characters
+will be spoken and which will not, the punctuation filter also
+determines how number strings will be read.
+RC SYSTEMS
+- 26 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 32*
+
+n
+Punctuation Spoken
+---------------------------------
+0
+All
+1
+Most (all but CR, LF, Space)
+2
+Some ($%&#@=+*^<>|\)
+3
+None
+Table 2.
+Base Punctuation Settings
+The values of n listed in the table cause number strings to be read
+a digit at a time (e.g., 0123 = "zero one two three"). Adding 4 to
+these values (n = 4-7) causes number strings to be read as numbers
+(0123 = "one hundred twenty three"). N = 6 and 7 also cause currency
+strings to be read as they are normally spoken - for example, $11.95
+is read as "eleven dollars and ninety five cents." Finally, adding 8
+to these values (n = 8-15) disables leading zero suppression; number
+strings beginning with zero will always be read a digit at a time.
+The default filter setting is 6B (Some punctuation, Numbers mode,
+leading zero suppression on).
+Timeout Delay (nY)
+The Text and Phoneme modes of DoubleTalk defer translating the
+contents of the input buffer until a CR or Null is received. This
+ensures that text is spoken smoothly from word to word, and that the
+proper intonation is given to the beginnings and endings of
+sentences. If text is sent to DoubleTalk without a CR or Null, it
+will remain untranslated in the input buffer indefinitely.
+DoubleTalk contains a programmable timer which will force it to
+translate its buffer contents after a predetermined time interval.
+The timer is enabled only if the Timeout parameter n is non-zero,
+DoubleTalk is not active (not talking), and the input buffer
+contains no CR or Null characters. Any characters sent to DoubleTalk
+before timeout will automatically restart the timer.
+The Timeout parameter n specifies the number of 200 millisecond (0.2
+sec) periods in the delay time, which can range from 200
+milliseconds to 3 seconds (Table 3). The default value is 0, which
+disables the timer.
+n
+Delay
+----------------------------------
+0
+Indefinite (wait for CR/Null)
+1
+200 milliseconds
+2
+400 milliseconds
+.
+.
+.
+.
+15
+3000 milliseconds (3 sec.)
+Table 3.
+Timeout Delays
+RC SYSTEMS
+- 27 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 33*
+
+Load Exceptions (L)
+This command purges DoubleTalk's exception dictionary and stores
+subsequent output from the host in DoubleTalk's exception dictionary
+RAM. Because the memory used by the dictionary is the same physical
+RAM used by the input buffer, the space available for the input
+buffer is decreased proportionally by the size of the dictionary.
+The dictionary can be purged from DoubleTalk with the Reinitialize
+command, or by loading a "null" dictionary file into DoubleTalk.
+Both methods reallocate the memory space occupied by the dictionary
+to the input buffer.
+Exception files must be compiled into the internal format used by
+DoubleTalk before they can be used. A compiler program is included
+on the Developer's Tools disk for performing this task.
+The topic of writing exception dictionaries is somewhat complex for
+the average (sane) user, and is therefore left to the Developer's
+Tools.
+Enable Exceptions (U)
+The exception dictionary is enabled with this command. If DoubleTalk
+is in Phoneme mode, or if an exception dictionary has not been
+loaded, the command will have no effect. The exception dictionary
+can be disabled by issuing one of the mode commands D, T, or C.
+Reinitialize (@)
+This command clears the input buffer (see "Clear" command) and
+restores all of the voice parameters to their default settings. The
+exception dictionary memory is also cleared and reallocated to the
+input buffer.
+Zap Commands (Z)
+This command prevents DoubleTalk from honoring subsequent commands,
+enabling it to read commands as they are issued. Any pending
+commands in the input buffer will still be honored. The only way to
+restore command recognition after the Zap command has been issued is
+to write Control-^ (1Eh) or perform a hardware reset.
+DTMF Generator (n*)
+The DTMF (Touch-Tone) generator generates the 16 standard tone pairs
+commonly used in telephone systems. Each tone pair generated by
+DoubleTalk is 100 ms in duration, more than satisfying the telephone
+signaling requirements (this can be extended to 500 ms with the
+Protocol Options command). The mapping of the command parameter n to
+the buttons on a telephone is shown in Table 4.
+RC SYSTEMS
+- 28 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 34*
+
+The "pause" tone is used to generate the inter-digit delay in phone
+number strings. The generator's output level can be adjusted with
+the Volume (nV) command. DTMF commands are buffered, and can be
+intermixed with text for the TTS synthesizer without restriction.
+n
+Button
+----------------
+0
+0
+.
+.
+.
+.
+9
+9
+10
+*
+11
+#
+12
+A
+13
+B
+14
+C
+15
+D
+16
+pause
+Table 4.
+DTMF Generator
+Tone Generators (J/nJ)
+DoubleTalk's tone generators are activated with these commands. The
+operation of the tone generators are beyond the scope of this
+manual, but are described in detail in the Developer's Tools.
+Text Mode/Delay (T/nT)
+This command places DoubleTalk in the Text operating mode. The
+optional delay parameter n is used to create a variable pause
+between words. The shortest, and default delay of 0, is used for
+normal speech. For users not accustomed to synthetic speech, the
+synthesizer's intelligibility may be improved by introducing a
+delay. The longest delay that can be specified is 15. If the delay
+parameter is omitted, the current (last set) value will be used and
+the exception dictionary will be disabled. This feature is useful
+for returning from another operating mode or disabling the exception
+dictionary (see "Enable Exceptions" command).
+Character Mode/Delay (C/nC)
+This command puts DoubleTalk in the Character operating mode. The
+optional delay parameter n is used to create a variable pause
+between characters. Values between 0 (the default) and 15 provide
+pauses from shortest to longest, respectively. Values between 16 and
+31 provide the same range of pauses, but control characters will not
+be spoken. If the delay parameter is omitted, the current value will
+be used and the exception dictionary will be disabled.
+RC SYSTEMS
+- 29 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 35*
+
+Phoneme Mode (D)
+This command disables the text-to-phonetics translator, allowing
+DoubleTalk's phonemes to be accessed directly. Table 5 lists the
+phonemes that can be produced by DoubleTalk.
+When concatenating two or more phonemes, each phoneme must be
+delimited by a space. For example, the word "computer" would be
+represented phonetically as K AX M P YY UW DX ER.
+Phoneme
+Example
+Phoneme
+Example
+Symbol
+Word
+Symbol
+Word
+------------------------------------------------------
+A
+dAs (Spanish)
+M
+Me
+AA
+cOt
+N
+New
+AE
+cAt
+NG
+ruNG
+AH
+cUt
+NY
+ni¥o (Spanish)
+AW
+cOW
+O
+nO (Spanish)
+AX
+bottOm
+OW
+bOAt
+AY
+bIte
+OY
+bOY
+B
+BiB
+P
+PoP
+CH
+CHurCH
+PX
+sPot
+D
+DiD
+R
+Ring
+DH
+eiTHer
+RR
+tRes (Spanish)
+DX
+ciTy
+S
+Sell
+E
+sEr (Spanish)
+SH
+SHell
+EH
+bEt
+T
+Tin
+EI
+mEsa (Spanish)
+TH
+THin
+ER
+bIRd
+TX
+sTick
+EW
+actEUr (French)
+U
+Uno (Spanish)
+EY
+bAke
+UH
+bOOk
+F
+Fee
+UW
+bOOt
+G
+GaG
+V
+ValVe
+H
+He
+W
+We
+I
+lIbro (Spanish)
+WH
+WHen
+IH
+bIt
+Y
+maYo (Spanish)
+IX
+rabbIt
+YY
+You
+IY
+bEEt
+Z
+Zoo
+J
+aGe
+ZH
+viSion
+K
+Cute
+space
+variable pause *
+KX
+sKi
+,
+medium pause
+L
+Long
+.
+long pause
+Table 5.
+Synthesizer Phonemes
+* Normally used between words; duration determined by nT command
+Phoneme attribute tokens
+Table 6 lists the voice attribute tokens that can be used in the
+Phoneme mode, in addition to the standard DoubleTalk commands. These
+tokens do not require the command character or any parameters.
+As indicated in the table, the / and \ tokens temporarily increase
+and decrease the pitch by m steps. Besides being temporary, the
+difference between using the pitch tokens and the Pitch command (nP)
+RC SYSTEMS
+- 30 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 36*
+
+is that the effective pitch range is extended beyond the normal 0-99
+range by approximately ñ20 steps, and if the pitch should fall out
+of range, it will simply bottom or top out, instead of wrap around.
+All other phoneme attribute token commands remain in effect until
+explicitly changed.
+Symbol
+Function
+----------------------------------
+nn
+Set pitch to 'nn' (0-99)
+/
+Increase pitch m steps *
+\
+Decrease pitch m steps *
++
+Increase speed 1 step
+-
+Decrease speed 1 step
+>
+Increase volume 1 step
+<
+Decrease volume 1 step
+Table 6.
+Phoneme Attribute Tokens
+* Step size determined by nE command; m ÷ 2.5n
+Applications of Phoneme mode
+Phoneme mode is useful for creating customized speech, when the
+normal text-to-speech modes are inappropriate for producing the
+desired voice effect. For example, Phoneme mode should be used to
+change the stress or emphasis of specific words in a phrase. This is
+because Phoneme mode allows voice attributes to be modified on
+phoneme boundaries within each word, whereas Text mode allows
+changes only at word boundaries. This is illustrated in the
+following program examples.
+100 A$ = CHR$(1)
+105 LPRINT A$;"D";A$;"M"
+110 LPRINT "70H AW
+-/D>/EH R
++<\\YY UW
+S P\IY K
+T UW
+\M IY
+DH AE T
+-\W EY .+/"
+Note in line 105 that expression is disabled, since the pitch
+variations due to the internal intonation algorithms would otherwise
+interfere with the pitch tokens. Compare this with the same phrase
+produced in Text mode with expression enabled:
+100 A$ = CHR$(1)
+105 LPRINT A$;"T";A$;"E"
+110 LPRINT "How dare you speak to me that way!"
+Phoneme mode is also useful in applications that provide their own
+text-to-phoneme translation, such as the front end of a custom
+text-to-speech system.
+Sleep Timer (nQ)
+This command places the DoubleTalk LT in a nearly powered-down
+state, in order to help conserve battery power (the command has no
+effect on the DoubleTalk PC). If you tend to forget to turn off your
+RC SYSTEMS
+- 31 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 37*
+
+DoubleTalk at the end of the day or during lunch breaks, for
+example, the Sleep mode timer can be used to turn it off
+automatically. (DoubleTalk doesn't actually turn completely off - it
+enters a low-power state which consumes about one-tenth the power it
+would otherwise.) An audible reminder tone can even be programmed to
+sound every ten minutes, to remind you that you have left DoubleTalk
+on.
+The sleep timer is reset anytime DoubleTalk is accessed from your
+computer (such as when reading). In this way, DoubleTalk will not
+shut itself off during normal use, as long as the programmed timer
+interval is longer than the maximum time DoubleTalk is inactive. The
+sleep timer is also disabled when DoubleTalk is running from the AC
+adapter, i.e., the timer runs only when operating from DoubleTalk's
+internal battery.
+Once DoubleTalk has entered Sleep mode, it can be woken only by
+turning the power off and back on. The serial port control signal
+DTR is forced to its "not ready" state when DoubleTalk is asleep,
+preventing application programs from attempting to send DoubleTalk
+any more data. Just before going to sleep, DoubleTalk emits the
+ASCII character "S" from the serial port, which the host computer
+can use to detect DoubleTalk's sleep state.
+The command parameter n determines when Sleep mode will be entered.
+You can place DoubleTalk in Sleep mode immediately, program the
+sleep timer to any of 15 ten-minute intervals (10 to 150 minutes),
+or disable Sleep mode altogether. Table 7 summarizes the Sleep mode
+command.
+n
+Delay
+------------------------------
+0
+Sleep timer disabled
+1
+10 min
+2
+20 min
+.
+.
+.
+.
+15
+150 min
+16
+0 (immediate)
+17
+10 min w/reminder
+18
+20 min w/reminder
+.
+.
+.
+.
+31
+150 min w/reminder
+Table 7.
+Sleep Mode Timer
+Note that the delay interval is simply n x 10 minutes for 0 < n <
+16. Adding 16 to n (16 < n < 32) yields the same interval range, but
+also enables the reminder tone, which sounds at the end of each ten
+minute interval. Programming n = 0 disables the Sleep mode; setting
+n = 16 forces DoubleTalk to go to sleep as soon as it has stopped
+speaking (even when running from the AC adapter). Delay 22 (60
+minutes with the reminder tone) is the default setting.
+RC SYSTEMS
+- 32 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 38*
+
+PCM Mode (#/n#)
+These commands activate DoubleTalk's PCM modes. This is an advanced
+topic discussed in the Developer's Tools.
+Protocol Options (nG)
+This command controls various internal operating parameters in
+DoubleTalk. Refer to the Developer's Tools for more information.
+Index Marker (nI)
+Index markers are non-speaking "bookmarks" that a program can use to
+monitor the progress of the TTS synthesizer's output. Since this is
+a command only programmers would use, it too is covered in the
+Developer's Tools.
+Interrogate (?)
+This command enables a program to read DoubleTalk's current
+settings. Yep, you guessed it - you're gonna need the Developer's
+Tools to learn more about this one, too.
+Clear (Control-X)
+The Clear command stops the synthesizer and clears the input buffer
+of all text and commands. None of the synthesizer settings are
+affected, but any untranslated commands will be ignored.
+Note that the format of this command is unique in that the command
+character (Control-A) is not used with it. The Control-X (18h)
+character is written directly to DoubleTalk's I/O port, which
+enables DoubleTalk to react immediately, even if its input buffer is
+full. To be most effective, the states of DoubleTalk's handshaking
+signals should be ignored when writing the Clear command.
+RC SYSTEMS
+- 33 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 39*
+
+Command Summary
+Table 8 is a summary of the commands supported by DoubleTalk.
+Command
+Function
+Range
+Default
+------------------------------------------------------------
+nA
+Articulation
+0-9
+5
+nB
+Punctuation filter
+0-15
+6
+C/nC
+Character mode/delay
+0-31
+0
+D
+Phoneme mode
+-
+-
+E/nE
+Expression
+0-9
+5
+nF
+Formant frequency
+0-9
+5
+nG
+Protocol options
+0-63
+2
+nI
+Index marker
+0-99
+-
+J/nJ
+Musical/sine tone generators
+0-99
+-
+L
+Load exception dictionary
+-
+-
+M
+Monotone
+-
+-
+nO
+Voice
+0-7
+0
+nP
+Pitch
+0-99
+50
+nQ
+Sleep mode (LT only)
+0-31
+6
+nR
+Reverb
+0-9
+0
+nS
+Speed
+0-9
+5
+T/nT
+Text mode/delay
+0-15
+0
+U
+Enable exception dictionary
+-
+-
+nV
+Volume
+0-9
+5
+nX
+Tone
+0-2
+1
+nY
+Timeout delay
+0-15
+0
+Z
+Zap commands
+-
+-
+@
+Reinitialize
+-
+-
+?
+Interrogate
+-
+-
+n*
+DTMF generator
+0-16
+-
+#
+Non-buffered PCM mode
+-
+-
+n#
+Buffered PCM mode
+0-99
+-
+Table 8.
+Command Summary
+RC SYSTEMS
+- 34 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 40*
+
+APPENDIX A
+LPC Word Lists
+File: WORDS1
+Gender: male
+# words: 206
+zero
+1
+one
+6
+two
+11
+three
+16
+four
+2
+five
+7
+six
+12
+seven
+17
+eight
+3
+nine
+8
+ten
+13
+eleven
+18
+twelve
+4
+thir-
+9
+fif-
+14
+teen
+19
+twenty
+5
+hundred
+10
+thousand
+15
+A
+39
+abort
+73
+about
+79
+adjust
+148
+alert
+147
+all
+112
+alpha
+46
+amps
+97
+and
+173
+area
+139
+at
+110
+automatic
+70
+B
+20
+between
+149
+bravo
+49
+break
+187
+button
+151
+C
+27
+calibrate
+189
+call
+74
+cancel
+113
+caution
+176
+change
+63
+charlie
+51
+check
+178
+circuit
+140
+clock
+152
+complete
+102
+connect
+141
+control
+108
+crane
+190
+cycle
+75
+D
+33
+danger
+61
+days
+114
+degrees
+179
+delta
+48
+device
+153
+direction
+191
+display
+76
+door
+115
+down
+183
+E
+40
+east
+154
+echo
+47
+electrician 109
+enter
+192
+equal
+77
+exit
+116
+F
+21
+fail
+155
+farad
+174
+fast
+78
+feet
+193
+fire
+100
+flow
+117
+foxtrot
+50
+frequency
+156
+from
+194
+G
+28
+gallons
+130
+gate
+157
+gauge
+118
+get
+195
+go
+80
+golf
+52
+green
+119
+H
+34
+henry
+53
+hertz
+136
+high
+158
+hold
+196
+hours
+188
+I
+41
+inch
+81
+india
+92
+inspector
+120
+intruder
+159
+is
+146
+J
+22
+juliet
+131
+K
+29
+kilo
+169
+RC SYSTEMS
+- 35 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 41*
+
+L
+35
+left
+197
+light
+177
+lima
+54
+line
+67
+low
+82
+M
+42
+machine
+106
+manual
+121
+measure
+160
+mega
+98
+meter
+60
+micro
+137
+mike
+93
+mill
+198
+milli
+175
+minus
+64
+minutes
+150
+motor
+83
+move
+122
+N
+23
+north
+161
+not
+65
+november
+132
+number
+184
+O
+30
+of
+199
+off
+68
+ohms
+138
+on
+107
+open
+84
+operator
+91
+oscar
+170
+out
+185
+over
+123
+P
+36
+papa
+55
+pass
+162
+passed
+200
+percent
+85
+pico
+99
+plus
+124
+point
+186
+position
+163
+power
+101
+press
+201
+pressure
+62
+probe
+86
+pull
+125
+push
+164
+Q
+43
+quebec
+94
+R
+24
+range
+202
+ready
+87
+red
+111
+repair
+103
+repeat
+126
+right
+165
+romeo
+133
+S
+31
+safe
+203
+seconds
+142
+service
+180
+set
+88
+shut
+127
+sierra
+171
+slow
+166
+smoke
+72
+south
+204
+speed
+89
+start
+66
+stop
+105
+switch
+181
+T
+37
+tango
+56
+temperature 104
+test
+128
+the
+58
+time
+69
+timer
+144
+tool
+167
+turn
+205
+U
+44
+under
+90
+uniform
+95
+unit
+143
+up
+145
+V
+25
+valve
+182
+victor
+134
+volts
+129
+W
+32
+wait
+71
+watts
+59
+west
+168
+whiskey
+172
+X
+38
+x-ray
+57
+Y
+45
+yankee
+96
+yellow
+206
+Z
+26
+zulu
+135
+RC SYSTEMS
+- 36 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 42*
+
+File: WORDS2
+Gender: female
+# words: 35
+the
+1
+time
+2
+is
+3
+a.m.
+4
+p.m.
+5
+oh
+6
+o'clock
+7
+one
+8
+two
+9
+three
+10
+our
+11
+five
+12
+six
+13
+seven
+14
+eight
+15
+nine
+16
+ten
+17
+eleven
+18
+twelve
+19
+thirteen
+20
+fourteen
+21
+fifteen
+22
+sixteen
+23
+seventeen
+24
+eighteen
+25
+nineteen
+26
+twenty
+27
+thirty
+28
+forty
+29
+fifty
+30
+good
+31
+morning
+32
+afternoon
+33
+evening
+34
+(pause)
+35
+RC SYSTEMS
+- 37 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 43*
+
+APPENDIX B
+DoubleTalk LT Cable Connections
+_________________
+/
+\
+5 |
+o
+o
+o
+o
+o
+| 1
+|
+|
+9
+\
+o
+o
+o
+o
+/
+6
+\_______________/
+Figure B-1.
+DB9-F Connector
+Pin No.
+Symbol
+Description
+Direction
+-------------------------------------------------
+1
+NC
+No Connection
+2
+TXD
+Transmit Data
+Output
+3
+RXD
+Receive Data
+Input
+4
+DSR
+Data Set Ready
+Input
+5
+SG
+Signal Ground
+6*
+DTR
+Data Terminal
+Output
+Ready
+7
+NC
+No Connection
+8*
+RTS
+Request To
+Output
+Send
+9
+RI
+Ring Indicator
+Output
+* Jumpered together in cable
+Table B-1.
+Cable Connections
+RC SYSTEMS
+- 38 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 44*
+
+APPENDIX C
+Specifications
+DoubleTalk PC
+Processor (CPU) -
+Intel 12.5 MHz 80C188EB
+On Board Memory -
+512K ROM
+8K RAM
+Supported Speech
+Technologies -
+Text-to-speech (TTS)
+Linear Predictive Coding (LPC)
+Pulse Code Modulation (PCM)
+Adaptive Delta Pulse Code Modulation (ADPCM)
+Continuously Variable-Slope Delta (CVSD)
+Tone Generators -
+3 musical
+2 sinusoidal
+Touch-Tone
+TTS Synthesizer -
+3K input buffer
+3 operating modes
+8 voices
+10 speeds
+10 formant frequencies
+100 pitches
+10 volume levels
+10 expression levels
+10 articulation levels
+10 reverb levels
+3 tone levels
+16 word/character delays
+16 timeout delays
+16 punctuation levels
+LPC Synthesizer -
+4K data buffer
+5220 and D6 data formats
+2 speeds
+8 kHz sampling rate
+PCM Synthesizer -
+PCM/ADPCM 8 bit mono
+4K sample buffer
+100 sampling rates (4 kHz to 11 kHz)
+10 volume levels
+0 to 48 kHz non-buffered mode
+CVSD Synthesizer -
+32 kbps sampling rate
+Audio Output -
+0.5 W (8 ohms)
+Bridge-tied (live ground), dc-coupled
+1/8" monaural jack
+RC SYSTEMS
+- 39 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 45*
+
+System IRQ
+Requirements -
+none
+System DMA
+Requirements -
+none
+System Memory
+Requirements -
+none
+System I/O
+Requirements -
+Two 8-bit ports: 25E/F, 29E/F, 2DE/F, 31E/F,
+35E/F, or 39E/F (jumper selectable)
+Power Consumption -
+75 mA maximum active at min. volume
+25 mA standby (+5 V)
+Size -
+3.9" x 5.1"
+DoubleTalk LT
+Processor (CPU) -
+Intel 10 MHz 80C188EB
+On Board Memory -
+512K ROM
+8K RAM
+Supported Speech
+Technologies -
+Text-to-speech (TTS)
+Linear Predictive Coding (LPC)
+Pulse Code Modulation (PCM)
+Adaptive Delta Pulse Code Modulation (ADPCM)
+Continuously Variable-Slope Delta (CVSD)
+Tone Generators -
+3 musical
+2 sinusoidal
+Touch-Tone
+TTS Synthesizer -
+3K input buffer
+3 operating modes
+8 voices
+10 speeds
+10 formant frequencies
+100 pitches
+10 volume levels
+10 expression levels
+10 articulation levels
+10 reverb levels
+3 tone levels
+16 word/character delays
+16 timeout delays
+16 punctuation levels
+RC SYSTEMS
+- 40 -
+DOUBLETALK PC/LT
+------------------------------------------------------------------------
+*Page 46*
+
+LPC Synthesizer -
+4K data buffer
+5220 and D6 data formats
+2 speeds
+8 kHz sampling rate
+PCM Synthesizer -
+PCM/ADPCM 8 bit mono
+4K sample buffer
+100 sampling rates (4 kHz to 11 kHz)
+10 volume levels
+CVSD Synthesizer -
+32 kbps sampling rate
+Audio Output -
+Internal speaker: 8 ohms, 0.5 W
+Headphones: 1/8" monaural jack, 75 ohms
+System IRQ
+Requirements -
+none
+System DMA
+Requirements -
+none
+System Memory
+Requirements -
+none
+System I/O
+Requirements -
+One serial port: 9600 baud, 8 data bits,
+1 stop bit, no parity, RTS/CTS handshaking
+Power Consumption -
+75 mA maximum active at min. volume
+25 mA standby
+4 mA sleep
+AC adapter or 9 V alkaline battery
+Size -
+5.3" x 4.0" x 1.5"
+Weight -
+11 oz (without battery)
+RC SYSTEMS
+- 41 -
+DOUBLETALK PC/LT

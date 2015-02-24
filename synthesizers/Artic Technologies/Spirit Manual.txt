@@ -1,0 +1,188 @@
+USER MANUAL
+Spirit Portable Text-to-Speech Synthesizer
+Models 600, 600B
+
+Artic Technologies International Inc.
+(248) 588-1425 Technical Support
+help@artictech.com
+www.artictech.com
+
+
+
+INTRODUCTION
+
+Artic hardware speech synthesizer products have been a popular choice
+for use with screen reading programs since the first model was introduced
+in 1984.  Since then many changes and new models have been developed for
+different needs and a variety of computer interfaces. Artic speech has
+become well known for it's crisp and highly responsive sound.  Performance
+demanding users often prefer Artic speech even over much more expensive
+devices.
+
+SPIRIT was developed primarily for the needs of people using computers with
+screen reader programs.  It was the evolution of Artic's  popular
+Text-to-Speech translators that resulted in low cost SPIRIT.  Unlike some
+low cost synthesizers which use coarse sounding snapshots of sampled human
+speech, SPIRIT has a TRUE phoneme speech synthesis chip which can blend
+phonemes into millions of smooth flowing vocal sounds that would be
+impractical with a snapshot approach.
+
+FEATURES
+
+* Performance Advantage of Artic Hardware Synthesizer Responsiveness.
+* Priced like a Software Synthesizer.
+* Sturdy Aluminum Case is more durable than plastic.
+* Smooth Phoneme Chip Blending without warble & chop.
+* TransPort & Accent SA command compatible.
+* Supports all brands of Screen Access Products.
+* Speech Indexing for reading programs. Large input buffer avoids bog downs.
+* Removable Data Cable with standard DB9 connector. 
+* NiCad battery option saves hundreds of dollars vs disposable 9V batteries.
+* 1 pound without NiCad battery, 1.25 pounds with battery.
+* 5.8 inches wide by 5.3 inches deep by 1.3 inches high.
+
+SET UP 
+
+Place SPIRIT in a comfortable position near your computer.  Plug the supplied
+AC power adapter into the wall and then the jack located on the back of
+SPIRIT.  Also on the back of SPIRIT you will notice two data connectors.
+The larger 25 pin connector is for factory programming only.  The smaller
+DB9 connector is the RS-232 COM port.  Plug the data cable into the SPIRIT
+DB9 connector and your computer COM port on the other side.   
+
+POWER UP AND VOLUME 
+
+Rotate the thumb wheel volume control on the front of SPIRIT to turn it on.
+Adjust the volume to about the half level.  In a couple of seconds you will
+hear the SPIRIT power up message.  You are now ready for a screen reader or
+other speech application programs.
+
+OPTIONAL BATTERY OPERATION (Model 600B only)
+
+The SPIRIT 600B includes rechargeable NiCad batteries which over time will
+save you hundreds of dollars over the disposable alkaline batteries used by
+other synthesizers.  The NiCad batteries will automatically charge when the
+AC adapter is plugged in.  Please allow the batteries to charge overnight
+for the next day.
+NOTE: NiCads can develop a memory effect if left charging all of the time
+      over a long period.  This reduces run time.  Let your batteries run
+      down on a regular basis for the best efficiency.
+
+
+POWER-UP COM PORT SETTINGS 
+
+When SPIRIT is first turned on it's COM port is set to the industry standard:
+  BAUD RATE:  9600 
+  DATA BITS:  8
+  PARITY:     NONE
+  STOP BITs:  1
+All Artic Screen Reading programs automatically detect SPIRIT and set the PC
+COM port to match these settings.
+
+CHANGING COM PORT SETTINGS 
+
+If your particular screen reader requires a port setting different from the
+SPIRIT default and it does not have the ability to automatically change the
+port setting, then you can use the Artic TPSET command (found on the SPIRIT
+disk) described below.
+
+TPSET COMMAND LINE OPTIONS:  
+
+/D = Default, 9600 BAUD, No PARITY, 8 DATA , 1 STOP bit. 
+
+/Bn sets the BAUD rate, where n = a number from 0 to 8 
+representing a specific baud rate as follows. 
+  0 = 110
+  1 = 150
+  2 = 300
+  3 = 600   
+  4 = 1200
+  5 = 2400
+  6 = 4800
+  7 = 9600 (DEFAULT)
+  8 = 19200 
+
+/Pn sets the PARITY mode where n is a number from 0 - 2 as follows:
+  0 = no parity
+  1 = odd parity
+  2 = even parity
+
+/Ln sets the character LENGTH where n is the number of bits (7 or 8).
+
+/Sn sets the number of STOP bits where n is 1 or 2.
+
+ACCENT SA DEFAULT EXAMPLE:
+
+The TPSET command below sets SPIRIT to match the factory settings for the
+ACCENT SA of 9600 baud, no parity, 7 data bits, and 1 stop bit.
+
+TPSET /B7 /P0 /L7 /S1
+
+
+TPSET ONLINE HELP:
+Typing TPSET followed by a return displays a help screen that lists the
+parameters.
+
+
+AUTOEXEC.BAT FOR CHANGING COM PORT AT POWER-UP:
+
+If you wish to change the SPIRIT port setting on every time you turn your
+computer on then you can add then TPSET commands above to your AUTOEXEC.BAT
+file. 
+
+
+AUTOMATIC POWER SAVING MODE:
+
+After a few seconds of not speaking SPIRIT will automatically enter a power
+reduction mode.  You will hear a faint click from the audio amplifier when
+this happens.  This mode is ended once you start to speak again
+
+SPIRIT (TRANSPORT) COMMAND STRINGS:
+
+This information is for program developers that need to control the
+synthesizer.
+NOTE: All text that is not embedded in a command string will be spoken when
+      followed by a space or control code.  Both TransPort and Accent SA
+      command strings are supported. 
+
+Speech Characteristic Commands.
+CONTROL-E R ?  =  Set Speech Rate, where ? is a number from 0 to 9.
+CONTROL-E P ?  =  Set Speech Pitch, where ? is a number from 0 to 9. 
+CONTROL-E V ?  =  Set Speech Volume, where ? is a the number from 0 to 9. 
+CONTROL-E T ?  =  Set Speech Tone, where ? is a letter from A to Z. 
+CONTROL-E N ?  =  Set Number Processor, OFF (? = 0),  ON (? = 1). 
+CONTROL-E F ?  =  Set Flat Pitch. OFF (? = 0),  ON (? = 1). 
+CONTROL-E S ?  =  Set Spelling. OFF (? = 0),  ON (? = 1). 
+
+Speech Flow Controls.
+CONTROL-X      =  Abort speech and be quiet (Instant Flush). 
+CONTROL-E H ?  =  Set Host Timeout, where ? is a number from 0 to 9. 
+CONTROL-E I ?  =  Set Speech Index Marker, where ? is a letter from A to Z. 
+CONTROL-E Q    =  Query Speech Index Marker. 
+CONTROL-E W    =  Wait for Speech to complete. 
+
+NOTE: To get a response when a certain point in the text string is reached,
+      use a WAIT followed by a QUERY.  For example, the string 
+       <"hello": CONTROL-E W CONTROL-E Q>
+      sends back an index marker after "hello" speaks.
+
+Miscellaneous Controls.
+CONTROL-E $    =  Reset TransPort. 
+CONTROL-A P    =  Read Turbo Port. 
+
+Auxiliary Commands.
+
+SPIRIT is compatible with Accent SA commands. However, Accent SA defaults
+are slightly different.  Programs should send an Accent Reset command to
+get those defaults. 
+
+OTHER ARTIC SYNTHESIZER PRODUCTS
+ 
+Artic has a broad family of portable serial port synthesizers called
+TransPort as well as a family of combination synthesizer notetakers for
+BRAILLE and QWERTY.  
+  
+Artic Technologies International Inc.
+1000 John R. Road, Suite 108, Troy Michigan 48083
+(248) 588-7370 
+www.artictech.com

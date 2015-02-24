@@ -1,0 +1,748 @@
+The
+Type Lite
+User
+Guide
+
+PUBLISHED BY
+Blazie, a division of Freedom Scientific 
+11800 31st Court North
+St. Petersburg, Florida 33716-1805
+USA
+http://www.freedomscientific.com
+Information in this document is subject to change without notice. No part of this publication may be reproduced or transmitted in any form or any means electronic or mechanical, for any purpose, without the express written permission of Freedom Scientific.
+Copyright (c) 2001 Freedom Scientific BLV Group, LLC, All Rights Reserved.
+CompactFlash(tm) is a trademark of the CompactFlash Association in the United States and/or other countries.
+Table of Contents
+THE TYPE LITE USER GUIDE	1
+Table of Contents	3
+GETTING STARTED	6
+Introduction	7
+Overview	8
+The Type Lite Keyboard	8
+The Type Lite Braille Display	8
+Ports and Switches	9
+The Type Lite Menus	9
+Conventions	10
+Getting Help	11
+Working with Files	12
+Opening Files	12
+Creating Files	12
+Renaming and Deleting Files	12
+Reading Files	13
+Editing Files	14
+Working with Folders	16
+Moving Files	16
+Renaming and Deleting Folders	17
+Customizing the Type Lite	18
+Customizing Speech Parameters	18
+Configuring Braille Parameters	19
+Configuring Editing Parameters	19
+The Type Lite Utilities	21
+Time and Date	21
+The Datebook	21
+The Phonebook	22
+The Calculator	22
+USING THE TYPE LITE	24
+Note Taking	25
+The Cursor	25
+The Editor	26
+Files	26
+Opening Files	27
+Reading Text	27
+Editing Text	30
+Copying, Deleting, and Pasting	32
+Find	36
+Spell Check	38
+Managing Files	40
+Memory	41
+Folders	41
+Moving Files	42
+File Commands	43
+Compact Flash	44
+The Type Lite Utilities	46
+The Time and Date	46
+Setting the Time	46
+Setting the Date	47
+The Smart Calendar	47
+The Stopwatch	48
+The Datebook	49
+Browse Mode	50
+Appointment Notification	51
+The Phone Book	52
+Adding Phone Book Entries	53
+Phone Book Options	53
+The Calculator	55
+Basic Operations	55
+The Embedded Keypad	57
+Scientific Calculator Functions	58
+Storing and Using the Memory Locations	60
+APPENDICES	62
+Appendix A The Type Lite Keyboard	63
+The Top Row	63
+The Left Side	63
+The Right Side	64
+The Bottom Row	64
+Additional Keys	65
+Appendix B Type Lite Ports and Switches	66
+On/Off	66
+Headphone	66
+Speech Box	66
+AC Adapter Jack	67
+Compact Flash	67
+Disk Drive Port	67
+Serial Port Jack	67
+Keyboard Ports	67
+Hardware Reset	67
+Printer Port	68
+
+
+Getting
+Started
+Introduction
+The Type Lite is a note taker and personal digital assistant with built-in speech synthesizer, 40 cell Braille display, a laptop PC style keyboard and built in applications such as date book, phone book, and calculator. This product can go anywhere to act as a note taker, it is easily linked to a full computer, it has a Datebook to remind you of appointments and much more.  Use it to create documents, organize your schedule, maintain contacts, and transfer information to and from your PC.
+This users guide is organized into the following sections:
+* Getting Started contains introductory information, and all you need to know to quickly get up and running with your Type Lite.
+* Using the Type Lite contains detailed information on the main features of the Type Lite, including the Type Lite Editor and utilities.
+* Advanced Features contains information on the most advanced functions of the Type Lite, including macros and connecting the Type Lite to other devices. This section is currently in process.
+* The appendices contain reference information to provide you quick access to essential information.
+Overview
+The Type Lite uses a portable (Laptop) PC style, Windows keyboard. The Type Lite provides speech output through an internal synthesizer, and Braille output through a 40 cell refreshable Braille display. The Type Lite has 2 megabytes of RAM (Random Access Memory), 12 megabytes of read only flash memory, and accepts standard compact flash(tm) memory cards. 
+The Type Lite Keyboard
+The Type Lite uses a standard portable PC style keyboard. The top row consists of an ESC key on the left, followed by F1 through F12, and then NUM LOCK, INSERT, DELETE, and BREAK. There is a raised locater dot above F1, F5, F10, and DELETE.
+The bottom row, from left to right, consists of Fn (Function key), CTRL, Windows logo key, ALT, SPACEBAR, ALT, Windows logo key, Application key, CTRL, LEFT ARROW, DOWN ARROW, and RIGHT ARROW. The UP ARROW key is directly above the DOWN ARROW key.
+The Type Lite Braille Display
+The Type Lite has a forty-cell Braille display below the keyboard. There are two advance bars between the display and the keyboard, and rockers on either side of the Braille display. There are cursor routing buttons above each cell, and raised locator dots above cells five, ten, fifteen, twenty, twenty-five, thirty, and thirty-five.
+Ports and Switches
+The Type Lite On/Off switch is on the right edge of the unit. Toggle the switch towards the back of the system to turn on the Type Lite. A similar switch on the left side of the system toggles the Type Lite between Note Taker and Braille Display mode. Leave the switch toggled toward the back of the system to use the Type Lite as a Note Taker, and toggle the switch toward the front of the system to use the Type Lite as a Braille display with your PC and screen access software.
+The back of the Type Lite, from left to right, has an AC/Adapter jack, the compact flash module (add-on memory), disk drive port, serial port, PC keyboard port, external keyboard port, and parallel port. 
+The headphone jack is on the right edge of the system, between the On/Off switch and the back of the system.
+The Type Lite Menus
+The Type Lite has several menus that allow you to access commands and configuration settings.
+File (F1)
+Allows you to organize and work with files.
+Disk Drive Storage (SHIFT+F8)
+Allows you to transfer files to an external disk drive.
+Options (F9)
+Allows you to access built in applications.
+Status (F10)
+Allows you to configure Type Lite settings.
+As in other menus, simply use arrow keys to locate the menu item you want. Press SPACEBAR to toggle settings. Press ALT+DOWN ARROW to hear the access key to move directly to the current item.  In the Status Menu, use FN+UP ARROW or FN+DOWN ARROW to move through the sections of the menu.
+Speech Parameters (F7)
+The Speech Parameters Menu is slightly different because each parameter is accessed with a different key. More information is available in the Configuring Speech Parameters section of this guide.
+Conventions
+This manual specifies keyboard commands in the following manner. 
+* Keys to be pressed are in all capital letters and bold. 
+* When keys are to be pressed simultaneously, this is indicated by joining the keys with a PLUS (+) sign. 
+* When keys are to be pressed one after the other, this is indicated by separating the keys with a COMMA (,).
+For example, "Press F10, ALT+S, SPACEBAR to toggle speech on or off."
+Getting Help
+The Type Lite provides several methods for getting help. Press BREAK to open the Type Lite help file. 
+Press SHIFT+BREAK to enter Key Learn Mode. Key Learn mode allows you to explore the functionality of the Type Lite keyboard. While in Key Learn mode, the first time you press a key, the name of the key is spoken and/or displayed. If the key has a specific function (such as the function keys and other extended keys), the second time you press the key, its function is spoken and/or displayed.
+Working with Files
+The Type Lite provides a full range of features for working with files. You can create, edit, rename, move, and delete files.
+Opening Files
+There are several ways to open a file: 
+* Press F1, then use the DOWN ARROW key and the UP ARROW key to locate the file. Press ENTER once the file is located. 
+* Press F9, then the number associated with the file. This number will range from 00 to 99. 
+* To open the previously opened file, press F9, L.
+Creating Files
+To create a file, press F1, C and type in the file name. Then press ENTER. The file name cannot exceed twenty characters.
+Renaming and Deleting Files
+To rename a file, press F1, move to the file, and press ALT+R. Type in the new file name and press ENTER.
+To delete a file, press F1, locate the file, and press DELETE. Press Y to confirm or N to cancel.
+Reading Files
+Files can be read by character, word, line, or in their entirety. Following are commonly used reading commands.
+To read by character:
+Next character	RIGHT ARROW
+Previous character	LEFT ARROW
+Current character	ALT+DOWN ARROW
+Current character phonetically	ALT+DOWN ARROW, twice quickly
+To read by word:
+Next word	CTRL+RIGHT ARROW
+Previous word	CTRL+LEFT ARROW
+Current word	CTRL+DOWN ARROW
+Spell current word	CTRL+DOWN ARROW, twice quickly
+To read by line:
+Next line	DOWN ARROW
+Previous line	UP ARROW
+Current line	CTRL+UP ARROW
+To move quickly through a file:
+Move to next paragraph	FN+DOWN ARROW
+Move to prior paragraph	FN+UP ARROW
+Beginning of file	FN+LEFT ARROW
+End of file	FN+RIGHT ARROW
+Read from current cursor
+to the end of the file	SHIFT+DOWN ARROW
+Silence Speech 	CTRL+ALT
+Editing Files
+The Type Lite calls the default editing mode, Append mode. Anything you type is added to the end of the open file, even if you are reading at the beginning of the file. This is a great way to quickly take notes!  
+To insert text at the cursor location within the file, press INSERT, type in the text, and press INSERT again.
+To overwrite one character at the cursor location, press SHIFT+INSERT. To continuously overwrite text from the cursor location, press SHIFT+INSERT twice, type in the new text, and press SHIFT+INSERT again.
+To delete the character at the cursor location, press DELETE twice. To delete multiple characters, press DELETE, C, the number of characters to delete (up to 255), and then press ENTER to move the deleted text to the clipboard, replacing any text already in the clipboard. Press NUM LOCK Instead of ENTER to append the deleted text to that already in the clipboard.
+This same process can be applied to words, sentences, and paragraphs. For example, DELETE, W5, ENTER deletes five words from the cursor location forward, and places that text on the clipboard. DELETE, P3, NUM LOCK deletes three paragraphs and appends the deleted text to that already on the clipboard.
+Text can also be copied or appended to the clipboard without deleting it. 
+1. Move the cursor to the beginning of the text and press ALT+M to mark the location. 
+2. Move the cursor to the end of the text and press SHIFT+NUM LOCK. 
+3. Press C to copy the text to the clipboard, or A to append the text to that already in the clipboard.
+To paste information at the cursor location, press NUM LOCK. You are prompted to specify what information to paste. Press C to paste the clipboard contents, D to paste the date, or T to paste the time. 
+To find text within a file, press F2, type in the text, and press F2 again.
+Working with Folders
+The Type Lite provides Folder mode to assist you in organizing your files. You must enable Allow Folder mode in the Status menu to use this feature. To do so, press F10, ALT+F, Y. Press ESC to exit the Status menu.
+The File menu (F1) has two modes: All Files mode and Folder mode. Press SPACEBAR while in the File menu to toggle between these modes. When in Folder mode, press FN+DOWN ARROW or FN+UP ARROW to move between folders, and then the DOWN ARROW or UP ARROW key to move through the files in the current folder. RAM startup and Flash Startup are the default folders.
+To create folders, you must be in the File menu in Folder mode. Press PLUS, type the folder name and press ENTER, and then press R for RAM or F for Flash to indicate where the folder is to be located. Press ESC to exit the File menu. You can create up to 20 folders.
+Note: Files are created and edited in RAM; files cannot be created or edited in Flash.
+Moving Files
+There are two ways to move files into other folders. To move a single file into another folder:
+1. Press F1 to open the File menu.
+2. Press FN+DOWN ARROW or FN+UP ARROW to move to the folder containing the file, then press DOWN ARROW or UP ARROW to locate the file.
+3. Press SHIFT+NUM LOCK.
+4. Select the folder to which you wish to move the file and press ENTER.
+To move multiple files into a folder:
+1. Press F1 to open the file menu.
+2. Press SHIFT+COMMA.
+3. A list of files is displayed. Use the UP ARROW and DOWN ARROW keys to move through the listed files, or FN+UP ARROW and FN+DOWN ARROW to move through folders.
+4. Press SPACEBAR to mark each file you wish to move.
+5. Once all desired files are marked, press ENTER.
+6. A list of folders is displayed. Locate the desired folder and press ENTER. 
+Renaming and Deleting Folders
+To rename a folder, press F1, move to the folder and press ALT+SHIFT+8. Type in the new folder name and press ENTER.
+To delete a folder, press F1, move to the folder and press DASH.
+Note: Only empty folders can be deleted.
+Customizing the Type Lite
+Many features within the Type Lite can be custom configured. This section discusses customizing Speech parameters, Braille display parameters, and editing parameters.
+Customizing Speech Parameters
+To access the speech parameters, press F7. The following options can be adjusted while in Speech Parameters. Press ESC after making changes to exit Speech parameters.
+You can choose between eight voices. Press CTRL+LEFT ARROW or CTRL+RIGHT ARROW to cycle through them. The voices are: Perfect Paul, Vader, Big Bob, Precise Pete, Ricochet Randy, Biff, Skip, and Robo Robert. 
+To adjust volume, press the UP or DOWN ARROW keys. To adjust the rate of speech, press the LEFT or RIGHT ARROW keys. 
+Press N to toggle the Type Lite between reading numbers as full numbers or as a series of single digits. For example, 121 can be read as "one hundred twenty one" or "one two one." 
+Press SPACEBAR to set the Type Lite to echo keyboard activity:
+* Key Echo - Typing Keys are spoken as they are pressed.
+* Key Click - Typing keys click as they are pressed.
+* Silent Keys - There is no auditory indication when keys are pressed.
+To specify the amount of punctuation spoken, press Z for none, S for Some, M for most, or T for total.
+Speech can be turned off from the Status menu. To toggle speech on or off, press F10, ALT+S, SPACEBAR, ESC.
+Configuring Braille Parameters
+The Type Lite can display information in Grade Two or in Computer Braille. To toggle display of text in files between Grade Two and Computer Braille, press F10, ALT+7, SPACEBAR. To toggle display of system messages and menus between Grade Two and Computer Braille, press F10, ALT+G, SPACEBAR.
+To display control characters such as carriage returns, press F10, ALT+X, Y. To wrap lines to less than 40 characters, press F10, ALT+W, Y.
+Configuring Editing Parameters
+The Type Lite defaults to Append mode, however, it can also be set to function in the same manner as a word processing application on a computer. To set this PC Edit mode, press F10, SHIFT+4, I. Once you set this option, the Type Lite defaults to Insert mode when it starts. While in Insert mode, press INSERT from within any RAM file to toggle between Append, Overwrite, and Insert modes.
+By default, the Type Lite does not display the presence of blank lines. To have the Type Lite show blank lines, press F10, SHIFT+7, N.
+The Type Lite Utilities
+The Type Lite includes a Clock, Calendar, Datebook, Phonebook, and Calculator.
+Time and Date
+To check the time, press F4. To set the time, press F9, S, T and enter the time in the format hhmm. You are prompted to enter A for a.m. or P for p.m., if you are using American, 12-hour time. The time takes effect immediately if you are using European, 24-hour time.
+To use American 12-hour time format, press F9, S, 1. To use European 24-hour time format, press F9, S, 2.
+To check the date, press F5. To set the date, press F9, S, D and type in the date in the format mmddyyyy, and press ENTER.
+The Datebook
+To enter an appointment into the Datebook, press F9, E and type the date of the appointment in MMMDDYYYY format. Press ENTER and type in the appointment information. Then press ENTER again.
+Press F9, A to check the current day's appointments.
+To set automatic appointment notification, press F10, J, Y. Press ESC to leave the Status menu.
+The Phonebook
+To add an entry to the Phonebook, press F9, P. Each field name is announced. Type in the information for each field and press ENTER to move to the next field. Press ENTER in a comment field when finished.
+To open the phonebook, press F9, ALT+P. Press FN+DOWN ARROW or FN+UP ARROW to move through the phonebook by entry. The name for each entry is indicated. Once the desired entry is found, press the DOWN ARROW or UP ARROW keys to move through the information.
+The Calculator
+The Type Lite calculator is very robust with both standard and scientific functions. To open the Calculator, press F3. To exit the Calculator, press ESC.
+Standard operations are entered in the form A+B, with no spaces between the values and the operators. Press ENTER to calculate the expression. The standard operators are:
++ = plus
+- = minus
+* = times
+/ = divide
+% = percent
+F1 = square root
+Press CTRL+UP ARROW to hear the information currently displayed in the Calculator. Press F3 to clear the Calculator.
+The Calculator has 26 memory locations, represented by the letters A through Z. R is reserved for the result of the most recent calculation. To store a value to memory, press F4, followed by the letter representing the memory location. To use the information stored in memory, simply reference the letter of the memory location in your expression.
+The Calculator also supports many advanced scientific functions. For information on using these functions, please refer to the Type Lite's onboard help. 
+
+Using
+The
+Type Lite
+Note Taking
+The Type Lite functions primarily as a note taker. It is designed so you can effortlessly take notes in a meeting or in class, or review a grocery list at the store. Information can be reviewed with speech or Braille or both, so you are able to work the way that is most comfortable for you.
+Most Type Lite functions related to taking and organizing notes involve using the File menu and the Editor. Manage, create, and organize files from the File menu, and read and edit them in the Editor. 
+The Cursor
+The cursor is essential in the process of reading and editing. It marks the current location in the text. The cursor moves to different parts of the document through use of various commands. The reading commands move the cursor to the specified element of text and read it. Many editing commands involve actions that effect text at the location of the cursor.
+The cursor location is represented by a blinking dot 7 and a solid dot 8. By default, the cursor is only visible when you are reading by character, or when you use a cursor routing button to move the cursor to a specific cell. This provides a representation of the cursor when you need it, while making it easier to read the Braille display when you don't.
+The cursor can, however, be set to always remain visible. To do this:
+4. press F10 to open the Status menu. 
+5. Press ALT+V to move to the Cursor Always Visible option.
+6. Press Y to set this option to On.
+7. Press ESC to exit the Status menu.
+The Editor
+If you are not in a menu, an external program, or one of the utilities, you are in the Type Lite Editor. The Type Lite Editor allows you to read, write, and edit files. 
+Files
+Any time you are reading or editing text in the Type Lite Editor, you are in a file. Even if you open Help with the BREAK key, you are in a file. 
+To create a file:
+8. Press F1 to open the Files menu.
+9. Press C. You are prompted for a file name. 
+10. Type the file name. 
+11. Press ENTER.
+File names cannot exceed twenty characters. File names cannot contain the following characters: QUESTION MARK, ASTERISK, SLASH, BACKSLASH, COMMA, COLON, and PERCENT. File names should not begin with a PERIOD.
+There are further considerations if your files will be transferred to the external disk drive or to Compact Flash, as these storage mediums do not support the longer file names. In these instances, we recommend you use the MS-DOS "8.3" convention and do not use spaces in file names. This convention limits a file to eight characters, a period, and three more characters. The three characters after the period are referred to as a file extension, and may determine how applications on a PC interact with these files. For example, in Microsoft Windows 9.x, files with an extension of .txt are opened in Notepad. 
+Opening Files
+To open an existing file:
+1. Press F1 to open the File menu. 
+2. Arrow through the list of files.
+3. Press ENTER when the desired file is located.
+Reading Text
+Files can be read by character, word, line, or in their entirety. Following are the available reading commands.
+To read by character:
+Next character	RIGHT ARROW
+Previous character	LEFT ARROW
+Current character	ALT+DOWN ARROW
+Current character 
+phonetically	ALT+DOWN ARROW, twice 
+Immediately after hearing a character's phonetic representation, LEFT ARROW moves to and provides phonetic representation for the previous character, and RIGHT ARROW moves to and provides phonetic representation for the next character.
+To read by word:
+Next word	CTRL+RIGHT ARROW
+Previous word	CTRL+LEFT ARROW
+Current word	CTRL+DOWN ARROW
+Spell current word	CTRL+DOWN ARROW, twice 
+Immediately after spelling a word, CTRL+LEFT ARROW moves to and spells the previous word, and CTRL+RIGHT ARROW moves to and spells the next word.
+To read by line:
+Next line	DOWN ARROW
+Previous line	UP ARROW
+Current line	CTRL+UP ARROW
+To move quickly through a file:
+Move to next paragraph	FN+DOWN ARROW
+Move to prior paragraph	FN+UP ARROW
+Beginning of file	FN+LEFT ARROW
+End of file	FN+RIGHT ARROW
+Read from cursor
+to the end of the file	SHIFT+DOWN ARROW
+Silence Speech 	CTRL+ALT
+Reading With Braille
+All reading commands discussed to this point also work when reading with the 
+Braille display. There is also additional functionality when reading with Braille. The advance bars and rocker buttons provide easy access to commonly used navigation commands, and the cursor routing buttons provide an easy means to move the cursor directly to any cell. There are raised locator dots above cells five, ten, fifteen, twenty, twenty-five, thirty, and thirty-five.
+Advance Bars
+The advance bars allow you to move through your files one display length at a time. Press the right end of either advance bar to move forward by 40 cells and continue reading. Press the left end of either advance bar to move back 40 cells to the left. In either case, the display wraps to the next or previous line of text once it reaches the end or beginning of a line.
+Reverse Advance
+The functionality of the advance bars can be reversed so the left ends of the advance bars move you right, and the right ends move you left. For some, this provides an easier reach without needing to move fingers that are reading the Braille display. To enable Reverse Advance, press F10, DELETE, Y. Press ESC to exit the Status menu.
+Rocker Buttons
+The rocker buttons at either end of the Braille display are used to move line by line, sentence by sentence, or paragraph by paragraph. Press the FN key and either one of the rocker buttons to toggle through and set the choices. Each rocker can be set to a different navigation unit. For example, you can set the left rocker to move back and forward through your files by sentence, and set the right rocker to move back and forward through your files by paragraph.
+The middle of the rocker buttons can be set to move back and forward in files by word, or to move to the top or bottom of the file. Press FN and the middle of either rocker button to set this to prior/next word or to top/bottom of file. The left rocker middle is either prior word or top of file, and the right rocker middle is next word or bottom of file, regardless of which rocker you use to toggle this setting. 
+		Editing Text
+The Type Lite provides a very robust environment for editing your files. Copy and insert text and information, delete characters, words, or paragraphs, search for and replace text, and even check spelling in your files. Two editing modes, Append and PC Edit, are also provided so you can interact with your files in the same way as on previous Blazie note takers, or in a manner similar to a word processor on a personal computer.
+The editing mode is set in the Status menu.
+1. Press F10 to open the Status menu.
+2. Press $ (SHIFT+4) to move directly to PC Editing.
+3. Press SPACEBAR to cycle between PC Editing Off, PC Editing On, and PC Editing On with Insert at Startup.
+4. Once the desired option is selected, press ESC to exit the Status menu.
+Append Mode
+PC Editing is off by default, and this places you in Append mode. Anything you type is added to the end of the open file, even if you are reading at the beginning of the file. This is a great way to quickly take notes. It is, however, quite different from a word processing application on a PC, so it is helpful to remain aware of which editing mode is in use. While in append mode, you need to specify when you wish to insert or overwrite text.
+* To insert text at the cursor location within the file, press INSERT, type in the text, and press INSERT again.
+* To overwrite one character at the cursor location, press SHIFT+INSERT. 
+* To continuously overwrite text from the cursor location, press SHIFT+INSERT twice, type in the new text, and press SHIFT+INSERT again.
+PC Edit Mode
+In PC Edit mode, the Type Lite Editor functions more like a word processing application on a personal computer. In this mode, press NUM LOCK to toggle between Append, Insert, and Overwrite modes. The mode to which you toggle remains active until you change it, or until you turn your Type Lite off and back on again.
+* Append: Typed text is appended to the end of the file, regardless of the location of the cursor. When the Status menu setting previously mentioned is set to PC Editing On, this is the default mode.
+* Insert: Typed text is inserted at the cursor location. If there is any text in the file beyond the location of the cursor, this text is pushed forward in the file. This mode is most similar to a word processer on a PC. When the Status menu setting mentioned above is set to PC Editing On with Insert at Startup, this is the default mode.
+* Overwrite: Typed text begins at the cursor location. If there is text beyond the location of the cursor, it is replaced, character for character, by the typed text. For example, in this mode, if the cursor is at the first character in the word "text" and you type "stuff," the word "text" is replaced.
+Copying, Deleting, and Pasting
+The Type Lite Editor provides full functionality for reorganizing text. Delete or copy text from one section of a file, and paste it in another section or in another file. Paste information from the calculator, or the date and time, or even paste the entire text of another file into your current file.
+Whether deleting or copying text, the Clipboard is used to temporarily store this text. This allows you to copy or delete text from one file, switch to another file, and paste the contents of the Clipboard. Additionally, copied or deleted text can be appended to that already in the Clipboard, or it can replace it.
+Copying
+There are several ways to copy text to the Clipboard. The following method allows you to replace any text already in the Clipboard, or add the copied text to that already in the Clipboard.
+1. Move the cursor to the beginning of the text and press ALT+M to mark the location. 
+2. Move the cursor to the end of the text you wish to copy.
+3. Press SHIFT+NUM LOCK. 
+4. Press C to copy the text to the clipboard, or A to append the text to that already in the clipboard.
+Delete Parameters
+When you press DELETE in any writable RAM file, the Delete parameters are available. These are used both to delete and copy information. Use the Arrow keys to cycle through the parameters and press ENTER to select the one you wish to use. Alternately, press a Delete Parameter's access key to select it.
+Block (B): Prompts for a string of text, and deletes from the cursor to the first instance of that string of text. Text cannot be copied with this parameter.
+Character (C): Prompts for a number of characters, and counts them from the cursor forward through the file. Use this parameter to copy or delete.
+Line (L): Prompts for a number of lines, and counts them from the cursor forward through the file. Use this parameter to copy or delete.
+Mark (M): This parameter deletes text between a mark set in a file and the cursor location. Press ALT+M to set a mark in a file. Text cannot be copied with this parameter.
+Paragraph (P): Prompts for a number of paragraphs, and counts them from the cursor forward through the file. Use this parameter to copy or delete.
+Sentence (S): Prompts for a number of sentences, and counts them from the cursor forward through the file. Use this parameter to copy or delete.
+Word (W): Prompts for a number of words, and counts them from the cursor forward through the file. Use this parameter to copy or delete.
+Cursor to End of Text (Z): Deletes from the location of the cursor forward to the end of text in the file. This parameter cannot be used to copy text.
+When selecting the Character, Line, Paragraph, Sentence, or Word parameters, there is a maximum number of 255 units.
+After selecting the Delete parameter and any information for which you are prompted, press:
+ENTER to delete the text and move it to the Clipboard, replacing any text already in the Clipboard.
+NUM LOCK to delete the text and move it to the Clipboard, appending it to any text already in the Clipboard.
+SHIFT+NUM LOCK to copy the text to the Clipboard without deleting it. Copying in this fashion replaces any text in the Clipboard. If the selected parameter does not support copying, the procedure is aborted.
+Examples
+To delete the character at the cursor location, press DELETE twice. To delete multiple characters, press DELETE, C, the number of characters to delete (up to 255), and then press ENTER to move the deleted text to the clipboard, replacing any text already in the clipboard. Press NUM LOCK Instead of ENTER to append the deleted text to that already in the clipboard.
+This same process can be applied to words, sentences, and paragraphs. 
+Pasting Information
+To paste information at the cursor location, press NUM LOCK. You are prompted to specify what information to paste. Use DOWN ARROW and UP ARROW to cycle through the choices, or use the access keys listed below:
+C pastes the clipboard contents
+D pastes the date
+F pastes contents of a file
+G pastes get date
+T pastes the time 
+SHIFT+3 pastes Stopwatch
+R pastes result from Calculator
+Note:	When using NUM LOCK to paste information into a file, it is inserted at the cursor location regardless of which editing mode is active.
+Find
+To find a string of text, press F2, type in the string of text, and press F2 again. The text string cannot exceed 63 characters. this searches from the cursor location forward to the end of the file.
+To search backwards from the cursor location in the file, press F2, type in the text to find, and press UP ARROW.
+To find a date, press F2, and press ALT+G. This starts the Smart Calendar. Type the number of days or the date in MMDDYYYY format and press ENTER.
+Find and Replace
+The Type Lite also lets you find and replace strings of text. 
+12. Press F2.
+13. Type in the text to find. 
+14. Press ALT+R. 
+15. Type in the replacement text.
+16. Press ALT+R.
+The Type Lite then searches your file. When the specified text is found, the following options are available:
+* Press R to replace the currently found instance of text.
+* Press S to skip the currently found instance of text.
+* Press A to replace all further instances of the specified text.
+* Press ALT+C to hear/display the line in which the text was found.
+Case Sensitive Searches
+The Type Lite find feature is not case sensitive by default, but this can be enabled in the Status menu.
+17. Press F10 to open the Status menu.
+18. Press SHIFT+1 to move to Distinguish Case During Find.
+19. Press Y to set this option to On.
+20. Press ESC to exit the Status menu.
+Note:	While case sensitive searches are sometimes very useful, they may seriously reduce the number of matches when performing a find operation.
+Spell Check
+The Type Lite provides a spell check utility to verify correct spelling within files. The spell check is an external program - it is not built into your unit like many other tools. The program file "spell.dic" must be present in order for you to work with the spell check. The spell check program file should already be loaded on your unit.  The file, "spell.dic," uses 86 Type Lite pages. We recommend you store this file in Flash. 
+To start the spell check, press F6. Press W to check the current word, or press Z to check from the cursor location to the end of the file. To check an entire file, first move your cursor to the beginning of the file (FN+LEFT ARROW). 
+The Type Lite indicates when it does not recognize a word, and it spells that word. Several options are then presented. Use the Arrow keys to cycle through the options and press ENTER to select the option you desire. Most of these options also have access keys to directly select them. Press ALT+DOWN ARROW to hear the access key for the current option.
+Add Word to Personal Dictionary (A)
+The first time this option is used, a file named "Personal.dic" is created in RAM. This file stores words not found in the standard spell check dictionary. Add words the spell check does not recognize, though they are spelled correctly, such as personal names.
+Bypass Word for Rest of Document (B)
+Spell check ignores any further instances of the current word in the open file.
+Read Word in Context (C)
+Spell check reads/displays the line of text in which the current word is found.
+Enter the Correct in Document (E)
+Spell check prompts you to type in the word as you wish it to be spelled.
+Skip Word (O)
+Spell check skips the current instance of the word and continues checking the file. Any further instances of  the same word are found.
+Repeat Incorrect Word (R)
+Spell check reads and spells the current word.
+Repeat Phonetically
+Spell check spells the current word using phonetic representation.
+Suggestion Words from a List (S)
+Spell check lists suggestions to use for the current word. Use the Arrow keys to cycle through the choices and ENTER to select a word. ESC exits the list, and returns you to the previous list of options for the current word.
+Suggestion Words Help (Q)
+Spell check indicates how to navigate within the word suggestion list.
+Press ESC to cancel a spell check operation. If you are in the word suggestion list, press ESC twice.
+Managing Files
+The File menu, accessed with F1, allows you to manage your files. Rename, delete, write protect, or even password protect your files. When you first press F1, a list of files is active. 
+* Use the Arrow keys to move through the list of files. 
+* Press FN+LEFT ARROW to move to the top of the list, or FN+RIGHT ARROW to move to the bottom of the list.  
+* Press BREAK to access the File Commands menu and use the Arrow keys as in the File list to move through the available commands. 
+* Press ENTER to open the selected file in the Files list, or to activate the selected command in the File Commands list. If more information is required, you are prompted for it.
+* Press ALT+DOWN ARROW on any command, and the access key for that command is indicated.
+Memory
+The memory structure of the Type Lite is important when considering how to organize your files. The Type Lite has two megabytes of RAM and twelve megabytes of Flash memory. The Type Lite also accepts standard Compact Flash(tm) modules. Files must be created and edited in RAM. Files cannot be edited in Flash, though they can be read there. Files can be copied from RAM to Compact Flash and back, but they cannot be copied from Flash to Compact Flash.
+Consider RAM as the hub through which files must move when you wish to work with them or back them up to Compact Flash. As such, we recommend you do not create folders and store files in RAM. There is much more available space in Flash to use for creating folders and organizing your files.
+Folders
+To create and use folders to organize your files, Allow Folder Mode must be enabled in the Status menu. Press F10, ALT+F, Y to enable Allow Folder Mode, and press ESC to exit the Status menu. 
+The File menu provides two modes: All Files mode and Folder mode. Press SPACEBAR while in the File menu to toggle between these modes. When in Folder mode, only the files in the current folder are listed. Press FN+DOWN ARROW or FN+UP ARROW to move between folders, and then the DOWN ARROW or UP ARROW key to move through the files in the current folder. RAM startup and Flash Startup are the default folders.
+Creating Folders
+To create folders, you must be in the File menu in Folder mode. Press PLUS, type the folder name and press ENTER, and then press R for RAM or F for Flash to indicate where the folder is to be located. Press ESC to exit the File menu. You can create up to 20 folders.
+Renaming and Deleting Folders
+To rename a folder, press F1, move to the folder and press ALT+SHIFT+8. Type in the new folder name and press ENTER.
+To delete a folder, press F1, move to the folder and press DASH.
+Note:	Only empty folders can be deleted.
+Moving Files
+There are two ways to move files into other folders. To move a single file into another folder:
+1. Press F1 to open the File menu.
+2. Press FN+DOWN ARROW or FN+UP ARROW to move to the folder containing the file, then press DOWN ARROW or UP ARROW to locate the file.
+3. Press SHIFT+NUM LOCK.
+4. Select the folder to which you wish to move the file and press ENTER.
+To move multiple files into a folder:
+1. Press F1 to open the file menu.
+2. Press SHIFT+COMMA.
+3. A list of files is displayed. Use the UP ARROW and DOWN ARROW keys to move through the listed files, or FN+UP ARROW and FN+DOWN ARROW to move through folders.
+4. Press SPACEBAR to mark each file you wish to move.
+5. Once all desired files are marked, press ENTER.
+6. A list of folders is displayed. Locate the desired folder and press ENTER.
+File Commands
+Many commands are available within the File menu. Several commands commonly used to work with folders have already been mentioned. Below are listed commonly used file commands. For a complete listing, refer to the Type Lite's onboard help (BREAK), or press F1, BREAK to open the File Commands menu.
+Create File	C
+Open Selected File	ENTER
+Rename Selected File	ALT+R
+Rename Open File	R
+Delete Selected File	ALT+D
+Delete Open File	D
+Write Protect Open File	P	
+Unprotect Open File	U
+Password Protect Open File	W
+Compact Flash
+When the Compact Flash(tm) utility is started, the files/folders on the Compact Flash module are displayed. Use UP ARROW and DOWN ARROW to move through the list of files and folders. Press TAB to switch between the note taker and the Compact Flash Module. When you TAB to the note taker, all RAM files are displayed. The following commands work in the Compact Flash utility:
+Help	?
+Open Folder	ENTER
+Create Folder	F7
+File Information	ALT+I
+Delete File	DELETE
+Up One Folder Level	BACKSPACE
+Mark Files	SPACEBAR
+Press ALT+M to mark files based on a mask, such as *.txt. This includes only files from the open folder, and changing folders removes any marks. Press ALT+C to copy all marked files or the current file. DELETE also deletes folders, but the folders must be empty.
+When you copy from the note taker to Compact Flash, files are copied to the folder last open in the Compact Flash module. When you copy from Compact Flash to the note taker, files are copied either into RAM Startup, or into the last RAM folder open before accessing Compact Flash. You cannot copy from Flash to Compact Flash or from Compact Flash to Flash. 
+The Type Lite Utilities
+The Type Lite is equipped with built-in utilities to help organize your busy life so your day runs more smoothly. The Type Lite includes a datebook, phonebook, stopwatch, and a calculator.
+The Time and Date
+The Type Lite tracks the time and date for you and can be set to announce the time on the hour. The Type Lite uses the date in conjunction with the Datebook to help you track appointments. 
+Setting the Time
+Set or change the time using one of two methods. Either enter the actual time, or add or subtract the increment of time from the current setting. 
+1. Press F9 to open the Options menu.
+2. Press S, T for Set, Time. The Type Lite prompts you to Enter the time in hhmm format. 
+Enter the exact time such as "0520" or enter the amount of time to add to or subtract from the current setting, such as "+0106" or "-0035."
+3. Press ENTER after you have typed in the new time or an increment of time.
+4. If using American, 12 hour time, press A for A.M. or P for P.M.
+The Type Lite displays time in either American, 12 hour format, or in European 24 hour format. 
+1. Press F9 to open the Options menu.
+2. Press S for Set.
+3. Press 1 for American, 12 hour time, or press 2 for European, 24 hour time.
+Setting Hourly Announcement
+The Type Lite can also announce the time on an hourly basis.
+1. Press F10 to open the Status menu.
+2. Press ALT+H to move to Hourly Announcement.
+3. Press SPACEBAR to cycle between: Off, Bell Only, Voice Only, and Bell and Voice.
+4. Press ESC to exit the status menu.
+Speech must be turned on for the voice settings to work. The bell settings work with speech turned off.
+Setting the Date
+To set the date:
+1. Press F9 to open the Options menu.
+2. Press S, D for Set, Date.
+3. Enter the date in "MMDDYY" format.
+The Smart Calendar
+The Type Lite allows you to determine the day of the week it is on a particular date. Press SHIFT+F5 to open the Smart Calendar.
+* Enter a date in the format MMDDYYYY and press ENTER. The Type Lite speaks/displays the weekday, month, day, and year. For example, if you enter "03162001," the Type Lite responds with "Friday March 16, 2001."
+* Enter a number of days, such as "15," to determine the day and date that many days from the current date.
+* Enter a number of days preceded by a minus (-) sign, such as "-12," to determine the day and date that many days ago.
+* Enter a number (#) sign to determine the current Julian date. The Julian date is the number of the day in the calendar year.
+The Stopwatch 
+The Stopwatch lets you measure elapsed time. Track how long you work in a file, or the length of a presentation. 
+To enter the stopwatch, press SHIFT+F4. The following commands are then available:
+Start/Stop Count	RIGHT ARROW
+Reset Count	LEFT ARROW
+Read Count	SPACEBAR
+Last Reading	C
+Exit	ESC
+The Stopwatch continues counting, even if you exit it, unless you first stop or reset it. If you stop the Stopwatch, it retains the elapsed time last displayed when exited and restarted. If you turn off the Type Lite with the Stopwatch counting, once the Type Lite is started again, the Stopwatch count starts as well, but it starts from zero minutes, zero seconds.
+The Datebook
+The Type Lite provides a Datebook for managing appointments. Enter important appointments such as meetings, birthdays, anniversaries, and interviews. Check your appointments at any time, or set the Type Lite to notify you on the days these appointments occur.
+There are three items under the Options menu relating to the Datebook. Press F9 or ALT+O to open the Options menu, then use the Arrow keys to move through the items. The access keys to move directly to each  item are listed below in parentheses.
+Check Appointments (A)
+Select this item to check for any appointments on the current day.
+Open Datebook File (DELETE)
+Select this item to open the Datebook file. Navigate this file as you would any other file.
+Datebook Entry (E)
+Select this item to add an entry to the Datebook. You are prompted to enter a number of days or a date in MMDDYYYY format. After doing so, press ENTER. The Type Lite verifies the day and date of the appointment, and then prompts for the event text.
+At this point, there are two options:
+* Enter the event text and press ENTER. 
+* Press ALT+F. The Type Lite searches the Datebook for the selected date. If the date is not found, an entry for it is added and, "no appointments" is indicated. If the date is found, you are taken to that entry, and the first line of event text for that date is spoken/displayed. In either of these cases, you are in Browse Mode.
+Browse Mode
+Browse Mode is a read only mode for reviewing Datebook entries. The following commands are available.
+To navigate information for the current date:
+Read/Display Date	SHIFT+F1
+Previous Line	UP ARROW
+Current Line	CTRL+UP ARROW
+Next Line 	DOWN ARROW
+First Line 	ALT+8
+Last Line 	ALT+0
+Start of Line	FN+LEFT ARROW
+End of Line	FN+RIGHT ARROW
+To edit entries from Browse Mode:
+Press I to insert a new line before the current line, or press A to append a new line to the end of the current entry. Type in the event text and press ENTER to return to Browse Mode.
+Press E to edit the current line. When finished, press ENTER to return to Browse Mode.
+Press D to delete the current line. Press Y to confirm, or N to cancel. You are then returned to Browse Mode.
+To switch to entries for other dates from within Browse Mode:
+Prior Entry	FN+UP ARROW
+Next Entry	FN+DOWN ARROW
+Get New Date	G
+Get New Date returns you to the Datebook entry prompt, requesting a number of days or a date in MMDDYYYY format.
+Press ESC to exit Browse Mode.
+Appointment Notification
+To set the Type Lite to check for appointments on the current day each time you start it:
+1. Press F10 to open the Status menu.
+2. Press J to move to Check Appointments.
+3. Press Y to turn Check Appointments On.
+4. Press ESC to exit the Status menu.
+The Phone Book
+The Type Lite includes a phone book to manage contact information. The Phone Book tracks much more than just phone numbers. Manage names, addresses, phone numbers, email addresses, and more.
+There are two items under the Options menu relating to the Phone Book. Press F9 or ALT+O to open the options menu and use the Arrow keys to move to the items. The access keys to move directly to each item are listed below in parentheses.
+Open Phone Book (ALT+P)
+Select this item to open the active phone book file. Navigate in this file as you would any other file.
+Phone book files contain the records you create when entering information into the Phone Book. You may have multiple phone files, but the first word in each should be "phone." For example, you may wish to have separate phone book files for personal and business contacts. One could be named "phone personal," and the other could be named "phone business."
+Phone Book (P)
+Select this item to add phone book entries, or to create and configure phone book files.
+Adding Phone Book Entries
+When you first press F9, P, a list of fields is displayed. The Name field must always be populated with information. Records are alphabetized based on the Name field. Use a consistent naming scheme, such as Last name, First Name. Use consistent capitalization as capitalization is considered when records are organized within phone book files. Consistent naming schemes and consistent capitalization make it easier to locate individual records in the Phone book file. 
+To fill in the fields for a phone book entry:
+* Type in the information for each field and press ENTER to move to the next field. 
+* Press UP ARROW or DOWN ARROW to move through the available fields. Field names are indicated as you move through them.
+* Press SHIFT+F3 followed by the first letter of a field name to move to a specific field.
+* Press ENTER in an empty comment field, or press ALT+F when finished.
+Note:	When entering information, BACKSPACE is the only available editing option.
+Phone Book Options
+Press ALT+O from the list of field names to access configuration options for the Phone Book. This opens a menu containing three items:
+Setup Field Names
+This item presents a list of all available fields and indicates On or Off for each of them.
+* Use the Arrow keys to cycle through the list and press SPACEBAR to toggle fields between On and Off.
+* Press P to enable those fields commonly used in a personal phone book.
+* Press B to enable those fields commonly used in a business phone book.
+* Press Z to enable all fields.
+* Press ESC to return to the Phone Options menu.
+Select Phone File
+This item presents a list of all phone book files with names beginning with "phone," and lets you specify which phone book file is active. Phone book entries are always saved in the active phone book file.
+* Use the Arrow keys to cycle through the list and press ENTER on the file you want active.
+* Press N to create a new phone book file and set it as active. Also use this option to activate a phone book file with a name that does not begin with "phone."
+Note:	Phone Book files contain the phone records you enter. They can have any file name, but are only listed under Select Phone File if their name begins with "phone." 
+Reinitialize Phone Book
+This item resets several phone related settings:
+* The default phone book file, Phone, is set as active.
+* All fields are turned on in all phone book files with names beginning with "phone."
+* Phone book files with names that do not begin with "phone" are only affected if they are active when Reinitialize Phone Book is selected.
+Press ESC to exit from any of the phone book configuration options. You may need to press ESC twice to return to the list of fields in which information is entered.
+The Calculator
+The Type Lite calculator is very robust with both standard and scientific functions. 
+Basic Operations
+* To open the Calculator, press F3. 
+* To exit the Calculator, press ESC.
+* Press CTRL+UP ARROW to hear the information currently displayed in the Calculator. 
+* Press F3 to clear the Calculator.
+* Press F2 to toggle between speaking digits or full numbers.
+Standard operations are entered in the form A+B, with no spaces between the values and the operators. Press ENTER to calculate the expression. 
+The standard operators are:
++ = plus
+- = minus
+* = times
+/ = divide
+% = percent
+F1 = square root
+Performing Percentage Calculations
+To determine the value of a percentage of a number, type the value of the percentage, the percent sign, and the number from which you wish to derive the percentage. Press ENTER to calculate the expression. For example, to find 20 percent of 500, enter 20%500, and press ENTER. The Type Lite calculates the expression and returns "100."
+Extracting a Square Root
+To extract the square root of a number, type the number, then press F1. For example, to find the square root of 25, type 25 and press F1. The Type Lite immediately calculates the expression and returns "5."
+Setting Decimal Precision
+The Calculator's results vary according to the number of decimal places to which your calculator is set. Two decimal places are enough for most situations; however, results can be calculated to 12 decimal places. 
+From within the calculator, press ALT+P. The Type Lite prompts for the number of decimal places. Enter a number from 1 to 12.
+Note:	The Calculator drops ending zeros to the right of the decimal point. A value of 1.20 is displayed as 1.2, even if decimal precision is set to 2.
+The Embedded Keypad
+The Type Lite provides access to an embedded keypad while in the Calculator. Press NUM LOCK to toggle the embedded keypad on and off. Once the embedded keypad is on, the following keys are treated as numbers:
+7, 8, and 9 are not changed, but 0 is treated as * (times).
+U, I, O, and P are treated as 4, 5, 6, and - (minus).
+J, K, L, and ; are treated as 1, 2, 3, and +.
+M is treated as 0.
+Scientific Calculator Functions
+The scientific calculator functions all use the same syntax. Type in the function name, followed by the arguments surrounded in parentheses. If there are multiple arguments, separate them with commas. Expressions cannot exceed 255 characters.
+To determine an average, type AVG(#,#,#) and press ENTER. 
+To calculate the median, type MEDIAN(#,#,#) and press ENTER. 
+To generate a random number between 0 and 1, type RAND() and press ENTER.
+To determine the square root of a number, type SQRT(#) and press ENTER.
+Trigonometric Functions
+To calculate the sine of 90 degrees or pi/2 radians, type SIN(90) and press ENTER. The Type Lite returns, "One." The Calculator default is in degrees.
+To switch to radians, press ALT+R. Type SIN(pi/2) and press ENTER. The Type Lite returns, "one." 
+Press ALT+R again to switch back to degrees. Other trigonometric functions are:
+Cosine	COS
+Tangent	TAN
+Cotangent	COT
+Arcsine	ASIN
+Arccosine	ACOS
+Arctangent	ATAN
+Base e log	LN
+Base 10 Log	LOG
+Base e antilog	ALN
+Base 10 antilog	ALOG
+Conversions
+The Calculator provides functions for many conversions. Enter the value of what you wish to convert from as the argument. Remember that arguments must be contained within parentheses.
+HD	Decimal to Hexadecimal
+OD	Decimal to Octal
+BD	Decimal to Binary
+DH	Hexadecimal to Decimal
+DO	Octal to Decimal
+DB	Binary to Decimal
+FAREN	Centigrade to Fahrenheit
+CENTI 	Fahrenheit to Centigrade 
+IN	Centimeter to Inches
+CM	Inches to Centimeters
+MI	Kilometers to Miles
+KM	Miles to Kilometers
+L	Gallons to Liters
+GAL	Liters to Gallons
+KG	Pounds to Kilograms
+LB	Kilograms to Pounds
+G	Ounces to Grams
+OZ	Grams to Ounces
+Storing and Using the Memory Locations
+The Type Lite calculator has 26 memory locations where you can store results of computations. These memory locations are labeled A through Z. Memory location R is reserved because it stores your last result. 
+There are two ways to store a number in a memory location. 
+1. Type an arithmetic expression and press ENTER to compute the result. 
+2. Press F4 or ALT+S to store the result. 
+3. Type the letter of the memory location you wish to use. 
+The second method is to type a number into the Calculator, press ENTER, type F4, and specify the memory location you wish to use.
+To read the contents of a memory location, type the letter of that location followed by ENTER.
+To use numbers stored in different memory locations as part of an expression, reference the memory location in your expression.  For example, if you have numbers stored in memory locations A and B, the expression A+B followed by ENTER returns the sum of these two numbers.
+
+Appendices
+Appendix A
+The Type Lite Keyboard
+This appendix documents the layout of the Type Light keyboard. The Type Lite uses a standard Windows QWERTY style keyboard. This section does not discuss the standard alpha-numeric keys, but covers the surrounding keys, which are  layed out as follows:
+The Top Row
+Starting from the left, the top row of the Type Lite keyboard consists of:
+* Escape
+* Function Keys F1 through F12
+* Numlock
+* Insert
+* Delete
+* Break
+The Left Side
+Below the Escape key, and continuing down the left side of the keyboard you will find:
+* Grave
+* Tab
+* Caps Lock
+* Shift
+* Fn
+The Right Side
+Below the Break key, and continuing down the right side of the keyboard you will find:
+* Backspace
+* Back Slash
+* Enter
+* Up Arrow
+* Down Arrow (directly below Up Arrow)
+* Right Arrow (directly to the right of Down Arrow)
+Additionally, Left Arrow is directly to the left of Down Arrow.
+The Bottom Row
+From left to right, the bottom row consists of:
+* Fn
+* Control
+* Windows Key
+* Alt
+* Spacebar
+* Alt
+* Windows Logo
+* Applications
+* Control
+* Left Arrow
+* Down Arrow
+* Right Arrow
+Additional Keys
+When pressed together with the FN key, several keys have alternate functions.
+FN+LEFT ARROW	HOME
+FN+RIGHT ARROW	END
+FN+UP ARROW	PAGE UP
+FN+DOWN ARROW	PAGE DOWN
+FN+INSERT	PRINT SCREEN
+Appendix B
+Type Lite Ports and Switches
+This appendix documents the ports and switches on the Type Lite. The ports and switches are labeled in braille on the underside of the casing.
+On/Off
+The On/Off switch is on the right side of the Type Lite. Toggle the switch towards the back of the system to turn on the Type Lite, and toggle the switch towards the front of the system to turn off the Type Lite. These switch positions are labeled in braille as "on" and "off."
+Headphone
+The headphone jack is on the right side of the system between the On/Off switch and the back of the system. It is labeled in Braille as "ear."
+Speech Box
+The Speech Box switch is on the left side of the TYPELite. Toggle the switch towards the back of the system to turn off speech box mode. Toggle the switch towards the front of the system to turn on speech box mode. The switch positions are labeled in braille as "A" and "B." 
+When using the Type Lite as a note taker, speech box mode must be off, and when using the Type Lite as a braille display together with screen access software (such as JAWS for Windows), speech box mode should be on.
+AC Adapter Jack
+The AC adapter jack is on the back of the system towards the left side. This jack is labeled in braille as "AC."
+Compact Flash
+The compact flash(tm) module is immediately to the right of the AC adapter jack, and is labeled in braille as "CF."
+ Disk Drive Port
+The disk drive port is immediately to the right of the compact flash module, and is labeled in braille as "dd."
+Serial Port Jack
+The serial port jack is immediately to the right of the disk drive port, and is labeled in braile as "ser."
+Keyboard Ports
+The next two ports, labelled in Braille as "pc" and "kbb," are not implemented at this time.
+Hardware Reset
+Between the keyboard ports and the printer port is the hardware reset button. The hardware reset button is a very small recessed button. Use a straightened paper clip or a toothpick to press this button. This button should only be used as a last resort.
+Printer Port
+At the right end of the back of the Type Lite is a standard parallel port. Use this port to connect to a printer or embosser.
+
+

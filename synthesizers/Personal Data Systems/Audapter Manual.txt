@@ -1,0 +1,3458 @@
+
+
+
+
+
+
+
+
+
+            The Audapter Speech System
+
+
+
+
+
+                   User's Guide
+
+
+
+
+
+            Personal Data Systems, Inc.
+          100 West Rincon Ave., Suite 103
+                   P.O. Box 1008
+                Campbell, CA 95009
+                  (408) 866-1126
+
+
+              Edition 1.16, May 1990
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Audapter System User's Guide
+
+
+         User's Guide for the Audapter Speech System
+               by Personal Data Systems, Inc.
+
+     Copyright (c) 1988, 1989 by Personal Data Systems,
+     Inc. and Berkeley Speech Technologies, Inc.
+
+     Personal Data Systems, Inc. makes every effort to
+     ensure that these documents are accurate.
+     However, because we are continually improving our
+     products, we are unable to guarantee the accuracy
+     of the contents of these documents after the date
+     of publication and we disclaim liability for any
+     changes, errors or omissions.
+
+     This manual is copyrighted and all rights are
+     reserved by Personal Data Systems, Inc.  It may
+     not, in whole or in part, be copied, photocopied,
+     reproduced, translated or reduced to any
+     electronic medium without prior consent, in
+     writing, from Personal Data Systems, Inc.
+
+     Apple is a trademark of Apple Computer, Inc.
+     Audapter is a trademark of Personal Data Systems,
+     Inc.
+     BeSTSpeech is a trademark of Berkeley Speech
+     Technologies, Inc.
+     Centronics is a trademark of Centronics Data
+     Computer Corporation.
+     ECHO is a trademark of Street Electronics
+     Corporation.
+     IBM, PC, PC/XT and PC/AT are trademarks of
+     International Business Machines.
+     T-T-S is a trademark of Berkeley Speech
+     Technologies, Inc.
+
+
+
+
+
+
+
+
+                           Page i
+
+
+               Audapter System User's Guide
+
+
+     Table of Contents
+
+     Limited Warranty                             v
+
+     1.   Introduction                            1
+
+     2.   Description                             2
+          2.1.  Front Panel                       2
+          2.2.  Back Panel                        4
+          2.3.  AC Adapter                        4
+
+     3.   Unpacking                               5
+
+     4.   Installation Instructions               6
+          4.1.  Standalone Test                   6
+          4.2.  Interface Connection              7
+
+     5.   Configuration Menus                     8
+          5.1.  The Configuration Menus           8
+          5.2.  Moving Around the Menus          10
+          5.3.  Demo                             11
+          5.4.  Voice Menu                       11
+          5.5.  Serial Menu                      12
+          5.6.  System Menu                      12
+
+     6.   ECHO Emulation                         14
+          6.1.  ECHO-like Commands               14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page ii
+
+
+               Audapter System User's Guide
+
+
+     7.   Audapter Commands                      17
+          7.1.  Announce Punctuation Modes       17
+          7.2.  Buffer Status Initialization     17
+          7.3.  Change the Audapter Command
+                Prefix                           18
+          7.4.  Speech Delay Timer Setting       18
+          7.5.  Keep or Save Parameters in Non-
+                Volatile RAM                     18
+          7.6.  More Input Buffer Level          18
+          7.7.  Normalizer Flags                 19
+          7.8.  Output Mode                      19
+          7.9.  Pause/Resume Character
+                Definition                       20
+          7.10. Query for Model and Version      20
+          7.11. Synchronize                      20
+          7.12. Power-Saving Mode                20
+          7.13. Force Text                       20
+          7.14. Audapter Command Summary         21
+
+     8.   T-T-S Commands                         22
+          8.1.  Homograph Marker(~)              22
+          8.2.  Special Punctuation              22
+          8.3.  The Phonemic Modes               23
+          8.4.  Voice Characteristic Controls    30
+          8.5.  The Sample Rate Control          32
+          8.6.  Index Marks                      34
+          8.7.  Change the Lead-in Character     35
+          8.8.  T-T-S Command Summary            36
+
+     Appendix A:  Interface Cables
+          A.1.  The Audapter System Serial
+                Interface Pin Out                A-1
+          A.2.  Which Cable to Use               A-1
+          A.3.  The 9 Pin Null Modem Cable       A-1
+          A.4.  The 25 Pin Null Modem Cable      A-2
+          A.5.  The Modem/Apple Cable            A-2
+          A.6.  The Parallel Interface Pin Out   A-3
+
+
+
+
+
+                          Page iii
+
+
+               Audapter System User's Guide
+
+
+     Appendix B:  Configuration Menu Settings
+          B.1.  Demo Text                        B-1
+          B.2.  Voice Menu                       B-2
+          B.3.  Serial Menu                      B-4
+          B.4.  Systems Menu                     B-5
+
+     Appendix C:  The Standard BeSTspeech T-T-S
+                  Text Normalizer
+          C.1.  Overview                         C-1
+          C.2.  Pronouncing Numbers              C-3
+          C.3.  Pronouncing Letters and Words    C-9
+          C.4.  Homographic Spellings            C-11
+          C.5.  Interpreting Punctuation         C-11
+
+     Appendix D:  Additional Phonemic Symbols
+          D.1.  Boundaries and Silence           D-1
+          D.2.  Precisely Specifying Stress
+                and Pitch                        D-2
+          D.3.  Transcription Conventions        D-4
+
+     Appendix E:  Trouble Shooting
+          E.1.  Warning                          E-1
+          E.2.  The First Steps                  E-1
+          E.3.  How to Call PDS                  E-1
+          E.4.  Doesn't Talk at All              E-2
+          E.5.  Talks Nonsense                   E-2
+          E.6.  Talks but Won't Receive Data     E-2
+          E.7.  Doesn't Save the Configuration   E-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page iv
+
+
+               Audapter System User's Guide
+
+
+     Limited Warranty
+
+     Every product manufactured by Personal Data
+     Systems, Inc. (PDS) is fully tested and quality
+     checked before shipment and is warranted to be in
+     good working order for a period of one year from
+     the date of original purchase from PDS or an
+     authorized Audapter dealer.  Should this Audapter
+     unit fail to be in good working order at any time
+     during the one year period, PDS will, at its
+     option, repair or replace it at no charge.
+     Replacement parts will be either reconditioned or
+     new, and the replaced parts will become the
+     property of PDS.
+
+     Service under this limited warranty is available
+     from PDS.  Notify us of the model, serial number,
+     date of purchase and particular details and we
+     will give you an RMA (Returned Material
+     Authorization) number.  Send the Audapter unit
+     freight prepaid and insure the product or assume
+     the risk of loss or damage in transit.  Return it
+     in its original shipping container, or an
+     equivalent, and mark the package "FRAGILE".
+     Enclose a clear description of the problems
+     experienced, return address and preferred shipping
+     method.
+
+     This warranty does not cover Audapter units
+     damaged as a result of accident, disaster, misuse,
+     abuse or unauthorized modifications.  Postage,
+     insurance, or shipping costs incurred in
+     presenting your Audapter unit for warranty service
+     are your responsibility.
+
+
+
+
+
+
+
+
+                           Page v
+
+
+               Audapter System User's Guide
+
+
+     The warranty and remedy provided above are
+     exclusive and in lieu of all other express
+     warranties and unless stated herein, any
+     statements or representations made by any other
+     person or firm are void.  The duration of any
+     implied warranties of merchantability or fitness
+     for any particular purpose on your Audapter System
+     shall be limited to the duration of the express
+     warranty.  Neither Personal Data Systems, Inc. nor
+     its affiliates shall be liable for any loss,
+     inconvenience or damage, including direct,
+     special, incidental or consequential damages,
+     resulting from the use or inability to use the
+     Audapter System, whether resulting from breach of
+     warranty or any other legal theory.
+
+     Some states do not allow limitations on how long
+     an implied warranty lasts and some do not allow
+     the exclusion or limitation of incidental or
+     consequential damages, so the above limitation and
+     exclusion may not apply to you.
+
+     This warranty gives you specific legal rights, and
+     you may also have other rights which vary from
+     state to state.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page vi
+
+
+               Audapter System User's Guide
+
+
+     1.  Introduction
+
+     The Audapter (tm) Speech System is a battery
+     powerable, portable, high quality speech
+     synthesizer system.  It has been designed to be
+     easy to set up and easy to use.
+
+     We at Personal Data Systems have been using
+     synthesizers for many years, both for fun and as a
+     primary output form, in conjunction with screen
+     review programs.  This long experience has enabled
+     us to design in features that make the Audapter
+     System more convenient to use.  The Audapter
+     System's speech can be understood without
+     straining; it can be completely configured over
+     the interfaces or by the front panel buttons; and
+     it has fast response.
+
+     This manual is available in ASCII on several
+     formats of floppy disks as well as in Braille and
+     on audio cassette.  Some concepts that might be
+     easier to express in graphic form in print are
+     explained here in words to make the manual more
+     useful when read by the Audapter System itself.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page 1
+
+
+               Audapter System User's Guide
+
+
+     2.  Description
+
+     The Audapter Speech System includes the Audapter
+     unit, an AC adapter and the associated
+     documentation.  You may also have chosen to
+     purchase a cable for connecting the Audapter unit
+     to your computer.
+
+     The Audapter unit is a rectangular box.  The top
+     surface has a speaker grill.  On the front are,
+     from left to right, an audio output jack, a volume
+     control knob, the command button and a three
+     position on/off switch.  On the back, again from
+     left to right, are a 9 pin female serial
+     connector, on some units a 36 pin Centronics
+     parallel connector, and the AC power jack.
+
+     2.1.  Front Panel
+
+     2.1.1.  Audio Output Jack
+
+     The audio output jack can be used for an earphone
+     or an auxiliary speaker.  Plugging into this jack
+     will disable the internal speaker.
+
+     2.1.2.  Volume Control Knob
+
+     The volume control knob can be adjusted at any
+     time, or set to the best volume for you and left
+     there.  The volume may also be changed in the
+     Configuration Menu or by sending commands over the
+     interface.  See Section 5, Configuration Menus,
+     and Section 8, Voice Controls, for more
+     information on changing the volume.
+
+
+
+
+
+
+
+
+                          Page 2
+
+
+               Audapter System User's Guide
+
+
+     2.1.3.  Command Button
+
+     The command button has several uses.  It serves as
+     a sort of indicator light; pushing the button will
+     cause the Audapter System to say "Audapter ready"
+     if it is ready to talk.  It also serves as a
+     "shutup" button.  If you want the Audapter System
+     to stop talking, just push the button and it will
+     instantly stop.  The third use is in conjunction
+     with the on/off switch for changing parameters
+     through the menus.  For more on the menus see
+     Section 5, Configuration Menus.
+
+     2.1.4.  On/Off Switch
+
+     The three position on/off switch also has several
+     uses.  Obviously, it turns the unit on, when
+     pushed all the way to the left and then allowed to
+     rock back to the middle position.  The middle
+     position is the "on" position.  Having to rock the
+     switch all the way to the left is a safeguard
+     against turning the unit on when the switch
+     accidentally gets pushed.
+
+     The on/off switch also turns the Audapter System
+     off when pushed to the right.  Even when the unit
+     is "off", the configuration parameters are kept in
+     battery backed up RAM.  This means that the
+     Audapter System's configuration settings will not
+     be lost when you turn the unit off.
+
+     Another use for the on/off switch is in resetting
+     the Audapter System to its original factory
+     settings, a "Master Reset".  It is possible to
+     change the voice parameters in such a way as to
+     make completely unintelligible speech.  If this
+
+
+
+
+
+
+                          Page 3
+
+
+               Audapter System User's Guide
+
+     happens, just turn the unit off, then turn it on
+     again but continue holding the on/off switch all
+     the way to the left for about 10 seconds, until it
+     starts to talk.  When the Audapter says "Audapter
+     system reset" all parameters will have been
+     returned to the factory setting.
+
+     See Section 5, Configuration Menus, for the on/off
+     switch's use in configuring your system.
+
+     2.2.  Back Panel
+
+     2.2.1.  Computer Interfaces
+
+     There are two ways of connecting the Audapter to
+     computers or modems, the 9 pin female serial
+     connector and, on some units, a 36 pin Centronics
+     parallel connector.  If you chose to not include
+     the parallel option, the parallel connector, if
+     present, will not work.
+
+     2.2.2.  Power Jack
+
+     The AC adapter plugs into the power jack.  If your
+     Audapter System has the battery option, the AC
+     adapter will also recharge the internal power
+     battery.
+
+     2.3.  AC Adapter
+
+     The AC adapter included with your Audapter System
+     is a 9 volt, 300 milliamp, positive center
+     adapter.  Additional adapters are available from
+     PDS.
+
+     The Audapter unit may work with other types of AC
+     adapters, but using the wrong adapter could
+     seriously damage the Audapter System.  You should
+     contact PDS before attempting to use any other AC
+     adapter/charger.
+
+
+
+                          Page 4
+
+
+               Audapter System User's Guide
+
+
+     3.  Unpacking
+
+     As you unpack your Audapter Speech System, make
+     sure you have all the parts listed below and that
+     none have been damaged in shipping.
+
+     You should have the Audapter unit and an AC
+     adapter.  If you ordered a cable it will also be
+     included.  The battery and parallel options are
+     completely internal to the Audapter unit so you
+     don't have to look for them.  There should also be
+     a manual in one or more forms - print, braille,
+     diskette or audio cassette.
+
+     You should retain all the packing materials in
+     case you need to send the Audapter unit back to
+     PDS for servicing or upgrading.  Although the
+     Audapter unit is built to take being carried
+     around, it is not safe to ship it without plenty
+     of padding.  If we do not think that the packing
+     you return an Audapter unit in is sufficient, we
+     will repack it in our standard packaging and
+     charge you for our cost.
+
+     Warning: The Audapter unit does not have any user
+     serviceable internal parts.  It contains CMOS
+     circuitry that can be easily damaged if the cover
+     is removed.  Opening up the Audapter unit will
+     void your warranty.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page 5
+
+
+               Audapter System User's Guide
+
+
+     4.  Installation Instructions
+
+     4.1.  Standalone Test
+
+     You should try out your Audapter System before
+     connecting it to a computer.  Just plug the AC
+     adapter into the Audapter unit's power jack and
+     then plug the AC adapter into the wall or power
+     strip.
+
+     Push the on/off button all the way to the left and
+     hold it there about 10 seconds, until the Audapter
+     starts to say "Audapter system reset" then let it
+     rock back to the center.  Holding the switch
+     causes a Master Reset which insures that the
+     Audapter has all the normal factory settings.
+     After a pause you will hear "ready", signifying
+     that the Audapter is ready for data input.  Push
+     the command button and you will hear "ready"
+     again.
+
+     For normal start up, you will just push the on/off
+     button all the way to the left and let it rock
+     back to the center, avoiding a Master Reset.
+
+     If you don't hear anything from the Audapter there
+     are several things to check.  First, even if it is
+     a battery unit, make sure the AC adapter is
+     plugged into a standard 110 Volt, 60 Hz outlet and
+     has power.  Second, make sure the volume is turned
+     all the way up.  Next, try another Master Reset,
+     waiting a full 10 seconds before giving up.
+
+     If it still doesn't talk, give us a call at 408
+     866-1126 between 9 AM and 5 PM Pacific time.  We
+     are often in the office until late at night so go
+     ahead and try us even if it is later than 5 PM.
+
+
+
+
+
+                          Page 6
+
+
+               Audapter System User's Guide
+
+
+     After the Audapter has said "ready" you may either
+     connect the cable to your computer or go on to
+     menu configuration.  If you are going to connect
+     to your computer, be sure to turn the Audapter
+     unit off before you connect the cable.
+
+     4.2.  Interface Connection
+
+     The Audapter unit may be connected to any standard
+     RS-232C port or, if you have the parallel option,
+     any standard Centronics parallel port.
+
+     4.2.1.  Serial Interface
+
+     If you are connecting to an IBM PC, PC/XT, PC/AT
+     or compatible you will probably need a null modem
+     or null modem cable.  Apples, modems and other
+     equipment with DCE interfaces will usually need a
+     "straight through", non-null cable.
+
+     The cable wiring needed for most computers is
+     included in Appendix A.  Cables for your
+     particular application are available from Personal
+     Data Systems or you can have them made by several
+     other sources.  Contact PDS for the names of some
+     other sources.
+
+     4.2.2.  Parallel Interface
+
+     To connect to the parallel port, if you purchased
+     the parallel option, plug a standard 36 pin
+     Centronics ( "printer" ) cable into the Audapter's
+     Centronics connector.
+
+
+
+
+
+
+
+
+
+                          Page 7
+
+
+               Audapter System User's Guide
+
+
+     5.  Configuration Menus
+
+     The Audapter System doesn't need any dip switches
+     for changing parameters.  The configuration menus
+     and software interface controls take care of
+     parameters that may need changing.
+
+     Note that configuration menu changes are temporary
+     and are only saved in the non-volatile memory when
+     you return to the ready mode.  Hence, if you
+     change something in the configuration and turn the
+     unit off without returning to ready, the changes
+     will not be saved.
+
+     To get into the Configuration Menus, after the
+     Audapter unit is powered up, and you have heard
+     "ready", rock the on/off switch to the left and
+     let it rock back to the center.  This will put the
+     Audapter System into the Configuration Menus and
+     you will hear "demo".
+
+     Pushing the on/off switch to the left tells the
+     Audapter System to turn on or move on to the next
+     menu or next menu item.  The command button tells
+     the Audapter System to stop or start speaking or
+     to change a menu item.  Pushing the on/off switch
+     to the left and pushing the command button at the
+     same time acts as an escape.
+
+     The other main sections of the Menus are Voice
+     Configuration, Serial Configuration and System
+     Configuration.
+
+     5.1.  The Configuration Menus
+
+
+
+
+
+
+
+
+                          Page 8
+
+
+               Audapter System User's Guide
+
+
+     5.1.1.  Summary of Main Modes or Menus
+
+       Ready - ready to receive and announce text from
+               the interface
+       Demo - announces demonstration message
+       Voice Menu - permits voice characteristics to be
+                    changed
+       Serial Menu - permits configuration of the
+                     serial interface
+       System Menu - gives feature information and
+                     permits changes to system
+                     configuration
+
+     5.1.1.1.  Voice Menu
+
+       Which Voice
+       Volume
+       Voice Pitch
+       Speech Rate
+       Size of Mouth
+       Unvoiced Level
+       Set Tone
+
+     5.1.1.2.  Serial Menu
+
+       Baud Rate
+       Parity
+       Data Bits
+       Stop Bits
+       Input Handshake
+       Output Handshake
+
+     5.1.1.3.  System Menu
+
+       Features
+       Announce How Much Punctuation
+       Output Speech
+       Power Saving Sleep
+       Serial/Parallel Interface Selection
+       (only if you have the parallel option)
+
+
+                          Page 9
+
+
+               Audapter System User's Guide
+
+
+     5.2.  Moving Around the Menus
+
+     When you hear the words "ready", "demo" or "menu"
+     you are in one of the main modes or menus.  To
+     skip to the next main menu rock the on/off switch
+     to the left.  Just keep rocking the switch to get
+     back to "ready".  Another, faster way to get back
+     to "ready" is to rock the switch and, while
+     holding the switch down, push the command button.
+     You do not have to wait for the Audapter System to
+     finish speaking in any of the menus, just rock the
+     switch or push the command button to move on when
+     you have heard enough.
+
+     To descend into a main menu, push the command
+     button and you will hear the name of the first sub
+     menu.  Once you hear the name, you can either
+     descend into the sub menu or move on to the next
+     sub menu.  To move on, rock the on/off switch.  If
+     you keep rocking the switch, you will return to
+     the main menu that you entered.
+
+     To descend into the sub menu, push the command
+     button.  Keep pushing the button to move among the
+     sub menu's choices.  The sub menus wrap around so
+     don't be afraid to listen to all the options
+     before choosing one.  To choose an option, step
+     through the menu until you hear that option.  Then
+     rock the on/off switch to the left to choose that
+     option and move on to the next item.  If you were
+     on the last item of a menu, pressing the on/off
+     switch to the left will move you back to the
+     beginning of the current menu.
+
+     An item is "set" to the last thing that was spoken
+     before you moved on to the next item.  Changes in
+     the configuration are temporary and are only saved
+     in the non-volatile memory when you return to the
+     ready mode.  Hence, if you change something in the
+     configuration and turn the unit off without
+     returning to ready, the changes will not be saved.
+
+                          Page 10
+
+
+               Audapter System User's Guide
+
+
+     5.3.  Demo
+
+     The first part of the Configuration Menu is a
+     demonstration of some of the Audapter System's
+     features.  After hearing "demo" you may push the
+     command button and the Audapter System will run
+     through the demonstration.  If you want to
+     interrupt it at any time, just push the command
+     button again and it will immediately interrupt the
+     demo then say "demo" again indicating that you are
+     back at the top of the demo.
+
+     You can push the command button again to hear the
+     demonstration or rock the on/off switch to go on
+     to the next menu section.
+
+     5.4.  Voice Menu
+
+     To learn more about the Voice Controls see Section
+     8, Voice Controls, and Appendix B, Configuration
+     Menu Settings.
+
+     The second main menu is the Voice Menu.  You can
+     use this menu to choose your own "standard" voice
+     or to design one on your own.
+
+     The first sub menu is Which Voice.  It offers you
+     a choice of different voices for your "standard"
+     voice.  The choices include the normal voice, the
+     jolly giant, the alien, Squeeky, Dorothy, the
+     little kid and the whisper voice.  The next option
+     is Volume which ranges from 1 to 10 with the
+     "normal" at 5.
+
+     The voice parameters you can change are pitch,
+     rate, size of mouth and unvoiced level.
+
+     Voice Pitch offers you a range of pitches from 1
+     to 10, with the "normal" at 4.
+
+
+
+                          Page 11
+
+
+               Audapter System User's Guide
+
+
+     Speech Rate offers speeds from 1 to 10, with the
+     "normal" at 3.
+
+     Size of Mouth changes the "size" of the speaker's
+     mouth.  It ranges in five steps from very small to
+     very large.
+
+     The Unvoiced Level sets the amount of "hissiness"
+     from mild to strong in three steps.
+
+     Set Tone can be treble or bass.  The treble alters
+     tone for use with earphones.
+
+     5.5.  Serial Menu
+
+     The first option in the Serial Menu is baud rate.
+     Baud rates range from 50 to 19,200.  See Appendix
+     B, Configuration Menus, to see a list of all the
+     baud rates available from the menu.
+
+     The next option is Parity which can be even, odd
+     or none.
+
+     Data Bits range from 5 to 8.
+
+     Stop Bits can be 1 or 2.
+
+     The choices for Input Handshake are RTS, DTR,
+     RTS/DTR and software control.
+
+     The choices for Output Handshake are CTS or none.
+
+     5.6.  System Menu
+
+     The first section of the System Menu tells you the
+     model, version and options included in your
+     Audapter System and copyright information.  These
+     are items that can't be changed by the user; they
+     are just for information.
+
+
+
+                          Page 12
+
+
+               Audapter System User's Guide
+
+
+     The second section allows you to choose how much
+     punctuation will be spoken. The choices are all,
+     most, some or none.  See Section 6.1., ECHO-like
+     Commands, for more explanation of these choices.
+
+     The third section lets you determine how the
+     speech is output.  The choices are: character by
+     character; word by word; phrase by phrase; after
+     first words and then phrase by phrase; and line by
+     line.  Character by character causes everything to
+     be spelled and word by word causes each word to be
+     spoken separately.  Phrase by phrase waits until a
+     natural phrase boundary, such as ", " or ". ", to
+     speak the phrase.
+
+     After first words and then phrase by phrase is a
+     means of forcing speech output to start sooner
+     that it would otherwise.  Some screen review
+     programs send a large block of text without any
+     carriage returns or other means of forcing the
+     Audapter to start talking.  If the program is
+     translating some characters, such as ";" to
+     semicolon, there may be thousands of characters
+     getting stored in the Audapter, which is just
+     waiting for something to tell it to start talking.
+
+     In this mode, the Audapter will start speaking
+     after the first few words instead of waiting for
+     the end of the block of text.  The prosodics will
+     not be as nice but you won't have to wait so long
+     for the speech to start.  If the Audapter seems
+     sluggish with your screen review program, try this
+     forcing mode.
+
+     The last menu section, if you have the parallel
+     option in your Audapter System, is Interface
+     Select.  Here you may choose either serial or
+     parallel interfaces.  If you choose parallel, the
+     Serial Menu has no effect.
+
+
+
+                          Page 13
+
+
+               Audapter System User's Guide
+
+
+     6.  ECHO Emulation
+
+     The Audapter System has been designed to respond
+     to ECHO-like commands to enable it to work with
+     existing screen review programs that are set up
+     for the ECHO.  These commands change a subset of
+     the Audapter's Voice Controls.
+
+     ^E stands for control E.  The [ and ] are to be
+     typed; the { and } enclose the names of variables
+     and are not to be typed.
+
+     6.1.  ECHO-like Commands
+
+       ^Ea  all punctuation mode: all characters,
+            including control characters, will be
+            announced.
+
+       ^E{num}c  compressed or high speed - it is the
+                 equivalent of ^E[r-40]: the optional
+                 num, which is between -100 and 100,
+                 sets a new default value for the upper
+                 rate.  If there is no num, num
+                 defaults to the last value set.
+
+       ^E{num}d  announce on input timeout delay: the
+                 default is 0 which disables the delay.
+                 Num can range from 0 to 15.
+
+       ^E{num}e  expanded slow speed - it is the
+                 equivalent of ^E[r0]: the optional
+                 num, which is between -100 and 100,
+                 sets a new default value for the lower
+                 rate.  If there is no num, num
+                 defaults to the last value set.
+
+       ^E{num}f  pitch setting with flat inflection:
+                 num is between 1 and 63 and the
+                 default is about 11.
+
+
+
+                          Page 14
+
+
+               Audapter System User's Guide
+
+
+       ^E{num}h  head size setting (sample rate): num
+                 is between 1 and 19 and the default is
+                 about 9.
+
+       ^El  letter mode: each character is spoken
+            automatically as soon as it is received.
+
+       ^Em  most punctuation announced mode: most
+            control characters, carriage return, line
+            feed and space are not announced.
+
+       ^En  no punctuation announced mode: letters,
+            numbers, dollar signs, and decimal points
+            are the only characters announced.
+
+       ^E{num}p  pitch ( frequency ) setting: num is
+                 between 1 and 63 and the default is
+                 about 11.
+
+       ^Es  some punctuation announce mode: most non-
+            essential punctuation and control
+            characters are not announced; this is the
+            default punctuation mode
+
+       ^E{num}v  volume or gain setting: num is between
+                 1 and 15 and the default is about 7.
+
+       ^Ew  word mode: words are spoken, not spelled.
+             A string of text is announced when a
+             carriage return or line feed is sent to
+             the Audapter.
+
+       ^E?  query command: causes the Audapter to send
+            a string containing the model, version and
+            feature code over the serial interface.
+
+       ^E[...]  native T-T-S commands - see Section 7,
+                Audapter Commands, and Section 8, T-T-S
+                Command, for the commands that can go
+                in the brackets.
+
+
+                          Page 15
+
+
+               Audapter System User's Guide
+
+
+       ^E  space command: a control e followed by a
+           space forces speech output.
+
+       ^E^M  carriage return command: forces speech
+             output.
+
+       ^E ESCAPE  escape to sleep.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page 16
+
+
+               Audapter System User's Guide
+
+
+     7.  Audapter Commands
+
+     Each of these commands fits the general pattern:
+     ^E[ character { value ,{ value } } ] where ^E
+     stands for control e, the [ and ] are typed in,
+     the character is in upper case and the { and }
+     indicate variables and are not typed.
+
+     7.1.  Announce Punctuation Modes:  ^E[A{chr}]
+
+     {chr} is the character a for announce all
+     punctuation, m for most, s for some and n for
+     none.
+
+     7.2.  Buffer Status Initialization:
+           ^E[B{dec1},{dec2}]
+
+     This command enables buffer status requests.  It
+     is used by screen review programs to control the
+     flow of information.  The disabled condition is
+     the default.  This command should be sent only
+     once for initialization.
+
+     {dec1} specifies the level and {dec2} specifies
+     the character to be used to request a status
+     indication.  {dec2} may be set to 2 to choose ^B.
+
+     After this initialization sequence, whenever the
+     Audapter receives a ^B, if {dec2} was 2, it will
+     immediately sum up the internal input text
+     buffers, count unprocessed characters and send "<"
+     if there are less than {dec1} characters waiting
+     or ">" if there are more.
+
+
+
+
+
+
+
+
+
+                          Page 17
+
+
+               Audapter System User's Guide
+
+
+     7.3.  Change the Audapter Command Prefix:
+           ^E[C{dec1},{dec2}]
+
+     {dec1} is the ASCII value of the new command
+     prefix and {dec2} is the ASCII value of the new
+     cancel character, in decimal form.  The default is
+     ^E[C5,24] for a command prefix of ^E, ASCII 5, and
+     a default cancel character of ^X, ASCII 24.
+
+     7.4.  Speech Delay Timer Setting: ^E[D{num}]
+
+     {num} = 0 means speech will not be forced by a
+     timeout.  If num is greater than 0 the Audapter
+     System will force speaking of any text left in the
+     input buffer num times .2 seconds after the last
+     text is input.
+
+     7.5.  Keep or Save Parameters in Non Volatile RAM:
+           ^E[K]
+
+     This command causes the Audapter System to save
+     current parameters to non-volatile RAM.
+
+     7.6.  More Input Buffer Level:  ^E[M{dec}]
+
+     {dec} sets the number of characters that defines
+     the point at which the input buffer is not too
+     full and the Audapter should signal the inputting
+     device to resume sending data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page 18
+
+
+               Audapter System User's Guide
+
+
+     7.7.  Normalizer Flags:  ^E[N{num1},{num2}]
+
+     {num1} = 0 refers to possible case conversion of
+     strings of all capital letters.
+
+     ^E[N0,1] is the default and causes strings of all
+     capital letters to be pronounced as a whole word,
+     assuming there are some vowels in the string.
+
+     ^E[N0,0] causes strings of all capital letters to
+     be spelled out letter-by-letter.
+
+     {num1} = 1 refers to the way that the letter "a"
+     is pronounced.
+
+     ^E[N1,1] causes the letter "a", by itself, to be
+     pronounced as "ah".
+
+     ^E[N1,0] is the default and causes a solo "a" to
+     be pronounced as "ay".
+
+     7.8.  Output Mode:  ^E[O{char}{dec}]
+
+     {char} = c means to output character by character;
+     w means word by word; p means phrase by phrase; f,
+     force mode, means after first words then phrase by
+     phrase; and l means line by line.  In the case of
+     f, {dec} is the number of words that define the
+     "first words".
+
+     Force mode is especially useful with screen review
+     programs such as the IBM Screen Reader.  It forces
+     speech out at the earliest opportunity instead of
+     waiting for the carriage return at the end of a
+     string of text.  Text is forced after the first
+     {dec} words of the line and at phrase boundaries
+     such as ", " and ".  ".  This can substantially
+     decrease the response time so that the Audapter
+     begins speaking immediately instead of waiting for
+     completion of the transmission of a long screen of
+     text.
+
+                          Page 19
+
+
+               Audapter System User's Guide
+
+
+     7.9.  Pause/Resume Character Definition:
+     ^E[P{dec1},{dec2}]
+
+     {dec1} is the ASCII value of the new pause command
+     and {dec2} is the ASCII value of the new resume
+     command, both in decimal form.  The default pause
+     command is ASCII 16 and the default resume command
+     is 18 or ^E[P16,18].
+
+     7.10. Query for Model and Version:  ^E[Q]
+
+     The Audapter System will return information on the
+     model and version number.  If you are using a
+     modem program the reply will come back before you
+     send the closing bracket but be sure to include it
+     or some of the following information will be lost.
+
+     7.11. Synchronize:   ^E[W]
+
+     Wait for speech output to finish before processing
+     the next command.
+
+     7.12. Power-Saving Mode:  ^E[Y{num}]
+
+     This command has been added to control "yawning"
+     or "dozing" mode.  {num} is the number of seconds
+     the Audapter system will wait without anything to
+     do before turning off power to the audio circuits.
+     A {num} of 0 will disable the power-save.
+
+     7.13. Force Text:  ^E[^M]
+
+     Use this command when you want to force speech in
+     all punctuation mode.  It forces speech without
+     having the carriage return spoken as "return".
+
+
+
+
+
+
+
+                          Page 20
+
+
+               Audapter System User's Guide
+
+
+     7.14. Audapter Command Summary
+
+     ^E[A{chr}] -- announce punctuation modes
+     ^E[B{dec1},{dec2}] -- buffer status initialization
+     ^E[C{dec1},{dec2}] -- change the command prefix
+     ^E[D{num}] -- speech delay timer setting
+     ^E[K] -- save parameters in non-volatile RAM
+     ^E[M{dec}] -- more input buffer level
+     ^E[N{num1},{num2}] -- normalizer flags
+     ^E[O{char}{dec}] -- output mode
+     ^E[P{dec1},{dec2}] -- pause/resume character
+                           definition
+     ^E[Q] -- query for model and version
+     ^E[W] -- synchronize
+     ^E[Y{num}] -- power-saving mode
+     ^E[^M] -- force text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page 21
+
+
+               Audapter System User's Guide
+
+
+     8.  T-T-S Commands
+
+     To help you better understand the Audapter System,
+     we have included a description of the Berkeley
+     Speech Technologies' T-T-S which does the actual
+     conversion of text to speech.
+
+     8.1.  Homograph Marker(~)
+
+     A number of English spellings, "homographs", can
+     be pronounced in more than one way, for different
+     meanings.  For example: wind, expose, minute,
+     duplicate, buffet.  T-T-S assigns ambiguous
+     spellings their more common pronunciation.
+     However, if you place a tilde (~) in front of the
+     spelling some homographs will be assigned their
+     alternative pronunciations from entries in the
+     system exceptions dictionaries.
+
+     For example:
+
+       In less than a minute, ~minute quantities began
+       to appear.
+
+       They tied a bow on the ~bow of the boat.
+
+       You should ~duplicate my duplicate copy.
+
+       After a strong wind they would ~wind up in the
+       middle of the lake.
+
+       The way she makes her entrance ~entrances me.
+
+     8.2.  Special Punctuation
+
+     The normal English punctuation marks such as
+     period and comma create prosodic (intonation)
+     contours in sentences which are read by T-T-S in
+     Text Reading Mode.  Additional punctuation marks
+     can be added to a text to change the way that it
+     is pronounced.  These marks allow you to add
+
+                          Page 22
+
+
+               Audapter System User's Guide
+
+     emphasis, change the pitch contour, and introduce
+     pauses without resorting to Phoneme Reading Mode.
+     Using these marks, you can have T-T-S pronounce
+     your text with the desired prosodic nuances, yet
+     still retain the regular English spelling of the
+     words.
+
+     This additional mark is currently implemented:
+
+       "]" - produces a shorter comma-like pause;
+
+     The question mark in English printed text is
+     pronounced both with and without a rising
+     intonation.  For the kind of question that has a
+     rising intonation, use "]?" instead of "?".
+
+     8.3.  The Phonemic Modes: Phoneme Reading ^E[p]
+           and Exception Entering ^E[x]
+
+     It is sometimes useful to bypass the T-T-S Text
+     Reading Mode modules which convert English
+     spelling to phonemic equivalents for
+     pronunciation.  The sounds of English can be
+     precisely represented in ASCII text using BST's
+     phonemic transcription system.
+
+     In the transcription, each distinctive sound of
+     English - each English phoneme - is represented by
+     a separate symbol made up of one or two keyboard
+     characters which correspond to the special
+     characters used in the phonemic representations of
+     pronunciation in standard dictionaries.  As much
+     as possible, letter characters are used for
+     phoneme symbols as they are used in regular
+     English spelling.  Stress in words, pitch levels
+     and boundaries between words and sentences can
+     also be represented by special symbols.  The
+     phoneme symbols are presented below in Section
+     8.3.1.
+
+
+
+
+                          Page 23
+
+
+               Audapter System User's Guide
+
+
+     Phonemic transcriptions are used by T-T-S:
+
+     1) In Phoneme Reading Mode.  T-T-S can read
+     phonemic transcriptions directly.  This allows you
+     to specify exactly how you want individual words
+     or even a full text pronounced.  For example, some
+     women with the name "Diane" might prefer to use
+     the French pronunciation, "dee YAHN", which would
+     be transcribed phonemically as ^E[p] d i y a ' n
+     ^E[t].
+
+     Every phoneme string has to be terminated by ^E[t]
+     or it may not be handled properly.  Single words,
+     as in this example, are just followed by ^E[t].
+     Phrases or full text need a ^E[t] before any
+     carriage return and another ^E[p] at the start of
+     the next line.  If a phoneme string is so long
+     that it is automatically terminated before the end
+     of the buffer it may not be handled properly.
+
+     2) In Exception Entering Mode.  An English letter
+     sequence (word) is entered into the User Exception
+     Dictionary (UED) along with a new phonemic
+     pronunciation.  It is not spoken directly.  After
+     an exception has been entered in the UED the
+     phonemic pronunciation is selected every time the
+     word appears in text.  The changed pronunciation
+     continues until you turn the Audapter off.
+     Exceptions can be pronounced completely
+     differently from the way they are spelled in text.
+     For example, a real estate listing application
+     program might want to abbreviate "three bedrooms
+     with view" as "3BRMWVU".  Entered in the UED, it
+     would receive the full pronunciation.
+
+
+
+
+
+
+
+
+                          Page 24
+
+
+               Audapter System User's Guide
+
+
+     8.3.1.  Symbols for Phonemic Transcription of
+             Words
+
+     One symbol is used for each distinctive sound
+     (phoneme) of standard American English.  In the
+     lists below, each phoneme is illustrated by a list
+     of example words in which it appears.  The lists
+     are arranged to demonstrate the contrasts between
+     similar sounds.
+
+     Consonant phonemes:
+
+      w  ---  watt  wet  woo  quit  Duane  wham
+      y  ---  yacht  yet  you  use  argue  yam
+      h  ---  hot  heard  who  hi  ahoy  ham
+
+      m  ---  sum  ramp  my  limb  ample  moose
+      n  ---  sun  rant  nigh  Lynn  handle  noose
+      ng  ---  sung  rank  drunk  long  ankle
+
+      l  ---  lots  stole  feel  sold  lily  fled
+      r  ---  rots  store  fear  soared  rare  Fred
+
+      f  ---  fat  half  rough  lift  phase  off
+      v  ---  vat  have  shove  lived  cover  vivid
+      th  ---  booth  author  ether  anthem  thesis
+      dh  ---  smooth  other  either  rhythm  these
+      s  ---  sue  bus  lace  recent  city  oxen
+      z  ---  zoo  buzz  lays  resent  zitty  exact
+
+      ch  ---  batch  chin  hitch  nature  virtual
+      jh  ---  badge  gin  Jeff  soldier  gradual
+      sh  ---  bash  shin  chef  nation  racial
+      zh  ---  beige  measure  vision  fusion
+
+      b  ---  bats  robe  baby  beak  obey  amble
+      p  ---  pats  rope  puppy  speak  opaque
+      d  ---  door  mad  dime  did  buzzed  road
+      t  ---  tore  mat  time  strut  bussed  wrote
+      g  ---  got  rag  ogre  Greg  agog  figs
+      k  ---  cot  rack  ocher  quake  pique  fix
+
+                          Page 25
+
+
+               Audapter System User's Guide
+
+
+     Vowel phonemes (as they are pronounced in stressed
+     syllables):
+
+      i  ---  beet  leak  ease  we  ski  eel
+      I  ---  bit  lick  is  spirit  hear*  ill
+      e  ---  bait  lake  came  way  steak  ale
+      E  ---  bet  Lech  desk  merry  head  el
+      ae  ---  bat  lack  ask  graph  had  Al
+
+      u  ---  boot  Luke  dune  move  stew  cooed
+      U  ---  put  look  bush  lure  tour  could
+      o  ---  boat  choke  flow  woe  oboe  code
+      O  ---  bought  chalk  flaw  store*  long
+      a  ---  pot  lock  spa  mark  starry  cod
+
+      ^  ---  but  luck  done  just  hull  cud
+      R  ---  Bert  lurk  earn  mirth  journey  curd
+
+      ay  ---  bite  like  hire  why  eyes  aisle
+      oy  ---  boy  join  hoist  coy  oink  oil
+      aw  ---  bout  pound  house  cow  ouch  owl
+
+     Any of the vowel phonemes listed above for
+     stressed syllables can appear in unstressed
+     syllables as well.  For example, the final
+     syllable of "lucky" has the same vowel phoneme
+     ("i") as "keep".  Those forms starred (*) contain
+     vowels which are conventionally considered to be
+     lax due to the following "r".  There is an
+     additional vowel phoneme ("=") that only appears
+     in unstressed syllables.
+
+       =   ---  canal( 1st syllable )
+                support( 1st syllable )
+                action( 2nd syllable )
+                tickle( 2nd syllable )
+
+
+
+
+
+
+                          Page 26
+
+
+               Audapter System User's Guide
+
+
+     8.3.2.  Stress Symbols
+
+     Stress symbols in words are placed after the vowel
+     of the stressed syllable.  Primary stress is a
+     single quote ' ; secondary stress is double quotes
+     ".  Boundaries between words in multiword
+     transcriptions are marked by the symbol $W.
+
+     Stress marks and phoneme symbols must always be
+     preceded by a space.  If a phoneme symbol is made
+     up of two characters ("sh") they must be kept
+     together.  For example:
+
+       quiche  k i ' sh
+       pizza  p i ' t s =
+       fettuchine  f E " t = ch i ' n i
+       three bedroom
+       ^E[x]3BR th r i " $W b E ' d r u m ^E[t]
+       (UED abbreviation)
+
+     8.3.3.  Phoneme Reading Mode
+
+     To enter Phoneme Reading Mode, type ^E[p] anywhere
+     in the text.  To return to Text Reading Mode, type
+     ^E[t].
+
+     T-T-S always starts in Text Reading Mode so, in
+     order to read a file that is written in a phonemic
+     transcription, you should begin the file with a
+     ^E[p] and end with a ^E[t].  In addition, there
+     must be a ^E[t] before any carriage return and
+     another ^E[p] at the start of the next line to
+     make sure the phoneme strings are handled
+     properly.  Every phoneme symbol, including stress
+     marks, must be preceded by a space.  Thus, the
+     phonemic representation for the word "Renoir"
+     would be: ^E[p] r E n w a ' r ^E[t].
+
+
+
+
+
+                          Page 27
+
+
+               Audapter System User's Guide
+
+
+     In Phoneme Reading Mode, you can transcribe as
+     little as a single word within a text.  For
+     example, the sentence
+
+       Her name is Marcia, which she pronounces
+       ^E[p] m a r s i ' = ^E[t].
+
+     would be read:
+
+       "her name is marsha, which she pronounces
+       mar-SEE-uh."
+
+     You can also transcribe a sentence, a phrase, or
+     even a whole text.  To prepare a text larger than
+     a single word for Phoneme Reading Mode, additional
+     symbols are required.  These symbols are described
+     in Appendix D.
+
+     T-T-S is designed to produce the phonemes of
+     standard American English.  It does not have the
+     phonemes for other languages, for example the true
+     French pronunciation of the final "n" in "bon".
+     It will pronounce non-English words just as a
+     typical American who doesn't speak the foreign
+     language does, not the way a native speaker does.
+
+     It also does not have phonemes which may be in
+     other regional English dialects, for example the
+     guttural final consonant in the authentic
+     Scottish-English pronunciation of "loch".  For
+     this reason, a user who speaks a non-standard
+     dialect may find that T-T-S will refuse to
+     pronounce some transcriptions.  It will also
+     reject certain non-English combinations of
+     phonemes, such as some consonant clusters in
+     Slavic languages and odd sequences entered as
+     typing errors.
+
+
+
+
+
+                          Page 28
+
+
+               Audapter System User's Guide
+
+
+     8.3.4.  The Exception Entering Mode ^E[x]
+
+     Exceptions are entered in the UED by associating
+     an English spelling with its phonemic
+     transcription.  To enter an exception in the User
+     Exception Dictionary, type both the word and the
+     phonemic transcription of how you want it
+     pronounced in the following form:
+
+       ^E[x] places T-T-S in Exception Entering Mode.
+
+       ssss is the English spelling of the exception,
+       typed without spaces.
+
+       p p p p is its pronunciation in phonemes, with
+                each symbol preceded by a space.
+
+       ^E[t] returns to Text Reading Mode.
+
+     Each word that you enter as an exception must be
+     preceded by a separate "^E[x]" and followed by
+     "^E[t]" and a carriage return.
+
+     For example:
+
+       ^E[x]Renoir r E n w a ' r ^E[t]
+       ^E[x]pizza p i ' t s = ^E[t]
+
+     A list of exceptions for a particular application
+     can be kept as a separate text file to be read
+     into the UED as the first step in running an
+     application program.
+
+     Exceptions can also be placed anywhere within a
+     text file which will be read by T-T-S.  If they
+     are placed at the beginning of the file, they will
+     be read into the UED before the file is
+     pronounced.  After user exceptions are loaded into
+     the UED, the pronunciation of the exception
+     continues in the changed form, unless it is
+     changed again, or you turn off the Audapter unit.
+
+                          Page 29
+
+
+               Audapter System User's Guide
+
+
+     8.4.  Voice Characteristic Controls
+
+     The Audapter System's speech can be changed in
+     several ways by changing the Voice Controls.  The
+     different controls and their ranges are listed
+     below.
+
+     Note that the [ and ] are to be typed in but the
+     { and } set off variables and are not to be typed.
+     The case of the control is important; all these
+     controls use lower case letters.
+
+     8.4.1.  Voiced excitation function:  ^E[e{num}]
+
+     This control changes the excitation function
+     accessed by the chip.  {num} is an integer in the
+     range of 2 through 7.  The default is 3.  The
+     value 2 gives an entirely voiceless output
+     (whispering).
+
+     8.4.2.  Fundamental frequency:  ^E[f{dec}]
+
+     This control determines the overall pitch of the
+     voice.  It affects inherent pitch characteristics
+     of the speaker, but not the intonation. {dec} can
+     be 39 to 4500 Hz, in integer increments.  The
+     default is 80.  An out-of-range value will cause a
+     return to the default fundamental frequency.
+
+     8.4.3.  Overall gain:  ^E[g{num}]
+
+     This control determines the overall loudness of
+     the speech output. {num} is a positive or negative
+     integer, in units representing 3/4 dB.  The
+     default is 21.
+
+
+
+
+
+
+
+                          Page 30
+
+
+               Audapter System User's Guide
+
+
+     8.4.4.  Pitch topline:  ^E[h{num}]
+
+     This control changes the pitch range of the voice
+     by increasing or decreasing the Hz value of the
+     pitch topline.  Raising the topline makes the
+     speaker's intonation sound more emphatic.
+
+     {num} can range from -10 to arbitrarily large
+     positive numbers.  The higher the number the
+     higher the topline.  The default value is 0.
+     Whenever fundamental frequency is changed, {num}
+     is reset to the default value.
+
+     8.4.5.  Speaking rate:  ^E[r{percentage}]
+
+     This control changes the rate of speech (i.e.,
+     makes the voice speak faster or slower).
+     {percentage} is a positive or negative integer
+     representing a percentage change to be applied to
+     the default rate.  Positive values increase sound
+     durations by the given percentage, negative ones
+     decrease it.
+
+     8.4.6.  Sample rate:  ^E[s{num}]
+
+     This control changes the rate at which speech
+     samples are output.  It is an important control
+     for changing voice quality.  See the discussion on
+     changing voices in Section 8.5., below.
+
+     8.4.7.  Unvoiced gain:  ^E[u{num}]
+
+     This control increases or decreases the amplitude
+     of voiceless segments relative to voiced ones.
+     {num} can be a positive or negative integer, in
+     units representing 3/4 dB.  The default is -18.
+
+
+
+
+
+
+                          Page 31
+
+
+               Audapter System User's Guide
+
+
+     8.4.8.  Wait before next frame:  ^E[w{num}]
+
+     This control causes the preceding frame of speech
+     data to be repeated in the DSP speech chip for
+     {num} more cycles or pitch periods.  This can be
+     used to stretch out a sound or to add longer
+     silences between sounds.  The factory default
+     setting for {num} is 25.  If {num} is specified
+     with a value greater than zero, it will become the
+     new default wait time.  Examples:  ^E[w], ^E[w1],
+     ^E[w25], ^E[w100].
+
+     8.5.  The Sample Rate Control
+
+     Altering the sample rate of speech output can
+     change the character of the voice.  This change
+     will be perceived by the listener as an apparent
+     change in the identity of the speaker.  By
+     increasing the sample rate, all frequencies
+     present in the signal will be shifted upward.  The
+     effect will be as though the speaker had a smaller
+     vocal tract.  Decreasing the sample rate will
+     shift all frequencies downward and make it seem as
+     if the speaker had a larger vocal tract.
+
+     The syntax for altering the sample rate is:
+     ^E[s{num}], where {num} can take on values from 0
+     through 63.  0 is the fastest sample rate possible
+     and 9 is the default sample rate.
+
+     For example, ^E[s4] will produce a voice that has
+     higher frequencies than the default voice.
+
+
+
+
+
+
+
+
+
+
+                          Page 32
+
+
+               Audapter System User's Guide
+
+
+     With an increase in sample rate, both the spectral
+     peaks and the fundamental frequency are shifted
+     upward.  The rate of speech is also increased.  A
+     decrease in the sample rate has the opposite
+     effects.  To keep fundamental frequency and speech
+     rate constant with a change in sample rate, use
+     the following settings ('r' is the speech rate
+     control, and 'f' is the fundamental frequency
+     control):
+
+       ^E[s0]   ^E[r24]   ^E[f61]
+       ^E[s1]   ^E[r22]   ^E[f63]
+       ^E[s2]   ^E[r19]   ^E[f65]
+       ^E[s3]   ^E[r16]   ^E[f67]
+       ^E[s4]   ^E[r14]   ^E[f69]
+       ^E[s5]   ^E[r11]   ^E[f71]
+       ^E[s6]   ^E[r8]    ^E[f74]
+       ^E[s7]   ^E[r5]    ^E[f76]
+       ^E[s8]   ^E[r3]    ^E[f78]
+       ^E[s9]   ^E[r0]    ^E[f80]   (default voice)
+       ^E[s10]  ^E[r-3]   ^E[f82]
+       ^E[s12]  ^E[r-8]   ^E[f86]
+       ^E[s14]  ^E[r-14]  ^E[f91]
+       ^E[s16]  ^E[r-19]  ^E[f95]
+       ^E[s18]  ^E[r-24]  ^E[f99]
+
+     Experimenting with these controls will produce a
+     variety of different voice characteristics.  The
+     following settings give an interesting range of
+     voices:
+
+       ^E[s9]   ^E[r0]    ^E[f80]
+       ^E[s6]   ^E[r0]    ^E[f55]
+       ^E[s3]   ^E[r6]    ^E[f84]
+       ^E[s0]   ^E[r10]   ^E[f61]
+       ^E[s15]  ^E[r-22]  ^E[f105]
+       ^E[s18]  ^E[r-18]  ^E[f65]
+
+
+
+
+
+                          Page 33
+
+
+               Audapter System User's Guide
+
+
+     8.6.  Index Marks:  ^E[i], ^E[i{dec1}] or
+           ^E[i{dec1},{dec2}]
+
+     {dec1} is from 0 to 7 and {dec2} is any whole
+     decimal number from 1 through 32,767.
+
+     Index marks are a means of letting the Audapter
+     System communicate with the computer whose serial
+     port it is connected to.  If text sent to the
+     Audapter System contains index marks, the Audapter
+     stores an index value and/or sends the index value
+     back to the host computer over the serial
+     interface whenever an index mark is processed.  An
+     application program in the host computer can use
+     the index values to keep track of which words have
+     been spoken.
+
+     {dec1} determines whether there is a response,
+     whether the response (if any) is in normal command
+     format or short form and whether the index value
+     in the Audapter System's memory is updated.
+
+     {dec2} determines the index value that is stored
+     in the Audapter System and/or sent to the host
+     computer.  If {dec1} is blank, 0, 5, 6 or 7,
+     {dec2} may be included but will be completely
+     ignored.  If {dec2} is not in the range of 1 to
+     32,767 it will be ignored.  If {dec2} is not
+     included or is out of range in an index marker
+     that is supposed to set the index value the stored
+     index value will not be changed.
+
+     ^E[i] or ^E[i0] is short response only.  It
+     responds with either the default, ASCII 9 which is
+     a tab character, or with an index value you
+     previously set.
+
+     ^E[i1] is long response only.  It responds with
+     "^E[i1,{dec2}]" where {dec2} is either the
+     default, 9, or the index value you previously set.
+
+
+                          Page 34
+
+
+               Audapter System User's Guide
+
+
+     ^E[i2,{dec2}] is set and short response.  It sets
+     the index value to {dec2} and also responds with
+     the ASCII character whose decimal value is {dec2}.
+     If {dec2} were 7 then the response would be a
+     bell.
+
+     ^E[i3,{dec2}] is set and long response.  It sets
+     the index value to {dec2} and also responds with
+     "^E[i3,{dec2}]".
+
+     ^E[i4,{dec2}] is set the index value only.  If
+     {dec2} is out of range there will be no action
+     taken.
+
+     ^E[i5] increments the index value only.
+
+     ^E[i6] increments the index value and sends a
+     short response.
+
+     ^E[i7] increments the index value and sends a long
+     response.
+
+     We suggest that, when initializing your system,
+     you send ^E[i4,9] to make sure that the index
+     value is 9 and then use ^E[i] as your usual index
+     marker.  The reply that your computer will see is
+     ASCII 9, a tab character.
+
+     8.7.  Change the Lead-in Character:  ^E[c{dec}]
+
+     {dec} is the ASCII value of the new lead-in
+     character in decimal form.  Note:  the command
+     lead-in character can be quoted simply by doubling
+     it.
+
+
+
+
+
+
+
+
+                          Page 35
+
+
+               Audapter System User's Guide
+
+
+     8.8.  T-T-S Command Summary
+
+     Each of these commands fits the general pattern:
+     ^E[ character { value { ,value } } ] where ^E
+     stands for control e, the [ and ] are typed in,
+     the character is in lower case and the { and }
+     indicate variables and are not typed.
+     ^E[c{dec}] -- change command lead in character
+     ^E[e{num}] -- voiced excitation function
+     ^E[f{dec}] -- fundamental frequency
+     ^E[g{num}] -- overall gain
+     ^E[h{num}] -- pitch topline
+     ^E[i{dec1}{,dec2}] --   index marker entered in text
+     ^E[p] -- phoneme reading mode
+     ^E[r{percentage}] speaking rate
+     ^E[s{num}] -- sample rate
+     ^E[t] -- begin text reading mode
+     ^E[u{num}] -- unvoiced gain
+     ^E[x] -- exception-entering mode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Page 36
+
+
+
+                Audapter System User's Guide
+
+     Appendix A: Interface Cables
+
+     A.1.  The Audapter System Serial Interface Pin Out
+
+     The Audapter System matches the AT 9 pin RS-232C
+     pin out and is a DTE device.  Because it is DTE
+     you will need a null modem to switch the lines
+     when going to a PC, XT, AT or PS2 computer or
+     compatible.
+
+           Pin #   Signal Name
+
+             1     DCD Data Carrier Detect input
+             2     RxD Receive Data input
+             3     TxD Transmit Data output
+             4     DTR Data Terminal Ready output
+             5     SG  Signal Ground
+             6     DSR Data Signal Ready input
+             7     RTS Ready to Send output
+             8     CTS Clear to Send input
+             9     RI  Ring Indicate input
+
+     A.2.  Which Cable to Use
+
+     IBM PC, XT, AT and PS2 computers and compatibles
+     with 9 pin connectors will need the 9 pin null
+     modem cable (see Section A.2.) and those with 25
+     pin connectors will need the 25 pin null modem
+     cable (see Section A.3.).
+
+     Apples, modems and other equipment with DCE
+     interfaces will probably need the Modem/Apple
+     cable (see Section A.4.).
+
+     A.3.  The 9 Pin Null Modem Cable
+
+     The 9 Pin Null Modem Cable is a 9 pin male to 9
+     pin female cable with full handshake null modem.
+
+
+
+
+
+                         Page A-1
+
+
+                Audapter System User's Guide
+
+     Specifying the male pins as M.1, M.2, etc. and the
+     female pins as F.1, F.2, etc., the wiring is:
+
+       M.1 to M.4 to F.6
+       M.2 to F.3
+       M.3 to F.2
+       M.5 to F.5
+       M.6 to F.4 to F.1
+       M.7 to F.8
+       M.8 to F.7
+       M.9 to F.9
+
+     A.4.  The 25 Pin Null Modem Cable
+
+     The 25 Pin Null Modem Cable is a 9 pin male to 25
+     pin female cable with full handshake null modem.
+
+     Specifying the 9 pin end as 9.1, 9.2, etc. and the
+     25 pin end as 25.1, 25.2, etc., the wiring is:
+
+       9.1 to 9.4 to 25.6
+       9.2 to 25.2
+       9.3 to 25.3
+       9.4 to 25.6
+       9.5 to 25.7
+       9.6 to 25.20 to 25.8
+       9.7 to 25.5
+       9.8 to 25.4
+       9.9 to 25.22
+
+     A.5.  The Modem/Apple Cable
+
+     The Modem/Apple Cable is a 9 pin male to 25 pin
+     male cable wired "straight through".
+
+
+
+
+
+
+
+
+
+                         Page A-2
+
+
+                Audapter System User's Guide
+
+     Specifying the 9 pin end as 9.1, 9.2, etc. and the
+     25 pin end as 25.1, 25.2, etc., the wiring is:
+
+       9.1 to 25.8
+       9.2 to 25.3
+       9.3 to 25.2
+       9.4 to 25.20
+       9.5 to 25.7
+       9.6 to 25.6
+       9.7 to 25.4
+       9.8 to 25.5
+       9.9 to 25.22
+
+     A.6.  The Parallel Interface Pin Out
+
+     The parallel interface has a standard Centronics
+     printer port.
+
+           Pin #        Signal Name
+             1           -Strobe
+             2           Data 0
+             3           Data 1
+             4           Data 2
+             5           Data 3
+             6           Data 4
+             7           Data 5
+             8           Data 6
+             9           Data 7
+            10           -Ack
+            11           Busy
+            12           Printer Error
+            13           Select
+            14           -Auto Feed
+            15           No connect
+            16,19-30,33  Signal grounds
+            17           Chassis ground
+            18           No connect
+            31           -Initialize
+            32           -Error
+            34           No connect
+            36           -Select In
+
+
+                         Page A-3
+
+
+                Audapter System User's Guide
+
+     Appendix B: Configuration Menu Settings
+
+     B.1.  Demo Text
+
+     This is the text which is used to generate the
+     demo message.  It is included here to give you an
+     idea of what controls are used to generate
+     different voices.
+
+     ^E[u-4]^E[s9]^E[r20]^E[g0]^E[f80]^E[v1] ^E[e3]} ,
+     Hello, this is the Audapter Speech System, ,
+     from Personal Data Systems.  ,
+     This is my normal voice.  ,
+     ^E[s20]^E[r-10]
+     This is another one of my voices.  ,
+     ^E[s0]^E[f40]^E[r20], ,
+     My different voices are useful for many
+     applications.  ,
+     ^E[s9]^E[f80]^E[e2]^E[g-17], ,
+     I can use my whisper voice to indicate special
+     status, , or to highlight text.  ,
+     ^E[g0]^E[e3], ,
+     The volume and rate of my voice can easily be
+     changed.  ,
+     ^E[r150] I can talk slowly like this.  ,
+     ^E[r0] I can also talk fast, .  ,
+     ^E[r-65] ABCDEFGHIJKLMNOPQRSTUVWXYZ, .  ,
+     ^E[r-0] And I can even talk faster, .  ,
+     ^E[r-85] ABCDEFGHIJKLMNOPQRSTUVWXYZ, .  ,
+     ^E[r20]
+     You can also change the pitch of my voice.  ,
+     ^E[f240] From high pitch to
+     ^E[f50] low pitch.  ,
+     ^E[f80]
+     This is the end of the demonstration.  , Thank you
+     for listening.
+
+
+
+
+
+
+
+                         Page B-1
+
+
+                Audapter System User's Guide
+
+
+     B.2.  Voice Menu
+
+     B.2.1.  Which Voice
+
+       ^E[e3]^E[s9]^E[g0]^E[u-4]^E[h0]^E[r20]
+       ^E[f80] my normal voice
+
+       ^E[s15]^E[r-18]^E[f55]^E[g0]
+       I'm the jolly giant
+
+       ^E[s0]^E[f40]^E[r30]^E[g0] I'm the alien
+
+       ^E[s0]^E[r-10]^E[f200]^E[u-1]^E[g0]
+       I'm squeeky
+
+       ^E[s7]^E[r-22]^E[f140]^E[u-4]^E[g0]
+       I'm dorthy
+
+       ^E[s1]^E[r0]^E[f140]^E[g0] I'm the little kid
+
+       ^E[s9]^E[f80]^E[e2]^E[g-17] my whisper voice
+
+     B.2.2.  Volume (gain)
+
+       ^E[g-30] 1
+       ^E[g-20] 2
+       ^E[g-10] 3
+       ^E[g-5] 4
+       ^E[g0] normal
+       ^E[g2] 6
+       ^E[g4] 7
+       ^E[g6] 8
+       ^E[g8] 9
+       ^E[g10] 10
+
+
+
+
+
+
+
+
+                         Page B-2
+
+
+                Audapter System User's Guide
+
+
+     B.2.3.  Pitch (frequency)
+
+       ^E[f39] 1
+       ^E[f60] 2
+       ^E[f70] 3
+       ^E[f80] normal
+       ^E[f100] 5
+       ^E[f115] 6
+       ^E[f130] 7
+       ^E[f170] 8
+       ^E[f210] 9
+       ^E[f255] 10
+
+     B.2.4.  Rate
+
+       ^E[r100] speed 1
+       ^E[r50] speed 2
+       ^E[r0] normal speed
+       ^E[r-12] speed 4
+       ^E[r-25] speed 5
+       ^E[r-55] speed 6
+       ^E[r-75] speed 7
+       ^E[r-85] speed 8
+       ^E[r-90] speed 9
+       ^E[r-99] speed 10
+
+     B.2.5.  Size of Mouth
+
+       ^E[s0] very small
+       ^E[s5] small
+       ^E[s9] normal
+       ^E[s15] large
+       ^E[s20] very large
+
+     B.2.6.  Unvoiced Level
+
+       ^E[u-38] mild hiss
+       ^E[u-4] normal hiss
+       ^E[u-1] strong hiss
+
+
+
+                         Page B-3
+
+
+                Audapter System User's Guide
+
+
+     B.2.7.  Set Tone
+
+       Bass
+       Treble
+
+     B.3.  Serial Menu
+
+     B.3.1.  Baud Rate
+
+       50, 110, 134.5, 150, 300, 600, 1200, 1800, 2400,
+       4800, 9600 or 19200
+
+     B.3.2.  Parity
+
+       even, odd or none
+
+     B.3.3.  Data Bits
+
+       5, 6, 7 or 8
+
+     B.3.4.  Stop Bits
+
+       1 or 2
+
+     B.3.5.  Input Handshake
+
+       RTS, DTR, RTS/DTR or soft
+
+     B.3.6.  Output Handshake
+
+       CTS or none
+
+
+
+
+
+
+
+
+
+
+
+                         Page B-4
+
+
+                Audapter System User's Guide
+
+
+     B.4.  Systems Menu
+
+     B.4.1.  Audapter System Information
+
+       model
+
+       version
+
+       serial only or
+       serial & parallel
+
+       2k backup memory or
+       8k backup memory
+
+       Copyright 1988 and 1989
+       by Personal Data Systems, Inc.
+       and by Berkeley Speech Technologies, Inc.
+
+     B.4.2.  Announce How Much Punctuation
+
+       none
+       some
+       most
+       all
+
+     B.4.3.  Output Speech
+
+       character by character
+       word by word
+       phrase by phrase
+       after first words, and then phrase by phrase
+       line by line
+
+
+
+
+
+
+
+
+
+
+                         Page B-5
+
+
+                Audapter System User's Guide
+
+
+     B.4.4.  Power Saving Sleep
+
+       disabled
+       after 10 seconds
+       after 1 minute
+       after 10 minutes
+       after 1 hour
+
+     B.4.5.  Interface Select
+
+       serial
+       parallel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         Page B-6
+
+
+                Audapter System User's Guide
+
+     Appendix C: The Standard BeSTspeech T-T-S Text
+     Normalizer
+
+     C.1.  Overview
+
+     This section provides documentation for the normal
+     performance of the Text Normalizer Module of the
+     T-T-S program in the BeSTspeech System.  Many
+     decisions made by the default Normalizer can be
+     altered using the Controls described in Section 7.
+
+     To be read correctly, a text must be interpreted
+     according to the conventions of written English.
+     This is the work of the Text Normalizer.  One of
+     its primary functions is to assign an unambiguous
+     meaning to characters and constructions that could
+     be read in different ways in different
+     circumstances.  Here are some examples:
+
+     1.  A semicolon usually signals a prosodic pause;
+     it is not pronounced:
+
+       This semicolon is an example; the one in the
+       sentence above is also.
+
+     However, when a character is cited (enclosed in
+     quotation marks), it does not signal a prosodic
+     pause but should be pronounced.  The sentence
+
+       The C language requires a ';' at the end of each
+       statement.
+
+     should be pronounced:
+
+       "the cee language requires a semicolon at the
+       end of each statement."
+
+
+
+
+
+
+
+                         Page C-1
+
+
+                Audapter System User's Guide
+
+
+     2.  The digit "2" contributes to a different
+     pronunciation in each of the following
+     constructions:
+
+       200 "two hundred"
+
+       12 "twelve"
+
+       2nd "second"
+
+       20 "twenty"
+
+     3.  In addition to ending sentences, periods have
+     a number of other functions.  For example, they
+     can:
+
+       Mark an abbreviation: "etc."
+
+       Be part of a file name: "command.com"
+
+       Mark an ellipsis: "Well..."
+
+       Be a silent decimal point: "$45.98"
+
+       Be a pronounced decimal point: "3.1416"
+
+     4.  A string of uppercase letters is often
+     pronounced as the names of the letters, while the
+     equivalent lowercase letters would be pronounced
+     as regular words:
+
+       POW "prisoner of war"
+
+       ID "identification"
+
+       LA "Los Angeles"
+
+       RIP "rest in peace"
+
+       SAT "scholastic aptitude test"
+
+
+                         Page C-2
+
+
+                Audapter System User's Guide
+
+
+       PA "public address system"
+
+     The Text Normalizer determines how ambiguous
+     constructions like those illustrated in (1)
+     through (4) above should be pronounced.
+
+     The BST Normalizer has a number of features that
+     are useful for reading generalized sorts of text.
+
+     BST's Text Normalizer also gives the user the
+     opportunity to change the way a text is pronounced
+     through the use of various pronunciation Controls.
+     These Controls are mentioned throughout this
+     document and are discussed specifically in Section
+     7.
+
+     C.2.  Pronouncing Numbers
+
+     T-T-S pronounces numbers - i.e., sequences of
+     digits - in three different ways:
+
+     1. Literally, as the names of the digits:
+
+       1234 "one two three four"
+
+       567 "five six seven"
+
+       9001 "nine zero zero one"
+
+     2. In groups of two:
+
+       1234 "twelve thirty-four"
+
+       567 "five sixty-seven"
+
+       9001 "ninety oh one"
+
+
+
+
+
+
+                         Page C-3
+
+
+                Audapter System User's Guide
+
+
+     3. As full numbers:
+
+       1234 "one thousand two hundred thirty four"
+
+       567 "five hundred sixty-seven"
+
+       9001 "nine thousand one"
+
+     Each of these pronunciations is appropriate in
+     different circumstances.  For example, pronouncing
+     digits in groups of two is appropriate for dates
+     and addresses:
+
+       In 1985 "in nineteen eighty-five"
+
+       357 Elmwood St. "three fifty-seven elmwood
+       street"
+
+     Pronunciation as a full number is appropriate for
+     dollar amounts:
+
+       $1985 "one thousand nine hundred eighty-five
+       dollars"
+
+       $357.00 "three hundred fifty-seven dollars and
+       no cents"
+
+     A literal pronunciation is appropriate for decimal
+     amounts and bank account numbers:
+
+       2.1985 "two point one nine eight five"
+
+       005237-1 "zero zero five two three seven, one"
+
+     The Normalizer pronounces numbers correctly in
+     each type of context.  To do so, it uses the
+     following conventions:
+
+
+
+
+
+                         Page C-4
+
+
+                Audapter System User's Guide
+
+
+     1.  A string of digits will be pronounced
+     literally if:
+
+     a. The string is five or more digits long:
+
+       1234567 "one two three four five six seven"
+
+       70083 "seven zero zero eight three"
+
+     b. The string follows a decimal point:
+
+       12.87 "twelve point eight seven"
+
+       3.1416 "three point one four one six"
+
+     2.  A string of up to four digits will be
+     pronounced in groups of two:
+
+       279 "two seventy-nine"
+
+       1006 "ten oh six"
+
+       1881 "eighteen eighty-one"
+
+       990 "nine ninety"
+
+     3.  Otherwise, strings of up to four digits are
+     pronounced as a full number if:
+
+     a. It ends in "00" or "000":
+
+       800 "eight hundred"
+
+       1200 "twelve hundred"
+
+       3000.5 "three thousand point five"
+
+
+
+
+
+
+                         Page C-5
+
+
+                Audapter System User's Guide
+
+
+     b. It is a dollar amount:
+
+       $279 "two hundred seventy-nine dollars"
+
+       $1006 "one thousand six dollars"
+
+     c.  If a number includes commas marking off
+     thousands, millions, billions, etc., it will be
+     pronounced as a full number.  T-T-S can pronounce
+     full numbers up to 9,999,999,999,999,999.
+
+       1,006 "one thousand six"
+
+       20,000,000 "twenty million"
+
+       8,622,401,699.127 "eight billion, six hundred
+       twenty-two million, four hundred one thousand,
+       six hundred ninety-nine point one two seven"
+
+     4. Two decimal digits following a dollar amount
+     will be interpreted as cents, if at all possible:
+
+       $35.01 "thirty-five dollars and one cent"
+
+       $.01 "one cent"
+
+       $8.98 "eight dollars and ninety-eight cents"
+
+       $8.98 million "eight point nine eight million
+       dollars"
+
+     5.  A digit followed by the appropriate suffix
+     will be pronounced as an ordinal:
+
+       1st "first"
+
+       11th "eleventh"
+
+       20th "twentieth"
+
+
+
+                         Page C-6
+
+
+                Audapter System User's Guide
+
+
+       2,000th "two thousandth"
+
+       53rd "fifty-third"
+
+       22nds "twenty-seconds
+
+     The Normalizer recognizes two other special uses
+     of numbers - phone numbers and times of day - and
+     pronounces them appropriately.
+
+     6. Phone numbers
+
+     Phone numbers, social security numbers, bank
+     account numbers and other hyphenated numbers are
+     pronounced literally, with a prosodic pause at the
+     hyphen.
+
+       841-5083 "eight four one, five zero eight three"
+
+       6-59802-1 "six, five nine eight zero two, one"
+
+     However, if a group of three or four digits ends
+     in a string of zeros, the zeros will be pronounced
+     as a "hundred" or a "thousand":
+
+       587-8000 "five nine seven, eight thousand"
+
+       333-4400 "three three three, forty-four hundred"
+
+     These same rules apply to area codes that are
+     enclosed in parentheses:
+
+       (800) 764-9009 "eight hundred, seven six four,
+       nine zero zero nine"
+
+       (415) 841-5083 "four one five, eight four one,
+       five zero eight three"
+
+
+
+
+
+                         Page C-7
+
+
+                Audapter System User's Guide
+
+
+     Some hyphenated numbers are not pronounced
+     literally in this way.  Dates and other short
+     sequences of numbers that are separated by hyphens
+     are pronounced in groups of 2.  For these numbers,
+     the hyphen is pronounced as "dash":
+
+       1985-86 "nineteen eighty-five dash eighty six"
+
+       figure 22-3 "figure twenty-two dash three"
+
+     7. Times of day
+
+     The Normalizer can read times of day of a 12-hour
+     clock.  It will appropriately read hours, minutes,
+     and seconds:
+
+       6:00 "six o'clock"
+
+       6:03:03 "six oh three and three seconds"
+
+       12:59:94.2 "twelve fifty-nine and ninety four
+       point two seconds"
+
+     The conventions used by the Text Normalizer give
+     the user a great deal of control over how numbers
+     are to be pronounced:
+
+     The default pronunciation for long sequences (five
+     or more digits) is digit literal.  To pronounce a
+     long sequence as a full number, use commas to
+     delimit thousands, millions, billions, etc.
+
+     The default pronunciation for short sequences (up
+     to four digits) is the one appropriate for dates,
+     addresses, and a variety of other uses - in groups
+     of two.
+
+
+
+
+
+
+                         Page C-8
+
+
+                Audapter System User's Guide
+
+
+     C.3.  Pronouncing Letters and Words
+
+     The Text Normalizer decides which sequences of
+     letters are words, which are abbreviations, and
+     which should be pronounced literally as the names
+     of the letters.
+
+     1. Abbreviations
+
+     The Text Normalizer expands abbreviations where it
+     is appropriate to do so:
+
+       Prof. Smith "professor smith"
+
+       63 ft. 11 in. "sixty-three feet eleven inches"
+
+       a, b, c, d, etc. "ey, bee, cee, dee, etcetera"
+
+     It can match the same abbreviation spelling to
+     more than one full word:
+
+       Dr. Jones Dr. "doctor jones drive"
+
+       Sr. Castro, Sr. "senor castro, senior"
+
+       St. Agnes St. "saint agnes street"
+
+       Pt. Lookout "point lookout"
+
+       5 pt. "five pints"
+
+     2. Pronouncing letters as their names
+
+     The Text Normalizer recognizes when a group of
+     letters should be pronounced literally, as the
+     names of the letters.  A sequence of letters will
+     be pronounced literally if:
+
+
+
+
+
+                         Page C-9
+
+
+                Audapter System User's Guide
+
+
+     a.  The sequence lacks any of the six vowel
+     letters (a, e, i, o, u, y).
+
+       lp record "el pee record"
+
+       fm radio "ef em radio"
+
+       pH "pee aitch"
+
+       55 mph "fifty-five em pee aitch"
+
+     b.  The sequence includes only uppercase letters.
+
+       USA "yu ess ey"
+
+       OK "oh kay"
+
+       IRS "aye ar ess"
+
+       KFTU "kay ef tee yu"
+
+     There are some exceptions to this rule that the
+     Normalizer knows about, for example:
+
+       NATO "nato"
+
+       UNESCO "unesco"
+
+       MS-DOS "em ess dos"
+
+     c. The sequence consists of a single letter:
+
+       o's "ohs"
+
+       A) "ey"
+
+       y-coordinate "wye coordinate"
+
+       program.c "program dot cee"
+
+
+
+                         Page C-10
+
+
+                Audapter System User's Guide
+
+
+     d. The sequence consists of just two letters that
+     do not stand alone as an independent word:
+
+       76in8 "seventy-six aye en eight"
+
+       file.ri "file dot ar aye"
+
+     C.4.  Homographic Spellings
+
+     Some words have more than one pronunciation, for
+     example:
+
+       read, record, moderate, entrance, close, wound,
+       project, invalid and resume
+
+     T-T-S will give these words their more frequent
+     pronunciation.  To give them their other
+     pronunciation, simply precede the spelling with a
+     tilde (~):
+
+       He went in the front entrance.
+       His paintings ~entrance me.
+
+       It opens an old wound.
+       The clock needs to be ~wound.
+
+     C.5.  Interpreting Punctuation
+
+     The Normalizer interprets the significance of
+     various punctuation marks, pronouncing them only
+     when they are used in special ways.  For example,
+     a period will be pronounced in the following sorts
+     of constructions, although it is pronounced
+     differently in each one:
+
+       command.com "command dot com"
+
+       9.51 "nine point five one"
+
+       =%.$ "equals percent period dollar sign"
+
+
+                         Page C-11
+
+
+                Audapter System User's Guide
+
+
+     In none of these cases will the period be taken to
+     mark a prosodic break (as a sentence-final period
+     does).
+
+     Unless they are used in a special way, like the
+     periods illustrated above, punctuation marks are
+     normally not pronounced.  However, you can have
+     them pronounced by changing the Audapter Announce
+     Mode to all, most or some.  See Section 8 for more
+     information.
+
+     T-T-S interprets punctuation marks according to
+     the standard and accepted conventions of written
+     English.  For the most part, the user does not
+     need to be concerned with the decisions the Text
+     Normalizer is making.  However, there are three
+     conventions the Normalizer uses that must be kept
+     in mind:
+
+     1. The 2-space convention
+
+     In deciding whether a period signifies the end of
+     a sentence, the Normalizer may, on occasion, make
+     use of the typing convention that sentences are
+     separated by at least two spaces.
+
+     2. End-of-line hyphens
+
+     T-T-S assumes that all end-of-line hyphens mark
+     true word boundaries.  Texts prepared for T-T-S
+     should not divide words at the end of a line.
+
+
+
+
+
+
+
+
+
+
+
+                         Page C-12
+
+
+                Audapter System User's Guide
+
+
+     3. Periods in abbreviations
+
+     Some abbreviations are spelled the same as words
+     that are not abbreviations.  For example:
+
+       in ("inches")
+
+       fig ("figure")
+
+       tab ("table")
+
+       apt ("apartment")
+
+       no ("number")
+
+       Jan ("january")
+
+       chap ("chapter")
+
+     For these spellings to be considered
+     abbreviations, they must be followed immediately
+     by a period.  The Text Normalizer uses the period
+     to decide on the correct pronunciation.  T-T-S
+     will pronounce most abbreviations correctly even
+     when the period is missing, but a period is always
+     needed after an abbreviation that is spelled like
+     a word:
+
+       It moved 6 in one day. "it moved six in one
+       day."
+       It moved 6 in. one day. "it moved six inches one
+       day."
+
+       apt 2B "apt two bee"
+       apt. 2B "apartment two bee"
+
+       No Carolina tobacco "no carolina tobacco"
+       No. Carolina tobacco "north carolina tobacco"
+
+
+
+
+                         Page C-13
+
+
+                Audapter System User's Guide
+
+     Appendix D: Additional Phonemic Symbols for
+     Transcribing Long Passages
+
+     Some users might want to transcribe long passages
+     phonemically for reading in Phoneme Mode.  This
+     technique provides very precise control of
+     pronunciation of words and of intonation contours.
+     Experiment and listen to learn how to use the
+     symbols described below to get the desired
+     prosodic results.
+
+     D.1.  Boundaries and Silence
+
+     In phoneme-reading mode the boundaries between
+     words and larger prosodic units must be marked.
+     The following boundary symbols are used:
+
+       $W word boundary
+
+       $C a major prosodic boundary
+
+       $P a minor prosodic boundary
+
+     A prosodic pause can be inserted into the speech
+     stream by using the symbol for silence:
+
+       sl silence
+
+     Each "sl" symbol represents about 80 milliseconds
+     of silence.  Longer periods of silence can be
+     obtained by concatenating more than one "sl".
+     Utterances that are transcribed without "sl" will
+     be pronounced with the words run together as if in
+     a single phrase.
+
+
+
+
+
+
+
+
+
+                         Page D-1
+
+
+                Audapter System User's Guide
+
+
+     D.2.  Precisely Specifying Stress and Pitch
+
+     It is possible to fine-tune the intonation
+     contours of a phonemically transcribed passage by
+     the use of stress and pitch markers.  The best way
+     to learn to use these is by experimenting and
+     listening carefully to the result.
+
+     Stress is indicated by a dollar sign ($).  Pitch
+     is indicated by a pound sign (#).  These signs are
+     followed by a digit that indicates the level of
+     stress or pitch.  Higher numbers indicate higher
+     levels.
+
+     As noted earlier, primary stress in words can be
+     be marked by placing the symbol ' after the vowel
+     of the most stressed syllable in a word.  Using
+     the ' symbol has the same effect as using the
+     stress level indicator $6.
+
+     The stress and pitch levels for secondary word
+     stress " are: $5 #4.  The default stress level is
+     $2 (for unstressed syllables).
+
+     When transcribing a full text, stress and pitch
+     markers may be used to specify utterance-level
+     intonation, not just word-level stress.  A full
+     range of stress markers (from $8 to $1) is
+     available in phoneme-reading mode, giving you the
+     ability to transcribe a wide variety of stress
+     patterns:
+
+       $8 highest stress level
+
+       $6 equivalent to primary word stress
+
+       $5 equivalent to secondary word stress
+
+
+
+
+
+                         Page D-2
+
+
+                Audapter System User's Guide
+
+
+       $2 default (unstressed) level
+
+       $1 lowest stress level
+
+     Stress markers mainly affect the duration and
+     amplitude of syllables.  The marker must
+     immediately follow the vowel of the syllable it
+     marks.  Unmarked vowel phonemes are assigned
+     default stress.
+
+     Pitch markers are also used to specify the
+     intonation contour of an utterance.  So that many
+     different kinds of contours can be specified, a
+     wide range of pitch targets is made available,
+     from #10 to #-3:
+
+       #10 highest
+
+       #6 pitch target for primary stressed syllables
+
+       #-3 lowest
+
+     Pitch targets are associated with:
+
+       (1) Syllables, and
+
+       (2) "$C" and "$P" prosodic boundary markers.
+
+     On syllables, pitch markers immediately follow the
+     stress marker.  If a syllable has no stress
+     marker, the pitch target immediately follows the
+     vowel phoneme for the syllable.  Pitch targets on
+     boundaries immediately follow the boundary marker.
+
+     Unmarked prosodic boundaries receive a default
+     pitch target.  However, unlike stress, there is no
+     default pitch marking for syllables.  The actual
+     pitch levels for unmarked syllables are
+     interpolated from surrounding pitch targets.
+
+
+
+                         Page D-3
+
+
+                Audapter System User's Guide
+
+
+     Boundaries can be marked with as many as two pitch
+     targets.  Two pitch targets should appear on
+     boundaries that have words both to the right and
+     to the left.  The first target will be the final
+     pitch level for the words that precede the
+     boundary and the second target will be the pitch
+     onset for the words that follow the boundary.  The
+     initial and final "$C" of a text should each have
+     only one pitch target.
+
+     Syllables can also have up to two pitch targets.
+     However, usually a single target is sufficient.
+     Two pitch targets are permitted on stressed
+     syllables only to allow for very rapid rises and
+     falls in pitch.
+
+     D.3.  Transcription Conventions
+
+     If you transcribe a text completely into phonemes
+     to be read in phoneme-reading mode it should start
+     with a ^E[p] reset and end with a ^E[t].  The
+     first symbol in the transcription should be "$C"
+     or "$P".  The transcription should end with the
+     sequence "sl $C ;" (a silence, a prosodic
+     boundary, and a semicolon).  The minor prosodic
+     boundary "$P" can also be used at the end.  A
+     default pitch target will be placed automatically
+     if none is specified following any prosodic
+     boundary, but a different pitch target may be
+     specified instead if desired.
+
+
+
+
+
+
+
+
+
+
+
+
+                         Page D-4
+
+
+                Audapter System User's Guide
+
+     Appendix E: Trouble Shooting
+
+     E.1.  Warning
+
+     The Audapter unit does not have any user
+     serviceable internal parts.  It contains CMOS
+     circuitry that can be easily damaged if the cover
+     is removed.  Opening up the Audapter unit will
+     void your warranty.
+
+     E.2.  The First Steps
+
+     If you are having any kind of trouble with the
+     Audapter Speech System, please review the
+     following:
+
+     A   Even if your unit has the battery option, make
+         sure that the AC adapter is plugged into the
+         power jack and into a 110 V, 60 Hz outlet, and
+         that the outlet has power.
+
+     B   Turn the volume control all the way up and
+         unplug any external speakers or earphones.
+
+     C   Do a Master Reset to reset the unit to the
+         original factory settings.  To do a Master
+         Reset first turn the unit off then rock the
+         on/off switch all the way to the left and hold
+         it there for about 10 seconds, until the unit
+         starts talking.  If it has not started talking
+         by 15 seconds make sure you have power to the
+         unit, as in part A, rock the on/off switch to
+         off, and try a Master Reset again.
+
+     E.3.  How to Call PDS
+
+     Whenever you are in doubt, or the instructions
+     here tell you to call us, please do call.  We want
+     all our users to get the best performance they can
+     from their systems and there may be suggestions we
+     can make to help you.
+
+
+                         Page E-1
+
+
+                Audapter System User's Guide
+
+     If you need to talk to us, call 408 866-1126
+     between 9 AM and 5 PM weekdays.  If it is later or
+     a weekend, it is worth a try too because we're
+     often here late.
+
+     Be ready to tell us when you received the unit,
+     the serial number, what version it is and a clear
+     explanation of the problem and what lead up to it.
+
+     E.4.  Doesn't Talk at All
+
+     If, after reviewing the first steps, the Audapter
+     unit still doesn't talk at all, call us at 408
+     866-1126.
+
+     E.5.  Talks Nonsense
+
+     If the Audapter is talking nonsense when it first
+     comes up, the non-volatile RAM has probably been
+     trashed.  A power surge may have caused the
+     problem.
+
+     The solution is to do a Master Reset, step C of
+     the First Steps above, which rewrites the non-
+     volatile RAM and then go through the configuration
+     menus to redo any changes you may have saved
+     before.
+
+     If the unit is still acting strange, give us a
+     call at 408 866-1126.
+
+     E.6.  Talks but Won't Receive Data
+
+     There are several things to check if the Audapter
+     is talking fine but doesn't receive data over the
+     interface.
+
+     The first thing is to make sure that you have the
+     correct cable and that it is plugged securely into
+     both the Audapter and the computer.
+
+     Then make sure the Audapter is ready to receive
+
+                         Page E-2
+
+
+                Audapter System User's Guide
+
+     data.  Push the command button.  If it says
+     "ready" it is ready, if it is in one of the menus,
+     get back to the ready mode and try sending the
+     data again.
+
+     If you have a unit that includes the parallel
+     interface, check the System Menu to be sure the
+     Audapter is expecting data on the correct
+     interface.
+
+     If you are using the serial interface, go into the
+     Serial Menu and check all the parameters.  If you
+     do need to change any of the parameters from the
+     factory settings, be sure to keep track of what
+     the settings are as a Master Reset will change
+     them back to the factory settings.
+
+     If you are still having trouble, call us at 408
+     866-1126.
+
+     E.7.  Doesn't Save the Configuration
+
+     The most likely cause of not saving the
+     configuration is turning the unit off while going
+     through the configuration menus, before getting
+     back to the ready mode.
+
+     Another possibility is that the host program in
+     your computer is changing the parameters.
+
+     The non-volatile RAM's battery is supposed to last
+     for many years, but it is possible that the
+     battery has failed.  DO NOT try to replace this
+     battery.  The battery is built into the RAM chip
+     itself and the whole chip must be replaced at the
+     factory.
+
+     Call us at 408 866-1126 if you are still having
+     problems.  If the RAM needs to be replaced, we may
+     be able to give you a work around until there is a
+     convenient time for you to get the repair and
+     possibly the latest upgrade at the same time.
+
+                         Page E-3
+

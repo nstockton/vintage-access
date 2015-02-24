@@ -1,0 +1,49 @@
+[:dv g5 dd]     Will provide the ability to set the volume
+of the DECtalk Express. Values of DD should range
+from 60 to 86.
+
+[:power speak|status]   Speaks or provides a character
+string of the power status of the DECtalk Express.
+The status messages are Battery OK, Battery Low or External
+Power ON.
+
+[:power sleep|interval X] Puts the unit in power save mode
+or provides a  low battery warning after "X"
+seconds.
+
+[:tsr off|on]   Default is "on". When turned "off", the keep-
+alive characters sent from the DECtalk Express
+to the TSR are not sent. Used when communicating directly to
+the COM port.
+
+[:version speak|status]    Causes the DECtalk Express to
+speak or return a  character string of the current
+version of the firmware.
+
+CTRL C     Causes the DECtalk Express to perform an
+      immediate stop speaking and flush any pending text
+      and index markers. The unit returns a "CTRL A" when
+      the flush is completed. It is recommended that you do
+      not send any other text or commands until the CTRL A
+      is received. Otherwise some of the text and/or
+      commands sent after the CTRL C may also be  flushed.
+      If part of a command is flushed it could leave the
+      unit in an undeterminable state.
+
+       NOTE: In this version it is necessary to initially
+	send two CTRL Cs before the first CTRL A
+	comes back.
+CTRL N          Pause speaking. CTRL O resumes speaking.
+CTRL O          Resumes speaking. CTRL N pauses speaking.
+
+FLOW CONTROL.
+The DECtalk Express uses the XON/XOFF (Ctrl-Q/Ctrl-S)
+protocol for flow control.
+
+FIRMWARE UPGRADE.
+The firmware loader program, LOAD.BAT, will try to determine
+if the PC has a 16550 compatible UART. If it finds one, it
+will upload the firmware at 57.6KB. If not, it will upload
+the firmware at 9600 Baud with an approximately 15-20 minute
+load time.
+

@@ -1,0 +1,2736 @@
+Artic Mini TransPort 
+
+USER REFERENCE MANUAL
+
+This file has been arranged to assist the reader in
+navigating the manual using a word processor.  The
+Table of Contents is present showing Chapter Titles,
+Section Headings within each chapter, and Sub-Section Headings
+within each Section.  These are identified within the file as follows:
+
+Chapter:  At the start of each Chapter and Appendix is a line
+       consisting of equal signs (======).
+Section:  Sections are identified by a capital letter.  Within
+       the body of the text, there is a single asterisk,
+       followed by a space, followed by the capital letter
+       of the Section, a period, two spaces, and then the Section
+       title.  For example:
+       * B.  Touring Mini TransPort
+Sub-Section:  Sub-Sections are identified by a number.  Within
+       the body of the text, there are two asterisks,
+       followed by a space, followed by the number of the
+       Sub-Section, a period, two spaces, and then the Sub-Section
+       title.  For example:
+       ** 8.  The Battery Pack
+Sub-Sub-Section:  Sub-Sub-Sections are identified by a lower case
+       letter.  Within the body of the text, there are three asterisks,
+       followed by a space, followed by the lower case letter of the
+       Sub-Sub-Section, a period, two spaces, and then the Sub-Sub-Section
+       title.  For example:
+       *** a.  Installing the User Replaceable Battery Back
+
+Following these conventions should assist you when you
+are searching for information within the manual.
+
+ARTIC TECHNOLOGIES
+International, Inc.
+55 Park Street, Troy, Michigan 48083
+(810) 588-7370
+
+FIRST EDITION (March, 1995)
+TransType, TransBook, TransPort, Mini TransPort II, 
+SynPhonix, SONIX, VEST, Artic Vision are Trademarks of Artic 
+Technologies. Artic-263 is a Trade Name of Artic Technologies 
+International, Inc. IBM is a Trademark of IBM Corporation.
+
+Copyright 1995 by Artic Technologies.  All rights reserved, 
+including those to reproduce this book or parts thereof in any 
+form without written permission from Artic Technologies.
+
+
+AN IMPORTANT NOTE TO CUSTOMERS.
+
+PRODUCT REGISTRATION.  
+
+As with any major purchase, it is important to promptly register 
+your Artic Technologies product.  Artic Technologies 
+International, Inc.  needs you, the owner, to supply us with your 
+name, address and the serial number of your product.
+
+As a Registered user, you will receive our product newsletter 
+and information regarding product updates.  To be eligible for 
+any special offers that Artic may extend in the future, you must 
+be a registered owner in advance of those offers.  In addition 
+you can use the Artic Technical Support Line if you have a 
+problem that cannot be solved by reading the manual.  These 
+services are only available to registered users.
+
+Please fill out the enclosed registration card, and return it to 
+Artic Technologies within 10 days of the purchase date.
+
+TECHNICAL SUPPORT.
+
+Artic Technologies has Technical Support staff to assist 
+customers in solving problems.  Please help us provide efficient 
+technical support by first reading the chapter of this manual that 
+addresses your question.  If you still have problems after 
+reading this manual, then call:    (810) 588-1425
+
+Please be at your computer and prepared to give us your serial 
+number so we can quickly assist you.
+
+
+INTRODUCTION.
+
+Congratulations, you own Artic Technologies' latest and most 
+advanced external speech synthesizer, the Artic Mini TransPort.  
+However, you are about to discover that it's much more than a simple 
+speech synthesizer.
+
+Have you ever had to go away for the weekend, with no room for a 
+computer, but you must review a document for work?  Simply load the 
+document into Mini TransPort, and study it in the car, on the plane, or 
+in a rowboat.  Mini TransPort reads it to you anywhere, anytime. Our 
+smallest multi-purpose external speech synthesizer allows you to store 
+important files and read them in the same way you would read a book.  
+Mini TransPort allows you to store PAL (Personal Appointment Look-
+up) files in its internal ROM.  That's not all.  Mini TransPort can turn 
+any IBM compatible or laptop computer with a serial port into a 
+completely accessible work station using Artic Technologies' powerful 
+and featured-filled screen readers (Business Vision for DOS and 
+WinVision2 for Microsoft Windows).  Alternatively, you may use any 
+screen reading program that supports the SynPhonix or Accent 
+command set.
+
+Mini TransPort allows you to set alarms with customized messages to 
+remind you of important meetings, daily events such as lunch and 
+television shows, or anything else that is important.  It will also read 
+personally created reminder files to help you keep track of important 
+events in your day.
+
+Mini TransPort has a fully adjustable voice and keeps an accurate 
+clock/calendar.  It has a low battery alarm, user replaceable battery 
+pack, backup batteries to maintain stored files in memory during 
+battery pack switching and user upgradeable firmware via a diskette.  
+The Mini TransPort also has PAL files such as a phone list, address 
+book, and a To-Do list to help you organize your day-to-day living. 
+
+No bigger than a small paperback book, your new Mini TransPort is 
+lightweight (13 ounces), small enough to easily fit in a coat pocket and 
+works anywhere you do.  Mini TransPort operates on batteries or 
+house current, is simple to connect, easy to use and, most importantly, 
+has the clarity, speed and responsiveness you expect from Artic 
+Technologies speech products.  This manual guides you step-by-step 
+through installing and operating Mini TransPort.  If, after reading this 
+manual, you still have questions about Mini TransPort, please call our 
+Technical Support staff at 1-810-588-1425.  You can reach us from 9 
+A.M. to 5 P.M. Eastern Standard Time.  Please be at your computer 
+and have Mini TransPort available so we can provide you with 
+effective support. 
+
+If you are a current user of Artic Technologies' Business Vision with 
+an internal SynPhonix speech card, you need to reinstall Business 
+Vision from the disk supplied with your Mini TransPort as described 
+in Chapter 1 of this manual or use the automatic Business Vision 
+installation procedure outlined in Chapter 3.  This switches you from 
+using the internal SynPhonix card to using Mini TransPort as the 
+speech access device for your computer.
+
+
+TABLE OF CONTENTS.
+CHAPTER 1:  GETTING STARTED
+  A.  Unpacking Mini TransPort
+  B.  Touring Mini TransPort
+      1.  Dimensions
+      2.  Physical Characteristics/Appearance
+      3.  The Keypad
+      4.  Resetting Mini TransPort
+      5.  The Speaker/Headphone Jack
+      6.  The A-C Adapter
+      7.  The Serial Port
+      8.  The Battery Pack
+	  a.  Installing the User Replaceable Battery Back
+  C.  Installing Mini TransPort
+      1.  Connecting Mini TransPort to a Computer
+      2.  Connecting the A-C Adapter
+      3.  Using Mini TransPort's Batteries
+	  a.  Power Saving Modes
+      4.  Powering Up Mini TransPort
+      5.  Controlling Mini TransPort with Business Vision
+	  a.  Installing Business Vision
+	  b.  Starting Business Vision
+
+CHAPTER 2:  THE MENUS:  KEYS TO THE PROGRAM
+  A.  Getting Acquainted With The Keypad
+      1.  The CURSOR Mode
+      2.  The Function Keys
+      3.  TURBO Mode
+      4.  VOL/TONE Mode
+  B.  Number, Cursor, and Turbo Keys
+      1.  The Number/Cursor Keys
+      2.  Entering Letters
+      3.  The Turbo Keys
+      4.  Setting the Tone and Volume
+
+CHAPTER 3:  ORDERING FROM THE MENU
+  A.  The Main Menu
+      1. Using the Arrow Keys to Hear the Choices
+      2.  Choosing A Sub-Menu
+  B.  The Sub-Menus
+      1.  The Voice Menu
+	  a.  Speech Rate
+	  b.  Voice Pitch
+	  c.  Speech Volume
+	  d.  Voice Tone
+	  e.  Identify Capital Letters
+	  f.  Speak Symbols
+      2.  Setting Alarms
+	  a.  The Set Alarms Menu
+	  b.  Saving Alarms
+	  c.  Deleting Alarms
+	  d.  Loading Alarms
+	  e.  Checking and Setting the Time
+	  f.  Turning Off Alarms Temporarily
+	  g.  Responding To Alarms
+      3.  Mini TransPort's File Menu
+	  a.  The Filter String
+	  b.  The List Directory
+	  c.  Erasing Files
+	  d.  Renaming Files
+	  e.  Copying Files
+	  f.  Memory Left
+	  g.  Format Your User ROM
+      4.  The Options Menu
+	  a.  Verbose Mode
+	  b.  Power Mode
+	  c.  Battery Check
+	  d.  Device Status
+	  e.  Download Speech Access
+		1)  Creating and Loading the Necessary Files
+		2)  Performing a Remote Transfer
+	  f.  Reprogramming Mini TransPort
+	  g.  Speak Serial Number
+	  h.  Burn-In User Name
+      5.  The Serial Menu
+      6.  P.A.L. Files
+	  a.  Creating a PAL File
+	  b.  Sending a PAL File to Read
+	  c.  PAL File Reader Keys
+      7.  Reminder Files
+
+CHAPTER 4:  THE REST OF MINICOM
+  A.  Using MINICOM With Other Screen Readers
+  B.  Using MINICOM With Business Vision
+  C.  Sending and Receiving Files
+  D.  Controlling Mini TransPort From Your Computer Keyboard
+  E.  Setting Mini TransPort's Clock
+  F.  MINICOM Switches
+
+APPENDIX A:  CONTROLLING MINI TRANSPORT WITH OTHER SOFTWARE
+
+APPENDIX B:  MINI TRANSPORT SPEECH COMMANDS
+  1.  Mini TransPort Primary Command Codes
+      a.  Speech Characteristic Commands
+      b.  Speech Flow Controls
+      c.  Miscellaneous Controls
+  2.  Mini TransPort Auxiliary Command Codes
+
+APPENDIX C:  TROUBLE SHOOTING GUIDE
+
+
+========================================================================
+CHAPTER 1:   Getting Started
+
+* A.  Unpacking Mini TransPort.
+
+Before using Mini TransPort for the first time, take a 
+moment to check the contents of your package to make sure 
+that everything is there and undamaged.  The following 
+items should be present at the time you unpack the unit:
+
+One Mini TransPort synthesizer.
+One Mini TransPort disk containing the MINICOM 
+Utility and Business Vision (depending on the model 
+of Mini TransPort you purchased)
+One external speaker.
+One pair of Headphones.
+One A-C adapter.
+One serial cable with one DB9 male and one DB9 female connector.
+One DB9 male to DB25 female adapter.
+
+If you notice any damage or problems with your equipment, 
+please contact Artic Technologies immediately.  Our staff is 
+ready to help you resolve these problems.
+
+* B.  Touring Mini TransPort.
+
+Take some time to familiarize yourself with Mini TransPort, 
+its keypad, jacks and ports.  Once you know where things 
+are located, you can easily connect Mini TransPort to your 
+computer and use it.
+
+** 1.  Dimensions.
+
+Mini TransPort is approximately 1 inch high by 4.25 inches 
+wide by 5.18 inches long.  Mini TransPort easily fits in your 
+coat pocket.  Its light weight and rugged construction 
+serves you at home, at work or on the road.
+
+** 2.  Physical Characteristics/Appearance.
+
+Let's take a closer look at Mini TransPort.  To begin, take 
+Mini TransPort out of the box and set it on a table, rubber 
+feet down, controls facing you.  Place your hand on the top 
+of the unit.
+
+Mini TransPort is housed in a black aluminum case.  The 
+labels for its controls and ports are in gold lettering.  Mini 
+TransPort's cover has holes over the internal speaker to 
+enhance its sound.
+
+** 3.  The Keypad.
+
+The first thing you notice when exploring the top surface of 
+Mini TransPort is its keypad.  It consists of a single row of 
+five keys located just above Mini TransPort's front edge.  
+They are label, from left to right, ESCAPE, UP ARROW, 
+DOWN ARROW, ENTER, and MODE.
+
+** 4.  Resetting Mini TransPort.
+
+In most cases you should not have to reset Mini TransPort.  
+However, if the need arises, simply disconnect the A-C 
+adapter and pull the battery pack.  Wait about ten seconds, 
+then reattach the battery pack and ac adapter.  This will 
+automatically reset Mini TransPort to its default state.
+
+** 5.  The Speaker/Headphone Jack.
+
+On the front panel near the right end is a headphone or 
+speaker jack to connect Mini TransPort to an external 
+speaker or headphones.  When used with an external 
+speaker or headphones, the internal speaker is automatically 
+disconnected.  You should use a speaker or headphones 
+with a 1/8 inch stereo mini plug to connect to this jack.
+
+** 6.  The A-C Adapter. 
+
+On the back panel of Mini TransPort at the right end is the 
+connector for the A-C power adapter.  It is larger in 
+diameter than the earphone jack, making it easy to identify.  
+We supply an A-C power adapter that connects to the jack 
+on the back of Mini TransPort.
+
+DO NOT USE AN A-C POWER ADAPTER OTHER 
+THAN THE ONE SUPPLIED WITH MINI TRANSPORT.  
+YOU MAY RISK DAMAGING MINI TRANSPORT OR 
+INADEQUATELY CHARGING ITS BATTERIES.
+
+** 7.  The Serial Port.
+
+To the left of the A-C adapter is a small oblong female port.  
+This is Mini TransPort's serial port where you connect the 
+serial cable that links Mini TransPort to your computer.  
+
+** 8.  The Battery Pack.
+
+To the left of the serial port is a large slot for the USER 
+REPLACEABLE BATTERY PACK.  When installed, the 
+battery pack protrudes slightly from Mini TransPort making 
+it easy to grab when removing or replacing it.
+
+*** a.  Installing the User Replaceable Battery Pack.
+
+Let's examine the battery pack supplied with Mini 
+TransPort.  It is a large rectangle that slides into the back of 
+the unit.  If you run your finger over the two short ends of 
+the battery pack, you will find that one of them has a 
+connector that is almost flush with the surface.  This is the 
+end that goes into the slot on Mini TransPort.  Examine the 
+flat surfaces on either side of the connector.  You will find 
+that one of the flat surfaces has a slight cutout at the 
+connector.  This is the top side of the battery pack.  On 
+newer battery packs, you will also find a raised dot on the 
+top side of the battery pack in the corner opposite the 
+connector.
+
+To install the battery pack, grasp it top side up, with the 
+connector facing Mini TransPort's Battery Pack slot.  Slide 
+the pack into Mini TransPort's Battery Pack slot.  Make 
+sure it is firmly in the slot and pushed in as far as it can go.  
+You do not need to use excessive force to install the battery pack.
+
+* C.  Installing Mini TransPort.
+
+Now that you know something about how Mini TransPort 
+looks, let's learn how to connect it to a computer.  We will 
+discuss how to use Business Vision with Mini TransPort 
+later in this chapter.
+
+** 1.  Connecting Mini TransPort to a Computer.
+
+Mini TransPort connects to any computer that has a serial 
+port via a serial cable.  We provide a serial cable that 
+connects Mini TransPort to IBM PC's and compatibles.  It 
+has a 9 pin male connector that attaches to Mini TransPort, 
+and a 9 pin female connector that attaches to the 9 pin male 
+serial port on your computer.
+
+If you want to connect the serial cable to a 25 pin male 
+serial port found on older IBM-compatible computers, plug 
+the 9 pin female connector into the serial cable adapter 
+included with Mini TransPort.  If you are using another 
+computer that requires a different cable, contact Artic 
+Technologies for assistance.
+
+Once you select a serial port, perform the following steps: 
+
+1.  Plug the 9 pin male connector into the 9 pin female 
+    serial port on the back panel of Mini TransPort.  Make 
+    sure the connector is oriented in the right direction and 
+    lined up properly so that you avoid bending the pins.  
+    You can orient yourself by examining the connector 
+    cover that surrounds the pins on the male end of the 
+    serial cable.  The connector cover is like a lop-sided 
+    rectangle, with two long sides and two short sides.  
+    The two short sides slope slightly making one long 
+    side longer than the other.  The same is true for the 
+    female connector on Mini TransPort.  The longer of 
+    the two long sides is on the top.  Plug the cable into 
+    the unit with the longer of the two long sides facing 
+    up.  The cable fits snugly, but do not use excessive 
+    force when pushing the serial cable into the connector 
+    on Mini TransPort.  If you cannot get the cable to fit, 
+    turn it over and try again.
+
+2.  Plug the 9 pin (or 25 pin if adapted) female end of the 
+    cable into the serial port on your computer.  The same 
+    rectangular sloping configuration exists on your 
+    computer regardless of the connector size. 
+
+** 2.  Connecting the A-C Adapter.
+
+Mini TransPort operates on household current (AC) or on 
+its Nickel-Cadmium battery pack.
+
+NOTE:  do not operate Mini TransPort on the battery 
+pack until it is fully charged.  We will discuss charging 
+Mini TransPort's batteries in the next section.
+
+To connect Mini TransPort to the A-C adapter: 
+
+1.  Insert the metal connector into the jack on the back 
+    panel of your unit. 
+2.  Plug the other end of the adapter into a wall outlet. 
+
+The A-C adapter serves 2 purposes.  It powers Mini 
+TransPort and it charges the Nickel-Cadmium battery pack.  
+Do not worry about over-charging the batteries.  Mini 
+TransPort's design prevents this from happening.
+
+** 3.  Using Mini TransPort's Batteries.
+
+You must fully charge Mini TransPort's batteries before 
+using them for the first time.  It takes about twelve hours to 
+completely charge its batteries.  Once charged, Mini 
+TransPort operates approximately 8 hours.  This estimate 
+varies due to the amount of time Mini TransPort speaks and 
+how high you set the volume.
+
+If you use other appliances with rechargeable batteries, you 
+know that proper use and charging of batteries extends their 
+working life.  We suggest that you operate Mini TransPort 
+on batteries until they are completely discharged.  If you 
+charge the batteries before they are dead, you risk 
+developing Battery Memory.  This condition causes 
+batteries to hold less charge then it would normally. To 
+avoid this problem, fully discharge the battery before 
+recharging it.  See Battery-Drain Mode under the Options 
+menu in Chapter 3 for a quick discharge procedure.  Repeat 
+this procedure for a few cycles if you experience short 
+battery life.  Your batteries should begin to bounce back 
+after a while.  If not, contact Artic Technologies.
+
+Mini TransPort has a built in battery check option that tells 
+you when it's time to charge the batteries.  This feature is 
+explained in Chapter 3 (under the Options Menu).
+
+*** a.  Power Saving Modes.
+
+Mini TransPort has two modes that conserve battery use.  
+They are IDLE MODE POWER SAVER and AUTO-STANDBY.  IDLE MODE 
+POWER SAVER automatically shuts down Mini TransPort's audio 
+amplifier after a short period of inactivity.  You may hear 
+a slight clicking sound confirming that IDLE MODE POWER SAVER 
+is active and has powered down the audio amplifier.  Any 
+keystroke automatically wakes Mini TransPort up causing it to 
+speak.
+
+AUTO-STANDBY occurs when Mini TransPort remains 
+inactive for approximately one hour.  In this mode, Mini 
+TransPort powers down and ignores all input.  You must 
+turn Mini TransPort on to wake it up. 
+
+NOTE:  The power saving modes only apply when 
+operating Mini TransPort from the internal batteries.  
+When connected to an adapter, these modes are disabled.
+
+** 4.  Powering Up Mini TransPort.
+
+You learned how to connect Mini TransPort to a computer 
+and operate it on A-C current or batteries.  Now lets turn 
+Mini TransPort on and start using it.  To start:
+
+1.  Put Mini TransPort in front of you on a desk (table).
+2.  With your hands on the keypad, find the second and 
+    fourth keys from left to right on the keypad.  They are 
+    labeled Up Arrow and Enter.
+3.  Press both keys together and hold them down until you 
+    hear a beep, then release them.  You will hear the 
+    message:
+	MINI TRANSPORT
+    This confirms that Mini TransPort is on and ready for 
+    operation.  Mini TransPort has different models that 
+    reflect the presence or absence of various software 
+    options.  Please read Appendix C for more information 
+    concerning the different models and their definitions.  
+    If you do not hear the power up message, make sure 
+    the A-C adapter are plugged snugly into the wall outlet 
+    and into Mini TransPort. If you still do not hear 
+    anything, contact Artic Technologies for assistance. 
+
+To turn Mini TransPort off, hold down the second and 
+fourth keys (the same keys used to turn it on).  You will 
+hear the message:
+	TURNING OFF
+This is a toggle, meaning that the same keys are used to  
+switch back and forth between two states (in this case, ON 
+and OFF).
+
+Once you hear Mini TransPort's greeting, you are ready to 
+select an option from its menu.
+
+The next chapter discusses these menus in detail.
+
+** 5.  Controlling Mini TransPort with Business Vision.
+
+Now let's look at how to use Business Vision with Mini 
+TransPort.
+
+Like internal synthesizer boards, external speech 
+synthesizers do not know what to speak on their own.  They 
+need programs to control what they speak.  
+
+*** a.  Installing Business Vision.
+
+All Mini TransPort models work with the Artic Business 
+Vision screen access program.  If you own a copy of 
+Business Vision that supports Mini TransPort, you should 
+read this section to help you get started.  If not, skip the rest 
+of this chapter.
+
+With Mini TransPort ON and the supplied serial cable 
+attached to your computer and the unit, perform the 
+following steps:
+
+1.  Place the Business Vision diskette supplied with Mini 
+    TransPort into the floppy drive on your computer 
+    (normally drive A).
+2.  Change to the drive that contains your Business Vision 
+    diskette.  For example, if your disk is in drive A, type:
+	A:
+    followed by the ENTER key.
+3.  Type INSTALL, followed by the drive where you want 
+    Business Vision to go, followed by a colon, followed 
+    by two ENTER keys.  For example:
+	INSTALL C:
+    followed by two ENTER keys (hit the enter key twice) 
+    This installs Business Vision on drive C.  If you want 
+    to install Business Vision on a floppy drive, see 
+    Chapter 1 of your Business Vision manual. 
+
+There is a way to transfer Business Vision or a screen 
+reader of your choice from Mini TransPort to your 
+computer without using a disk.  You will learn about this in 
+Chapter 3's discussion of Mini TransPort's Options menu.
+
+*** b.  Starting Business Vision.
+
+To start Business Vision, perform the following steps:
+1.  Go to the drive where you installed Business Vision.  
+    If drive C is the drive that contains Business Vision, 
+    type: 
+	C:
+    followed by the ENTER key.
+2.  Now go to the root directory by typing: 
+	CD\
+    followed by the ENTER key.
+3.  Type one of the following commands: 
+	TV1
+    followed by the ENTER key to start Business Vision 
+    with Mini TransPort attached to COM1.
+
+The commands TV2, TV3, and TV4 start Business 
+Vision with Mini TransPort attached to COM port 2, 
+3, or 4 respectively.
+
+If you want Business Vision to start up each time you turn 
+ON your computer, add the following statement to your 
+AUTOEXEC.BAT file:
+
+	CALL TV1
+
+Here is the contents of the TV1.BAT file with a brief 
+explanation:
+
+    TVISION /M3 /C1
+    
+TVISION.COM is Mini TransPort's version of Artic 
+Business Vision.  Remember, it is not necessary to 
+specify the extension of a program to start it.  
+Therefore, TVISION starts the Business Vision 
+program for Mini TransPort using COM1 (/C1).
+
+NOTE:  some users familiar with SynPhonix speech 
+cards may wonder why VEST.COM is not loaded 
+before running TVISION.COM.  This is because 
+VEST.COM is a permanent part of Mini TransPort 
+and starts every time you turn it ON.  
+
+/M3  is a command line switch that disables the 
+Memory Miser in Business Vision.  This is the 
+recommended setting to use unless you need to 
+conserve memory.  For more information on Memory 
+Miser, consult Chapter 1 of your Business Vision 
+manual.
+
+/C1, /C2, /C3, or /C4  chooses the communications 
+port for Business Vision.  The number following the 
+letter C corresponds to the appropriate COM port.  
+For example, to instruct Business Vision to use COM 
+1 use /C1.
+
+NOTE:  if you do not specify a COM port, Business 
+Vision defaults to COM1 (/C1). 
+
+If you successfully start Business Vision, you will hear a 
+message, something like the following, spoken: 
+
+	ARTIC BUSINESS VISION  VERSION 3.09.
+
+This is followed by the copyright message.
+
+If you do not hear this message, check to see if Mini 
+TransPort is connected to the right COM port.  If you chose 
+the wrong COM port, restart your computer by pressing the 
+reset button or by simultaneously pressing the CONTROL, 
+ALT  and DELETE keys and then releasing them. 
+
+Restart Business Vision with the batch file that corresponds 
+to the right COM port.  If this fails, check your serial 
+connections and cable.  Make sure that Mini TransPort is 
+connected and turned ON.  If you are still having trouble, 
+contact Artic Technologies for help.
+
+Once Business Vision is active, you will likely be in drive C 
+at the \ARTIC\VISION subdirectory.  Business Vision and 
+WinVision (our Windows screen review software) control 
+Mini TransPort in the same manner as they control our 
+other synthesizers.  If the Volume of Mini TransPort is too 
+loud or too soft, or you do not like the Pitch or Tone, you 
+can control these options.  These voice parameters can be 
+changed using Mini TransPort's keypad (refer to Chapter 
+3), using Business Vision Control Mode options (refer to 
+the Business Vision manual) or using the WinVision 
+dialogue box (refer to the WinVision manual).  We 
+recommend you become familiar with Business Vision and 
+WinVision so that you can get the most out of your Mini 
+TransPort.  The rest of this manual familiarizes you with 
+Mini TransPort and its many features.
+
+
+========================================================================
+CHAPTER 2:   The Menus: Keys To The Program
+
+
+Mini TransPort has a wealth of features for you to use.  
+However, this does not mean that Mini TransPort is difficult 
+to operate.  You can access Mini TransPort's many features 
+through a cleverly designed menu system controlled by Mini 
+TransPort's keypad.
+
+NOTE:  You can access Mini TransPort's menus from 
+your computer's keyboard by using a special utility called 
+MINICOM.  MINICOM's features are discussed in Chapter 4.
+
+* A.  Getting Acquainted With The Keypad.
+
+As stated earlier, you can use Mini TransPort's five key 
+keypad to enter text, choose a menu, leave a menu, set the 
+clock and calendar, and so on.  For a small keypad to 
+control these functions in a simple yet effective manner, 
+Artic Technologies devised a special key called the MODE 
+key.  It is the large key on the right end of the keypad.  
+Pressing then releasing the MODE key shifts the keypad 
+between three control modes called CURSOR, TURBO, 
+and VOLUME/TONE.
+
+** 1.  The CURSOR Mode.
+
+In CURSOR Mode (Mini TransPort's default setting) you 
+can use the Mini TransPort keys to navigate menus.  When 
+the MODE key is not held down, the keypad is in Menu 
+Navigation mode.  The four small keys are defined from left 
+to right as follows:
+
+KEY 1 = Escape.
+KEY 2 = Up Arrow.
+KEY 3 = Down Arrow.
+KEY 4 = Enter.
+KEY 5 = MODE.
+
+When navigating menus, the ESCAPE key exits you from a 
+sub-menu and returns you to the previous menu level.  The 
+UP and DOWN ARROW keys permit you to scroll through 
+menu options.  The ENTER key permits you to choose the 
+current menu setting.  
+
+** 2.  The Function Keys.
+
+When the MODE key is depressed, the ESCAPE, UP 
+ARROW, DOWN ARROW, and ENTER keys (KEY 1, KEY 2, 
+KEY 3, and KEY 4) become general purpose function keys 
+labeled from left to right as follows:
+
+FUNCTION KEY A
+FUNCTION KEY B
+FUNCTION KEY C
+FUNCTION KEY D
+
+Each function key has several numbers or letters assigned to 
+it to facilitate number and text entry.  A complete list of 
+function keys and their values are listed later in this chapter.
+
+** 3.  TURBO Mode.
+
+When Mini TransPort is in TURBO Mode, you can fast 
+forward or rewind through previously spoken text stored in 
+its speech buffer.  You can also get the current date and 
+time as well as determine the model and serial number of 
+your Mini TransPort.  
+
+** 4.  VOLUME/TONE Mode.
+
+The VOLUME/TONE Mode permits you to change the 
+volume and tone of Mini TransPort.  We will discuss the 
+keys used to control these options later in this chapter.
+
+* B.  Number, Cursor, and Turbo Keys.
+
+Now that you know something about Mini TransPort's 
+keypad, it's time to learn how to use it to enter numbers and 
+letters.  We will discuss how to use the keypad to navigate 
+menus in the next chapter.
+
+** 1.  The Number/Cursor Keys.
+
+There will be times when you want to enter numbers or 
+letters into Mini TransPort to set the time, set an alarm, or 
+write a quick note.  Let's look at how to use the Mini 
+TransPort's keypad to enter numbers and letters.
+
+If you hold down the MODE key while repeatedly pressing 
+FUNCTION KEYS A, B, C or D, you will hear a series of 
+letters, numbers, or symbols that you can enter into Mini 
+TransPort.  For example, holding down the MODE key 
+while repeatedly pressing FUNCTION KEY A presents the 
+following keystroke choices:
+
+MODE Key with FUNCTION KEY A (Key 1)
+Backspace, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+To enter the number 3, hold down the MODE key, press 
+FUNCTION KEY A until you hear "3" spoken, then release 
+the MODE key.  As soon as the MODE key is released, the 
+number 3 is entered into Mini TransPort.  All other numbers 
+can be entered in this way.
+
+** 2.  Entering Letters.
+
+Entering letters is just as easy as entering numbers.  Holding 
+down the MODE key while repeatedly pressing FUNCTION 
+KEYS A, B, or C will give you all of the letters of the 
+alphabet as well as some special symbols.  To choose a 
+letter or symbol, simply hold down the MODE key, press 
+the appropriate FUNCTION KEY until you hear the letter or 
+symbol, then release the MODE key.  Here is a list of 
+FUNCTION KEYS and their associated keystrokes.
+
+MODE Key with FUNCTION KEY B (Key 2)
+A, B, C, D, E, F, G, H, I, J
+
+MODE Key with FUNCTION KEY C (Key 3)
+K, L, M, N, O, P, Q, R, S, T
+
+MODE Key with FUNCTION KEY D (Key 4)
+Space, U, V, W, X, Y, Z, Asterisk, Period, Delete
+
+** 3.  The Turbo Keys.
+
+As previously mentioned, pressing the MODE key once 
+shifts the keypad from CURSOR to TURBO Mode.  In this 
+mode, KEYS 2 and 4 rewind or fast forward through the text 
+in the speech buffer.  They perform the same functions as 
+Turbo pedals do with our internal speech card.  In TURBO 
+Mode, the keys are defined as follows:
+
+KEY 1 = Speak serial number and software version.
+KEY 2 = Turbo backward through text.
+KEY 3 = Turbo forward through text.
+KEY 4 = Speak date and time.
+KEY 5 = MODE key.
+
+** 4.  Setting the Volume and Tone.
+
+In VOLUME/TONE Mode, the keys are defined as follows:
+
+KEY 1 = Volume down (decrease volume).
+KEY 2 = Volume up (increase volume).
+KEY 3 = Tone down, decrease high frequencies.
+KEY 4 = Tone up, increase high frequencies.
+KEY 5 = MODE key.
+
+Adjust the volume and tone controls until you are satisfied 
+with the way Mini TransPort sounds.
+
+
+========================================================================
+CHAPTER 3:   Ordering From The Menu 
+
+* A.  The Main Menu.
+
+Now that you are familiar with Mini TransPort's keypad, 
+let's explore its menu system.  The first time you turn Mini 
+TransPort ON, you are in its Main Menu.  If you turn the 
+unit OFF while in a sub-menu (such as the File Manager) 
+you are there when you turn the unit ON again.  Hit 
+ESCAPE to return to the Main Menu (KEY 1 in CURSOR 
+mode).
+
+** 1.  Using the Arrow Keys to Hear the Choices.
+
+Turn Mini TransPort ON by holding down the UP ARROW 
+and ENTER keys (KEYS 2 and 4).  If necessary, press 
+ESCAPE to place Mini TransPort in the Main Menu.  Use 
+the UP and DOWN ARROW keys (KEYS 2 and 3) to move 
+through the menu choices.  As you move down, you will 
+hear the menu choices in order:  Voice, Alarms, and so on.  
+
+** 2.  Choosing A Sub-Menu.
+
+Choose sub-menus by using the UP and DOWN ARROW keys 
+to find the appropriate one, press ENTER to select it, and 
+press ESCAPE when you want to return to the Main Menu.
+
+* B.  The Sub-Menus.
+
+Now let us look at Mini TransPort's features and how they 
+serve you.  The sub-menus are the key to Mini TransPort's 
+operation.  Let's take a closer look at them.  Study the 
+previous sections carefully before continuing.  The material 
+covered is referenced frequently.
+
+** 1.  The Voice Menu.
+
+The Voice Menu is the first option under the Setup Menu 
+and is used to set Mini TransPort's voice parameters (Rate, 
+Pitch, Volume, Tone).  Adjusting these parameters will only 
+effect how Mini TransPort's voices speak when going 
+through the menus or speaking PAL files.  They do not 
+effect how Business Vision or other screen access programs 
+speak when using Mini TransPort as a speech synthesizer.  
+Screen access programs control their own voice parameters.
+
+Locate the Voice Menu under the Setup Menu using the UP 
+and DOWN ARROWS and press ENTER.  Once there, you will 
+be placed at the top of a list of voice parameters.  Move 
+among these parameters using the UP and DOWN ARROWS.  
+Starting from the top, they are:
+
+RATE.
+PITCH.
+VOLUME.
+TONE.
+CAPS.
+SYMBOLS.
+
+Let's take a closer look at what each parameter does.
+
+*** a.  Speech Rate.
+
+The Rate setting determines how fast or slow Mini 
+TransPort's voice speaks.  Use the ARROW keys to go to the 
+Rate option.  Press ENTER and you will hear the message:
+
+	USE UP AND DOWN ARROWS TO CHANGE VALUE.  PRESS 
+	ENTER TO SELECT OR ESCAPE TO ABORT.
+
+You then hear the current value of the Rate setting.  Use the 
+UP and DOWN ARROW keys to scroll through the Rate 
+settings, which range from 0 (slowest) to 9 (fastest).  When 
+you locate the setting you want, press ENTER to select it 
+and return to the Voice Menu.
+
+*** b.  Speech Pitch.
+
+The Pitch setting determines how low or high Mini 
+TransPort's voice sounds when speaking.  Use the ARROW 
+keys to go to the Pitch option and press ENTER.  Mini 
+TransPort prompts: 
+
+	USE UP AND DOWN ARROWS TO CHANGE VALUE.  PRESS 
+	ENTER TO SELECT OR ESCAPE TO ABORT.
+
+You then hear the current value of the Pitch setting.  Use 
+the UP and DOWN ARROW keys to scroll through the Rate 
+settings, which range from 0 (lowest) to 9 (highest).  When 
+you locate the setting you want, press ENTER to select it 
+and return to the Voice Menu.
+
+*** c.  Speech Volume.
+
+The Volume setting determines how loud or soft Mini 
+TransPort's voice speaks.  Use the ARROW keys to go to the 
+Volume option and press ENTER.  Mini TransPort prompts:
+
+	USE UP AND DOWN ARROWS TO CHANGE VALUE.  PRESS 
+	ENTER TO SELECT OR ESCAPE TO ABORT.
+
+You then hear the current value of the Volume setting.  Use 
+the UP and DOWN ARROW keys to scroll through the 
+Volume settings, which range from 0 (softest) to 9 
+(loudest).  When you locate the setting you want, press  
+ENTER to select it and return to the Voice Menu.
+
+*** d.  Speech Tone.
+
+The Tone setting determines how bright or dull Mini 
+TransPort's voice sounds when speaking.  Use the ARROW 
+keys to go to the Tone option and press ENTER.  Mini 
+TransPort prompts:
+
+	USE UP AND DOWN ARROWS TO CHANGE VALUE.  PRESS 
+	ENTER TO SELECT OR ESCAPE TO ABORT.
+
+You then hear the current value of the Tone setting.  Use 
+the UP and DOWN ARROW keys to scroll through the Tone 
+settings, which range from "A" (dullest) to "Z" (brightest).  
+When you locate the setting you want, press ENTER to 
+select it and return to the Voice Menu.
+
+*** e.  Identify Capital Letters.
+
+This option permits you to determine whether or not capital 
+letters are announced when reading information.  Use the 
+ARROW keys to go to the Caps option, at which point Mini 
+TransPort will inform you of the current Caps setting.  
+When you press ENTER to select the option, Mini TransPort 
+prompts:
+
+	USE UP AND DOWN ARROWS TO PICK CHOICE.  PRESS 
+	ENTER TO SELECT OR PRESS ESCAPE TO ABORT.
+
+Use the UP and DOWN ARROW keys to scroll through the 
+available Caps modes.  The choices are:
+
+OFF:    There is no indication of capitalized letters.
+SAY:    Each capitalized letter or word is preceded by 
+	the spoken word "CAP".
+PITCH:  Each capitalized letter or word is spoken with 
+	a temporary increase in Pitch.
+
+Use the UP and DOWN ARROW keys to scroll through the 
+capitalization options.  When you locate the setting you 
+want, press ENTER to select it and return to the Voice 
+Menu.
+
+*** f.  Speak Symbols.
+
+This option permits you to choose how you want characters 
+such as punctuation, math symbols and border characters to 
+be handled by Mini TransPort.  Use the ARROW keys to go 
+to this option, at which point Mini TransPort will tell you 
+the current value of the Symbols setting.  When you press 
+ENTER to select the option, Mini TransPort prompts:
+
+	USE UP AND DOWN ARROWS TO PICK CHOICE.  PRESS 
+	ENTER TO SELECT OR PRESS ESCAPE TO ABORT.
+
+Use the UP and DOWN ARROW keys to scroll through the 
+available Symbol settings.  They are:
+
+NONE:   No symbols are spoken. 
+SOME:   Speak a minimal number of symbols 
+MOST:   Speak all symbols except punctuation. 
+ALL:    Speak all symbols. 
+
+Use the UP and DOWN ARROWS to locate the appropriate 
+mode and press ENTER to select it and return to the Voice 
+Menu.
+
+** 2.  Setting Alarms.
+
+The Alarms menu is one of Mini TransPort's most useful 
+features.  You can set "one time" alarms with stored 
+playback messages, or set daily and/or weekly alarms with 
+stored playback messages that trigger on specified dates and 
+times.  You can use this feature to remind yourself about 
+lunch appointments, important meetings, television shows, 
+etc..  Unlike an alarm clock, the stored message reminds 
+you why you set the alarm in the first place.
+
+Furthermore, you can save your preset alarms in different 
+files.  For example, you might set ten alarms (the maximum 
+number in an alarm file) that go off once a week to remind 
+you of calls and appointments for work and home.   Then, if 
+you have to take a trip, Mini TransPort can be used to keep 
+track of your important appointments while you are on the 
+road.  You don't have to lose your preset alarms.  Just save 
+them to a file before you reset the alarms for your trip.  
+Reload the weekly alarm file when you return home.
+
+Here is a quick overview of the Alarm Menu options.  The 
+Alarm Menu is the second entry in the Main Menu (after the 
+Voice Menu).  Find it with the UP and DOWN ARROW keys.  
+Select it with ENTER.  The first time you enter this sub-
+menu you are at the top of the menu on the "Set Alarms" 
+option.  In order, the Alarm sub-menu choices are:
+
+Set Alarms:     allows you to set one-time, weekly, or daily 
+		alarms.
+Load Alarms:    allows you to load a file containing 
+		previously saved alarm information.
+Save Alarms:    allows you to create a file with all of your 
+		alarm information for later use.
+Check Time:     announces the current date and time.
+Set Time:       allows you to set the current date and time.
+Clear Alarm:    allows you to clear all alarms from memory.
+
+Now, let's take each choice and see how it works.
+
+*** a.  Set Alarms Menu.
+
+Pressing ENTER on the Set Alarms option takes you to a list 
+of ten alarm slots, labeled "A" through "J".  When you enter 
+this menu, Mini TransPort prompts:
+
+	UNUSED ALARM A.
+
+Your UP and DOWN ARROWS scroll through the ten slots. 
+To set slot A's alarm, scroll to this unused alarm slot (if you 
+are not already there) and press ENTER.  Mini TransPort 
+prompts:
+
+	EDIT ALARM MENU.  READ MESSAGE.
+
+Press DOWN ARROW to get to the next choice.  Mini 
+TransPort prompts:
+
+	EDIT MESSAGE.
+
+Press DOWN ARROW again and Mini TransPort Prompts:
+
+	CHANGE ALARM TIME. 
+
+Use your UP and DOWN ARROW keys to find:
+
+	CHANGE ALARM TIME. 
+
+Hit ENTER to set the date and time.  Mini TransPort 
+prompts:
+
+	PICK ALARM TYPE.
+
+Use your UP and DOWN ARROW keys to select one of the 
+following options:
+
+ONE TIME.
+WEEKLY.
+DAILY.
+
+ONE TIME is an alarm that goes off only once at the 
+indicated date and time.  WEEKLY is an alarm that goes off 
+once a week at the indicated day and time.  DAILY is an 
+alarm that goes off once a day at the indicated time.  Use 
+your UP and DOWN ARROW keys to select the appropriate 
+alarm type and press ENTER.
+
+>>From here, your prompts will vary depending upon the type 
+of alarm you select.  If you choose a ONE TIME alarm, 
+Mini TransPort prompts:
+
+	ENTER IN THE DATE AS A SET OF THREE TWO-DIGIT 
+	NUMBERS WITH A SPACE BETWEEN NUMBERS.
+
+Use the keypad (as described in Chapter 2) to enter 
+numbers.  For example, to enter February 19, 1994, hold 
+down the MODE key and press FUNCTION KEY A until you 
+hear the number 0, then release the MODE key.  Hold down 
+the MODE key and press FUNCTION KEY A until you hear 
+the number 2, then release the MODE key.  So far, you 
+have entered the digits 02 to represent February (the second 
+month of the year).  Now you need to enter a "space".  
+Hold down the MODE key and press FUNCTION KEY D.  
+When you hear the word "SPACE", release the MODE key.  
+Continue in this fashion until the month, day, and year are 
+successfully entered.  When you have finished entering the 
+digits, press ENTER to terminate the string of digits.  
+Remember, mistakes are easily erased by accessing the 
+"backspace" with the MODE key and FUNCTION KEY A.
+
+If you choose a WEEKLY alarm as your alarm type, Mini 
+TransPort skips the date question and prompts:
+
+	CHOOSE THE DAY OF THE WEEK.
+
+Use your UP and DOWN ARROWS to select the day on which 
+you want the alarm to go off and press ENTER.
+
+If you choose DAILY as your alarm type, Mini TransPort 
+skips the date and day of the week questions and proceeds 
+to the alarm time query.  At this point, the prompts for all 
+alarm types become the same.  Now Mini TransPort 
+prompts:
+
+	ENTER IN THE TIME AS A SET OF 2 TWO-DIGIT NUMBERS 
+	WITH A SPACE BETWEEN.
+
+For example, enter 1:35 as "zero, one, space, three, five" 
+using the MODE and FUNCTION keys as described previously.  
+After you enter the time correctly, press ENTER again and 
+Mini TransPort Queries:
+
+	IS THE TIME PM?
+
+If so, press UP ARROW to confirm.  If not, hit DOWN 
+ARROW to tell Mini TransPort that the time is A.M..  You 
+are now back to the Edit Alarm Menu, Change Alarm Time 
+(where you were before you entered the date and time for 
+the alarm).
+
+Now hit the UP ARROW to go to the Edit Message menu 
+choice and press ENTER to select it.
+
+You can enter a message to be spoken when the alarm goes 
+off.  Try something simple like "hello" or your name using 
+the letter entry method described in Chapter 2.  When 
+finished, hit ENTER to get back to the Edit Alarm menu.
+
+When you return to the Edit Alarm menu, use the UP 
+ARROW key to find the top menu choice, "Read Message", 
+and hit ENTER.  You should hear the text you typed in, 
+followed by Mini TransPort confirming that you are still in 
+the Edit Alarm menu and on the Read Message option.
+
+Press ESCAPE to get back to the Set Alarms menu.  Now, 
+instead of hearing:
+
+	UNUSED ALARM A.
+
+you should hear:
+
+	02 19 94 SATURDAY 01 35 PM ON. 
+
+If you had hit DOWN ARROW back when you were asked if 
+the alarm was P.M., Mini TransPort would speak the date 
+and time of the alarm and the word "ON" without saying 
+"A.M.".  In other words, A.M. is silent, P.M. is spoken.
+
+The alarm is now set.  It will go off one time, once a week, 
+or once a day according to the selected alarm type.  Mini 
+TransPort will announce the date, the day of the week, and 
+the word ON for a ONE TIME alarm.  For a WEEKLY 
+alarm, the day of the week (Sunday, Monday, etc.) and the 
+time will be spoken, followed by the word ON.  For a 
+DAILY alarm, the time and the word ON will be spoken.  
+(Remember, P.M. is spoken, A.M. is not.)
+
+*** b.  Saving Alarms.
+
+You just set an alarm.  Now let's save it.
+
+Press ESCAPE until you return to the Alarm sub-menu.  You 
+are still on the Set Alarms option.  Arrow down past Load 
+Alarms to the next option which is Save Alarms and press 
+ENTER.  Mini TransPort prompts:
+
+	ENTER IN NAME WITH NO EXTENSION FOR ALARM FILE.
+
+Enter a filename eight letters or less with no file extension 
+and hit ENTER.  For this example, type the filename:
+
+	MYFILE
+
+and hit ENTER.  You will return to the main Alarm Options 
+menu.
+
+*** c.  Deleting Alarms.
+
+>>From the Alarms menu, use the UP and DOWN ARROW keys 
+to locate:
+
+	CLEAR ALARMS.
+
+and hit ENTER.  Mini TransPort prompts:
+
+	ARE YOU SURE YOU WANT TO DELETE ALL THE ALARMS?
+
+Press the UP ARROW key to confirm deleting the alarms.  
+The alarms are deleted and you will return to the Alarms 
+menu.  To avoid clearing the alarms, you may press either 
+ESCAPE or the DOWN ARROW key and you will be returned 
+to the Alarms menu with all alarms intact.
+
+In this example, you pressed the UP ARROW key to confirm 
+deleting the alarms.  Now, go up to the Set Alarms option 
+and hit ENTER.  You will hear:
+
+	UNUSED ALARM A.
+
+This is because all of the alarm slots (including the one you 
+set earlier) are now empty.
+
+You can delete an individual alarm by going into the Set 
+Alarms menu (locate it with the UP and DOWN ARROW keys 
+and press ENTER).  Use the UP and DOWN ARROW keys to 
+find the alarm you want to delete.  Once there, hold down 
+the MODE key and press FUNCTION KEY D until you reach 
+"DELETE".  Release both keys and the alarm is deleted and 
+you are returned to the empty alarm slot.
+
+*** d.  Loading Alarms.
+
+Press ESCAPE to go back to the main Alarms menu.  Use 
+the UP and DOWN ARROW keys to find the Load Alarms 
+menu option and press ENTER to select it.  You are now in 
+a menu that lists your alarm files.  There is only one file in 
+this list now, and it's the one you just saved:
+	
+	MYFILE.ALM
+
+The extension ".ALM" was automatically supplied by Mini 
+TransPort.  Press ENTER now and the alarm you created 
+earlier is instantly loaded into Mini TransPort.  Confirm this 
+by using your UP and DOWN ARROW keys to locate the Set 
+Alarms menu and press ENTER to select it.  You will find 
+that the alarm you previously set is now loaded into the first 
+slot.
+
+If there had been more than one alarm file available, you 
+would simply have used the UP and DOWN ARROW keys to 
+select the desired file and then pressed ENTER to load it.
+
+*** e.  Checking and Setting the Time.
+
+The fourth and fifth entries in the Alarms menu allow you to 
+check and set the time and date.
+
+The Check Time function announces the date and time 
+when you press ENTER.  Because checking the time is 
+something you may do often, Mini TransPort has a special 
+Check Time feature that allows you to check the current 
+date and time from anywhere without having to enter the 
+Alarms menu.
+
+Press the MODE key to place Mini TransPort's keypad in 
+TURBO mode and then press FUNCTION KEY D (KEY 4) to 
+check the date and time.
+
+The Set Time function prompts you to enter the current 
+date and time exactly as in the Edit Alarm menu.  However, 
+in this situation you cannot skip the date field.
+
+*** f.  Turning Off Alarms Temporarily.
+
+Suppose you have a daily alarm set to get you up in the 
+morning, but you do not want it to go off on the weekend 
+and you do not want to go to the trouble of clearing all of 
+your alarms.  You want to keep your current alarm file and 
+do not wish to load another one.  From the Main menu, use 
+the UP and DOWN ARROW keys to find the Alarms menu 
+option and select it with ENTER.  Use the UP and DOWN 
+ARROW keys to locate the Set Alarms sub-menu and select 
+it with ENTER.  You are now in the list of preset alarms.  
+Use the UP and DOWN ARROW keys to find the alarm that 
+wakes you up and enter a BACKSPACE (using the MODE 
+key and FUNCTION KEY A).  You will now hear that alarm's 
+information spoken, but with the word OFF instead of ON.  
+All of your alarms may be toggled ON and OFF with the 
+BACKSPACE, regardless of their type.
+
+Of course, if you want to wake up on week days, but don't 
+want to toggle the Daily alarm off for the weekend, you can 
+set five Weekly alarms to go off at the same time, each for a 
+different weekday.  By using combinations of Weekly, 
+Daily, and One-Time alarms, you can meet all of your 
+scheduling needs with Mini TransPort's alarm menu.
+
+*** g.  Responding To Alarms.
+
+Now that you know all about creating and modifying alarms 
+... what happens when an alarm actually goes off?
+
+When Mini TransPort's time and date match the time and 
+date of an active alarm, Mini TransPort will start to issue a 
+series of beeps to alert you.  This beeping will continue until 
+you let Mini TransPort know that you've heard the alarm.  
+You do this by pressing any of the four FUNCTION keys.  
+Once you do that, Mini TransPort stops beeping and says:
+
+	ALARM MESSAGE
+
+followed by the message associated with the alarm (if you 
+entered one when you created the alarm).
+
+** 3.  Mini TransPort's File Menu.
+
+Every computing device needs a file management system to 
+help the user organize and manipulate files.  Mini 
+TransPort's File Menu provides the following functions to 
+manage files:
+
+FILTER STRING.
+LIST DIRECTORY.
+ERASING FILES.
+RENAMING FILES.
+COPYING FILES.
+MEMORY LEFT.
+FORMAT USER ROM.
+
+*** a.  The Filter String.
+
+The first File Menu option is Filter String.  By modifying  
+this string, you can determine which files get presented  
+when you ask for a directory listing.  The default setting for 
+the Filter String is *.* (star period star).  Mini TransPort 
+will announce this as:
+
+	FILTER STRING STAR STAR.
+
+You will notice that Mini TransPort does not speak the 
+period between the two asterisks.  Since this period is 
+always present, it is dropped from the speech for efficiency.
+
+Those of you familiar with DOS know that the stars (or 
+asterisks) are wildcard characters that literally mean 
+"anything".  If you ask for a list of files in a directory, Mini 
+TransPort will use the Filter String to decide which files to 
+present and which files to ignore.  With the default setting 
+of the Filter String, Mini TransPort lists ALL files, looking 
+for "anything" as a name or extension.
+
+If you only want to see the files sent to Mini TransPort with 
+an extension of ".DOC", use the UP and DOWN ARROW 
+keys to find the Filter String option and press ENTER.  Mini 
+TransPort prompts:
+	
+	ENTER IN THE NEW FILTER.
+
+To list files with a DOC extension, use the MODE and 
+FUNCTION keys (as described in Chapter 2) to type:
+	
+	*.DOC
+
+then press the ENTER key.  Mini TransPort responds:
+	
+	FILTER STRING STAR DOC.
+
+This means that any file function invoked while this Filter 
+String is active brings up only those files with the .DOC 
+extension.  All other files are ignored until the Filter String 
+is changed.
+
+If you only want to see your Alarm files, set the Filter String 
+to *.ALM (star dot A L M).
+
+We recommend that you leave the Filter String at *.* (star 
+dot star) unless you want to filter out unwanted file names.
+
+*** b.  The List Directory.
+
+The second File Menu option is Directory.  This speaks the 
+names of files in the Current Directory and their sizes.  If 
+you want to know what files are stored in the user ROM, 
+use the UP and DOWN ARROW keys to find the List 
+Directory option under the File Menu and press ENTER.  
+Mini TransPort begins speaking the list of files located in 
+the user ROM (within the parameters of the Filter String 
+which was explained in the previous section).
+
+While Mini TransPort speaks the list of files, press ENTER.  
+Immediately, Mini TransPort will spell the current file name 
+making it easier to understand non-standard file naming 
+conventions.  Practice this by pressing ENTER again to list 
+the files and ENTER to spell file names.
+
+If you press the UP and DOWN ARROW keys while the 
+directory is speaking, Mini TransPort stops speaking the list 
+of files and allows you to navigate through the file list using 
+the ARROW keys.  As you move from file to file, the name 
+of the file and its size is announced.  When you are done 
+navigating the file list with the ARROW keys, press ESCAPE 
+to return to the File Menu.
+
+As files are added, renamed or erased, the directory is  
+automatically updated so you always have an accurate 
+accounting of its contents.
+
+*** c.  Erasing Files.
+
+The third option under the File Menu is Erase File.  This 
+allows you to get rid of a file by removing it from the user 
+ROM.  This is also referred to as "deleting" a  file.  To erase 
+files, use the UP and DOWN ARROW keys to find the Erase 
+option under the File Menu and press ENTER.  Mini 
+TransPort will prompt:
+	
+	PICK FILE TO DELETE.
+
+It speaks the name of the first file you can delete.  Use the 
+UP and DOWN ARROW keys to move through this list and 
+find the file you wish to erase.  Once you have located the 
+file, press ENTER to delete it and return to the File Menu.
+
+Rather than scanning through the list of files with the 
+ARROW keys, you may simply enter the name of the file to 
+delete.  Use Mini TransPort's keypad to enter text (refer to 
+Chapter 2) and press ENTER.  As before, the file is deleted 
+and you are returned to the File Menu.  Do not use this 
+function unless you are sure you want to delete files.  Unless 
+you have another copy stored, once a file is deleted it is 
+gone for good.
+
+*** d.  Renaming Files.
+
+The fourth entry in the File Menu is the Rename option.  
+This allows you to change the name of files within the user 
+ROM.  To rename a file, use the UP and DOWN ARROW 
+keys to find the Rename option under the File Menu and 
+press ENTER.  Mini TransPort will prompt:
+	
+	PICK FILE TO RENAME.
+
+It then speaks the name of the first file in the directory list.  
+Use the UP and DOWN ARROW keys to move through this 
+list and find the file to rename.  Once you have located the 
+file, press ENTER and Mini TransPort prompts:
+	
+	ENTER IN THE NEW FILE NAME.
+
+Type the new file name using Mini TransPort's keypad 
+(described in Chapter 2) and press ENTER.  The file name 
+must have no more than eight characters, a period and three 
+more characters for the extension (Mini TransPort's file 
+names follow the standard DOS file naming conventions).  
+After entering the filename, Mini TransPort will respond:
+	
+	DONE. 
+
+You are then returned to the File Menu.
+
+As with the Erase File option, you do not have to use the  
+ARROW keys to move through the list of files to select the 
+file to be renamed.  You may simply type the name of the 
+file, press ENTER, type the new name for the file when 
+prompted and press ENTER again.
+
+While you may change the name of an Alarm file, do not 
+modify its "A L M" extension.  Without this identifying 
+extension, the files will not function properly.
+
+*** e.  Copying Files.
+
+Use this command if you want to create a second copy of an 
+existing file but under a different name.
+
+>>From the File menu, use the UP and DOWN ARROW keys to 
+find the Copy option and select it with ENTER.  Mini 
+TransPort will prompt:
+	
+	PICK FILE TO COPY.
+
+and then speak the first file in the file list.  Use the UP and 
+DOWN ARROW keys to find the file you want to copy and 
+press ENTER.  Mini TransPort prompts:
+	
+	ENTER IN THE NEW FILENAME.
+
+Type the new name for the file and press ENTER to 
+complete the process.  Mini TransPort will copy the file and 
+then respond:
+	
+	DONE.
+
+You are then returned to the File menu.  
+
+*** f.  Memory Left.
+
+The Memory Left option tells you the amount of memory in 
+kilobytes (one kilobyte is approximately 1000 characters) 
+free in your user ROM.  This option reports the amount of 
+free memory left for storing files.  From the File menu, use 
+the UP and DOWN ARROW keys to find this option and press 
+ENTER to instantly hear the memory available report.
+
+*** g.  Format Your User ROM.
+
+The seventh and final option in the File Menu is Format 
+Device.  In order to store files in Mini TransPort's User 
+ROM, it must be formatted so that it can be detected and 
+interpreted properly.  Mini TransPort's User ROM is 
+formatted prior to being shipped from the factory.  
+However, should you decide to reformat it, here's what to 
+do.  We will assume that you have connected the A-C 
+adapter to Mini TransPort and plugged it in to the wall or 
+outlet strip.
+
+>>From the File Menu, use the UP and DOWN ARROW keys to 
+locate the Format Device option and press ENTER to select 
+it.  Mini TransPort prompts:
+	
+	FORMATTING DEVICE WILL REMOVE ALL DATA FROM IT.  
+	CONTINUE?
+
+To abort the format, press the DOWN ARROW or ESCAPE 
+keys and you will return to the File Menu.
+
+To continue with the format, press UP ARROW.  The ROM 
+disk takes around a minute to format.  You will hear a series 
+of beeps to let you know that the format is progressing.  
+When finished, Mini TransPort announces:
+	
+	DONE.
+
+You are returned to the File Menu, placing you on the 
+Format Device option.
+
+** 4.  The Options Menu.
+
+The fourth entry in the Main Menu is the Options Menu.  
+This menu handles a number of Mini TransPort's 
+miscellaneous utilities and contains the following entries:
+
+VERBOSE MODE.
+POWER MODE.
+BATTERY CHECK.
+DEVICE STATUS.
+DOWNLOAD SPEECH ACCESS.
+REPROGRAM MINI TRANSPORT.
+SPEAK SERIAL NUMBER.
+BURN IN USER NAME.
+
+Enter the Options Menu from the Main Menu by using the 
+UP and DOWN ARROW keys to find it and press ENTER.
+
+*** a.  Verbose Mode.
+
+For those of you who like the reassurance of more detailed 
+prompting, Mini TransPort has a "verbose" feature which, 
+when ON, speaks expanded prompts and instructions.  
+When you first enter the Options Menu, you are on the 
+Verbose Mode option which will be spoken along with its 
+current setting.  If it is OFF, press ENTER to toggle it ON.  
+Once ON, you will hear:
+
+	OPTIONS MENU.  USE UP AND DOWN ARROWS TO PICK CHOICE.  
+	PRESS ENTER TO SELECT, OR PRESS ESCAPE TO ABORT.  
+	VERBOSE MODE ON.
+
+Press ENTER again and this time you will hear:
+
+	OPTIONS MENU.  VERBOSE MODE OFF.
+
+With Verbose Mode ON, go through some of the menus 
+you have previously visited.  Listen to the instructions given 
+for different menus.  After a while, you will feel comfortable 
+enough with Mini TransPort so that you won't need the 
+additional instruction and you can turn the Verbose Mode 
+OFF.  In general, Verbose Mode reminds you to use the UP 
+and DOWN ARROW keys to cursor to a choice, press ENTER 
+to select an option, press ESCAPE to abort, and so on.
+
+*** b.  Power Mode.
+
+The second entry in the Options Menu is Power Mode.  The 
+Power Mode determines whether you want the battery 
+saving options ON or OFF.  Find the Power Mode option 
+with the UP and DOWN ARROW keys and press ENTER to 
+select it.  You will find that there are two settings; Normal 
+and Drain.  Use the UP and DOWN ARROW keys to locate 
+one and select it with ENTER.
+
+Mini TransPort defaults to the Normal option so that all of 
+the battery saving circuitry is active.
+
+The battery Drain option allows you to completely 
+discharge your batteries before recharging them.  This may 
+be necessary if your battery develops a charge "memory" 
+(see explanation in Chapter 1).  You may also use this 
+option when running Mini TransPort on batteries but need 
+to eliminate noise introduced by the battery saving features 
+when, for example, using a tape recorder to record speech 
+output from Mini TransPort while in the field.  The A-C 
+adapter must be unplugged for this feature to be effective.
+
+*** c.  Battery Check.
+
+The next menu option is Battery Check.  Again, locate it 
+with the UP and DOWN ARROW keys and enter it by pressing 
+ENTER.  Like the Verbose Mode feature, Battery Check is 
+toggled ON and OFF by pressing ENTER.
+
+With Battery Check ON, Mini TransPort informs you when 
+the battery is getting low.  Thereafter, you will not hear the 
+warning again unless Mini TransPort is turned OFF then ON 
+which prompts the battery low message to repeat.
+
+Once you receive a "battery low" warning, plug in the A-C 
+adapter or replace the user replaceable battery pack with a  
+fresh one.
+
+We recommend you leave this feature ON all of the time for 
+maximum protection.
+
+*** d.  Device Status.
+
+The Device Status option provides you with a quick run-
+down on some of Mini TransPort's settings that might effect 
+your performance.  Use the UP and DOWN ARROW keys to 
+find this option and press ENTER to select it.  You might 
+hear:
+	
+	ADAPTER NOT PLUGGED IN.  ADAPTER POWER OFF.  
+	SERIAL PORT NOT READY.  BATTERY POWER GOOD.
+
+Or you might hear:
+
+	ADAPTER PLUGGED IN.  ADAPTER POWER ON.  
+	SERIAL PORT NOT READY.
+
+The first two announcements tell you whether or not your 
+A-C adapter is plugged in and whether or not Mini 
+TransPort is receiving power from your A-C outlet.  These 
+are not redundant.  If, for example, your adapter is plugged 
+into Mini TransPort but it is not plugged into a wall socket 
+or is not functioning properly, Mini TransPort reports that 
+the adapter is plugged in but that it is not receiving any 
+power.  If you hear this, check the connections on your A-C 
+adapter.  If these are proper, you may have a problem and 
+should call Artic Technologies for assistance.
+
+"Serial Port Not Ready" means that no cable is connecting 
+Mini TransPort to your computer.  However, if a cable is 
+connecting these two devices and you still get this message, 
+it might mean that your cable is bad or that your computer 
+is not communicating correctly with Mini TransPort.
+
+The last status announcement tells you about the present 
+status of your battery pack.
+
+*** e.  Download Speech Access.
+
+You can take advantage of a special Mini TransPort feature 
+that allows you to store your favorite screen review 
+program in Mini TransPort's ROM and, when necessary, 
+transfer it to a computer via the serial port.  With this 
+function, any IBM computer can become instantly 
+accessible.  This comes in handy should you need to work 
+with a computer that does not contain your screen access 
+software and the master diskette is unavailable.
+
+**** 1)  Creating and Loading the Necessary Files.
+
+If you are using a screen review program other than 
+Business Vision, you must create two files with specific 
+filenames and upload them to Mini TransPort's User ROM 
+or this feature will not work.  These two files are 
+TRANSFER.EXE and TRANSFER.BAT.  You must also 
+upload the MINICOM.EXE file which is supplied on the 
+diskette that  comes with Mini TransPort.
+
+TRANSFER.EXE  is the file that contains all of your 
+	      screen reader files.
+TRANSFER.BAT  is a batch file that copies TRANSFER.EXE 
+	      to your computer, extracts its files, and 
+	      issues the necessary commands to run the 
+	      screen review program. 
+MINICOM.EXE   is the program used to copy TRANSFER.EXE 
+	      from your supplied floppy disk or hard 
+	      disk subdirectory to Mini TransPort's ROM 
+	      drive.
+
+NOTE:  Business Vision users will find the files 
+TRANSFER.BAT and TRANSFER.EXE customized for 
+Business Vision on a diskette supplied with Mini 
+TransPort.  Therefore, you will not need to create these 
+files, but you will need to copy them from the diskette to 
+Mini TransPort's user ROM.
+
+The following procedure describes how to create  
+TRANSFER.EXE and TRANSFER.BAT, then copy them  
+to Mini TransPort.  You will then learn how to use the  
+Download Speech Access feature in Mini TransPort to 
+install and automatically run your screen review program.
+
+CREATING TRANSFER.EXE:  In order to create TRANSFER.EXE 
+(the file that contains your screen review software) you 
+must use a file compression program that combines and 
+compresses many files into one.  We recommend you use the 
+file compression utility PKZIP, version 2.04G.  You can 
+obtain this utility from Artic's BBS or from bulletin 
+boards in your area.
+
+The examples listed here will assume that you have and will 
+use PKZIP version 2.04G.
+
+To begin, go to the subdirectory on your computer that 
+contains your screen reader files.  It is a good idea to move 
+any files that are not required to run your screen review 
+program (such as documentation files) to a temporary 
+subdirectory.  Compressing only the required files saves 
+storage space and shortens the time it takes to install your 
+screen review program.  After paring your files down to 
+what is absolutely needed, type the following command on 
+the computer keyboard from the DOS prompt:
+	
+	PKZIP TRANSFER -RP A *.*
+
+and then press the ENTER key  This command creates a file 
+called TRANSFER.ZIP which contains all of your screen 
+reader program files, honoring subdirectory and path names 
+where applicable.  While PKZIP creates the file 
+TRANSFER.ZIP, it prompts you regarding file progress 
+and notifies you when it is finished working.  Now type:
+
+	ZIP2EXE TRANSFER
+
+and press the ENTER key.  This command converts the 
+TRANSFER.ZIP file to a file called TRANSFER.EXE (the 
+required self-extracting file).
+
+CREATING TRANSFER.BAT:  Now, lets create a batch 
+file called TRANSFER.BAT that, when executed, unpacks 
+the screen review files in TRANSFER.EXE and runs them.
+Here is a sample screen review batch file.  Feel free to 
+modify it to suit your own needs.  
+
+IMPORTANT:  You must start your batch file with the first 
+three commands as shown below and end it with the 
+command that starts your screen review program.
+
+The first command in TRANSFER.BAT is:
+	
+	CTTY CON
+
+This command returns control of the computer to the 
+console and is required at the top of the batch file.
+
+The next command is:
+
+	MINICOM /C% /S# /T
+
+This command starts the MINICOM.EXE program passing 
+three parameters. They are:
+
+/C%     where % is the number of the appropriate serial port.
+/S#     where # is the appropriate character to determine 
+	the Baud rate.
+	/ST  =  Top speed.
+	/SF  =  Fast speed.
+	/SM  =  Medium speed (9600 Baud)
+		(default if no value specified)
+	/SS  =  Slow speed.
+/T      the command instructing MINICOM to perform 
+	a remote transfer.  This command is required.
+
+The third command is:
+	
+	TRANSFER.EXE -O -D
+
+This command unpacks TRANSFER.EXE, honoring 
+subdirectories and overwriting screen review files by the 
+same name.  This command is required.
+
+The next command in the batch file is:
+	
+	START PROGRAM
+
+Do not type these words literally.  Simply enter the 
+command that starts your screen review program.
+
+NOTE:  you can perform other batch file commands 
+before starting your screen review program, but you must 
+end your batch file with the command that starts your 
+screen reader.
+
+COPYING FILES TO MINI TRANSPORT:  Now that you have created 
+the necessary files, let's transfer them to Mini TransPort.  
+Let's start by creating a subdirectory on your computer's 
+hard disk that contains the following three files: 
+
+MINICOM.EXE
+TRANSFER.EXE
+TRANSFER.BAT
+
+and the update files supplied by Artic Technologies.  To do 
+this, from the DOS prompt, type the following on your 
+computer's keyboard:
+
+	MD \UPDATE
+
+and then press the ENTER key.  UPDATE is the name of the 
+subdirectory you are going to use for this process.  Change 
+to this subdirectory by typing:
+
+	CD \UPDATE
+
+followed by the ENTER key.
+
+Next, copy all of the files starting with the word 
+TRANSFER from your diskette or the subdirectory 
+containing your screen review program into this directory.  
+For example, if the files are on floppy disk drive A, type:
+
+	COPY A:\TRANSFER.*
+
+and press the ENTER key.
+
+If the files are on hard disk drive C, in a subdirectory called 
+VE, you would type:
+	
+	COPY C:\VE\TRANSFER.*
+
+and press the ENTER key.
+
+Make sure there is a space after the word COPY when you 
+type this command.  After copying the TRANSFER.EXE 
+and TRANSFER.BAT files to the UPDATE subdirectory, 
+copy the file MINICOM.EXE from the floppy disk that was 
+supplied with your Mini TransPort by typing the following 
+command on your computer's keyboard:
+	
+	COPY A:MINICOM.EXE
+
+and press the ENTER key.  If your floppy drive is B:, 
+substitute B: for A: in this command.
+
+Now you are ready to run MINICOM.EXE to transfer the 
+files from the UPDATE directory on your computer's disk 
+to Mini TransPort.  You should still be in the UPDATE 
+subdirectory, so all that you need to do is type the following 
+command from the DOS prompt:
+	
+	MINICOM
+
+and press ENTER.  You should hear the prompt:
+	
+	MINICOM CONNECTED.
+
+confirming that MINICOM.EXE is loaded and ready to go.  
+Now press Function Key 3 (F3) on your computer's 
+keyboard.  This instructs MINICOM to send a file to Mini 
+TransPort.  When you do this, you will be asked for the 
+name of the file you wish to transfer.  In this example, type 
+the file name:
+	
+	TRANSFER.EXE
+
+and press ENTER.  Your file will be sent to the User ROM 
+on Mini TransPort and you will be notified when it is 
+finished transferring.  Repeat these steps to send 
+TRANSFER.BAT and MINICOM.EXE.  When you finish 
+transferring these files, you will be ready to perform a 
+remote transfer (use the Download Speech Access 
+function).
+
+**** 2)  Performing a Remote Transfer
+
+Sending your screen review program to your computer is 
+easy.  You need only memorize the first step. Mini 
+TransPort prompts you the rest of the way.  Listed below 
+are all of the steps with an explanation so that you can see 
+how it works.
+
+Before you start, make sure that your computer is at the 
+DOS prompt and in the disk drive where you want your 
+screen review program installed (preferably Drive C).
+
+Use the UP and DOWN ARROW keys to locate the Download 
+Speech Access entry in the Options Menu and press ENTER.  
+>>From here on, you will follow instructions from Mini 
+TransPort.
+
+Mini TransPort prompts:
+	
+	PICK THE SERIAL PORT TO USE FOR THE TRANSFER.
+
+followed by:
+	
+	COM1.
+
+This is the first entry in a menu which lists COM1 through 
+COM4.  You will need to know to which serial port on your 
+computer Mini TransPort is connected before proceeding.  
+Use the UP and DOWN ARROW keys to find the appropriate 
+port and press ENTER to select it.  Mini TransPort prompts:
+	
+	PICK THE SPEED TO USE FOR THE TRANSFER.  
+	NORMAL.
+
+This is another menu with three choices: SLOW, 
+NORMAL, and FAST.  For computers with only floppy 
+drives, or those older XT models that have hard drives but 
+extremely slow CPU speeds, use the NORMAL setting.  
+For 286, 386, and faster computers, the FAST option safely 
+transfers Business Vision from Mini TransPort.  Use the UP 
+and DOWN ARROW keys to choose the speed to use and 
+press the ENTER key to select it.
+
+You will hear a warning message concerning the DOS 
+SHARE and other programs that might interfere with the 
+procedure.  After this warning, Mini TransPort informs you 
+that you can skip further instructions by pressing ENTER (to 
+proceed immediately) or obtain instructions by pressing any 
+other key.  We recommend that, until you are familiar with 
+the instructions for transferring your screen access program 
+to a computer, you press any key other than ENTER to get 
+prompting.  Press any key other than ENTER and you will 
+hear the following message: 
+	
+	YOU WILL NEED TO TYPE TWO COMMANDS FROM YOUR 
+	COMPUTER KEYBOARD TO INSTALL YOUR SCREEN READER.  
+	PRESS ANY KEY WHEN READY FOR THE FIRST ONE.
+
+When you press a key, Mini TransPort spells the first 
+command so that you will type it in as you hear it.  The 
+command is:
+	
+	MODE COM#:1200,N,8,1,P
+
+followed by the ENTER key.  Substitute the actual COM 
+port number for the number sign (#) in the above command.
+
+This command sets the serial port on your computer for a 
+Baud Rate of 1200 characters per second, no parity bits, 8 
+data bits, 1 stop bit and a parameter to improve handshaking 
+between the computer and Mini TransPort.  This command 
+ensures that the settings for your computer match the ones 
+Mini TransPort expects or file transfers will not happen.  
+Complete the step as instructed and proceed to the next 
+command.  When finished, Mini TransPort prompts:
+	
+	PRESS ENTER FOR THE NEXT INSTRUCTION OR ANY OTHER 
+	KEY TO REPEAT THE LAST INSTRUCTION.
+
+If you missed any of the first instruction and did not type in 
+the command, press any key to repeat it.  If you have 
+entered the first command correctly on your computer 
+keyboard, then press the ENTER key on Mini TransPort's 
+keypad to hear the second and final command that you must 
+enter on your computer's keyboard. Mini TransPort now 
+prompts you to type the following command:
+	
+	CTTY COM#
+
+followed by the ENTER key.  Substitute the actual COM 
+port number for the number sign (#) in the above command.
+
+Again Mini TransPort prompts you to press ENTER to go to 
+the next instruction or any other key to repeat.  Repeat the 
+last instruction as many times as you wish, and when you 
+are ready, press ENTER to initiate the file transfer.  You will 
+hear Mini TransPort say:
+
+	STARTING TRANSFER, MAKING DIRECTORIES.
+
+This lets you know that Mini TransPort and your computer 
+are successfully communicating.  For each file transferred, 
+Mini TransPort reports the number of kilobytes sent for that 
+file.  At the end of each transfer, Mini TransPort informs 
+you that the file was successfully sent.  When all files are 
+transferred, TRANSFER.BAT is automatically executed on 
+your computer to extract the files from TRANSFER.EXE, 
+and run your screen review program.
+
+If you hear the following message, you know you have a 
+problem: 
+
+	ERROR IN TRANSFER.  UNABLE TO COMPLETE REMOTE BOOT.  
+	PRESS ANY KEY TO CONTINUE.
+
+It is usually due to an incorrectly typed instruction on the 
+computer keyboard, choosing the wrong COM port, 
+improper cabling or a faulty serial cable.  Repeat the steps 
+outlined above.  Make sure to accurately follow the 
+instructions from Mini TransPort and select the proper serial 
+port.  If that does not work, check your connections.  If 
+they are sound, then try replacing the serial cable.  If you 
+are still having trouble, contact Artic Technologies for 
+assistance.
+
+NOTE:  If you have purchased Business Vision with your 
+Mini TransPort, see the documentation enclosed with 
+Business Vision for instructions on its use.
+
+*** f.  Reprogramming Mini TransPort.
+
+Mini TransPort performs a variety of useful functions to 
+assist you in your day to day activities.  It does this because, 
+like any computer-based device, it contains an operating 
+system and a set of programmed instructions stored in a 
+special ROM.  We are constantly evaluating and developing 
+improvements to its operation as well as new features 
+designed to increase its utility.  This means that from time to 
+time, we will issue special upgrades to Mini TransPort's 
+operating system, applications or utilities.  The next entry in 
+the Options Menu is Reprogram Mini TransPort.  It 
+provides a way to transfer the upgrade information sent to 
+you on disk to Mini TransPort's internal ROM.
+
+NOTE:  Mini TransPort's internal system ROM is different 
+from the User ROM and is not accessible to the user.
+
+The reprogramming of Mini TransPort is accomplished with 
+the MINICOM utility.  (We will cover the rest of 
+MINICOM in the next chapter).
+
+To reprogram Mini TransPort, you must connect it to a wall 
+outlet via the A-C adapter and to your computer using the 
+serial cable.
+
+Let's start by creating a subdirectory on your hard disk that 
+contains MINICOM.EXE and the update files supplied by 
+Artic Technologies.  To do this, from the DOS prompt type:
+	
+	MD \UPDATE
+
+followed by the ENTER key, where UPDATE represents the 
+name of the subdirectory used for this process.
+
+Change to this subdirectory by typing:
+	
+	CD \UPDATE
+
+followed by the ENTER key.
+
+Copy the MINICOM utility into this directory.  For 
+example, if MINICOM is in the \ARTIC\VISION 
+subdirectory, type:
+	
+	COPY C:\ARTIC\VISION\MINICOM.EXE
+
+and hit ENTER.  Make sure there is a space after the word 
+COPY when you type this command.
+
+Copy the update file contained on the update disk to the 
+\UPDATE subdirectory.  For example, place Mini TransPort's 
+update disk in drive A.  Now type:
+	
+	COPY A:*.*
+
+followed by the ENTER key.  Remember, leave a space after 
+the word COPY in this command.  The \UPDATE subdirectory 
+should now contain the MINICOM utility and Mini TransPort's 
+update file.
+
+Now you can update Mini TransPort.  Make sure that your 
+Mini TransPort is ON and properly cabled to the computer.  
+It does not matter where you are in Mini TransPort's menu.  
+On your computer's keyboard (not Mini TransPort's 
+keypad) type:
+
+	MINICOM /ST
+
+where /ST sets MINICOM to top transfer speed.  You 
+could have used /SF to set MINICOM to a fast speed.  In 
+either case, press ENTER.  You should hear:
+	
+	MINICOM CONNECTED.
+
+from Mini TransPort's speaker.  If not, check your cabling, 
+make sure Mini TransPort is ON, connected to the A-C 
+adapter and plugged in.
+
+Once you hear the "MINICOM CONNECTED" prompt, 
+find Mini TransPort's Options Menu with the UP and DOWN 
+ARROW keys and press ENTER.  Locate the Reprogram 
+Mini TransPort Option with the UP and DOWN ARROW keys 
+and press ENTER again.  You will hear two important 
+messages.  First, Mini TransPort reminds you that it must be 
+connected to a computer with MINICOM loaded for the 
+reprogramming to work.  Second, Mini TransPort reminds 
+you that the A-C adapter must be connected.  Mini 
+TransPort then prompts:
+	
+	DO YOU WANT TO CONTINUE?
+
+Press UP ARROW or ENTER to continue the reprogram.  To 
+abort the reprogram, press DOWN ARROW or ESCAPE.  If 
+you continue, Mini TransPort prompts you to press ALT-F3 
+on your computer keyboard to begin the reprogramming.
+
+Mini TransPort beeps during its reprogramming and will re-
+start once the process is complete. The READ.ME file that 
+comes on the update disk provides you with information on 
+changes and additional Mini TransPort features 
+implemented with the upgrade.
+
+*** g.  Speak Serial Number.
+
+This choice in the Options Menu speaks your Mini 
+TransPort serial number (and your name, if it's burned in), 
+the model of your Mini TransPort, and the version number 
+of the current software every time you press the ENTER key.  
+This is useful when calling Artic Technologies for technical 
+support.  You can also access this feature without going 
+through the menus by pressing the MODE key to place Mini 
+TransPort's keypad in TURBO Mode and then pressing 
+FUNCTION KEY A.
+
+*** h.  Burn-In User Name.
+
+This option allows you to permanently burn your name or 
+other identifying information into Mini TransPort for 
+security purposes.  This identifying information may be up 
+to seventy characters in length.
+
+If you press ENTER while on this option, you will be asked 
+for your name.  Type in your name (or any other identifying 
+information you wish to use) and press ENTER.  From that 
+point on, your name will always be a part of your Mini 
+TransPort and cannot be removed or changed unless your 
+Mini TransPort is sent back to Artic Technologies.
+
+** 5.  The Serial Menu.
+
+The fifth entry on the Main Menu is the Serial Menu. It 
+controls four parameters that govern serial communications. 
+Locate the Serial Menu under the Main Menu using the UP 
+and DOWN ARROWS and then press ENTER to select it.  
+Once there, you will be placed at the top of the list of the 
+four communications parameters and two default functions:
+
+BAUD RATE.
+CHARACTER LENGTH.
+PARITY.
+STOP BITS.
+SET TO ACCENT DEFAULTS.
+SET TO MINI TRANSPORT DEFAULTS.
+
+Briefly, the Baud Rate determines the number of bits per 
+second at which data is transmitted to and from your 
+computer.  The Character Length determines how many 
+binary digits make up each character.  The Parity setting 
+determines the method of error checking in data 
+transmissions.  The number of Stop Bits determines how 
+many binary digits are sent after each character.
+
+If you only use Business Vision, you should never need to 
+change these options since the MINICOM utility and the 
+Business Vision screen review software handle the setting of 
+serial port parameters automatically.  If you use other 
+screen readers (especially those that use a nonstandard 
+parameter set such as the default settings for the external 
+Accent synthesizer), you will need to set Mini TransPort to 
+match them or your speech will not work.  Mismatched 
+serial parameters cause speech to sound unintelligible.  Your 
+screen reader software manual should instruct you in the 
+proper parameter settings for an external accent synthesizer 
+and these parameters should be matched with Mini 
+TransPort.  Mini TransPort uses the standard parameter set 
+when using Business Vision and MINICOM: Baud Rate of 
+9600, Character Length of 8, no Parity, and 1 Stop Bit.  
+However, some packages may instruct you to set the Parity 
+to "Even", a Character Length of 7, and the number of Stop 
+Bits to 2.
+
+To do this, go to the Main Menu and use the UP and DOWN 
+ARROW keys to locate the Serial Menu.  Select it with the 
+ENTER key.  Mini TransPort prompts:
+	
+	SERIAL MENU.  BAUD RATE.
+
+followed by the current setting for the Baud Rate.  To 
+change this rate, press ENTER.  You are placed in the list of 
+Baud Rates which range from 300 to 115,000 baud.  Use 
+the UP and DOWN ARROW keys to locate the speed you 
+want and press ENTER to select it.  You are then returned to 
+the Serial Menu.
+
+Use your DOWN ARROW to move to the next parameter.  
+You will hear:
+	
+	CHARACTER LENGTH.
+
+followed by the current value.  This option is also entered 
+with ENTER, which places you on a menu of two choices: 
+seven and eight.  Like the Baud Menu, these options are 
+accessed with the UP and DOWN ARROW keys.  Use the 
+ARROW keys to locate the number you desire and press 
+ENTER to select it and return to the Serial Menu.
+
+Move down to the third parameter and you will hear:
+	
+	PARITY.
+
+followed by the current setting.  Press ENTER to go into the 
+Parity Options Menu.  Your choices are ODD, EVEN and 
+NONE.  They are accessed with the UP and DOWN ARROW 
+keys.  After choosing the Parity setting you want, select it 
+with ENTER.  You are then returned to the Serial Menu.
+
+Moving to the fourth and last parameter, you will hear:
+	
+	STOP BITS.
+
+followed by the current setting.  Use ENTER to go into the 
+Stop Bits Options Menu.  You are placed on a list 
+containing two choices: ONE and TWO.  Use your UP and 
+DOWN ARROW keys to locate your choice and hit ENTER to 
+select it and return to the Serial Menu.
+
+The final two entries in this menu will set the four 
+communications parameters to predefined values.  For the 
+Accent defaults, the values are:
+
+BAUD RATE:         9600
+CHARACTER LENGTH:  7
+PARITY:            None
+STOP BITS:         1
+
+For the Mini TransPort defaults, the values are:
+
+BAUD RATE:         9600
+CHARACTER LENGTH:  8
+PARITY:            None
+STOP BITS:         1
+
+** 6.  P.A.L. Files.
+
+As previously stated, Mini TransPort supports special kinds 
+of files that you customize to suit your own needs.  These 
+are called P.A.L. files, which is short for Personal 
+Appointment Look-up.  There are four PAL files that you 
+can create, store and reference as needed.  They are:
+
+PHONE.
+ADDRESS.
+TO DO LIST.
+OTHER.
+
+PHONE is a quick name and phone number list that you can 
+use to keep track of clients, friends or other important 
+numbers.  You can also dial the phone number in a PAL 
+phone entry.  We will describe how to do this later in this 
+section.
+
+ADDRESS allows you to store and retrieve a list of names 
+and addresses.  How you use this is strictly up to you: a 
+client list, names and addresses of family or friends.  In any 
+case, the PAL system is flexible enough to serve your needs.
+
+TO DO LIST is a file you can create to list the things you 
+need to do.  Change the items as you accomplish your tasks.
+
+OTHER is file to use if the PHONE, ADDRESS or TO DO 
+LIST files do not meet your specific requirements.
+
+*** a.  Creating a PAL File.
+
+The best way to learn how to create a PAL file is to 
+demonstrate how they are built.  The following is a listing of 
+three sample files supplied with Mini TransPort.  Read the 
+accompanying explanations.  Note that PAL files are 
+created on your computer, stored as ASCII files and saved 
+using the following file conventions:
+
+PHONE       =  PHONE.TXT
+ADDRESS     =  ADDRESS.TXT
+TO DO LIST  =  TODO.TXT
+
+Sample PHONE.TXT file entries:
+
+(ENTRY TITLE)
+** John
+(ENTRY)
+453-3234
+
+(ENTRY TITLE)
+** Stan
+(ENTRY)
+(513) 342-2313
+
+(ENTRY TITLE)
+** Mark
+(ENTRY)
+(123) 456-7890 Ext 3234
+
+(ENTRY TITLE)
+** Pete
+(ENTRY)
+1-800-324-4124 
+
+Do not use the words ENTRY and ENTRY TITLE when 
+creating your own PAL file.  We use them here to help you 
+see how a PAL file is constructed.  The ENTRY TITLE 
+consists of 2 asterisks, a space, and any text that can fit on 
+the first line of the record.  The ENTRY consists of text 
+starting on line 2 and ending at the next set of asterisks.  
+Though your ENTRY TITLE is limited to one line, the 
+ENTRY itself can be as long as it needs to be.  The sample 
+ADDRESS and TO DO LIST files illustrate this point.
+
+Sample ADDRESS.TXT file:
+
+** Artic Technologies
+55 park St.
+Troy, Michigan 48083
+
+** Clark Kent
+1234 Lois Lane
+Metropolis, MI 48321.
+
+** Mr. Anyone
+150 Anywhere Dr.
+Anytown, USA 12345
+
+Sample TODO.TXT file:
+
+** Chores
+Take out the garbage.
+Pick up the kids.
+Do the dishes.
+Buy more Mini TransPort's.
+
+** Appointments
+10:30 A.M.  Meeting with boss
+12:00 P.M.  Lunch with a friend.
+2:00 P.M.  Meeting with executive board.
+
+As previously stated the OTHER file is meant to cover any 
+needs that you might have which are not logically included 
+within the PHONE, ADDRESS and TODO files.  OTHER 
+files can be anything in the form *.TXT.  When OTHER is 
+selected, you will be taken to a list of all the files with the 
+extension TXT on the ROM Drive.
+
+*** b.  Sending a PAL File to Read.
+
+After creating your PAL files, you must load them into Mini 
+TransPort.  To do this, copy the files into the directory that 
+contains your MINICOM.EXE file.  Then type on your 
+computer keyboard:
+	
+	MINICOM
+
+to start the program.  Press the F3 key (Function Key 3) on 
+your computer keyboard to transfer files from your 
+computer to Mini TransPort.  When asked for the name of 
+the file to send, type the name of the appropriate PAL file 
+and press ENTER.  The file will be sent and Mini TransPort 
+will announce:
+	
+	DONE.
+
+to let you know that the process is finished.  For more 
+information concerning transferring files between your 
+computer and Mini TransPort, please read Chapter 4.
+
+*** c.  PAL File Reader Keys.
+
+Now that you have sent a PAL file to Mini TransPort, it is 
+time to read it.  To do this, go to Mini TransPort's Main 
+Menu.  Use your UP and DOWN ARROW keys to locate the 
+PAL File option and press ENTER.  You are placed at the 
+top of a list of PAL file options that correspond to the PAL 
+files you may have created:
+
+PHONE       opens the PHONE.TXT file.
+ADDRESS     opens the ADDRESS.TXT file.
+TO-DO LIST  opens the TODO.TXT file
+OTHER       places you at the top of the list of all files 
+	    with an extension of .TXT.  Use the UP and DOWN 
+	    ARROW keys to locate the specific PAL file that 
+	    you want and press ENTER to open it.
+
+Use your UP and DOWN ARROW keys to locate the specific 
+PAL file that you sent to Mini TransPort and press ENTER.
+
+You will hear the first field in the file you created.  To 
+access the remaining portions of the file, use the following 
+PAL file reading keys:
+
+UP & DOWN ARROWS  Scroll through ENTRY TITLES.
+ENTER             Read the ENTRY itself.
+ESCAPE            Return to PAL menu.
+MODE+KEY1         Scan ENTRY TITLE list
+MODE+KEY2         Page-Down to the next page of ENTRY TITLES.
+MODE+KEY2+KEY2    Current ENTRY TITLE
+MODE+KEY3         Page-Up to the previous page of ENTRY TITLES.
+MODE+KEY3+KEY3    Dial the current telephone number in the 
+		  PHONE file.
+MODE+KEY4         Move to start of ENTRY TITLES.
+MODE+KEY4+KEY4    Move to end of ENTRY TITLES.
+
+NOTE: As previously stated, MODE+KEY3+KEY3 dials a 
+number that is in the ENTRY section of your current PAL 
+file record.  Mini TransPort will generate the 
+corresponding touch tones and output them through its 
+speaker.  In order for this to work well, the speaker must 
+be close enough to the telephone to be picked up cleanly.
+
+** 7.  Reminder Files.
+
+If you create an ASCII file called REMIND.TXT and send 
+it to Mini TransPort, it will automatically be read each time 
+you power up Mini TransPort.  You can also read this file 
+by accessing the Read Reminders option (the last entry in 
+Mini TransPort's Main Menu.)  To do this, locate the Read 
+Reminders option from the Main Menu and press ENTER.  
+You do not have to use asterisks to create an ENTRY 
+TITLE in the REMIND.TXT file since, by definition, the 
+file is automatically read if it is present.
+
+
+========================================================================
+CHAPTER 4:   The Rest Of MINICOM
+
+
+In the last chapter you used MINICOM to reprogram Mini 
+TransPort and to upload other files.  These are only some of 
+MINICOM's capabilities.  Let's take a closer look at the 
+MINICOM help screen to see what else it has to offer.  
+
+Pressing the F1 key (Function Key 1 on the computer's 
+keyboard) after MINICOM loads will call up the 
+MINICOM Help screen.  It is reprinted here to quickly 
+familiarize you with MINICOM's functions.
+
+PRESS F1 (FUNCTION KEY 1) FOR THIS SCREEN. 
+PRESS F2 (FUNCTION KEY 2) TO RECEIVE A FILE FROM MINI 
+	 TRANSPORT.
+PRESS F3 (FUNCTION KEY 3) TO SEND A FILE TO MINI 
+	 TRANSPORT.
+PRESS F5 (FUNCTION KEY 5) TO USE THE COMPUTER'S CLOCK 
+	 TO SET MINI TRANSPORT'S TIME.
+PRESS ALT-X TO EXIT THE MINICOM UTILITY. 
+PRESS CONTROL-C TO ABORT A SERIAL TRANSFER.
+NOTE: ALT-F3 IS USED IN THE REPROGRAMMING OF MINI 
+  TRANSPORT.ALL OTHER KEYS ARE USED TO SIMULATE THE 
+  MINI TRANSPORT KEYPAD.
+
+---------------END OF HELP SCREEN-----------------
+
+NOTE:  when reading this material, make sure to notice 
+the difference between references to the four function keys 
+on Mini TransPort's keyboard and references to the 
+function keys on the computer keyboard.  Mini 
+TransPort's function keys are presented as FUNCTION KEY 
+A, FUNCTION KEY B, FUNCTION KEY C, and FUNCTION 
+KEY D or KEY 1, KEY 2, KEY 3, and KEY 4 while the 
+computer keyboard's function keys are referred to as F1, 
+F2, F3, etc. or Function Key 1, Function Key 2, Function 
+Key 3, etc.. 
+
+
+* A.  Using MINICOM With Other Screen Readers.
+
+MINICOM is designed to work in perfect harmony with the 
+Business Vision screen access software supplied by Artic 
+Technologies.  If you are using a screen access program 
+other than Business Vision with Mini TransPort, you must 
+unload it or MINICOM will not function properly.  If this is 
+the case, restart your computer without the screen access 
+software by booting from a floppy disk or from your hard 
+disk without loading the other screen reader.   MINICOM 
+works with Mini TransPort and does not need a screen 
+reader to verbalize its prompts.  When finished using 
+MINICOM, load the screen access software as before and 
+proceed normally.
+
+* B.  Using MINICOM With Business Vision.
+
+You can load MINICOM when Business Vision is running 
+with the SynPhonix card as long as you use the "/B" switch. 
+You would enter the following command from the DOS 
+prompt on your computer's keyboard:
+	
+	MINICOM /B
+
+This switch informs MINICOM that Business Vision is 
+running with the SynPhonix card.  You do not need to use 
+this switch when running Business Vision with Mini 
+TransPort.
+
+
+* C.  Sending and Receiving Files.
+
+Occasionally you may want to share files with a friend who 
+may not have a modem or may not have the same floppy 
+drive size as you do.  You can still transfer files by first 
+storing them in Mini TransPort's ROM disk.  Then, simply 
+download Business Vision (along with the MINICOM 
+utility) onto your friend's machine.  When you run 
+MINICOM, your friend's computer can receive files from 
+Mini TransPort.  
+
+With MINICOM active, Function Key 2 (F2) instructs 
+MINICOM to receive a file from Mini TransPort.  Function 
+Key 3 (F3) sends a file to Mini TransPort.  When F2 is 
+pressed, MINICOM prompts:
+
+	ENTER IN THE FILENAME TO RECEIVE.
+
+When F3 is pressed, MINICOM prompts:
+
+	ENTER IN THE FILENAME TO SEND.
+
+Once you type the appropriate filename and press ENTER, 
+the file is transferred from Mini TransPort to your computer 
+or from your computer to Mini TransPort.  You are told 
+about the progress of the transfer every 10 kilobytes (10 
+thousand characters) depending on the size of the file.  Mini 
+TransPort reports when the transfer is complete.
+
+To summarize, you know that F1 brings up the MINICOM 
+help screen; F2 allows you to receive a file on your 
+computer from Mini TransPort; and F3 allows you to send a 
+file to Mini TransPort from your computer.  You also 
+learned that the ALT-F3 key combination, when prompted 
+to press it, re-programs Mini TransPort.
+
+* D.  Controlling Mini TransPort From Your Computer Keyboard.
+
+All of the other MINICOM keys simulate Mini TransPort's 
+keypad.  In this way, you can operate the unit from your 
+computer's keyboard instead of  Mini TransPort's keypad.  
+
+For example, the UP and DOWN ARROW keys on your 
+computer keyboard equal the UP and DOWN ARROW keys 
+on your Mini TransPort's keypad.  Pressing the ESCAPE key 
+on your computer keyboard moves you up a level in Mini 
+TransPort's menu system (until you reach the Main Menu).  
+Pressing ENTER on your computer keyboard has the same 
+effect as the ENTER key on Mini TransPort's keypad.  
+Therefore, you can enter and operate any Mini TransPort 
+application or utility from your computer keyboard.  You 
+can enter text for alarm messages using your computer's 
+normal letter and number keys (making the use of key 
+combinations on Mini TransPort's keypad unnecessary).  
+Some may wonder why we waited until now to demonstrate 
+how easy it is to operate Mini TransPort from your 
+keyboard.  The answer is that to do this, you must have a 
+computer connected to Mini TransPort which defeats the 
+usefulness afforded it by its portability.  MINICOM does 
+give you this option, but we recommend that you first learn 
+to operate Mini TransPort and enter text using its keypad.
+
+To get out of MINICOM and back to DOS, press the 
+ALT-X key combination on your computer keyboard.  Once 
+in DOS, your computer's keyboard no longer controls Mini 
+TransPort and you will use its keypad to operate it.
+
+* E.  Setting Mini TransPort's Clock.
+
+You can use MINICOM to set Mini TransPort's clock using 
+the date and time from your computer.  Press F5 and Mini 
+TransPort will report:
+
+	DATE AND TIME SET.
+
+confirming that its clock has been successfully updated.
+
+* F.  MINICOM Switches.
+
+Here is a brief list of command line switches for MINICOM:
+
+/?  Brings up MINICOM's command line help screen.
+
+/B  Instructs MINICOM that the SynPhonix card is 
+    installed and that Business Vision is running.
+
+/C% Where % is the number of the appropriate serial 
+    port.  MINICOM /C2, for example, runs MINICOM 
+    on COM2.  If no COM switch is specified, 
+    MINICOM defaults to COM1. 
+
+/S# Where # is the appropriate letter to set the Speed 
+    MINICOM uses to connect Mini TransPort and 
+    your computer.  "/ST", for example, is for top speed 
+    and recommended for most computers.
+
+      MINICOM /ST  =  Top speed.
+      MINICOM /SF  =  Fast speed.
+      MINICOM /SM  =  Medium speed (9600 Baud)
+		      (default if no value specified)
+      MINICOM /SS  =  Slow speed.
+
+/U: Lets you upload (send a file) to the Mini TransPort.  
+    The form is /U:FILENAME.EXT where FILENAME.EXT is the 
+    name of your file.
+
+/D: Lets you download (receive a file) from the Mini TransPort.  
+    The form is /D:FILENAME.EXT where FILENAME.EXT is the name 
+    of your file.
+
+/T  the command instructing MINICOM to perform a remote transfer. 
+
+
+========================================================================
+APPENDIX A:   Controlling Mini TransPort With Other Software
+
+When using Mini TransPort with other programs, follow the 
+instructions in the application program's manual to ensure 
+proper setup and installation.  If Mini TransPort is well 
+supported, you can use the commands supplied by the 
+manufacturer to control it.
+
+NOTE:  we do not always know how other companies 
+choose to support our synthesizers.  Therefore, if after 
+following their instructions you cannot get Mini TransPort 
+to respond properly, call the software manufacturer for 
+technical support.
+
+Mini TransPort accepts speech commands in either PortTalk 
+or External Accent format.  No mode switching is required.  
+Business Vision automatically selects the PortTalk format 
+and needs no setup.  If you are using third party software, 
+you will need to instruct the program to use the PortTalk or 
+Accent format (reference your third party software manual 
+for its requirements).
+
+Appendix B references Mini TransPort commands that third 
+party programmers or developers must use when writing 
+speech drivers for Mini TransPort.  Ignore these commands 
+unless you intend to write a customized program and speech 
+driver for Mini TransPort.
+
+
+========================================================================
+APPENDIX B:   Mini TransPort Speech Commands
+
+
+Mini TransPort accepts speech commands in either PortTalk 
+or Accent format.  No mode switching is required.  Artic 
+Business Vision automatically selects the PortTalk format 
+and needs no setup.  If you are using third party software 
+you will need to instruct the program which format to use 
+(see the user manual for the third party software's 
+requirement).  The Mini TransPort command list contained 
+in this Appendix is provided for use by software developers.
+
+** 1.  Mini TransPort Primary Command Codes.
+
+Third party software that is compatible with PortTalk-based 
+speech synthesizers may access Mini TransPort.
+
+*** a.  Speech Characteristic Commands.
+
+CONTROL-E R ?  =  Set Speech Rate, where ? is a number 
+		  from 0 to 9.
+CONTROL-E P ?  =  Set Speech Pitch, where ? is a number 
+		  from 0 to 9. 
+CONTROL-E V ?  =  Set Speech Volume, where ? is a the 
+		  number from 0 to 9. 
+CONTROL-E T ?  =  Set Speech Tone, where ? is a letter 
+		  from A to Z. 
+CONTROL-E N ?  =  Set Number Processor,
+		  OFF (? = 0),  ON (? = 1). 
+CONTROL-E F ?  =  Set Flat Pitch.
+		  OFF (? = 0),  ON (? = 1). 
+CONTROL-E A ?  =  Set Acronyms.
+		  OFF (? = 0),  ON (? = 1). 
+CONTROL-E S ?  =  Set Spelling.
+		  OFF (? = 0),  ON (? = 1). 
+ 
+*** b.  Speech Flow Controls.
+
+CONTROL-X      =  Abort speech and be quiet (Instant Flush). 
+CONTROL-E H ?  =  Set Host Timeout, where ? is a 
+		  number from 0 to 9. 
+CONTROL-E I ?  =  Set Speech Index Marker, where ? is 
+		  a letter from A to Z. 
+CONTROL-E Q    =  Query Speech Index Marker. 
+CONTROL-E W    =  Wait for Speech to complete. 
+
+NOTE: To make Mini TransPort send back a response 
+when a certain point in the text string is reached, use a 
+WAIT followed by a QUERY.  For example, the string:
+ 
+	"hello": CONTROL-E W CONTROL-E Q
+ 
+sends back an index marker after "hello" speaks.
+
+*** c.  Miscellaneous Controls.
+
+CONTROL-E $  =  Reset Mini TransPort. 
+CONTROL-A P  =  Read Turbo Port. 
+
+** 2.  Mini TransPort Auxiliary Command Codes.
+
+Mini TransPort is compatible with Accent Commands.  
+However, the power-up defaults are different.  You must 
+send an Accent reset in order to get Accent defaults.  Third 
+party software that is compatible with Accent type speech 
+synthesizers may access Mini TransPort (see Accent Manual 
+for details).  
+
+
+========================================================================
+APPENDIX C:   Trouble Shooting Guide
+
+Below are some commonly asked questions with answers 
+we hope will benefit you.
+
+1.  How much memory does Mini TransPort use?
+
+    Mini TransPort does not use any memory in your 
+    computer.  The only memory used is the memory 
+    required by your screen access program.
+
+2.  Is the Mini TransPort manual on disk?
+
+    Yes!  It is on the diskette you received with the unit.
+
+3.  Can I use Mini TransPort with a note book computer? 
+
+    Mini TransPort is designed to support a variety of 
+    Laptop computers.  You need to make sure that the 
+    laptop in question has a serial port and can run your 
+    screen review program. 
+
+4.  If I loose power for Mini TransPort, do I have to 
+    reboot my computer?
+
+    No.  Plug Mini TransPort in and turn it ON.  Normally, 
+    you can resume where you left off.  If not, reboot the 
+    computer and restart Mini TransPort.
+
+5.  How do I find Mini TransPort's Serial number? 
+    
+    Mini TransPort's serial number is printed on the bottom 
+    of the unit.  You may also hear the serial number by 
+    accessing the "Speak Serial Number" menu option from 
+    the Options Menu or by pressing the MODE key to shift 
+    the key pad to TURBO Mode and then pressing 
+	
+	FUNCTION KEY A (KEY 1).
+
+    From Business Vision, the serial number is spoken by 
+    pressing the question mark (?) key in Control Mode. 
+
+6.  Can I get a new serial cable or serial adapter 
+    replaced if the originals get lost or broken? 
+
+    Yes! Check with Artic Technologies for price and 
+    delivery. 

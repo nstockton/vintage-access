@@ -1,0 +1,89 @@
+
+DOUBLETALK AUDIO OUTPUT ADAPTER
+===============================
+
+Frederick Stam
+Intelligent Access Microware (IAM)
+IAM@braille.uwo.ca
+June 1997
+
+
+This article describes an adapter which can be built to connect the
+output of the DoubleTalk-PC synthesizer to the auxiliary input of a
+computer sound card or other grounded amplifier.
+
+The audio output signal from the DoubleTalk synthesizer originates
+in a bridge type amplifier chip. (TLC2471) The output is DC coupled
+and the chip really complains if one of its leads is connected to
+chassis ground. Simply connecting an audio patch cord from the output
+of the DoubleTalk to a grounded external device or your sound card line
+input will eventually destroy the amplifier chip. Of course this makes
+Texas Instruments happy since they get to sell you a new amplifier chip.
+In short don't plug anything into the output of your synthesizer but the
+speaker ... or the adapter shown here.
+
+Since the amplifier chip has DC voltage on the output leads an audio
+output transformer can be used to isolate the output and safely extract
+the audio signal. The isolated (primary) side of the transformer can
+then be directly connected into the Line-in connector of a system
+sound card. The adapter shown here uses parts which are readily
+available from Radio Shack.  It can be plugged into the output of the
+DoubleTalk or the external speaker.
+
+The adapter provides audio to both the Left and Right channels of your
+sound card (though not in stereo). Once connected you will need to set
+your sound card mixer settings and the DoubleTalk volume control to
+achieve the best sound level. If you plug the input of the adapter into
+the DoubleTalk external speaker you can also control the level using
+the speaker volume control. There is also some reduction in the audio
+level because the output transformer primary impedance doesn't match the
+input impedance of the sound card.
+
+PARTS REQUIRED:
+     1 mono mini phone plug (RS #274-287)
+     1 stereo mini phone plug (RS #274-284)
+     1 audio output transformer (RS #273-1380)
+     2 feet of audio cable 3 conductor
+     heat-shrink tubing or electrical tape
+
+TOOLS REQUIRED:
+     soldering iron and solder
+     wire cutters/strippers
+     Teflon fingers (if your new to soldering)
+
+ASSEMBLY:
+     - Cut a 1 foot section of the audio cable and attach one of the
+       center leads to the tip connector of the mono plug and attach the
+       shield lead to the ring connector.
+     - Attach the remaining piece of cable to the stereo plug. One
+       center lead to the tip and the other to the center ring of the
+       stereo plug. Connect the shield wire to the ring connector and
+       connect the other end to the center tap wire of the transformer
+       primary (don't forget to slip on some heat-shrink tubing before
+       attaching the wires).
+     - Connect the two center wires to the two outside wires of the
+       transformer primary.
+     - Connect the two wires from the mono plug to the two wires from
+       the other side of the transformer (secondary).
+     - Wrap any open connections with electrical tape and continue
+       wrapping the entire transformer and connections with tape to
+       strengthen it.
+     - When you are all done, simply plug the mono plug into the
+       DoubleTalk output or speaker and plug the other end into your
+       sound card. Remember to set your sound card line-in mixer
+       setting for best volume.
+
+
+
+        __________________________ || __________________________ 
+       |                          )||(                          |
+       |                          )||(  Primary                 |
+      ~= ===|      Secondary      )||(__________________|=== == =~
+      ~= ===|        8 Ohms       )||(                  |=== == =~
+            |                     )||(  1K Ohm CT            |
+            |_____________________)||(_______________________|
+                                   ||
+     Mono mini plug         Output Transformer          Stereo mini plug
+     (To DoubleTalk                                     (To sound card
+      output or ext.                                     aux. input jack)
+      speaker jack)

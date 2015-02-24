@@ -1,0 +1,70 @@
+From randyc@rcsys.com  Wed Sep 22 12:53:45 1999
+MIME-Version: 1.0
+From: Randy Carlstrom <randyc@rcsys.com>
+To: Kirk Reiser <kirk@braille.uwo.ca>
+Subject: Re: synth weirdness
+
+Kirk,
+
+1. If the DTLT gets a null, AND there is nothing in its input buffer (as
+would be the case just after receiving an 18h), it will emit several
+bytes identifying itself (which you are already well aware of). This was
+originally done for compatibility with the old external Echo
+synthesizers. I believe that if you attempt to send anything to the DTLT
+while it is sending the ID, it will ignore it because the ID routine is
+called from inside the serial 'rupt handler, and 'rupts haven't been
+re-enabled yet to allow additional serial input to be processed. A
+work-around would be to send 80h instead of 00h if you don't want to use
+a CR. (80h works the same as 00h unless a foreign dictionary is loaded;
+80h is then processed as some weird-looking French character.) I'm kind
+of surprised that this problem hasn't shown itself before now; kinda
+late to fix it, but I'll look into it further (perhaps force DTR false
+during the ID procedure would be best, since I don't want to start
+handling recursive serial interrupts).
+
+2. CTS and DSR are tied together in the DTLT's serial cable for this
+very reason. You should see exactly the same activity on both lines. (I
+don't know what the LiteTalk does - but it probably drives just one of
+the two handshake lines.)
+
+3. If you want to send a word list, just a text file of the words would
+be fine.
+
+Sincerely,
+
+Randy Carlstrom
+RC Systems, Inc.
+1609 England Ave.
+Everett, WA 98203
+
+425-355-3800 (voice)
+425-355-1098 (fax)
+randyc@rcsys.com
+http://www.rcsys.com
+
+
+Kirk Reiser wrote:
+> 
+> Hi Randy:  Sorry for the delay in getting back to you.  I found it was
+> not the 0x18 at all but the NULL character which causes the lost
+> character.  I have at least for now changed those to the <cr> and it
+> seems to work better.  Why is there a difference between the two chars
+> on the DoubleTalk LT and not the LiteTalk?
+> 
+> I was monitoring dtr/dsr but changed that to monitor rts/cts.  Is
+> there a problem with that?  The reason I changed it was because a
+> number of other synths seem to use cts for the handshaking in loux of
+> the dsr.
+> 
+> If I was going to send you some more word corrections, how would you
+> prefer them.  Back in the days of my DoubleTalk.lex file, I used
+> Larry's method for correcting.  I just thought you may find some other
+> format more convenient.  The two that come to mind currently are the
+> "chem" although in a word such as alchemist or neurochemical.  Also
+> dualist and it's ilk seem to have problems as well.  I'm sure there
+> are many more.
+> 
+>   Kirk
+
+
+

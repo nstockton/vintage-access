@@ -1,0 +1,144 @@
+Type Lite Summer 2001 Addendum
+This addendum documents the features added to the Type Lite in the summer 2001 firmware update.
+TYPE LITE SUMMER 2001 ADDENDUM	1
+E-MAIL	3
+E-mail Configuration	3
+Running the Configuration Wizard	3
+Changing E-mail Configurations	4
+Checking for New E-mail	5
+Reading E-mail	5
+Creating New Messages	6
+Replying to or Forwarding Messages	8
+E-mail Parameters	8
+WORD EXCEPTIONS	10
+WORD ECHO	11
+COUNTDOWN TIMER	12
+GAS GAUGE	13
+HOURLY ANNOUNCEMENT ALARM	14
+
+E-Mail 
+E-mail Configuration
+The following information is needed to set up your email account for use with the Type Lite. If you do not have access to all of this information, contact your Internet Service Provider (ISP).
+* E-mail address
+* Dial up service phone number 
+* Account login name 
+* Account password
+* Outgoing SMTP mail server
+* Incoming (POP3) mail server
+Some service providers require you to log into their network before logging in to your E-mail account. If your provider requires this, you may also need:
+* PPP account name
+* PPP password
+Running the Configuration Wizard
+E-mail configuration information is entered in the Wizard.bns program. To run this program:
+1. Press F9 to open the Options Menu.
+2. Press X for Execute program.
+3. Enter the name of the file, Wizard.bns.
+4. Press ENTER.
+Note:	You can also press F1 to open the File menu, locate the Wizard.bns file, and press ENTER to run it.
+The E-mail configuration program prompts you for the information it requires. Answer each prompt with the information gathered from above. Press Enter after each entry. You are asked to confirm the information. Press Y for yes or press UP ARROW to return to the previous step.
+Note: 	If you are dialing from a company where you need to first dial a number to access an outside line (i.e., 9) include a COMMA after this number in the dial-up phone number field. This adds a two second pause, giving the phone system time to get a dial tone before dialing the rest of the number. 
+Once you have your information entered correctly, press ENTER. This information is saved to the file, Email.cfg. 
+Changing E-mail Configurations 
+There are two ways to change your e-mail configurations. 
+* Open the e-mail.cfg file and go to the option you want to change. Then use the basic editing functions to make your changes.
+* Enter the mailread.bns program file, press SLASH (/) for Email Parameters. Then press C for Configure Mailer. Navigate the options with UP and DOWN ARROW. FN+UP ARROW and FN+DOWN ARROW navigate by section. 
+Checking for New E-mail
+Run the Mailer.bns program To check for new E-mail:
+1. Press F9 to open the Option menu.
+2. Press X for Execute program.
+3. Enter the name of the file, Mailer.bns.
+4. Press ENTER.
+Reading E-mail
+Use the Mailread.bns program to organize and read your email messages. Open this program in the same manner as the previous programs.
+The Mailread.bns program places you in the Inbox.
+Mailbox Commands
+top of list		HOME (FN+LEFT ARROW)
+bottom of list		END (FN+RIGHT ARROW)
+Next Message		DOWN ARROW
+Prior Message		UP ARROW
+Next header		RIGHT ARROW
+Prior Header		LEFT ARROW
+The following header fields are available for each message in a mailbox:
+Status (New, Read, System, Read Only, Error); To; CC; From; Subject; Date.
+Next Mailbox		F6
+Prior Mailbox		SHIFT+F6
+The following mailboxes are available:
+Inbox, Outbox, Sentbox, Deleted, Drafts (currently not used/implemented).
+Read Message		ENTER
+New Message		N
+Reply to Current Message	R
+Forward Current Message	F
+Delete Current Message		D
+Note:	This moves the message to the Deleted mailbox. It only permanently deletes the message if you are in the Deleted mailbox.
+Save Current Message
+to File		S
+Reset Message Status		T
+Show Mailbox Information 	I
+Read Raw Header		H
+Rename Current Mailbox	E
+Exit Program		ESC
+Creating New Messages
+1. Press N to create a new message. 
+2. You are placed in the To: field. Enter the email address of the message recipient and press ENTER to move to the next field.
+3. You are placed in the Subject: field. After entering a message subject, press ENTER to move to the next field.
+4. You are placed in the CC: field. Enter another email address if you want to copy the message to someone. Press ENTER to continue.
+5. You are prompted to attach a file and are placed in a list of files. Press ESC if you do not want to attach a file.
+Within the attachments list, the following commands are available.
+Top of List	HOME (FN+LEFT ARROW)
+Bottom of List	END (FN+RIGHT ARROW)
+Next File	DOWN ARRROW
+Mark File	M
+Attach Marked Files	ENTER
+6. Press ESC when finished.
+7. You are then placed in the message body. After composing your message, press ESC.
+8. You are then asked to press S to send the message or C to cancel the message.
+Replying to or Forwarding Messages
+Press R to reply to the current message, or press F to forward the current message. In either case, you are placed in the To: field. 
+If replying to a message, the To: field is populated with the email address that was in the From: field of the message to which you are replying. Press ENTER to move to the Subject: field. If you choose to edit the To: or Subject fields, you need to completely retype the information. Press ENTER from the Subject: field to move to the body of the message and type any notes you want to add. Press ESC when finished.
+If forwarding the message, the To: field is blank. Press ENTER after Typing the email address to which you want to send the message, fill out or change the Subject: field, and press ENTER. Type in any notes you want to add to the message and press ESC when finished.
+In both cases, you are prompted to verify if you want to save or cancel the message.
+E-mail Parameters
+From within the Mailread program, press SLASH (/) to enter Email Parameters. The following options are available:
+Braille Translator	T
+After selecting this option, press Y to turn on the Braille translator, or N to turn off the Braille translator.
+Configure Mailer	C
+After selecting this option, the following commands are available:
+Next Section	PAGE DOWN (FN+DOWN ARROW)
+Prior Section	PAGE UP (FN+UP ARROW)
+Next Setting	DOWN ARROW
+Prior Setting	UP ARROW
+Edit Setting	ENTER
+When editing a setting, type in the new value and press ENTER again.
+Exit	ESC
+Word Exceptions
+The Type Lite now allows you to specify how words are pronounced. To enable Word exceptions, press F10, E, Y. Press ESC to exit the Status menu.
+You must have a file called word.fix in RAM that is no larger than 6 pages. Within this file, specify the actual word, followed by an equals sign, then the word spelled as you wish it to be pronounced, followed by return (ENTER). No spaces or punctuation are allowed to the left of the equals sign. 
+Word.fix example:
+Strikethrough=strike through
+Versailles=versai
+ocr=o c r
+ssdi=s.s.d.i
+Word Echo
+The Type Lite now allows you to echo words as you type. Press F7 to access Speech Parameters, then press SPACEBAR to cycle through the available options:
+Key Echo: Speaks characters as you type.
+Key Echo Words: Speaks words as you finish typing them.
+Key Click: Each key you press produces a click.
+Silent Keys: there is no auditory feedback as you type.
+Countdown Timer
+The countdown timer  returns to the Type Lite with this firmware revision. 
+Press SHIFT+F4 to start the timer, then press # (SHIFT+3) to start the countdown timer. Type the number of minutes to count down and press ENTER. Then type the number of seconds and press ENTER again.
+Press SPACEBAR to hear the time remaining.
+Press ESC to cancel the count down.
+Gas Gauge
+The Type Lite now has a Gas Gauge to show the percentage of remaining battery life. To access the Gas Gauge, press F10, % (SHIFT+5). Press ESC to exit the Status Menu.
+Hourly Announcement Alarm
+The Type Lite can now be set to notify you on the hour. To set this feature:
+1. Press F10 to open the Status Menu.
+2. Press ALT+H to move to Hourly Announcement.
+3. Press SPACEBAR to cycle between Voice Only, Bell Only, Bell and Voice, or Off.
+4. Press ESC to exit the Status menu.
+
+Copyright 2001 Freedom Scientific, BLV Group, LLC. All Rights Reserved.
+
+	1
+

@@ -1,0 +1,861 @@
+<html>
+
+<head>
+<title>On-line Orpheus manual</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+
+
+
+<link rel="stylesheet" type="text/css" href="../assets/style_sheets/submenus.css">
+<meta name="Microsoft Border" content="tb">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td bgcolor="#FFFFFF">
+<script language="JavaScript">
+<!--
+
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function pviiW3Cbg(obj, pviiColor) { //v1.1 by Project VII
+	obj.style.backgroundColor=pviiColor
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function P7_autoLayers() { //v1.2 by PVII
+ var g,b,k,f,args=P7_autoLayers.arguments;
+ var a = parseInt(args[0]);if(isNaN(a))a=0;
+ if(!document.p7setc) {p7c=new Array();document.p7setc=true;
+  for (var u=0;u<10;u++) {p7c[u] = new Array();}}
+ for(k=0; k<p7c[a].length; k++) {
+  if((g=MM_findObj(p7c[a][k]))!=null) {
+   b=(document.layers)?g:g.style;b.visibility="hidden";}}
+ for(k=1; k<args.length; k++) {
+  if((g=MM_findObj(args[k])) != null) {
+   b=(document.layers)?g:g.style;b.visibility="visible";f=false;
+   for(j=0;j<p7c[a].length;j++) {
+    if(args[k]==p7c[a][j]) {f=true;}}
+  if(!f) {p7c[a][p7c[a].length++]=args[k];}}}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.NavBarText {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: 6699CC;}
+.NavBarText A:Link{text-decoration: none; color: 6699CC;}
+.NavBarText A:Visited{text-decoration: none; color: 6699CC;
+.NavBarText A:hover{text-decoration: none ! important ; color: 6699CC ! important }
+-->
+</style>
+
+
+<div id="banner" style="position:absolute; width:634px; height:71px; z-index:3; left: 150px; top: 0px; visibility: visible">
+  <font color="#000080">
+  <img src="../assets/images/header.gif" border="0" usemap="#Banner" width="634" height="71"> 
+  <map name="Banner"> 
+    <area shape="rect" coords="8,4,418,36" href="http://www.synapseadaptive.com/" onMouseOver="P7_autoLayers(0)" onFocus="if(this.blur)this.blur()">
+    <area shape="rect" coords="7,42,154,67" href="#" onMouseOver="P7_autoLayers(0,'menclos','ProDD1')" onFocus="if(this.blur)this.blur()">
+    <area shape="rect" coords="160,42,313,68" href="#" onMouseOver="P7_autoLayers(0,'menclos','CustDD1')" onFocus="if(this.blur)this.blur()">
+    <area shape="rect" coords="325,43,477,67" href="#" onMouseOver="P7_autoLayers(0,'menclos','ResDD1')" onFocus="if(this.blur)this.blur()">
+    <area shape="rect" coords="495,43,626,69" href="#" onMouseOver="P7_autoLayers(0,'menclos','AboutDD1')" onFocus="if(this.blur)this.blur()">
+    <area shape="rect" coords="424,4,629,42" href="#" onMouseOver="P7_autoLayers(0)" onFocus="if(this.blur)this.blur()">
+  </map>
+  </font>
+</div>
+<div id="menclos" style="position:absolute; width:98%; height:275px; z-index:2; left: 0; top: 0; visibility: hidden"><a href="javascript:;" onMouseOver="P7_autoLayers(0)" onFocus="if(this.blur)this.blur()">
+  <font color="#000080"><img src="../assets/images/shim.gif" width="100%" height="275" border="0"></font></a></div>
+<div id="ProDD1" style="position:absolute; width:190px; z-index:5; left: 153; top: 69; visibility: hidden"> 
+  <table width="190" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF"  class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')" > 
+        <font color="#000080">&nbsp;</font><a href="javascript:;" onMouseOver="P7_autoLayers(0,'menclos','ProDD1','ProSoFO1')" onFocus="if(this.blur)this.blur()"><font color="#000080">Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../assets/images/righ_ arrow.gif" border="0" width="8" height="17"></font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')" >
+      <font color="#000080">&nbsp;</font><a href="javascript:;" onMouseOver="P7_autoLayers(0,'menclos','ProDD1','ProHaFO2')" onFocus="if(this.blur)this.blur()"><font color="#000080">Hardware&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../assets/images/righ_ arrow.gif" border="0" width="8" height="17"></font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')" >
+      <font color="#000080">&nbsp;</font><a href="javascript:;" onMouseOver="P7_autoLayers(0,'menclos','ProDD1','ProSyFO3')" onFocus="if(this.blur)this.blur()"><font color="#000080">Complete 
+        Synapse System &nbsp;&nbsp;<img src="../assets/images/righ_ arrow.gif" border="0" width="8" height="17"></font></a></td>
+    </tr>
+  </table>
+</div>
+<div id="CustDD1" style="position:absolute; width:156px; z-index:6; left: 308; top: 69; visibility: hidden"> 
+  <table width="156" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC');P7_autoLayers(0,'menclos','CustDD1')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')" >
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/address.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Contact 
+        Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="javascript:;" onMouseOver="P7_autoLayers(0,'menclos','CustDD1','CatFO1')" onFocus="if(this.blur)this.blur()"><font color="#000080">Get 
+        a Catalog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../assets/images/righ_ arrow.gif" border="0" width="8" height="17"></font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC');P7_autoLayers(0,'menclos','CustDD1')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/literatu.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Literature 
+        in PDF Format</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')" onClick="P7_autoLayers(0,'menclos','CustDD1')">
+      <font color="#000080">&nbsp;</font><a href="javascript:;" onMouseOver="P7_autoLayers(0,'menclos','CustDD1','OrdFO2')" onFocus="if(this.blur)this.blur()"><font color="#000080">Order 
+        Information&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="../assets/images/righ_ arrow.gif" border="0" width="8" height="17"></font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="javascript:;" onMouseOver="P7_autoLayers(0,'menclos','CustDD1','SitFO3')" onFocus="if(this.blur)this.blur()"><font color="#000080">Site 
+        Map&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <img src="../assets/images/righ_ arrow.gif" border="0" width="8" height="17"></font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC');P7_autoLayers(0,'menclos','CustDD1')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/service.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+  </table>
+</div>
+<div id="ResDD1" style="position:absolute; width:205px; z-index:7; left: 466; top: 69; visibility: hidden"> 
+  <table width="205" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/Links/funding_resources.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Funding 
+        &amp; Grants&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/disabilityjobs/disability_job_bank.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Disability 
+        Job Site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/tools/win95%20keyboard%20shortcuts.html" onFocus="if(this.blur)this.blur()"><font color="#000080">Keyboard 
+        Shortcuts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/Links/workers_comp.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Worker's 
+        Comp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/joel/index.html" onFocus="if(this.blur)this.blur()"><font color="#000080">Unofficial 
+        Naturally Speaking Site</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/suggest_a_link.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Suggest 
+        a Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+  </table>
+</div>
+<div id="AboutDD1" style="position:absolute; width:148px; z-index:8; left: 631; top: 69; visibility: hidden"> 
+  <table width="148" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/profile.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Company 
+        Profile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapsepr.html" onFocus="if(this.blur)this.blur()"><font color="#000080">Synapse 
+        in the News&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/clients.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Our 
+        Clients&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/employment.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Employment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/hours.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/reseller.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Be 
+        a TAP reseller&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/address.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Contact 
+        Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="ProSoFO1" style="position:absolute; width:200px; z-index:9; left: 341; top: 69px; visibility: hidden"> 
+  <table width="200" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/syn/pro/soft/blindness.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Blindness&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/syn/pro/soft/low_vision.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Low 
+        Vision&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/learning_disorders.html" onFocus="if(this.blur)this.blur()"><font color="#000080">Learning 
+        Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/syn/pro/soft/speech.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Speech 
+        Recognition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/language/products.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Language 
+        Translators&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/demosite/demosite.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Free 
+        Downloads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="ProHaFO2" style="position:absolute; width:200px; z-index:10; left: 341; top: 91; visibility: hidden"> 
+  <table width="200" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/braille.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Blindness&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/magnify/default.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Low 
+        Vision&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/syn/pro/hard/learning_tools.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Learning 
+        Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/syn/pro/hard/speech.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Speech 
+        Recognition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/ergonomic.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Ergonomics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/augcom/Default.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Augmentative 
+        Comm.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/switches/switches.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Switches&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/microphones/default.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Microphones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+  </table>
+</div>
+<div id="ProSyFO3" style="position:absolute; width:220px; z-index:11; left: 341px; top: 113px; visibility: hidden"> 
+  <table width="220" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/workstat.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">ADA 
+        Compliance workstation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/workstat.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Library 
+        Access workstation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/ada_language.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Literacy 
+        &amp; Language workstation&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/tapdesc.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Synapse 
+        TAP Speech workstation</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/tapdesc.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">UNIX 
+        Speech Recognition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/Mainframe-speech5-10.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Mainframe 
+        Speech Recognition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+  </table>
+</div>
+<div id="CatFO1" style="position:absolute; width:125px; z-index:12; left: 462; top: 87; visibility: hidden"> 
+  <table width="125" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/pdf/Synapse40p.pdf" onFocus="if(this.blur)this.blur()"><font color="#000080">Download 
+        (pdf)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/catreq.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Order&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+  </table>
+</div>
+<div id="OrdFO2" style="position:absolute; width:130px; z-index:13; left: 462; top: 127; visibility: hidden"> 
+  <table width="130" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td class="NavBarText" bgcolor="FFFFFF" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/orderfrm.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Order 
+        Form (Fax)&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td class="NavBarText" bgcolor="FFFFFF" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/pricelis.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Price 
+        List&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="SitFO3" style="position:absolute; width:140px; z-index:14; left: 462; top: 149; visibility: hidden"> 
+  <table width="140" border="1" cellspacing="0" cellpadding="0" bordercolor="999999">
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/text.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Search 
+        Site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a><font color="#000080">
+      </font> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/tableof.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Table 
+        of Contents&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a></td>
+    </tr>
+    <tr> 
+      <td bgcolor="FFFFFF" class="NavBarText" onMouseOver="pviiW3Cbg(this, 'CCCCCC')" onMouseOut="pviiW3Cbg(this, 'FFFFFF')">
+      <font color="#000080">&nbsp;</font><a href="http://www.synapseadaptive.com/synapse/catreq.htm" onFocus="if(this.blur)this.blur()"><font color="#000080">Guest 
+        Book&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </font> 
+        </a></td>
+    </tr>
+  </table>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<font color="#000080">
+
+</font>
+  <tr>
+    <td><font color="#000080"><img src="../assets/images/shim.gif" height="50" width="100%"></font></td>
+  </tr>
+</table>
+
+<p><a href="http://www.synapseadaptive.com/dolphin/Default.htm">
+<font color="#000080">Dolphin Home 
+Page</font></a><font color="#000080"><br>
+</font>
+<a href="http://www.synapseadaptive.com/dolphin/support/default.htm">
+<font color="#000080">Dolphin 
+Support Page</font></a></p>
+
+</td></tr><!--msnavigation--></table><!--msnavigation--><table dir="ltr" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<b><font FACE="Arial" SIZE="7">
+
+<p ALIGN="CENTER">Orpheus</p>
+</font>
+
+<p ALIGN="CENTER"><font FACE="Arial" SIZE="6">Software Speech Synthesizer</font></p>
+<font FACE="Arial">
+
+<p ALIGN="CENTER"><font face="Arial" size="2">for the Windows® 95</font><font size="2">,
+98</font><font face="Arial" size="2"> and Windows NT® Workstation 4.0 Operating Systems</font></b></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p align="right">Copyright ©1998:</p>
+
+<p align="right">Dolphin Computer Access, LLC<br>
+All Rights Reserved Worldwide.</p>
+
+<p>&nbsp;</p>
+<font FACE="Arial">
+
+<p><b>Software License</p>
+</font>
+
+<p></b>The <i>software</i> includes computer software, associated media, Braille, cassette
+or print materials and any electronic documentation. The <i>software</i> is licensed and
+not sold. The <i>software</i> is protected by copyright laws, international copyright
+treaties and intellectual property laws. The <i>software</i> is licensed for a single user
+only unless a site license has been purchased where the number of concurrent users is
+restricted to that purchased.</p>
+
+<p ALIGN="CENTER"><strong><font FACE="Symbol">ã</font> 1998 Dolphin Oceanic Limited. All
+rights reserved.</strong></p>
+<b><font FACE="Arial">
+
+<p>Notice</p>
+</font></b>
+
+<p>Orpheus, Hal, Cicero, Supernova and SAM are trademarks of Dolphin Oceanic Ltd. Windows
+and Windows NT are registered trademarks of Microsoft Corporation. All other products are
+trademarks or registered trademarks of their respective owners.</p>
+<font FACE="Arial"><b>
+
+<p>Warranty &amp; Disclaimer</p>
+</b></font>
+
+<p>Dolphin warrants that the media on which the <i><b>software</b></i> is distributed are
+free from defects and will replace defective media at no charge. Dolphin gives no
+warranties with respect to any bugs or errors in the <i><b>software</b></i> or to its
+fitness for a particular purpose. Any liability, consequential or otherwise, will be
+limited to the amount paid for the <i><b>software</b></i>. Please inform us of any bugs or
+features you may find and we will endeavor to rectify them.</p>
+
+<p><b>N.B.</b> 
+
+<ul>
+  <li>You should save your work and make regular backups, particularly before installing new
+    software or hardware. </li>
+  <li>Due to the many possible hardware configurations and inherently complex nature of
+    software, errors do occur.</li>
+</ul>
+<font FACE="Arial"><b>
+
+<p>Care of your compact disc</b></font> 
+
+<ul>
+  <li>Do not put your disc in direct sunlight.</li>
+  <li>Avoid high heat and humidity.</li>
+  <li>Handle your disc carefully to avoid scratching it.</li>
+  <li>Never stick labels on your disc.</li>
+  <li>Never write on your disc.</li>
+  <li>Keep your disc in the supplied case when not in use.</li>
+</ul>
+
+<p>&nbsp;</p>
+<font FACE="Arial" SIZE="4"><b>
+
+<p style="background-color: rgb(0,0,0); color: rgb(255,255,255)">Introduction</p>
+</b></font><font size="2">
+
+<p></font>Orpheus is the software speech synthesizer from Dolphin. Orpheus is designed to
+give you all the flexibility of a hardware synthesizer, but uses the computer's internal
+sound card, so there are no extra cables or hardware boxes.</p>
+
+<p>Orpheus runs under Windows 95, 98 and Windows NT on a 166 megahertz Pentium processor
+or above with any SoundBlaster 16 compatible sound card.</p>
+
+<p>Orpheus is also compatible with Dolphin's Synthesizer Access Manager (SAM) which is
+always supplied with Orpheus, and is freely available from Dolphin web sites. SAM allows
+sharing and selection of a speech output device by one or more applications or screen
+access products.</p>
+
+<p>Orpheus behaves like any other SAM compatible synthesizer.</p>
+
+<p>So, to use Orpheus with Hal for instance, install Orpheus and select Orpheus from the
+list of available synthesizers in Hal. Orpheus should operate in exactly the same way as
+any other synthesizer through Hal.</p>
+
+<p>&nbsp;</p>
+
+<p style="background-color: rgb(0,0,0); color: rgb(255,255,255)"><font FACE="Arial" SIZE="4"><b>1 Installing Orpheus</b></font><font face="Arial" size="2"></p>
+<font size="2">
+
+<p></font></font>Orpheus is supplied alone or with Dolphin talking applications such as
+Cicero and screen access systems such as Hal or Supernova.</p>
+
+<p>If you have purchased software including Orpheus on a CD, just insert the CD in your
+drive and the installation will begin.<font COLOR="#000000"> If it doesn't: 
+
+<ul>
+  <li>Press CONTROL+ESCAPE to bring up the Windows Start menu.</li>
+  <li>Press R to select the option &quot;Run&#133;&quot;.</li>
+  <li>Type <i>x</i>:\SETUP, where <i>x</i> is the drive letter of your CD-ROM drive, and press
+    ENTER to start installation.</font></li>
+</ul>
+
+<p>The installation will talk you through using Orpheus on the CD or any SAM compatible
+synthesizer you already have installed. If you have no existing compatible synthesizer,
+the installation will always speak using Orpheus on the CD. Just follow the instructions.</p>
+
+<p>If you are installing Orpheus and SAM from a floppy disk a speaking installation is
+available if you have SAM and a SAM compatible synthesizer already installed.</p>
+
+<p><strong>Tip</strong></p>
+
+<p>If you do not already have SAM installed, install SAM first. This installation will not
+speak, but beep when user input is required. Secondly install Orpheus which will speak
+using the installed SAM.</p>
+
+<p>&nbsp;</p>
+
+<p style="background-color: rgb(0,0,0); color: rgb(255,255,255)"><font FACE="Arial" SIZE="4"><b>2 Configuring Orpheus</b></font><font face="Arial" size="2"></p>
+<font SIZE="2">
+
+<p></font></font><font face="Times New Roman">To configure Orpheus, choose the Configure
+option from the Orpheus sub-menu of the start menu. This will call up a dialogue box where
+you can select various options. You may also call up the Orpheus configuration dialogue
+box using the Configure option in SAM.</font></p>
+
+<p><font face="Times New Roman">From the configuration dialogue box you may:</font> 
+
+<ul>
+  <li><font face="Times New Roman">Alter the sample rate of the synthetic speech.</font></li>
+  <li><font face="Times New Roman">Load and install new languages.</font></li>
+  <li><font face="Times New Roman">Adjust the volume of sound effects relative to the speech.</font></li>
+  <li><font face="Times New Roman">Turn speech off altogether.</font></li>
+  <li><font face="Times New Roman">Turn the audio mixer on or off.</font></li>
+  <li><font face="Times New Roman">Reapply default settings.</font></li>
+  <li><font face="Times New Roman">Call up the Orpheus &quot;About&quot; box.</font></li>
+</ul>
+
+<p><font face="Times New Roman">These controls are configuration controls, and take effect
+the next time you start Orpheus. If you are altering the configuration settings from SAM,
+Orpheus will be restarted automatically for you. </font><b><i></p>
+
+<p></i><font face="Arial">2.1 Sample Rate Selection</font></b></p>
+
+<p><font face="Times New Roman">A pair of radio buttons offers sample rate selection. At
+the moment, the choice is either 11.025 kilohertz or 22.050 kilohertz. The higher the
+sample rate, the clearer the speech. However, more processor time is needed to process the
+higher rate.</font><b><i></p>
+
+<p></i><font face="Arial">2.2 Language Installation and Update</font></b></p>
+
+<p><font face="Times New Roman">The Install Languages button allows you to install and
+update the languages used by Orpheus. You can add new languages, supplied on floppy disk,
+while Orpheus is talking from your screen access software.</font></p>
+
+<p><font face="Times New Roman">Insert the floppy disk and select the Install Languages
+button (or press L) from the configuration dialogue box. Then enter the name of the floppy
+device or folder to which the language files have been downloaded and press the Enter key.
+If you are using a floppy disk in drive A: then you just press the Enter key. A list of
+the available languages is then given; to install all of the language files select the
+copy button and press Space.</font></p>
+
+<p><font face="Times New Roman">Note: You may need to restart your system for the new
+language to become available to the talking application.</font><b><i></p>
+
+<p></i><font face="Arial">2.3 Sound Effects Volume</font></b></p>
+
+<p><font face="Times New Roman">A slider control adjusts the volume of sound effects
+relative to the speech. Sound effects are used by screen access software for marking the
+position of capital letters for instance. Select the sound effect via the screen access
+software's control panel.</font><b><i></p>
+
+<p></i><font face="Arial">2.4 Speech On</font></b></p>
+
+<p><font face="Times New Roman">This check box operates like the On/Off switch of a
+hardware synthesizer.</font><b><i></p>
+
+<p></i><font face="Arial">2.5 Mixer On</font></b></p>
+
+<p><font face="Times New Roman">Orpheus includes a Windows 95 utility for mixing the
+speech of Orpheus with your system WAVE sounds. This box controls whether Orpheus will
+start the mixer or not the next time Orpheus starts. Clearing Mixer On while Orpheus is
+running leaves the mixer in operation until no applications are playing sounds or the
+system is restarted.</font></p>
+
+<p><font face="Times New Roman">Using the mixer you will be able to hear any system sounds
+that you have set up, for instance to indicate opening windows, or the arrival of email
+alongside the speech.</font></p>
+
+<p><font face="Times New Roman">The mixer does not operate under Windows NT. If you have
+DirectX installed read the notes in the Tips and Trouble Shooting section regarding the
+mixer's operation.</font><b><i></p>
+
+<p></i><font face="Arial">2.6 Restore Settings</font></b></p>
+
+<p><font face="Times New Roman">This button restores all settings for the configuration
+box to their defaults:</font> 
+
+<ul>
+  <li><font face="Times New Roman">Sample rate at 22 kilohertz.</font></li>
+  <li><font face="Times New Roman">Speech enabled.</font></li>
+  <li><font face="Times New Roman">Mixer disabled.</font></li>
+  <li><font face="Times New Roman">Sound effects volume 40%.</font></li>
+</ul>
+<b><i>
+
+<p></i><font face="Arial">2.7 About</font></b></p>
+
+<p><font face="Times New Roman">The About button in the configuration box calls up a
+dialogue displaying the version and registration information of Orpheus. This information
+may be needed if you call Technical Support.</font></p>
+
+<p>&nbsp;</p>
+
+<p style="background-color: rgb(0,0,0); color: rgb(255,255,255)"><font FACE="Arial" SIZE="4"><b>3 Orpheus Controls</b></font><font face="Arial" size="2"></p>
+<font SIZE="2">
+
+<p></font></font><font face="Times New Roman">Orpheus offers a full range of controls for
+your screen access software to use. Controls are made available via the SAM interface to
+the talking application or screen access software. Most of these will offer all, or a
+sub-set of these controls to the user via a control panel or in some other fashion.
+Consult your screen access product data for more information on how it alters synthesizer
+controls.</font><b><i></p>
+
+<p></i><font face="Arial">3.1 Basic Control</font></b></p>
+
+<p><font face="Times New Roman">The following are the basic controls expected of any
+synthesizer and their effect needs no explanation.</font> 
+
+<ul>
+  <li><font face="Times New Roman">Speed.</font></li>
+  <li><font face="Times New Roman">Pitch.</font></li>
+  <li><font face="Times New Roman">Volume.</font></li>
+</ul>
+<b><i>
+
+<p></i><font face="Arial">3.2 Presentation controls</font></b></p>
+
+<p><font face="Times New Roman">The following controls augment the presentation of the
+spoken text by your screen access software.</font> 
+
+<ul>
+  <li><font face="Times New Roman"><strong>Inter-word pause</strong>, Insert a specified pause
+    between each word.</font></li>
+  <li><font face="Times New Roman"><strong>Inter-phrase pause</strong>, Insert a specified
+    pause between each phrase.</font></li>
+  <li><font face="Times New Roman"><strong>Pause</strong>, Insert a specified pause.</font></li>
+  <li><font face="Times New Roman"><strong>Spelling</strong>, Spell words or numbers. 123 says
+    one hundred twenty three unless spelt when it will say one two three.</font></li>
+  <li><font face="Times New Roman"><strong>Hypermode</strong>, When set omits articles (a,
+    the,..) and function words </font>(to, by,..) useful when quickly reviewing text. </li>
+  <li><font face="Times New Roman"><strong>Sound effects</strong>, 16 sound effects which your
+    screen access software can assign to particular functions, such as capital letter
+    indication.</font></li>
+</ul>
+<b><i>
+
+<p></i><font face="Arial">3.3 Voice Effects</font></b></p>
+
+<p><font face="Times New Roman">The following can be used via your screen access software
+to create voices and augment the different importance of types of text or message being
+spoken. If your access software lets you change these, you may create different or unusual
+voices associated with types of text allocated by your screen access software.</font> 
+
+<ul>
+  <li><font face="Times New Roman"><strong>Prosody</strong>, Controls the excitability of the
+    voice.</font></li>
+  <li><font face="Times New Roman"><strong>Balance</strong>, If you have a stereo sound system
+    and speakers you may be able to get your screen reader to associate left right position
+    with different voices.</font></li>
+  <li><font face="Times New Roman"><strong>Language selection</strong>, Switches the
+    synthesizer language.</font></li>
+  <li><font face="Times New Roman"><strong>Speaker selection</strong>, Male or female.</font></li>
+  <li><font face="Times New Roman"><strong>Voiced pulse selection</strong>, Alters the sound
+    of the voice.</font></li>
+  <li><font face="Times New Roman"><strong>Voiced pulse length</strong>, Alters the sounds of
+    the voice.</font></li>
+  <li><font face="Times New Roman"><strong>Breathiness</strong>, Can make the voice more like
+    a whisper.</font></li>
+</ul>
+
+<p><font face="Arial" size="2">&nbsp;</p>
+</font>
+
+<p style="background-color: rgb(0,0,0); color: rgb(255,255,255)"><font FACE="Arial" SIZE="4"><b>4 Tips and Trouble Shooting</b></font><font face="Arial" size="2"></p>
+<b><i>
+
+<p></i></font><font face="Arial">4.1 General</font></b></font>
+<b><i>
+
+<p></i></font><font face="Arial">4.1 General</font></b></p>
+
+<p><font face="Times New Roman">Orpheus uses the computer's sound output system to play
+the speech it has synthesized. This is normally perfectly adequate, but it is important to
+be aware of some limitations of the sound system. Unless you are using the Dolphin mixer,
+other sounds may be blocked while you are using the synthesizer.</font></p>
+<b><i>
+
+<p></i><font face="Arial">4.2 Performance</font></b></p>
+
+<p><font face="Times New Roman">On some machines running Windows 95 with older floppy
+drivers, when a floppy is starting up then the floppy driver can take up 100% of the
+processing time, blocking all other processes for a few seconds. This may cause the speech
+to appear to stutter. This effect has not been observed on Windows NT or Windows 98
+systems. If you get this on Windows NT or 98 please let us know.</font></p>
+
+<p><font face="Times New Roman">A similar although less drastic effect has also been
+observed in other similar circumstances, for instance when first starting some SCSI
+scanner drivers in Windows 95.</font></p>
+
+<p><font face="Times New Roman">If your machine is sluggish when using Orpheus, try using
+the 11KHz sampling rate option in the Orpheus control panel. You may need to restart your
+talking software or system before the change will take effect.</font></p>
+<b><i>
+
+<p></i><font face="Arial">4.3 Mixer and Direct Sound</font></b></p>
+
+<p><font face="Times New Roman">If you have Direct Sound installed you may experience
+problems using the mixer. The mixer mixes the wave channel output, such as that from
+Orpheus, with any other wave channel output such as system sounds. Direct Sound
+circumvents this system, and incidentally, includes a mixer of its own. In a system with
+Direct sound, system sounds are still played as wave channel output and may not be played
+or mixed by the Direct Sound system.</font></p>
+
+<p><font face="Times New Roman">You may still be able to use the Dolphin mixer to hear the
+system sounds but will have to disable some or all of the Direct sound system for it to be
+guaranteed to work, as follows.</font></p>
+
+<p><font face="Times New Roman">When you install DirectX into Windows 95 or you have
+Windows 95 OSR2.5 it causes ActiveMovie to become the default wave audio player. If you
+want to mix these sounds with the synthesizer output, then in Windows 95, set the default
+program for opening wave (WAV) files back to Sound Recorder to overcome this problem. </font></p>
+
+<p><font face="Times New Roman">Under Windows 98 there is a Hardware Acceleration slider
+in the multimedia properties for the wave output device and this can be reduced until the
+mixer works with Active Movie. Additionally, if you experience any other problems running
+the mixer in Windows 98 this is always a good course of action and may solve the problem.</font></p>
+<b><i>
+
+<p></i><font face="Arial">4.4 Hardware mixing</font></b></p>
+
+<p><font face="Times New Roman">If you have a PCI sound card, notably a SoundBlaster Live
+or one based upon the Aureal 8820 chipset, then you already have hardware mixing ability.
+In this case the mixer will run but not actively mix with the sound system until the
+device runs out of hardware mixing channels.</font></p>
+
+<p><font face="Times New Roman">Please note that it appears that not all PCI sound cards
+have the ability to mix in hardware, for instance, the SoundBlaster PCI-128. However, if
+you have hardware mixing we recommend that you use that instead of the software mixer.</font></p>
+
+<p><font face="Times New Roman">Orpheus has to use the computer's sound output system to
+play the speech it has synthesized. This is normally perfectly adequate, but it is
+important to be aware of some limitations of the sound system.</font></p>
+
+<p><font face="Times New Roman">Unless you are using the Dolphin mixer when it becomes
+available, other sounds will be blocked while you are using the synthesizer.</font></p>
+
+<p><font face="Times New Roman">On some machines running Windows 95 with older floppy
+drivers, when a floppy is starting up then the floppy driver can take up 100% of the
+processing time, blocking all other processes for a few seconds. This may cause the speech
+to appear to stutter. This effect has not been observed on Windows NT or Windows 98
+systems. If you do get this on Windows NT or 98 please let us know.</font></p>
+
+<p><font face="Times New Roman">A similar although less drastic effect has also been
+observed in other similar circumstances, e.g. when first starting some SCSI scanner
+drivers in Windows 95.</font></p>
+
+<p><font face="Times New Roman">If your machine is sluggish when using Orpheus, try using
+the 11KHz sampling rate option in the Orpheus control panel. You may need to restart your
+talking software or system before the change will take effect.</font><font face="Arial" size="2"></p>
+
+<p>&nbsp;</p>
+
+<p style="background-color: rgb(0,0,0); color: rgb(255,255,255)"></font><font FACE="Arial" SIZE="4"><b>5 Orpheus Language Update</b></font><font face="Arial" size="2"></p>
+</font><font SIZE="2">
+
+<p></font><font face="Times New Roman">The separate floppy disk or disks that may be
+distributed with Orpheus contain one or more language files for Orpheus. Install these
+using the Orpheus control panel as follows.</font></p>
+
+<p><font face="Times New Roman">To install:</font></p>
+
+<p><font face="Times New Roman">1. Call up the Orpheus Configuration dialogue box: either
+run the Orpheus Configuration program from the Dolphin Orpheus folder of the Start Menu,
+or call up the SAM Control Panel and choose Configure when Orpheus is highlighted.</font></p>
+
+<p><font face="Times New Roman">2. Press TAB until you reach the Install Languages button
+and press SPACEBAR.</font></p>
+
+<p><font face="Times New Roman">3. In the Path to Languages to Install edit; enter the
+name of the disk (a:\ or b:\) of this disk.</font></p>
+
+<p><font face="Times New Roman">4. Tab to the OK button and press spacebar to start the
+installation process.</font></p>
+
+<p><font face="Times New Roman">5. Select the Copy button and press SPACEBAR.</font></p>
+
+<p><font face="Times New Roman">6. Close the Orpheus Configuration dialogue box (and SAM
+Control Panel if necessary).</font></p>
+
+<p><font face="Times New Roman">In order for the new languages to take effect, it is
+necessary to restart Orpheus. The easiest way to do this is to quit SAM and restart SAM.</font></p>
+
+<p>&nbsp;</p>
+
+<p style="background-color: rgb(0,0,0); color: rgb(255,255,255)"><font FACE="Arial" SIZE="4"><b>7 Technical Support</b></font><font face="Arial" size="2"></p>
+
+<p></font>There really isn't much more to say about Orpheus, if you have problems, please
+contact the Technical Support and they will be only too glad to assist.</p>
+
+<p>&nbsp;</p>
+
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="709" id="AutoNumber1">
+    <tr>
+      <td width="709">
+      <p align="center"><font color="#000080" face="Arial,Helvetica,sans-serif">|<a href="http://www.synapseadaptive.com">
+                Home </a>|<a href="http://www.synapseadaptive.com/synapse/orderfrm.htm">
+                Buy </a>|<a href="http://www.synapseadaptive.com/tableof.htm">
+                Products </a>|<a href="http://www.synapseadaptive.com/synapse/pricelis.htm">
+                Price List </a>|<a href="http://www.synapseadaptive.com/service.htm">
+                Service &amp; Support </a>|<a href="http://www.synapseadaptive.com/synapse/address.htm">
+                Contact Us </a>|<a href="http://www.synapseadaptive.com/tableof.htm">
+                Site Map </a>|<a href="http://www.synapseadaptive.com/synapse/catreq.htm">
+                Order Catalog </a>|&nbsp;<br>
+      </font><a href="http://www.synapseadaptive.com/pdf/Synapse40p.pdf">
+      <font face="Arial,Helvetica,sans-serif">
+      Download Synapse Adaptive Technology Catalog</font></a><font face="Arial,Helvetica,sans-serif">&nbsp;
+        (requires <a href="http://www.adobe.com/products/acrobat/readstep.html">Acrobat
+        Reader</a>)</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</td></tr><!--msnavigation--></table></body></html>

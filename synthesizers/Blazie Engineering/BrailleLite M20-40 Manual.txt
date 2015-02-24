@@ -1,0 +1,2006 @@
+
+
+The Braille Lite 
+M20-M40 
+
+User's Manual
+
+
+
+
+
+
+
+Freedom Scientific, Blind Low Vision Group 
+April 2002
+
+
+
+
+Part# 440013-001 Rev. E
+PUBLISHED BY
+Freedom Scientific BLV Group, LLC
+11800 31st Court North
+St. Petersburg, Florida 33716-1805
+USA
+http://www.FreedomScientific.com
+Information in this document is subject to change without notice. No part of this publication may be reproduced or transmitted in any form or any means electronic or mechanical, for any purpose, without the express written permission of Freedom Scientific.
+Copyright (c) 2002 Freedom Scientific, Inc., All Rights Reserved.
+CompactFlash(tm) is a trademark of the CompactFlash Association in the United States and/or other countries
+
+
+Notice To Users
+Federal Communications Commission Notice
+This equipment has been tested and found to comply with the limits for a Class B digital device, pursuant to Part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used in accordance with the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
+* Increase the separation between the equipment and receiver.
+* Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.
+* Reorient or relocate the receiving antenna.
+* Consult the dealer or an experienced radio or television technician for help. 
+
+Table of Contents
+Introduction	1
+Conventions	1
+Getting Help	2
+Onboard Help	2
+The Braille Lite User's Manual	2
+Technical Support	3
+Website	3
+Chapter 1 Overview	4
+Braille Lite Keyboard	4
+Braille Display	4
+Advance Bar(s)	5
+Whiz Wheels	6
+Ports and Switches	6
+Braille Lite M20	6
+Braille Lite M40	7
+The Battery and AC Charger	8
+Gas Gauge	9
+Care of your Braille Lite M20/40	10
+Chapter 2 Customizing Speech	11
+Speech Parameters	11
+Voice Inflection	14
+Voice Pitch	14
+Line Breaks	14
+Preset Voices	15
+Voice Shift	15
+Chapter 3 Menus of the Braille Lite	17
+Options Menu	18
+File Menu	19
+Status Menu	24
+Chapter 4 Working with Files	32
+Creating Files	32
+Opening Files	33
+Method 1:	33
+Method 2:	33
+Saving Files	34
+Deleting Files	34
+Method 1:	34
+Method 2:	35
+Renaming Files	35
+Method 1:	35
+Method 2:	35
+Navigating within Files	36
+Moving Files	38
+Chapter 5 Working with Folders	40
+Creating Folders	40
+Renaming Folders	41
+Deleting Folders	41
+Chapter 6 Reading with the Braille Lite	42
+Chapter 7 Editing Text	48
+Append Mode	49
+PC Edit Mode	50
+Copying Text	51
+Deleting (Cut) Text	52
+Pasting Text	54
+Examples	55
+Spell Check	55
+Word Fix	57
+Word Fix Rules:	58
+Chapter 8 Find, Replace, and Search	59
+Find	59
+Distinguish Case During Find	59
+Replace	60
+Global Searches	61
+Chapter 9  Braille Lite Utilities	64
+Time and Date	64
+Setting the Time	64
+Setting Time Format	65
+Setting Hourly Announcement	65
+Announcing the Date	66
+Setting the Date	66
+Smart Calendar	67
+Datebook	67
+Browse Mode	68
+Appointment Notification	70
+Stopwatch	70
+Timer	71
+Timing in the Background	71
+Calculator	72
+Performing Percentage Calculations	73
+Extracting a Square Root	73
+Setting Decimal Precision	74
+Scientific Calculator Functions	74
+Trigonometric Functions	75
+Conversions	75
+Storing and Using the Memory Locations	76
+Phonebook	77
+Adding Phonebook Entries	78
+Phonebook Options	79
+Chapter 10 Macros	82
+Recording a Macro	82
+Executing a Macro	83
+Speaking or Silencing Macros	83
+Nesting a Macro	83
+Start-Up Macros	84
+Erasing a Macro	84
+Write-Protecting a Macro	84
+Chapter 11 Printing and Embossing	85
+Status Menu Settings	85
+Printer Compatibility	86
+Print Commands	86
+Page Numbering	88
+Document Layout	89
+Formatting Commands	89
+Syntax	90
+Attribute Marking	91
+Margins and Alignment	91
+Tabs	94
+Page Numbering	94
+Headers and Footers	95
+Other Commands	96
+Information Commands	97
+Chapter 12 Connecting to a Personal Computer	99
+JAWS and Connect Outloud	99
+HyperTerminal	99
+Transferring from the PC to the notetaker:	101
+Transferring from the notetaker to the PC:	101
+External Disk Drive	102
+Send Options	103
+Receiving from the Disk Drive	103
+Chapter 13 Maintenance	105
+Resetting the Braille Lite	105
+Warm Reset	105
+Cold Reset	105
+Hardware Reset	107
+Updating the Firmware	107
+Getting Started	107
+Starting the Update	108
+Appendix A:  ASCII Braille Symbols	111
+Appendix B:  Contact Information	119
+Index	120
+
+
+Introduction
+Regardless of your comfort level with Braille, your experience with the Braille Lite, and what you want to accomplish, this manual strives to reach you and your level of skill and is intended to help you get moving in the right direction. 
+
+This user's manual is organized into the following sections:
+* Getting Started contains introductory information, and all you need to know to quickly get up and running with your Braille Lite.
+* Using the Braille Lite contains detailed information on the main features of the Braille Lite, including the Braille Lite Editor and utilities.
+* Advanced Features contains information on the most advanced functions of the Braille Lite, including macros and connecting the Braille Lite to other devices. 
+* The appendices contain reference information to provide you quick access to essential information.
+
+Conventions
+This manual specifies keyboard commands in the following manner. 
+* The word CHORD means press the spacebar at the same time as the listed Braille character. For example: to form an E-CHORD, press the spacebar simultaneously with DOTS 1 and 5.
+* The term toggle means that a key used in combination with the spacebar will turn a particular feature on or off.
+* Keys to be pressed are capitalized and are in BOLD. 
+* Keys pressed simultaneously are indicated with a MINUS (-) sign joining the keys. 
+* The phrase "(Y, N)" means that you should choose Y for yes or N for no.
+* Keys pressed one after the other, are separated by a COMMA (,).
+For example, "Press ST-SIGN CHORD, S-CHORD, SPACEBAR to toggle speech on or off."
+
+Getting Help
+There are several methods for getting help when using your Braille Lite.
+
+Onboard Help
+You can access the Help File from within any file. Press ? CHORD (DOTS 1-4-5-6 CHORD) to access the Braille Lite's Onboard Help File. 
+The Braille Lite User's Manual
+The User's Manual is also available in the File Menu of your Braille Lite. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) to access the File Menu and use the Whiz Wheels to locate the file. When you have located the file, press E-CHORD (DOTS 1-5 CHORD) to open the file.
+
+Technical Support
+Ongoing Technical Support is available for those users who purchase and register the M20 and M40. Before calling Technical Support, please visit our website at http://www.FreedomScientific.com or email us at  HardwareSupport@FreedomScientific.com. Our Technical Support phone number is (727) 803-8600. When calling Technical Support, please have your serial number ready.
+
+Website
+Freedom Scientific has an Internet website that has additional sources of technical support and information. You can use your computer and modem to download software programs, technical bulletins, and product updates from these sources. You can find the Freedom Scientific website at http://www.FreedomScientific.com.
+
+Chapter 1
+Overview
+The Braille Lite M Series is the newest generation of the Braille Lite notetakers. In this series, the Braille Lite has been redesigned to include approximately 2 megabytes of RAM (Random Access Memory), 12 megabytes of read-only flash memory, a Compact Flash port, a modem, and programmable Whiz Wheels. The Braille Lite is fully interactive, offering Braille input with its 8 dot Braille keyboard, speech output through an internal synthesizer, and Braille output from a 20 or 40 refreshable cell Braille display. The Braille Lite M Series fully supports Grade I Braille, Grade II Braille, Computer Braille, and all 256 ASCII characters. 
+In addition, Freedom Scientific offers multiple external programs and accessories that enhance the functionality of your Braille Lite.
+
+Braille Lite Keyboard
+The Braille Lite's new 8 dot Braille keyboard represents the dots in a Braille cell and is laid out in the following order from left to right; 7, 3, 2, 1, 4, 5, 6, and 8. Key 7 is a  BACKSPACE key, while key 8 is the carriage return or ENTER key. Below these keys, in the center of the Braille Lite, is the spacebar. When you press the spacebar in combination with other keys you create a chord.
+
+Braille Display
+The Braille Lite is available with either a twenty or forty refreshable cell Braille display. The M20 has 20 cells and the M40 has 40 cells. The Braille display, located below the keyboard, has cursor routing buttons above each cell, which when pressed, places the cursor at that specific cell's location. 
+A feature specific to the M40 is raised locator dots. These raised dots, which are above each fifth cell, help you locate a particular cell quickly.
+
+Advance Bar(s)
+Depending on your Braille Lite model, there is either one advance bar (M20) or two advance bars (M40). The advance bars allow you to move through your files one display length at a time. Press the right end of an advance bar to move forward by 20 or 40 cells. Press the left end of an advance bar to move back 20 or 40 cells. In either case, the display wraps to the next or previous line of text after it reaches the end or beginning of a text line.
+The two advance bars on the M40 keep you from moving your hands away from the cells as you're reading.
+Another feature that may also help you read the Braille display is Reverse Advance. Reverse Advance reverses the function of the advance bars so the left end of the advance bar moves you right, and the right end moves you left. For some people, this provides an easier reach without needing to move fingers that are reading the Braille display.
+
+Note: "Chording" produces almost all of the Braille Lite commands. This term refers to pressing the spacebar in conjunction with other Braille keys. This feature is similar to pressing the CTRL key along with other keys on a computer keyboard.  
+
+Whiz Wheels
+The Whiz Wheels are a new feature to the M Series. They allow you to scroll among the different Braille Lite menus and they allow you to scroll text by line, by sentence, and by paragraph. To program the scrolling feature, open or create a file, and press the right and left Whiz Wheels down for line, sentence, or paragraph.
+
+Note: You can set the Whiz Wheels independently. For example, you can set the right Whiz Wheel to move by line and you can set the left Whiz Wheel to move by paragraph.
+
+Ports and Switches
+Braille Lite M20
+The Braille Lite On/Off switch is on the right edge of the unit. Toggle the switch towards the back of the unit to turn on the Braille Lite. Toggle the switch towards the front of the unit to turn it off. The Braille Lite remembers the last file and location where you left off and then reminds you by announcing the name of the file when you restart the unit.  
+A similar switch called the Braille Display Mode switch is on the left side of the unit. This switch toggles the Braille Lite between Notetaker and Braille Display Mode. Leave the switch toggled toward the back of the system to use the Braille Lite as a Notetaker, and toggle the switch toward the front of the unit to use the Braille Lite as a Braille display with your PC and screen access software.
+In front of the On/Off switch is a serial port. Just in back the On/Off switch is an Earphone Jack. This jack can also connect an external speaker or a tape recorder.
+On the back side of the Braille Lite M20/40 is a Compact Flash port (add-on memory), a modem port, and a parallel port. 
+On the left side of the unit in back of the Braille Display Mode switch is the AC Adapter jack and just in front of this switch is another serial port.
+
+Braille Lite M40
+Orient your Braille Lite so that the Braille display is closest to you. On the right side of the unit is the On/Off switch. Toggle the switch towards the back of the unit to turn on the Braille Lite. A similar switch, called the Braille Display Mode switch, is on the left side of the unit. This switch toggles the Braille Lite between Notetaker and Braille Display Mode. Leave the switch toggled toward the back of the unit to use the Braille Lite as a notetaker. Toggle the switch toward the front of the unit to use the Braille Lite as a Braille display with your PC and screen access software.
+On the back side of the unit, from left to right, are the following jack, buttons, and ports: 
+* The AC adapter jack - connects the 12 volt battery recharger that is supplied with the unit.
+* Two serial ports - these ports allow you to simultaneously attach two external devices such as a personal computer (PC), 
+Note: 	For external devices to work properly please use the appropriate cables that Freedom Scientific manufactures.
+* Two PS2-style serial ports - these ports have been made available for future expansions.
+* One parallel port - attaches any standard printer or embosser.
+* A recessed hardware reboot button
+* A recessed hardware reset button
+Note:       Please avoid pressing either the recessed hardware reboot button or the recessed hardware reset button unless specifically instructed by Freedom Scientific's technical support team.
+* A Compact Flash port (add-on memory)
+* An earphone jack - this jack can also connect an external speaker or a tape recorder.
+On the left side of the unit, from front to back, is the Braille Display Mode switch and the modem port.
+The Battery and AC Charger
+A Lithium ion battery powers the Braille Lite M20/40. This battery does not build up memory and can be charged as often as you like without affecting battery life or the number of hours of each recharge cycle. It is not necessary to fully discharge the battery before recharging the unit.
+When you first start the Braille Lite, the battery should be charged and ready to work. If the Braille Lite does not turn on, connect the battery charger to the unit and plug the AC adapter into a wall outlet to charge the battery. A unit battery charger is included with the purchase of your Braille Lite.
+If you run your Braille Lite to the point that it becomes inoperable, leave the charger plugged in for at least one full minute before restarting the unit.
+Regardless of the amount of battery charge remaining, it takes four hours to recharge the Braille Lite battery and there is no danger of overcharging the unit. Once charged, the unit operates for approximately thirty hours. When the battery needs recharging, you will receive a "Battery Low" message. 
+WARNING:	This unit should only be charged using the supplied battery charger. Use of any other adapter may damage the unit and possibly void any existing warranty or service contract.
+Your Braille Lite has a built in rechargeable cell. This cell only works when the main battery is dead and holds memory for about 2 weeks after which the memory is lost. For this reason it is important to recharge your main battery frequently. 
+To alert you that you have left your unit on for 5 minutes without pressing a key, the Braille Lite announces, "Hello." If the speech is turned off, the unit will beep. 
+Gas Gauge
+Another feature added to the M20/40 software is the "Gas Gauge." This feature monitors your activity and counts the absolute minutes that the unit is on whether it is plugged in or not. The gas gauge starts at 100% when manually reset and decreases by percentage according to the activities being performed and the duration of those activities. To find out the percentage of residual battery time, enter the Status Menu with an ST-SIGN CHORD (DOTS 3-4 CHORD) and press DOTS 1-4-6. 
+Note:	For an accurate reading, you must reset the "Gas Gauge" each time you recharge your unit. To reset the "Gas Gauge" enter the Status Menu (DOTS 3-4 CHORD), and press a TH-SIGN CHORD, SPACEBAR, Y (DOTS 1-4-5-6 CHORD, SPACEBAR, DOTS 1-3-4-5-6).
+Care of your Braille Lite M20/40
+For best care of your Braille Lite M20/40, store your unit in a dry place, avoid operating the unit around liquids or food, and always operate the unit with dry, clean hands. 
+Chapter 2
+Customizing Speech
+When you start your notetaker for the first time, the Braille Lite automatically opens the 'Help' file from the File Menu with the prompt, "Braille Lite ready, Help is open." At this point, there are a variety of things you can do. You can use the Whiz Wheels to scroll and display the contents of the open Help file. You can read the contents of the help file aloud by pressing an ER-SIGN CHORD (DOTS 1-2-4-5-6 CHORD). (To stop speech, press E-CHORD.) You can check your notetaker's firmware release date, which is important because Freedom Scientific continually improves Millennium firmware and periodically you will want to update your firmware to the latest release. To find out the release date, enter the Status Menu with an ST-SIGN CHORD (DOTS 3-4 CHORD) and press R (DOTS 1-2-3-5). 
+Tip: 	If you performed a command that wasn't intended or find that you are lost in a procedure, press a Z-CHORD (DOTS 1-3-5-6 CHORD) twice. This aborts any action(s) you performed and allows you to either start the procedure over or move on to something else.
+Speech Parameters
+Before we begin this discussion it is important to point out that the Braille Lite offers several ways to turn the speech feature on and off. For instance, pressing a V in the Options Menu or an S-CHORD, SPACEBAR in the Status Menu will turn speech on or off.
+You can accomplish the same functionality, if you press and hold at startup; the letter B for Braille display only, the letter S for speech only, and SPACEBAR for silent startup.
+Additionally, there are two separate areas in the Braille Lite that handle speech parameters. 
+The first group of parameters is in the Status Menu. To use these parameters you must enter the Status Menu with an ST-SIGN CHORD (DOTS 3-4 CHORD), use DOT 1 or DOT 4 CHORD to navigate to the setting, and use the SPACEBAR to toggle the setting on or off. 
+* Speech	
+* Voice Inflection 	
+* Word Exceptions	
+* Speak Words in
+Say All Mode			 
+* Ham Calls	
+Ham Radio Operators may find Ham Calls useful in that it spells out letter-number combinations such as w1aw, rather than trying to read it.  
+The other area has a group of settings that let you individualize your notetaker's speech for maximum listening comfort. This group is accessed independently with its own command, the AR-SIGN CHORD (DOTS 3-4-5 CHORD). 
+When you press this command from within any file, you will hear the Braille Lite say, "Set speech parameters." Use the commands listed below to customize your notetaker's speech.
+Softer volume	DOT 1
+Louder volume 	DOT 4
+Slower speed	DOT 3
+Faster speed	DOT 6
+Moves you backward 
+through voices						DOT 2
+Moves you forward 
+through voices	DOT 5
+The voices are: Perfect Paul, Vader, Big Bob, Precise Pete, Ricochet Randy, Biff, Skip, and Robo Robert. 
+Cancels punctuation	Z (DOTS 1-3-5-6)
+Announces some punctuation	S (DOTS 2-3-4)
+Announces most punctuation	M (DOTS 1-3-4)
+Announces total punctuation													T (DOTS 2-3-4-5)
+Toggles between say digits
+and say full numbers					N (DOTS 1-3-4-5) 
+Exits the Speech Parameters
+Menu and saves current settings			E-CHORD (DOTS 
+	1-5 CHORD) 
+Sets the keyboard activity
+to echo the following			 			SPACEBAR
+Key Click - Typed keys click as they are pressed.
+Silent Keys - There is no auditory indication when keys are pressed.
+Key Echo - Each character is spoken as it is pressed.
+Key Echo Words - Each word is spoken after it is typed and the spacebar is pressed.	
+Voice Inflection
+This feature is useful because it helps you identify the punctuation of a sentence. The inflection ranges available are from 0 (monotone) to 9. Voice Inflection is on by default. To adjust Voice Inflection, enter Speech Parameters (AR-SIGN CHORD) and adjust the inflection you hear using DOTS 1-3 (decreases) and DOTS 4-6 (increases).
+To turn Voice Inflection off, enter the Status Menu (ST-SIGN CHORD) and press I. Then press the SPACEBAR. The Braille Lite remembers the last adjusted setting, regardless of whether you turn Voice Inflection on or off in the Status Menu. You can also adjust the inflection setting while Voice Inflection is turned off, but the new setting will not take effect until you turn Voice Inflection back on in the Status Menu. 
+Note: 	Be sure to point to an item other than PC Edit when pressing I in the Status Menu.
+Voice Pitch
+You can adjust voice pitch. After entering Speech Parameters, use DOTS 2-3 (decreases) or DOTS 5-6 (increases) to adjust the voice pitch. 
+Line Breaks
+Press L to toggle between Speak to "End of Line" or "End of Sentence" (line is default).  Speak to End of Line pauses for punctuation and/or line breaks; Speak to End of Sentence pauses for punctuation, but not for line breaks. You might use Speak to End of Line for reading the help file, for example, and Speak to End of Sentence for reading a novel.
+Preset Voices
+You can preset five voices using all available Speech Parameters. Press DOTS 2-3 CHORD or DOTS 5-6 CHORD to select a voice number (i.e., voice number 1, voice number 2...) then use the different parameters to customize the voice. When you are ready or are in a situation where you need a different voice, press a Y-CHORD and the voice number (in dropped numbers) from within any file. The M20/40 automatically implements your preset voice. This feature is useful when you're in and out of noisy and/or quiet environments or if you like to read at one speech rate and edit in another.
+Voice Shift
+In addition to Braille feedback, PC Edit has Voice Shift feedback. This feedback is useful because it helps you identify whether you're in Append, Insert, or Overwrite Mode. With Append Mode the shift remains standard; with Insert Mode the shift goes up; and with Overwrite Mode the shift goes down.
+To use Voice Shift:
+1. Enter the Status Menu with an ST-SIGN CHORD. 
+2. Turn PC Edit on by pressing DOTS 1-2-4-6 and if necessary use the SPACEBAR to cycle through the options. 
+3. Exit the Status Menu with an E-CHORD.
+4. Enter Speech Parameters with an AR-SIGN CHORD.
+5. Type DOTS 1-4-6.
+6. Use Dropped Numbers, 0 through 6, to set the shift variation: with 0 having no shift variation and 6 having the greatest shift variation.
+7. Press E-CHORD once to save and exit Voice Shift, twice to exit out of Speech Parameters.
+ 
+Chapter 3
+Menus of the Braille Lite
+There are common commands that can be used for navigating the Options, File, and Status Menus. They are as follows:
+Moves you forward
+in a menu	@-CHORD
+	(DOT 4 CHORD)
+Moves you backward
+in a menu	A-CHORD 
+	(DOT 1 CHORD)
+Moves you to the 
+top of a menu	L-CHORD 
+	(DOTS 1-2-3 
+	CHORD)
+Moves you to the 
+bottom of a menu	DOTS 4-5-6 
+	CHORD
+Announces the 
+current selection	C-CHORD 
+	(DOTS 1-4 
+	CHORD)
+Announces a setting's 
+Access Key	DOTS 3-6 CHORD
+Exits a Menu 	E-CHORD 
+	(DOTS 1-5 
+	CHORD)
+Cancels the process or
+escapes the menu	Z-CHORD (DOTS 
+	1-3-5-6 CHORD)
+Options Menu
+The Options Menu is an important menu because it accesses the note taking functions and the built-in applications of your notetaker, such as the Calculator, Datebook, Smart Calendar, and Spellcheck. Understanding how the Options Menu works is relatively simple. To access the Options Menu, press an O-CHORD (DOTS 1-3-5 CHORD). To move through the menu, you can use the common commands listed above, scroll with the Whiz Wheels, or press the application's Access Key listed below.
+    Application	      Access Key
+Check Appointments	A (DOT 1)
+Braille Display	B (DOTS 1-2)
+Calculator	C (DOTS 1-4)
+Date	D (DOTS 1-4-5)
+Open Datebook File	D-CHORD 
+	(DOTS 1-4-5 
+	CHORD)
+Datebook Entry	E (DOTS 1-5)
+File Commands	F (DOTS 1-2-4)
+Smart Calendar	G (DOTS 1-2-4-5)
+Hourly Calendar Check	H (DOTS 1-2-5)
+Calculate Line	K (DOTS 1-3)
+Open the Previously Opened File	L (DOTS 1-2-3)
+Open Currently Selected File	O (DOTS 1-3-5)
+Open Phone Book	P-CHORD 
+	(DOTS 1-2-3-4 
+	CHORD)
+Phone Book (Entry)	P (DOTS 1-2-3-4)
+Review Mode	R (DOTS 1-2-3-5)
+Set (Time, Date)	S (DOTS 2-3-4)
+Spell Check	DOT 1-6
+Time	T (DOTS 2-3-4-5)
+Say Countdown Timer	DOTS 3-4-5-6
+Upper Case Proof Mode	U (DOTS 1-3-6)
+Speech	V (DOTS 1-2-3-6)
+Toggle Braille Layout Mode	V-CHORD
+	(DOTS 1-2-3-6 
+	CHORD)
+Stopwatch	W (DOTS 2-4-5-6)
+WinDisk	W-CHORD (DOTS 
+	2-4-5-6 CHORD)
+Execute Program	X (DOTS 1-3-4-6)
+File Menu
+The File Menu is accessed through the Options Menu and contains text files, Braille files, flash files, and external programs. It is through the File Menu that you use File Commands to perform specific actions on a file.
+These commands are organized by function. All commands must be entered after first opening the File Menu (O-CHORD, F) (DOTS 1-3-5 CHORD, DOTS 1-2-4).
+Accesses the File 
+Command Menu	O-CHORD, F, ? 
+	CHORD (DOTS 1-
+	3-5 CHORD, DOTS 
+	1-2-4, DOTS 1-4-5-
+	6 CHORD)
+Opens a file in the 
+File Menu (You must type 
+in the file name)	O (DOTS 1-3-5)
+Opens the selected file	O-CHORD 
+	(DOTS 1-3-5 
+	CHORD)
+Creates a file	C (DOTS 1-4)
+Renames the selected file	R-CHORD (DOTS 
+	1-2-3-5 CHORD)
+Renames the file (You must type
+ in the file name)	R (DOTS 1-2-3-5)
+Deletes selected file	D-CHORD (DOTS 
+	1-4-5 CHORD)
+Deletes the open file	D (DOTS 1-4-5)
+Tells name of open file	T (DOTS 2-3-4-5)
+Speak names of all files	L (DOTS 1-2-3)
+Exit File Menu	E or 					E-CHORD
+Create File	C
+Open File	O
+Open Selected File	O-CHORD
+Delete File	D
+Delete Selected File	D-CHORD
+Global Delete	G
+Rename Open File	R
+Rename Selected File	R-CHORD
+Protect Open File	P
+Protect Selected File	P-CHORD
+Unprotect Open File	U
+Unprotect Selected File	U-CHORD
+Password Protect File	W 
+Note:	You are prompted to type a 1 to 6 character password twice. Press E-CHORD after typing the password. To remove the password of the open file, press W, followed by E-CHORD twice.
+Recover Open File	EQUAL SIGN
+Note:	This command may be useful after a crash or a Cold reset when the file system has been initialized.
+Search for Files	F-CHORD
+Note:	When searching for files, you are prompted for a file name or partial file name with wild cards - such as *.txt or *.brl. Use DOT 1 CHORD and DOT 4 CHORD to move through the results list, E-CHORD to select a file, or Z-CHORD to exit the list.
+Free Memory in Pages	F
+Verbose File List	V
+Copy File List
+to Clipboard	V-CHORD
+List Names of All Files	L
+Quick File List	Q
+Tell Name of Open File	T
+Tell Name of
+Selected File	C-CHORD
+Spell Name of
+Selected File	DOTS 2-5 CHORD
+Information on File(s)	I
+Information on
+Selected File	I-CHORD
+Time/Date
+Information on File(s)	M
+Time/Date Information on
+Selected File	M-CHORD
+Tell Size of File(s)	DOTS 1-5-6
+Tell Size of
+Selected File	DOTS 1-5-6 
+	CHORD
+Make Open
+File Bigger	B
+Make Selected
+File Bigger	B-CHORD
+Make Open
+File Smaller	S
+Make Selected
+File Smaller	S-CHORD
+Transfer Protocols	T-CHORD
+Selected File to Serial
+Port with Y-modem	Y-CHORD
+File from Serial Port 
+with Y-modem	DOTS 1-2-3-4-6 
+	CHORD
+Run Selected 
+External Program	O-CHORD or 
+	X-CHORD
+Run Selected
+External Program
+with Arguments	X
+Move to Previous
+External Program	DOT 2 CHORD
+Move to Next
+External Program	DOT 5 CHORD
+Toggle between
+Quick Load
+and Normal Load	DOTS 3-4 CHORD
+Note:	The program must be in RAM.
+Status Menu
+The Status Menu is also an important menu because it allows you to change your Braille Lite settings. For instance, suppose you want to use an embosser with your Braille Lite. You would first have to change the serial parameters on your Braille Lite in order for the embosser to work properly. With the Status Menu you can also modify settings, such as Speech Parameters, Editor Parameters, Format Parameters and Braille Display Parameters. Adjusting the items in the Status Menu gives you more control over your Braille Lite.
+To access the Status Menu, press an ST-SIGN CHORD (DOTS 3-4 CHORD). To navigate, you can use the common commands listed above, scroll through each item using the Whiz Wheels, or you can use the following commands to move to each section of the Status Menu.
+Note: 	Anytime you enter the Status Menu you will hear the Status Menu prompt along with the last item of focus.
+Moves you forward by sections	DOTS 5-6 CHORD
+Moves you backward by sections	DOTS 2-3 CHORD
+To exit the Status Menu, press E-CHORD (DOTS 1-5 CHORD).
+Here is a list of the six sections you will find in the Status Menu. 
+* Serial Parameters 
+* Speech Parameters 
+* Braille Display Parameters 
+* Editor Parameters 
+* Format Parameters 
+* System Parameters 
+Note:	 If you want to reset your Braille Lite to its default settings, press = CHORD (DOTS 1-2-3-4-5-6 CHORD) from within any file. This is called a warm reset and it does not affect your files, but all settings you have configured are reset to their defaults.
+	If the first warm reset does not help, press and hold down = CHORD (DOTS 1-2-3-4-5-6 CHORD) during power on.
+Once you've found the setting you want to adjust, press the SPACEBAR to toggle the setting on or off.
+Items that are either on or off can also be set by pressing Y for On or N for Off. 
+   Serial Parameters					  Access Key
+Serial Port	F
+BAUD Rate	B
+	To set, type:
+300	30
+600	6
+1200	12
+2400	2
+4800	4
+9600	9
+19200	19
+38400	38
+115200	11
+
+Parity	P
+	To set, type:
+Odd	O
+Even	E
+None	N
+
+Duplex	D
+	To set, type:
+Half	H
+Full	F
+None	N
+
+Data Bits	DOTS 4-5-6
+	To set, type:
+7	7
+8	8
+
+Stop Bits	S
+	To set, 	type:
+1	1
+2	2
+
+Handshaking	H
+	To set, type:
+Software	S
+Hardware	H
+None	N
+
+Add Linefeed
+when Transmitting	A
+Reject Ornamentation
+Characters	O
+   Speech Parameters
+Speech	S-CHORD
+Voice Inflection 	I
+Word Exceptions	E
+Speak Words in
+Say All Mode			DOTS 2-3-4-5-6 
+Ham Calls	M
+Note:	This item is used to speak letter-number combinations such as w1aw.
+    Braille Display Parameters
+Braille Display	B-CHORD
+Serial Tracking	T-CHORD
+Keyboard Tracking	K-CHORD
+Reverse Advance	D-CHORD
+8 Dot Mode	DOTS 2-3-6
+	CHORD
+Control Chars	X-CHORD
+Cursor Always Visible	V-CHORD
+Word Wrap	W-CHORD
+End Display on
+Carriage Return	R-CHORD
+Display All	= CHORD
+Grade 2 Messages	G-CHORD
+View in Grade 2			DOTS 2-3-5-6 
+	CHORD
+    Editor Parameters
+Braille Translator	T
+Cursor Tracking	C
+Column Beep	Q
+Specify a number between 0 and 255 and press E-CHORD.
+Speak Windows Lines
+or Sentences	V
+	To set, 	type:
+Windows	W
+Lines	L
+Sentences	S
+
+Window Length	W
+Specify a number between 18 and 255 and press 
+E-CHORD.
+PC Editing Mode	DOTS 1-2-4-6
+Specify Y for On, N for Off, or I for On with Insert at Startup.
+Skip Blank Lines	DOTS 1-2-3-4-6 
+	CHORD 
+Distinguish Case 
+During Find	DOTS 2-3-4-6
+	CHORD 
+Progress Clicks	K
+Say ASCII Values	DOTS 2-5 CHORD
+   Format Parameters
+Printer Compatibility	L
+
+	To set, 	type:
+Epson	E
+HP	H
+Image Writer	I
+
+Number Pages	DOTS 3-4-5-6
+Put Page Number
+on First Page	No Access Key
+Double Space	DOTS 3-4-5
+The following page format parameters control the margins on a print or Braille page. There are no access keys for these items. The default settings are listed instead.
+Print Line Length	75
+Print Left Margin	10
+Print Page Length	60
+Print Top Margin	6
+Braille Line Length	33
+Braille Left Margin	1
+Braille Page Length	25
+Braille Top Margin	1
+    System Parameters
+Revision Date	R
+Battery Level	DOTS 1-4-6
+Battery Used	DOTS 1-4-5-6
+Press SPACEBAR to reset the battery timer.
+Check Appointments	J
+Hourly 
+Announcement	H-CHORD
+
+	To set, 	type:
+Bell	1
+Voice	2
+Bell and Voice	3
+Off	N
+
+Power Reminder	Z
+Allow Folder Mode	F-CHORD
+Language Bank	DOTS 1-2-3-4-5-6
+Chapter 4
+Working with Files
+Before we begin working with files it is important for you to understand how the Braille Lite organizes your files. The Braille Lite can be set to organize your files in one of two modes. The default mode is All Files Mode; this mode organizes all files in one listing, regardless of which folder it is in. When you scroll this list you will hear the file name along with the folder name it is stored in. The other mode is Folder Mode, which organizes your files into separate folders. When you are in this mode, you will review each file in their respective folders. In order to list files and their folders, you must enable "Allow Folder Mode," in the Status Menu. To read more about this topic, please see the chapter, Working with Folders. This chapter discusses the operations that can be performed to a file and the different methods available for performing these operations. 
+Creating Files
+Files created with the notetaker are stored in the Files Menu in the RAM (Random Access Memory) Folder. Once you have created a file, you can immediately start entering information in that file.
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) you will hear, "Enter file command." 
+2. Press C (DOTS 1-4) for create. You are prompted for a file name. 
+3. Type the file name. 
+4. Press E-CHORD (DOTS 1-5 CHORD) to finish the file creation. 
+Note: 	You cannot name files with more than twenty characters nor can you name a file with the following characters: QUESTION MARK, ASTERISK, SLASH, BACKSLASH, COMMA, COLON, and PERCENT. Also file names should not begin with a PERIOD.
+Further considerations include transferring files to an external disk drive or to a Compact Flash. Since these storage mediums do not support the longer file names, we recommend you use the MS-DOS "8.3" digit format. This format limits a file to eight characters, a period, and three more characters without spaces. The three characters after the period are referred to as a file extension, and may determine how applications on a PC interact with these files. For example, in Microsoft Windows 9.x, files with an extension of .txt are opened in Notepad. 
+Opening Files
+Method 1:
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) you will hear, "Enter file command." 
+2. Type O (DOTS 1-3-5) for open and then type the "name of file," followed by E-CHORD (DOTS 1-5 CHORD).
+Method 2:
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) you will hear, "Enter file command." 
+2. Scroll through the list of files using the Whiz Wheels or use DOT 1 CHORD or DOT 4 CHORD to locate your file. 
+3. Press O-CHORD (DOTS 1-3-5 CHORD) when the desired file is located. This will open the file. 
+Saving Files
+Braille Lite M20/40 automatically saves the text in your file whether you open another file or turn off the Braille Lite. If you have a file open and you turn off your Braille Lite, the next time you start your notetaker, it will open and announce the file you were last in. 
+Deleting Files
+The chords for deleting a file depend on the method you used to locate that file. For instance, if you choose to type the file's name (Method 1) you then delete the file from the Files Menu by typing D (DOTS 1-4-5) for delete. If you choose to locate the file with the navigation commands (Method 2) use the D-CHORD (DOTS 1-4-5 CHORD).
+Method 1:
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) you will hear, "Enter file command." 
+2. Type D (DOTS 1-4-5) for delete and then type the "name of file," followed by E-CHORD (DOTS 1-5 CHORD). 
+3. After the name of the file is announced, enter Y (DOTS 1-3-4-5-6) for yes and N (DOTS 1-3-4-5) for no. 
+Method 2:
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) to open the File Menu. 
+2. Scroll through the list of files using the Whiz Wheels or use DOT 1 CHORD or DOT 4 CHORD to locate your file. 
+3. Press D-CHORD (DOTS 1-4-5 CHORD) when the desired file is located. 
+4. After the name of the file is announced, enter Y (DOTS 1-3-4-5-6) for yes or N (DOTS 1-3-4-5) for no. 
+Renaming Files
+If you want to rename a file that you have been working in, use the command R (DOTS 1-2-3-5). If you want to rename a file other than the file you have been working in, use an R-CHORD (DOTS 1-2-3-5 CHORD). To check if the file has been renamed correctly press a C-CHORD (DOTS 1-4 CHORD).
+Method 1:
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) you will hear, "Enter file command." 
+2. Type R (DOTS 1-2-3-5) for rename and then the "name of file," followed by E-CHORD (DOTS 1-5 CHORD). 
+
+Method 2:
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) to open the File Menu. 
+2. Scroll through the list of files using the Whiz Wheels or use DOT 1 CHORD or DOT 4 CHORD to locate your file. 
+3. Press R-CHORD (DOTS 1-2-3-5 CHORD) when the desired file is located. 
+4. Type the new file name and press E-CHORD (DOTS 1-5 CHORD). 
+Navigating within Files
+The Move command (# CHORD) (DOTS 3-4-5-6 CHORD) lets you navigate files by a specific parameter. After pressing # CHORD (DOTS 3-4-5-6 CHORD), press DOT 4 CHORD to move through the menu choices, or use the access keys listed below.
+Absolute Page (A)
+After selecting this parameter, specify the number of units you want to move, counted from the top of the file. Specify 0 to determine the total number of absolute pages in the file.
+Braille Page (B)
+After selecting this parameter, specify the number of units you want to move, counted from the top of the file. Specify 0 to determine the total number of Braille pages in the file.
+Character (C)
+After selecting this parameter, specify the number of units you want to move from the top of the file. Include a PLUS SIGN (+) before the number to move forward the specified number of units from the cursor location. Use a MINUS SIGN (-) before the number to move backward the specified number of units from the cursor location. Specify 0 to determine the total number of characters in the file.
+Line (L)
+After selecting this parameter, specify the number of units you want to move from the top of the file. Include a PLUS SIGN (+) before the number to move forward the specified number of units from the cursor location. Include a MINUS SIGN (-) before the number to move backward the specified number of units from the cursor location. Specify 0 to determine the total number of lines in the file.
+Mark (M)
+Use this parameter if you have previously set a mark (M-CHORD) in your file, and want to move back to the location of that mark.
+Print Page (P)
+After selecting this parameter, specify the number of units you want to move, counted from the top of the file. Specify 0 to determine the total number of print pages in the file.
+Word (W)
+After selecting this parameter, specify the number of units you want to move from the top of the file. Include a PLUS SIGN (+) before the number to move forward the specified number of units from the cursor location. Include a MINUS SIGN (-) before the number to move backward the specified number of units from the cursor location. Specify 0 to determine the total number of words in the file.
+Moving Files
+Since the Braille Lite M20/40 has about 2 megabytes of RAM storage, you will want to move files from the RAM Folder over to the Flash Folder for storage. Flash has 12 megabyte of storage.
+To move a single file into another folder:
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) to open the File Menu. 
+2. Press DOTS 5-6 CHORD or DOTS 2-3 CHORD to move to the folder containing the file, then press DOT 4 CHORD or DOT 1 CHORD to locate the file. 
+3. Press GH-SIGN (DOTS 1-2-6) to determine if the file is marked, then press SPACEBAR to mark the file. 
+4. Press DOT 5-6 CHORD or DOT 2-3 CHORD to select the folder to which you want to move the file and press E-CHORD (DOTS 1-5 CHORD). If Folder Mode is off, you will be prompted to press Y for yes or N or no. If Folder Mode is on, press DOT 1 CHORD or DOT 4 CHORD to choose the desired folder, followed by E-CHORD. 
+To move multiple files into a folder:
+1. Press O-CHORD, F (DOTS 1-3-5 CHORD, 
+DOTS 1-2-4) to open the File Menu.
+2. Press GH-SIGN (DOTS 1-2-6) to initiate the tagging process to copy files to another folder.
+3. A list of files is displayed. Use the DOT 1 CHORD and DOT 4 CHORD to move through the listed files, or DOTS 2-3 CHORDS and DOTS 5-6 CHORDS to move through the folders.
+4. Press SPACEBAR to mark each file you want to move or M to mark all files in the current folder. Press SPACEBAR again to unmark a file.
+5. Once all desired files are marked, press 
+E-CHORD (DOTS 1-5 CHORD).
+6. A list of folders is displayed. Locate the desired folder and press E-CHORD (DOTS 1-5 CHORD). 
+Move Selected File	DOTS 1-2-6 
+	CHORD
+Note:	A list of folders is displayed. Use DOT 1 CHORD and DOT 4 CHORD to move through the list, and press E-CHORD to select a folder. The folder number (0 through 9) may also be typed.
+Move Selected File when
+in All Files Mode	DOTS 1-2-6 
+	CHORD
+Note:	You are asked to move the selected file into Flash if it is in Ram, or into Ram if it is in Flash.
+Move File(s)	GH-SIGN 
+Note:	This command lists files in the current folder. Mark files with Y or SPACEBAR. Switch between folders with DOT 2-3 CHORD or DOTS 5-6 CHORD. Press E-CHORD when all desired files are marked. Then move to the destination folder with DOT 1 CHORD or DOT 4 CHORD, and press E-CHORD.
+Chapter 5
+Working with Folders
+The Braille Lite provides two folder modes to assist you in organizing your files. In order to create and use folders, you must enable "Allow Folder Mode" in the Status Menu. Press ST-SIGN CHORD, F-CHORD, Y (DOTS 3-4 CHORD, DOTS 1-2-4 CHORD, DOTS 1-3-4-5-6) to enable Allow Folder Mode. Use E-CHORD (DOTS 1-5 CHORD) to exit the Status Menu. 
+Once Allow Folder Mode is enabled, you can now enter the File Menu O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4) and toggle (SPACEBAR) between the two modes: 
+* All Files Mode - places all files in one listing. 
+* Folder Mode - separates files into folders. 
+When in Folder Mode, press DOTS 5-6 CHORD or DOTS 2-3 CHORD to move between folders, and then press DOT 4 CHORD or DOT 1 CHORD to move through the files in the current folder. 
+RAM startup and Flash Startup are the default folders.
+Creating Folders
+To create folders, you must be in the File Menu in the Folder Mode. 
+1. Press DOTS 3-4-6, type the folder name and press E-CHORD (DOTS 1-5 CHORD). 
+2. Press R (DOTS 1-2-3-5) for RAM or F (DOTS 1-2-4) for Flash to store the folder. 
+3. Press E-CHORD (DOTS 1-5 CHORD) to exit the File Menu. You can create up to 20 folders. 
+Renaming Folders 
+To rename a folder, press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4), move to the folder and press DOTS 1-6 CHORD. Type in the new folder name and press E-CHORD (DOTS 1-5 CHORD).
+Deleting Folders
+To delete a folder, press O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4). Move to the folder and press DOTS 3-6. The Braille Lite only deletes empty folders and does not ask for verification.
+Listed is a summary of commands that can be performed on folders. 
+Forward through 
+Folders	DOTS 5-6 CHORD
+Back through Folders	DOTS 2-3 CHORD
+Top of Folder List	DOTS 2-3-6
+	CHORD
+End of Folder List		DOTS 3-5-6 
+	CHORD.
+Delete Empty Folder	DOTS 3-6
+Rename Active Folder	DOTS 1-6 CHORD.  
+Quick Folder Opening
+by Number	0 through 9
+Name of Open Folder	DOTS 2-3-5-6 
+	CHORD.
+Chapter 6
+Reading with the Braille Lite
+The Braille Lite Braille display has numerous settings that can optimize your reading experience. For instance, you can control how the Advance Bars work with Reverse Advance or limit the number of characters per line with Word Wrap. You can read system messages and file contents in Grade 2 Braille or Computer Braille. You can even read using 8-dot Mode so no information is lost. All of the settings that control how information is displayed can be found in the Status Menu under Braille Display Parameters. For additional information on this subject, please see the chapter, Menus of the Braille Lite.
+Listed is a summary of settings that affect the Braille Lite Braille display.
+* Braille Display	 - Turns the Braille display on or off
+* Serial Tracking	 - Allows the cursor to track incoming information received from TTY/TDD communication devices such as the Comm Lite.
+* Keyboard Tracking	 - Refreshes the Braille display as you type.
+* Reverse Advance	 - Sets the Advance Bars to display information from the opposite direction.
+* 8-dot Mode	 - Provides additional information that is normally not seen with 6-dot Mode.
+* Control Chars - Displays control characters such as carriage returns, linefeeds, formfeeds and tabs.   Control characters are used largely for formatting purposes to instruct a printer where to place your text.  
+* Cursor Always Visible	 - Displays the cursor
+* Word Wrap - Controls 	the number of characters seen on the Braille display
+* End Display on Carriage Return	 - Displays all text up to the carriage return or carriage return/linefeed. 
+* Display All	 - Displays exactly what the file contains: all spaces, multiple occurrences of fancy border characters like asterisks, all control characters, etc.
+* Grade 2 Messages - 	
+* View in Grade 2			 - 
+Additional Braille display features include advance bars, Whiz Wheels, and cursor routing buttons. The advance bar and Whiz Wheels provide access to commonly used navigation commands, while the cursor routing buttons move the cursor to any cell.
+To read a file with the refreshable Braille display, use the advance bar to move through your files one-display length at a time. Pressing the right end of the advance bar pans forward 20 or 40 cells, while pressing the left end of the advance bar pans backwards 20 or 40 cells. The function of the advance bars can be reversed so the left end of the advance bar moves you right, and the right end moves you left. For some people this provides an easier reach without needing to move fingers that are reading the Braille display.
+To enable Reverse Advance you must enter the Status Menu and access Reverse Advance. To enter the Status Menu, press ST-SIGN CHORD (DOTS 3-4 CHORD).
+To access Reverse Advance, press D-CHORD (DOTS 1-4-5 CHORD). At this point you can either press the SPACEBAR or Y (DOTS 1-3-4-5-6) to toggle the feature on. Press E-CHORD (DOTS 1-5 CHORD) to exit or Z-CHORD (DOTS 1-3-5-6 CHORD) to abort the Status Menu.
+The programmable Whiz Wheels, located at either end of the Braille display, provide another option for you to read text. To program the Whiz Wheels, open a file and press down on each wheel. The Braille Lite will announce, "lines, sentences, paragraphs." You have the option of setting the Whiz Wheels independently. For example, you can set the right Whiz Wheel to move by line and you can set the left Whiz Wheel to move by paragraph.
+The cursor routing buttons, located above each cell, are particularly helpful because you can move the cursor to different parts of the document and begin reading from that point. 
+The following commands display and speak the designated text from the position of the cursor.
+Reads all text from current 
+cursor position to end the of file	ER-SIGN CHORD
+	(DOTS 1-2-4-5-6 
+	CHORD)
+Stops reading	Z-CHORD (DOTS 
+	1-3-5-6 CHORD)
+Silences speech	E-CHORD (DOTS 
+	1-5 CHORD)
+Reads current character	DOTS 3-6 CHORD
+Reads current 
+character phonetically	DOTS 3-6 CHORD 
+	twice
+Reads previous character	DOT 3 CHORD
+Reads next character	DOT 6 CHORD
+Reads current word	DOTS 2-5 CHORD
+Spells current word	DOTS 2-5 CHORD
+	twice
+Reads previous word	DOT 2 CHORD
+Reads next word	DOT 5 CHORD
+Reads current line	C-CHORD 
+	(DOTS 1-4 
+	CHORD)
+Reads previous line	DOT 1 CHORD
+Reads next line	DOT 4 CHORD
+Moves to the top of file	L-CHORD 
+	(DOTS 1-2-3 
+	CHORD)
+Moves to the end of file	DOTS 4-5-6 
+	CHORD
+Backspace	DOT 7	
+Forward one 
+paragraph			DOTS 5-6 CHORD
+Back one 
+paragraph			DOTS 2-3 CHORD
+To have the Braille Lite read the entire contents of a file, or read from the current cursor location, press an ER SIGN CHORD (DOTS 1-2-4-5-6 CHORD). Press a Z-CHORD to stop reading. 
+If you decide you want to stop at some particular word in a file, then it is helpful to turn on Speak Words in Say-All Mode (DOTS 2-3-4-5-6, SPACEBAR), which is in the Status Menu, and slow down the speech rate. You can now press an E-CHORD, which will silence speech and place the cursor close to the last word you heard. Use any of the reading commands listed above to read the contents of your file. For instance, to reread that word where the cursor is resting press a DOTS 2-5 CHORD. 
+Occasionally, you may find yourself in an environment, such as the library, where reading with speech could be troublesome. In this case, you might want to pull out your headsets or better yet, you can turn speech off by entering the Status Menu and pressing S-CHORD, SPACEBAR.
+With speech turned off, the ER SIGN CHORD scrolls the display every couple of seconds from the cursor position to the end of the file so that you don't have to keep tapping the advance bar. To stop the scrolling, press any chord. To change the rate at which the display scrolls, press DOT 5 to speed up scrolling, press DOT 2 to slow scrolling down. If you press a key accidentally, the display shows, "Invalid input." Tapping the advance bar again returns you to where you had stopped scrolling in the file. To continue scrolling, simply press ER SIGN CHORD again.
+If you want to move forward by skipping a paragraph or two, simply press the SPACEBAR while the display is scrolling. This temporarily moves the display faster. As with virtually all the settings on the Braille Lite, the unit remembers how you last set scrolling, and resumes scrolling at that pace the next time you issue the command that starts the display scrolling. But if you turn off the Braille Lite, the next time you turn on the unit and activate scrolling, the scrolling speed is back at the default speed set from the factory.
+While most chords have set definitions, the DOT 1 CHORD and DOT 4 CHORD have three definitions. They can be set to move by line, by sentence, or by window. To set the definitions, enter the Status Menu and press V (DOTS 1-2-3-6), SPACEBAR. Then press L for line, S for sentence, or W for window.
+So far we have only discussed reading with the Braille display only. But, the opposite situation can occur where you might want to turn off the Braille display and leave the speech feature on. For instance, you are on a trip, your battery charger is at home, and your Braille Lite battery charge is low. In this case, enter the Status Menu and press B-CHORD, SPACEBAR. Your Braille Lite reading commands will work just the same and with the display off you will save battery life.
+	
+Chapter 7
+Editing Text
+The cursor marks the current location in the text. This is important because many editing commands use the cursor as a reference point for implementation. For example, pressing D-CHORD, W would delete a word at the cursor location.
+By default, the cursor is only visible when you are writing in a file, reading one character at a time, or when you use a cursor routing button to move the cursor to a specific cell. To have the cursor always visible, enter the Status Menu and press V-CHORD, SPACEBAR. The cursor, represented by dots 7 and 8, is now visible at the left end of the display. 
+To find where the cursor is resting, press a WH-SIGN CHORD (DOTS 1-5-6 CHORD) from anywhere within your file. The Braille Lite responds with column # and cursor at character #. This information reflects that the cursor is resting at particular place within a line and that the cursor is so many characters into a file. If the cursor is at column 0, then the cursor is resting on a carriage return.
+When editing a file it may be useful to have the Braille Lite "show blank lines" as this helps to prevent unintentional breaks in a paragraph. By default, the Braille Lite does not display the presence of blank lines. To have the Braille Lite show blank lines, press ST-SIGN CHORD, DOTS 1-2-3-4-6, SPACEBAR.
+Since files can only be created and edited in the RAM Folder, any file that is stored in the Flash Folder will have to be moved over to the RAM Folder. If you try to edit a file that is stored in Flash, the Braille Lite will inform you that the file is write-protected. After finishing your edits you may want to store these files in the Flash Folder since it has 12 megabytes of memory. For more information on moving files, please see the chapter, Working with Folders.
+With the Braille Lite there are two editing modes, Append and PC Edit Mode. 
+Append Mode
+The Append Mode, which is the default mode, allows for quick note taking because anything you type is added to the end of your file. With Append Mode, the cursor is represented by a dot 7 and 8 and requires that you specify when you want to insert or overwrite text.
+* To insert text at the cursor location within the file, press I-CHORD (DOTS 2-4 CHORD), type in the text, and press E-CHORD (DOTS 1-5 CHORD).
+* To overwrite one character at the cursor location, press OW-SIGN CHORD (DOTS 2-4-6 CHORD). 
+* To continuously overwrite text from the cursor location, press OW-SIGN CHORD (DOTS 2-4-6 CHORD) twice, type in the new text, and press OW-SIGN CHORD (DOTS 2-4-6 CHORD) again.
+* To delete a character at the cursor location, press D-CHORD (DOTS 1-4-5 CHORD) twice. 
+* To delete multiple characters, press D-CHORD, C (DOTS 1-4-5 CHORD, DOTS1-4) plus the number of characters (up to 255), then press E-CHORD (DOTS 1-5 CHORD) to move the deleted text to the clipboard, replacing any text already in the clipboard. Press ING-SIGN CHORD (DOTS 3-4-6 CHORD) instead of E-CHORD (DOTS 1-5 CHORD) to append the deleted text to that already in the clipboard.
+This same process can be applied to words, sentences, and paragraphs. For example, D-CHORD, W5, E-CHORD (DOTS 1-4-5 CHORD, DOTS 2-4-5-6 2-6, DOTS 1-5 CHORD) deletes five words from the cursor location forward, and places that text on the clipboard. D-CHORD, P3, ING-SIGN CHORD (DOT 1-4-5 CHORD, DOTS 1-2-3-4 2-5, DOTS 3-4-6 CHORD) deletes three paragraphs and appends the paragraphs to text already on the clipboard.
+Text can also be copied or appended to the clipboard without deleting the existing text. 
+PC Edit Mode
+In PC Edit Mode, the M20/40 functions more like a word processor. Once you set this option, the Braille Lite defaults to Insert Mode and you must press I-CHORD (DOTS 2-4 CHORD) from within any RAM file to toggle between Append, Overwrite, and Insert modes. The mode you select remains active until you change it, or until you reset your Braille Lite. 
+PC Edit Mode is set from the Status Menu.
+1. Press ST-SIGN CHORD (DOTS 3-4 CHORD) to open the Status Menu.
+2. Press DOTS 1-2-4-6 to move directly to PC Editing.
+3. Press SPACEBAR to cycle between "PC Editing Off," "PC Editing On," and "PC Editing On with Insert at Startup."
+4. Once the desired option is selected, press E-CHORD (DOTS 1-5 CHORD) to exit the Status Menu.
+* Append: Typed text is appended to the end of the file, regardless of cursor location. The cursor is represented by dots 7 and 8. 
+* Insert: Typed text is inserted at the cursor location. Any text that is beyond the location of the cursor is pushed forward in the file. A flashing dot 7 represents the cursor.
+* Overwrite: Typed text begins at the cursor location, which is represented by a flashing dot 8. Text that is beyond the location of the cursor is replaced with the newly typed text. 
+Copying Text
+There are several ways to copy text to the Clipboard. The following method replaces text or adds text to that already on the Clipboard. 
+1. Move the cursor to the beginning of the text and press M-CHORD (DOTS 1-3-4 CHORD) to mark the location. 
+2. Move the cursor one character after the end of the text you want to copy.
+3. Press GH-CHORD (DOTS 1-2-6 CHORD). 
+4. Press C (DOTS 1-4) to copy the text to the clipboard replacing other text, or A (DOT 1) to append text to that already in the clipboard.
+Text can also be copied or appended to the clipboard without deleting the existing text.
+1. Move the cursor to the beginning of the text and press M-CHORD (DOTS 1-3-4 CHORD) to mark the location. 
+2. Move the cursor to the end of the text and press GH-SIGN CHORD (DOTS 1-2-6 CHORD). 
+3. Press C (DOTS 1-4) to copy the text to the clipboard, or A (DOT 1) to append the text to that already in the clipboard.
+Deleting (Cut) Text 
+Before we begin this discussion, you should know that the Delete feature in the M20/40 works like the Cut feature in a word processing application. Like word processing applications, deleting text actually places the text on the clipboard so you can paste it in another location. In the M20/40 there are 8 different Delete Parameters. Some Delete parameters allow you to copy as well. With the Delete feature only one deletion is held on the clipboard at a time. Delete parameters, used to copy and delete text, are available when you press D-CHORD (DOTS 1-4-5 CHORD) in any writeable RAM file. Use the Whiz Wheels to cycle through the delete parameters and press E-CHORD (DOTS 1-5 CHORD) to select the parameter. Alternately, you can select a parameter by pressing a Delete Parameter's Access Key. 
+Block (B)(DOTS 1-2): Prompts for a string of text, and deletes from the cursor to the first instance of that string of text. Text cannot be copied with this parameter.
+Character (C)(DOTS 1-4): Prompts for a number of characters, and counts from the cursor forward through the file. Use this parameter to copy or delete.
+Line (L)(DOTS 1-2-3): Prompts for a number of lines, and counts from the cursor forward through the file. Use this parameter to copy or delete.
+Mark (M)(DOTS 1-3-4): This parameter deletes text between a mark set in a file and the cursor location. Press M-CHORD (DOTS 1-3-4 CHORD) to set a mark in a file. Text cannot be copied with this parameter.
+Paragraph (P)(DOTS 1-2-3-4): Prompts for a number of paragraphs, and counts from the cursor forward through the file. Use this parameter to copy or delete.
+Sentence (S)(DOTS 2-3-4): Prompts for a number of sentences, and counts from the cursor forward through the file. Use this parameter to copy or delete.
+Word (W)(DOTS 2-4-5-6): Prompts for a number of words, and counts from the cursor forward through the file. Use this parameter to copy or delete.
+Cursor to End of Text (Z)(DOTS 1-3-5-6): Deletes from the cursor forward to the end of the file. This parameter cannot be used to copy text.
+When selecting the Character, Line, Paragraph, Sentence, or Word parameters, the maximum number of units is 255.
+After selecting the Delete parameter and the information, press either of the following:
+E-CHORD (DOTS 1-5 CHORD) deletes the text and moves it to the Clipboard replacing any text already in the Clipboard.
++ CHORD (DOTS 3-4-6 CHORD) deletes the text and moves it to the Clipboard, appending the text to the text already in the Clipboard.
+GH-SIGN CHORD (DOTS 1-2-6 CHORD) copies text to the Clipboard without deleting it. (Copying text using the ING-SIGN CHORD (DOTS 3-4-6 CHORD) replaces any text in the Clipboard). 
+If the selected parameter does not support copying, the procedure is aborted.
+Pasting Text
+To paste information at the cursor location, press DOTS 3-4-6 CHORD. You are prompted to specify what information to paste. Use DOT 4 CHORD and DOT 1 CHORD to cycle through the choices, or use the access keys listed below:
+C (DOTS 1-4) pastes the clipboard contents.
+D (DOTS 1-4-5) pastes the current day's date.
+F (DOTS 1-2-4) pastes contents of a file.
+G (DOTS 1-2-4-5) pastes a date other than the current day's date.
+R (DOTS 1-2-3-5) pastes result from Calculator.
+T (DOTS 2-3-4-5) pastes the time. 
+# CHORD (DOTS 3-4-5-6 CHORD) pastes the time from the Stopwatch or Timer.
+Note: 	Using + CHORD (DOTS 3-4-6 CHORD) pastes information in a file at the cursor location regardless of which editing mode is active.
+Examples
+To delete the character at the cursor location, press D-CHORD (DOTS 1-4-5 CHORD) twice. To delete multiple characters, press D-CHORD, C (DOTS 1-4-5 CHORD, DOTS 1-4) plus the number of characters (up to 255). Press E-CHORD (DOTS 1-5 CHORD) to move deleted text to the clipboard, which replaces existing Clipboard text. Pressing + CHORD (DOTS 3-4-6 CHORD) instead of E-CHORD (DOTS 1-5 CHORD) appends the text to the text already in the clipboard.
+This same process can be applied to words, sentences, and paragraphs.
+To paste information at the cursor location, press ING-SIGN CHORD (DOTS 3-4-6 CHORD). You are prompted to specify what information to paste. Press C (DOTS 1-4) to paste the clipboard contents, D (DOTS 1-4-5) to paste the date, or T (DOTS 2-3-4-5) to paste the time. 
+To find text within a file, press F-CHORD (DOTS 1-2-4 CHORD), type in the text, and press F-CHORD (DOTS 1-2-4 CHORD) again.
+Spell Check
+Spell check, an external program already loaded on your unit, verifies correct spelling within your documents. Since the program file, "spell.dic," uses 86 Braille Lite pages, we recommend you store this file in Flash. 
+To start the spell check, open the Options Menu and press a CH-SIGN (DOTS 1-6). Press W (DOTS 2-4-5-6) to check the current word, or press Z (DOTS 1-3-5-6) to check the entire document starting from the cursor location. To check an entire file, first move your cursor to the beginning of the file and press L-CHORD (DOTS 1-2-3 CHORD). 
+The Braille Lite indicates an unrecognizable word by spelling it out. Several options are then presented. Use the cursor movement keys to cycle through the options and press E-CHORD (DOTS 1-5 CHORD) to select the option you desire. Most of these options also have access keys to directly select them. Press a - CHORD (DOTS 3-6 CHORD) to hear the access key for the current option.
+Add Words to Personal Dictionary (A)(DOT 1)
+The first time this option is used; a file named "Personal.dic" is created in RAM. This file stores words not found in the standard spell check dictionary. Add words to the personal.dic that the spell check will not recognize such as personal names.
+Bypass Word for Rest of Document (B)
+(DOTS 1-2)
+Spell check ignores any further instances of the current word in the open file.
+Read Word in Context (C)(DOTS 1-4)
+Spell check reads/displays the line of text in which the current word is found.
+Enter the Correct Word in Document (E)(DOTS 1-5)
+Spell check prompts you to type in the word as you want it spelled.
+Skip Word (O)(DOTS 1-3-5)
+Spell check skips the current instance of the word and continues checking the file. Any further instances of the same word are found.
+Repeat Incorrect Word (R)(DOTS 1-2-3-5)
+Spell check reads and spells the current word.
+Suggestion Words from a List (S)(DOTS 2-3-4)
+Spell check lists alternative words for the current word. Use the cursor movement keys to cycle through the choices and press E-CHORD (DOTS 1-5 CHORD) to select a word. Z-CHORD (DOTS 1-3-5-6 CHORD) exits the list, and returns you to the previous list of options for the current word.
+Suggestion Words Help (Q)(DOTS 1-2-3-4-5)
+Spell check indicates how to navigate within the word suggestion list.
+Press E-CHORD (DOTS 1-5 CHORD) to cancel the spell check operation. If you are in the word suggestion list, press Z-CHORD (DOTS 1-3-5-6 CHORD) twice. 
+Word Fix
+Word Fix is a quick and easy tool for changing how your M20/40 pronounces the words that you write. Below are the directions for creating and working with Word Fix.
+1. Create a file O-CHORD, F, C and call the file Word.fix. 
+2. Press DOT 8 or DOTS 4-6 CHORD for a carriage return.
+3. Type the word that you want to have the M20/40 say correctly followed by an Equal Sign followed by the phonetic pronunciation of the word.
+For example: 
+ FreedomScientific=Freedom Scientific
+Stuart=Stewart
+4. Press DOT 8 or DOTS 4-6 CHORD for a carriage return.
+5. Type new word to be fixed using the same format.
+Note: 	Word Fix only fixes the pronunciation so that whenever the word is encountered in a file it will be pronounced correctly. This is not a spell check tool.
+Word Fix Rules:
+* Word Exceptions Check in the Status Menu must be on in order for the word fixes to be recognized in a file. (The Access key for Word Exceptions is E).
+* Each Word Fix needs to be on a separate line.
+* There can be no spaces in your Word Fix string, nor can there be a space before the first word. 
+* The word before the Equal Sign must be one word. After the Equal Sign you can have multiple words.
+
+
+
+Chapter 8
+Find, Replace, and Search  
+Anytime you search for text in a file, it is recommended that you first locate the position of your cursor. Pressing WH-SIGN CHORD (DOTS 1-5-6 CHORD) locates your cursor. In a file, text can be searched from any location in either direction. All editing and reading commands are available when typing the text string to be searched.
+Find
+To find text within a file, press F-CHORD (DOTS 1-2-4 CHORD), type in the text string, and press E-CHORD (DOTS 1-3-5 CHORD). This searches from the cursor location forward to the end of the file. Text strings cannot exceed 63 characters. 
+To search backwards from the cursor location in the file, press F-CHORD (DOTS 1-2-4 CHORD), type in the text to find, and press TH-SIGN CHORD (DOT 1-4-5-6 CHORD).
+To find a date, press F-CHORD (DOTS 1-2-4 CHORD), and press G-CHORD (DOTS 1-2-4-5 CHORD). This starts the Smart Calendar. Type the number of days or the date in MMDDYYYY format and press E-CHORD (DOTS 1-5 CHORD).
+Distinguish Case During Find
+The Braille Lite find feature is not case sensitive by default, but this can be enabled in the Status Menu or by pressing THE-SIGN CHORD from within any file.
+To enable "Distinguish Case During Find" from the Status Menu follow these steps:
+1. Press ST-SIGN CHORD (DOTS 3-4 CHORD) to open the Status Menu.
+2. Press THE-SIGN (DOTS 2-3-4-6) to move to Distinguish Case During Find.
+3. Press Y (DOTS 1-3-4-5-6) to set this option to on.
+4. Press E-CHORD (DOTS 1-5 CHORD) to exit the Status Menu.
+Note:	While case sensitive searches are sometimes very useful, they may seriously reduce the number of matches when performing a find operation.
+Replace
+The Braille Lite also lets you find and replace strings of text. 
+1. Press F-CHORD (DOTS 1-2-4 CHORD).
+2. Type in the text to find. 
+3. Press R-CHORD (DOTS 1-2-3-5 CHORD) 
+4. Type in the replacement text.
+5. Press R-CHORD (DOTS 1-2-3-5 CHORD).
+The Braille Lite then searches your file. When the specified text is found, the following options are available:
+* Press R (DOTS 1-2-3-5) to replace the currently found instance of text.
+* Press S (DOTS 2-3-4) to skip the currently found instance of text.
+* Press A (DOT 1) to replace all further instances of the specified text.
+* Press C-CHORD (DOTS 1-4 CHORD) to hear/display the line in which the text was found.
+Global Searches
+With global search you can search text in multiple files. There are two ways to search globally: from within a file, or from the File Menu.
+When searching from a file, follow these steps:
+1. Press F-CHORD (DOTS 1-2-4 CHORD).
+2. Type the string of text for which you want to search.
+3. Press F-CHORD (DOTS 1-2-4 CHORD).
+4. Type the "search options" you want to use. The following choices are available at the Search Options prompt:
+All Files		A (DOT 1)
+RAM Files		R (DOTS 2-3-4)
+Flash Files		F (DOTS 1-2-4)
+Ram and Flash Files	Z (DOTS 1-3-5-6)
+Files in
+Current Folder		O (DOTS 1-3-5)
+Braille Files		B (DOTS 1-2)
+Duxbury or
+Megadots Files		D (DOTS 1-4-5)
+Text Files		T (DOTS 2-3-4-5)
+Small Files
+(2 pages or less)		S (DOTS 2-3-4)
+Medium Size Files
+(3 to 10 pages)		M (DOTS 1-3-4)
+Large Files
+(over 10 pages)		L (DOTS 1-2-3)
+Case Sensitive		C (DOTS 1-4)
+Quiet Search		Q
+	(DOTS 1-2-3-4-5)
+Currently Open File		DOTS 4-6
+List Matches
+in Clipboard		DOTS 3-4-5-6
+5. Press E-CHORD (DOTS 1-5 CHORD) to execute.
+When searching from the File Menu (O-CHORD, F) (DOTS 1-3-5 CHORD, DOTS 1-2-4), follow these steps:
+1. Press F-CHORD (DOTS 1-2-4 CHORD).
+2. Type in a file mask, such as *.txt or *.brl.
+3. Press F-CHORD (DOTS 1-2-4 CHORD).
+4. Type in the string of text for which you want to search.
+5. Press E-CHORD (DOTS 1-5 CHORD).
+6. Type in the "search options" you want to use. TheSearch Options are the same as those listed above.
+7. Press E-CHORD (DOTS 1-5 CHORD).
+By default, the Braille Lite searches all RAM files, Braille files, and text files, regardless of folder. Searches are not case sensitive. If this is exactly the search you want, press E-CHORD (DOTS 1-5 CHORD) at the Search Options prompt. Otherwise, type in the options you desire. For example, to search large text files in both RAM and flash, type LTZ. To search just small files in the current folder, type SO. 
+When a match is found, the following options are available:
+Open File		O (DOTS 1-3-5)
+Continue Search		C (DOTS 1-4)
+Skip to Next File		S (DOTS 2-3-4)
+Speak Text in Context	C-CHORD 
+		(DOTS 1-4
+	CHORD)
+File Name		DOTS 1-5-6 
+                 		CHORD
+Abort		Z-CHORD
+	(DOTS 1-3-5-6 
+	CHORD)
+Note:	When you select Open File (O), the search is stopped. When you select Skip to Next File (S), the search continues from the next file.
+Chapter 9
+ Braille Lite Utilities
+Equipped with features that enhance your daily activity, your Braille Lite M20/40 notetaker has built-in utilities that help organize your busy life. The Braille Lite M20/40 includes a clock, a datebook, a phonebook, a stopwatch, a timer, and a calculator.
+Time and Date
+The Braille Lite M20/40 tracks the time and date for you and can be set to announce the time on the hour. The Braille Lite uses the date in conjunction with the Datebook to help you track appointments.
+Note:  	If you set the Speech Parameter to Most Punctuation, hours and minutes are spoken separated by the word "colon." If you set the Speech Parameter to Some Punctuation, time is spoken just as a person would say it.
+Setting the Time
+You set or change the time using one of two methods. Either enter the actual time or add/subtract the increment of time from the current hour. 
+1. Type an O-CHORD (DOTS 1-3-5 CHORD) to open the Options Menu. 
+2. Press S (DOTS 2-3-4), then press T (DOTS 2-3-4-5) for Set Time. The Braille Lite prompts you with, "Enter time HHMM 
+3. Enter the exact time such as "0530" or enter the increment of time you want to add or subtract from the current setting. Use a plus or minus to represent the number of backward or forward hours and minutes. (Example "+0130" or "-0010"). 
+4. Press E-CHORD (DOTS 1-5 CHORD) after you have typed in the new time or time increment.
+5. If using American 12 Hour time, press A for AM or P for PM. 
+Setting Time Format 
+The Braille Lite clock displays time in American 12 Hour format or European 24 Hour format.
+1. Enter the Options Menu using the O-CHORD (DOTS 1-3-5 CHORD) 
+2. Type an S (DOTS 2-3-4) for set. 
+3. Write a DROPPED NUMBER 2 (DOTS 2-3) for European time or a DROPPED NUMBER 1 (DOT 2) for American time. 
+4. Type an O-CHORD, T (DOTS 1-3-5 CHORD, DOTS 2-3-4-5) to check the time. 
+Setting Hourly Announcement
+The Braille Lite can be adjusted to announce each hour. 
+1. Enter the Status Menu using the ST-SIGN CHORD (DOTS 3-4 CHORD). 
+2. Write an H-CHORD (DOTS 1-2-5 CHORD). The Braille Lite says, "Hourly announcement, off." This is the default.
+3. Press the spacebar to cycle among the four options or use the dropped number equivalents.
+Bell Only	DROPPED
+	NUMBER 1 
+	(DOT 2)
+Voice Only	DROPPED
+	NUMBER 2
+	(DOTS 2-3)
+Bell and Voice	DROPPED
+	NUMBER 3 
+	(DOTS 2-5)
+Hourly 
+Announcement off		N 
+	(DOTS 1-3-4-5)
+Note:	Speech must be on for the voice announcement to work. If speech is off, the hourly announcement is displayed in Braille. The bell settings work with speech off.
+Announcing the Date
+To announce the date, press O-CHORD, D (DOTS 1-3-5 CHORD, DOTS 1-4-5). The Braille Lite announces, "Thursday February 1, 2001."
+Setting the Date
+To set the date:
+1. Type an O-CHORD, S (DOTS 1-3-5 CHORD, DOTS 2-3-4). 
+2. Type a D (DOTS 1-4-5).
+3. Enter date in MMDDYY format. 
+Smart Calendar
+The Braille Lite's Smart Calendar can calculate a future day and date. Press O-CHORD, G (DOTS 1-3-5 CHORD, DOTS 1-2-4-5) to open the Smart Calendar.
+1. Enter a date in the MMDDYYYY format, then press E-CHORD (DOTS 1-5 CHORD). The Braille Lite M20/40 speaks/displays the weekday, month, day, and year. (Ex. enter "03162001," the Braille Lite responds with Friday March 16, 2001). 
+2. Enter a number of days, such as "15" to determine the future day and date. 
+3. Enter a number of days preceded by a minus (-) sign, such as "-12" to determine that past day and date. 
+4. Enter a # CHORD (DOTS 3-4-5-6 CHORD) or E-CHORD (DOTS 1-5 CHORD) before entering the days or date in the MMDDYYYY format to determine the current Julian date. (The Julian date is the number of a particular day in a calendar year.) 
+Datebook
+With the Braille Lite Datebook you can store important information such as appointments, messages, and special occasions. There are three items in the Options Menu (DOTS 1-3-5 CHORD) that relate to the Datebook. The following lists the three items:
+* Check Appointments (A) (DOT 1) - this item checks for appointments on the current day. Before you can check appointments you must follow these steps to enable Check Appointments: 
+1. Press ST-SIGN CHORD (DOTS 3-4 CHORD) to open the Status Menu. 
+2. Press J (DOTS 2-4-5) to move to Check Appointments. 
+3. Press SPACEBAR to turn Check Appointments on. 
+4. Press E-CHORD (DOTS 1-5 CHORD) to exit the Status Menu. 
+* Open Datebook File (D-CHORD) (DOTS 1-4-5 CHORD) - this item opens the Datebook file. Navigate this file as you would any other file.
+* Datebook Entry (E) (DOTS 1-5) - this item adds an entry to the Datebook. Enter the number of days or enter the date in MMDDYYYY format. Then press E-CHORD (DOTS 1-5 CHORD). The Braille Lite verifies the day and date of the appointment, and then prompts for the event text. At this point, you have two options:
+Enter the event text and press E-CHORD (DOTS 1-5 CHORD). 
+Press F-CHORD (DOTS 1-2-4 CHORD). This places you in Browse Mode as the Braille Lite searches the Datebook for the selected date. If the date is not found, an entry for it is added and "no appointments" is indicated. If the date is found, you are taken to that entry, and the first line of event text for that date is spoken/displayed. 
+Browse Mode
+Browse Mode is a read only mode for reviewing Datebook entries. The following commands are available.
+Previous Line	DOT 1 CHORD
+Current Line	C-CHORD 
+	(DOTS 1-4
+	CHORD)
+Next Line	DOT 4 CHORD
+First Line	DOTS 2-3-6 
+	CHORD
+Last Line	DOTS 3-5-6
+ 	CHORD
+Start of Line	L-CHORD 
+	(DOTS 1-2-3
+	CHORD)
+End of Line	DOTS 4-5-6 
+	CHORD
+To edit entries from Browse Mode:
+1. Press I (DOTS 2-4) to insert a new line before the current line, or press A (DOT 1) to append a new line to the end of the current entry. Type in the event text and press E-CHORD (DOTS 1-5 CHORD) to return to Browse Mode. 
+2. Press E-CHORD (DOTS 1-5 CHORD) to edit the current line. When finished, press E-CHORD (DOTS 1-5 CHORD) to return to Browse Mode. 
+3. Press D (DOTS 1-4-5) to delete the current line. Press Y (DOTS 1-3-4-5-6) to confirm, or N (DOTS 1-3-4-5) to cancel. You are then returned to Browse Mode. 
+To switch to other Datebook entries from Browse Mode:
+Prior Entry	DOTS 2-3 CHORD
+Next Entry	DOTS 5-6 CHORD
+*Get New Date	G (DOTS 1-2-4-5)
+Exits Browse Mode	E-CHORD 
+	(DOTS 1-5
+	CHORD)
+*Get New Date returns you to the Datebook entry prompt, requesting a number of days or a date in MMDDYYYY format.
+Appointment Notification
+To set the Braille Lite to check for appointments on the current day each time you start it:
+1. Press ST-SIGN CHORD (DOTS 3-4 CHORD) to open the Status Menu.
+2. Press J (DOTS 2-4-5) to move to Check Appointments.
+3. Press Y (DOTS 1-3-4-5-6) to turn Check Appointments On.
+4. Press E-CHORD (DOTS 1-5 CHORD) to exit the Status Menu.
+Stopwatch
+The Braille Lite Stopwatch lets you measure elapse time. Track how long you work in a file, or the length of a presentation. 
+To enter the stopwatch, press O-CHORD, W (DOTS 1-3-5 CHORD, DOTS 2-4-5-6). The Braille Lite prompts with, "Stopwatch ready" and the display shows "00-00-00.0." The following commands are then available:
+Start/Stop Count		DOT 6 
+Reset Count			DOT 3 
+Read Count			SPACEBAR
+Exit	Z-CHORD
+	(DOTS 1-3-5-6 
+	CHORD)
+If you turn off the Braille Lite with the stopwatch running, the stopwatch will resume counting when you restart the Braille Lite. The Braille Lite M20/40 has a capacity of 23 hours 59 minutes 59.9 seconds.
+Timer
+The countdown timer is similar to an alarm clock or kitchen timer. Once set, the countdown timer cannot be interrupted. 
+To use the countdown timer you must be in stopwatch mode O-CHORD, W (DOTS 1-3-5 CHORD, DOTS 2-4-5-6). To use the timer, the following commands are available:
+Start Count	DOTS 3-4-5-6
+Enter Time	E-CHORD 
+	(DOTS 1-5
+	CHORD)
+Read Time 
+Remaining 			SPACEBAR 
+Timing in the Background
+You can set the timer while working in another Braille Lite file. To do this, press the E-CHORD (DOTS 1-5 CHORD) twice. This keeps you in your original file in the exact place where you left off before you brought up the timer. After the time is up, the Braille Lite says, "Time is up" and sounds an alarm.
+Calculator
+The Braille Lite calculator is very robust with both standard and scientific functions. The commands listed below are used to operate your calculator.
+Opens the calculator	O-CHORD, C (DOTS 1-3-5 CHORD, DOTS 1-4)
+Exits the calculator	Z-CHORD (DOTS 1-3-5-6 CHORD)
+Announces the information
+currently displayed in the 
+Calculator	C-CHORD (DOTS 1-4 CHORD)
+Clears the Calculator	O-CHORD (DOTS 1-3-5 CHORD)
+Toggles between speaking 
+digits or full numbers	F-CHORD
+(DOTS 1-2-4 CHORD)
+Standard operations are entered in the form A+B, with no spaces between the values and the operators. Press E-CHORD (DOTS 1-5 CHORD) to calculate the expression. 
+The following are the standard operators in Computer Braille:
+addition +	DOTS 3-4-6
+subtraction -	DOTS 3-6
+multiplication *	DOTS 1-6
+division /	DOTS 3-4
+percent %	DOTS 1-4-6
+square root	DOTS 3-4-5
+	CHORD
+decimal point .	DOTS 4-6
+left parenthesis (	DOTS 1-2-3-5-6
+right parenthesis )	DOTS 2-3-4-5-6
+comma ,	DOT 6
+Performing Percentage Calculations
+To determine the percentage of a number, type the percentage value, the percent sign, and the number from which you want to derive the percentage. Press E-CHORD (DOTS 1-5 CHORD) to calculate the expression. For example, to find 20 percent of 500, enter 20%500, and press E-CHORD (DOTS 1-5 CHORD). The Braille Lite calculates the expression and returns "100."
+Extracting a Square Root
+To extract the square root of a number, type the number, then press AR-SIGN CHORD (DOTS 3-4-5 CHORD). For example, to find the square root of 25, type 25 and press AR-SIGN CHORD (DOTS 3-4-5 CHORD). The Braille Lite immediately calculates the expression and returns "5."
+Setting Decimal Precision
+The Calculator's result varies according to the number of decimal places you have set in your calculator. Two decimal places are usually enough for most situations; but for special situations when you need more precision, results can be calculated to 12 decimal places. From within the calculator, press P-CHORD (DOTS 1-2-3-4 CHORD). The Braille Lite prompts for the number of decimal places. Enter a number from 1 to 12.
+Note: 	The Calculator drops ending zeros to the right of the decimal point. A value of 1.20 is displayed as 1.2, even if decimal precision is set to 2.
+Scientific Calculator Functions
+The scientific calculator's functions all use the same syntax. Type in the function name, followed by the arguments surrounded in parentheses. If there are multiple arguments, separate them with commas. Expressions cannot exceed 255 characters.
+To determine an average, type AVG(#,#,#) and press E-CHORD (DOTS 1-5 CHORD). 
+To calculate the median, type MEDIAN(#,#,#) and press E-CHORD (DOTS 1-5 CHORD). 
+To generate a random number between 0 and 1, type RAND() and press E-CHORD (DOTS 1-5 CHORD). 
+To determine the square root of a number, type AR-SIGN CHORD (DOTS 3-4-5 CHORD)(#) and press E-CHORD (DOTS 1-5 CHORD). 
+Trigonometric Functions
+To calculate the sine of 90 degrees or pi/2 radians, type SIN(90) and press E-CHORD (DOTS 1-5 CHORD). The Braille Lite returns, "One." The Calculator default is in degrees.
+To switch to radians, press R-CHORD (DOTS 1-2-3-5 CHORD). Type SIN(pi/2) and press E-CHORD (DOTS 1-5 CHORD). The Braille Lite returns, "one." Press R-CHORD (DOTS 1-2-3-5 CHORD) again to switch back to degrees.
+Other trigonometric functions are:
+Cosine	COS
+Tangent	TAN
+Cotangent	COT
+Arcsine	ASIN
+Arccosine	ACOS
+Arctangent	ATAN
+Base e log	LN
+Base 10 Log	LOG
+Base e antilog	ALN
+Base 10 antilog	ALOG
+Conversions
+The Calculator provides functions for many conversions. Enter the value of what you want to convert as the argument. Remember that arguments must be contained within parentheses.
+Decimal to Hexadecimal	DH
+Decimal to Octal	DO
+Decimal to Binary	DB
+Hexadecimal to Decimal	HD 
+Octal to Decimal	OD
+Binary to Decimal	BD
+Centigrade to Fahrenheit	FAREN
+Fahrenheit to Centigrade	CENTI
+Centimeter to Inches	IN
+Inches to Centimeters	CM
+Kilometers to Miles	MI
+Miles to Kilometers	KM
+Gallons to Liters	L
+Liters to Gallons	GAL
+Pounds to Kilograms	KG
+Kilograms to Pounds	LB
+Ounces to Grams	G
+Grams to Ounces	OZ
+Wind chill 
+(temperature in Fahrenheit, 
+wind speed)	WC
+Storing and Using the Memory Locations
+The Braille Lite calculator has 25 memory locations where you can store results of computations. These memory locations are labeled A through Z. Memory location R is reserved because it stores your last result. 
+There are two ways to store a number in a memory location.
+1. Type an arithmetic expression and press E-CHORD (DOTS 1-5 CHORD) to compute the result. 
+2. Press S-CHORD (DOTS 2-3-4 CHORD) to store the result. 
+3. Type the letter of the memory location you want to use. 
+The second method is to type a number into the Calculator, press E-CHORD (DOTS 1-5 CHORD), type S-CHORD (DOTS 2-3-4 CHORD), and specify the memory location you want to use.
+To read the contents of a memory location, type the letter of that location followed by E-CHORD (DOTS 1-5 CHORD).
+To use numbers stored in different memory locations as part of an expression, reference the memory location in your expression. For example, if you have numbers stored in memory locations A and B, the expression A+B followed by E-CHORD (DOTS 1-5 CHORD) returns the sum of these two numbers.
+Phonebook
+The Braille Lite includes a phonebook to manage contact information. The Phonebook tracks much more than just phone numbers. It can manage names, addresses, phone numbers, e-mail addresses, and more.
+There are two items in the Options Menu O-CHORD (DOTS 1-3-5 CHORD) that relate to the Phonebook. The following lists the two items:
+* Open Phone Book (P-CHORD)(DOTS 1-2-3-4 CHORD) - this item opens a phonebook file. 
+Note: 	You may have multiple phone files, but the first word in each should be "phone." For example, you may want to have separate phonebook files for personal and business contacts. One could be named "phone personal," and the other could be named "phone business." You navigate this file as you would any other file.
+* Phonebook (P)(DOTS 1-2-3-4) - this item adds phonebook entries, or creates and configures phonebook files. 
+Adding Phonebook Entries
+When you first press O-CHORD, P (DOTS 1-3-5 CHORD, DOTS 1-2-3-4), a list of fields is displayed. The "Name Field" must always be populated with information, otherwise the Braille Lite returns you to your current file and says, "Abort." Records are alphabetized based on the Name Field. Use a consistent naming scheme, such as last name, first name. Use consistent capitalization as this makes it easier to locate individual records. 
+
+* Type in the information for each field and press E-CHORD (DOTS 1-5 CHORD) to move to the next field. 
+* Press DOT 1 CHORD or DOT 4 CHORD to move through the available fields. Field names are indicated as you move through them. 
+* Press # CHORD (DOTS 3-4-5-6 CHORD) followed by the first letter of a field name to move to a specific field. 
+* Press E-CHORD (DOTS 1-5 CHORD) in the comment field, or press F-CHORD (DOTS 1-2-4 CHORD) when finished. 
+Note: 	When entering field information, B-CHORD (DOTS 1-2 CHORD) is the only available editing option.
+The default field names for the phonebook are as follows:
+Name	Home Phone
+Title	Work Phone
+Company	Pager
+Address	Cell Phone
+Address 2	Fax
+City	E-Mail
+State	Web Address
+Comments	Zip Code
+Phonebook Options
+Press O-CHORD (DOTS 1-3-5 CHORD) from the list of field names to access 3 configuration options for the phonebook. Press an E-CHORD (DOTS 1-5 CHORD) to select a choice or exit the procedure with a Z-CHORD (DOTS 1-3-5-6 CHORD).
+The 3 configuration options are as follows:
+* Set up Field Names 
+* Select Phone File 
+* Re-initialize Phonebook 
+Setup Field Names
+This item presents a list of all available fields and indicates On or Off for each of them. This table lists the commands associated with Setup Field Names.
+
+Cycles through each option	DOT 1 CHORD
+	DOT 4 CHORD
+Turns the fields on and off	SPACEBAR
+Enables those fields commonly 
+used in a personal phonebook	P (DOTS 1-2-3-4)
+Enables those fields commonly 
+used in a business phone book	B (DOTS 1-2)
+Enables all fields	Z (DOTS 1-3-5-6)
+Returns you to the Phone 
+Options Menu	E-CHORD (DOTS 
+	1-5 CHORD)
+Select Phone File
+This item presents a list of all phone files with names beginning with "phone," and lets you specify which phone file is active. Phonebook entries are always saved in the active phone file.
+* Use the DOT 1 CHORD or DOT 4 CHORD to cycle through the list and press E-CHORD (DOTS 1-5 CHORD) on the file you want to have active. 
+* Press N (DOTS 1-3-4-5) to create a new phone file and set it as active. This option also is used to activate a phone file with a name that does not begin with "phone." 
+Note: 	Phonebook files contain the phone records you enter. They can have any file name, but are only listed under Select Phone File if their name begins with "phone." 
+Reinitialize Phonebook
+This item resets several phone related settings:
+* The default phone file, "Phone," is set as active. 
+* All fields are turned on in all phone files with names beginning with "Phone." 
+* Phone files with names that do not begin with "Phone" are only affected if they are active when Reinitialize Phonebook is selected. Press E-CHORD (DOTS 1-5 CHORD) or Z-CHORD (DOTS 1-3-5-6 CHORD) to exit from any of the phonebook configuration options. You may need to press E-CHORD (DOTS 1-5 CHORD) twice to return to the list of fields in which information is entered. 
+Chapter 10
+Macros
+A macro is a set of recorded commands that automates a given task. Pressing one keyboard command starts the macro, executing the entire series of assigned commands. Using macros can significantly increase your productivity because it allows you to automate frequently used tasks. Use macros for repetitive or complex tasks such as inserting your name and address into a document, launching a program, or copying and pasting data from one file to another.
+The first time you create a macro, the unit automatically creates a file called "macros.sys" and places the file at the end of the files list. When recording macros, keep the following points in mind: 
+* You can create up to 64 macros with each macro comprising 63 keystrokes.
+* Use meaningful alphabet name designations or Braille symbol designations when naming your macros.
+* Carefully plan and record your macros to avoid keystroke errors. (This is important when creating a macro that edits text or manipulates files).
+Recording macros uses the following basic steps.
+Recording a Macro
+To record, position your cursor at the point where you want to use the macro, start the recording and execute the steps included in the macro. For example, if you want a macro to insert a commonly used closing at the end of a letter, position your cursor at the end of a file before recording the macro.
+1. Press N-CHORD (DOTS 1-3-4-5 CHORD) to start the macro recorder. 
+2. Enter the name of the macro. The prompt, "Recording" is spoken/displayed.
+3. Perform the steps of your macro.
+4. Press N-CHORD (DOTS 1-3-4-5 CHORD) to complete the recording or press Z-CHORD (DOTS 1-3-4-6 CHORD) to abort the recording.
+The following commands add functionality to your macros. Use these chords in the recording process of your macros. 
+Executing a Macro
+Execute a macro by pressing J-CHORD (DOTS 2-4-5 CHORD) followed by the name of the macro. 
+Speaking or Silencing Macros
+To use the speech as you play or record a macro, press V-CHORD (DOTS 1-2-3-6 CHORD). To silence the speech, press K-CHORD (DOTS 1-3 CHORD).
+Nesting a Macro
+Nesting a macro means you incorporate an existing macro into the one you are recording. To nest a macro, first record your new macro, then at the point you want the existing macro to take over, press J-CHORD (DOTS 2-4-5 CHORD) and type in the MACRO NAME. 
+Start-Up Macros
+A Start-Up macro plays every time you power up your Braille Lite. To create a Start-Up Macro, first press N-CHORD (DOTS 1-3-4-5 CHORD), then press SPACEBAR, Y (DOTS 1-3-4-5-6) for yes or N (DOTS 1-3-4-5) for no. Enter the keystrokes you want the macro to perform and end the recording with another N-CHORD (DOTS 1-3-4-5 CHORD).
+Note:	If a start up macro causes difficulties in the operation of your Braille Lite, bypass running it by pressing SPACEBAR during power on.
+Erasing a Macro
+To erase a macro, press N-CHORD, MACRO NAME, N-CHORD (DOTS 1-3-4-5 CHORD, MACRO NAME, DOTS 1-3-4-5 CHORD).
+To erase a Start Up macro, press N-CHORD, SPACEBAR, Y or N, N-CHORD (DOTS 1-3-4-5 CHORD, SPACEBAR, DOTS 1-3-4-5-6 or DOTS 1-3-4-5, DOTS 1-3-4-5 CHORD).
+Write-Protecting a Macro
+Write-protecting prevents you from creating new macro files with names of older macro files. To use write-protect, first enter the macro file, and press P-CHORD (DOTS 1-2-3-4 CHORD). To unprotect macro files, press U-CHORD (DOTS 1-3 CHORD). 
+   
+Chapter 11
+Printing and Embossing
+Most printers use the parallel port, and most embossers use the serial port. If you are going to connect the Braille Lite to an embosser through the serial port, the Status Menu serial parameters settings must match the settings on the embosser.
+The files in the Braille Lite Editor are plain text. They contain no layout or character formatting such as bold, italic, or underline. You must format text in a document when printing or embossing. Formatting commands - strings of characters included in your files - affect text layout and character appearance. The formatting characters are not printed or embossed; instead they instruct your printer or embosser on how to render a document.
+Status Menu Settings
+There are several settings within the Status Menu that control how documents are printed or embossed. For basic documents, minor adjustments to these settings may be sufficient to provide the formatting features you want to use.
+Press ST-SIGN CHORD (DOTS 3-4 CHORD) to open the Status Menu; then press DOTS 5-6 CHORD to move through the sections of this menu until "Format Parameters" is indicated. This section of the Status Menu contains the following items.
+Printer Compatibility
+This item specifies the printer settings available. 
+* Epson Compatible Printer
+* Imagewriter Printer
+* HP Printer 
+Toggle between the settings with SPACEBAR. If you do not use one of these printer brands, check your printer documentation for information on "compatibility" or "emulation." If you are able to set your printer to emulate one of these brands, or if your printer is compatible with one of these brands, your printer should work with the Braille Lite.
+Print Commands
+Print Commands affect how files are printed or embossed.
+To send an open file to the serial port, press T-CHORD (DOTS 2-3-4-5 CHORD). Then specify which parameters you want printed.
+Formatted Text	A or T 
+	(DOT 1 or DOTS 2-
+	3-4-5)
+Formatted Braille	B (DOTS 1-2)
+Line	L (DOTS 1-2-3)
+From Cursor
+to Mark	M (DOTS 1-3-4)
+Paragraph	P (DOTS 1-2-3-4)
+Unformatted File	S (DOTS 2-3-4)
+Braille Translation
+without Formatting
+(Use this parameter
+when importing a file
+into a word processor)	W (DOTS 2-4-5-6)
+Translate to
+Formatted Grade II	2 (DOTS 2-3)
+Translate to Grade II
+(No Formatting)	DOTS 5-6
+From Cursor to
+End of File	Z (DOTS 1-3-5-6)
+Print to File	F (DOTS 1-2-4)
+Print to file only works through the serial port. When using this command, you are asked for one of the preceding parameters, then for a destination file name.
+To send an open file to the parallel port, press T-CHORD (DOTS 2-3-4-5 CHORD) and one of the following parameters. 
+Formatted Braille	B-CHORD 
+	(DOTS 1-2
+	CHORD)
+Line					From the menu choose 
+					"line to parallel port"
+From cursor to mark	M-CHORD
+					(DOTS 1-3-4
+	CHORD)
+Paragraph			P-CHORD
+					(DOTS 1-2-3-4 
+		CHORD)
+
+Unformatted file		S-CHORD
+					(DOTS 2-3-4
+	CHORD)
+Formatted text		T-CHORD
+					(DOTS 2-3-4-5
+	CHORD)
+Braille translation
+without formatting
+(Use this parameter
+when importing a file
+into a word processor)		W-CHORD
+					(DOTS 2-4-5-6
+	CHORD)
+Translate to
+Formatted Grade II		DOT 2-3 CHORD
+Translate to Grade II
+(No Formatting)				DOTS 5-6 CHORD
+All text from cursor
+to end of file				Z-CHORD
+     					(DOTS 1-3-5-6	
+		CHORD)
+Page Numbering
+Number Pages specifies whether or not page numbers are included in your printed and embossed documents. 
+Put Page Number on First Page determines if the first page of your document includes a page number.
+Document Layout
+Several Status Menu items control overall layout of your printed or embossed documents. These items are listed here with their default values. 
+Double Space (Off) specifies whether the document is single or double-spaced. This setting applies to both printed and embossed documents.
+There are several Status Menu items that only affect how documents are printed:
+* Print Line Length (75)
+* Print Left Margin (10)
+* Print Page Length (60)
+* Print Top Margin (6)
+There are also several Status Menu items that only affect how documents are embossed:
+* Braille Line Length (33)
+* Braille Left Margin (1)
+* Braille Page Length (25)
+* Braille Top Margin (1)
+Formatting Commands
+Formatting commands are inserted into the text of your documents to produce results that cannot be achieved through more general formatting settings in the Status Menu. We recommend you add formatting commands as a last step before printing or embossing a document. 
+Syntax
+Formatting commands must be entered in a specific manner to work properly. If you work with HTML you already understand the need for proper syntax in achieving desired results. 
+All formatting commands begin with the dollar sign ($) (DOTS 1-2-4-6).
+* All formatting commands must have a space before and after the command. For example, to bold text: The word  $BB bold $BF will print in a boldface font.
+* Many formatting commands contain two elements, one to begin the formatting, and one to end it. If the ending element is left out, the printer does not know to stop applying that format.
+* Many formatting commands must be used at certain locations relative to the text you want to affect. For example, when centering a line of text, the center command ( $C ) must be on each line that is to be centered.
+* Many formatting commands require a value as part of the command. This must be included directly after the command, but before the space. For example, to set a tab stop of five characters, enter the command ( $TS5 ).
+The following sections list the available formatting commands. The surrounding parentheses are not part of the command. If a numeric value is required as part of a command, it is indicated with the number sign (#).
+Attribute Marking
+Formatting commands related to attribute marking apply only to documents that are to be printed.
+Bold Begin		( $BB )
+(DOTS 1-2-4-6, 1-2, 1-2)
+Bold Finish		( $BF )
+(DOTS 1-2-4-6, 1-2, 1-2-4)
+Italic Begin		( $IB )
+(DOTS 1-2-4-6, 2-4, 1-2)
+Italic Finish		( $IF )
+(DOTS 1-2-4-6, 2-4, 1-2-4)
+Double Strike Begin		( $DBSB )
+(DOTS 1-2-4-6, 1-2, 2-3-4, 1-2)
+Double Strike Finish		( $DBSF )
+(DOTS 1-2-4-6, 1-2, 2-3-4, 1-2-4)
+Strike Out Begin		( $SOB )
+(DOTS 1-2-4-6, 2-3-4, 1-3-5, 1-2)
+Strike Out Finish		( $SOF )
+(DOTS 1-2-4-6, 1-3-5, 1-2-4)
+Underline Begin		( $UB )
+(DOTS 1-2-4-6, 1-3-6, 1-2) 
+Underline Finish		( $UF )
+(DOTS 1-2-4-6, 1-3-6, 1-2-4)
+Margins and Alignment
+Commands for adjusting margins work for both print and embossed documents. Some of the alignment commands also work for both print and embossed documents, but some of them only apply to print documents. 
+When adjusting margins, it is essential to consider the related settings within the Status Menu. 
+Set Left Margin		( $ML# )
+(DOTS 1-2-4-6, 1-3-4, 1-2-3, #)
+Set Right Margin		( $MR# )
+(DOTS 1-2-4-6, 1-3-4, 1-2-3-5, #)
+Set Top Margin		( $MT# )
+(DOTS 1-2-4-6, 1-3-4, 2-3-4-5, #)
+Set Bottom Margin		( $MB# )
+(DOTS 1-2-4-6, 1-3-4, 1-2, #)
+Note:	The bottom margin defaults to 0 for print documents. If page numbering is turned on, this changes to 6. Embossed documents use a default bottom margin of 0.
+Set Page Length	( $PL# )
+(DOTS 1-2-4-6, 1-2-3-4, 1-2-3, #)
+Set Page Width	( $PW# )
+(DOTS 1-2-4-6, 1-2-3-4, 2-4-5-6, #)
+Increase Left Margin	( $ML+# )
+(DOTS 1-2-4-6, 1-3-4, 1-2-3, 3-4-6, #)
+Decrease Left Margin	( $ML-# )
+(DOTS 1-2-4-6, 1-3-4, 1-2-3, 3-6, #)
+Increase Right Margin	( $MR+# )
+(DOTS 1-2-4-6, 1-3-4, 1-2-3-5, 3-4-6, #)
+Decrease Right Margin	( $MR-# )
+(DOTS 1-2-4-6, 1-3-4, 1-2-3-5, 3-6, #)
+Increase Top Margin	( $MT+# )
+(DOTS 1-2-4-6, 1-3-4, 2-3-4-5, 3-4-6, #)
+Decrease Top Margin	( $MT-# )
+(DOTS 1-2-4-6, 1-3-4, 2-3-4-5, 3-6, #)
+Increase Bottom Margin	( $MB+# )
+(DOTS 1-2-4-6, 1-3-4, 1-2, 3-4-6, #)
+Decrease Bottom Margin	( $MB-# )
+(DOTS 1-2-4-6, 1-3-4, 1-2, 3-6, #)
+Outdent Left Margin 1 
+Tab Stop	( $OUT )
+(DOTS 1-2-4-6, 1-3-5, 1-3-6, 2-3-4-5)
+Center Current Line	( $C )
+(DOTS 1-2-4-6, 1-4)
+Note:	The center command must be on every line of text that is to be centered. If the text wraps to a new line when printed or embossed, the text that wraps will not be centered.
+Right Justification		( $JR )
+(DOTS 1-2-4-6, 2-4-5, 1-2-3-5)
+No Justification		( $JN )
+(DOTS 1-2-4-6, 2-4-5, 1-3-4-5)
+Full Justification		( $JF )
+(DOTS 1-2-4-6, 2-4-5, 1-2-4)
+Note:	Full justification does not work with embossed files.
+Set Line Spacing		( $LS# )
+(DOTS 1-2-4-6, 1-2-3, 2-3-4, #)
+This setting lets you override the Status menu setting. For example, in a double spaced term paper, long quotations should be single spaced.
+Tabs
+Tabs work similar to word processor program on a personal computer. The tab size is measured in spaces from the character or space typed in the document just prior to the tab.
+Set Tab Size		( $TS# )
+(DOTS 1-2-4-6, 2-3-4-5, 2-3-4, #)
+Insert Tab		( $T )
+(DOTS 1-2-4-6, 2-3-4-5)
+Set Tab Stop		( $TO# )
+(DOTS 1-2-4-6, 2-3-4-5, 1-3-5, #)
+Note:	Once you set the tab size, the insert tab command uses this setting. However, to use the tab stop, you must use that command each time rather than the insert tab command.
+Page Numbering
+Page numbering is enabled or disabled in the Status Menu, but for finer control of how your pages are numbered, use the following format commands. If page numbering in the Status Menu is turned off, these commands have no effect.
+Numbering Type
+Arabic Numbers		( $PNAR )
+(DOTS 1-2-4-6, 1-2-3-4, 1, 1-2-3-5)
+Roman Numerals		( $PNRN )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, 1-2-3-5, 1-3-4-5)
+No Numbering		( $PNNP )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, 1-3-4-5, 1-2-3-4)
+Start Numbering at		( $PN# )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, #)
+Numbering Position
+Top Left		( $PNTL )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, 2-3-4-5, 1-2-3)
+Top Center		( $PNTC )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, 2-3-4-5, 1-4)
+Top Right		( $PNTR )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, 2-3-4-5, 1-2-3-5)
+Bottom Left		( $PNBL )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, 1-2, 1-2-3)
+Bottom Center		( $PNBC )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, 1-2, 1-4)
+Bottom Right		( $PNBR )
+(DOTS 1-2-4-6, 1-2-3-4, 1-3-4-5, 1-2, 1-2-3-5)
+Headers and Footers
+Use headers and footers to place the same text at the top or bottom of each page of a printed  or embossed document.
+Header Begin		( $HB )
+(DOTS 1-2-4-6, 1-2-5, 1-2)
+Footer Begin		( $FB )
+(DOTS 1-2-4-6, 1-2-4, 1-2)
+End Header/Footer Text		( $- )
+(DOTS 1-2-4-6, 3-6)
+To indicate the text you want to use as a header or footer, specify the appropriate command listed above followed by the text and any formatting commands you want to use (such as center, bold, or italic). Then insert the End Header/Footer Text command. This text will appear at the top or bottom of each printed or embossed page, formatted as you specify with other formatting commands. 
+Disable Header		( $H- )
+(DOTS 1-2-4-6, 1-2-5, 3-6)
+Reenable Header		( $H+ )
+(DOTS 1-2-4-6, 1-2-5, 3-4-6)
+Disable Footer		( $F- )
+(DOTS 1-2-4-6, 1-2-4, 3-6)
+Reenable Footer		( $F+ )
+(DOTS 1-2-4-6, 1-2-4, 3-4-6)
+Other Commands
+New Line		( $L )
+(DOTS 1-2-4-6, 1-2-3)
+New Paragraph		( $P )
+(DOTS 1-2-4-6, 1-2-3-4)
+New Page		( $F )
+(DOTS 1-2-4-6, 1-2-4)
+Insert Current Time		( $TM )
+(DOTS 1-2-4-6, 2-3-4-5, 1-3-4)
+Insert Current Date		( $DT )
+(DOTS 1-2-4-6, 1-4-5, 2-3-4-5)
+Start Ignore Text		( $( )
+(DOTS 1-2-4-6, 1-2-3-5-6)
+End Ignore Text		( $) )
+(DOTS 1-2-4-6, 2-3-4-5-6)
+Respect Braille 
+Translator Setting		( $BRL+ )
+(DOTS 1-2-4-6, 1-2, 1-2-3-5, 1-2-3, 3-4-6)
+No Translation		( $BRL- )
+(DOTS 1-2-4-6, 1-2, 1-2-3-5, 1-2-3, 3-6)
+Note:	The Braille translator settings only affect embossed documents.
+Don't Form Feed 
+After Print		( $NF )
+(DOTS 1-2-4-6, 1-3-4-5, 1-2-4)
+Wait for a Keypress 
+After Each Page is 
+Printed		( $W )
+(DOTS 1-2-4-6, 2-4-5-6)
+End Formatting		( $EF )
+(DOTS 1-2-4-6, 1-5, 1-2-4)
+Information Commands
+Show Formatting 
+Progress	( $ST )
+(DOTS 1-2-4-6, 2-3-4, 2-3-4-5)
+Pages Printed	SPACEBAR
+Percent Printed	+ CHORD:
+(DOTS 3-4-6 CHORD, 1-5-6)
+Chapter 12
+Connecting to a Personal Computer
+The Braille Lite serves as a refreshable Braille display for your screen access software, or you can connect it to your PC for easy and convenient file transfers. You can also use the external disk drive - available from Freedom Scientific - to move files between your PC and the Braille Lite via disk.
+JAWS and Connect Outloud
+The Braille Lite provides tactile access to JAWS and Connect Outloud supported applications through the Braille Display Mode. Toggle the switch on the left edge of the Braille Lite toward the front of the unit to enter Braille Display Mode. The Braille Lite should be connected to your PC through the serial port, powered on, and toggled to Braille Display Mode before JAWS or Connect Outloud is started.
+Refer to the JAWS or Connect Outloud Online Help Systems for information on specific Braille Lite commands that interact with these applications and the programs they support.
+HyperTerminal
+Any terminal program can be used to transfer files to and from the notetaker. For the purpose of this document, we will assume you will be using HyperTerminal, a terminal program that comes with the Windows Operating System.
+To set up your PC for communication with your notetaker, first use the TNS3 serial cable from Freedom Scientific to connect your notetaker to Com Port 1 of your computer. If you are using a Braille display, you will need to temporarily disable this in JAWS. To do this, select Braille from the Options Menu of JAWS, and TAB to the Default Braille Display list. Select No Display and press ENTER. You will need to close and reload JAWS for this to take effect.  
+On most windows systems, HyperTerminal can be found on the Start Menu, either under Programs/Accessories/Communications, or directly under Programs/Accessories. Once in the correct menu, you will notice a HyperTerminal Submenu. There may also be a separate HyperTerminal item outside of this submenu. If this separate item exists, select it and press ENTER. Otherwise, enter the HyperTerminal Submenu and select hyperterminal.exe from there.
+A dialog will appear allowing you to configure a new connection. The first control is an edit box, asking for the name of the connection. You can enter anything you want here. However, try to make it unique, as this will become the name of the item used to connect to the notetaker in the future. Press TAB, and you land on a list box containing several graphical icons.  Press TAB again to move to the OK button and press SPACEBAR.
+The next dialog asks for details about this connection, such as the telephone number if you have a modem installed. Since you are not actually connecting using a telephone, TAB to the Connect Using combo box. Press C until you reach the Com Port to which you have connected the cable. TAB to the OK button and press SPACEBAR or ENTER. Next you are presented with a dialog containing various settings for this Com Port, such as baud rate. The parameters, both here and in your notetaker, should be set to 9600 baud, 8 data bits, no parity, 1 stop bit and software handshake (called xon/xoff flow control in HyperTerminal). TAB to the ok button and activate it. 
+The dialog will disappear and your PC will attempt to connect to the notetaker.  If the connection fails, a dialog will appear informing you of this. Otherwise, you will be placed in a window where several options are available to you. This same window will appear in the future, when you select the name that you assigned to this session from the HyperTerminal Submenu of the Start Menu.
+Transferring from the PC to the notetaker:
+1. On the PC, press ALT+T.
+2.  Select send file.
+3. Type in the name of the file you want to send, or use the browse button to select the file.
+4. Select Y Modem from the protocol list.
+5. On the notetaker, enter the File Menu with 
+O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4). 
+6. Press T-CHORD (DOTS 2-3-4-5 CHORD).
+7. Press R (DOTS 1-2-3-5) for receive.
+8. Press Y (DOTS 1-3-4-5-6) for Y Modem.
+9. The notetaker will say, "starting transfer."
+10. On the PC, activate the OK button. The transfer should begin at this point.
+Transferring from the notetaker to the PC:
+1. On the PC, press ALT+T.
+2. Select receive file.
+3. Enter the directory where you want to save the file.
+4. Select Y Modem from the protocol list.
+5. On the notetaker, enter the file menu with O-CHORD, F (DOTS 1-3-5 CHORD, DOTS 1-2-4). 
+6. Press T-CHORD (DOTS 2-3-4-5 CHORD).
+7. Press S (DOTS 2-3-4) for send.
+8. Press Y (DOTS 1-3-4-5-6) for Y Modem.
+9. A list of existing files will appear. Mark one or more files using SPACEBAR. Press E-CHORD (DOTS 1-5 CHORD) when all files you wish to send are selected. 
+10. On the PC, activate the OK button. The transfer should begin at this point. Please be patient. It may take a little time before the transfer begins.
+Note: 	If you use a Braille display and want to go back to using it after finishing the transfer, you will need to unload and reload JAWS. Also, be sure to close the HyperTerminal window so that JAWS can recognize the display.
+External Disk Drive
+Freedom Scientific offers an external disk drive that works well with the Braille Lite. Use the disk drive to copy files to and from the Braille Lite. Use the cable provided with this drive to connect it to the disk drive port on the Braille Lite. You can use either of the two PS2-style serial ports, which on the M20 are located on either side of the unit. On the M40 they are located on the back side of the unit. 
+After connecting the disk drive, power on the Braille Lite and the disk drive. Insert a disk and press S-CHORD, D (DOTS 2-3-4 CHORD, DOTS 1-4-5) to access the directory of the disk drive. Use DOT 1 CHORD to move up the list or DOT 4 CHORD to move down the list. When the name of the file is displayed press S-CHORD, G (DOTS 1-5 CHORD, DOTS 1-2-4-5) to get the file you want to use.
+The recommended option for copying files to and from the disk drive is Y-modem transfers. Press Y (DOTS 1-3-4-5-6) to select this item. You are prompted to press S (DOTS 2-3-4) to send or R (DOTS 1-2-3-5) to receive. 
+Send Options
+If you choose to send, you have several options:
+* Press the SPACEBAR to mark the selected file. Move through the list to select all files you want to send to the disk drive.
+* Press R (DOTS 1-2-3-5) to mark all RAM files.
+* Press F (DOTS 1-2-4) to mark all Flash files.
+Press E-CHORD (DOTS 1-5 CHORD) when complete, and the transfer begins.
+Receiving from the Disk Drive
+After Selecting Y-modem transfers, choose R (DOTS 1-2-3-5) to receive from the disk drive, you are prompted to indicate what you want to receive.
+* Type the name of a file located on the disk in the disk drive and press E-CHORD (DOTS 1-5 CHORD).
+* Type in a file mask, such as *.txt or *.* and press E-CHORD (DOTS 1-5 CHORD).
+File masks use wild card characters to fill in the parts of the file names that are not specified. For example, *.txt indicates to copy all files ending in .txt. *.* indicates to copy all files.
+For more information, refer to the external disk drive's manual. 
+If you have technical questions, please call 727-803-8600 or email: notetakers@freedomscientific.com
+
+
+
+
+
+Chapter 13
+Maintenance
+The Braille Lite is a complex electronic device and must be cared for properly to maintain its peak performance. This section discusses caring for the Braille Lite, updating to the latest firmware, and basic troubleshooting steps to take in case the Braille Lite stops functioning properly.
+Resetting the Braille Lite
+The Braille Lite, like any complex computing system, occasionally may lock, freeze, or seem sluggish. If this occurs regularly, contact Freedom Scientific's hardware technical support. However, if this occurs infrequently, take these steps to get you back up and running without delay.
+Warm Reset
+Press = CHORD (DOTS 1-2-3-4-5-6 CHORD) to warm reset your Braille Lite. A warm reset does not affect your files, but all settings you have configured are reset to defaults.
+If the first warm reset does not help, press and hold down = CHORD (DOTS 1-2-3-4-5-6 CHORD) during power on.
+Cold Reset
+A cold reset may result in loss of all files on the Braille Lite so this should be used only as a last resort. Press and hold down I-CHORD (DOTS 2-4 CHORD) during power on to cold reset your Braille Lite. This resets your unit to its default parameters and erases calculator memories. During the process:
+1. You are asked to initialize the file system. Answering Y (DOTS 1-3-4-5-6) for yes erases all RAM files from the file menu. 
+2. Next you are asked to initialize the Flash system. Pressing Y (DOTS 1-3-4-5-6) for yes erases all Flash files. 
+3. Then you are asked to initialize the folder system. Doing so without initializing the file or Flash systems should allow you to later repair your folders without losing files. 
+4. Finally you are asked to delete all data in the file area. Answering Y (DOTS 1-3-4-5-6) for yes permanently deletes all files.
+To perform a cold reset without losing files:
+1. Hold down I-CHORD (DOTS 2-4 CHORD) during system power on.
+2. Press N (DOTS 1-3-4-5) for no when prompted to initialize the file system.
+3. Press N (DOTS 1-3-4-5) for no when prompted to initialize the flash system.
+4. Press Y (DOTS 1-3-4-5-6) for yes when prompted to initialize the folder system.
+5. Press N (DOTS 1-3-4-5) for no when asked to delete all file information in the file area.
+6. Recreate your folders using the same names as were previously used.
+Hardware Reset
+There is a hardware reset button on the back of the Braille Lite just left of the parallel port. This button is small and recessed. Use a paper clip or a toothpick to press this button.
+Using the hardware-reset button does not delete your files, and may not even reset configuration settings to defaults. This button should be used only if the other reset options do not respond. If your Braille Lite is functioning normally and you press this button, there may be no response at all.
+Updating the Firmware
+The Braille Lite uses firmware that is easy to update. Updating to the newest firmware ensures you have the latest features and functionality. You do not need to service your Braille Lite to update the firmware. Just back up all your files, load the firmware update into your Braille Lite, and run it. After completing the update, remember to perform a cold reset. To begin a cold reset, press and hold I-CHORD (DOTS 2-4 CHORD) during power on. 
+Getting Started
+Before the update process is started, all files on the Braille Lite need to be backed up to a diskette, a compact flash card or to your computer. The update process may delete files on the Braille Lite, so files not backed up may be lost. The update file is a large file so if you have lots of files in RAM you may need to move them to Flash.
+This process updates the system software in the Braille Lite. If this process is interrupted, permanent damage may result. If your battery is low, we recommend charging it, or running the update while using the AC adapter.
+Starting the Update
+If you have never run an update before, or if you would like to listen to the instructions and prompts while updating your unit, please turn on speech before beginning the update process. Running the update program does not automatically turn speech on. To turn speech on in the Status Menu, press S-CHORD or press V in the Options Menu.
+1. Press O-CHORD, F and navigate to appropriate update file. For the M20, the update file is called Blm20eng.bns. For the M40, the update file is called Blm40eng.bns. Press O-CHORD to run the program. for Type Lite users, Tlteng.bns. 
+2. A prompt warns that updating your unit may destroy your files, and then asks if you are sure you want to continue. Enter Y (DOTS 1-3-4-5-6) to proceed. 
+3. There is a second verification prompt. Press Y (DOTS 1-3-4-5-6) again to proceed.
+The Braille Lite takes a few moments to validate the program. A series of beeps indicates the process continues. 
+The Braille Lite then asks you to select language bank A or B. 
+Once you have selected the language bank to be updated, several messages are displayed/spoken, warning you not to do anything until the process is complete. The notetaker also indicates to turn off your unit when you receive a continuous low pitch tone. Finally, it tells you that if you hear rapid beeping for more than thirty seconds, your update has failed. 
+After the messages are finished, the Braille Lite beeps again. This will continue for two to three minutes, then your unit will abruptly sound a continuous, low pitch tone. When this occurs, turn off your unit.  
+Note:	If the notetaker rapidly beeps for some time, the update process has failed. Contact Freedom Scientific's hardware technical support for assistance. 
+When you turn the unit on after updating bank A, you will hear the unit announce that it has performed a warm reset, then you will hear the normal startup message.  At this point, all settings will be set to their defaults, and you will need to recustomize the unit to your liking.
+Once complete, the .bns file is no longer needed. Since this file is large, you may want to delete it.
+If your Braille Lite does not work normally after the warm reset, perform a hard reset. This clears the machine of your files, but it also reinitializes the Braille Lite, allowing the new update to run properly. 
+Press and hold down I-CHORD (DOTS 2-4 CHORD) during power on to perform a hard reset. This step is not necessary if your system functions properly after the warm reset described above.
+During a hard reset, parts of the file and folder system are reinitialized. Answer Y (DOTS 1-3-4-5-6) for yes to each question asked during this process.
+After your system is fully updated, the onboard help indicates it is the "mini help file." The diskette on which you received the firmware update should contain a file with the same name as the update file but with an .hlp extension. Copy this file to the notetaker and rename it "help." Use the process listed above to copy the file, substituting the appropriate file name. To rename the .hlp file once it is on the Braille Lite, press F-CHORD (DOTS 1-2-4 CHORD), locate the file, press R-CHORD (DOTS 1-2-3-5 CHORD), and type in the new name, "help."
+ 
+
+
+
+
+
+
+
+
+Appendix A:
+ ASCII Braille Symbols
+
+This is the list of computer Braille equivalents for the ASCII character set, including punctuation, numbers, etc. 
+In this listing, information is presented in this order: First, character name (names of numerals and punctuation marks spelled out and presented in regular alphabetic sequence), ASCII value, Braille dot numbers used to produce Braille equivalent of character. In the case of control (CTRL) characters, dot patterns are omitted. 
+
+A, Uppercase 			65		DOT 1
+a, lowercase			97 		DOT 1
+Accent, lowercase 		96 		DOT 4
+Acknowledge 			6		CTRL-F
+Ampersand 			38		DOTS 1-2-3-
+       							4-6
+Apostrophe			39		DOT 3
+Asterisk				42		DOTS 1-6
+At Sign, Uppercase 		64 		DOT 4 
+B, Uppercase 			66 		DOTS 1-2
+b, lowercase 			98 		DOTS 1-2
+Backspace 			8 		DOTS 1-2 
+ 							CHORD
+backslash, 	
+(Reverse Slant) 		92 		DOTS 1-2-5-6
+              						(Uppercase)
+Bell					7		CTRL-G
+C, Uppercase			67		DOTS 1-4
+c, lowercase			99 		DOTS 1-4
+Cancel 				24 		CTRL-X
+Caret, (Exponentiation)	94 		DOTS 4-5 (Uppercase)
+Carriage Return		13		CTRL-M
+Close Brace		125		DOTS 1-2-4-
+                       5-6(lowercase)
+Close Bracket 			93 		DOTS 1-2-4-
+                 					5-(uppercase)
+Close Parenthesis	  	41		DOTS 2-3-4-
+        						5-6
+Colon 				58		DOTS 1-5-6
+comma				44		DOT 6
+D, Uppercase			68		 DOTS 1-4-5
+d, lowercase			100		DOTS 1-4-5
+Data Line Escape		16 		CTRL-P
+Decimal point (period)	46		 DOTS 4-6
+Delete				127		DOTS 4-5-6 (lowercase)
+Device Control 		1, 17	CTRL-Q
+Device Control 		2, 18	CTRL-R
+Device Control 		3, 19	CTRL-S
+Device Control 		4, 20	CTRL-T
+Divided by, (Slash)		47 		DOTS 3-4
+Dollar Sign			36 		DOTS 1-2-4-6
+E, Uppercase	 		69 		DOTS 1-5
+e, lowercase 			101 		DOTS 1-5
+eight 				56		DOTS 2-3-6
+End of Medium		 25 		CTRL-Y
+End of Transmission	4		 CTRL-D
+End of Text 			3		CTRL-C
+Enquire				5		CTRL-E
+Equals 				61 		DOTS 1-2-3-4-5-6
+Escape 				27 		CTRL-Open
+   							 Bracket
+Exclamation point 		33		DOTS 2-3-4-6
+Exponentiation, (Caret)	94 		DOTS 4-5 
+F, Uppercase	 		70		DOTS 1-2-4
+f, lowercase 			102 		DOTS 1-2-4
+File Separator 		28	 	CTRL-Reverse
+   			 Slant
+five 					53 		DOTS 2-6
+Form Feed 			12 		CTRL-L
+four 					52 		DOTS 2-5-6
+G, Uppercase 			71 		DOTS 1-2-4-5
+g, lowercase 			103		DOTS 1-2-4-5
+Grave Accent, (Accent) 	96		DOT 4 
+  							(lowercase)
+Greater Than, 
+(Right Angle Bracket) 	62	 	DOTS 3-4-5
+Group Separator 		29		CTRL-Close
+    							Bracket
+H, Uppercase			72		DOTS 1-2-5
+h, lowercase			104		DOTS 1-2-5
+Horizontal Tabulation	9		CTRL-I
+Hyphen, (minus)		45		DOTS 3-6
+I, Uppercase			73		DOTS 2-4
+i, lowercase			105		DOTS 2-4
+J, Uppercase			74		DOTS 2-4-5
+j, lowercase			106		DOTS 2-4-5
+K, Uppercase			75		DOTS 1-3
+k, lowercase			107		DOTS 1-3
+L, Uppercase			76		DOTS 1-2-3
+l, lowercase			108		DOTS 1-2-3
+Left Angle Bracket, 
+(Less Than)			60		DOTS 1-2-6
+Less Than,
+(Left Angle bracket)	60		DOTS 1-2-6
+Line Feed				10 		CTRL-J
+M, Uppercase 			77		DOTS 1-3-4
+m, lowercase			109		DOTS 1-3-4
+Minus, (hyphen) 		45		DOTS 3-6
+N, Uppercase			78		DOTS 1-3-4-5
+n, lowercase			110		 DOTS 1-3-4-
+         						 5
+Negative 
+Acknowledgement		21		CTRL-U
+nine					57 		DOTS 3-5
+Null 					0		CTRL-AT SIGN
+Number Sign			35		DOTS 3-4-5-6
+O, Uppercase 			79		DOTS 1-3-5
+o, lowercase		 	111		DOTS 1-3-5
+one 					49 		DOT 2
+Open Brace 			123		DOTS 2-4-6
+  							(lowercase)
+Open Bracket			91		DOTS 2-4-6
+     						 	(uppercase)
+Open Parenthesis		40		DOTS 1-2-3-
+      							5-6
+P, Uppercase			80		DOTS 1-2-3-4
+p, lowercase			112		DOTS 1-2-3-4
+Percent Sign			37		DOTS 1-4-6
+Period, (Decimal)		46		DOTS 4-6
+Plus					43		DOTS 3-4-6
+Q, Uppercase	81		DOTS 1-2-3-
+       		4-5
+q, lowercase		113		DOTS 1-2-3-
+      			4-5
+Question Mark			63		DOTS 1-4-5-6
+Quotation Mark, 
+(Double Quote) 		34		DOT 5
+R, Uppercase			82		DOTS 1-2-3-5
+r, lowercase			114		DOTS 1-2-3-5
+Record Separator		30		CTRL-Caret
+Reverse Slant, 
+(backslash)			92		DOTS 1-2-5-6
+                 					(uppercase)
+Right Angle Bracket, 
+(Greater Than) 		62		DOTS 3-4-5
+S, Uppercase			83		DOTS 2-3-4
+s, lowercase			115		DOTS 2-3-4
+Semicolon			59		DOTS 5-6
+seven		 		55		DOTS 2-3-5-6
+Shift In				15		CTRL-O
+Shift Out				14		CTRL-N
+six					54		DOTS 2-3-5
+Space				32		No dots
+Start of Heading		1		CTRL-A
+Start of Text			2		CTRL-B
+Substitute			26		CTRL-Z
+Synchronous Idle		22		CTRL-V
+T, Uppercase			84		DOTS 2-3-4-5
+t, lowercase			116		DOTS 2-3-4-5
+three				51		DOTS 2-5
+Tilde					126		DOTS 4-5 (lowercase)
+two					50		DOTS 2-3
+U, Uppercase			85		DOTS 1-3-6
+u, lowercase			117		DOTS 1-3-6
+Underline				95		DOTS 4-5-6 (uppercase)
+Unit Separator			31		CTRL-
+      							Underline
+V, Uppercase			86		DOTS 1-2-3-6
+v, lowercase			118		DOTS 1-2-3-6
+Vertical Line			124		DOTS 1-2-5-6 (lowercase)
+Vertical Tabulation		11		CTRL-K
+W, Uppercase			87		DOTS 2-4-5-6
+w, lowercase			119		DOTS 2-4-5-6
+X, Uppercase			88		DOTS 1-3-4-6
+x, lowercase			120		DOTS 1-3-4-6
+Y, Uppercase			89		DOTS 1-3-4-
+           						5-6
+y, lowercase			121		DOTS 1-3-4-
+    							5-6
+Z, Uppercase			90		DOTS 1-3-5-6
+z, lowercase			122		DOTS 1-3-5-6
+zero					48		DOTS 3-5-6
+
+Appendix B:
+ Contact Information
+
+Thank you for purchasing the Braille Lite M20 or M40.
+Please let us know your comments and suggestions concerning this product.
+Freedom Scientific
+11800 31st Court North
+St. Petersburg, FL 33716
+Sales: (800) 444-4443 or (727) 803-8000
+Sales FAX: (727) 803-8001
+Technical support: (727) 803-8600
+If returning a product for service, please call Technical Support at (727) 803-8600 for an RMA (Return Merchandise Authorization) number.
+E-mail: hardwaresupport@freedomscientific.com World Wide Web site: http://www.freedomscientific.com
+ 
+
+
+
+
+
+
+Index
+
+
+Abort	54, 83
+Advance Bar	5
+Append Mode
+Inserting Text	49
+Overwriting Text	49
+ASCII Braille Symbols	111
+Battery	8
+Recharge	9
+Rechargeable cell	9
+Braille Display	4
+Care of your Braille Lite M20/40	10
+Clipboard	50
+Commands
+chording	5
+computer Braille	42
+Connect Outloud	99
+Conventions	1
+Toggle	2
+Cursor
+Routing Buttons	48
+Delete Parameters
+Block	52
+Character	52
+Cursor to End of Text	53
+Line	53
+Mark	53
+Paragraph	53
+Sentence	53
+Word	53
+Editing
+Copying	51
+Examples	55
+Pasting	54
+PC Edit Mode	50
+Embossing	85
+External Disk Drive	102
+Receiving	103
+Send Options	103
+File
+Opening	33
+Saving	34
+Files	32
+Embossing	85
+Printing	85
+Find	59
+Case Sensitive Searches	59
+Global Search	61
+Find and Replace	60
+Folders	40
+Creating	40
+Deleting	41
+Renaming	41
+Formatting	89
+Attribute Marking	91
+Information Commands	97
+Margins and Alignment	91
+Other Commands	96
+Page Numbering	94
+Syntax	90
+Tabs	94
+Grade 2 Braille	42
+Help File	2
+Insert mode	50
+JAWS	99
+Macros	82
+Erasing	84
+Executing	83
+Nesting	83
+Recording	82
+Speaking or Silencing	83
+Start-Up	84
+Write-Protecting	84
+Memory	4, 9
+Menu
+Status	50, 51, 59, 60, 65
+Move Commands
+Absolute Page	36
+Braille Page	36
+Character	36
+Line	37
+Mark	37
+Print Page	37
+Word	37
+Note Taking	48
+Ports
+AC Adapter	7, 9
+CompactFlash	7, 8
+Earphone	7, 8
+External speaker	7, 8
+Modem	7, 8
+Parallel	7
+PS2	6
+Tape recorder	7, 8
+Printing	85
+Document Layout	89
+Page Numbering	88
+Print Commands	86
+Printer Compatibility	86
+Status Menu Settings	85
+RAM	4, 48, 50, 52, 56, 103
+Resetting	105
+Cold Reset	105
+Hardware Reset	107
+Warm reset	105
+service contract	9
+Spell Check	55
+Add Words to Personal Dictionary	56
+Bypass Word for Rest of Document	56
+Enter the Correct Word in Document	56
+Read Words in Context	56
+Repeat Incorrect Word	57
+Skip Word	56
+Suggestion Words from a List	57
+Suggestion Words Help	57
+Switch
+Braille Display Mode	6, 7
+On/Off	6
+Technical support	119
+Time and Date	64
+Announcing the Date	66
+Setting Hourly Announcement	65
+Setting the Date	66
+Setting the Time	64
+Setting Time Format	65
+Updating Firmware	107
+Getting Started	107
+Utilities
+Calculator	72
+Datebook	67
+Appointment Notification	70
+Phonebook	77
+Smart Calendar	67
+Stopwatch	70
+Timer	71
+warranty	9
+Whiz Wheels	6
+
+2
+
+
+1
+	
+
+
+
+	
+
+116	Part# 440013-001 Rev. E
+
+Part# 440013-001 Rev. E	117	
+
+
+
+
+
+	Part# 440013-001 Rev. E
+
+Part# 440013-001 Rev. E		
+
+
+

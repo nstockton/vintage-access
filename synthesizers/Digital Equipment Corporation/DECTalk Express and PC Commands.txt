@@ -1,0 +1,222 @@
+DECtalk Text Command List 
+
+NOTE: CAPS indicate the SHORTest legal subset:
+
+ FUNCTION
+                            COMMAND
+                                                        NOTES
+ COMMA PAUSE
+                            [:COMMa DDD]
+                                                        Default is 95ms 
+                                                        DDD is delta +/-
+from 95
+ DEFINE VOICE
+                            [:DEFIne XX DD (SAVE)]
+                                                        XX is vocal param
+ (Alternate)
+                            [:DV XX DD (SAVE)]
+                                                        DD is decimal value. 
+                                                        SAVE => voice VAL
+ DIAL TONE
+                            [:DIAL "D,ddd-ddd-dddd"]
+                                                        Comma causes pause
+in dial sequence
+ ENABLE:
+                            [:ENABle]
+                                                        After flush cmd or
+after FLUSH_SPEECH
+ ERROR:
+                            [:ERROr Ignore]
+                                                        Ignores all errors
+                            [:ERROr Text]
+                                                        Error as text string
+                            [:ERROr Escape]
+                                                        Returns esc seq
+                            [:ERROr Speak]
+                                                        Speaks error msg
+                            [:ERROr TOne]
+                                                        Tone on cmd error
+ FLUSH:
+                            [:FLUSh All] (OBSOLETE)
+                                                        No longer available
+                            [:FLUSh Until DD]
+                                                        Until Index DD
+                            [:FLUSh Mask DD]
+                                                        Mask & Index Match
+                            [:FLUSh Mask After DD]
+                                                        After Index DD
+                            [:FLUSh Mask Speech]
+                                                        Cmds still executed
+                            CTRL C² 
+                                                        Stop/flush. Returns
+CTRL A
+ INDEX:
+                            [:INDEx Mark DD]
+                                                        Insert Index Mark 
+                                                        (DD is index value)
+                            [:INDEx Reply DD]
+                                                        Insert Index &
+Reply when spoken
+                            [:INDEx Reply Query]
+                                                        Respond with last
+index seen
+ LANGUAGE
+                            [:LANG ENGlish]
+                                                        Speak English
+(default)
+                            [:LANG Spanish]
+                                                        Speak Spanish 
+ LOAD VARIABLES
+                            [:LOADv XX YY]
+                                                        XX, decimal val 0-9 
+                                                        YY is cmd variable. 
+                                                        Used with Set Var
+ LOG
+                            [:LOG TExt ON/OFf]
+                                                        Log all text 
+                                                        Default is off
+                            [:LOG Phonemes ON/OFF]
+                                                        Log phonemes
+ MODES
+                            [:MODE Math ON/OFf]
+                                                        Math symbols spoken 
+                                                        Default Off (except
+Citation)
+                            [:MODE Europe ON/OFf]
+                                                        European monetary
+pronunciation.
+                            [:MODE SPell ON/OFf]
+                                                        Spell all words
+                            [:MODE Name ON/OFf]
+                                                        Say proper names 
+                                                        (Optional feature)
+                            [:MODE Citation ON/OFf]
+                                                        Some words spoken
+differently when spoken
+                                                        alone.
+                            [:MODE Latin ON/OFf]
+                                                        American/Castilian
+Spanish switch.
+ PAUSE
+                            [:PAUSe DDD] 
+                            Ctrl-N ²
+                                                        DDD in 1/100 of sec
+(Asynch command)
+ PERIOD PAUSE
+                            [:PERIod DDD]
+                                                        Default = 470ms 
+                                                        DDD is delta from 470
+ PHONEME INTERPRETATION
+                            [:PHONeme ARpabet (SPeak/
+                            ON/OFf]
+                                                        Speak text within
+square brackets as Arpabet
+                                                        phonemes. Default off
+ PITCH CHANGE
+                            [:PITCh DD]
+                                                        Default = 35Hz 
+                                                        DD is delta from 35
+ POWER STATUS² 
+                            [:POWEr Sleep DD]
+                                                        Low power mode
+after DD sec
+                            [:POWEr Interval DD]
+                                                        Low power beep DD sec
+                            [:POWEr Speak]
+                                                        Speak battery status
+                            [:POWEr STatus]
+                                                        Receive from
+Express power/battery status
+ PRONOUNCE NAME
+                            [:PRON Name]Name
+                                                        Speak proper name
+(Option)
+ PUNCTUATION
+                            [:PUNCt None]
+                                                        No punct spoken
+                            [:PUNCt Some]
+                                                        Some punct spoken
+(default)
+                            [:PUNCt All]
+                                                        All punct spoken
+                            [:PUNct Pass]
+                                                        Bypass some
+preprocssing
+ RATE SELECTION
+                            [:RATE DDD]
+                                                        Default = 180wpm 
+                                                        Range 75-650
+ RESUME
+                            [:RESUme] 
+                            Ctrl-O ²
+                                                        Resume speech
+ SAY MODE
+                            [:SAY Clause]
+                                                        Speak at clause end
+                            [:SAY Word]
+                                                        Speak at word end
+                            [:SAY Letter]
+                                                        Speak at letter end
+ SET VARIABLES
+                            [:SETV DD]
+                                                        DD is 0-9 
+                                                        Set vars previously
+loaded. 
+                                                        Used with Load Vars
+ SYNCHRONIZATION
+                            [:SYNC] 
+                            CTRL K (obsolete)
+                                                        Act as clause end.
+Synchs async commands.
+ TIMEOUT
+                            [:TIMEout D]
+                                                        Force speech after
+D seconds. Default is NONE
+ TONE
+                            [:TONE DD,dd]
+                                                        DD is Freq in Hz 
+                                                        dd is Duration in ms
+ TSR²
+                            [:TSR ON/OFF ]
+                                                        Sends private
+character sequences to the TSR. 
+                                                        Off disables the
+transmission.Default is on
+ TYPING TABLE
+                            [:TYPE DD (:) PHONE]
+                                                        DD is Keyboard code 
+                                                        : = use pitch shift 
+                                                        PHONE is a phoneme
+ VERSION²
+                            [:VERSion Speak] 
+                                                        Speaks firmware
+version 
+                            [:VERsion STatus]
+                                                        Receive firmware
+version from Express
+ VOICE SELECTION
+                            [:NAme X]
+                                                        X=P,H,F,D,B,R,U,W,K,V
+ (Alternate)
+                            [:NX]
+                                                        No space between N
+and X
+ VOLUME¹
+                            [:VOLUme Set DD]
+                                                        0-99, Default = 5 
+                            [:VOLUme Up DD]
+                                                        Increases volume by DD
+                            [:VOLUme Down DD]
+                                                        Decreases volume by DD
+ (Alternate)
+                            [:VS DD]
+                                                        Set volume to DD
+ XON/XOFF²
+                            Ctrl-Q/Ctrl-S
+                                                        Serial line
+handshaking
+ ¹ DECtalk PC 
+ ² DECtalk Express 
+
+ Last updated 10/28/96
+

@@ -1,0 +1,595 @@
+		   
+		   DECTalk USB Users Manual
+
+
+
+Access Solutions
+4536 Edison Avenue
+Sacramento, CA 95821
+Web: www.axsol.com
+E-Mail: support@axsol.com
+Customer Support: (916) 481-3559
+
+
+
+
+The information in this publication is subject to change without
+notice.  Axsol, Inc. DBA Access Solutions reserves the right to make changes
+without notice to this, or any of its products, to improve reliability,
+performance, or design.
+
+Axsol, INC. SHALL NOT BE LIABLE FOR TECHNICAL OR EDITORIAL
+ERRORS OR OMISSIONS CONTAINED HERIN, NOR FOR INDIRECT, SPECIAL,
+INCIDENTAL, OR CONSEQUENTIAL DAMAGES RESULTING FROM THE FURNISHING,
+PERFORMANCE, OR USE OF THIS MATERIAL.  THIS INFORMATION IS PROVIDED "AS
+IS" AND Axsol, INC. EXPRESSLY DISCLAIMS ANY AND ALL
+WARRANTIES, EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING
+WITHOUT LIMITATION, ANY EXPRESS, STATUTORY, OR IMPLIED WARRANTY OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+
+This publication contains information protected by copyright. This
+publication shall not be reproduced, transmitted, or stored in a
+retrieval system, nor its contents used for any purpose, without the
+prior written consent of Axsol, Inc.
+
+Axsol, Inc. assumes no responsibility for the use of any
+circuitry other than the circuitry that is part of a product of 
+Axsol, Inc.  Axsol, Inc. does not convey to the purchaser
+of the product described herein any license under the exclusive rights of
+Axsol, Inc. nor the rights of others.
+    
+
+
+FEDERAL COMMUNICATIONS COMMISSION (FCC) CLASS-B WARNING.
+
+This device generates and uses radio frequency energy. If not installed
+and used properly, the device may interfere with radio or television
+reception.
+
+FCC COMPLIANCE - 
+
+This device has been tested and certified to comply with the limits for
+a Class-B digital device, as defined in part 15 of the Federal
+Communications Commission (FCC) rules. Class-B limits are designed to
+provide reasonable protection against radio/television interference in
+a residence.
+
+This product is in conformity with the following directives and/or
+standards:
+
+    89/336/EEC on the Electromagnetic Compatibility of Information
+    Technology Equipment using the following standards:
+    EN55022:1998 Class B Limits and methods of
+    Measurement of Radio Interference Characteristics of Information
+    Technology Equipment.
+    EN55024:1998 A1:2001 A2:2003 Electromagnetic Compatibility - Generic
+    immunity standard - Part 1:  Residential, commercial and light industry.
+
+    93/68/EEC on the labeling of equipment.
+
+The DECtalk USB is supplied with a full speed USB cable 
+and a standard 9 pin serial cable for
+connecting the unit to a computer system. Both these cables are equipped with
+an in-line filter. The DECtalk USB must only be used with cables
+that incorporate a similar in-line filter.
+
+To comply with FCC regulations, you must use shielded cables with this
+device. Operation with unapproved equipment or unshielded cables is
+likely to result in interference with radio or television reception.
+Changes made to this device without the approval of Axsol, Inc. could
+void your authority to operate the device.
+
+The device may cause interference even though it meets Class-B limits.
+(As a test, turn the device off and on, and gauge the effect on an
+operating radio or television.) If there is interference, try to
+eliminate it by one or more of the following measures:
+
+    Re-orientating or relocating the receiving antenna of the radio or
+    television.
+
+    Increasing the separation between the device and receiver.
+
+    Connecting the device into an outlet on a circuit different from
+    that to which the receiver is connected.
+
+    Consulting the dealer or an experienced radio/television technician
+    for additional suggestions.
+
+
+CAUTION - ELECTRIC SHOCK AND FIRE HAZARD:
+
+This unit is for indoor use only, and is to be powered only by the
+supplied AC power supply.  Never allow the wiring or connector attached
+to the battery to become damaged or shorted, for this can result
+in ignition or explosion of the battery.
+
+Avoid operation in extremely moist or humid environments.
+
+FOR USE WITH A CERTIFIED POWER SUPPLY, WITH CLASS 2 OUTPUT; RATED
+    OUTPUT 6.0Vdc, 500mA min.
+    Input: 120vac 60Hz, 7.5W
+    Output: 6.0Vdc 500ma
+    UL: E175399, 3D81
+    Manf: Xicon
+    Part#: 106054
+
+There are no user-serviceable components inside the DECtalk USB. Opening the 
+unit may present a shock hazard, and any modification to the product 
+will void your guarantee. If water or any other liquid gets accidentally 
+spilled on the unit, turn the unit off and disconnect all cables. 
+Wipe the unit down with a dry cloth and allow the unit to dry out
+for several hours. If the unit fails to operate correctly, contact
+Access Solutions for further assistance.
+
+
+			Table of Contents
+
+     Section 1.0 - Introduction
+     Section 1.1 - System Requirements
+     Section 1.2 - Installation
+     Section 1.3 - Installation Problems 
+     Section 1.4 - Screen Access Driver Support
+     Section 1.5 - Trouble Shooting
+     Section 1.6 - Advanced Features
+     Section 1.7 - Specifications
+  
+
+Section 1.0
+
+			   INTRODUCTION
+
+     The DECTalk USB is a serial text to speech synthesizer 
+     capable of being connected to a computer via a standard USB or
+    RS232 serial port.  Taking advantage of todays modern technology,
+the DecTalk USB is a state of the art text to speech synthesizer
+that presently is capable of speaking in six different languages,
+fully software configurable and updatable, light weight and
+portable, and delivers a quality of speech that you would only expect
+from DECtalk.  Unlike most serial synthesizers, the DecTalk USB takes full
+advantage of the high speed transfer rates of the USB bus.  In
+simple terms, start and stop speech commands to the synthesizer
+appear to be instantaneous. 
+     As an added bonus, the DECTalk USB comes equipt with a
+standard RS232 serial port for use with computers or equippment that 
+does not offer USB support.  The on board RS232 serial port is
+fully backwards compatible with the older DecTalk Express.  In other 
+words, the DecTalk USB may be used as a direct replacement for
+the older retired DECtalk Express.  A slide switch located on the
+righthand end of the synthesizer is used to switch between USB  and
+RS232 modes respectively.  When the slide switch is slid toward the back 
+of the unit, you are in USB mode.  With the slide switch slid toward the 
+front of the unit, you are in RS232 mode.  With a user replaceable 9 volt
+battery, Your DECTalk USB is capable of operateing for 1 hour on a standard 
+RS232 serial port before an external power source is required.  
+
+     The DecTalk USB has 9 predefined voices,
+software adjustable volume levels, speed, pitch, treble, bass,
+and is fully configurable to meet your listening preferences.  In
+addition, parameters such as articulation, punctuation filtering,
+and intonation are also adjustable.  It is important to note that
+these settings may be limited by certain software packages such as
+screen access programs.
+
+
+Supported Languages:
+
+The DecTalk USB is a serial text to speech synthesizer that
+converts standard ASCII or Unicode text into highly intelligible
+and natural sounding speech.  Supported languages include U.S.
+English, U.K. English, Castilian Spanish, Latin-American Spanish,
+German, and French.
+
+
+Speech Engine:
+
+Powered by Fonix DecTalk, the DecTalk USB utilizes a high
+performance 150Mhz Motorola DragonBall processor in conjunction
+with 32MB of SDram to execute its embedded software speech engine.
+With 16MB of flash memory, the DecTalk USB is able to store six
+different language modules as well as user dictionaries for each
+spoken language. 
+
+
+Software Updatable:
+
+The DecTalk USB is fully programmable and may be updated while in
+the field.  Since the speech engine of the DecTalk USB is a
+software embedded solution, enhancements to the speech engine are
+easily upgradable. 
+
+
+Audio Output:
+
+The DecTalk USB is equipped with an internal 63mm 1 watt speaker
+for  delivering its excellent synthesized speech output. Volume
+levels are  adjustable via a side mount rotary thumb wheel or by
+software control.  In addition, a eighth inch stereo jack is
+located on the side of the unit  for use with headphones or, with
+an additional adapter, power speakers respectivly.
+	  
+	  
+Connectivity, Connectors and Controls:                                 
+
+The DECtalk USB may be connected to an IBM or compatible computer
+using a full speed USB cable or a standard RS232 serial cable. 
+Selection of which port is active, either the USB or RS232 port, is
+controlled via a slide switch located on the side of the unit.
+With the controls and connectors labeled counter clockwise around the
+unit and starting with the thumb wheel, the controls and connectors  
+are as follows:
+   1. Volume-On/Off thumb wheel
+   2. Headphone jack 
+   3. USB/RS232 mode switch
+   4. Nine pin RS232 serial port (DCE)
+   5. USB serial port (full speed 1.1)
+   6. D.C power jack
+
+
+Software:
+
+     With support for Windows 98/ME/2k/XP/Vista , the DECTalk USB is
+easy to install and ready to start speaking.  All the software
+necessary for installation and supporting many of
+todays' most popular screen readers is included.  
+     
+     Access Solutions continues to develop drivers for many 
+of todays most popular screen access programs.  For more
+information,     
+contact Access Solutions technical support team at (916) 481-3559
+or
+email us at support.axsol.com. 
+
+
+
+Section 1.1
+
+		       System Requirements
+	  
+The DECTalk USB is designed to operate in an IBM or compatible
+micro computer with a  USB or standard RS232 serial port.  If you
+are not sure 
+if your computer is equipped with a USB or RS232 port, we recommend
+contacting your computer vendor or refer to your computers' user
+manual.
+     
+Currently the DECTalk USB functions with Windows 98/ME/2k/XP/Vista. 
+In addition, the DECtalk USB has Dos box support under windows 98.
+
+       
+
+Section 1.2
+
+			   Installation
+
+     It is strongly recommended that a qualified technician
+performs the hardware and software installation needed to get your
+new DECTalk USB up and running.  Access Solutions does not
+warrant products that are damaged due to improper handling or
+faulty installation. 
+
+     To install the DECTalk USB, follow the two procedures
+listed below:
+
+
+  Hardware Procedure:
+	    
+    USB Connection -
+
+    1. Make sure the DECTalk USB is turned off. This is done
+       by turning the thumb wheel counter clockwise until a click
+is heard.
+    
+    2. MAKE SURE THE SLIDE SWITCH LOCATED ON THE RIGHT SIDE OF THE
+UNIT IS POSITIONED TOWARDS THE BACK OF THE UNIT.  I.E AWAY FROM THE
+HEADPHONE JACK OR VOLUME KNOB.
+
+    3. Boot your computer to a standard windows desktop.
+
+    4. Connect the USB cable, included in your installation kit,
+       from the DECTalk USB to one of the USB ports located
+       on the back of your computer.  Keep in mind that some
+computers
+       have several USB ports. Any of these ports will work.
+
+
+    RS232 Serial Port Connection - 
+    
+    If you plan to use the RS232 serial port on your DECTalk USB,
+    it is strongly recommended that you exit all programs and turn 
+    your machine off before connecting the serial cable from your
+unit
+    to your computer.
+
+    1. Make sure the DECTalk USB is turned off. This is done
+       by turning the thumb wheel counter clockwise until a click
+is heard.
+    
+    2. Position the slide switch located on the right side of the unit 
+       towards the headphone jack.
+
+    3. Locate the 9 pin streight through serial cable and connect
+it
+       from the DECTalk USB to one of the serial ports on the 
+       back of your computer.
+
+    4. Insert the female barrel connector of the D.C adapter,   
+       included in your installation kit, into the power jack
+located
+       on your unit. If you plan to connect both the USB and serial
+cables 
+       from the DECTalk USB to your computer, the D.C adapter is
+not 
+       required.
+
+       It is important to note that your new DECTalk USB contains
+       a 9 volt alkaline battery that is user replaceable. The
+       purpose of this battery is to supply power to the unit while
+       operating the unit solely on the RS232 serial port. Located on    
+       the bottom left hand side of the unit is a rectangular cover that
+       closes off the battery compartment. Using an index finger, gently 
+       press down on the ribbed end of the battery cover and slide the
+       cover in the direction away from the volume knob or headphone
+       jack. This will expose the Eveready 9 volt alkaline battery
+       that ships with the unit.  
+
+
+
+  Software Driver Installation Procedure:
+
+    USB Windows Driver Support -
+    
+    1. Make sure you are on the windows desktop.
+
+    2. Make sure the USB/RS232 mode switch is positioned towards the
+       back of the unit.
+
+    3. Turn your DECTalk USB on by turning the thumb wheel
+       clockwise.
+
+    4. When the Add New Hardware Wizard comes up informing you 
+       that a DECTalk USB has been detected, insert the     
+       DECTalk USB installation Disk into your CD  drive and
+press
+       Enter.
+
+    5. When prompted for whether or not windows should search for
+       the best driver for this device, select the radio button
+that
+       allows windows to search for the best driver for this device
+and press 
+       Enter.
+	  
+    6. Next, check the check box labeled "Specify a Location". 
+
+    7. In the edit box, type  the name of your CD drive, for example "D:" and press Enter. 
+    
+    8. The add new hardware wizard will inform you that the      
+       Access Solutions DECTalk USB has been found. Just press
+Enter.
+
+    9. Once you have reached this point, the add new hardware
+       wizard should inform you that it has successfully installed
+all the 
+       necessary files needed for supporting your new DECTalk USB. 
+       Just press Enter and you are all done.
+	  
+    10. Remove the DECTalk USB installation disk from your CD
+drive. 
+    
+    11. Reboot your system so changes may take effect. 
+
+
+    RS232 Serial Port Driver Support -
+
+    It is not necessary to install any drivers for RS232 serial
+    port support.  
+    
+
+
+Section 1.3    
+
+			     Installation Problems
+    
+    USB Installation Problems -
+
+    The DECTalk USB is a fully compliant USB Plug and Play
+    device that  does not require an IRQ when operating on the USB
+bus.     
+    If you are having trouble installing the necessary files needed
+for 
+    supporting your DECTalk USB as a USB device, try the following:
+
+    1. Make sure the supplied USB cable included in your
+installation
+       kit is used to connect the DECTalk USB to your computer.
+       Since the DECTalk USB is a full speed USB device, use
+       of low speed USB cables may cause loss of data and
+installation
+       problems.
+
+    2. Make sure your DECTalk USB is turned on before trying to
+install
+       software.
+    
+    3. Make sure the USB/RS232 mode switch is slid towards the back
+       of the unit for USB mode.
+
+    4. From within Device Manager, expand the folder labeled
+       "Universal Serial Bus Controllers". Make sure you have at
+least
+       two entries labeled simular to the following:
+	  A. USB Root Hub
+	  B. PCI to USB Universal Host Controller
+
+       If you do not have a folder under Device Manager labeled
+       "Universal Serial Bus Controllers", USB support is either
+turned
+       off in your bios or your computer may not support USB.
+       Consult your computers' user manual to verify bios settings
+and 
+       USB support.
+
+
+    RS232 Serial Port Installation Problems -
+
+    If you are having trouble getting your DECTalk USB to function
+    on a communication port, try the following:
+
+    1. Make sure both ends of the serial cable connecting your 
+       computer to the DECTalk USB are seated well in their
+respective 
+       connectors. 
+    
+    2. Make sure the USB/RS232 mode switch is positioned towards the   
+       headphone jack and or volume thumb wheel.
+
+    3. Plug in the D.C adapter to insure the unit has adequate
+power.    
+       This can also be accomplished by connecting the USB cable
+       from the DECTalk USB to your computer.
+    
+    If you are still having trouble after trying the above
+suggestions,
+    it is recommended that you contact Access Solutions technical
+    support team at (916) 481-3559. You may also Email us at 
+    support@axsol.com.
+
+
+
+Section 1.4
+ 
+		   Screen Access Driver Support
+    
+    If you have already installed all the necessary files needed
+for
+    running your DECTalk USB as a USB device, you are ready to  
+    configure your favorite windows screen reader to operate with
+your new 
+    DECTalk USB.
+
+    Currently, the DECtalk USB may only be used as a DECtalk
+    Express.  Access Solutions apologizes for this inconvenience 
+    and assures the customer that USB driver support for some of your
+    most popular screen readers will be released shortly.  In the
+    mean time, you may use your DECtalk USB as a DECtalk Express as follows:
+    
+    Position the USB/RS232 mode switch towards the headphone  
+    jack and or volume thumb wheel.  Next, select the "DECtalk Express"
+    from your screen readers' synthesizer selection menu. 
+    
+    Note: In most cases you will need to select and configure the 
+	  communication port the DECtalk USB is connected to. The 
+	  communication port should be setup with the following
+	  parameters:
+    
+    baud rate = 9600
+    parity = none
+    data bits = 8
+    stop bits = 1
+    flow control = Xon/Xoff
+
+
+
+Section 1.5
+
+			 Trouble Shooting
+
+     If you are having trouble getting your DECTalk USB to
+install or work properly, here are a few suggestions that may help.
+
+     1. First review sections 1.1 through 1.3 of this user manual. 
+
+     2. Make sure the thunb wheel  on the unit is turned about  
+	       half way up. Turn the thumb wheel clockwise to
+	       increase volume.
+
+     3. If you are using a screen access software package, make
+sure         volume levels are not set to low.
+
+     4. Make sure all cables are attached correctly and their
+respective  
+	connectors are properly seated.
+
+     If you are still having trouble and have followed the steps
+shown above, it is recommended that you contact Access Solutions
+technical support team for further assistance.  Refer to the
+beginning of this user manual for contact information.            
+
+
+	   
+Section 1.6
+
+			Advanced Features
+
+     If you are a software developer you are in luck!  Access
+Solutions offers a free developer kit that contains all the tools
+needed for writing software to talk to the DECTalk USB.  We do
+not include this information in this user manual because it is far
+to boring and beyond the imagination of the average user.  If you
+are interested in obtaining the
+developer kit, feel free to contact Access Solutions' technical
+support team for more information.
+
+
+
+Section 1.7
+
+			  Specifications
+
+Power:
+
+A.C Adaptor -    
+  Input: 120vac 60Hz, 7.5W
+  Output: 6.0Vdc 500ma
+  UL: E175399, 3D81
+  Manf: Xicon
+  Part#: 106054
+
+Max power consumption - P_max = 1.32W @5Vdc 
+Max current consumption - I_max = 400ma @5Vdc
+
+Continuous average supply current - I_avg = 141ma, not speaking,
+using 6Vdc adapter.
+Continuous average usb supply current - I_usb_avg = 137ma @5Vdc
+
+Max input supply voltage - V_sup=9Vdc, typical 6Vdc from supplied
+				       A.C. to D.C. adapter. 
+Max USB input voltage - V_usb_max 5.5Vdc
+Minimum USB supply voltage - V_usb_min 4.4Vdc 
+
+
+Battery:
+
+  Manf: Eveready
+  Type - Alkaline
+  Batery voltage - 9Vdc
+
+
+Audio:
+
+f_ch = 100Hz; @6db/octive
+f_cl = 5.5Khz; @12db/octive
+f_pb - 5.40Khz
+SPL - 92db ~6" on axium, Rl=4 ohm
+Pwrm_audio - Max audio output power - 625mW; @Vdd=3.3v, Rl=4 ohm  
+    Headphone impedance - Zhd = ~75 ohms
+
+
+Connectivity:
+
+    RS232 Port  -  Data communication equipment (DCE device) 
+    USB Port  -  Full speed USB (12Mbps)
+
+
+Operating Temperature  -  0C - 70C
+Dimensions - 5.5"x3.6"x1.1" 
+Weight - ~8 Ounces without battery installed
+ 
+
+Copyright (c) 2000-2004 by Axsol Inc.
+Copyright (c) 2001-2004 by Fonix  Corporation.  
+All rights reserved.
+
+The Axsol logo and Access Solutions are trademarks of Axsol Inc.
+The Fonix logo and DECtalk are trademarks of Fonix Corporation Inc.
+The Motorola logo and DragonBall are trademarks of Motorola Inc.
