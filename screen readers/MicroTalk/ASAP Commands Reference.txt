@@ -1,0 +1,115 @@
+ Automatic Screen Access Program November 1993 MicroTalk
+ 917 Clear Creek Drive Texarkana, TX 75503
+ Voice: 1-903-832-3471 Fax: 1-903-832-3517
+ Modem: 1-903-832-3722 Technical Support: 1-404-508-1418
+Announce from the Cursor Down: 0,
+Announce Entire Screen or Window: 0,0 
+Attribute Monitor: Alt-A
+Auto Read: Alt-R
+Bell Ring at Column: Alt-G
+Character's Attribute: Quote
+Color Announcement: Alt-C 
+Delay Setting: 1 to 9 Control-D 
+Delimit Word: Ctrl-D
+Dial Last Number: 9D
+Dialing with a Modem: [com port] D
+Disable Loading Extra Action Set Files: 1 to 9 X d 
+DOS Output Announcement: Alt-D
+Emulation Cursor (To track BIOS Cursor): Ctrl-E
+Enable Loading Extra Action Set Files: 1 to 9 X               e 
+Entering the Control Panel: Control-Backslash
+Exit the Control Panel: Escape
+Extended Monitoring: [window] E 
+Extended ASCII Announcement: Alt-E
+Extended Activity Checking: Alt-X then Y, N, or S
+Extra Action: [setting trigger] 1 to 9 X 
+Filter Quoting (Quiet lines starting with > greater than): Ctrl-F
+Find Attribute or Text: Alt-F  then ENTER or DOWN ARROW
+Granularity Setting (The amount spoken): 1 to 9 G (1 is most)
+Ham Radio Mode: Ctrl-H
+Horizontal Cursor Position: Alt-H 
+Indentation Notification: Alt-I 
+Interception of Keyboard: Ctrl-I then Y, N, or P then RUN PROGRAM
+Jiffy Caps Identification: Alt-J
+Key Pad Ignore: Alt-P 
+Keystrokes Announced: Alt-K 
+Label Keys: Alt-L then 13 Letters
+List Labels: RUN ALAB (FILE NAME)
+List Windows: RUN AWIN (FILE NAME)
+List Macros (User Defined Keys): RUN AMAC (FILE NAME)
+Memorize: [window of 1 to 16 letters] M
+Monitor Loading Set Files Action: 1 to 9 X M 
+Monitor Character and Read Line: 1 to 9 L 
+Monitoring Entire Window: 1 to 9 W 
+Monitoring Characters and Announcing Window: 1 to 9 C
+Most Punctuation Notification: Alt-M then y, n or e exceptions
+Moving to a Relative Line: Up Arrow and Down Arrow
+Moving to a Relative Line, Reading only Current Character: Alt-Arrows
+Moving the cursor to an exact position: Ctrl-G
+Moving Word by Word: Ctrl-Left Arrow or Comma (,) and Ctrl-Right Arrow or Period
+Moving Directly to a Line: A-Y
+Moving Character by Character: Left Arrow and Right Arrow
+Noise with DOS Output (Downloading files): Alt-O
+Noise Suppression: Ctrl-N
+Normal BIOS Interception: Ctrl-B
+Numbers Notification: Alt-N
+One-Shot Control Panel Command: 0,[command] 
+Page Set: Alt-Dash and Alt-Equals 
+Parking the Reading Cursor: 0,KEYPAD ENTER 
+Path Changing for Network Use: Ctrl-P 
+Pitch Adjustment: 1 to 9 P
+Printer Interception: [printer port] I
+Quiet Loading Set Files Monitoring: 1 to 9 X Q
+Quiet Zone: [win)dow] Q 
+Quiet: Alt-Q
+Quit: Ctrl-Q
+Read By Screens: Alt-B
+Read by Screens: 0, PgDn
+Read by Screens for WordPerfect: 0, Right Arrow 
+Reading From the Cursor Right: Shift with the Semicolon and Slash
+Reading Cursor Position: Apostrophe 
+Reading the Rest of the Screen: Tab 
+Reading the previous and next line: Semicolon and Slash
+Recall: [memory bank] R 
+Returning the Reading Cursor to the Real Cursor: Z
+Review Line: 7, 8, and 9
+Review Word: 4, 5, and 6 
+Review Character: 1, 2, and 3
+Routing the System Cursor: Ctrl-Z 
+Save Settings: CTRL-S
+Set Files Loading: 1 to 99 Ctrl-L 
+Silence Temporary:  Shift
+Silence Permanent: Alt
+Silence Normal:  Control 
+Silence when typing on Keyboard Temporary (For passwords): Ctrl-K
+Snow Checking: Alt-S
+Software Cursor Using: [window] U then P, Y, or N
+Special Function: 1 to 9 F
+Speed Adjustment: 1 to 9 S
+Switching from Color to Mono: Ctrl-T
+Time: Alt-T 
+Trigger Turn Off: N
+Trigger on Text and Color: C 
+Trigger on Background or Foreground: B or F
+Triggering on Text: S settings
+Type Word at Reading Cursor: 0,8
+Typing as Words: Alt-W 
+User Defined Keys (Macros): Alt-U then ALT-A L MAC L
+User Function Automated (At Start of Program): CTRL-6 
+User Defined Keys Pass Through: CTRL-Right Bracket
+Version Information: Number Sign 
+View Refreshing: Both Shift Keys
+Viewing Method: Alt-V then W, S, C, or F
+Volume Adjustment: 1 to 9 V 
+Window Zooming in: [window] Z
+Window Move to Bottom: 0,2 
+Window Move to Left Edge: 0,1
+Window Move to Top: 0,5
+Window Set Bottom Right: [window] B
+Window Move to Right Edge: 0,3 
+Window Closing: 0 
+Window Set Top Left: [window] T
+Window's Contents Announcing: [window] A
+Yesteryear Computers Support: Alt-Y
+Zap a Command: Alt-Z
+

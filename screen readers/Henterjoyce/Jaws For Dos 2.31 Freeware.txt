@@ -1,0 +1,36 @@
+JAWS for DOS Freeware Installation Help
+It is recommended that you download the "JDOSFREE.EXE" file to a temporary directory on your hard disc. Note that the file is to large to download to a floppy disc and then extract it. We suggest going to a DOS prompt and change to the directory where you saved the file by typing CD\followed by the directory name and pressing the enter key. Now type the name of the file which should be JDOSFREE and press the enter key. The files will extract to the same directory where the original file resides. Once the files have been extracted you need to copy them to a floppy disc. DO NOT include the JDOSFREE.EXE file as part of the group of files to be copied. Next make sure you are logged onto the floppy drive which contains the disc with the JAWS files. The prompt will most likely say, "A:, or B:". You can now type "install" without the quotes to begin installing the software.
+
+The opening screen will appear in a few seconds and you can just press Enter here to continue the rest of the install.
+
+The next screen is the keyboard choice screen and the default choice is "desktop". Make your selection and press the Enter key.
+
+The next screen gives you a chance to select the drive where you want to install to, and the default is "C:". You can edit the choice, or just press the Enter key to accept the default.
+
+This screen is where you can specify the directory name where you want the program to install to and the default is \JAWS. This path can also be edited, or just press the Enter key to accept the default.
+
+The next screen will give you a list of available synthesizers to choose from. Use the arrow keys to select the correct synthesizer from the list, and press the Enter key to continue.
+
+This screen will have choices for installing the JAWS manuals, and different configuration files for JAWS to work with other programs. The default will install everything. Make any selections and press the Enter key to continue.
+
+The next screen will ask what version of WordPerfect you are using. The default is Word Perfect 6.0. Use the arrow keys to select a different version if you need to, and press the Enter key to continue.
+
+This screen has a list of the choices you have made so far. If everything is correct just press the enter key to continue, or escape to quit, and rerun the install.
+
+Next you will be asked if you want to have JAWS change the "autoexec.bat". The default is to let JAWS make the changes which will allow JAWS to run automatically. You can use the arrow keys to make any changes. Press the Enter key once you have made your choice.
+
+Now you will be told that the install is ready to begin copying files. Just press the Enter key to continue.
+
+The next screen will show any changes that have been made to the "autoexec.bat" file. The original "autoexec.bat" has been renamed to "autoexec.bak". Press the Enter key to continue.
+
+The next screen may tell you you might need to install additional utilities for the synthesizer you have chosen once the JAWS FOR DOS installation is complete. Press the Enter key to continue.
+
+The last screen tells you that the installation is complete and you need to remove all discs from the drives and reboot the system for JAWS to work correctly. Press the Enter key to finish the installation. Remove all discs and reboot the system.
+
+If you had JAWS change the "autoexec.bat file", you should hear JAWS speak during the reboot of the computer. If JAWS doesn't speak you may need to start it manually from a DOS prompt. You can do this by typing CD\ followed by the directory name where you installed JAWS and pressing the Enter key. Next type "JAWS" without the quotes and press the Enter key to start JAWS.
+
+Note that additional installation tips, and instructions can be found in the JAWS manuals provided within the program software.
+
+
+To begin downloading the freeware version of JAWS for DOS, please choose the link below.
+

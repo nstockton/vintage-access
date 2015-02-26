@@ -1,0 +1,51 @@
+Jaws 2.31 Demo Instructions
+
+Step 1) Decide which sythesizer driver to use.  Here is a list 
+        of Synthesizers supported by JAWS 2.31:
+
+        Accent Mini
+        Accent PC
+        Accent SA
+        Aicom Messenger IC
+        Audapter
+        Braille 'N Speak, Braille Blazer
+        DecTalk, Multivoice, Kurzweil Personal Reader, and KPR PC
+        DecTalk PC
+        DoubleTalk, DoubleTalk LT, and LiteTalk
+        Echo Internal, and Echo External (newer)
+        Echo External (older)
+        Kurzweil Reading Edge
+        Sounding Board
+        Synphonix (SONIX)
+        Prose 4000
+
+        The following synthesizers have drivers available for testing, but 
+        are not included with the basic JAWS demo disk:
+
+        Sound Blaster
+        Infovox
+        Apollo
+        Spanish Prose
+
+        If your synthesizer is not on this list it is possible that we
+        have a driver for JAWS that will support your synth.  For more info
+        contact our sales team at 813-528-8900.
+
+Step 2) If your synthesizer is listed, download the file JAWS231D.EXE and 
+        create a 3.5" high density JAWS demo disk by extracting this 
+        file onto your floppy disk.
+
+Step 3) Execute the INSTALL.EXE program from your newly created demo disk.
+        Follow the prompts as the install program guides you through 
+        installing JAWS.
+
+Step 4) The manual is a complete reference for how to use and configure
+        JAWS 2.31, you have the option of installing this once you have
+        created your JAWS demo disk.  If you pick this option the install
+        program will create a JAWS MANUAL directory which contains all the
+        manual files for JAWS.
+
+For information on how to JAWS 2.31 or how to purchase upgrade from a 
+previous version of JAWS, please contact your local dealer, or contact
+the Henter-Joyce Sales Department at 813-528-8900.
+
